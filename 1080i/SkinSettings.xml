@@ -79,7 +79,7 @@
             </control>
             <control type="label">
                 <posx>358</posx>
-                <posy>120</posy>
+                <posy>-800</posy>
                 <width>1491</width>
                 <align>center</align>
                 <label>$LOCALIZE[20077] - $INFO[Container(9000).ListItem.Label] $INFO[Container(9000).ListItem.Label2]</label>

@@ -2519,19 +2519,15 @@
                 <control type="togglebutton" id="703">
                     <width>100</width>
                     <height>100</height>
+                    <label>31356</label>
+                    <font>-</font>
                     <texturefocus>special://skin/extras/BigIcons/Subtitle.png</texturefocus>
+                    <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                     <texturenofocus>-</texturenofocus>
                     <alttexturefocus>special://skin/extras/BigIcons/Subtitle.png</alttexturefocus>
                     <alttexturenofocus>-</alttexturenofocus>
-                    <label>31356</label>
-                    <font>-</font>
-                    <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-                    <onclick>Close</onclick>
-                    <onclick>RunScript($INFO[Skin.String(SubtitleScript_Path)])</onclick>
-                    <altclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</altclick>
-                    <altclick>Close</altclick>
-                    <altclick>RunScript($INFO[Skin.String(SubtitleScript_Path)])</altclick>
-                    <usealttexture>IsEmpty(Skin.String(SubtitleScript_Path))</usealttexture>
+                    <onclick>Dialog.Close(VideoOSD)</onclick>
+                    <onclick>ActivateWindow(SubtitleSearch)</onclick>
                 </control>
                 <control type="button" id="704">
                     <width>100</width>

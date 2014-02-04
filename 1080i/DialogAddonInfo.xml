@@ -17,7 +17,7 @@
             <include>Furniture_SettingsBackPanel</include>
             <control type="label">
                 <posx>358</posx>
-                <posy>120</posy>
+                <posy>-800</posy>
                 <width>1491</width>
                 <align>center</align>
                 <label>$INFO[ListItem.Property(Addon.Name),$LOCALIZE[24003] - ]</label>

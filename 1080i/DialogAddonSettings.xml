@@ -51,7 +51,7 @@
                 <ondown>9</ondown>
             </control>
             <control type="label" id="20">
-                <posy>120</posy>
+                <posy>-800</posy>
                 <width>1920</width>
                 <align>center</align>
                 <label>-</label>
