@@ -19,7 +19,7 @@
                 <animation effect="fade" start="100" end="0" time="160" tween="cubic" easing="inout" condition="Window.IsActive(DialogPVRChannelManager.xml)">Conditional</animation>
                 <control type="label" id="1000">
                     <posx>358</posx>
-                    <posy>120</posy>
+                    <posy>-800</posy>
                     <width>1491</width>
                     <align>center</align>
                     <label>$LOCALIZE[10034]</label>
