@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
+<zorder>2</zorder>
 	<defaultcontrol always="true">120</defaultcontrol>
 	<coordinates>
 		<posx>92</posx>
@@ -105,7 +106,7 @@
 			<control type="list" id="120">
 				<posx>30</posx>
 				<posy>88</posy>
-				<width>1262</width>
+				<width>1362</width>
 				<height>540</height>
 				<onleft>121</onleft>
 				<onright>121</onright>
@@ -116,9 +117,10 @@
 				<itemlayout width="1262" height="90">
 					<control type="image">
 						<posy>30</posy>
-						<width>1262</width>
+						<width>1362</width>
 						<height>60</height>
-						<texture border="1">separator2.png</texture>
+						<texture border="1">settings/settings_separator.png</texture>
+						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>	
 					</control>
 					<control type="image">
 						<posx>16</posx>
@@ -126,6 +128,7 @@
 						<width>40</width>
 						<height>40</height>
 						<texture>$INFO[ListItem.Thumb,subtitles/flags/,.png]</texture>
+						
 					</control>
 					<control type="image">
 						<posx>80</posx>
@@ -151,7 +154,7 @@
 					</control>
 					<control type="label">
 						<posx>80</posx>
-						<width>1000</width>
+						<width>1100</width>
 						<height>90</height>
 						<font>font15</font>
 						<label>$INFO[ListItem.Label2]</label>
@@ -160,7 +163,7 @@
 					</control>
 					<control type="label">
 						<posx>1080</posx>
-						<width>1000</width>
+						<width>1100</width>
 						<height>90</height>
 						<align>right</align>
 						<font>font15</font>
@@ -170,7 +173,7 @@
 					</control>
 					<control type="label">
 						<posx>155</posx>
-						<width>945</width>
+						<width>1045</width>
 						<height>90</height>
 						<font>font15</font>
 						<label>$INFO[ListItem.Label2]</label>
@@ -179,7 +182,7 @@
 					</control>
 					<control type="label">
 						<posx>1080</posx>
-						<width>945</width>
+						<width>1045</width>
 						<height>90</height>
 						<align>right</align>
 						<font>font15</font>
@@ -188,7 +191,7 @@
 						<visible>ListItem.property(sync) | ListItem.property(hearing_imp)</visible>
 					</control>
 					<control type="image">
-						<posx>1100</posx>
+						<posx>1200</posx>
 						<posy>0</posy>
 						<width>150</width>
 						<height>90</height>
@@ -202,10 +205,11 @@
 						<posy>30</posy>
 						<width>1262</width>
 						<height>60</height>
-						<texture border="1">separator2.png</texture>
+						<texture border="1">settings/settings_separator.png</texture>
+						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>	
 					</control>
 					<control type="image">
-						<width>1262</width>
+						<width>1362</width>
 						<height>90</height>
 						<texture border="5">views/tripanel/listselect_fo.png</texture>
 						<include>VisibleFadeEffect</include>
@@ -218,6 +222,7 @@
 						<width>40</width>
 						<height>40</height>
 						<texture>$INFO[ListItem.Thumb,subtitles/flags/,.png]</texture>
+						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>	
 					</control>
 					<control type="image">
 						<posx>80</posx>
@@ -248,8 +253,8 @@
 						<visible>!ListItem.property(sync) + !ListItem.property(hearing_imp)</visible>
 					</control>
 					<control type="label">
-						<posx>1080</posx>
-						<width>1000</width>
+						<posx>1180</posx>
+						<width>1100</width>
 						<height>90</height>
 						<align>right</align>
 						<font>font15</font>
@@ -265,7 +270,7 @@
 						<visible>ListItem.property(sync) | ListItem.property(hearing_imp)</visible>
 					</control>
 					<control type="label">
-						<posx>1080</posx>
+						<posx>1180</posx>
 						<width>945</width>
 						<height>90</height>
 						<align>right</align>
@@ -274,7 +279,7 @@
 						<visible>ListItem.property(sync) | ListItem.property(hearing_imp)</visible>
 					</control>
 					<control type="image">
-						<posx>1100</posx>
+						<posx>1200</posx>
 						<posy>0</posy>
 						<width>150</width>
 						<height>90</height>
@@ -284,7 +289,7 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="121">
-				<posx>1290</posx>
+				<posx>1390</posx>
 				<posy>88</posy>
 				<width>14</width>
 				<height>540</height>
@@ -307,9 +312,9 @@
 					<texture border="5">dialogs/default/inner2.png</texture>
 				</control>
 				<control type="list" id="150">
-					<left>1306</left>
+					<left>1406</left>
 					<top>88</top>
-					<width>400</width>
+					<width>300</width>
 					<height>450</height>
 					<onleft>120</onleft>
 					<onright>120</onright>
@@ -322,7 +327,8 @@
 							<posy>30</posy>
 							<width>400</width>
 							<height>60</height>
-							<texture border="1">separator2.png</texture>
+							<texture border="1">settings/settings_separator.png</texture>
+							<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>	
 						</control>
 						<control type="label">
 							<width>600</width>
@@ -339,7 +345,8 @@
 							<posy>30</posy>
 							<width>400</width>
 							<height>60</height>
-							<texture border="1">separator2.png</texture>
+							<texture border="1">settings/settings_separator.png</texture>
+							<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>	
 						</control>
 						<control type="image">
 							<width>400</width>
@@ -359,22 +366,22 @@
 						</control>
 					</focusedlayout>
 				</control>
-			<!--	<control type="button" id="160">
+				<control type="button" id="160">
 					<description>Manual Button</description>
 					<top>538</top>
-					<left>1306</left>
-					<texturefocus>views/tripanel/listselect_fo.png</texturefocus>
-					<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-					<texturenofocus>-</texturenofocus>					
-					<width>400</width>
-					<height>90</height>
-					<label>$LOCALIZE[24120]</label>
-					<font>font15</font>
+					<left>1406</left>
 					<onleft>120</onleft>
 					<onright>120</onright>
 					<onup>150</onup>
 					<ondown>150</ondown>
-				</control>-->
+					<texturefocus>views/tripanel/listselect_fo.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>				
+					<width>300</width>
+					<height>90</height>
+					<label>$LOCALIZE[24120]</label>
+					<font>font15</font>
+				</control>
 			</control>
 		</control>
 	</controls>

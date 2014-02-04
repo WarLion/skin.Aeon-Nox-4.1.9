@@ -58,9 +58,9 @@
                 <font>Font_ShowcaseMainLabel2</font>
             </control>
             <control type="grouplist" id="2">
-                <posx>387</posx>
+                <posx>428</posx>
                 <posy>180</posy>
-                <width>1145</width>
+                <width>1064</width>
                 <height>801</height>
                 <pagecontrol>30</pagecontrol>
                 <onup>2</onup>
@@ -69,7 +69,7 @@
                 <onright>9001</onright>
             </control>
             <control type="button" id="13">
-                <width>324</width>
+                <width>363</width>
                 <height>74</height>
                 <textoffsetx>18</textoffsetx>
                 <textoffsety>18</textoffsety>
@@ -84,7 +84,7 @@
                 <include>Default_SettingButton</include>
             </control>
             <control type="radiobutton" id="4">
-                <width>1469</width>
+                <width>1439</width>
                 <height>74</height>
                 <textoffsetx>30</textoffsetx>
                 <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
@@ -115,9 +115,9 @@
                 <textcolor>grey2</textcolor>
             </control>
             <control type="grouplist" id="9001">
-                <posx>1532</posx>
+                <posx>1491</posx>
                 <posy>180</posy>
-                <width>387</width>
+                <width>466</width>
                 <height>768</height>
                 <onup>9001</onup>
                 <ondown>9001</ondown>
@@ -125,7 +125,7 @@
                 <onright>9</onright>
                 <orientation>vertical</orientation>
                 <control type="button" id="10">
-                    <width>324</width>
+                    <width>364</width>
                     <height>74</height>
                     <textoffsetx>18</textoffsetx>
                     <textoffsety>18</textoffsety>
@@ -137,7 +137,7 @@
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 </control>
                 <control type="button" id="11">
-                    <width>324</width>
+                    <width>364</width>
                     <height>74</height>
                     <textoffsetx>18</textoffsetx>
                     <textoffsety>18</textoffsety>
@@ -149,7 +149,7 @@
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 </control>
                 <control type="button" id="12">
-                    <width>324</width>
+                    <width>364</width>
                     <height>74</height>
                     <textoffsetx>18</textoffsetx>
                     <textoffsety>18</textoffsety>

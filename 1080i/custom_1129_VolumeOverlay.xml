@@ -12,7 +12,7 @@
     </animation>
     <controls>
         <control type="group">
-            <posx>808</posx>
+            <posx>608</posx>
             <posy>900</posy>
             <width>764</width>
             <height>136</height>

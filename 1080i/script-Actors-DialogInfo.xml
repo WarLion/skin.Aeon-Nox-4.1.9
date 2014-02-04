@@ -65,7 +65,7 @@
                     <width>1042</width>
                     <height>854</height>
                     <control type="label">
-                        <posy>-22</posy>
+                        <posy>-850</posy>
                         <width>1050</width>
                         <label>$INFO[ListItem.Title]</label>
                         <font>Font_Reg57_Caps</font>
