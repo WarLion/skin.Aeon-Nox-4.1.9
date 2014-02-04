@@ -319,7 +319,7 @@
                     </control>
                     <control type="grouplist" id="12100">
                         <animation effect="fade" start="100" end="85" time="0" condition="true">Conditional</animation>
-                        <posx>1881</posx>
+                        <posx>1886</posx>
                         <orientation>vertical</orientation>
                         <visible>Skin.HasSetting(languageflag)</visible>
                         <control type="image">
