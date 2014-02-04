@@ -598,7 +598,7 @@
             <visible>Player.Paused + Skin.HasSetting(AlaskaPausedLabel)</visible>
             <include>Animation_CommonFade</include>
             <control type="label">
-                <posy>0</posy>
+                <posy>-150</posy>
                 <width>1920</width>
                 <align>center</align>
                 <label>$LOCALIZE[112]</label>

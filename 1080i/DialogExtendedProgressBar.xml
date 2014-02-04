@@ -2,6 +2,9 @@
 <window>
     <defaultcontrol></defaultcontrol>
     <include>Animation_DialogPopup</include>
+    <onload condition="Library.IsScanningVideo + Skin.HasSetting(UpdateArt.Enabled)">SetProperty(UpdateArt,1)</onload>
+    <onunload condition="!IsEmpty(Window.Property(UpdateArt)) + Skin.HasSetting(UpdateArt.Enabled)">XBMC.RunScript(script.artwork.downloader,silent=true)</onunload>
+    <onunload condition="!IsEmpty(Window.Property(UpdateArt)) + Skin.HasSetting(UpdateArt.Enabled)">ClearProperty(UpdateArt)</onunload>
     <onunload condition="!IsEmpty(Skin.String(SmartPlaylist1.Call))">$INFO[Skin.String(SmartPlaylist1.Call)]</onunload>
     <onunload condition="!IsEmpty(Skin.String(SmartPlaylist2.Call))">$INFO[Skin.String(SmartPlaylist2.Call)]</onunload>
     <onunload condition="!IsEmpty(Skin.String(SmartPlaylist3.Call))">$INFO[Skin.String(SmartPlaylist3.Call)]</onunload>

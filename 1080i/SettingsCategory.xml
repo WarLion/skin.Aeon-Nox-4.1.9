@@ -137,7 +137,6 @@
 			<textcolor>grey</textcolor>
 			<focusedcolor>white2</focusedcolor>
 			<align>right</align>
-			<label>10037</label>
 			<onclick>SettingsLevelChange</onclick>
 		</control>		
     </controls>

@@ -125,55 +125,56 @@
                 <posx>510</posx>
                 <posy>195</posy>
                 <control type="label" id="2">
+				    <posy>-230</posy>
                     <width>1125</width>
                     <label>-</label>
                     <font>Font_Reg32</font>
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label" id="3">
-                    <posy>52</posy>
+                    <posy>-170</posy>
                     <width>1125</width>
                     <label>-</label>
                     <font>Font_Reg32</font>
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label" id="4">
-                    <posy>105</posy>
+                    <posy>-110</posy>
                     <width>1425</width>
                     <label>-</label>
                     <font>Font_Reg32</font>
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label" id="5">
-                    <posy>158</posy>
+                    <posy>-50</posy>
                     <width>1275</width>
                     <label>-</label>
                     <font>Font_Reg32</font>
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label" id="6">
-                    <posy>210</posy>
+                    <posy>10</posy>
                     <width>1125</width>
                     <label>-</label>
                     <font>Font_Reg32</font>
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label" id="7">
-                    <posy>262</posy>
+                    <posy>70</posy>
                     <width>1125</width>
                     <label>-</label>
                     <font>Font_Reg32</font>
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label" id="8">
-                    <posy>315</posy>
+                    <posy>130</posy>
                     <width>1125</width>
                     <label>-</label>
                     <font>Font_Reg32</font>
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label" id="9">
-                    <posy>368</posy>
+                    <posy>190</posy>
                     <width>1125</width>
                     <label>-</label>
                     <font>Font_Reg32</font>

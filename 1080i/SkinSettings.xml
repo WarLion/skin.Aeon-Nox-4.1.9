@@ -154,6 +154,19 @@
                         <onclick>Skin.SetFile(Startup_Playlist_Path,.m3u|.xsp,special://profile/playlists/music/)</onclick>
                         <enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
                     </control>
+                    <control type="radiobutton" id="109">
+                        <label>Enable TvTunes</label>
+                        <include>Default_SettingRadioButton</include>
+                        <onclick>Skin.ToggleSetting(TVTunes.Enabled)</onclick>
+                        <selected>Skin.HasSetting(TVTunes.Enabled)</selected>
+                    </control>
+						<control type="radiobutton" id="110">
+							<include>Default_SettingRadioButton</include>
+							<selected>Skin.HasSetting(UpdateArt.Enabled)</selected>
+							<onclick>Skin.ToggleSetting(UpdateArt.Enabled)</onclick>
+							<label>$LOCALIZE[41294]</label>
+							<visible>System.HasAddon(script.artwork.downloader)</visible>
+						</control>														
                 </control>
                 <control type="grouplist" id="9002">
                     <posx>387</posx>
