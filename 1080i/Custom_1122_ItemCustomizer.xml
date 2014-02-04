@@ -128,7 +128,7 @@
                     <aligny>center</aligny>
                     <scrolltime>0</scrolltime>
                     <orientation>vertical</orientation>
-                    <visible>!Window.IsActive(1134)</visible>
+					<visible>!Window.IsActive(1134)</visible>
                     <include>Animation_VisibleChange200</include>
                     <control type="radiobutton" id="7">
                         <label>$LOCALIZE[24021]</label>
@@ -206,6 +206,12 @@
                         <onclick>SetProperty(ResetItem,true,1124)</onclick>
                         <onclick>Dialog.Close(1122)</onclick>
                     </control>
+                    <control type="button" id="32">
+                        <label>Exit</label>
+                        <include>Objects_CustomizerSettingsButton</include>
+						<onclick>Dialog.Close(1122)</onclick>
+                        <onclick>ActivateWindow(1124)</onclick>
+                    </control>					
                 </control>
             </control>
         </control>
