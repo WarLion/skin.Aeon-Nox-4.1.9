@@ -1160,6 +1160,10 @@ msgctxt "#31413"
 msgid "MONITOR"
 msgstr ""
 
+msgctxt "#31414"
+msgid "Local subtitle available"
+msgstr ""
+
 #empty strings from id 31414 to 31425
 
 msgctxt "#31426"

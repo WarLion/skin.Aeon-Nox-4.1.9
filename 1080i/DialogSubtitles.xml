@@ -22,14 +22,20 @@
 				<height>722</height>
                 <texture flipx="true">settings/settings_panelback.png</texture>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
-            </control>			
+            </control>	
+            <control type="image">
+				<width>1736</width>
+				<height>722</height>
+                <texture flipx="true">settings/settings_panelback.png</texture>
+                <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
+            </control>						
 			<control type="label" id="100">
 				<posx>30</posx>
 				<posy>32</posy>
 				<width>1676</width>
 				<height>40</height>
 				<font>font15_title</font>
-				<label>XBMC Subtitles</label>
+				<label>31414</label>
 				<align>center</align>
 				<textcolor>dialogheader</textcolor>
 				<font>font15_title</font>
@@ -89,7 +95,7 @@
 						<control type="label">
 							<width min="10" max="393">auto</width>
 							<height>48</height>
-							<label>XBMC Subtitles</label>
+							<label>31414</label>
 							<font>font15</font>
 							<textcolor>grey2</textcolor>
 						</control>
@@ -353,7 +359,7 @@
 						</control>
 					</focusedlayout>
 				</control>
-				<control type="button" id="160">
+			<!--	<control type="button" id="160">
 					<description>Manual Button</description>
 					<top>538</top>
 					<left>1306</left>
@@ -368,7 +374,7 @@
 					<onright>120</onright>
 					<onup>150</onup>
 					<ondown>150</ondown>
-				</control>
+				</control>-->
 			</control>
 		</control>
 	</controls>

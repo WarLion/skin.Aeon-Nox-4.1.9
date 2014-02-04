@@ -598,12 +598,12 @@
             <visible>Player.Paused + Skin.HasSetting(AlaskaPausedLabel)</visible>
             <include>Animation_CommonFade</include>
             <control type="label">
-                <posy>390</posy>
+                <posy>0</posy>
                 <width>1920</width>
                 <align>center</align>
                 <label>$LOCALIZE[112]</label>
                 <font>Font_BigPause</font>
-                <textcolor>44ffffff</textcolor>
+                <textcolor>33ffffff</textcolor>
             </control>
         </control>
     </include>
