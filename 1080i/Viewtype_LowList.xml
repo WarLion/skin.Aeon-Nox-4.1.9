@@ -42,7 +42,7 @@
                         </control>
                         <control type="label">
                             <posx>453</posx>
-                            <posy>733</posy>
+                            <posy>385</posy>
                             <width>985</width>
                             <label>$INFO[ListItem.Tagline]</label>
                             <font>Font_Reg33_Caps</font>

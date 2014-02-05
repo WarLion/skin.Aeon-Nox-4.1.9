@@ -386,7 +386,7 @@
                     <onclick condition="Container.Content(musicvideos)">RunScript(script.artwork.downloader,mode=custom,mediatype=musicvideo,silent=true,poster,clearlogo,fanart,extrafanart)</onclick>
                     <onclick condition="Container.Content(movies)">RunScript(script.artwork.downloader,mode=custom,mediatype=movie,silent=true,extrafanart,poster,fanart,banner,clearlogo,clearart,landscape,discart,extrathumbs)</onclick>
                 </control>
-                <include condition="!Skin.HasSetting(hideoptions)">ViewtypeSettingsButton</include>
+                <include condition="!Skin.HasSetting(hideoptions)">ViewtypeSettingsButton</include>			
             </control>
             <control type="grouplist">
                 <posx>2</posx>
@@ -605,7 +605,7 @@
                     <animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(1665)">Conditional</animation>
                     <include>MediaMenuIcons</include>
                     <visible>Control.IsVisible(1665)</visible>
-                </control>
+                </control>			
             </control>
             <include>QuickNavLabel</include>
         </control>

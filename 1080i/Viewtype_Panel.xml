@@ -130,7 +130,7 @@
                     <width>894</width>
                     <height>540</height>
                     <control type="label">
-                        <posy>-45</posy>
+                        <posy>-650</posy>
                         <width>800</width>
                         <label>$INFO[ListItem.Label]</label>
                         <font>Font_ShowcaseMainLabel2_Caps</font>
