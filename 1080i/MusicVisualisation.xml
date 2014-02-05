@@ -569,8 +569,8 @@
                     </control>
                 </control>
                 <control type="grouplist">
-                    <posx>610</posx>
-                    <posy>121</posy>
+                    <posx>1500</posx>
+                    <posy>101</posy>
                     <width>1920</width>
                     <height>150</height>
                     <itemgap>10</itemgap>
@@ -587,8 +587,8 @@
                     </control>
                 </control>
                 <control type="progress" id="23">
-                    <posx>1538</posx>
-                    <posy>208</posy>
+                    <posx>1498</posx>
+                    <posy>188</posy>
                     <width>320</width>
                     <height>15</height>
                     <info>Player.Progress</info>
