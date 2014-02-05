@@ -2125,7 +2125,7 @@
                     <animation effect="slide" end="-50,0" time="320" easing="inout" tween="circle" condition="Skin.HasSetting(smallshiftview)">Conditional</animation>
                     <control type="label">
                         <posx>195</posx>
-                        <posy>1005</posy>
+                        <posy>885</posy>
                         <width>1245</width>
                         <label>$INFO[ListItem.Property(genre)]</label>
                         <font>Font_Reg28_Caps</font>
@@ -2134,7 +2134,7 @@
                     </control>
                     <control type="label">
                         <posx>195</posx>
-                        <posy>1040</posy>
+                        <posy>960</posy>
                         <width>1245</width>
                         <label>$INFO[ListItem.Label]</label>
                         <font>Font_ShowcaseMainLabel2_Caps</font>
@@ -2407,7 +2407,7 @@
                 </control>
                 <control type="label">
                     <posx>510</posx>
-                    <posy>1005</posy>
+                    <posy>900</posy>
                     <width>900</width>
                     <align>center</align>
                     <label>$INFO[ListItem.Property(genre)]</label>
@@ -2418,7 +2418,7 @@
                 </control>
                 <control type="label">
                     <posx>510</posx>
-                    <posy>1040</posy>
+                    <posy>970</posy>
                     <width>900</width>
                     <align>center</align>
                     <label>$INFO[ListItem.Label]</label>
