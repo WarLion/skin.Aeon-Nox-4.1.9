@@ -114,7 +114,7 @@
 			<posy>700</posy>
 			<width>294</width>
 			<font>Font_Bold22_Caps</font>	
-			<label>Setting Level</label>		
+			<label>$LOCALIZE[32967]</label>		
 		</control>
 		<control type="button" id="20">
 			<posx>144</posx>
@@ -144,10 +144,10 @@
 				<left>467</left>
 				<top>885</top>
 				<width>1200</width>
-				<height>80</height>
-				<align>justify</align>
+				<height>67</height>
+				<align>left</align>
 				<textcolor>gray</textcolor>
-				<font>Font_Bold26_Caps</font>
+				<font>Font_Info</font>
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 			</control>		
     </controls>

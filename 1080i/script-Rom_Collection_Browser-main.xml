@@ -2606,7 +2606,7 @@
                         <control type="label">
                             <description>Consoles</description>
                             <posx>0</posx>
-                            <posy>30</posy>
+                            <posy>-620</posy>
                             <width>300</width>
                             <align>center</align>
                             <label>$ADDON[script.games.rom.collection.browser 50006]</label>
@@ -2683,7 +2683,7 @@
                         <control type="label">
                             <description>Genre</description>
                             <posx>315</posx>
-                            <posy>30</posy>
+                            <posy>-620</posy>
                             <width>300</width>
                             <align>center</align>
                             <label>$ADDON[script.games.rom.collection.browser 50001]</label>
@@ -2760,7 +2760,7 @@
                         <control type="label">
                             <description>Year</description>
                             <posx>630</posx>
-                            <posy>30</posy>
+                            <posy>-620</posy>
                             <width>300</width>
                             <align>center</align>
                             <label>$ADDON[script.games.rom.collection.browser 50000]</label>
@@ -2837,7 +2837,7 @@
                         <control type="label">
                             <description>Publisher</description>
                             <posx>945</posx>
-                            <posy>30</posy>
+                            <posy>-620</posy>
                             <width>300</width>
                             <align>center</align>
                             <label>$ADDON[script.games.rom.collection.browser 50002]</label>
@@ -2914,7 +2914,7 @@
                         <control type="label">
                             <description>Character</description>
                             <posx>1260</posx>
-                            <posy>30</posy>
+                            <posy>-620</posy>
                             <width>90</width>
                             <align>center</align>
                             <label>$ADDON[script.games.rom.collection.browser 50007]</label>

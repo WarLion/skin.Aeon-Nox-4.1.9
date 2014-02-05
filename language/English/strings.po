@@ -2262,3 +2262,6 @@ msgctxt "#32965"
 msgid "Update art (Landscape, Logo, ClearArt) after Database update"
 msgstr ""
 
+msgctxt "#32967"
+msgid "Setting Level"
+msgstr ""
