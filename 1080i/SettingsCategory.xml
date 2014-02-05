@@ -111,14 +111,14 @@
         <include>Furniture_NowPlayingWidget</include>
 		<control type="label">
 			<posx>194</posx>
-			<posy>710</posy>
+			<posy>700</posy>
 			<width>294</width>
 			<font>Font_Bold22_Caps</font>	
 			<label>Setting Level</label>		
 		</control>
 		<control type="button" id="20">
 			<posx>144</posx>
-			<posy>880</posy>
+			<posy>870</posy>
 			<width>294</width>
 			<onleft>ActivateWindow(1121)</onleft>
 			<onright>5</onright>
@@ -138,6 +138,17 @@
 			<focusedcolor>white2</focusedcolor>
 			<align>right</align>
 			<onclick>SettingsLevelChange</onclick>
-		</control>		
+		</control>	
+        <control type="textbox" id="6">
+				<description>description area</description>
+				<left>467</left>
+				<top>885</top>
+				<width>1200</width>
+				<height>80</height>
+				<align>justify</align>
+				<textcolor>gray</textcolor>
+				<font>Font_Bold26_Caps</font>
+				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+			</control>		
     </controls>
 </window>
