@@ -484,7 +484,7 @@
         <radioposx>565</radioposx>
     </include>
     <include name="Default_SettingButton">
-        <width>1469</width>
+        <width>1429</width>
         <height>74</height>
         <textoffsetx>30</textoffsetx>
         <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>

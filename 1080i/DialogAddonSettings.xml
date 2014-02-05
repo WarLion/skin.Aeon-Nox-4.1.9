@@ -84,15 +84,11 @@
                 <include>Default_SettingButton</include>
             </control>
             <control type="radiobutton" id="4">
-                <width>1439</width>
-                <height>74</height>
-                <textoffsetx>30</textoffsetx>
                 <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
                 <texturenofocus>settings/settings_radiobuttonoff.png</texturenofocus>
-                <font>Font_Reg32</font>
                 <textcolor>grey2</textcolor>
                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-                <radioposx>1000</radioposx>
+                <radioposx>920</radioposx>
             </control>
             <control type="spincontrolex" id="5">
                 <textoffsetx>30</textoffsetx>
