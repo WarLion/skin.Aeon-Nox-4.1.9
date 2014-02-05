@@ -2253,3 +2253,12 @@ msgstr ""
 msgctxt "#31965"
 msgid "Playlist widget"
 msgstr ""
+
+msgctxt "#32966"
+msgid "Enable TvTunes"
+msgstr ""
+
+msgctxt "#32965"
+msgid "Update art (Landscape, Logo, ClearArt) after Database update"
+msgstr ""
+

@@ -117,7 +117,7 @@
                 </control>
                 <control type="image">
                     <posx>1470</posx>
-                    <texture fallback="flags/aspectratio/defaultaspect.png">$INFO[VideoPlayer.VideoAspect,flags/aspectratio/,.png]</texture>
+                    <texture>$INFO[VideoPlayer.VideoAspect,flags/aspectratio/,.png]</texture>
                     <include>OSDFlagVars</include>
                     <animation effect="slide" end="-1305" condition="VideoPlayer.Content(files)">Conditional</animation>
                 </control>

@@ -12,7 +12,7 @@
             <control type="image">
                 <width>495</width>
                 <height>495</height>
-                <aspectratio aligny="bottom" align="center">keep</aspectratio>
+                <aspectratio align="center">keep</aspectratio>
                 <fadetime>400</fadetime>
                 <include condition="!Skin.HasSetting(vinylart) + !Skin.HasSetting(blurayart)">cdartlibrary</include>
                 <include condition="Skin.HasSetting(vinylart)">vinylartlibrary</include>
