@@ -5,16 +5,16 @@
   name="Aeon Nox Gotham"
   provider-name="Big_Noid|phil65">
   <requires>
-    <import addon="xbmc.gui" version="4.0.0"/>
+    <import addon="xbmc.gui" version="5.0.0"/>
     <import addon="script.favourites" version="3.2.4"/>
     <import addon="script.playlists" version="0.1.1"/>
-    <import addon="script.tv.show.next.aired" version="4.1.20"/>
-    <import addon="script.artwork.downloader" version="12.0.2"/>
-    <import addon="script.artistslideshow" version="1.3.2"/>
-    <import addon="script.globalsearch" version="0.2.5"/>
+    <import addon="script.tv.show.next.aired" version="5.0.7"/>
+    <import addon="script.artwork.downloader" version="12.0.23"/>
+    <import addon="script.artistslideshow" version="1.5.9"/>
+    <import addon="script.globalsearch" version="2.0.8"/>
 	<import addon="script.playalbum" version="0.0.6"/>    
 	<import addon="script.randomandlastitems" version="2.0.0"/>
-    <import addon="service.skin.widgets" version="0.0.13"/>
+    <import addon="service.skin.widgets" version="0.0.27"/>
   </requires>
   <extension
     point="xbmc.gui.skin"
@@ -24,36 +24,36 @@
     <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="be">Aeon Nox 4.0 by Big_Noid &amp; phil65</summary>
-    <summary lang="ca">Aeon Nox 4.0 per Big_Noid &amp; phil65</summary>
-    <summary lang="cs">Aeon Nox 4.0 od Big_Noid &amp; phil65</summary>
-    <summary lang="da">Aeon Nox 4.0 af Big_Noid &amp; phil65</summary>
-    <summary lang="de">Aeon Nox 4.0 by Big_Noid &amp; phil65</summary>
-    <summary lang="el">Aeon Nox 4.0 από τους Big_Noid &amp; phil65</summary>
-    <summary lang="en">Aeon Nox 4.0 by Big_Noid &amp; phil65</summary>
-    <summary lang="es">Aeon Nox 4.0 por Big_Noid &amp; phil65</summary>
-    <summary lang="es_MX">Aeon Nox 4.0 por Big_Noid &amp; phil65</summary>
-    <summary lang="et">Aeon Nox 4.0 autoritelt Big_Noid ja phil65</summary>
-    <summary lang="fa_IR">Aeon Nox 4.0 ةوسط Big_Noid و phil65</summary>
-    <summary lang="fi">Aeon Nox 4.0, tekijät Big_Noid &amp; phil65</summary>
-    <summary lang="fr">Aeon Nox 4.0 par Big_Noid &amp; phil65</summary>
-    <summary lang="gl">Aeon Nox 4.0 por Big_Noid e phil65</summary>
-    <summary lang="hr">Aeon Nox 4.0 od Big_Noid &amp; phil65</summary>
-    <summary lang="hu">Aeon Nox 4.0, készítette: Big_Noid &amp; phil65</summary>
-    <summary lang="is">Aeon Nox 4.0 eftir BigNoid &amp; phil65</summary>
-    <summary lang="it">Aeon Nox 4.0 by Big_Noid &amp; phil65</summary>
-    <summary lang="ko">Aeon Nox 4.0 by Big_Noid &amp; phil65</summary>
-    <summary lang="lt">Aeon Nox 4.0 nuo Big_Noid &amp; phil65</summary>
-    <summary lang="nl">Aeon Nox 4.0 door Big_Noid &amp; phil65</summary>
-    <summary lang="pl">Aeon Nox 4.0 autorstwa Big_Noid &amp; phil65</summary>
-    <summary lang="pt">Aeon Nox 4.0 de Big_Noid &amp; phil65</summary>
-    <summary lang="pt_BR">Aeon Nox 4.0 por Big_Noid &amp; phil65</summary>
-    <summary lang="ro">Aeon Nox 4.0 (autori: Big_Noid &amp; phil65)</summary>
-    <summary lang="ru">Aeon Nox 4.0. Авторы: Big_Noid и phil65</summary>
-    <summary lang="sv">Aeon Nox 4.0 av Big_Noid &amp; phil65</summary>
-    <summary lang="th">Aeon Nox 4.0 โดย Big_Noid &amp; phil65</summary>
-    <summary lang="zh">Big_Noid &amp; phil65开发的Aeon Nox 4.0皮肤</summary>
-    <summary lang="zh_TW">Big_Noid &amp; phil65 開發的Aeon Nox 4.0 佈景主題</summary>
+    <summary lang="be">Aeon Nox 4.1.9 Gotham by Big_Noid &amp; phil65</summary>
+    <summary lang="ca">Aeon Nox 4.1.9 Gotham per Big_Noid &amp; phil65</summary>
+    <summary lang="cs">Aeon Nox 4.1.9 Gotham od Big_Noid &amp; phil65</summary>
+    <summary lang="da">Aeon Nox 4.1.9 Gotham af Big_Noid &amp; phil65</summary>
+    <summary lang="de">Aeon Nox 4.1.9 Gotham by Big_Noid &amp; phil65</summary>
+    <summary lang="el">Aeon Nox 4.1.9 Gotham από τους Big_Noid &amp; phil65</summary>
+    <summary lang="en">Aeon Nox 4.1.9 Gotham by Big_Noid &amp; phil65</summary>
+    <summary lang="es">Aeon Nox 4.1.9 Gotham por Big_Noid &amp; phil65</summary>
+    <summary lang="es_MX">Aeon Nox 4.1.9 Gotham por Big_Noid &amp; phil65</summary>
+    <summary lang="et">Aeon Nox 4.1.9 Gotham autoritelt Big_Noid ja phil65</summary>
+    <summary lang="fa_IR">Aeon Nox 4.1.9 Gotham ةوسط Big_Noid و phil65</summary>
+    <summary lang="fi">Aeon Nox 4.1.9 Gotham, tekijät Big_Noid &amp; phil65</summary>
+    <summary lang="fr">Aeon Nox 4.1.9 Gotham par Big_Noid &amp; phil65</summary>
+    <summary lang="gl">Aeon Nox 4.1.9 Gotham por Big_Noid e phil65</summary>
+    <summary lang="hr">Aeon Nox 4.1.9 Gotham od Big_Noid &amp; phil65</summary>
+    <summary lang="hu">Aeon Nox 4.1.9 Gotham, készítette: Big_Noid &amp; phil65</summary>
+    <summary lang="is">Aeon Nox 4.1.9 Gotham eftir BigNoid &amp; phil65</summary>
+    <summary lang="it">Aeon Nox 4.1.9 Gotham by Big_Noid &amp; phil65</summary>
+    <summary lang="ko">Aeon Nox 4.1.9 Gotham by Big_Noid &amp; phil65</summary>
+    <summary lang="lt">Aeon Nox 4.1.9 Gotham nuo Big_Noid &amp; phil65</summary>
+    <summary lang="nl">Aeon Nox 4.1.9 Gotham door Big_Noid &amp; phil65</summary>
+    <summary lang="pl">Aeon Nox 4.1.9 Gotham autorstwa Big_Noid &amp; phil65</summary>
+    <summary lang="pt">Aeon Nox 4.1.9 Gotham de Big_Noid &amp; phil65</summary>
+    <summary lang="pt_BR">Aeon Nox 4.1.9 Gotham por Big_Noid &amp; phil65</summary>
+    <summary lang="ro">Aeon Nox 4.1.9 Gotham (autori: Big_Noid &amp; phil65)</summary>
+    <summary lang="ru">Aeon Nox 4.1.9 Gotham. Авторы: Big_Noid и phil65</summary>
+    <summary lang="sv">Aeon Nox 4.1.9 Gotham av Big_Noid &amp; phil65</summary>
+    <summary lang="th">Aeon Nox 4.1.9 Gotham โดย Big_Noid &amp; phil65</summary>
+    <summary lang="zh">Big_Noid &amp; phil65开发的Aeon Nox 4.1.9 Gotham皮肤</summary>
+    <summary lang="zh_TW">Big_Noid &amp; phil65 開發的Aeon Nox 4.1.9 Gotham 佈景主題</summary>
     <description lang="be">Aeon Nox stands for eye candy and customization. There are many different views and options to present your media in the way you want it. The Home window is fully customizable. You can add up to nine custom main menu items, each with five custom sub-menu items. You can change the look with different styles and themes, add or remove widgets and disable menu and sub-menu items you don't use. Be sure to checkout the changelog to find everything that was added or changed!</description>
     <description lang="cs">Aeon Nox je symbolem krásy a široké škály upravitelnosti. Umožňuje vám vyladit vzhled podle vašich představ. Úvodní obrazovku lze upravit ve všech aspektech. Můžete přidat až devět vlastních položek do hlavního menu, každá takto vytvořená položka může mít pět položek v pod-menu. Je možné si vybrat různé styly a témata, přidat nebo odebrat widgety a zakázat nepoužívané položky. Nezapomeňte si také přečíst seznam změn při aktualizaci, aby jste zjistily co je nového!</description>
     <description lang="da">Aston Nox står for eye candy og valgmuligheder. Der er mange forskellige visningstilstande og muligheder for at præsentere din mediesamling, som du ønsker det. Hjemmeskærmen er fuldt ud åben for tilpasning. Du kan tilføje op til ni valgfrie hovedmenu-elementer, hver med fem valgfrie undermenu-elementer. Du kan ændre udseendet med forskellige stilarter og temaer, tilføje eller fjerne widgets og deaktivere menu- og undermenu-elementer, som du ikke bruger. Husk at tjekke changelog'en for at se alt der er blevet tilføjet eller ændret!</description>
@@ -82,27 +82,27 @@
     <disclaimer lang="da">Aeon Nox er et skin baseret på designet til Aeon af djh_. En stor del af teksturerne, der bruges, stammer fra Aeon og dets mods. Al kredit til skaberne af disse skins og mods.</disclaimer>
     <disclaimer lang="de">Aeon Nox ist ein Skin, basierend auf dem Design Aeon von djh_. Ein großer Teil der verwendeten Texturen sind von Aeon und seinen Mods. Vielen Dank an die Macher der Skins und Mods.</disclaimer>
     <disclaimer lang="el">Το Aeon Nox είναι ένα κέλυφος βασισμένο στο σχεδιασμό του Aeon από τον djh_. Πολλά από τα γραφικά του προέρχονται από το Aeon και τα διάφορα mods του. Αποδίδεται αναγνώριση στους δημιουργούς αυτών των κελύφων και mods.</disclaimer>
-    <disclaimer lang="en">Only compatible with XBMC 12.0 Frodo. Not recommended for low-end platforms (Raspberry PI, AppleTV, Android devices)</disclaimer>
+    <disclaimer lang="en">Only compatible with XBMC 13.0 Gotham. Not recommended for low-end platforms (Raspberry PI, AppleTV, Android devices)</disclaimer>
     <disclaimer lang="es">Aeon Nox es una piel basada en el diseño de Aeon por djh_. Una gran cantidad de texturas utilizadas son de Aeon y ese mods. Todos los créditos a los productores de estas pieles y mods.</disclaimer>
     <disclaimer lang="es_MX">Aeon Nox es una skin basada en el diseño de Aeon por djh_. Una gran parte de las texturas usadas provienen de Aeon y sus modificaciones. Todo el crédito para los creadores de estas skins y sus modificaciones</disclaimer>
-    <disclaimer lang="fi">Yhteensopiva ainoastaan versioon XBMC 12.0 Frodo. Ei suositella heikkotehoisille alustoille (Raspberry PI, AppleTV, Android)</disclaimer>
+    <disclaimer lang="fi">Yhteensopiva ainoastaan versioon XBMC 13.0 Gotham. Ei suositella heikkotehoisille alustoille (Raspberry PI, AppleTV, Android)</disclaimer>
     <disclaimer lang="fr">Aeon Nox est un skin basée sur le design d'Eon par djh_. Une grande partie des textures utilisées sont d'Aeon et de ses mods. Tout le mérite aux responsables de ces skins et mods.</disclaimer>
     <disclaimer lang="hu">Az Aeon Nox felszín, az Aeon felszínen alapul :  djh_ -tól. A textúrák nagy része az Aeon felszínből , vagy módosított változatokból való . Köszönet azoknak, akit ezeket készítették.</disclaimer>
     <disclaimer lang="is">Aeon Nox er útlit byggt á hönnun Aeon eftir djh. Mikið af áferð er notuð frá Aeon og breytingum á því. Allt kredit fer til þessara hönnuða.</disclaimer>
     <disclaimer lang="it">Aeon Nox è una skin basata sul design Aeon di djh_. Molte delle texture usate sono recuperate da Aeon e le sue mods. Tutti i ringraziamenti vanno ai creatori di queste skin e mod.</disclaimer>
     <disclaimer lang="ko">Aeon Nox는 djh_가 디자인한 Aeon을 바탕으로 하였습니다. 사용된 텍스처들은 Aeon과 변형판들에서 가져왔습니다. All credits to the makers of these skins and mods.</disclaimer>
     <disclaimer lang="lt">Aeon Nox teminė išvaizda yra grindžiama Aeon djh_ dizaino. Daug tekstūrų ir modifikacijų nuo Aeon</disclaimer>
-    <disclaimer lang="nl">Alleen compatibel met XBMC 12.0 Frodo. Niet aangeraden voor low-end platformen (Raspberry PI, AppleTV, Android devices)</disclaimer>
+    <disclaimer lang="nl">Alleen compatibel met XBMC 13.0 Gotham. Niet aangeraden voor low-end platformen (Raspberry PI, AppleTV, Android devices)</disclaimer>
     <disclaimer lang="pl">Aeon Nox jest skórką opartą na projekcie Aeon autorstwa djh_. Wiele spośród użytych tekstur pochodzi z projektu Aeon i jego modów. Wszystkie słowa uznania należą się twórcom tych skórek i modów.</disclaimer>
-    <disclaimer lang="pt">É compatível apenas com o XBMC 12.0 Frodo. Não é recomendado para sistemas menos poderosos (Raspberry PI, AppleTV, dispositivos Android)</disclaimer>
+    <disclaimer lang="pt">É compatível apenas com o XBMC 13.0 Gotham. Não é recomendado para sistemas menos poderosos (Raspberry PI, AppleTV, dispositivos Android)</disclaimer>
     <disclaimer lang="pt_BR">Aeon Nox é uma skin baseado no design da Aeon por djh_. Uma grande quantidade de texturas utilizadas são da Aeon e seus mods. Todos os créditos para os criadores destas skins e mods.</disclaimer>
     <disclaimer lang="ru">Aeon Nox — это обложка, основанная на дизайне Aeon, разработанном djh_. Большое количество текстур взято из обложки Aeon и ее модификаций. Авторство принадлежит создателям этих обложек и модификаций.</disclaimer>
     <disclaimer lang="sv">Aeon Nox är ett skal baserat på Aeon-designen av djh_. En stor del texturer användes från Aeon och dess moddar. All förtjänst till skaparna av dessa skal och moddar.</disclaimer>
     <disclaimer lang="th">Aeon Nox เป็นสกินที่ใช้พื้นฐานการออกแบบจาก Aeon โดย djh_. ในทุกส่วนของพื้นผิวที่นำมาใช้ ล้วนมาจากAeonและmodของมัน. เครดิตทั้งหมดขอให้แก่ผู้สร้างสกินและmodนี้.</disclaimer>
     <disclaimer lang="zh">Aeon Nox是在djh_的Aeon皮肤设计思路上发展而来。许多纹理图片来源于Aeon及其修改版。感谢这些皮肤和修改版的开发者。</disclaimer>
     <platform>all</platform>
-    <source>https://github.com/BigNoid/Aeon-Nox</source>
-    <forum>http://forum.xbmc.org/forumdisplay.php?fid=142</forum>
-    <website>https://github.com/BigNoid/Aeon-Nox</website>
+    <source>https://github.com/WarLion/skin.Aeon-Nox-4.1.9</source>
+    <forum>http://forum.xbmc.org/showthread.php?tid=185290</forum>
+    <website>https://github.com/WarLion/skin.Aeon-Nox-4.1.9</website>
   </extension>
 </addon>
