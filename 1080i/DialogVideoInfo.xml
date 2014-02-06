@@ -750,9 +750,9 @@
                     <width>50</width>
                     <height>88</height>
                     <onup>5000</onup>
-                    <onleft>5000</onleft>
-                    <onright>5000</onright>
-                    <ondown>5000</ondown>
+                    <onleft>60</onleft>
+                    <onright>60</onright>
+                    <ondown>5055</ondown>
                     <visible>!ControlGroup(6000).HasFocus</visible>
                 </control>
                 <control type="image">
@@ -1415,7 +1415,7 @@
                     <onleft>5000</onleft>
                     <onright>5000</onright>
                     <onup>600</onup>
-                    <ondown>5055</ondown>
+                    <ondown>60</ondown>
                     <orientation>horizontal</orientation>
                     <scrolltime tween="quadratic">200</scrolltime>
                     <control type="button" id="8">

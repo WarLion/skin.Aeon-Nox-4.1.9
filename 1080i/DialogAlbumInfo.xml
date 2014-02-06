@@ -196,13 +196,13 @@
                 </control>
                 <control type="spincontrol" id="60">
                     <posx>1203</posx>
-                    <posy>-143</posy>
+                    <posy>-123</posy>
                     <width>50</width>
                     <height>88</height>
                     <onup>1500</onup>
-                    <onleft>1500</onleft>
-                    <onright>1500</onright>
-                    <ondown>1500</ondown>
+                    <onleft>60</onleft>
+                    <onright>60</onright>
+                    <ondown>9000</ondown>
                     <visible>ControlGroup(1500).HasFocus(13) | ControlGroup(1500).HasFocus(14)</visible>
                 </control>
                 <control type="group">
@@ -602,7 +602,7 @@
             <onup>5000</onup>
             <onleft>9000</onleft>
             <onright>1500</onright>
-            <ondown>5000</ondown>
+            <ondown>60</ondown>
             <orientation>horizontal</orientation>
             <itemgap>50</itemgap>
             <control type="button" id="20">
@@ -2137,7 +2137,7 @@
                         <height>1080</height>
                         <orientation>vertical</orientation>
                         <scroll>true</scroll>
-                        <onright>5000</onright>
+                        <onright>1500</onright>
                         <onup>9003</onup>
                         <ondown>3000</ondown>
                         <onback>5000</onback>

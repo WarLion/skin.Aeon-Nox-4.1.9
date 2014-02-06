@@ -21,7 +21,7 @@
             <height>722</height>
             <texture>osd/osd_settings_back.png</texture>
             <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
-        </control>
+        </control>	
         <control type="image">
             <posx>75</posx>
             <posy>52</posy>
@@ -48,7 +48,7 @@
         <control type="grouplist" id="450">
             <posx>-40</posx>
             <posy>638</posy>
-            <width>960</width>
+            <width>1000</width>
             <height>135</height>
             <align>center</align>
             <onup>11</onup>
@@ -85,6 +85,16 @@
                 <label>296</label>
                 <textcolor>grey2</textcolor>
                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+            </control>
+			<control type="button" id="5">
+                <width>180</width>
+                <height>60</height>
+                <align>center</align>
+                <label>13012</label>
+				<onclick>PreviousMenu</onclick>
+                <textcolor>grey2</textcolor>
+                <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+				<visible>system.getbool(input.enablemouse)</visible>
             </control>
         </control>
         <control type="label">
