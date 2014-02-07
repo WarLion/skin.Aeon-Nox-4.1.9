@@ -12,15 +12,12 @@
     </animation>
     <controls>
         <control type="group">
-            <posx>608</posx>
-            <posy>900</posy>
+            <posx>-300r</posx>
+            <posy>800</posy>
             <width>764</width>
             <height>136</height>
-            <animation type="Conditional" reversible="false" condition="!Window.IsVisible(volumebar)">
-                <effect type="slide" end="976" time="640" delay="2400" tween="cubic" />
-            </animation>
             <animation effect="slide" end="0,-870" time="0" condition="True">Conditional</animation>
-            <animation effect="zoom" start="100" end="70" center="960,1080" time="640" easing="inout" tween="circle" condition="true">Conditional</animation>
+            <animation effect="zoom" start="100" end="60" center="960,1080" time="640" easing="inout" tween="circle" condition="true">Conditional</animation>
             <control type="image">
                 <posx>-4</posx>
                 <posy>-4</posy>

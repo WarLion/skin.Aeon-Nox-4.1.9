@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<backgroundcolor>backgroundcolor</backgroundcolor>
+	<defaultcontrol always="true">51</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<include>Animation_WindowFade250</include>
+	<controls>
+		<include>CommonSettingsBackground</include>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<include>FullscreenDimensions</include>
+			<aspectratio>scale</aspectratio>
+			<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+			<visible>!Skin.HasSetting(HideBackGroundFanart) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
+			<!-- include: Window_OpenClose_Animation -->		
+		</control>	
+			<include>CommonMediaPlayingBackground</include>
+			<include>Furniture_SettingsFloor</include>
+            <control type="image">
+                <posy>-207</posy>
+                <width>1920</width>
+                <height>1080</height>
+                <texture>common/bgcolor.png</texture>
+                <animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
+                <animation effect="fade" end="100" time="440" delay="160">Visible</animation>
+                <animation effect="fade" start="100" end="0" time="80">Hidden</animation>
+                <visible>Skin.HasSetting(darkinfopane-ve)</visible>
+            </control>			
+            <control type="image">
+                <posx>-105</posx>
+                <width>696</width>
+                <height>1080</height>
+                <texture>views/showcase_vignette.png</texture>
+                <colordiffuse>vignette</colordiffuse>
+            </control>
+            <control type="image">
+                <posx>1329</posx>
+                <width>696</width>
+                <height>1080</height>
+                <texture flipx="true">views/showcase_vignette.png</texture>
+                <colordiffuse>vignette</colordiffuse>
+            </control>
+            <include>PanelSpot</include>
+            <include>Neon_Floor</include>
+			<control type="group">
+				<posy>-15</posy>
+				<control type="image">
+                    <posx>112</posx>
+                    <posy>82</posy>
+                    <width>1695</width>
+                    <height>1040</height>
+                    <texture>wall/wall_bg_glow.png</texture>
+                    <include>PanelGlowFade</include>
+                    <colordiffuse>$VAR[DefaultAreaColorVar]</colordiffuse>
+                    <visible>!Skin.HasSetting(DisableGlowbar)</visible>
+                </control>
+                <control type="image">
+                    <posx>112</posx>
+                    <posy>82</posy>
+                    <width>1695</width>
+                    <height>1040</height>
+                    <texture>wall/wall_bg.png</texture>
+                    <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
+                </control>
+                <control type="image">
+                    <posx>112</posx>
+                    <posy>82</posy>
+                    <width>1695</width>
+                    <height>1012</height>
+                    <colordiffuse>white</colordiffuse>
+                    <texture>views/grid-ve.png</texture>
+                </control>				
+                <control type="image">
+                    <posx>112</posx>
+                    <posy>108</posy>
+                    <width>1695</width>
+                    <height>1012</height>
+                    <texture>wall/wall_bg_reflection.png</texture>
+                </control>
+			</control>
+			
+			        <control type="group">
+			<posx>140</posx>
+			<posy>85</posy>
+			<width>1850</width>
+			<height>50</height>
+			<control type="label" id="80">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width min="0" max="1850">auto</width>
+				<height>30</height>
+				<font>Font10</font>
+				<textcolor>grey2</textcolor>
+				<scroll>false</scroll>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$ADDON[script.videoextras 32001] - $INFO[ListItem.Title]</label>
+			</control>
+		</control>
+		<control type="group">
+
+			<control type="list" id="51">
+				<posx>122</posx>
+				<posy>125</posy>
+				<width>1220</width>
+				<height>620</height>
+				<onright>60</onright>
+				<onup>51</onup>
+				<ondown>51</ondown>
+				<viewtype label="537">list</viewtype>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<itemlayout width="1210" height="90">
+					<control type="image">
+						<left>30</left>
+						<top>32</top>
+						<width>1140</width>
+						<height>60</height>
+						<texture border="1">settings/settings_separator.png</texture>
+						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>	
+					</control>			
+					<control type="label">
+						<posx>60</posx>
+						<posy>20</posy>
+						<width>1000</width>
+						<height>40</height>
+						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<posx>1160</posx>
+						<posy>20</posy>
+						<width>100</width>
+						<height>40</height>
+						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<visible>!IsEmpty(ListItem.Label2)</visible>
+						<label>$INFO[ListItem.Label2]</label>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>20</posy>
+						<width>45</width>
+						<height>45</height>
+						<texture>dialogs/circle/46.png</texture>
+						<visible>ListItem.IsResumable</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>20</posy>
+						<width>45</width>
+						<height>45</height>
+						<!-- Default XBMC Icon -->
+						<texture>OverlayWatched.png</texture>
+						<visible>IntegerGreaterThan(ListItem.PlayCount,0)</visible>
+					</control>
+				</itemlayout>
+				<focusedlayout width="1210" height="90">
+					<control type="image">
+						<left>30</left>
+						<top>32</top>
+						<width>1140</width>
+						<height>60</height>
+						<texture border="1">settings/settings_separator.png</texture>
+						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>	
+					</control>	
+					<control type="image">
+					<top>0</top>
+						<width>1210</width>
+						<height>90</height>
+						<texture border="5">views/tripanel/listselect_fo.png</texture>
+						<visible>Control.HasFocus(51)</visible>
+						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+					</control>								
+					<control type="label">
+						<posx>60</posx>
+						<posy>20</posy>
+						<width>1000</width>
+						<height>40</height>
+						<font>font15</font>
+						<textcolor>white</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>>				
+					<control type="label">
+						<posx>1160</posx>
+						<posy>20</posy>
+						<width>100</width>
+						<height>40</height>
+						<font>font15</font>
+						<textcolor>white</textcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<visible>!IsEmpty(ListItem.Label2)</visible>
+						<label>$INFO[ListItem.Label2]</label>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>20</posy>
+						<width>45</width>
+						<height>45</height>
+						<texture>dialogs/circle/46.png</texture>
+						<visible>ListItem.IsResumable</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>20</posy>
+						<width>45</width>
+						<height>45</height>
+						<!-- Default XBMC Icon -->
+						<texture>OverlayWatched.png</texture>
+						<visible>IntegerGreaterThan(ListItem.PlayCount,0)</visible>
+					</control>
+				</focusedlayout>
+			</control>
+				        <control type="group">
+			<control type="image">
+				<posx>1345</posx>
+				<posy>377</posy>
+				<width>439</width>
+				<height>565</height>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+			</control>
+			<control type="image">
+				<posx>1345</posx>
+				<posy>115</posy>
+				<width>439</width>
+				<height>257</height>
+				<aspectratio align="center">keep</aspectratio>
+				<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+			</control>				
+		</control>
+								
+			<control type="scrollbar" id="60">
+				<posx>1330</posx>
+				<posy>80</posy>
+				<onleft>51</onleft>			
+				<width>25</width>
+				<height>1000</height>
+				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar.png</texturesliderbarfocus>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+				<visible>Control.IsVisible(51)</visible>
+			</control>
+				<control type="image">
+					<posy>1012</posy>
+					<width>1920</width>
+					<height>72</height>
+					<texture>views/showcase_gradient.png</texture>
+				</control>
+			<include>Animation_HideBreadCrumbs</include>
+            <include>Breadcrumbs_BackBar</include>
+            <include>BreadcrumbsContent</include>
+			<control type="grouplist">
+                <width>1920</width>
+                <align>center</align>
+                <aligny>center</aligny>
+                <itemgap>10</itemgap>
+                <orientation>horizontal</orientation>
+                <visible>!Skin.HasSetting(ClassicTopBar)</visible>
+                <animation effect="fade" time="320" delay="320">Visible</animation>
+                <animation effect="fade" time="320">Hidden</animation>
+                <control type="label">
+                    <include>BreadcrumbsLabel</include>
+                </control>
+            </control>
+            <include>Breadcrumbs_Furniture</include>
+        <include>Furniture_NowPlayingWidget</include>
+		</control>
+	</controls>
+</window>

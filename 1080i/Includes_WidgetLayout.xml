@@ -6597,6 +6597,7 @@
             <font>Font_Reg29</font>
             <textcolor>grey</textcolor>
         </control>
+       
     </include>
     <include name="WidgetLogoLayout">
         <control type="image">

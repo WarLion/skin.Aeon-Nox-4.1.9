@@ -4,8 +4,7 @@
     <onload>ClearProperty(ActorFade)</onload>
     <onload>AlarmClock(ActorFade,SetProperty(ActorFade,true),00:02,silent)</onload>
     <onload condition="System.HasAddon(script.videolanguage) + [Container.Content(movies) | Container.Content(episodes)]">RunScript(script.videolanguage,movieid=$INFO[ListItem.DBID])</onload>
-    <onload condition="System.HasAddon(script.dvdextras) + Container.Content(movies)">XBMC.RunScript(script.dvdextras,$ESCINFO[ListItem.FilenameAndPath],start_theme)</onload>
-    <onunload condition="System.HasAddon(script.dvdextras) + Container.Content(movies)">XBMC.RunScript(script.dvdextras,stop_theme)</onunload>
+	<onload condition="System.HasAddon(script.videoextras)">XBMC.RunScript(script.videoextras,hasExtras,flag,"$INFO[ListItem.FilenameAndPath]")</onload>
     <onunload>ClearProperty(FanartZoom,movieinformation)</onunload>
     <allowoverlay>no</allowoverlay>
     <controls>
@@ -1456,12 +1455,12 @@
                         <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$ESCINFO[ListItem.Label] Trailer,return)</onclick>
                         <visible>Container.Content(movies) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]</visible>
                     </control>
-                    <control type="button" id="100">
+                    <control type="button" id="105">
                         <description>Extras</description>
                         <include>DialogVideoInfoButton</include>
                         <label>$LOCALIZE[31020]</label>
-                        <onclick>XBMC.RunScript(script.dvdextras,$ESCINFO[ListItem.FilenameAndPath])</onclick>
-                        <visible>[Container.Content(movies) | Container.Content(episodes)] + System.HasAddon(script.dvdextras)</visible>
+                        <onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
+                        <visible>System.HasAddon(script.videoextras) + !IsEmpty(Window.Property(flag)) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(TVShows)]</visible>
                     </control>
                     <control type="grouplist" id="6100">
                         <width>254.5</width>
