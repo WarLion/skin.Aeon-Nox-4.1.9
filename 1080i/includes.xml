@@ -36,6 +36,7 @@
     <include file="Includes_CustomizerWindow.xml" />
     <include file="Viewtype_FullscreenPanel.xml" />
     <include file="Includes_NextAired.xml" />
+	 <include file="Includes_VideoExtras.xml" />
     <constant name="AutoScrollTime">2000</constant>
     <include name="Dialogs_Group">
         <posx>579</posx>
@@ -484,7 +485,7 @@
         <radioposx>565</radioposx>
     </include>
     <include name="Default_SettingButton">
-        <width>1429</width>
+        <width>1449</width>
         <height>74</height>
         <textoffsetx>30</textoffsetx>
         <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
@@ -1477,6 +1478,7 @@
     <include name="ColorConfigDefaultTheme">
         <onload condition="Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_music)])</onload>
         <onload condition="Window.IsActive(videos) | Window.IsActive(script-NextAired-TVGuide.xml)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_videolibrary)])</onload>
+		<onload condition="Window.IsActive(videos) | Window.IsActive(script-videoextras-main.xml)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_videolibrary)])</onload>
         <onload condition="Window.IsActive(PVR)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_PVR)])</onload>
         <onload condition="Window.IsActive(pictures)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_pictures)])</onload>
         <onload condition="Window.IsActive(1115)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_featured)])</onload>
@@ -1489,6 +1491,7 @@
         <onload condition="Window.IsActive(weather)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_weather)])</onload>
         <onload condition="Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)">Skin.SetString(font_color,$INFO[Skin.String(font_music)])</onload>
         <onload condition="Window.IsActive(videos) | Window.IsActive(script-NextAired-TVGuide.xml)">Skin.SetString(font_color,$INFO[Skin.String(font_videolibrary)])</onload>
+		<onload condition="Window.IsActive(videos) | Window.IsActive(script-videoextras-main.xml)">Skin.SetString(font_color,$INFO[Skin.String(font_videolibrary)])</onload>
         <onload condition="Window.IsActive(PVR)">Skin.SetString(font_color,$INFO[Skin.String(font_PVR)])</onload>
         <onload condition="Window.IsActive(pictures)">Skin.SetString(font_color,$INFO[Skin.String(font_pictures)])</onload>
         <onload condition="Window.IsActive(1115)">Skin.SetString(font_color,$INFO[Skin.String(font_featured)])</onload>
@@ -1503,6 +1506,7 @@
     <include name="ColorConfigWhiteTheme">
         <onload condition="Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_white_music)])</onload>
         <onload condition="Window.IsActive(videos) | Window.IsActive(script-NextAired-TVGuide.xml)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_white_videolibrary)])</onload>
+		<onload condition="Window.IsActive(videos) | Window.IsActivescript-videoextras-main.xml)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_white_videolibrary)])</onload>
         <onload condition="Window.IsActive(PVR)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_white_PVR)])</onload>
         <onload condition="Window.IsActive(pictures)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_white_pictures)])</onload>
         <onload condition="Window.IsActive(1115)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_white_featured)])</onload>
@@ -1515,6 +1519,7 @@
         <onload condition="Window.IsActive(weather)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_white_weather)])</onload>
         <onload condition="Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)">Skin.SetString(font_color,$INFO[Skin.String(white_font_music)])</onload>
         <onload condition="Window.IsActive(videos) | Window.IsActive(script-NextAired-TVGuide.xml)">Skin.SetString(font_color,$INFO[Skin.String(white_font_videolibrary)])</onload>
+		<onload condition="Window.IsActive(videos) | Window.IsActive(script-videoextras-main.xml)">Skin.SetString(font_color,$INFO[Skin.String(white_font_videolibrary)])</onload>
         <onload condition="Window.IsActive(PVR)">Skin.SetString(font_color,$INFO[Skin.String(white_font_PVR)])</onload>
         <onload condition="Window.IsActive(pictures)">Skin.SetString(font_color,$INFO[Skin.String(white_font_pictures)])</onload>
         <onload condition="Window.IsActive(1115)">Skin.SetString(font_color,$INFO[Skin.String(white_font_featured)])</onload>
