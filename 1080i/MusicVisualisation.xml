@@ -545,7 +545,7 @@
                     </control>
                     <control type="group">
                         <visible>!IsEmpty(MusicPlayer.Genre)</visible>
-                        <posx>160</posx>
+                        <posx>140</posx>
                         <control type="image">
                             <posx>1080</posx>
                             <posy>75</posy>
@@ -569,7 +569,7 @@
                     </control>
                 </control>
                 <control type="grouplist">
-                    <posx>1500</posx>
+                    <posx>1490</posx>
                     <posy>101</posy>
                     <width>1920</width>
                     <height>150</height>

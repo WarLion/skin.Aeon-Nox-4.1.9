@@ -2856,7 +2856,7 @@
                             <visible>!IsEmpty(Control.GetLabel(12020))</visible>
                         </control>
                         <control type="label">
-                            <width min="15" max="500">auto</width>
+                            <width min="150" max="500">auto</width>
                             <height>36</height>
                             <textoffsetx>15</textoffsetx>
                             <label>$INFO[Window(home).Property(Year),• , • ]</label>
@@ -2865,7 +2865,7 @@
                             <visible>!IsEmpty(Control.GetLabel(12020))</visible>
                         </control>
                         <control type="label">
-                            <width min="15" max="500">auto</width>
+                            <width min="140" max="500">auto</width>
                             <height>36</height>
                             <textoffsetx>15</textoffsetx>
                             <label>$INFO[Window(home).Property(Year),, • ]</label>
