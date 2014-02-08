@@ -710,7 +710,7 @@
                 <control type="group">
                     <visible>IsEmpty(Window(home).Property(LiveTVShowEpgNext))</visible>
                     <control type="label">
-                        <posy>15</posy>
+                        <posy>-690</posy>
                         <width>1320</width>
                         <label>$INFO[VideoPlayer.Title]</label>
                         <font>Font_Reg57_Caps</font>
@@ -826,7 +826,7 @@
                     </control>
                 </control>
                 <control type="label">
-                    <posy>62</posy>
+                    <posy>-790</posy>
                     <width>1050</width>
                     <label>$INFO[VideoPlayer.ChannelName]</label>
                     <font>Font_Reg38</font>
@@ -884,7 +884,7 @@
                     <control type="image">
                         <posy>-10</posy>
                         <width>132</width>
-                        <height>90</height>
+                        <height>70</height>
                         <aspectratio aligny="center" align="center">keep</aspectratio>
                         <texture fallback="flags/source/defaultsource.png">$INFO[VideoPlayer.VideoCodec,flags/source/,.png]</texture>
                         <colordiffuse>FF7c7c7c</colordiffuse>
@@ -894,9 +894,9 @@
                         <include>Furniture_FlagUpright</include>
                     </control>
                     <control type="image">
-                        <posy>-18</posy>
+                        <posy>0</posy>
                         <width>161</width>
-                        <height>109</height>
+                        <height>70</height>
                         <aspectratio aligny="center" align="center">keep</aspectratio>
                         <texture fallback="flags/audio/defaultsound.png">$INFO[VideoPlayer.AudioCodec,flags/audio/]$INFO[VideoPlayer.AudioChannels,,.png]</texture>
                         <colordiffuse>FF7c7c7c</colordiffuse>
@@ -915,9 +915,9 @@
                         <include>Furniture_FlagUpright</include>
                     </control>
                     <control type="image">
-                        <posy>-10</posy>
+                        <posy>0</posy>
                         <width>132</width>
-                        <height>90</height>
+                        <height>70</height>
                         <aspectratio aligny="center" align="center">keep</aspectratio>
                         <texture fallback="flags/aspectratio/defaultaspect.png">$INFO[VideoPlayer.VideoAspect,flags/aspectratio/,.png]</texture>
                         <colordiffuse>FF7c7c7c</colordiffuse>

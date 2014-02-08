@@ -94,7 +94,7 @@
                     </control>
                     <control type="label">
                         <posx>195</posx>
-                        <posy>22</posy>
+                        <posy>-60</posy>
                         <width>450</width>
                         <label>$INFO[ListItem.Label]</label>
                         <font>Font_Bold33</font>
@@ -180,7 +180,7 @@
                     </control>
                     <control type="label">
                         <posx>195</posx>
-                        <posy>22</posy>
+                        <posy>-60</posy>
                         <width>450</width>
                         <label>$INFO[ListItem.Label]</label>
                         <font>Font_Bold33</font>
