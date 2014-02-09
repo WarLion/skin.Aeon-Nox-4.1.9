@@ -711,54 +711,19 @@
             <height>118</height>
             <font>Font_Reg57</font>
             <textcolor>00FFFFFF</textcolor>
-            <label>$INFO[Window(Home).Property(MyPicsDBRandom.1.Path)]</label>
-            <label>$INFO[Window(Home).Property(MyPicsDBRandom.2.Path)]</label>
-            <label>$INFO[Window(Home).Property(MyPicsDBRandom.3.Path)]</label>
-            <label>$INFO[Window(Home).Property(MyPicsDBRandom.4.Path)]</label>
-            <label>$INFO[Window(Home).Property(MyPicsDBRandom.5.Path)]</label>
-            <label>$INFO[Window(Home).Property(MyPicsDBRandom.6.Path)]</label>
-            <label>$INFO[Window(Home).Property(MyPicsDBRandom.7.Path)]</label>
-            <label>$INFO[Window(Home).Property(MyPicsDBRandom.8.Path)]</label>
-            <label>$INFO[Window(Home).Property(MyPicsDBRandom.9.Path)]</label>
-            <label>$INFO[Window(Home).Property(MyPicsDBRandom.10.Path)]</label>
-            <visible>Stringcompare(Control.GetLabel(4322),randompics)</visible>
-        </control>
-        <control type="fadelabel" id="4324">
-            <pauseatend>7500</pauseatend>
-            <width>11479</width>
-            <height>118</height>
-            <font>Font_Reg57</font>
-            <textcolor>00FFFFFF</textcolor>
-            <label>$INFO[Window(Home).Property(MyPicsDBLatest.1.Path)]</label>
-            <label>$INFO[Window(Home).Property(MyPicsDBLatest.2.Path)]</label>
-            <label>$INFO[Window(Home).Property(MyPicsDBLatest.3.Path)]</label>
-            <label>$INFO[Window(Home).Property(MyPicsDBLatest.4.Path)]</label>
-            <label>$INFO[Window(Home).Property(MyPicsDBLatest.5.Path)]</label>
-            <label>$INFO[Window(Home).Property(MyPicsDBLatest.6.Path)]</label>
-            <label>$INFO[Window(Home).Property(MyPicsDBLatest.7.Path)]</label>
-            <label>$INFO[Window(Home).Property(MyPicsDBLatest.8.Path)]</label>
-            <label>$INFO[Window(Home).Property(MyPicsDBLatest.9.Path)]</label>
-            <label>$INFO[Window(Home).Property(MyPicsDBLatest.10.Path)]</label>
-            <visible>Stringcompare(Control.GetLabel(4322),recentpics)</visible>
-        </control>
-        <control type="fadelabel" id="4324">
-            <pauseatend>7500</pauseatend>
-            <width>11479</width>
-            <height>118</height>
-            <font>Font_Reg57</font>
-            <textcolor>00FFFFFF</textcolor>
-            <label>http://dailybabenews.com/wp-content/uploads/2012/01/babe_01-$INFO[System.Date(dd)]-2012.jpg</label>
-            <label>http://dailybabenews.com/wp-content/uploads/2012/02/babe_02-$INFO[System.Date(dd)]-2012.jpg</label>
-            <label>http://dailybabenews.com/wp-content/uploads/2012/03/babe_03-$INFO[System.Date(dd)]-2012.jpg</label>
-            <label>http://dailybabenews.com/wp-content/uploads/2012/04/babe_04-$INFO[System.Date(dd)]-2012.jpg</label>
-            <label>http://dailybabenews.com/wp-content/uploads/2012/05/babe_05-$INFO[System.Date(dd)]-2012.jpg</label>
-            <label>http://dailybabenews.com/wp-content/uploads/2012/06/babe_06-$INFO[System.Date(dd)]-2012.jpg</label>
-            <label>http://dailybabenews.com/wp-content/uploads/2012/07/babe_07-$INFO[System.Date(dd)]-2012.jpg</label>
-            <label>http://dailybabenews.com/wp-content/uploads/2012/08/babe_08-$INFO[System.Date(dd)]-2012.jpg</label>
-            <label>http://dailybabenews.com/wp-content/uploads/2012/09/babe_09-$INFO[System.Date(dd)]-2012.jpg</label>
-            <label>http://dailybabenews.com/wp-content/uploads/2012/10/babe_10-$INFO[System.Date(dd)]-2012.jpg</label>
-            <label>http://dailybabenews.com/wp-content/uploads/2012/11/babe_11-$INFO[System.Date(dd)]-2012.jpg</label>
-            <label>http://dailybabenews.com/wp-content/uploads/2012/12/babe_12-$INFO[System.Date(dd)]-2012.jpg</label>
+            <label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/$INFO[System.Date(yyyy)]/$INFO[System.Date(mm)]/$INFO[System.Date(dd)]/1.jpg</label>
+			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/01/$INFO[System.Date(dd)]/1.jpg</label>
+			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/02/$INFO[System.Date(dd)]/1.jpg</label>
+			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/03/$INFO[System.Date(dd)]/1.jpg</label>
+			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/04/$INFO[System.Date(dd)]/1.jpg</label>
+			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/05/$INFO[System.Date(dd)]/1.jpg</label>
+			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/06/$INFO[System.Date(dd)]/1.jpg</label>
+			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/07/$INFO[System.Date(dd)]/1.jpg</label>
+			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/08/$INFO[System.Date(dd)]/1.jpg</label>
+			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/09/$INFO[System.Date(dd)]/1.jpg</label>
+			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/10/$INFO[System.Date(dd)]/1.jpg</label>
+			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/11/$INFO[System.Date(dd)]/1.jpg</label>
+			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/12/$INFO[System.Date(dd)]/1.jpg</label>
             <visible>Stringcompare(Control.GetLabel(4322),dailybabe)</visible>
         </control>
         <control type="fadelabel" id="4324">

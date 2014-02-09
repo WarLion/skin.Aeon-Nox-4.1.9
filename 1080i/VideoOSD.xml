@@ -30,7 +30,7 @@
                 <visible>ControlGroup(650).HasFocus | ControlGroup(201).HasFocus</visible>
             </control>
             <control type="label">
-                <posx>400r</posx>
+                <posx>490r</posx>
                 <width>200</width>
                 <height>125</height>
                 <align>right</align>

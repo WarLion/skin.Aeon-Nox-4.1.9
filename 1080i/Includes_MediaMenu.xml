@@ -100,6 +100,14 @@
             <label>589</label>
             <include>Objects_MediaMenuButtonIcons</include>
         </control>
+		<control type="togglebutton" id="2666">
+			<description>Update library</description>
+			<include>Objects_MediaMenuButtonIcons</include>
+			<label>653</label>
+			<altlabel>13353</altlabel>
+			<usealttexture>library.isscanningvideo</usealttexture>
+			<onclick>UpdateLibrary(music)</onclick>
+		</control>			
         <control type="radiobutton" id="100">
             <label>$LOCALIZE[29800]</label>
             <include>Objects_MediaMenuButtonIcons</include>
@@ -126,11 +134,20 @@
             <include>Objects_MediaMenuButtonIcons</include>
             <visible>Container.Content()</visible>
         </control>
+		<control type="togglebutton" id="2665">
+			<description>Update library</description>
+			<include>Objects_MediaMenuButtonIcons</include>
+			<label>653</label>
+			<altlabel>13353</altlabel>
+			<usealttexture>library.isscanningvideo</usealttexture>
+			<onclick>UpdateLibrary(video)</onclick>
+			<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
+		</control>			
         <control type="button" id="10">
             <label>-</label>
             <include>Objects_MediaMenuButtonIcons</include>
             <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
-        </control>
+        </control>			
         <control type="radiobutton" id="7">
             <label>-</label>
             <include>Objects_MediaMenuButtonIcons</include>
@@ -474,6 +491,12 @@
                     <visible>Control.IsVisible(9) + Window.IsActive(pictures)</visible>
                 </control>
                 <control type="image">
+                    <texture>special://skin/extras/BigIcons/ButtonReload.png</texture>
+                    <animation effect="fade" start="100" end="55" time="0" condition="![Control.HasFocus(2666)]">Conditional</animation>
+                    <include>MediaMenuIcons</include>
+                    <visible>Control.IsVisible(100) | Control.IsVisible(102)</visible>
+                </control>			
+                <control type="image">
                     <texture>special://skin/extras/BigIcons/book2.png</texture>
                     <animation effect="fade" start="100" end="55" time="0" condition="![Control.HasFocus(100) | Control.HasFocus(102)]">Conditional</animation>
                     <include>MediaMenuIcons</include>
@@ -540,6 +563,12 @@
                     <include>MediaMenuIcons</include>
                     <visible>Control.IsVisible(10) + Window.IsActive(videos) + StringCompare(Control.GetLabel(10),$LOCALIZE[16101])</visible>
                 </control>
+                <control type="image">
+                    <texture>special://skin/extras/BigIcons/ButtonReload.png</texture>
+                    <animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(2665)">Conditional</animation>
+                    <include>MediaMenuIcons</include>
+                    <visible>Control.IsVisible(10) + Window.IsActive(videos) + StringCompare(Control.GetLabel(10),$LOCALIZE[16100])</visible>
+                </control>				
                 <control type="image">
                     <texture>special://skin/extras/BigIcons/ButtonAdd.png</texture>
                     <animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(10)">Conditional</animation>

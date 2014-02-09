@@ -1228,24 +1228,6 @@
                             <visible>Substring(Control.GetLabel(4321),watchlisttv)</visible>
                         </item>
                         <item>
-                            <label>$INFO[Window(Home).Property(MyPicsDBRandom.1.Name)]</label>
-                            <label2>$INFO[Window(Home).Property(MyPicsDBRandom.1.Date)]</label2>
-                            <property name="Path">$INFO[Window(Home).Property(MyPicsDBRandom.1.Path)]</property>
-                            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBRandom.1.Path)]</property>
-                            <onclick>noop</onclick>
-                            <thumb>$INFO[Window(Home).Property(MyPicsDBRandom.1.Path)]</thumb>
-                            <visible>Substring(Control.GetLabel(4321),randompics)</visible>
-                        </item>
-                        <item>
-                            <label>$INFO[Window(Home).Property(MyPicsDBLatest.1.Name)]</label>
-                            <label2>$INFO[Window(Home).Property(MyPicsDBLatest.1.Date)]</label2>
-                            <property name="Path">$INFO[Window(Home).Property(MyPicsDBLatest.1.Path)]</property>
-                            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBLatest.1.Path)]</property>
-                            <onclick>noop</onclick>
-                            <thumb>$INFO[Window(Home).Property(MyPicsDBLatest.1.Path)]</thumb>
-                            <visible>Substring(Control.GetLabel(4321),recentpics)</visible>
-                        </item>
-                        <item>
                             <label>$INFO[Window(home).Property(RSS1.RSS.1.Title)]</label>
                             <onclick>noop</onclick>
                             <icon>$INFO[Window(home).Property(RSS1.RSS.1.Image.1)]</icon>
@@ -1647,22 +1629,6 @@
                             <onclick>noop</onclick>
                             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.1.Art(thumb))]</thumb>
                             <visible>Substring(Control.GetLabel(4325),watchlisttv)</visible>
-                        </item>
-                        <item>
-                            <label>$INFO[Window(Home).Property(MyPicsDBRandom.1.Name)]</label>
-                            <label2>$INFO[Window(Home).Property(MyPicsDBRandom.1.Date)]</label2>
-                            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBRandom.1.Path)]</property>
-                            <onclick>noop</onclick>
-                            <thumb>$INFO[Window(Home).Property(MyPicsDBRandom.1.Path)]</thumb>
-                            <visible>Substring(Control.GetLabel(4325),randompics)</visible>
-                        </item>
-                        <item>
-                            <label>$INFO[Window(Home).Property(MyPicsDBLatest.1.Name)]</label>
-                            <label2>$INFO[Window(Home).Property(MyPicsDBLatest.1.Date)]</label2>
-                            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBLatest.1.Path)]</property>
-                            <onclick>noop</onclick>
-                            <thumb>$INFO[Window(Home).Property(MyPicsDBLatest.1.Path)]</thumb>
-                            <visible>Substring(Control.GetLabel(4325),recentpics)</visible>
                         </item>
                         <item>
                             <label>$INFO[Window(home).Property(RSS1.RSS.1.Title)]</label>

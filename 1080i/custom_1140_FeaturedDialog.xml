@@ -237,7 +237,7 @@
                     <height>240</height>
                     <aspectratio>scale</aspectratio>
                     <texture background="true" fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
-                    <visible>IsEmpty(ListItem.Property(Fanart))</visible>
+                   
                 </control>
                 <control type="image">
                     <posx>5</posx>
@@ -273,7 +273,7 @@
                 </control>
                 <control type="image">
                     <width>400</width>
-                    <height>310</height>
+                    <height>290</height>
                     <texture border="6">views/addonwall_select.png</texture>
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                     <include>Animation_VisibleChange200</include>
@@ -452,29 +452,30 @@
                     <font>Font_Bold40</font>
                 </control>
                 <control type="grouplist">
-                    <posx>233</posx>
-                    <posy>75</posy>
+                    <posx>250</posx>
+                    <posy>90</posy>
                     <orientation>horizontal</orientation>
                     <control type="image">
                         <posx>1520</posx>
                         <posy>195</posy>
-                        <aspectratio>keep</aspectratio>
                         <texture>flags/audio/$INFO[Container(8001).ListItem.Property(AudioCodec)]$INFO[Container(8001).ListItem.Property(AudioChannels)].png</texture>
                         <include>AudioFlagsVars</include>
                     </control>
                     <control type="image">
                         <posx>1520</posx>
-                        <aspectratio>keep</aspectratio>
                         <posy>125</posy>
                         <texture>flags/source/$INFO[Container(8001).ListItem.Property(VideoCodec)].png</texture>
                         <include>AudioFlagsVars</include>
                     </control>
                     <control type="image">
                         <posx>1520</posx>
-                        <aspectratio>keep</aspectratio>
-                        <posy>265</posy>
+                        <posy>255</posy>
                         <texture>flags/resolution/$INFO[Container(8001).ListItem.Property(VideoResolution)].png</texture>
-                        <include>AudioFlagsVars</include>
+						<height>64</height>
+						<aspectratio>keep</aspectratio>
+						<fadetime>IconCrossfadeTime2</fadetime>
+						<colordiffuse>floor</colordiffuse>
+						<animation effect="fade" time="200">VisibleChange</animation>
                     </control>
                 </control>
                 <control type="label">

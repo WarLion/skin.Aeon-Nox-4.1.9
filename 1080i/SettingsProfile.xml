@@ -70,10 +70,41 @@
                 <onup>9001</onup>
                 <ondown>9001</ondown>
                 <control type="radiobutton" id="4">
+					<onup>5</onup>
+                	<ondown>5</ondown>
                     <label>20096</label>
                     <include>Default_SettingRadioButton</include>
                 </control>
+<control type="button" id="5">
+<description>Choose auto login user</description>
+<label>32969</label>
+<onup>4</onup>
+<ondown>4</ondown>
+<include>Default_SettingRadioButton</include>
+<visible>!System.HasLoginScreen</visible>
+<enable>!Window.IsVisible(ProfileSettings) + !System.HasLoginScreen</enable>
+</control>
+<control type="button">
+<description>Choose auto login user (grayed out)</description>
+<label>32969</label>
+<onup>4</onup>
+<ondown>4</ondown>
+<include>Default_SettingRadioButton</include>
+<visible>System.HasLoginScreen</visible>
+<enable>false</enable>
+</control>				
             </control>
+<control type="label">
+<posx>100r</posx>
+<posy>270</posy>
+<width>350</width>
+<include>Default_SettingRadioButton</include>
+<label>$INFO[System.ProfileAutoLogin]</label>
+<scroll>Control.HasFocus(5)</scroll>
+<scrollspeed>30</scrollspeed>
+<align>right</align>
+<visible>!System.HasLoginScreen</visible>
+</control> 			
             <control type="label">
                 <posx>358</posx>
                 <posy>-800</posy>

@@ -2265,3 +2265,23 @@ msgstr ""
 msgctxt "#32967"
 msgid "Setting Level"
 msgstr ""
+
+msgctxt "#32968"
+msgid "Group Extras on Video Info, TvTunes, Video Extras, Cinema "
+msgstr ""
+
+msgctxt "#32969"
+msgid "Auto Login"
+msgstr ""
+
+msgctxt "#32970"
+msgid "Watch as 2D"
+msgstr ""
+
+msgctxt "#32971"
+msgid "Change mode"
+msgstr ""
+
+msgctxt "#32972"
+msgid "Enabled"
+msgstr ""

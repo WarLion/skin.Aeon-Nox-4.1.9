@@ -160,6 +160,13 @@
                         <onclick>Skin.ToggleSetting(TVTunes.Enabled)</onclick>
                         <selected>Skin.HasSetting(TVTunes.Enabled)</selected>
                     </control>
+                    <control type="radiobutton" id="111">
+                        <label>$LOCALIZE[32968]</label>
+                        <include>Default_SettingRadioButton</include>
+                        <onclick>Skin.ToggleSetting(Extra.Disable)</onclick>
+                        <selected>Skin.HasSetting(Extra.Disable)</selected>
+						<visible>system.hasaddon(script.cinema.experience) | System.HasAddon(script.videoextras) | system.hasaddon(script.tvtunes)</visible>
+                    </control>					
 						<control type="radiobutton" id="110">
 							<include>Default_SettingRadioButton</include>
 							<selected>Skin.HasSetting(UpdateArt.Enabled)</selected>
@@ -236,28 +243,9 @@
                         <onclick>ActivateWindow(1118)</onclick>
                     </control>
                 </control>
-                <control type="button" id="450">
-                    <posx>387</posx>
-                    <posy>195</posy>
-                    <width>1469</width>
-                    <height>74</height>
-                    <textoffsetx>70</textoffsetx>
-                    <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
-                    <texturenofocus>settings/settings_radiobuttonoff.png</texturenofocus>
-                    <label>31869</label>
-                    <font>Font_Reg34_Caps</font>
-                    <textcolor>grey2</textcolor>
-                    <onup>9009</onup>
-                    <ondown>9004</ondown>
-                    <onleft>9000</onleft>
-                    <onright>9000</onright>
-                    <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-                    <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search="Aeon Nox 3.5 Tutorial",return)</onclick>
-                    <visible>Container(9000).Hasfocus(8)</visible>
-                </control>
                 <control type="grouplist" id="9004">
                     <posx>387</posx>
-                    <posy>275</posy>
+                    <posy>200</posy>
                     <width>1469</width>
                     <height>732</height>
                     <visible>Container(9000).Hasfocus(8)</visible>
@@ -364,11 +352,11 @@
                         <include>Default_SettingRadioButtonShort</include>
                         <onclick>Addon.OpenSettings(script.tv.show.next.aired)</onclick>
                         <visible>System.HasAddon(script.tv.show.next.aired)</visible>
-                    </control>
+                    </control>				
                 </control>
                 <control type="grouplist" id="9009">
                     <posx>1121</posx>
-                    <posy>275</posy>
+                    <posy>200</posy>
                     <width>734</width>
                     <height>732</height>
                     <visible>Container(9000).Hasfocus(8)</visible>
@@ -391,20 +379,6 @@
                         <include>Default_SettingRadioButtonShort</include>
                         <onclick>Addon.OpenSettings(script.extendedinfo)</onclick>
                         <visible>System.HasAddon(script.extendedinfo)</visible>
-                    </control>
-                    <control type="button" id="413">
-                        <label>plugin.image.mypicsdb</label>
-                        <label2>[COLOR red]$LOCALIZE[106][/COLOR]</label2>
-                        <include>Default_SettingRadioButtonShort</include>
-                        <onclick>Notification($LOCALIZE[31902],$LOCALIZE[31871])</onclick>
-                        <visible>!System.HasAddon(plugin.image.mypicsdb)</visible>
-                    </control>
-                    <control type="button" id="414">
-                        <label>plugin.image.mypicsdb</label>
-                        <label2>[COLOR green]$LOCALIZE[107][/COLOR]</label2>
-                        <include>Default_SettingRadioButtonShort</include>
-                        <onclick>Addon.OpenSettings(plugin.image.mypicsdb)</onclick>
-                        <visible>System.HasAddon(plugin.image.mypicsdb)</visible>
                     </control>
                     <control type="button" id="417">
                         <label>script.cinema.experience</label>
@@ -462,10 +436,24 @@
                         <onclick>Addon.OpenSettings(script.artwork.downloader)</onclick>
                         <visible>System.HasAddon(script.artwork.downloader)</visible>
                     </control>
+                    <control type="button" id="436">
+                        <label>script.videoextras</label>
+                        <label2>[COLOR red]$LOCALIZE[106][/COLOR]</label2>
+                        <include>Default_SettingRadioButtonShort</include>
+                        <onclick>noop</onclick>
+                        <visible>!System.HasAddon(script.videoextras)</visible>
+                    </control>					
+                    <control type="button" id="437">
+                        <label>script.videoextras</label>
+                        <label2>[COLOR green]$LOCALIZE[107][/COLOR]</label2>
+                        <include>Default_SettingRadioButtonShort</include>
+                        <onclick>Addon.OpenSettings(script.videoextras)</onclick>
+                        <visible>System.HasAddon(script.videoextras)</visible>
+                    </control>						
                 </control>
                 <control type="grouplist" id="9005">
                     <posx>387</posx>
-                    <posy>160</posy>
+                    <posy>200</posy>
                     <width>1469</width>
                     <height>900</height>
                     <visible>Container(9000).Hasfocus(9)</visible>
@@ -480,19 +468,19 @@
                         <height>74</height>
                         <textoffsetx>70</textoffsetx>
                         <aligny>bottom</aligny>
-                        <label>Aeon Nox 4.1</label>
+                        <label>Aeon Nox 4.1.9 - Gotham</label>
                         <font>Font_MainClassic3</font>
                         <textcolor>grey2</textcolor>
                     </control>
                     <control type="label">
-                        <width>1469</width>
+                        <width>500</width>
                         <height>54</height>
                         <textoffsetx>70</textoffsetx>
                         <aligny>bottom</aligny>
                         <label>by BigNoid &amp; Phil65</label>
                         <font>Font_Reg26</font>
                         <textcolor>grey2</textcolor>
-                    </control>
+                    </control>				
                     <control type="label">
                         <label>31735</label>
                         <include>Default_SettingRadioButton</include>
@@ -518,10 +506,9 @@
                         <include>Default_SettingRadioButton</include>
                     </control>
                     <control type="label">
-                        <height>148</height>
                         <label>31741</label>
                         <include>Default_SettingRadioButton</include>
-                    </control>
+                    </control>				
                 </control>
                 <control type="grouplist" id="9009">
                     <posx>387</posx>
@@ -573,8 +560,8 @@
                 </control>
             </control>
             <control type="group">
-                <posx>620</posx>
-                <posy>840</posy>
+                <posx>1170</posx>
+                <posy>780</posy>
                 <visible>Container(9000).Hasfocus(9)</visible>
                 <control type="image">
                     <posy>30</posy>
@@ -583,8 +570,8 @@
                     <texture>fanarttv.png</texture>
                 </control>
                 <control type="image">
-                    <posx>520</posx>
-                    <width>400</width>
+                    <posx>350</posx>
+                    <width>300</width>
                     <aspectratio>keep</aspectratio>
                     <texture>xbmc.png</texture>
                 </control>

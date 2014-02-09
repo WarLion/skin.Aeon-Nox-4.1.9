@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+    <include name="VideoExtras_art">
+		<control type="group">
+        <posx>1345</posx>
+					<posy>387</posy>
+					<control type="image">
+						<posx>-1</posx>
+						<posy>-8</posy>
+						<width>439</width>
+						<height>561</height>
+						<align>center</align>
+						<aspectratio scalediffuse="true">keep</aspectratio>
+						<fadetime>0</fadetime>
+						<bordertexture border="18">thumbs/poster_shadow.png</bordertexture>
+						<bordersize>18</bordersize>
+						<texture background="true" diffuse="thumbs/posterdiffuse.png">$INFO[ListItem.Icon]</texture>
+					</control>					
+				</control>				
+				<control type="image">
+					<posx>1355</posx>
+					<posy>138</posy>
+					<width>410</width>
+					<height>240</height>
+					<aspectratio align="center">keep</aspectratio>
+					<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+				</control>
+			<control type="group">
+			    <posx>1665</posx>
+				<posy>142</posy>	
+				<visible>Skin.HasSetting(OverlaySetting)</visible>
+				<control type="image">
+					<width>100</width>
+					<height>101</height>
+					<aspectratio align="center">keep</aspectratio>
+					<texture background="true">thumbs/OverlayResume.png</texture>
+					<visible>ListItem.IsResumable</visible>
+				</control>
+				<control type="image">
+					<width>100</width>
+					<height>101</height>
+					<aspectratio align="center">keep</aspectratio>
+					<texture background="true">thumbs/OverlayUnWatched.png</texture>
+					<visible>!ListItem.IsResumable</visible>
+				</control>				
+				<control type="image">
+					<width>100</width>
+					<height>101</height>
+					<aspectratio align="center">keep</aspectratio>
+					<texture background="true">thumbs/OverlayWatched.png</texture>
+					<visible>IntegerGreaterThan(ListItem.PlayCount,0)</visible>
+				</control>
+			</control>
+    </include>
+    <include name="VideoExtras_Layout1">
+ 		<control type="group">
+            <animation type="WindowOpen" reversible="false">
+                <effect type="zoom" start="150" end="100" center="960,540" time="600" tween="cubic" />
+                <effect type="fade" end="100" time="100" />
+            </animation>
+            <animation type="WindowClose" reversible="false">
+                <effect type="fade" start="100" end="0" time="300" />
+                <effect type="zoom" start="100" end="130" center="960,540" time="300" tween="cubic" easing="in" />
+            </animation>
+            <control type="group">
+                <posy>-15</posy>
+                <control type="image">
+                    <posx>112</posx>
+                    <posy>82</posy>
+                    <width>1695</width>
+                    <height>1040</height>
+                    <texture>wall/wall_bg_glow.png</texture>
+                    <include>PanelGlowFade</include>
+                    <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+                    <visible>!Skin.HasSetting(DisableGlowbar)</visible>
+                </control>
+                <control type="image">
+                    <posx>112</posx>
+                    <posy>82</posy>
+                    <width>1695</width>
+                    <height>1040</height>
+                    <texture>wall/wall_bg.png</texture>
+                    <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
+                </control>
+                <control type="image">
+                    <posx>112</posx>
+                    <posy>82</posy>
+                    <width>1695</width>
+                    <height>1012</height>
+                    <colordiffuse>white</colordiffuse>
+                    <texture>views/grid-ve.png</texture>
+                </control>
+                <control type="image">
+                    <posx>112</posx>
+                    <posy>108</posy>
+                    <width>1695</width>
+                    <height>1012</height>
+                    <texture>wall/wall_bg_reflection.png</texture>
+                </control>			
+             <control type="list" id="51">
+				<posx>122</posx>
+				<posy>138</posy>
+				<width>1220</width>
+				<height>800</height>
+				<onright>60</onright>
+<!--				<onleft>9000</onleft>-->
+				<onup>51</onup>
+				<ondown>51</ondown>
+				<viewtype label="537">list</viewtype>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<itemlayout width="1210" height="90">
+					<control type="image">
+						<left>30</left>
+						<top>32</top>
+						<width>1140</width>
+						<height>60</height>
+						<texture border="1">settings/settings_separator.png</texture>
+						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>	
+					</control>			
+					<control type="label">
+						<posx>70</posx>
+						<posy>20</posy>
+						<width>1000</width>
+						<height>40</height>
+						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<posx>1160</posx>
+						<posy>20</posy>
+						<width>100</width>
+						<height>40</height>
+						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<visible>!IsEmpty(ListItem.Label2)</visible>
+						<label>$INFO[ListItem.Label2]</label>
+					</control>
+					<control type="image">
+						<posx>15</posx>
+						<posy>20</posy>
+						<width>45</width>
+						<height>45</height>
+						<texture>dialogs/circle/46.png</texture>
+						<visible>ListItem.IsResumable</visible>
+					</control>
+					<control type="image">
+						<posx>15</posx>
+						<posy>20</posy>
+						<width>45</width>
+						<height>45</height>
+						<!-- Default XBMC Icon -->
+						<texture>OverlayWatched.png</texture>
+						<visible>IntegerGreaterThan(ListItem.PlayCount,0)</visible>
+					</control>
+				</itemlayout>
+				<focusedlayout width="1210" height="90">
+					<control type="image">
+						<left>30</left>
+						<top>32</top>
+						<width>1140</width>
+						<height>60</height>
+						<texture border="1">settings/settings_separator.png</texture>
+						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>	
+					</control>	
+					<control type="image">
+					<top>0</top>
+						<width>1210</width>
+						<height>90</height>
+						<texture border="5">views/tripanel/listselect_fo.png</texture>
+						<visible>Control.HasFocus(51)</visible>
+						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+					</control>								
+					<control type="label">
+						<posx>70</posx>
+						<posy>20</posy>
+						<width>1000</width>
+						<height>40</height>
+						<font>font15</font>
+						<textcolor>white</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>>				
+					<control type="label">
+						<posx>1160</posx>
+						<posy>20</posy>
+						<width>100</width>
+						<height>40</height>
+						<font>font15</font>
+						<textcolor>white</textcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<visible>!IsEmpty(ListItem.Label2)</visible>
+						<label>$INFO[ListItem.Label2]</label>
+					</control>
+					<control type="image">
+						<posx>15</posx>
+						<posy>20</posy>
+						<width>45</width>
+						<height>45</height>
+						<texture>dialogs/circle/46.png</texture>
+						<visible>ListItem.IsResumable</visible>
+					</control>
+					
+					<control type="image">
+						<posx>15</posx>
+						<posy>20</posy>
+						<width>45</width>
+						<height>45</height>
+						<texture>OverlayWatched.png</texture>
+						<visible>IntegerGreaterThan(ListItem.PlayCount,0)</visible>
+					</control>
+				</focusedlayout>
+				</control>
+					<include>VideoExtras_art</include>	
+				<control type="scrollbar" id="60">
+					<posx>1320</posx>
+					<posy>80</posy>
+					<onleft>51</onleft>			
+					<width>25</width>
+					<height>950</height>
+					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar.png</texturesliderbarfocus>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+					<visible>Control.IsVisible(51)</visible>
+				</control>
+		</control>
+	</control>	
+    </include>
+	<include name="VideoExtras_Layout2">
+		<control type="group">
+            <animation type="WindowOpen" reversible="false">
+                <effect type="zoom" start="150" end="100" center="960,540" time="600" tween="cubic" />
+                <effect type="fade" end="100" time="100" />
+            </animation>
+            <animation type="WindowClose" reversible="false">
+                <effect type="fade" start="100" end="0" time="300" />
+                <effect type="zoom" start="100" end="130" center="960,540" time="300" tween="cubic" easing="in" />
+            </animation>
+            <control type="group">
+                <posy>-15</posy>
+                <control type="image">
+                    <posx>112</posx>
+                    <posy>82</posy>
+                    <width>1695</width>
+                    <height>1040</height>
+                    <texture>wall/wall_bg_glow.png</texture>
+                    <include>PanelGlowFade</include>
+                    <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+                    <visible>!Skin.HasSetting(DisableGlowbar)</visible>
+                </control>
+                <control type="image">
+                    <posx>112</posx>
+                    <posy>82</posy>
+                    <width>1695</width>
+                    <height>1040</height>
+                    <texture>wall/wall_bg.png</texture>
+                    <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
+                </control>
+         <!--       <control type="image">
+                    <posx>112</posx>
+                    <posy>82</posy>
+                    <width>1695</width>
+                    <height>1012</height>
+                    <colordiffuse>white</colordiffuse>
+                    <texture>views/grid-ve.png</texture>
+                </control>
+                <control type="image">
+                    <posx>112</posx>
+                    <posy>108</posy>
+                    <width>1695</width>
+                    <height>1012</height>
+                    <texture>wall/wall_bg_reflection.png</texture>
+                </control>			-->
+             <control type="list" id="51">
+				<posx>122</posx>
+				<posy>138</posy>
+				<width>1220</width>
+				<height>800</height>
+				<onright>60</onright>
+				<onleft>9000</onleft>
+				<onup>51</onup>
+				<ondown>51</ondown>
+				<viewtype label="537">list</viewtype>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<itemlayout width="1210" height="90">
+					<control type="image">
+						<left>30</left>
+						<top>32</top>
+						<width>1140</width>
+						<height>60</height>
+						<texture border="1">settings/settings_separator.png</texture>
+						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>	
+					</control>			
+					<control type="label">
+						<posx>70</posx>
+						<posy>20</posy>
+						<width>1000</width>
+						<height>40</height>
+						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<posx>1160</posx>
+						<posy>20</posy>
+						<width>100</width>
+						<height>40</height>
+						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<visible>!IsEmpty(ListItem.Label2)</visible>
+						<label>$INFO[ListItem.Label2]</label>
+					</control>
+					<control type="image">
+						<posx>15</posx>
+						<posy>20</posy>
+						<width>45</width>
+						<height>45</height>
+						<texture>dialogs/circle/46.png</texture>
+						<visible>ListItem.IsResumable</visible>
+					</control>
+					<control type="image">
+						<posx>15</posx>
+						<posy>20</posy>
+						<width>45</width>
+						<height>45</height>
+						<!-- Default XBMC Icon -->
+						<texture>OverlayWatched.png</texture>
+						<visible>IntegerGreaterThan(ListItem.PlayCount,0)</visible>
+					</control>
+				</itemlayout>
+				<focusedlayout width="1210" height="90">
+					<control type="image">
+						<left>30</left>
+						<top>32</top>
+						<width>1140</width>
+						<height>60</height>
+						<texture border="1">settings/settings_separator.png</texture>
+						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>	
+					</control>	
+					<control type="image">
+					<top>0</top>
+						<width>1210</width>
+						<height>90</height>
+						<texture border="5">views/tripanel/listselect_fo.png</texture>
+						<visible>Control.HasFocus(51)</visible>
+						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+					</control>								
+					<control type="label">
+						<posx>70</posx>
+						<posy>20</posy>
+						<width>1000</width>
+						<height>40</height>
+						<font>font15</font>
+						<textcolor>white</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>>				
+					<control type="label">
+						<posx>1160</posx>
+						<posy>20</posy>
+						<width>100</width>
+						<height>40</height>
+						<font>font15</font>
+						<textcolor>white</textcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<visible>!IsEmpty(ListItem.Label2)</visible>
+						<label>$INFO[ListItem.Label2]</label>
+					</control>
+					<control type="image">
+						<posx>15</posx>
+						<posy>20</posy>
+						<width>45</width>
+						<height>45</height>
+						<texture>dialogs/circle/46.png</texture>
+						<visible>ListItem.IsResumable</visible>
+					</control>
+					
+					<control type="image">
+						<posx>15</posx>
+						<posy>20</posy>
+						<width>45</width>
+						<height>45</height>
+						<texture>OverlayWatched.png</texture>
+						<visible>IntegerGreaterThan(ListItem.PlayCount,0)</visible>
+					</control>
+				</focusedlayout>
+				</control>
+					<include>VideoExtras_art</include>	
+				<control type="scrollbar" id="60">
+					<posx>1320</posx>
+					<posy>80</posy>
+					<onleft>51</onleft>			
+					<width>25</width>
+					<height>950</height>
+					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar.png</texturesliderbarfocus>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+					<visible>Control.IsVisible(51)</visible>
+				</control>
+		</control>
+	</control>		
+    </include>
+</includes>

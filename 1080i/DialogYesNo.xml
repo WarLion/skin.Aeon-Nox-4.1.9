@@ -46,7 +46,7 @@
                 <posy>68</posy>
                 <width>780</width>
                 <height>330</height>
-                <control type="label" id="2">
+              <!--  <control type="label" id="2">
                     <width>780</width>
                     <height>45</height>
                     <textoffsetx>45</textoffsetx>
@@ -69,7 +69,17 @@
                     <align>center</align>
                     <textcolor>white3</textcolor>
                     <scroll>true</scroll>
-                </control>
+                </control>-->
+				<control type="textbox" id="9">
+					<description>text</description>
+                    <width>780</width>
+                    <height>45</height>
+                    <textoffsetx>45</textoffsetx>
+                    <align>center</align>
+                    <textcolor>white3</textcolor>
+                    <wrapmultiline>true</wrapmultiline>
+					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+				</control>
             </control>
             <control type="button" id="10">
                 <textoffsety></textoffsety>

@@ -75,7 +75,7 @@
                     <label>467</label>
                     <onleft>9002</onleft>
                     <onright>9002</onright>
-                    <onup>18</onup>
+                    <onup>23</onup>
                     <ondown>12</ondown>
                     <include>Default_SettingButton</include>
                     <spinposx>-2</spinposx>
@@ -211,7 +211,7 @@
                     <onleft>9002</onleft>
                     <onright>19</onright>
                     <onup>17</onup>
-                    <ondown>22</ondown>
+                    <ondown>23</ondown>
                     <include>Default_SettingButton</include>
                     <spinposx>-2</spinposx>
                 </control>
@@ -230,9 +230,44 @@
                     <onleft>18</onleft>
                     <onright>9002</onright>
                     <onup>17</onup>
-                    <ondown>22</ondown>
+                    <ondown>24</ondown>
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 </control>
+				<control type="spincontrolex" id="23">
+					<posx>387</posx>
+					<posy>920</posy>
+					<width>1104</width>
+					<label>21458</label>
+					<font>Font_Reg32</font>
+					<textcolor>grey2</textcolor>
+					<textoffsetx>75</textoffsetx>
+					<texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
+					<texturenofocus>settings/settings_radiobuttonoff2.png</texturenofocus>
+					<onright>24</onright>
+					<onleft>9002</onleft>
+					<onup>18</onup>
+					<ondown>22</ondown>
+					<include>Default_SettingButton</include>
+					<spinposx>-2</spinposx>
+				</control>
+				<control type="radiobutton" id="24">
+					<posx>1491</posx>
+					<posy>920</posy>
+					<width>342</width>
+					<height>74</height>
+					<font>Font_Reg32</font>
+					<textcolor>grey2</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
+					<texturenofocus>settings/settings_radiobuttonoff2.png</texturenofocus>
+					<label>21459</label>
+					<onright>9002</onright>
+					<onleft>23</onleft>
+					<onup>19</onup>
+					<ondown>22</ondown>
+					<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+				</control>				
             </control>
             <control type="grouplist" id="9002">
                 <posx>63</posx>

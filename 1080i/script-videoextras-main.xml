@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-	<defaultcontrol always="false">51</defaultcontrol>
+	<defaultcontrol always="true">51</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <controls>
         <control type="group">
             <animation effect="fade" time="200">WindowOpen</animation>
             <animation effect="fade" time="200">WindowClose</animation>
-            <control type="group">
-                <control type="multiimage">
-                    <aspectratio>scale</aspectratio>
-                    <imagepath background="true" fallback="special://skin/backgrounds/tvguide/">$VAR[TVGuideInfoFanart]</imagepath>
-                    <fadetime>500</fadetime>
-                    <include>FullscreenDimensions</include>
-                    <include>Animation_VisibleChange400</include>
-                </control>
-            </control>
             <include>CommonMediaPlayingBackground</include>
 			<control type="image">
 				<posx>0</posx>
@@ -61,239 +52,8 @@
             <include>PanelSpot</include>
             <include>Neon_Floor</include>
         </control>
-<!--        <include condition="Skin.HasSetting(ClassicVideoExtra)">NextAired_Layout1</include>
-        <include condition="!Skin.HasSetting(ClassicVideoExtra)">NextAired_Layout2</include>-->
- <control type="group">
-            <animation type="WindowOpen" reversible="false">
-                <effect type="zoom" start="150" end="100" center="960,540" time="600" tween="cubic" />
-                <effect type="fade" end="100" time="100" />
-            </animation>
-            <animation type="WindowClose" reversible="false">
-                <effect type="fade" start="100" end="0" time="300" />
-                <effect type="zoom" start="100" end="130" center="960,540" time="300" tween="cubic" easing="in" />
-            </animation>
-            <control type="group">
-                <posy>-15</posy>
-                <control type="image">
-                    <posx>112</posx>
-                    <posy>82</posy>
-                    <width>1695</width>
-                    <height>1040</height>
-                    <texture>wall/wall_bg_glow.png</texture>
-                    <include>PanelGlowFade</include>
-                    <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                    <visible>!Skin.HasSetting(DisableGlowbar)</visible>
-                </control>
-                <control type="image">
-                    <posx>112</posx>
-                    <posy>82</posy>
-                    <width>1695</width>
-                    <height>1040</height>
-                    <texture>wall/wall_bg.png</texture>
-                    <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
-                </control>
-                <control type="image">
-                    <posx>112</posx>
-                    <posy>82</posy>
-                    <width>1695</width>
-                    <height>1012</height>
-                    <colordiffuse>white</colordiffuse>
-                    <texture>views/grid-ve.png</texture>
-                </control>
-                <control type="image">
-                    <posx>112</posx>
-                    <posy>108</posy>
-                    <width>1695</width>
-                    <height>1012</height>
-                    <texture>wall/wall_bg_reflection.png</texture>
-                </control>			
-			<control type="list" id="51">
-				<posx>122</posx>
-				<posy>138</posy>
-				<width>1220</width>
-				<height>800</height>
-				<onright>60</onright>
-<!--				<onleft>9000</onleft>-->
-				<onup>51</onup>
-				<ondown>51</ondown>
-				<viewtype label="537">list</viewtype>
-				<pagecontrol>60</pagecontrol>
-				<scrolltime>200</scrolltime>
-				<itemlayout width="1210" height="90">
-					<control type="image">
-						<left>30</left>
-						<top>32</top>
-						<width>1140</width>
-						<height>60</height>
-						<texture border="1">settings/settings_separator.png</texture>
-						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>	
-					</control>			
-					<control type="label">
-						<posx>70</posx>
-						<posy>20</posy>
-						<width>1000</width>
-						<height>40</height>
-						<font>font15</font>
-						<textcolor>grey2</textcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-					<control type="label">
-						<posx>1160</posx>
-						<posy>20</posy>
-						<width>100</width>
-						<height>40</height>
-						<font>font15</font>
-						<textcolor>grey2</textcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<visible>!IsEmpty(ListItem.Label2)</visible>
-						<label>$INFO[ListItem.Label2]</label>
-					</control>
-					<control type="image">
-						<posx>15</posx>
-						<posy>20</posy>
-						<width>45</width>
-						<height>45</height>
-						<texture>dialogs/circle/46.png</texture>
-						<visible>ListItem.IsResumable</visible>
-					</control>
-					<control type="image">
-						<posx>15</posx>
-						<posy>20</posy>
-						<width>45</width>
-						<height>45</height>
-						<!-- Default XBMC Icon -->
-						<texture>OverlayWatched.png</texture>
-						<visible>IntegerGreaterThan(ListItem.PlayCount,0)</visible>
-					</control>
-				</itemlayout>
-				<focusedlayout width="1210" height="90">
-					<control type="image">
-						<left>30</left>
-						<top>32</top>
-						<width>1140</width>
-						<height>60</height>
-						<texture border="1">settings/settings_separator.png</texture>
-						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>	
-					</control>	
-					<control type="image">
-					<top>0</top>
-						<width>1210</width>
-						<height>90</height>
-						<texture border="5">views/tripanel/listselect_fo.png</texture>
-						<visible>Control.HasFocus(51)</visible>
-						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-					</control>								
-					<control type="label">
-						<posx>70</posx>
-						<posy>20</posy>
-						<width>1000</width>
-						<height>40</height>
-						<font>font15</font>
-						<textcolor>white</textcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-					</control>>				
-					<control type="label">
-						<posx>1160</posx>
-						<posy>20</posy>
-						<width>100</width>
-						<height>40</height>
-						<font>font15</font>
-						<textcolor>white</textcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<visible>!IsEmpty(ListItem.Label2)</visible>
-						<label>$INFO[ListItem.Label2]</label>
-					</control>
-					<control type="image">
-						<posx>15</posx>
-						<posy>20</posy>
-						<width>45</width>
-						<height>45</height>
-						<texture>dialogs/circle/46.png</texture>
-						<visible>ListItem.IsResumable</visible>
-					</control>
-					
-					<control type="image">
-						<posx>15</posx>
-						<posy>20</posy>
-						<width>45</width>
-						<height>45</height>
-						<texture>OverlayWatched.png</texture>
-						<visible>IntegerGreaterThan(ListItem.PlayCount,0)</visible>
-					</control>
-				</focusedlayout>
-				</control>
-				<control type="group">
-					<posx>1345</posx>
-					<posy>387</posy>
-					<control type="image">
-						<posx>-1</posx>
-						<posy>-8</posy>
-						<width>439</width>
-						<height>561</height>
-						<align>center</align>
-						<aspectratio scalediffuse="true">keep</aspectratio>
-						<fadetime>0</fadetime>
-						<bordertexture border="18">thumbs/poster_shadow.png</bordertexture>
-						<bordersize>18</bordersize>
-						<texture background="true" diffuse="thumbs/posterdiffuse.png">$INFO[ListItem.Icon]</texture>
-					</control>				
-				</control>
-				<control type="image">
-					<posx>1355</posx>
-					<posy>138</posy>
-					<width>410</width>
-					<height>240</height>
-					<aspectratio align="center">keep</aspectratio>
-					<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-				</control>
-				<control type="image">
-					<posx>1665</posx>
-					<posy>142</posy>
-					<width>100</width>
-					<height>101</height>
-					<aspectratio align="center">keep</aspectratio>
-					<texture background="true">thumbs/OverlayResume.png</texture>
-					<visible>ListItem.IsResumable</visible>
-				</control>
-				<control type="image">
-					<posx>1665</posx>
-					<posy>142</posy>
-					<width>100</width>
-					<height>101</height>
-					<aspectratio align="center">keep</aspectratio>
-					<texture background="true">thumbs/OverlayUnWatched.png</texture>
-					<visible>!ListItem.IsResumable</visible>
-				</control>				
-				<control type="image">
-					<posx>1665</posx>
-					<posy>142</posy>
-					<width>100</width>
-					<height>101</height>
-					<aspectratio align="center">keep</aspectratio>
-					<texture background="true">thumbs/OverlayWatched.png</texture>
-					<visible>IntegerGreaterThan(ListItem.PlayCount,0)</visible>
-				</control>				
-				<control type="scrollbar" id="60">
-					<posx>1320</posx>
-					<posy>80</posy>
-					<onleft>51</onleft>	
-					<onright>51</onright>			
-					<width>25</width>
-					<height>950</height>
-					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar.png</texturesliderbarfocus>
-					<showonepage>false</showonepage>
-					<orientation>vertical</orientation>
-					<visible>Control.IsVisible(51)</visible>
-				</control>
-		</control>
-	</control>	
+       <include>VideoExtras_Layout1</include>
+     <!--  <include condition="!Skin.HasSetting(ClassicVideoExtra)">VideoExtras_Layout2</include>-->
         <control type="image">
             <posy>1012</posy>
             <width>1920</width>
@@ -326,18 +86,6 @@
 				<animation type="WindowClose" reversible="false">
 					<effect type="fade" start="100" end="0" time="300" />
 				</animation>				
-				<control type="label" id="80">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width min="0" max="800">auto</width>
-					<height>30</height>
-					<font>Font10</font>
-					<textcolor>white</textcolor>
-					<scroll>false</scroll>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$ADDON[script.videoextras 32001] - $INFO[ListItem.Title]</label>
-				</control>	
 			</control>			
         </control>
         <include>Furniture_NowPlayingWidget</include>
@@ -360,10 +108,11 @@
                     <onup>9003</onup>
                     <ondown>9003</ondown>
                     <onback>51</onback>
-                   <!--  <control type="button" id="8">
+                   <control type="button" id="8">
                         <label>5</label>
                         <include>Objects_MediaMenuButtonAlt</include>
-                    </control>-->
+						<onclick>Addon.OpenSettings(script.videoextras)</onclick>
+                    </control>
                    <control type="button" id="1601">
                         <label>$LOCALIZE[31383]</label>
                         <font>Font_Bold26_Caps</font>
@@ -379,6 +128,13 @@
                         <selected>Skin.HasSetting(darkinfopaneve)</selected>
                         <visible>!Skin.HasSetting(hideoptions) + Skin.HasSetting(DisableGlowbar)</visible>
                     </control>
+                    <control type="radiobutton" id="1685">
+                        <label>Enable Overlay on fanart</label>
+                        <include>Objects_MediaMenuButtonAlt</include>
+                        <onclick>Skin.ToggleSetting(OverlaySetting)</onclick>
+                        <selected>Skin.HasSetting(OverlaySetting)</selected>
+                        <visible>!Skin.HasSetting(hideoptions)</visible>
+                    </control>					
                     <control type="button" id="1604">
                         <label>$LOCALIZE[31185]</label>
                         <font>Font_Bold26_Caps</font>
@@ -386,20 +142,20 @@
                         <include>Objects_MediaMenuButtonAlt</include>
                         <enable>no</enable>
                     </control>
-                  <!--  <control type="button" id="1637">
+             <!--      <control type="button" id="1637">
                         <label>$LOCALIZE[31272]:</label>
-                        <label2>[COLOR $VAR[FontColorVar]]$VAR[NextAiredLayoutVar][/COLOR]</label2>
+                        <label2>[COLOR $VAR[FontColorVar]]$VAR[VideoExtraLayoutVar][/COLOR]</label2>
                         <include>Objects_MediaMenuButtonAlt</include>
                         <onclick>Skin.ToggleSetting(ClassicVideoExtra)</onclick>
                         <onclick>SetProperty(activewindow,vextra,home)</onclick>
                         <onclick>ActivateWindow(1141)</onclick>
-                        <onclick>RunAddon(script.videoextras)</onclick>
-                    </control>
+                        <onclick>RunAddon(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
+                    </control>-->
                     <control type="button" id="1603">
                         <label>$LOCALIZE[31176]</label>
                         <include>Objects_MediaMenuButtonAlt</include>
                         <enable>no</enable>
-                    </control>-->
+                    </control>
                     <control type="button" id="1664">
                         <label>31298</label>
                         <include>Objects_MediaMenuButtonAlt</include>

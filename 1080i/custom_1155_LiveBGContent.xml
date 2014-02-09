@@ -286,29 +286,17 @@
                         <visible>Library.HasContent(tvshows) + Stringcompare(Window(Home).Property(LiveCasesType),Pics)</visible>
                     </item>
                     <item>
-                        <label>31816</label>
-                        <onclick>Skin.SetString(ItemToEdit.MultiFanart,nocaserandompics)</onclick>
-                        <onclick>Dialog.Close(1155)</onclick>
-                        <visible>System.HasAddon(plugin.image.mypicsdb) + Stringcompare(Window(Home).Property(LiveCasesType),Pics)</visible>
-                    </item>
-                    <item>
-                        <label>31815</label>
-                        <onclick>Skin.SetString(ItemToEdit.MultiFanart,nocaserecentpics)</onclick>
-                        <onclick>Dialog.Close(1155)</onclick>
-                        <visible>System.HasAddon(plugin.image.mypicsdb) + Stringcompare(Window(Home).Property(LiveCasesType),Pics)</visible>
-                    </item>
-                    <item>
                         <label>31820</label>
                         <onclick>Skin.SetString(ItemToEdit.MultiFanart,nocasedailybabes)</onclick>
                         <onclick>Dialog.Close(1155)</onclick>
                         <visible>Stringcompare(Window(Home).Property(LiveCasesType),Pics)</visible>
                     </item>
                     <item>
-                        <label>$INFO[Window(home).Property(bigpictures.scraper.title)]</label>
-                        <onclick>Skin.SetString(ItemToEdit.MultiFanart,nocasethebigpicture)</onclick>
+                        <label>Today Babe</label>
+                        <onclick>Skin.SetString(ItemToEdit.MultiFanart,nocasedailybabes2)</onclick>
                         <onclick>Dialog.Close(1155)</onclick>
                         <visible>Stringcompare(Window(Home).Property(LiveCasesType),Pics)</visible>
-                    </item>
+                    </item>					
                     <item>
                         <label>$INFO[Skin.String(SmartPlaylist1.Label)] ($INFO[Skin.String(SmartPlaylist1.Type)])</label>
                         <onclick condition="IsEmpty(Window(Home).Property(LiveCasesType))">Skin.SetString(ItemToEdit.MultiFanart,dvdcasecustom1)</onclick>

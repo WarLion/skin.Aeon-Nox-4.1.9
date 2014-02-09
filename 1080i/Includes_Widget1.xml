@@ -4802,174 +4802,6 @@
             <visible>Substring(Control.GetLabel(4321),recenttv) + !IsEmpty(Window(Home).Property(RecentEpisode.8.Title))</visible>
         </item>
     </include>
-    <include name="RandomPicturesItems">
-        <item>
-            <label>$INFO[Window(Home).Property(MyPicsDBRandom.1.Name)]</label>
-            <label2>$INFO[Window(Home).Property(MyPicsDBRandom.1.Date)]</label2>
-            <property name="Folder">$INFO[Window(Home).Property(MyPicsDBRandom.1.Folder)]</property>
-            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBRandom.1.Path)]</property>
-            <onclick>SetFocus(5014)</onclick>
-            <thumb>$INFO[Window(Home).Property(MyPicsDBRandom.1.Path)]</thumb>
-            <visible>Substring(Control.GetLabel(4321),randompics)</visible>
-            <visible>!IsEmpty(Window(Home).Property(MyPicsDBRandom.1.Name))</visible>
-        </item>
-        <item>
-            <label>$INFO[Window(Home).Property(MyPicsDBRandom.2.Name)]</label>
-            <label2>$INFO[Window(Home).Property(MyPicsDBRandom.2.Date)]</label2>
-            <property name="Folder">$INFO[Window(Home).Property(MyPicsDBRandom.2.Folder)]</property>
-            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBRandom.2.Path)]</property>
-            <onclick>SetFocus(5014)</onclick>
-            <thumb>$INFO[Window(Home).Property(MyPicsDBRandom.2.Path)]</thumb>
-            <visible>Substring(Control.GetLabel(4321),randompics)</visible>
-            <visible>!IsEmpty(Window(Home).Property(MyPicsDBRandom.2.Name))</visible>
-        </item>
-        <item>
-            <label>$INFO[Window(Home).Property(MyPicsDBRandom.3.Name)]</label>
-            <label2>$INFO[Window(Home).Property(MyPicsDBRandom.3.Date)]</label2>
-            <property name="Folder">$INFO[Window(Home).Property(MyPicsDBRandom.3.Folder)]</property>
-            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBRandom.3.Path)]</property>
-            <onclick>SetFocus(5014)</onclick>
-            <thumb>$INFO[Window(Home).Property(MyPicsDBRandom.3.Path)]</thumb>
-            <visible>Substring(Control.GetLabel(4321),randompics)</visible>
-            <visible>!IsEmpty(Window(Home).Property(MyPicsDBRandom.3.Name))</visible>
-        </item>
-        <item>
-            <label>$INFO[Window(Home).Property(MyPicsDBRandom.4.Name)]</label>
-            <label2>$INFO[Window(Home).Property(MyPicsDBRandom.4.Date)]</label2>
-            <property name="Folder">$INFO[Window(Home).Property(MyPicsDBRandom.4.Folder)]</property>
-            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBRandom.4.Path)]</property>
-            <onclick>SetFocus(5014)</onclick>
-            <thumb>$INFO[Window(Home).Property(MyPicsDBRandom.4.Path)]</thumb>
-            <visible>Substring(Control.GetLabel(4321),randompics)</visible>
-            <visible>!IsEmpty(Window(Home).Property(MyPicsDBRandom.4.Name))</visible>
-        </item>
-    </include>
-    <include name="RandomPicturesItemsHome">
-        <item>
-            <label>$INFO[Window(Home).Property(MyPicsDBRandom.5.Name)]</label>
-            <label2>$INFO[Window(Home).Property(MyPicsDBRandom.5.Date)]</label2>
-            <property name="Folder">$INFO[Window(Home).Property(MyPicsDBRandom.5.Folder)]</property>
-            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBRandom.5.Path)]</property>
-            <onclick>SetFocus(5014)</onclick>
-            <thumb>$INFO[Window(Home).Property(MyPicsDBRandom.5.Path)]</thumb>
-            <visible>Substring(Control.GetLabel(4321),randompics)</visible>
-            <visible>!IsEmpty(Window(Home).Property(MyPicsDBRandom.5.Name))</visible>
-        </item>
-        <item>
-            <label>$INFO[Window(Home).Property(MyPicsDBRandom.6.Name)]</label>
-            <label2>$INFO[Window(Home).Property(MyPicsDBRandom.6.Date)]</label2>
-            <property name="Folder">$INFO[Window(Home).Property(MyPicsDBRandom.6.Folder)]</property>
-            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBRandom.6.Path)]</property>
-            <onclick>SetFocus(5014)</onclick>
-            <thumb>$INFO[Window(Home).Property(MyPicsDBRandom.6.Path)]</thumb>
-            <visible>Substring(Control.GetLabel(4321),randompics)</visible>
-            <visible>!IsEmpty(Window(Home).Property(MyPicsDBRandom.6.Name))</visible>
-        </item>
-        <item>
-            <label>$INFO[Window(Home).Property(MyPicsDBRandom.7.Name)]</label>
-            <label2>$INFO[Window(Home).Property(MyPicsDBRandom.7.Date)]</label2>
-            <property name="Folder">$INFO[Window(Home).Property(MyPicsDBRandom.7.Folder)]</property>
-            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBRandom.7.Path)]</property>
-            <onclick>SetFocus(5014)</onclick>
-            <thumb>$INFO[Window(Home).Property(MyPicsDBRandom.7.Path)]</thumb>
-            <visible>Substring(Control.GetLabel(4321),randompics)</visible>
-            <visible>!IsEmpty(Window(Home).Property(MyPicsDBRandom.7.Name))</visible>
-        </item>
-        <item>
-            <label>$INFO[Window(Home).Property(MyPicsDBRandom.8.Name)]</label>
-            <label2>$INFO[Window(Home).Property(MyPicsDBRandom.8.Date)]</label2>
-            <property name="Folder">$INFO[Window(Home).Property(MyPicsDBRandom.8.Folder)]</property>
-            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBRandom.8.Path)]</property>
-            <onclick>SetFocus(5014)</onclick>
-            <thumb>$INFO[Window(Home).Property(MyPicsDBRandom.8.Path)]</thumb>
-            <visible>Substring(Control.GetLabel(4321),randompics)</visible>
-            <visible>!IsEmpty(Window(Home).Property(MyPicsDBRandom.8.Name))</visible>
-        </item>
-    </include>
-    <include name="LatestPicturesItems">
-        <item>
-            <label>$INFO[Window(Home).Property(MyPicsDBLatest.1.Name)]</label>
-            <label2>$INFO[Window(Home).Property(MyPicsDBLatest.1.Date)]</label2>
-            <property name="Folder">$INFO[Window(Home).Property(MyPicsDBLatest.1.Folder)]</property>
-            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBLatest.1.Path)]</property>
-            <onclick>SetFocus(5014)</onclick>
-            <thumb>$INFO[Window(Home).Property(MyPicsDBLatest.1.Path)]</thumb>
-            <visible>Substring(Control.GetLabel(4321),recentpics)</visible>
-            <visible>!IsEmpty(Window(Home).Property(MyPicsDBLatest.1.Name))</visible>
-        </item>
-        <item>
-            <label>$INFO[Window(Home).Property(MyPicsDBLatest.2.Name)]</label>
-            <label2>$INFO[Window(Home).Property(MyPicsDBLatest.2.Date)]</label2>
-            <property name="Folder">$INFO[Window(Home).Property(MyPicsDBLatest.2.Folder)]</property>
-            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBLatest.2.Path)]</property>
-            <onclick>SetFocus(5014)</onclick>
-            <thumb>$INFO[Window(Home).Property(MyPicsDBLatest.2.Path)]</thumb>
-            <visible>Substring(Control.GetLabel(4321),recentpics)</visible>
-            <visible>!IsEmpty(Window(Home).Property(MyPicsDBLatest.2.Name))</visible>
-        </item>
-        <item>
-            <label>$INFO[Window(Home).Property(MyPicsDBLatest.3.Name)]</label>
-            <label2>$INFO[Window(Home).Property(MyPicsDBLatest.3.Date)]</label2>
-            <property name="Folder">$INFO[Window(Home).Property(MyPicsDBLatest.3.Folder)]</property>
-            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBLatest.3.Path)]</property>
-            <onclick>SetFocus(5014)</onclick>
-            <thumb>$INFO[Window(Home).Property(MyPicsDBLatest.3.Path)]</thumb>
-            <visible>Substring(Control.GetLabel(4321),recentpics)</visible>
-            <visible>!IsEmpty(Window(Home).Property(MyPicsDBLatest.3.Name))</visible>
-        </item>
-        <item>
-            <label>$INFO[Window(Home).Property(MyPicsDBLatest.4.Name)]</label>
-            <label2>$INFO[Window(Home).Property(MyPicsDBLatest.4.Date)]</label2>
-            <property name="Folder">$INFO[Window(Home).Property(MyPicsDBLatest.4.Folder)]</property>
-            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBLatest.4.Path)]</property>
-            <onclick>SetFocus(5014)</onclick>
-            <thumb>$INFO[Window(Home).Property(MyPicsDBLatest.4.Path)]</thumb>
-            <visible>Substring(Control.GetLabel(4321),recentpics)</visible>
-            <visible>!IsEmpty(Window(Home).Property(MyPicsDBLatest.4.Name))</visible>
-        </item>
-    </include>
-    <include name="LatestPicturesItemsHome">
-        <item>
-            <label>$INFO[Window(Home).Property(MyPicsDBLatest.5.Name)]</label>
-            <label2>$INFO[Window(Home).Property(MyPicsDBLatest.5.Date)]</label2>
-            <property name="Folder">$INFO[Window(Home).Property(MyPicsDBLatest.5.Folder)]</property>
-            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBLatest.5.Path)]</property>
-            <onclick>SetFocus(5014)</onclick>
-            <thumb>$INFO[Window(Home).Property(MyPicsDBLatest.5.Path)]</thumb>
-            <visible>Substring(Control.GetLabel(4321),recentpics)</visible>
-            <visible>!IsEmpty(Window(Home).Property(MyPicsDBLatest.5.Name))</visible>
-        </item>
-        <item>
-            <label>$INFO[Window(Home).Property(MyPicsDBLatest.6.Name)]</label>
-            <label2>$INFO[Window(Home).Property(MyPicsDBLatest.6.Date)]</label2>
-            <property name="Folder">$INFO[Window(Home).Property(MyPicsDBLatest.6.Folder)]</property>
-            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBLatest.6.Path)]</property>
-            <onclick>SetFocus(5014)</onclick>
-            <thumb>$INFO[Window(Home).Property(MyPicsDBLatest.6.Path)]</thumb>
-            <visible>Substring(Control.GetLabel(4321),recentpics)</visible>
-            <visible>!IsEmpty(Window(Home).Property(MyPicsDBLatest.6.Name))</visible>
-        </item>
-        <item>
-            <label>$INFO[Window(Home).Property(MyPicsDBLatest.7.Name)]</label>
-            <label2>$INFO[Window(Home).Property(MyPicsDBLatest.7.Date)]</label2>
-            <property name="Folder">$INFO[Window(Home).Property(MyPicsDBLatest.7.Folder)]</property>
-            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBLatest.7.Path)]</property>
-            <onclick>SetFocus(5014)</onclick>
-            <thumb>$INFO[Window(Home).Property(MyPicsDBLatest.7.Path)]</thumb>
-            <visible>Substring(Control.GetLabel(4321),recentpics)</visible>
-            <visible>!IsEmpty(Window(Home).Property(MyPicsDBLatest.7.Name))</visible>
-        </item>
-        <item>
-            <label>$INFO[Window(Home).Property(MyPicsDBLatest.8.Name)]</label>
-            <label2>$INFO[Window(Home).Property(MyPicsDBLatest.8.Date)]</label2>
-            <property name="Folder">$INFO[Window(Home).Property(MyPicsDBLatest.8.Folder)]</property>
-            <property name="Fanart">$INFO[Window(Home).Property(MyPicsDBLatest.8.Path)]</property>
-            <onclick>SetFocus(5014)</onclick>
-            <thumb>$INFO[Window(Home).Property(MyPicsDBLatest.8.Path)]</thumb>
-            <visible>Substring(Control.GetLabel(4321),recentpics)</visible>
-            <visible>!IsEmpty(Window(Home).Property(MyPicsDBLatest.8.Name))</visible>
-        </item>
-    </include>
     <include name="MostPlayedRomsItems">
         <item>
             <label>$INFO[Window(Home).Property(MostPlayedROM.1.Title)]</label>
@@ -5641,117 +5473,67 @@
         </item>
     </include>
     <include name="DailyBabesContent">
-        <item>
-            <property name="Fanart">http://dailybabenews.com/wp-content/uploads/$INFO[System.Date(yyyy)]/$INFO[System.Date(mm)]/babe_$INFO[System.Date(mm)]-$INFO[System.Date(dd)]-$INFO[System.Date(yyyy)].jpg</property>
-            <thumb>http://dailybabenews.com/wp-content/uploads/$INFO[System.Date(yyyy)]/$INFO[System.Date(mm)]/babe_$INFO[System.Date(mm)]-$INFO[System.Date(dd)]-$INFO[System.Date(yyyy)].jpg</thumb>
+<item>
+            <property name="Fanart">http://img1.demo.jsxbabeotd.dellsports.com/static/models/$INFO[System.Date(yyyy)]/$INFO[System.Date(mm)]/$INFO[System.Date(dd)]/1.jpg</property>
+            <thumb>http://img1.demo.jsxbabeotd.dellsports.com/static/models/$INFO[System.Date(yyyy)]/$INFO[System.Date(mm)]/$INFO[System.Date(dd)]/1.jpg</thumb>
             <onclick>SetFocus(5014)</onclick>
             <visible>Substring(Control.GetLabel(4321),babesimagespanel)</visible>
         </item>
-        <item>
-            <property name="Fanart">http://dailybabenews.com/wp-content/uploads/2012/01/babe_01-$INFO[System.Date(dd)]-2012.jpg</property>
-            <thumb>http://dailybabenews.com/wp-content/uploads/2012/01/babe_01-$INFO[System.Date(dd)]-2012.jpg</thumb>
+		<item>
+            <property name="Fanart">http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/01/$INFO[System.Date(dd)]/1.jpg</property>
+            <thumb>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/01/$INFO[System.Date(dd)]/1.jpg</thumb>
+            <onclick>SetFocus(5014)</onclick>
             <visible>Substring(Control.GetLabel(4321),babesimagespanel)</visible>
-            <onclick>SetFocus(5014)</onclick>
         </item>
-        <item>
-            <property name="Fanart">http://dailybabenews.com/wp-content/uploads/2012/02/babe_02-$INFO[System.Date(dd)]-2012.jpg</property>
-            <thumb>http://dailybabenews.com/wp-content/uploads/2012/02/babe_02-$INFO[System.Date(dd)]-2012.jpg</thumb>
+		<item>
+            <property name="Fanart">http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/02/$INFO[System.Date(dd)]/1.jpg</property>
+            <thumb>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/02/$INFO[System.Date(dd)]/1.jpg</thumb>
+            <onclick>SetFocus(5014)</onclick>
             <visible>Substring(Control.GetLabel(4321),babesimagespanel)</visible>
-            <onclick>SetFocus(5014)</onclick>
         </item>
-        <item>
-            <property name="Fanart">http://dailybabenews.com/wp-content/uploads/2012/03/babe_03-$INFO[System.Date(dd)]-2012.jpg</property>
-            <thumb>http://dailybabenews.com/wp-content/uploads/2012/03/babe_03-$INFO[System.Date(dd)]-2012.jpg</thumb>
+		<item>
+            <property name="Fanart">http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/03/$INFO[System.Date(dd)]/1.jpg</property>
+            <thumb>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/03/$INFO[System.Date(dd)]/1.jpg</thumb>
+            <onclick>SetFocus(5014)</onclick>
             <visible>Substring(Control.GetLabel(4321),babesimagespanel)</visible>
-            <onclick>SetFocus(5014)</onclick>
         </item>
-        <item>
-            <property name="Fanart">http://dailybabenews.com/wp-content/uploads/2012/04/babe_04-$INFO[System.Date(dd)]-2012.jpg</property>
-            <thumb>http://dailybabenews.com/wp-content/uploads/2012/04/babe_04-$INFO[System.Date(dd)]-2012.jpg</thumb>
+		<item>
+            <property name="Fanart">http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/04/$INFO[System.Date(dd)]/1.jpg</property>
+            <thumb>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/04/$INFO[System.Date(dd)]/1.jpg</thumb>
+            <onclick>SetFocus(5014)</onclick>
             <visible>Substring(Control.GetLabel(4321),babesimagespanel)</visible>
-            <onclick>SetFocus(5014)</onclick>
         </item>
-        <item>
-            <property name="Fanart">http://dailybabenews.com/wp-content/uploads/2012/05/babe_05-$INFO[System.Date(dd)]-2012.jpg</property>
-            <thumb>http://dailybabenews.com/wp-content/uploads/2012/05/babe_05-$INFO[System.Date(dd)]-2012.jpg</thumb>
+		<item>
+            <property name="Fanart">http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/05/$INFO[System.Date(dd)]/1.jpg</property>
+            <thumb>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/05/$INFO[System.Date(dd)]/1.jpg</thumb>
+            <onclick>SetFocus(5014)</onclick>
             <visible>Substring(Control.GetLabel(4321),babesimagespanel)</visible>
-            <onclick>SetFocus(5014)</onclick>
         </item>
-    </include>
-    <include name="TheBigPictureContent">
-        <item>
-            <label>$INFO[Window(home).Property(bigpictures.photo.0.title)]</label>
-            <property name="Fanart">$INFO[Window(home).Property(bigpictures.photo.0.pic)]</property>
-            <property name="Plot">$INFO[Window(home).Property(bigpictures.photo.0.description)]</property>
-            <thumb>$INFO[Window(home).Property(bigpictures.photo.0.pic)]</thumb>
+		<item>
+            <property name="Fanart">http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/06/$INFO[System.Date(dd)]/1.jpg</property>
+            <thumb>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/06/$INFO[System.Date(dd)]/1.jpg</thumb>
             <onclick>SetFocus(5014)</onclick>
-            <visible>Substring(Control.GetLabel(4321),thebigpicture)</visible>
-            <visible>!IsEmpty(Window(Home).Property(bigpictures.photo.0.title))</visible>
+            <visible>Substring(Control.GetLabel(4321),babesimagespanel)</visible>
         </item>
-        <item>
-            <label>$INFO[Window(home).Property(bigpictures.photo.1.title)]</label>
-            <property name="Fanart">$INFO[Window(home).Property(bigpictures.photo.1.pic)]</property>
-            <property name="Plot">$INFO[Window(home).Property(bigpictures.photo.1.description)]</property>
-            <thumb>$INFO[Window(home).Property(bigpictures.photo.1.pic)]</thumb>
+		<item>
+            <property name="Fanart">http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/07/$INFO[System.Date(dd)]/1.jpg</property>
+            <thumb>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/07/$INFO[System.Date(dd)]/1.jpg</thumb>
             <onclick>SetFocus(5014)</onclick>
-            <visible>Substring(Control.GetLabel(4321),thebigpicture)</visible>
-            <visible>!IsEmpty(Window(Home).Property(bigpictures.photo.1.title))</visible>
+            <visible>Substring(Control.GetLabel(4321),babesimagespanel)</visible>
         </item>
-        <item>
-            <label>$INFO[Window(home).Property(bigpictures.photo.2.title)]</label>
-            <property name="Fanart">$INFO[Window(home).Property(bigpictures.photo.2.pic)]</property>
-            <property name="Plot">$INFO[Window(home).Property(bigpictures.photo.2.description)]</property>
-            <thumb>$INFO[Window(home).Property(bigpictures.photo.2.pic)]</thumb>
+		<item>
+            <property name="Fanart">http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/08/$INFO[System.Date(dd)]/1.jpg</property>
+            <thumb>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/08/$INFO[System.Date(dd)]/1.jpg</thumb>
             <onclick>SetFocus(5014)</onclick>
-            <visible>Substring(Control.GetLabel(4321),thebigpicture)</visible>
-            <visible>!IsEmpty(Window(Home).Property(bigpictures.photo.2.title))</visible>
+            <visible>Substring(Control.GetLabel(4321),babesimagespanel)</visible>
         </item>
-        <item>
-            <label>$INFO[Window(home).Property(bigpictures.photo.3.title)]</label>
-            <property name="Fanart">$INFO[Window(home).Property(bigpictures.photo.3.pic)]</property>
-            <property name="Plot">$INFO[Window(home).Property(bigpictures.photo.3.description)]</property>
-            <thumb>$INFO[Window(home).Property(bigpictures.photo.3.pic)]</thumb>
+		<item>
+            <property name="Fanart">http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/09/$INFO[System.Date(dd)]/1.jpg</property>
+            <thumb>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/09/$INFO[System.Date(dd)]/1.jpg</thumb>
             <onclick>SetFocus(5014)</onclick>
-            <visible>Substring(Control.GetLabel(4321),thebigpicture)</visible>
-            <visible>!IsEmpty(Window(Home).Property(bigpictures.photo.3.title))</visible>
+            <visible>Substring(Control.GetLabel(4321),babesimagespanel)</visible>
         </item>
-        <item>
-            <label>$INFO[Window(home).Property(bigpictures.photo.4.title)]</label>
-            <property name="Fanart">$INFO[Window(home).Property(bigpictures.photo.4.pic)]</property>
-            <property name="Plot">$INFO[Window(home).Property(bigpictures.photo.4.description)]</property>
-            <thumb>$INFO[Window(home).Property(bigpictures.photo.4.pic)]</thumb>
-            <onclick>SetFocus(5014)</onclick>
-            <visible>Substring(Control.GetLabel(4321),thebigpicture)</visible>
-            <visible>!IsEmpty(Window(Home).Property(bigpictures.photo.4.title))</visible>
-        </item>
-        <item>
-            <label>$INFO[Window(home).Property(bigpictures.photo.5.title)]</label>
-            <property name="Fanart">$INFO[Window(home).Property(bigpictures.photo.5.pic)]</property>
-            <property name="Plot">$INFO[Window(home).Property(bigpictures.photo.5.description)]</property>
-            <thumb>$INFO[Window(home).Property(bigpictures.photo.5.pic)]</thumb>
-            <onclick>SetFocus(5014)</onclick>
-            <visible>Substring(Control.GetLabel(4321),thebigpicture)</visible>
-            <visible>!IsEmpty(Window(Home).Property(bigpictures.photo.5.title))</visible>
-        </item>
-        <item>
-            <label>$INFO[Window(home).Property(bigpictures.photo.6.title)]</label>
-            <property name="Fanart">$INFO[Window(home).Property(bigpictures.photo.6.pic)]</property>
-            <property name="Plot">$INFO[Window(home).Property(bigpictures.photo.6.description)]</property>
-            <thumb>$INFO[Window(home).Property(bigpictures.photo.6.pic)]</thumb>
-            <onclick>SetFocus(5014)</onclick>
-            <visible>Substring(Control.GetLabel(4321),thebigpicture)</visible>
-            <visible>!IsEmpty(Window(Home).Property(bigpictures.photo.6.title))</visible>
-        </item>
-        <item>
-            <label>$INFO[Window(home).Property(bigpictures.photo.7.title)]</label>
-            <property name="Fanart">$INFO[Window(home).Property(bigpictures.photo.7.pic)]</property>
-            <property name="Plot">$INFO[Window(home).Property(bigpictures.photo.7.description)]</property>
-            <thumb>$INFO[Window(home).Property(bigpictures.photo.7.pic)]</thumb>
-            <onclick>SetFocus(5014)</onclick>
-            <visible>Substring(Control.GetLabel(4321),thebigpicture)</visible>
-            <visible>!IsEmpty(Window(Home).Property(bigpictures.photo.7.title))</visible>
-        </item>
-    </include>
+ </include>
     <include name="XKCDContent">
         <item>
             <label>$INFO[Window(home).Property(XKCD.0.Title)]</label>

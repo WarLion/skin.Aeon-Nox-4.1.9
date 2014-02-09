@@ -47,8 +47,6 @@
                 <label>$INFO[Window(Weather).Property(Location),[COLOR grey], • $LOCALIZE[402]: [/COLOR]]$INFO[Window(weather).Property(Current.FeelsLike)] $INFO[System.TemperatureUnits,,[COLOR grey] • $LOCALIZE[406]:[/COLOR] ]$INFO[Window(weather).Property(Current.Humidity)]</label>
                 <label>$INFO[PVR.NextRecordingDateTime,$LOCALIZE[19157]  [B][COLOR=white], [/COLOR][/B]$LOCALIZE[19126] -  • ]$INFO[PVR.NextRecordingTitle, [B][COLOR=white],[/COLOR][/B]]$INFO[PVR.NextRecordingChannel, - [B][COLOR=white],[/COLOR][/B]]</label>
                 <label>$INFO[PVR.NowRecordingDateTime,$LOCALIZE[19158]  [B][COLOR=white], [/COLOR][/B]$LOCALIZE[19126] - ]$INFO[PVR.NowRecordingTitle, • [B][COLOR=FF48D1CC],[/COLOR][/B] ]$INFO[PVR.NowRecordingChannel,[B][COLOR=white]( ,)[/COLOR][/B]]</label>
-                <label>$INFO[Window(Home).Property(MyPicsDBLatest.Categories),[COLOR grey]$LOCALIZE[31892]:[/COLOR] ]$INFO[Window(Home).Property(MyPicsDBLatest.Collections),[COLOR grey]  •  $LOCALIZE[31890]:[/COLOR] ]$INFO[Window(Home).Property(MyPicsDBLatest.Folders),[COLOR grey]  •  $LOCALIZE[31891]:[/COLOR] ]</label>
-                <label>$INFO[Window(Home).Property(MyPicsDBRandom.Categories),[COLOR grey]$LOCALIZE[31892]:[/COLOR] ]$INFO[Window(Home).Property(MyPicsDBRandom.Collections),[COLOR grey]  •  $LOCALIZE[31890]:[/COLOR] ]$INFO[Window(Home).Property(MyPicsDBRandom.Folders),[COLOR grey]  •  $LOCALIZE[31891]:[/COLOR] ]</label>
                 <label>[COLOR grey]$LOCALIZE[133]:[/COLOR] $INFO[Window(Home).Property(Music.ArtistsCount)][COLOR grey]  •  $LOCALIZE[132]:[/COLOR] $INFO[Window(Home).Property(Music.AlbumsCount)][COLOR grey]  •  $LOCALIZE[134]:[/COLOR] $INFO[Window(Home).Property(Music.SongsCount)]</label>
                 <label>[COLOR grey]$LOCALIZE[20343]:[/COLOR] $INFO[Window(Home).Property(TVShows.Count)][COLOR grey]  •  $LOCALIZE[20360]:[/COLOR] $INFO[Window(Home).Property(Episodes.Count)][COLOR grey]  •  $LOCALIZE[16101]:[/COLOR] $INFO[Window(Home).Property(Episodes.UnWatched)]</label>
                 <label>$INFO[Window(Home).Property(Movies.Count),[COLOR grey]$LOCALIZE[31502]:[/COLOR] ,[COLOR grey]  •  $LOCALIZE[16102]:[/COLOR] ]$INFO[Window(Home).Property(Movies.Watched),,[COLOR grey]  •  $LOCALIZE[16101]:[/COLOR] ]$INFO[Window(Home).Property(Movies.UnWatched)]</label>
@@ -2078,7 +2076,6 @@
             <onclick condition="SubString(Window(home).Property(WidgetType),11custom)">$INFO[Skin.String(SmartPlaylist11.Call)]</onclick>
             <onclick condition="SubString(Window(home).Property(WidgetType),12custom)">$INFO[Skin.String(SmartPlaylist12.Call)]</onclick>
             <onclick condition="Substring(Window(home).Property(WidgetType),actors)">RunScript(script.metadata.actors,borntoday,10,random)</onclick>
-            <onclick condition="Substring(Window(home).Property(WidgetType),pics)">RunScript(plugin.image.mypicsdb,0,?action='setproperties'&amp;method='Random'&amp;sort='Added'&amp;limit=10)</onclick>
             <onclick condition="!Substring(Window(home).Property(WidgetType),custom) + !Substring(Window(home).Property(WidgetType),pics)">SetProperty(SkinWidgets_RandomItems_Update,true)</onclick>
             <visible>Substring(Window(home).Property(WidgetType),random) | Substring(Window(home).Property(WidgetType),actors)</visible>
         </item>
@@ -2856,10 +2853,10 @@
                             <visible>!IsEmpty(Control.GetLabel(12020))</visible>
                         </control>
                         <control type="label">
-                            <width min="150" max="500">auto</width>
+                            <width>140</width>
                             <height>36</height>
                             <textoffsetx>15</textoffsetx>
-                            <label>$INFO[Window(home).Property(Year),• , • ]</label>
+                            <label>$INFO[Window(home).Property(Year),•,• ]</label>
                             <font>Font_Reg30_2</font>
                             <textcolor>grey2</textcolor>
                             <visible>!IsEmpty(Control.GetLabel(12020))</visible>
@@ -3446,17 +3443,6 @@
                         <onclick condition="Substring(Window(home).Property(WidgetType),addons)">RunAddon($INFO[Window(home).Property(Path)])</onclick>
                         <onclick condition="Substring(Window(home).Property(WidgetType),rss)">PlayMedia($ESCINFO[Window(home).Property(Media)])</onclick>
                         <onclick>Dialog.Close(musicinformation)</onclick>
-                    </control>
-                    <control type="button" id="5035">
-                        <label>$LOCALIZE[31087]</label>
-                        <onclick condition="Substring(Window(home).Property(WidgetType),randompics)">RunScript(plugin.image.mypicsdb,0,?action='setproperties'&amp;method='Random'&amp;sort='Added'&amp;limit=10)</onclick>
-                        <onclick condition="Substring(Window(home).Property(WidgetType),random) + !Substring(Window(home).Property(WidgetType),pics)">SetProperty(SkinWidgets_RandomItems_Update,true)</onclick>
-                        <onclick condition="!IsEmpty(Window(home).Property(PanelWidgetInfo))">SetFocus(5010)</onclick>
-                        <onclick condition="!IsEmpty(Window(home).Property(PanelWidget2Info))">SetFocus(6010)</onclick>
-                        <onclick>ClearProperty(PanelWidgetInfo,Home)</onclick>
-                        <onclick>ClearProperty(PanelWidget2Info,Home)</onclick>
-                        <include>WidgetMenuLabel</include>
-                        <visible>Substring(Window(home).Property(WidgetType),random)</visible>
                     </control>
                     <control type="button" id="5033">
                         <label>$LOCALIZE[31066]</label>
@@ -4749,7 +4735,7 @@
                 <itemlayout width="532" height="340" condition="Substring(Control.GetLabel(4321),keepar)">
                     <include condition="Substring(Skin.String(widgetlist),keepar) | Window.IsActive(1124)">WidgetRCBLayout</include>
                 </itemlayout>
-                <itemlayout width="228" height="340" condition="Substring(Control.GetLabel(4321),panelcoverposter)">
+				<itemlayout width="228" height="340" condition="Substring(Control.GetLabel(4321),panelcoverposter)">
                     <control type="image">
                         <posx>5</posx>
                         <posy>5</posy>
@@ -5104,10 +5090,6 @@
                     <include condition="Library.HasContent(tvshows) + !Window.IsActive(1124) + Substring(Skin.String(widgetlist),randomtvpanel)">RandomEpisodesItemsHome</include>
                     <include condition="Library.HasContent(tvshows)">WatchListTVItems</include>
                     <include condition="Library.HasContent(tvshows) + !Window.IsActive(1124) + Substring(Skin.String(widgetlist),watchlisttvpanel)">WatchListTVItemsHome</include>
-                    <include condition="System.HasAddon(plugin.image.mypicsdb)">RandomPicturesItems</include>
-                    <include condition="System.HasAddon(plugin.image.mypicsdb) + !Window.IsActive(1124) + Substring(Skin.String(widgetlist),randompicsimagespanel)">RandomPicturesItemsHome</include>
-                    <include condition="System.HasAddon(plugin.image.mypicsdb)">LatestPicturesItems</include>
-                    <include condition="System.HasAddon(plugin.image.mypicsdb) + !Window.IsActive(1124) + Substring(Skin.String(widgetlist),recentpicsimagespanel)">LatestPicturesItemsHome</include>
                     <include condition="System.HasAddon(script.games.rom.collection.browser) + [Window.IsActive(1124) | Substring(Skin.String(widgetlist),mostplayedromspanel)]">MostPlayedRomsItems</include>
                     <include condition="System.HasAddon(script.randomandlastitems) + [Window.IsActive(1124) | SubString(Skin.String(widgetlist),1custompanel)]">Custom1Widget</include>
                     <include condition="System.HasAddon(script.randomandlastitems) + [Window.IsActive(1124) | SubString(Skin.String(widgetlist),2custompanel)]">Custom2Widget</include>
@@ -5541,10 +5523,6 @@
                     <include condition="Library.HasContent(tvshows) + !Window.IsActive(1124) + Substring(Skin.String(widget2list),randomtvpanel)">RandomEpisodesItems2Home</include>
                     <include condition="Library.HasContent(tvshows)">WatchListTVItems2</include>
                     <include condition="Library.HasContent(tvshows) + !Window.IsActive(1124) + Substring(Skin.String(widget2list),watchlisttvpanel)">WatchListTVItems2Home</include>
-                    <include condition="System.HasAddon(plugin.image.mypicsdb)">RandomPicturesItems2</include>
-                    <include condition="System.HasAddon(plugin.image.mypicsdb) + !Window.IsActive(1124) + Substring(Skin.String(widget2list),randompicsimagespanel)">RandomPicturesItems2Home</include>
-                    <include condition="System.HasAddon(plugin.image.mypicsdb)">LatestPicturesItems2</include>
-                    <include condition="System.HasAddon(plugin.image.mypicsdb) + !Window.IsActive(1124) + Substring(Skin.String(widget2list),recentpicsimagespanel)">LatestPicturesItems2Home</include>
                     <include condition="System.HasAddon(script.games.rom.collection.browser) + [Window.IsActive(1124) | Substring(Skin.String(widget2list),mostplayedromspanel)]">MostPlayedRomsItems2</include>
                     <include condition="System.HasAddon(script.randomandlastitems) + [Window.IsActive(1124) | SubString(Skin.String(widget2list),7custompanel)]">Custom1Widget2</include>
                     <include condition="System.HasAddon(script.randomandlastitems) + [Window.IsActive(1124) | SubString(Skin.String(widget2list),8custompanel)]">Custom2Widget2</include>
