@@ -109,8 +109,7 @@
                     <onclick condition="!Skin.HasSetting(clearcases) + !Skin.HasSetting(usecases)">Skin.SetBool(usecases)</onclick>
                     <onclick condition="Skin.HasSetting(clearcases)">Skin.Reset(clearcases)</onclick>
                     <onclick condition="Skin.HasSetting(clearcases)">Skin.Reset(usecases)</onclick>
-                    <onclick>Dialog.Close(1126)</onclick>
-                    <onclick>SetFocus(50)</onclick>
+                    <onclick>SetFocus(1641)</onclick>
                     <visible>[container.content(movies) | Container.Content(musicvideos)] + Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies)</visible>
                 </control>
                 <!--LowList Options-->

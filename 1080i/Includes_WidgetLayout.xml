@@ -57,7 +57,7 @@
                 <visible>!Skin.HasSetting(DisableLibraryStats) + StringCompare(Control.GetLabel(4326),mixed)</visible>
             </control>
             <control type="label">
-                <left>1776</left>
+                <left>780</left>
                 <top>-1</top>
                 <width>1000</width>
                 <height>36</height>
@@ -133,7 +133,7 @@
                 <animation effect="rotatex" end="180" time="320" center="20" tween="cubic" easing="inout" condition="Skin.HasSetting(timehomehigh)">Conditional</animation>
             </control>
             <control type="label">
-                <left>734</left>
+                <left>110</left>
                 <width>600</width>
                 <height>36</height>
                 <align>right</align>

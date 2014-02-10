@@ -10,7 +10,7 @@
             <control type="image">
                 <top>-465</top>
                 <width>1920</width>
-                <height>651</height>
+                <height>751</height>
                 <texture flipy="true">views/lowlist_panelback.png</texture>
                 <animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
                 <animation effect="slide" end="0,270" time="160" tween="cubic" condition="VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)">Conditional</animation>
@@ -19,7 +19,7 @@
                 <top>-52</top>
                 <control type="label" id="10">
                     <left>75</left>
-                    <top>60</top>
+                    <top>85</top>
                     <width>1770</width>
                     <height>30</height>
                     <label>-</label>
@@ -27,7 +27,7 @@
                 </control>
                 <control type="label" id="11">
                     <left>75</left>
-                    <top>90</top>
+                    <top>145</top>
                     <width>1770</width>
                     <height>30</height>
                     <label>-</label>
@@ -35,7 +35,7 @@
                 </control>
                 <control type="label" id="12">
                     <left>75</left>
-                    <top>120</top>
+                    <top>190</top>
                     <width>1770</width>
                     <height>60</height>
                     <label>-</label>
