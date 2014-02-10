@@ -19,8 +19,8 @@
             <animation effect="zoom" end="91" center="960,360" time="320" tween="cubic" easing="inout" condition="true">Conditional</animation>
             <include>Furniture_SettingsBackPanel</include>
             <control type="list" id="9000">
-                <posx>63</posx>
-                <posy>194</posy>
+                <left>63</left>
+                <top>194</top>
                 <width>750</width>
                 <height>768</height>
                 <onleft>ActivateWindow(1121)</onleft>
@@ -30,7 +30,7 @@
                 <scrolltime tween="sine">300</scrolltime>
                 <itemlayout height="74" width="570">
                     <control type="label">
-                        <posx>30</posx>
+                        <left>30</left>
                         <width>306</width>
                         <height>74</height>
                         <label>$INFO[ListItem.Label]</label>
@@ -47,7 +47,7 @@
                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>30</posx>
+                        <left>30</left>
                         <width>306</width>
                         <height>74</height>
                         <label>$INFO[ListItem.Label]</label>
@@ -78,8 +78,8 @@
                 </content>
             </control>
             <control type="label">
-                <posx>358</posx>
-                <posy>-800</posy>
+                <left>358</left>
+                <top>-800</top>
                 <width>1491</width>
                 <align>center</align>
                 <label>$LOCALIZE[20077] - $INFO[Container(9000).ListItem.Label] $INFO[Container(9000).ListItem.Label2]</label>
@@ -89,8 +89,8 @@
             </control>
             <control type="group" id="9010">
                 <control type="grouplist" id="9001">
-                    <posx>387</posx>
-                    <posy>195</posy>
+                    <left>387</left>
+                    <top>195</top>
                     <width>1469</width>
                     <height>732</height>
                     <visible>Container(9000).Hasfocus(1)</visible>
@@ -154,30 +154,17 @@
                         <onclick>Skin.SetFile(Startup_Playlist_Path,.m3u|.xsp,special://profile/playlists/music/)</onclick>
                         <enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
                     </control>
-                    <control type="radiobutton" id="109">
-                        <label>$LOCALIZE[32966]</label>
-                        <include>Default_SettingRadioButton</include>
-                        <onclick>Skin.ToggleSetting(TVTunes.Enabled)</onclick>
-                        <selected>Skin.HasSetting(TVTunes.Enabled)</selected>
-                    </control>
-                    <control type="radiobutton" id="111">
-                        <label>$LOCALIZE[32968]</label>
-                        <include>Default_SettingRadioButton</include>
-                        <onclick>Skin.ToggleSetting(Extra.Disable)</onclick>
-                        <selected>Skin.HasSetting(Extra.Disable)</selected>
-						<visible>system.hasaddon(script.cinema.experience) | System.HasAddon(script.videoextras) | system.hasaddon(script.tvtunes)</visible>
-                    </control>					
-						<control type="radiobutton" id="110">
-							<include>Default_SettingRadioButton</include>
-							<selected>Skin.HasSetting(UpdateArt.Enabled)</selected>
-							<onclick>Skin.ToggleSetting(UpdateArt.Enabled)</onclick>
-							<label>$LOCALIZE[32965]</label>
-							<visible>System.HasAddon(script.artwork.downloader)</visible>
-						</control>														
+					<control type="radiobutton" id="110">
+						<include>Default_SettingRadioButton</include>
+						<selected>Skin.HasSetting(UpdateArt.Enabled)</selected>
+						<onclick>Skin.ToggleSetting(UpdateArt.Enabled)</onclick>
+						<label>$LOCALIZE[32965]</label>
+						<visible>System.HasAddon(script.artwork.downloader)</visible>
+					</control>														
                 </control>
                 <control type="grouplist" id="9002">
-                    <posx>387</posx>
-                    <posy>195</posy>
+                    <left>387</left>
+                    <top>195</top>
                     <width>1469</width>
                     <height>732</height>
                     <visible>Container(9000).Hasfocus(2)</visible>
@@ -242,10 +229,15 @@
                         <include>Default_SettingButton</include>
                         <onclick>ActivateWindow(1118)</onclick>
                     </control>
+                    <control type="button" id="519">
+                        <label>$LOCALIZE[32974]</label>
+                        <include>Default_SettingButton</include>
+                        <onclick>ActivateWindow(1165)</onclick>
+                    </control>					
                 </control>
                 <control type="grouplist" id="9004">
-                    <posx>387</posx>
-                    <posy>200</posy>
+                    <left>387</left>
+                    <top>200</top>
                     <width>1469</width>
                     <height>732</height>
                     <visible>Container(9000).Hasfocus(8)</visible>
@@ -355,8 +347,8 @@
                     </control>				
                 </control>
                 <control type="grouplist" id="9009">
-                    <posx>1121</posx>
-                    <posy>200</posy>
+                    <left>1121</left>
+                    <top>200</top>
                     <width>734</width>
                     <height>732</height>
                     <visible>Container(9000).Hasfocus(8)</visible>
@@ -452,8 +444,8 @@
                     </control>						
                 </control>
                 <control type="grouplist" id="9005">
-                    <posx>387</posx>
-                    <posy>200</posy>
+                    <left>387</left>
+                    <top>200</top>
                     <width>1469</width>
                     <height>900</height>
                     <visible>Container(9000).Hasfocus(9)</visible>
@@ -511,8 +503,8 @@
                     </control>				
                 </control>
                 <control type="grouplist" id="9009">
-                    <posx>387</posx>
-                    <posy>195</posy>
+                    <left>387</left>
+                    <top>195</top>
                     <width>1469</width>
                     <height>732</height>
                     <visible>Container(9000).Hasfocus(10)</visible>
@@ -560,17 +552,17 @@
                 </control>
             </control>
             <control type="group">
-                <posx>1170</posx>
-                <posy>780</posy>
+                <left>1170</left>
+                <top>780</top>
                 <visible>Container(9000).Hasfocus(9)</visible>
                 <control type="image">
-                    <posy>30</posy>
+                    <top>30</top>
                     <width>400</width>
                     <aspectratio>keep</aspectratio>
                     <texture>fanarttv.png</texture>
                 </control>
                 <control type="image">
-                    <posx>350</posx>
+                    <left>350</left>
                     <width>300</width>
                     <aspectratio>keep</aspectratio>
                     <texture>xbmc.png</texture>

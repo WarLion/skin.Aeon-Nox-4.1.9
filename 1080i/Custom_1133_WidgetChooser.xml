@@ -5,10 +5,10 @@
     <allowoverlay>no</allowoverlay>
     <controls>
         <control type="group">
-            <posy>30</posy>
+            <top>30</top>
             <control type="image">
-                <posx>326</posx>
-                <posy>100</posy>
+                <left>326</left>
+                <top>100</top>
                 <width>1240</width>
                 <height>810</height>
                 <texture border="20">osd/osd_settings_back_glow.png</texture>
@@ -17,8 +17,8 @@
                 <include>PanelGlowFade</include>
             </control>
             <control type="image">
-                <posx>326</posx>
-                <posy>100</posy>
+                <left>326</left>
+                <top>100</top>
                 <width>1240</width>
                 <height>810</height>
                 <texture border="20">osd/osd_settings_back.png</texture>
@@ -26,10 +26,10 @@
             </control>
             <include>Animation_OpenCloseZoom</include>
             <control type="group">
-                <posy>-100</posy>
+                <top>-100</top>
                 <control type="panel" id="4">
-                    <posx>347</posx>
-                    <posy>240</posy>
+                    <left>347</left>
+                    <top>240</top>
                     <width>1200</width>
                     <height>720</height>
                     <aligny>center</aligny>
@@ -452,8 +452,8 @@
                 </control>
                 <control type="image">
                     <description>left Arrow</description>
-                    <posx>567</posx>
-                    <posy>190</posy>
+                    <left>567</left>
+                    <top>190</top>
                     <width>786</width>
                     <height>30</height>
                     <texture flipy="true">wall/wall_arrow_vertical.png</texture>
@@ -462,8 +462,8 @@
                 </control>
                 <control type="image">
                     <description>right Arrow</description>
-                    <posx>567</posx>
-                    <posy>990</posy>
+                    <left>567</left>
+                    <top>990</top>
                     <width>786</width>
                     <height>30</height>
                     <texture>wall/wall_arrow_vertical.png</texture>

@@ -5,12 +5,12 @@
     <allowoverlay>no</allowoverlay>
     <controls>
         <control type="group">
-            <posx>280</posx>
+            <left>280</left>
             <include>Animation_DialogPopup</include>
             <visible>!Window.IsActive(1143)</visible>
             <control type="image">
-                <posx>380</posx>
-                <posy>200</posy>
+                <left>380</left>
+                <top>200</top>
                 <width>640</width>
                 <height>560</height>
                 <texture border="20">osd/osd_settings_back_glow.png</texture>
@@ -19,16 +19,16 @@
                 <include>PanelGlowFade</include>
             </control>
             <control type="image">
-                <posx>380</posx>
-                <posy>200</posy>
+                <left>380</left>
+                <top>200</top>
                 <width>640</width>
                 <height>560</height>
                 <texture border="20">osd/osd_settings_back.png</texture>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
             <control type="panel" id="4">
-                <posx>400</posx>
-                <posy>240</posy>
+                <left>400</left>
+                <top>240</top>
                 <width>600</width>
                 <height>540</height>
                 <aligny>center</aligny>

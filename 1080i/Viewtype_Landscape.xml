@@ -2,8 +2,8 @@
 <includes>
     <include name="LandscapeThumbs">
         <control type="image">
-            <posx>-3</posx>
-            <posy>67</posy>
+            <left>-3</left>
+            <top>67</top>
             <width>500</width>
             <height>287</height>
             <aspectratio scalediffuse="false">scale</aspectratio>
@@ -11,8 +11,8 @@
             <bordersize>9</bordersize>
         </control>
         <control type="image">
-            <posx>-3</posx>
-            <posy>97</posy>
+            <left>-3</left>
+            <top>97</top>
             <width>500</width>
             <height>147</height>
             <aspectratio>keep</aspectratio>
@@ -20,8 +20,8 @@
             <visible>Container.Content(movies) + IsEmpty(ListItem.Art(landscape))</visible>
         </control>
         <control type="image">
-            <posx>-3</posx>
-            <posy>338</posy>
+            <left>-3</left>
+            <top>338</top>
             <width>500</width>
             <height>247</height>
             <aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -31,8 +31,8 @@
             <animation effect="fade" start="40" end="100" time="160">UnFocus</animation>
         </control>
         <control type="image">
-            <posx>-3</posx>
-            <posy>67</posy>
+            <left>-3</left>
+            <top>67</top>
             <width>500</width>
             <height>287</height>
             <aspectratio scalediffuse="false">scale</aspectratio>
@@ -43,16 +43,16 @@
         <control type="group">
             <visible>Container.Content(episodes) + !IsEmpty(ListItem.Title) + !Skin.HasSetting(disableepno)</visible>
             <control type="image">
-                <posx>140</posx>
-                <posy>326</posy>
+                <left>140</left>
+                <top>326</top>
                 <width>218</width>
                 <height>70</height>
                 <aspectratio scalediffuse="false">keep</aspectratio>
                 <texture>thumbs/multiplex_labelblock.png</texture>
             </control>
             <control type="label">
-                <posx>249</posx>
-                <posy>300</posy>
+                <left>249</left>
+                <top>300</top>
                 <width>375</width>
                 <height>90</height>
                 <align>center</align>
@@ -61,22 +61,22 @@
             </control>
         </control>
         <control type="image">
-            <posx>399</posx>
-            <posy>75</posy>
+            <left>399</left>
+            <top>75</top>
             <width>90</width>
             <height>90</height>
             <include>OverlayVisibility0</include>
             <visible>![[Skin.HasSetting(landscapelogo) | Skin.HasSetting(landscapeonelogo)] + [Container.Content(tvshows) | Container.Content(movies)]]</visible>
         </control>
         <control type="group">
-            <posx>-20</posx>
-            <posy>50</posy>
+            <left>-20</left>
+            <top>50</top>
             <include>UnwatchedIcon</include>
         </control>
     </include>
     <include name="contents503list">
-        <posx>-330</posx>
-        <posy>612</posy>
+        <left>-330</left>
+        <top>612</top>
         <width>2580</width>
         <height>600</height>
         <onleft>503</onleft>
@@ -100,7 +100,7 @@
         </itemlayout>
         <focusedlayout width="600" height="450" condition="![[Skin.HasSetting(landscapeclearart) | Skin.HasSetting(landscapelogo) | Skin.HasSetting(landscapeonelogo)] + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(artists)]] | [Container.Content(artists) + !Skin.HasSetting(landscapeonelogo)]">
             <control type="group">
-                <posx>57</posx>
+                <left>57</left>
                 <animation effect="zoom" center="auto" start="100" end="122" time="240" tween="quadratic" reversible="false">Focus</animation>
                 <animation type="UnFocus" condition="Control.HasFocus(503)">
                     <effect type="slide" end="-57" time="0" tween="quadratic" />
@@ -151,8 +151,8 @@
             <control type="group">
                 <include>Animation_WindowFade200</include>
                 <control type="image" id="8822">
-                    <posx>650</posx>
-                    <posy>810</posy>
+                    <left>650</left>
+                    <top>810</top>
                     <width>635</width>
                     <height>245</height>
                     <aspectratio>keep</aspectratio>
@@ -165,8 +165,8 @@
                     <visible>![Container.OnNext | Container.OnPrevious]</visible>
                 </control>
                 <control type="label">
-                    <posx>510</posx>
-                    <posy>1040</posy>
+                    <left>510</left>
+                    <top>1040</top>
                     <width>900</width>
                     <align>center</align>
                     <label>$INFO[ListItem.Label]</label>
@@ -181,8 +181,8 @@
                     <visible>!Container.Content(episodes)</visible>
                 </control>
                 <control type="label">
-                    <posx>510</posx>
-                    <posy>1040</posy>
+                    <left>510</left>
+                    <top>1040</top>
                     <width>900</width>
                     <align>center</align>
                     <label>$INFO[ListItem.Title]</label>
@@ -197,8 +197,8 @@
                     <visible>![[Skin.HasSetting(landscapelogo) | Skin.HasSetting(landscapeonelogo)] + [Container.Content(tvshows) | Container.Content(movies)]]</visible>
                 </control>
                 <control type="label">
-                    <posx>510</posx>
-                    <posy>1030</posy>
+                    <left>510</left>
+                    <top>1030</top>
                     <width>900</width>
                     <align>center</align>
                     <label>$VAR[LandscapeLogoLabelVar]</label>
@@ -215,7 +215,7 @@
             <visible>Control.IsVisible(503)</visible>
             <animation effect="slide" tween="cubic" easing="inout" time="400" start="0,-200" end="0,0">VisibleChange</animation>
             <control type="image">
-                <posy>-130</posy>
+                <top>-130</top>
                 <width>1920</width>
                 <height>220</height>
                 <texture>views/logo_tagline_gradient.png</texture>
@@ -237,8 +237,8 @@
                 <visible>Skin.HasSetting(landscapeonelogo) + [Container.Content(tvshows) | Container.Content(movies)] + !Control.HasFocus(61)</visible>
             </control>
             <control type="image">
-                <posx>200r</posx>
-                <posy>0</posy>
+                <left>200r</left>
+                <top>0</top>
                 <width>200</width>
                 <height>200</height>
                 <texture>$INFO[ListItem.Overlay,thumbs/]</texture>
@@ -250,16 +250,16 @@
     </include>
     <include name="LandscapeLogoLayout">
         <control type="image">
-            <posx>52</posx>
-            <posy>178</posy>
+            <left>52</left>
+            <top>178</top>
             <width>390</width>
             <height>164</height>
             <aspectratio aligny="bottom">keep</aspectratio>
             <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
         </control>
         <control type="image">
-            <posx>52</posx>
-            <posy>345</posy>
+            <left>52</left>
+            <top>345</top>
             <width>390</width>
             <height>164</height>
             <aspectratio aligny="top">keep</aspectratio>
@@ -269,8 +269,8 @@
         <control type="group">
             <visible>IsEmpty(ListItem.Art(clearlogo))</visible>
             <control type="label">
-                <posx>248</posx>
-                <posy>330</posy>
+                <left>248</left>
+                <top>330</top>
                 <width>470</width>
                 <align>center</align>
                 <label>$VAR[SecondLabelVar]</label>
@@ -279,8 +279,8 @@
                 <textcolor>white2</textcolor>
             </control>
             <control type="label">
-                <posx>248</posx>
-                <posy>296</posy>
+                <left>248</left>
+                <top>296</top>
                 <width>470</width>
                 <align>center</align>
                 <label>$VAR[FirstLabelVar]</label>
@@ -294,16 +294,16 @@
     </include>
     <include name="LandscapeClearArtLayout">
         <control type="image">
-            <posx>38</posx>
-            <posy>-82</posy>
+            <left>38</left>
+            <top>-82</top>
             <width>450</width>
             <height>400</height>
             <aspectratio aligny="bottom">keep</aspectratio>
             <texture background="true">$VAR[TVShowClearArtVar]</texture>
         </control>
         <control type="image">
-            <posx>38</posx>
-            <posy>295</posy>
+            <left>38</left>
+            <top>295</top>
             <width>450</width>
             <height>400</height>
             <aspectratio aligny="top">keep</aspectratio>
@@ -313,8 +313,8 @@
         <control type="group">
             <visible>IsEmpty(ListItem.Art(clearlogo)) + IsEmpty(ListItem.Art(clearart))</visible>
             <control type="label">
-                <posx>248</posx>
-                <posy>330</posy>
+                <left>248</left>
+                <top>330</top>
                 <width>470</width>
                 <align>center</align>
                 <label>$VAR[SecondLabelVar]</label>
@@ -323,8 +323,8 @@
                 <textcolor>white2</textcolor>
             </control>
             <control type="label">
-                <posx>248</posx>
-                <posy>296</posy>
+                <left>248</left>
+                <top>296</top>
                 <width>470</width>
                 <align>center</align>
                 <label>$VAR[FirstLabelVar]</label>

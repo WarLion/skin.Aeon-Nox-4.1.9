@@ -5,11 +5,11 @@
     <allowoverlay>no</allowoverlay>
     <controls>
         <control type="group">
-            <posx>280</posx>
+            <left>280</left>
             <include>Animation_OpenCloseZoom</include>
             <control type="image">
-                <posx>30</posx>
-                <posy>100</posy>
+                <left>30</left>
+                <top>100</top>
                 <width>1344</width>
                 <height>830</height>
                 <texture border="20">osd/osd_settings_back_glow.png</texture>
@@ -18,16 +18,16 @@
                 <include>PanelGlowFade</include>
             </control>
             <control type="image">
-                <posx>30</posx>
-                <posy>100</posy>
+                <left>30</left>
+                <top>100</top>
                 <width>1344</width>
                 <height>830</height>
                 <texture border="20">osd/osd_settings_back.png</texture>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
             <control type="panel" id="4">
-                <posx>50</posx>
-                <posy>138</posy>
+                <left>50</left>
+                <top>138</top>
                 <width>1375</width>
                 <height>767</height>
                 <aligny>center</aligny>
@@ -38,15 +38,15 @@
                 <onleft>4</onleft>
                 <itemlayout width="145" height="150">
                     <control type="image">
-                        <posx>5</posx>
-                        <posy>90</posy>
+                        <left>5</left>
+                        <top>90</top>
                         <width>135</width>
                         <height>60</height>
                         <texture border="0,0,0,4">settings/listselect_nf.png</texture>
                     </control>
                     <control type="image">
-                        <posx>15</posx>
-                        <posy>15</posy>
+                        <left>15</left>
+                        <top>15</top>
                         <width>120</width>
                         <height>120</height>
                         <aspectratio align="center">keep</aspectratio>
@@ -54,8 +54,8 @@
                         <colordiffuse>grey</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>75</posx>
-                        <posy>50</posy>
+                        <left>75</left>
+                        <top>50</top>
                         <width>150</width>
                         <height>30</height>
                         <align>center</align>
@@ -73,16 +73,16 @@
                         <include>PanelGlowFade</include>
                     </control>
                     <control type="image">
-                        <posx>15</posx>
-                        <posy>15</posy>
+                        <left>15</left>
+                        <top>15</top>
                         <width>120</width>
                         <height>120</height>
                         <texture>$INFO[ListItem.Thumb]</texture>
                         <colordiffuse>white2</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>75</posx>
-                        <posy>50</posy>
+                        <left>75</left>
+                        <top>50</top>
                         <width>150</width>
                         <height>30</height>
                         <align>center</align>
@@ -2142,8 +2142,8 @@
                 </content>
             </control>
             <control type="scrollbar" id="60">
-                <posx>1306</posx>
-                <posy>120</posy>
+                <left>1306</left>
+                <top>120</top>
                 <width>98</width>
                 <height>800</height>
                 <include>Animation_VerticalScrollBar</include>

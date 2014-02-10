@@ -20,8 +20,8 @@
     <onunload>ClearProperty(PanelWidgetInfo,Home)</onunload>
     <onunload condition="Window.IsActive(1147)">Action(PreviousMenu)</onunload>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <controls>
@@ -568,8 +568,8 @@
         </control>
         <!-- Main Group -->
         <control type="grouplist" id="40">
-            <posx>-135</posx>
-            <posy>105</posy>
+            <left>-135</left>
+            <top>105</top>
             <width>2325</width>
             <height>780</height>
             <animation effect="slide" end="0,300" time="0" condition="Window.IsActive(1147)">Conditional</animation>
@@ -603,10 +603,10 @@
                     <onclick>RunScript(script.globalsearch)</onclick>
                 </control>
                 <control type="group">
-                    <posx>450</posx>
-                    <posy>-30</posy>
+                    <left>450</left>
+                    <top>-30</top>
                     <control type="image">
-                        <posy>450</posy>
+                        <top>450</top>
                         <width>1332</width>
                         <height>160</height>
                         <texture border="50">featured/panel_featured_shadow.png</texture>
@@ -615,22 +615,22 @@
                         <include>PanelGlowFade</include>
                     </control>
                     <control type="image">
-                        <posy>450</posy>
+                        <top>450</top>
                         <width>1332</width>
                         <height>160</height>
                         <texture border="50">featured/panel_featured.png</texture>
                         <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
                     </control>
                     <control type="image">
-                        <posx>21</posx>
-                        <posy>593</posy>
+                        <left>21</left>
+                        <top>593</top>
                         <width>1290</width>
                         <height>119</height>
                         <texture>featured/panel_featured_reflect.png</texture>
                     </control>
                     <control type="grouplist">
-                        <posx>73</posx>
-                        <posy>471</posy>
+                        <left>73</left>
+                        <top>471</top>
                         <width>1179</width>
                         <height>118</height>
                         <orientation>horizontal</orientation>
@@ -658,16 +658,16 @@
                         </control>
                     </control>
                     <control type="image">
-                        <posx>1180</posx>
-                        <posy>482</posy>
+                        <left>1180</left>
+                        <top>482</top>
                         <width>100</width>
                         <height>100</height>
                         <texture>common/DefaultSearch.png</texture>
                         <colordiffuse>white</colordiffuse>
                     </control>
                     <control type="image">
-                        <posx>21</posx>
-                        <posy>471</posy>
+                        <left>21</left>
+                        <top>471</top>
                         <width>1290</width>
                         <height>118</height>
                         <texture border="10">featured/search_tile_fo.png</texture>
@@ -685,8 +685,8 @@
                         <onclick>RunScript(script.globalsearch)</onclick>
                     </control>
                     <control type="image">
-                        <posx>21</posx>
-                        <posy>471</posy>
+                        <left>21</left>
+                        <top>471</top>
                         <width>1290</width>
                         <height>118</height>
                         <texture border="21">featured/panel_featured_overlay.png</texture>
@@ -723,11 +723,11 @@
                     <onclick>ActivateWindow(videos,root,return)</onclick>
                 </control>
                 <control type="group" id="5001">
-                    <posx>450</posx>
+                    <left>450</left>
                     <include>FeaturedPanel</include>
                     <control type="group">
-                        <posx>31</posx>
-                        <posy>31</posy>
+                        <left>31</left>
+                        <top>31</top>
                         <control type="button" id="5009">
                             <include>HiddenObject</include>
                             <onup>5012</onup>
@@ -756,7 +756,7 @@
                                     <info>ListItem.Property(Fanart)</info>
                                 </control>
                                 <control type="image">
-                                    <posy>510</posy>
+                                    <top>510</top>
                                     <width>894</width>
                                     <height>40</height>
                                     <texture>common/bgcolor.png</texture>
@@ -773,7 +773,7 @@
                                     <info>ListItem.Property(Fanart)</info>
                                 </control>
                                 <control type="image">
-                                    <posy>510</posy>
+                                    <top>510</top>
                                     <width>894</width>
                                     <height>40</height>
                                     <texture>common/bgcolor.png</texture>
@@ -786,7 +786,7 @@
                             </content>
                         </control>
                         <control type="label">
-                            <posy>510</posy>
+                            <top>510</top>
                             <width>746</width>
                             <height>40</height>
                             <textoffsetx>15</textoffsetx>
@@ -794,16 +794,16 @@
                             <font>Font_Reg26</font>
                         </control>
                         <control type="image">
-                            <posx>746</posx>
-                            <posy>525</posy>
+                            <left>746</left>
+                            <top>525</top>
                             <width>138</width>
                             <height>12</height>
                             <texture>$INFO[Container(5002).ListItem.Property(NavItem),featured/panel_mid/]</texture>
                         </control>
                     </control>
                     <control type="group">
-                        <posx>935</posx>
-                        <posy>31</posy>
+                        <left>935</left>
+                        <top>31</top>
                         <control type="button" id="5011">
                             <include>HiddenObject</include>
                             <onup>5012</onup>
@@ -833,7 +833,7 @@
                                     <animation effect="fade" time="480">Focus</animation>
                                 </control>
                                 <control type="image">
-                                    <posy>510</posy>
+                                    <top>510</top>
                                     <width>366</width>
                                     <height>40</height>
                                     <texture>common/bgcolor.png</texture>
@@ -849,7 +849,7 @@
                                     <animation effect="fade" time="480">Focus</animation>
                                 </control>
                                 <control type="image">
-                                    <posy>510</posy>
+                                    <top>510</top>
                                     <width>366</width>
                                     <height>40</height>
                                     <texture>common/bgcolor.png</texture>
@@ -861,7 +861,7 @@
                             </content>
                         </control>
                         <control type="label">
-                            <posy>510</posy>
+                            <top>510</top>
                             <width>272</width>
                             <height>40</height>
                             <textoffsetx>15</textoffsetx>
@@ -869,16 +869,16 @@
                             <font>Font_Reg26</font>
                         </control>
                         <control type="image">
-                            <posx>272</posx>
-                            <posy>525</posy>
+                            <left>272</left>
+                            <top>525</top>
                             <width>84</width>
                             <height>12</height>
                             <texture>$INFO[Container(5003).ListItem.Property(NavItem),featured/panel_right/]</texture>
                         </control>
                     </control>
                     <control type="image">
-                        <posx>26</posx>
-                        <posy>26</posy>
+                        <left>26</left>
+                        <top>26</top>
                         <width>904</width>
                         <height>560</height>
                         <texture border="6">views/addonwall_select.png</texture>
@@ -887,8 +887,8 @@
                         <visible>Control.HasFocus(5009)</visible>
                     </control>
                     <control type="image">
-                        <posx>930</posx>
-                        <posy>26</posy>
+                        <left>930</left>
+                        <top>26</top>
                         <width>376</width>
                         <height>560</height>
                         <texture border="6">views/addonwall_select.png</texture>
@@ -897,8 +897,8 @@
                         <visible>Control.HasFocus(5011)</visible>
                     </control>
                     <control type="image">
-                        <posx>21</posx>
-                        <posy>21</posy>
+                        <left>21</left>
+                        <top>21</top>
                         <width>1290</width>
                         <height>570</height>
                         <texture>featured/panel_featured_overlay.png</texture>
@@ -933,11 +933,11 @@
                     <onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
                 </control>
                 <control type="group">
-                    <posx>450</posx>
+                    <left>450</left>
                     <include>FeaturedPanel</include>
                     <control type="group" id="6001">
-                        <posx>31</posx>
-                        <posy>31</posy>
+                        <left>31</left>
+                        <top>31</top>
                         <control type="button" id="6010">
                             <include>HiddenObject</include>
                             <onup>6012</onup>
@@ -965,7 +965,7 @@
                                     <animation effect="fade" time="480">Focus</animation>
                                 </control>
                                 <control type="image">
-                                    <posy>510</posy>
+                                    <top>510</top>
                                     <width>894</width>
                                     <height>40</height>
                                     <texture>common/bgcolor.png</texture>
@@ -981,7 +981,7 @@
                                     <animation effect="fade" time="480">Focus</animation>
                                 </control>
                                 <control type="image">
-                                    <posy>510</posy>
+                                    <top>510</top>
                                     <width>894</width>
                                     <height>40</height>
                                     <texture>common/bgcolor.png</texture>
@@ -993,7 +993,7 @@
                             </content>
                         </control>
                         <control type="label">
-                            <posy>510</posy>
+                            <top>510</top>
                             <width>746</width>
                             <height>40</height>
                             <textoffsetx>15</textoffsetx>
@@ -1001,16 +1001,16 @@
                             <font>Font_Reg26</font>
                         </control>
                         <control type="image">
-                            <posx>746</posx>
-                            <posy>525</posy>
+                            <left>746</left>
+                            <top>525</top>
                             <width>138</width>
                             <height>12</height>
                             <texture>$INFO[Container(6002).ListItem.Property(NavItem),featured/panel_mid/]</texture>
                         </control>
                     </control>
                     <control type="group">
-                        <posx>935</posx>
-                        <posy>31</posy>
+                        <left>935</left>
+                        <top>31</top>
                         <control type="button" id="6011">
                             <include>HiddenObject</include>
                             <onup>6012</onup>
@@ -1039,7 +1039,7 @@
                                     <animation effect="fade" time="480">Focus</animation>
                                 </control>
                                 <control type="image">
-                                    <posy>510</posy>
+                                    <top>510</top>
                                     <width>366</width>
                                     <height>40</height>
                                     <texture>common/bgcolor.png</texture>
@@ -1055,7 +1055,7 @@
                                     <animation effect="fade" time="480">Focus</animation>
                                 </control>
                                 <control type="image">
-                                    <posy>510</posy>
+                                    <top>510</top>
                                     <width>366</width>
                                     <height>40</height>
                                     <texture>common/bgcolor.png</texture>
@@ -1067,7 +1067,7 @@
                             </content>
                         </control>
                         <control type="label">
-                            <posy>510</posy>
+                            <top>510</top>
                             <width>272</width>
                             <height>40</height>
                             <textoffsetx>15</textoffsetx>
@@ -1075,16 +1075,16 @@
                             <font>Font_Reg26</font>
                         </control>
                         <control type="image">
-                            <posx>272</posx>
-                            <posy>525</posy>
+                            <left>272</left>
+                            <top>525</top>
                             <width>84</width>
                             <height>12</height>
                             <texture>$INFO[Container(6003).ListItem.Property(NavItem),featured/panel_right/]</texture>
                         </control>
                     </control>
                     <control type="image">
-                        <posx>26</posx>
-                        <posy>26</posy>
+                        <left>26</left>
+                        <top>26</top>
                         <width>904</width>
                         <height>560</height>
                         <texture border="6">views/addonwall_select.png</texture>
@@ -1093,8 +1093,8 @@
                         <visible>Control.HasFocus(6010)</visible>
                     </control>
                     <control type="image">
-                        <posx>930</posx>
-                        <posy>26</posy>
+                        <left>930</left>
+                        <top>26</top>
                         <width>376</width>
                         <height>560</height>
                         <texture border="6">views/addonwall_select.png</texture>
@@ -1103,8 +1103,8 @@
                         <visible>Control.HasFocus(6011)</visible>
                     </control>
                     <control type="image">
-                        <posx>21</posx>
-                        <posy>21</posy>
+                        <left>21</left>
+                        <top>21</top>
                         <width>1290</width>
                         <height>570</height>
                         <texture>featured/panel_featured_overlay.png</texture>
@@ -1139,11 +1139,11 @@
                     <onfocus>CancelAlarm(TileTwo,true)</onfocus>
                 </control>
                 <control type="group">
-                    <posx>450</posx>
+                    <left>450</left>
                     <include>FeaturedPanel</include>
                     <control type="group" id="7001">
-                        <posx>31</posx>
-                        <posy>31</posy>
+                        <left>31</left>
+                        <top>31</top>
                         <control type="button" id="7010">
                             <include>HiddenObject</include>
                             <onup>7012</onup>
@@ -1171,7 +1171,7 @@
                                     <animation effect="fade" time="480">Focus</animation>
                                 </control>
                                 <control type="image">
-                                    <posy>510</posy>
+                                    <top>510</top>
                                     <width>894</width>
                                     <height>40</height>
                                     <texture>common/bgcolor.png</texture>
@@ -1187,7 +1187,7 @@
                                     <animation effect="fade" time="480">Focus</animation>
                                 </control>
                                 <control type="image">
-                                    <posy>510</posy>
+                                    <top>510</top>
                                     <width>894</width>
                                     <height>40</height>
                                     <texture>common/bgcolor.png</texture>
@@ -1200,7 +1200,7 @@
                             </content>
                         </control>
                         <control type="label">
-                            <posy>510</posy>
+                            <top>510</top>
                             <width>746</width>
                             <height>40</height>
                             <textoffsetx>15</textoffsetx>
@@ -1208,19 +1208,19 @@
                             <font>Font_Reg26</font>
                         </control>
                         <control type="image">
-                            <posx>746</posx>
-                            <posy>525</posy>
+                            <left>746</left>
+                            <top>525</top>
                             <width>138</width>
                             <height>12</height>
                             <texture>$INFO[Container(7002).ListItem.Property(NavItem),featured/panel_mid/]</texture>
                         </control>
                     </control>
                     <control type="group">
-                        <posx>935</posx>
-                        <posy>31</posy>
+                        <left>935</left>
+                        <top>31</top>
                         <control type="list" id="7003">
-                            <posx>-5</posx>
-                            <posy>-5</posy>
+                            <left>-5</left>
+                            <top>-5</top>
                             <width>380</width>
                             <height>560</height>
                             <onup>7012</onup>
@@ -1246,10 +1246,10 @@
                                     <colordiffuse>60FFFFFF</colordiffuse>
                                 </control>
                                 <control type="group">
-                                    <posy>5</posy>
+                                    <top>5</top>
                                     <animation effect="fade" end="80" start="100" time="0" condition="true">Conditional</animation>
                                     <control type="label">
-                                        <posy>5</posy>
+                                        <top>5</top>
                                         <width>360</width>
                                         <height>45</height>
                                         <textoffsetx>15</textoffsetx>
@@ -1258,7 +1258,7 @@
                                         <textcolor>white2</textcolor>
                                     </control>
                                     <control type="label">
-                                        <posy>40</posy>
+                                        <top>40</top>
                                         <width>360</width>
                                         <height>45</height>
                                         <textoffsetx>15</textoffsetx>
@@ -1267,7 +1267,7 @@
                                         <textcolor>white2</textcolor>
                                     </control>
                                     <control type="label">
-                                        <posy>75</posy>
+                                        <top>75</top>
                                         <width>360</width>
                                         <height>45</height>
                                         <textoffsetx>15</textoffsetx>
@@ -1292,10 +1292,10 @@
                                     <colordiffuse>60FFFFFF</colordiffuse>
                                 </control>
                                 <control type="group">
-                                    <posy>5</posy>
+                                    <top>5</top>
                                     <animation effect="fade" end="80" start="100" time="0" condition="!Control.HasFocus(7003)">Conditional</animation>
                                     <control type="label">
-                                        <posy>5</posy>
+                                        <top>5</top>
                                         <width>360</width>
                                         <height>45</height>
                                         <textoffsetx>15</textoffsetx>
@@ -1305,7 +1305,7 @@
                                         <scroll>true</scroll>
                                     </control>
                                     <control type="label">
-                                        <posy>40</posy>
+                                        <top>40</top>
                                         <width>360</width>
                                         <height>45</height>
                                         <textoffsetx>15</textoffsetx>
@@ -1315,7 +1315,7 @@
                                         <scroll>true</scroll>
                                     </control>
                                     <control type="label">
-                                        <posy>75</posy>
+                                        <top>75</top>
                                         <width>360</width>
                                         <height>45</height>
                                         <textoffsetx>15</textoffsetx>
@@ -1325,7 +1325,7 @@
                                     </control>
                                 </control>
                                 <control type="image">
-                                    <posy>-5</posy>
+                                    <top>-5</top>
                                     <width>376</width>
                                     <height>140</height>
                                     <texture>common/blank.png</texture>
@@ -1342,8 +1342,8 @@
                         </control>
                     </control>
                     <control type="image">
-                        <posx>26</posx>
-                        <posy>26</posy>
+                        <left>26</left>
+                        <top>26</top>
                         <width>904</width>
                         <height>560</height>
                         <texture border="6">views/addonwall_select.png</texture>
@@ -1352,8 +1352,8 @@
                         <visible>Control.HasFocus(7010)</visible>
                     </control>
                     <control type="image">
-                        <posx>21</posx>
-                        <posy>21</posy>
+                        <left>21</left>
+                        <top>21</top>
                         <width>1290</width>
                         <height>570</height>
                         <texture>featured/panel_featured_overlay.png</texture>
@@ -1387,11 +1387,11 @@
                     <onfocus>AlarmClock(Tile,Control.Move(8002,1),00:04,silent,loop)</onfocus>
                 </control>
                 <control type="group" id="8001">
-                    <posx>450</posx>
+                    <left>450</left>
                     <include>FeaturedPanel</include>
                     <control type="group">
-                        <posx>31</posx>
-                        <posy>31</posy>
+                        <left>31</left>
+                        <top>31</top>
                         <control type="button" id="8010">
                             <include>HiddenObject</include>
                             <onup>8012</onup>
@@ -1420,7 +1420,7 @@
                                     <info>ListItem.Icon</info>
                                 </control>
                                 <control type="image">
-                                    <posy>510</posy>
+                                    <top>510</top>
                                     <width>550</width>
                                     <height>40</height>
                                     <texture>common/bgcolor.png</texture>
@@ -1437,7 +1437,7 @@
                                     <info>ListItem.Icon</info>
                                 </control>
                                 <control type="image">
-                                    <posy>510</posy>
+                                    <top>510</top>
                                     <width>550</width>
                                     <height>40</height>
                                     <texture>common/bgcolor.png</texture>
@@ -1450,7 +1450,7 @@
                             </content>
                         </control>
                         <control type="label">
-                            <posy>510</posy>
+                            <top>510</top>
                             <width>402</width>
                             <height>40</height>
                             <textoffsetx>15</textoffsetx>
@@ -1458,19 +1458,19 @@
                             <font>Font_Reg26</font>
                         </control>
                         <control type="image">
-                            <posx>402</posx>
-                            <posy>525</posy>
+                            <left>402</left>
+                            <top>525</top>
                             <width>138</width>
                             <height>12</height>
                             <texture>$INFO[Container(8002).ListItem.Property(NavItem),featured/panel_mid/]</texture>
                         </control>
                     </control>
                     <control type="group">
-                        <posx>591</posx>
-                        <posy>31</posy>
+                        <left>591</left>
+                        <top>31</top>
                         <control type="list" id="8003">
-                            <posx>-5</posx>
-                            <posy>-5</posy>
+                            <left>-5</left>
+                            <top>-5</top>
                             <width>724</width>
                             <height>560</height>
                             <onup>8012</onup>
@@ -1496,10 +1496,10 @@
                                     <colordiffuse>60FFFFFF</colordiffuse>
                                 </control>
                                 <control type="group">
-                                    <posy>5</posy>
+                                    <top>5</top>
                                     <animation effect="fade" end="80" start="100" time="0" condition="true">Conditional</animation>
                                     <control type="label">
-                                        <posy>5</posy>
+                                        <top>5</top>
                                         <width>710</width>
                                         <height>45</height>
                                         <textoffsetx>15</textoffsetx>
@@ -1508,7 +1508,7 @@
                                         <textcolor>white2</textcolor>
                                     </control>
                                     <control type="label">
-                                        <posy>40</posy>
+                                        <top>40</top>
                                         <width>710</width>
                                         <height>45</height>
                                         <textoffsetx>15</textoffsetx>
@@ -1517,7 +1517,7 @@
                                         <textcolor>white2</textcolor>
                                     </control>
                                     <control type="label">
-                                        <posy>75</posy>
+                                        <top>75</top>
                                         <width>710</width>
                                         <height>45</height>
                                         <textoffsetx>15</textoffsetx>
@@ -1542,10 +1542,10 @@
                                     <colordiffuse>60FFFFFF</colordiffuse>
                                 </control>
                                 <control type="group">
-                                    <posy>5</posy>
+                                    <top>5</top>
                                     <animation effect="fade" end="80" start="100" time="0" condition="!Control.HasFocus(8003)">Conditional</animation>
                                     <control type="image">
-                                        <posy>-5</posy>
+                                        <top>-5</top>
                                         <width>720</width>
                                         <height>140</height>
                                         <texture>common/blank.png</texture>
@@ -1555,7 +1555,7 @@
                                         <visible>Control.HasFocus(8003)</visible>
                                     </control>
                                     <control type="label">
-                                        <posy>5</posy>
+                                        <top>5</top>
                                         <width>710</width>
                                         <height>45</height>
                                         <textoffsetx>15</textoffsetx>
@@ -1564,7 +1564,7 @@
                                         <textcolor>white2</textcolor>
                                     </control>
                                     <control type="label">
-                                        <posy>40</posy>
+                                        <top>40</top>
                                         <width>710</width>
                                         <height>45</height>
                                         <textoffsetx>15</textoffsetx>
@@ -1573,7 +1573,7 @@
                                         <textcolor>white2</textcolor>
                                     </control>
                                     <control type="label">
-                                        <posy>75</posy>
+                                        <top>75</top>
                                         <width>710</width>
                                         <height>45</height>
                                         <textoffsetx>15</textoffsetx>
@@ -1590,8 +1590,8 @@
                         </control>
                     </control>
                     <control type="image">
-                        <posx>26</posx>
-                        <posy>26</posy>
+                        <left>26</left>
+                        <top>26</top>
                         <width>560</width>
                         <height>560</height>
                         <texture border="6">views/addonwall_select.png</texture>
@@ -1600,8 +1600,8 @@
                         <visible>Control.HasFocus(8010)</visible>
                     </control>
                     <control type="image">
-                        <posx>21</posx>
-                        <posy>21</posy>
+                        <left>21</left>
+                        <top>21</top>
                         <width>1290</width>
                         <height>570</height>
                         <texture>featured/panel_featured_overlay.png</texture>
@@ -1635,11 +1635,11 @@
                     <onfocus>AlarmClock(Tile,Control.Move(9002,1),00:04,silent,loop)</onfocus>
                 </control>
                 <control type="group" id="9001">
-                    <posx>450</posx>
+                    <left>450</left>
                     <include>FeaturedPanel</include>
                     <control type="group">
-                        <posx>31</posx>
-                        <posy>31</posy>
+                        <left>31</left>
+                        <top>31</top>
                         <control type="button" id="9010">
                             <include>HiddenObject</include>
                             <onup>9012</onup>
@@ -1669,7 +1669,7 @@
                                     <info>ListItem.Icon</info>
                                 </control>
                                 <control type="image">
-                                    <posy>510</posy>
+                                    <top>510</top>
                                     <width>550</width>
                                     <height>40</height>
                                     <texture>common/bgcolor.png</texture>
@@ -1686,7 +1686,7 @@
                                     <info>ListItem.Icon</info>
                                 </control>
                                 <control type="image">
-                                    <posy>510</posy>
+                                    <top>510</top>
                                     <width>550</width>
                                     <height>40</height>
                                     <texture>common/bgcolor.png</texture>
@@ -1699,7 +1699,7 @@
                             </content>
                         </control>
                         <control type="label">
-                            <posy>510</posy>
+                            <top>510</top>
                             <width>402</width>
                             <height>40</height>
                             <textoffsetx>15</textoffsetx>
@@ -1707,19 +1707,19 @@
                             <font>Font_Reg26</font>
                         </control>
                         <control type="image">
-                            <posx>402</posx>
-                            <posy>525</posy>
+                            <left>402</left>
+                            <top>525</top>
                             <width>138</width>
                             <height>12</height>
                             <texture>$INFO[Container(9002).ListItem.Property(NavItem),featured/panel_mid/]</texture>
                         </control>
                     </control>
                     <control type="group">
-                        <posx>591</posx>
-                        <posy>31</posy>
+                        <left>591</left>
+                        <top>31</top>
                         <control type="list" id="9003">
-                            <posx>-5</posx>
-                            <posy>-5</posy>
+                            <left>-5</left>
+                            <top>-5</top>
                             <width>724</width>
                             <height>560</height>
                             <onup>9012</onup>
@@ -1744,10 +1744,10 @@
                                     <colordiffuse>60FFFFFF</colordiffuse>
                                 </control>
                                 <control type="group">
-                                    <posy>5</posy>
+                                    <top>5</top>
                                     <animation effect="fade" end="80" start="100" time="0" condition="true">Conditional</animation>
                                     <control type="label">
-                                        <posy>5</posy>
+                                        <top>5</top>
                                         <width>710</width>
                                         <height>45</height>
                                         <textoffsetx>15</textoffsetx>
@@ -1756,7 +1756,7 @@
                                         <textcolor>white2</textcolor>
                                     </control>
                                     <control type="label">
-                                        <posy>40</posy>
+                                        <top>40</top>
                                         <width>710</width>
                                         <height>45</height>
                                         <textoffsetx>15</textoffsetx>
@@ -1765,7 +1765,7 @@
                                         <textcolor>white2</textcolor>
                                     </control>
                                     <control type="label">
-                                        <posy>75</posy>
+                                        <top>75</top>
                                         <width>710</width>
                                         <height>45</height>
                                         <textoffsetx>15</textoffsetx>
@@ -1790,10 +1790,10 @@
                                     <colordiffuse>60FFFFFF</colordiffuse>
                                 </control>
                                 <control type="group">
-                                    <posy>5</posy>
+                                    <top>5</top>
                                     <animation effect="fade" end="80" start="100" time="0" condition="!Control.HasFocus(9003)">Conditional</animation>
                                     <control type="label">
-                                        <posy>5</posy>
+                                        <top>5</top>
                                         <width>710</width>
                                         <height>45</height>
                                         <textoffsetx>15</textoffsetx>
@@ -1802,7 +1802,7 @@
                                         <textcolor>white2</textcolor>
                                     </control>
                                     <control type="label">
-                                        <posy>40</posy>
+                                        <top>40</top>
                                         <width>710</width>
                                         <height>45</height>
                                         <textoffsetx>15</textoffsetx>
@@ -1811,7 +1811,7 @@
                                         <textcolor>white2</textcolor>
                                     </control>
                                     <control type="label">
-                                        <posy>75</posy>
+                                        <top>75</top>
                                         <width>710</width>
                                         <height>45</height>
                                         <textoffsetx>15</textoffsetx>
@@ -1821,7 +1821,7 @@
                                     </control>
                                 </control>
                                 <control type="image">
-                                    <posy>-5</posy>
+                                    <top>-5</top>
                                     <width>720</width>
                                     <height>140</height>
                                     <texture>common/blank.png</texture>
@@ -1838,8 +1838,8 @@
                         </control>
                     </control>
                     <control type="image">
-                        <posx>26</posx>
-                        <posy>26</posy>
+                        <left>26</left>
+                        <top>26</top>
                         <width>560</width>
                         <height>560</height>
                         <texture border="6">views/addonwall_select.png</texture>
@@ -1848,8 +1848,8 @@
                         <visible>Control.HasFocus(9010)</visible>
                     </control>
                     <control type="image">
-                        <posx>21</posx>
-                        <posy>21</posy>
+                        <left>21</left>
+                        <top>21</top>
                         <width>1290</width>
                         <height>570</height>
                         <texture>featured/panel_featured_overlay.png</texture>
@@ -1859,8 +1859,8 @@
             </control>
         </control>
         <control type="group">
-            <posx>135</posx>
-            <posy>405</posy>
+            <left>135</left>
+            <top>405</top>
             <animation type="Conditional" condition="true">
                 <effect type="zoom" start="100" end="97" center="960,540" time="240" tween="cubic" />
             </animation>
@@ -1884,14 +1884,14 @@
             </control>
             <control type="group">
                 <control type="grouplist">
-                    <posx>0</posx>
+                    <left>0</left>
                     <width>1920</width>
                     <align>center</align>
                     <itemgap>50</itemgap>
                     <orientation>horizontal</orientation>
                     <usecontrolcoords>true</usecontrolcoords>
                     <control type="image">
-                        <posy>1</posy>
+                        <top>1</top>
                         <width>40</width>
                         <height>40</height>
                         <aspectratio>keep</aspectratio>

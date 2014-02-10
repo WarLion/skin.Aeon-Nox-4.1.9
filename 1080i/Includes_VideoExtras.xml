@@ -2,11 +2,11 @@
 <includes>
     <include name="VideoExtras_art">
 		<control type="group">
-        <posx>1345</posx>
-					<posy>387</posy>
+        <left>1345</left>
+					<top>387</top>
 					<control type="image">
-						<posx>-1</posx>
-						<posy>-8</posy>
+						<left>-1</left>
+						<top>-8</top>
 						<width>439</width>
 						<height>561</height>
 						<align>center</align>
@@ -18,16 +18,16 @@
 					</control>					
 				</control>				
 				<control type="image">
-					<posx>1355</posx>
-					<posy>138</posy>
+					<left>1355</left>
+					<top>138</top>
 					<width>410</width>
 					<height>240</height>
 					<aspectratio align="center">keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 				</control>
 			<control type="group">
-			    <posx>1665</posx>
-				<posy>142</posy>	
+			    <left>1665</left>
+				<top>142</top>	
 				<visible>Skin.HasSetting(OverlaySetting)</visible>
 				<control type="image">
 					<width>100</width>
@@ -63,10 +63,10 @@
                 <effect type="zoom" start="100" end="130" center="960,540" time="300" tween="cubic" easing="in" />
             </animation>
             <control type="group">
-                <posy>-15</posy>
+                <top>-15</top>
                 <control type="image">
-                    <posx>112</posx>
-                    <posy>82</posy>
+                    <left>112</left>
+                    <top>82</top>
                     <width>1695</width>
                     <height>1040</height>
                     <texture>wall/wall_bg_glow.png</texture>
@@ -75,31 +75,31 @@
                     <visible>!Skin.HasSetting(DisableGlowbar)</visible>
                 </control>
                 <control type="image">
-                    <posx>112</posx>
-                    <posy>82</posy>
+                    <left>112</left>
+                    <top>82</top>
                     <width>1695</width>
                     <height>1040</height>
                     <texture>wall/wall_bg.png</texture>
                     <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
                 </control>
                 <control type="image">
-                    <posx>112</posx>
-                    <posy>82</posy>
+                    <left>112</left>
+                    <top>82</top>
                     <width>1695</width>
                     <height>1012</height>
                     <colordiffuse>white</colordiffuse>
                     <texture>views/grid-ve.png</texture>
                 </control>
                 <control type="image">
-                    <posx>112</posx>
-                    <posy>108</posy>
+                    <left>112</left>
+                    <top>108</top>
                     <width>1695</width>
                     <height>1012</height>
                     <texture>wall/wall_bg_reflection.png</texture>
                 </control>			
              <control type="list" id="51">
-				<posx>122</posx>
-				<posy>138</posy>
+				<left>122</left>
+				<top>138</top>
 				<width>1220</width>
 				<height>800</height>
 				<onright>60</onright>
@@ -119,8 +119,8 @@
 						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>	
 					</control>			
 					<control type="label">
-						<posx>70</posx>
-						<posy>20</posy>
+						<left>70</left>
+						<top>20</top>
 						<width>1000</width>
 						<height>40</height>
 						<font>font15</font>
@@ -130,8 +130,8 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<posx>1160</posx>
-						<posy>20</posy>
+						<left>1160</left>
+						<top>20</top>
 						<width>100</width>
 						<height>40</height>
 						<font>font15</font>
@@ -142,16 +142,16 @@
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="image">
-						<posx>15</posx>
-						<posy>20</posy>
+						<left>15</left>
+						<top>20</top>
 						<width>45</width>
 						<height>45</height>
 						<texture>dialogs/circle/46.png</texture>
 						<visible>ListItem.IsResumable</visible>
 					</control>
 					<control type="image">
-						<posx>15</posx>
-						<posy>20</posy>
+						<left>15</left>
+						<top>20</top>
 						<width>45</width>
 						<height>45</height>
 						<!-- Default XBMC Icon -->
@@ -177,8 +177,8 @@
 						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
 					</control>								
 					<control type="label">
-						<posx>70</posx>
-						<posy>20</posy>
+						<left>70</left>
+						<top>20</top>
 						<width>1000</width>
 						<height>40</height>
 						<font>font15</font>
@@ -188,8 +188,8 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>>				
 					<control type="label">
-						<posx>1160</posx>
-						<posy>20</posy>
+						<left>1160</left>
+						<top>20</top>
 						<width>100</width>
 						<height>40</height>
 						<font>font15</font>
@@ -200,8 +200,8 @@
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="image">
-						<posx>15</posx>
-						<posy>20</posy>
+						<left>15</left>
+						<top>20</top>
 						<width>45</width>
 						<height>45</height>
 						<texture>dialogs/circle/46.png</texture>
@@ -209,8 +209,8 @@
 					</control>
 					
 					<control type="image">
-						<posx>15</posx>
-						<posy>20</posy>
+						<left>15</left>
+						<top>20</top>
 						<width>45</width>
 						<height>45</height>
 						<texture>OverlayWatched.png</texture>
@@ -220,8 +220,8 @@
 				</control>
 					<include>VideoExtras_art</include>	
 				<control type="scrollbar" id="60">
-					<posx>1320</posx>
-					<posy>80</posy>
+					<left>1320</left>
+					<top>80</top>
 					<onleft>51</onleft>			
 					<width>25</width>
 					<height>950</height>
@@ -245,10 +245,10 @@
                 <effect type="zoom" start="100" end="130" center="960,540" time="300" tween="cubic" easing="in" />
             </animation>
             <control type="group">
-                <posy>-15</posy>
+                <top>-15</top>
                 <control type="image">
-                    <posx>112</posx>
-                    <posy>82</posy>
+                    <left>112</left>
+                    <top>82</top>
                     <width>1695</width>
                     <height>1040</height>
                     <texture>wall/wall_bg_glow.png</texture>
@@ -257,31 +257,31 @@
                     <visible>!Skin.HasSetting(DisableGlowbar)</visible>
                 </control>
                 <control type="image">
-                    <posx>112</posx>
-                    <posy>82</posy>
+                    <left>112</left>
+                    <top>82</top>
                     <width>1695</width>
                     <height>1040</height>
                     <texture>wall/wall_bg.png</texture>
                     <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
                 </control>
          <!--       <control type="image">
-                    <posx>112</posx>
-                    <posy>82</posy>
+                    <left>112</left>
+                    <top>82</top>
                     <width>1695</width>
                     <height>1012</height>
                     <colordiffuse>white</colordiffuse>
                     <texture>views/grid-ve.png</texture>
                 </control>
                 <control type="image">
-                    <posx>112</posx>
-                    <posy>108</posy>
+                    <left>112</left>
+                    <top>108</top>
                     <width>1695</width>
                     <height>1012</height>
                     <texture>wall/wall_bg_reflection.png</texture>
                 </control>			-->
              <control type="list" id="51">
-				<posx>122</posx>
-				<posy>138</posy>
+				<left>122</left>
+				<top>138</top>
 				<width>1220</width>
 				<height>800</height>
 				<onright>60</onright>
@@ -301,8 +301,8 @@
 						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>	
 					</control>			
 					<control type="label">
-						<posx>70</posx>
-						<posy>20</posy>
+						<left>70</left>
+						<top>20</top>
 						<width>1000</width>
 						<height>40</height>
 						<font>font15</font>
@@ -312,8 +312,8 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<posx>1160</posx>
-						<posy>20</posy>
+						<left>1160</left>
+						<top>20</top>
 						<width>100</width>
 						<height>40</height>
 						<font>font15</font>
@@ -324,16 +324,16 @@
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="image">
-						<posx>15</posx>
-						<posy>20</posy>
+						<left>15</left>
+						<top>20</top>
 						<width>45</width>
 						<height>45</height>
 						<texture>dialogs/circle/46.png</texture>
 						<visible>ListItem.IsResumable</visible>
 					</control>
 					<control type="image">
-						<posx>15</posx>
-						<posy>20</posy>
+						<left>15</left>
+						<top>20</top>
 						<width>45</width>
 						<height>45</height>
 						<!-- Default XBMC Icon -->
@@ -359,8 +359,8 @@
 						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
 					</control>								
 					<control type="label">
-						<posx>70</posx>
-						<posy>20</posy>
+						<left>70</left>
+						<top>20</top>
 						<width>1000</width>
 						<height>40</height>
 						<font>font15</font>
@@ -370,8 +370,8 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>>				
 					<control type="label">
-						<posx>1160</posx>
-						<posy>20</posy>
+						<left>1160</left>
+						<top>20</top>
 						<width>100</width>
 						<height>40</height>
 						<font>font15</font>
@@ -382,8 +382,8 @@
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="image">
-						<posx>15</posx>
-						<posy>20</posy>
+						<left>15</left>
+						<top>20</top>
 						<width>45</width>
 						<height>45</height>
 						<texture>dialogs/circle/46.png</texture>
@@ -391,8 +391,8 @@
 					</control>
 					
 					<control type="image">
-						<posx>15</posx>
-						<posy>20</posy>
+						<left>15</left>
+						<top>20</top>
 						<width>45</width>
 						<height>45</height>
 						<texture>OverlayWatched.png</texture>
@@ -402,8 +402,8 @@
 				</control>
 					<include>VideoExtras_art</include>	
 				<control type="scrollbar" id="60">
-					<posx>1320</posx>
-					<posy>80</posy>
+					<left>1320</left>
+					<top>80</top>
 					<onleft>51</onleft>			
 					<width>25</width>
 					<height>950</height>

@@ -2285,3 +2285,11 @@ msgstr ""
 msgctxt "#32972"
 msgid "Enabled"
 msgstr ""
+
+msgctxt "#32973"
+msgid "Disable VideoExtras, it will Enable VideoLanguage"
+msgstr ""
+
+msgctxt "#32974"
+msgid "Video Info Options"
+msgstr ""

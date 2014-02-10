@@ -2,8 +2,8 @@
 <window type="dialog" id="1120">
     <defaultcontrol always="true">20</defaultcontrol>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <include>Animation_DialogPopup</include>
@@ -11,8 +11,8 @@
     <onunload>ClearProperty(ReturnToHome,home)</onunload>
     <controls>
         <control type="image">
-            <posx>356</posx>
-            <posy>180</posy>
+            <left>356</left>
+            <top>180</top>
             <width>1210</width>
             <height>700</height>
             <texture>osd/osd_settings_back_glow.png</texture>
@@ -22,23 +22,23 @@
             <include>Animation_VisibleChange400</include>
         </control>
         <control type="image">
-            <posx>356</posx>
-            <posy>180</posy>
+            <left>356</left>
+            <top>180</top>
             <width>1210</width>
             <height>700</height>
             <texture>osd/osd_settings_back.png</texture>
             <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
         </control>
         <control type="image">
-            <posx>375</posx>
-            <posy>232</posy>
+            <left>375</left>
+            <top>232</top>
             <width>1172</width>
             <height>60</height>
             <texture border="1">osd/osd_settings_buttonnf.png</texture>
         </control>
         <control type="label">
-            <posx>630</posx>
-            <posy>215</posy>
+            <left>630</left>
+            <top>215</top>
             <width>572</width>
             <height>60</height>
             <textoffsety>10</textoffsety>
@@ -48,8 +48,8 @@
             <textcolor>$VAR[TitleColorVar]</textcolor>
         </control>
         <control type="grouplist" id="20">
-            <posx>375</posx>
-            <posy>292</posy>
+            <left>375</left>
+            <top>292</top>
             <width>1172</width>
             <height>540</height>
             <aligny>center</aligny>

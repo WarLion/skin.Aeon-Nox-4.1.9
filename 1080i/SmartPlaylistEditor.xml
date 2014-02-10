@@ -8,8 +8,8 @@
             <include>DialogBackFade</include>
             <include>Furniture_SettingsBackPanel</include>
             <control type="grouplist" id="9000">
-                <posx>1491</posx>
-                <posy>400</posy>
+                <left>1491</left>
+                <top>400</top>
                 <width>500</width>
                 <height>1080</height>
                 <onleft>10</onleft>
@@ -17,8 +17,8 @@
                 <onup>9000</onup>
                 <ondown>9000</ondown>
                 <control type="button" id="13">
-                    <posx>3</posx>
-                    <posy>4</posy>
+                    <left>3</left>
+                    <top>4</top>
                     <width>365</width>
                     <height>74</height>
                     <textoffsetx>30</textoffsetx>
@@ -30,8 +30,8 @@
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 </control>
                 <control type="button" id="14">
-                    <posx>3</posx>
-                    <posy>4</posy>
+                    <left>3</left>
+                    <top>4</top>
                     <width>365</width>
                     <height>74</height>
                     <textoffsetx>30</textoffsetx>
@@ -43,8 +43,8 @@
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 </control>
                 <control type="button" id="15">
-                    <posx>3</posx>
-                    <posy>4</posy>
+                    <left>3</left>
+                    <top>4</top>
                     <width>365</width>
                     <height>74</height>
                     <textoffsetx>30</textoffsetx>
@@ -57,8 +57,8 @@
                 </control>
             </control>
             <control type="label" id="2">
-                <posx>358</posx>
-                <posy>-800</posy>
+                <left>358</left>
+                <top>-800</top>
                 <width>1491</width>
                 <align>center</align>
                 <label>$LOCALIZE[21432]</label>
@@ -68,8 +68,8 @@
             </control>
             <control type="group" id="9001">
                 <control type="spincontrolex" id="22">
-                    <posx>387</posx>
-                    <posy>180</posy>
+                    <left>387</left>
+                    <top>180</top>
                     <width>1469</width>
                     <textoffsetx>75</textoffsetx>
                     <label>467</label>
@@ -78,11 +78,11 @@
                     <onup>23</onup>
                     <ondown>12</ondown>
                     <include>Default_SettingButton</include>
-                    <spinposx>-2</spinposx>
+                    <spinleft>-2</spinleft>
                 </control>
                 <control type="edit" id="12">
-                    <posx>387</posx>
-                    <posy>254</posy>
+                    <left>387</left>
+                    <top>254</top>
                     <label>-</label>
                     <onleft>9002</onleft>
                     <onright>9002</onright>
@@ -93,8 +93,8 @@
                     <ondown>SetFocus(10)</ondown>
                 </control>
                 <control type="button" id="101">
-                    <posx>387</posx>
-                    <posy>327</posy>
+                    <left>387</left>
+                    <top>327</top>
                     <texturenofocus>settings/settings_separator.png</texturenofocus>
                     <label>21434</label>
                     <font>Font_Bold34</font>
@@ -103,8 +103,8 @@
                     <enable>no</enable>
                 </control>
                 <control type="list" id="10">
-                    <posx>387</posx>
-                    <posy>400</posy>
+                    <left>387</left>
+                    <top>400</top>
                     <width>1104</width>
                     <height>220</height>
                     <onup>12</onup>
@@ -119,7 +119,7 @@
                             <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                         </control>
                         <control type="label">
-                            <posx>30</posx>
+                            <left>30</left>
                             <width>795</width>
                             <height>60</height>
                             <textoffsetx>40</textoffsetx>
@@ -138,7 +138,7 @@
                                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                             </control>
                             <control type="label">
-                                <posx>30</posx>
+                                <left>30</left>
                                 <width>795</width>
                                 <height>60</height>
                                 <textoffsetx>40</textoffsetx>
@@ -155,7 +155,7 @@
                                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                             </control>
                             <control type="label">
-                                <posx>30</posx>
+                                <left>30</left>
                                 <width>795</width>
                                 <height>60</height>
                                 <textoffsetx>40</textoffsetx>
@@ -167,8 +167,8 @@
                     </focusedlayout>
                 </control>
                 <control type="button" id="102">
-                    <posx>387</posx>
-                    <posy>621</posy>
+                    <left>387</left>
+                    <top>621</top>
                     <texturenofocus>settings/settings_separator.png</texturenofocus>
                     <label>31325</label>
                     <font>Font_Bold34</font>
@@ -177,8 +177,8 @@
                     <enable>no</enable>
                 </control>
                 <control type="spincontrolex" id="16">
-                    <posx>387</posx>
-                    <posy>694</posy>
+                    <left>387</left>
+                    <top>694</top>
                     <textoffsetx>75</textoffsetx>
                     <label>21424</label>
                     <onleft>9002</onleft>
@@ -186,11 +186,11 @@
                     <onup>10</onup>
                     <ondown>17</ondown>
                     <include>Default_SettingButton</include>
-                    <spinposx>-2</spinposx>
+                    <spinleft>-2</spinleft>
                 </control>
                 <control type="spincontrolex" id="17">
-                    <posx>387</posx>
-                    <posy>768</posy>
+                    <left>387</left>
+                    <top>768</top>
                     <textoffsetx>75</textoffsetx>
                     <label>21427</label>
                     <onleft>9002</onleft>
@@ -198,11 +198,11 @@
                     <onup>16</onup>
                     <ondown>18</ondown>
                     <include>Default_SettingButton</include>
-                    <spinposx>-2</spinposx>
+                    <spinleft>-2</spinleft>
                 </control>
                 <control type="spincontrolex" id="18">
-                    <posx>387</posx>
-                    <posy>842</posy>
+                    <left>387</left>
+                    <top>842</top>
                     <width>1104</width>
                     <textoffsetx>75</textoffsetx>
                     <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
@@ -213,11 +213,11 @@
                     <onup>17</onup>
                     <ondown>23</ondown>
                     <include>Default_SettingButton</include>
-                    <spinposx>-2</spinposx>
+                    <spinleft>-2</spinleft>
                 </control>
                 <control type="togglebutton" id="19">
-                    <posx>1491</posx>
-                    <posy>842</posy>
+                    <left>1491</left>
+                    <top>842</top>
                     <width>365</width>
                     <height>74</height>
                     <textoffsetx>30</textoffsetx>
@@ -234,8 +234,8 @@
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 </control>
 				<control type="spincontrolex" id="23">
-					<posx>387</posx>
-					<posy>920</posy>
+					<left>387</left>
+					<top>920</top>
 					<width>1104</width>
 					<label>21458</label>
 					<font>Font_Reg32</font>
@@ -248,11 +248,11 @@
 					<onup>18</onup>
 					<ondown>22</ondown>
 					<include>Default_SettingButton</include>
-					<spinposx>-2</spinposx>
+					<spinleft>-2</spinleft>
 				</control>
 				<control type="radiobutton" id="24">
-					<posx>1491</posx>
-					<posy>920</posy>
+					<left>1491</left>
+					<top>920</top>
 					<width>342</width>
 					<height>74</height>
 					<font>Font_Reg32</font>
@@ -270,8 +270,8 @@
 				</control>				
             </control>
             <control type="grouplist" id="9002">
-                <posx>63</posx>
-                <posy>180</posy>
+                <left>63</left>
+                <top>180</top>
                 <width>326</width>
                 <height>741</height>
                 <pagecontrol>60</pagecontrol>

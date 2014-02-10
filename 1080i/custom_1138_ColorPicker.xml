@@ -24,19 +24,19 @@
     <onunload>ClearProperty(colorallareas,home)</onunload>
     <onunload>ClearProperty(colordialog,1124)</onunload>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <controls>
         <control type="group">
-            <posx>500</posx>
-            <posy>300</posy>
+            <left>500</left>
+            <top>300</top>
             <include>Animation_DialogPopup</include>
             <visible>!Window.IsActive(script-ColorPicker-main.xml)</visible>
             <control type="image">
-                <posx>-4</posx>
-                <posy>-24</posy>
+                <left>-4</left>
+                <top>-24</top>
                 <width>776</width>
                 <height>372</height>
                 <texture border="22">dialogs/scan_backg_shadow.png</texture>
@@ -46,8 +46,8 @@
                 <include>Animation_VisibleChange400</include>
             </control>
             <control type="image">
-                <posx>-4</posx>
-                <posy>-24</posy>
+                <left>-4</left>
+                <top>-24</top>
                 <width>776</width>
                 <height>372</height>
                 <texture border="22">dialogs/scan_backg.png</texture>
@@ -55,8 +55,8 @@
             </control>
             <include>Dialogs_Settings</include>
             <control type="panel" id="10">
-                <posx>142</posx>
-                <posy>4</posy>
+                <left>142</left>
+                <top>4</top>
                 <width>600</width>
                 <height>300</height>
                 <orientation>vertical</orientation>
@@ -219,8 +219,8 @@
                 </content>
             </control>
             <control type="radiobutton" id="11">
-                <posx>137</posx>
-                <posy>270</posy>
+                <left>137</left>
+                <top>270</top>
                 <label>$LOCALIZE[31088]</label>
                 <onup>10</onup>
                 <ondown>10</ondown>
@@ -230,8 +230,8 @@
                 <selected>!IsEmpty(Window(home).Property(colorallareas))</selected>
             </control>
             <control type="label">
-                <posx>120</posx>
-                <posy>225</posy>
+                <left>120</left>
+                <top>225</top>
                 <align>center</align>
                 <label>$INFO[Container(10).ListItem.Label]</label>
                 <visible>!Control.HasFocus(11)</visible>

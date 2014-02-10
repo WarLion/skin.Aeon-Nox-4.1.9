@@ -2,8 +2,8 @@
 <window type="dialog" id="1125">
     <defaultcontrol always="true">450</defaultcontrol>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <onload condition="!Stringcompare(Window(home).Property(Type),Music)">RunScript(script.playlists,type=video)</onload>
@@ -22,8 +22,8 @@
     <controls>
         <include>DialogBackFade</include>
         <control type="image">
-            <posx>357</posx>
-            <posy>180</posy>
+            <left>357</left>
+            <top>180</top>
             <width>1208</width>
             <height>722</height>
             <texture>osd/osd_settings_back_glow.png</texture>
@@ -32,23 +32,23 @@
             <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
         </control>
         <control type="image">
-            <posx>357</posx>
-            <posy>180</posy>
+            <left>357</left>
+            <top>180</top>
             <width>1208</width>
             <height>722</height>
             <texture>osd/osd_settings_back.png</texture>
             <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
         </control>
         <control type="image">
-            <posx>375</posx>
-            <posy>232</posy>
+            <left>375</left>
+            <top>232</top>
             <width>1172</width>
             <height>60</height>
             <texture border="1">osd/osd_settings_buttonnf.png</texture>
         </control>
         <control type="label">
-            <posx>420</posx>
-            <posy>225</posy>
+            <left>420</left>
+            <top>225</top>
             <width>600</width>
             <height>60</height>
             <label>$LOCALIZE[20012]</label>
@@ -57,8 +57,8 @@
             <visible>!Stringcompare(Window(home).Property(Type),Music)</visible>
         </control>
         <control type="label">
-            <posx>420</posx>
-            <posy>225</posy>
+            <left>420</left>
+            <top>225</top>
             <width>600</width>
             <height>60</height>
             <label>$LOCALIZE[20011]</label>
@@ -67,8 +67,8 @@
             <visible>Stringcompare(Window(home).Property(Type),Music)</visible>
         </control>
         <control type="list" id="450">
-            <posx>375</posx>
-            <posy>292</posy>
+            <left>375</left>
+            <top>292</top>
             <width>1172</width>
             <height>540</height>
             <onleft>61</onleft>
@@ -84,7 +84,7 @@
                     <texture border="1">osd/osd_settings_buttonnf.png</texture>
                 </control>
                 <control type="label">
-                    <posx>45</posx>
+                    <left>45</left>
                     <width>1082</width>
                     <height>60</height>
                     <font>Font_Reg30_2</font>
@@ -100,7 +100,7 @@
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 </control>
                 <control type="label">
-                    <posx>45</posx>
+                    <left>45</left>
                     <width>1082</width>
                     <height>60</height>
                     <font>Font_Reg30_2</font>

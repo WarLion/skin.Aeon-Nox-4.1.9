@@ -3,15 +3,15 @@
     <defaultcontrol>5</defaultcontrol>
     <coordinates>
         <system>1</system>
-        <posx>399</posx>
-        <posy>114</posy>
+        <left>399</left>
+        <top>114</top>
     </coordinates>
     <include>Animation_DialogPopup2</include>
     <controls>
         <control type="group">
             <animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
             <control type="image">
-                <posx>4</posx>
+                <left>4</left>
                 <width>1114</width>
                 <height>852</height>
                 <texture>osd/osd_settings_back_glow.png</texture>
@@ -20,23 +20,23 @@
                 <include>PanelGlowFade</include>
             </control>
             <control type="image">
-                <posx>4</posx>
+                <left>4</left>
                 <width>1114</width>
                 <height>852</height>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
                 <texture>osd/osd_settings_back.png</texture>
             </control>
             <control type="image">
-                <posx>22</posx>
-                <posy>42</posy>
+                <left>22</left>
+                <top>42</top>
                 <width>1078</width>
                 <height>60</height>
                 <texture>osd/osd_settings_buttonnf.png</texture>
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
             </control>
             <control type="label">
-                <posx>60</posx>
-                <posy>35</posy>
+                <left>60</left>
+                <top>35</top>
                 <width>1080</width>
                 <height>60</height>
                 <textcolor>$VAR[TitleColorVar]</textcolor>
@@ -45,8 +45,8 @@
                 <visible>Window.IsActive(OSDAudioSettings)</visible>
             </control>
             <control type="label">
-                <posx>60</posx>
-                <posy>35</posy>
+                <left>60</left>
+                <top>35</top>
                 <width>1080</width>
                 <height>60</height>
                 <textcolor>$VAR[TitleColorVar]</textcolor>
@@ -55,8 +55,8 @@
                 <visible>Window.IsActive(OSDVideoSettings)</visible>
             </control>
             <control type="label" id="3">
-                <posx>120</posx>
-                <posy>45</posy>
+                <left>120</left>
+                <top>45</top>
                 <width>1080</width>
                 <height>45</height>
                 <label>$LOCALIZE[13390]</label>
@@ -64,8 +64,8 @@
                 <shadowcolor>black</shadowcolor>
             </control>
             <control type="grouplist" id="5">
-                <posx>21</posx>
-                <posy>110</posy>
+                <left>21</left>
+                <top>110</top>
                 <width>1080</width>
                 <height>700</height>
                 <aligny>center</aligny>
@@ -76,10 +76,10 @@
                 <ondown>5</ondown>
             </control>
             <control type="scrollbar" id="60">
-                <posy>105</posy>
+                <top>105</top>
                 <width>46</width>
                 <height>540</height>
-                <posx>1080</posx>
+                <left>1080</left>
                 <width>46</width>
                 <height>540</height>
                 <onleft>5</onleft>
@@ -112,7 +112,7 @@
             <textcolor>grey2</textcolor>
             <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
             <textoffsetx>45</textoffsetx>
-            <radioposx>934</radioposx>
+            <radioleft>934</radioleft>
             <colordiffuse>FFFFFFFF</colordiffuse>
             <texturefocus>views/tripanel/listselect_fo.png</texturefocus>
             <texturenofocus>osd/osd_settings_buttonnf.png</texturenofocus>
@@ -124,7 +124,7 @@
             <textcolor>grey2</textcolor>
             <texturefocus>views/tripanel/listselect_fo.png</texturefocus>
             <texturenofocus>osd/osd_settings_buttonnf.png</texturenofocus>
-            <spinposx>13</spinposx>
+            <spinleft>13</spinleft>
         </control>
     </controls>
 </window>

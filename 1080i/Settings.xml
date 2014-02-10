@@ -21,8 +21,8 @@
             <include>Furniture_SettingsBackPanel2</include>
             <include>Furniture_SettingsInternalBackPanel</include>
             <control type="list" id="9000">
-                <posx>62</posx>
-                <posy>190</posy>
+                <left>62</left>
+                <top>190</top>
                 <width>570</width>
                 <height>819</height>
                 <onleft>ActivateWindow(1121)</onleft>
@@ -31,7 +31,7 @@
                 <ondown>9000</ondown>
                 <itemlayout height="74" width="570">
                     <control type="label">
-                        <posx>30</posx>
+                        <left>30</left>
                         <width>389</width>
                         <height>74</height>
                         <label>$INFO[ListItem.Label]</label>
@@ -48,7 +48,7 @@
                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>30</posx>
+                        <left>30</left>
                         <width>389</width>
                         <height>74</height>
                         <label>$INFO[ListItem.Label]</label>
@@ -128,16 +128,16 @@
                 </content>
             </control>
             <control type="image">
-                <posx>498</posx>
-                <posy>87</posy>
+                <left>498</left>
+                <top>87</top>
                 <width>1260</width>
                 <height>708</height>
                 <texture background="true">$INFO[Container(9000).ListItem.Icon]</texture>
                 <fadetime>600</fadetime>
             </control>
             <control type="textbox">
-                <posx>555</posx>
-                <posy>810</posy>
+                <left>555</left>
+                <top>810</top>
                 <width>1200</width>
                 <height>210</height>
                 <label>$INFO[Container(9000).ListItem.Property(description)]</label>

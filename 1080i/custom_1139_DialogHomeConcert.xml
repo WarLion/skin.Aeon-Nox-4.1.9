@@ -6,8 +6,8 @@
         <control type="group">
             <include>Animation_OpenCloseZoom</include>
             <control type="image">
-                <posx>98</posx>
-                <posy>68</posy>
+                <left>98</left>
+                <top>68</top>
                 <width>1723</width>
                 <height>1065</height>
                 <texture>wall/wall_bg_glow.png</texture>
@@ -17,8 +17,8 @@
                 <animation effect="zoom" start="112,68,1695,1038" end="38,68,1845,1038" time="0" reversible="false" condition="Control.IsVisible(512)">Conditional</animation>
             </control>
             <control type="image">
-                <posx>98</posx>
-                <posy>68</posy>
+                <left>98</left>
+                <top>68</top>
                 <width>1723</width>
                 <height>1065</height>
                 <texture>wall/wall_bg.png</texture>
@@ -26,8 +26,8 @@
                 <animation effect="zoom" start="112,68,1695,1038" end="38,68,1845,1038" time="0" reversible="false" condition="Control.IsVisible(512)">Conditional</animation>
             </control>
             <control type="panel" id="450">
-                <posx>110</posx>
-                <posy>100</posy>
+                <left>110</left>
+                <top>100</top>
                 <width>1700</width>
                 <height>880</height>
                 <onup>450</onup>
@@ -42,7 +42,7 @@
                         <texture border="5">button-nofocus.png</texture>
                     </control>
                     <control type="label">
-                        <posx>10</posx>
+                        <left>10</left>
                         <width>320</width>
                         <height>40</height>
                         <font>Font_Reg26</font>
@@ -50,8 +50,8 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
-                        <posx>10</posx>
-                        <posy>30</posy>
+                        <left>10</left>
+                        <top>30</top>
                         <width>320</width>
                         <height>40</height>
                         <font>Font_Reg26</font>
@@ -60,8 +60,8 @@
                         <info>ListItem.Label2</info>
                     </control>
                     <control type="label">
-                        <posx>10</posx>
-                        <posy>60</posy>
+                        <left>10</left>
+                        <top>60</top>
                         <width>320</width>
                         <height>40</height>
                         <label>$INFO[ListItem.Property(City)] - $INFO[ListItem.Property(Name)]</label>
@@ -85,7 +85,7 @@
                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>10</posx>
+                        <left>10</left>
                         <width>320</width>
                         <height>40</height>
                         <font>Font_Reg26</font>
@@ -93,8 +93,8 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
-                        <posx>10</posx>
-                        <posy>30</posy>
+                        <left>10</left>
+                        <top>30</top>
                         <width>320</width>
                         <height>40</height>
                         <font>Font_Reg26</font>
@@ -103,8 +103,8 @@
                         <info>ListItem.Label2</info>
                     </control>
                     <control type="label">
-                        <posx>10</posx>
-                        <posy>60</posy>
+                        <left>10</left>
+                        <top>60</top>
                         <width>320</width>
                         <height>40</height>
                         <label>$INFO[ListItem.Property(City)] - $INFO[ListItem.Property(Name)]</label>

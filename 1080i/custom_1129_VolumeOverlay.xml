@@ -12,15 +12,15 @@
     </animation>
     <controls>
         <control type="group">
-            <posx>-300r</posx>
-            <posy>800</posy>
+            <left>-300r</left>
+            <top>800</top>
             <width>764</width>
             <height>136</height>
             <animation effect="slide" end="0,-870" time="0" condition="True">Conditional</animation>
             <animation effect="zoom" start="100" end="60" center="960,1080" time="640" easing="inout" tween="circle" condition="true">Conditional</animation>
             <control type="image">
-                <posx>-4</posx>
-                <posy>-4</posy>
+                <left>-4</left>
+                <top>-4</top>
                 <width>300</width>
                 <height>147</height>
                 <texture>dialogs/scan_backg_shadow.png</texture>
@@ -30,8 +30,8 @@
                 <include>Animation_VisibleChange400</include>
             </control>
             <control type="image">
-                <posx>-4</posx>
-                <posy>-4</posy>
+                <left>-4</left>
+                <top>-4</top>
                 <width>300</width>
                 <height>147</height>
                 <texture>dialogs/scan_backg.png</texture>
@@ -40,8 +40,8 @@
             <control type="group">
                 <visible>!Window.IsVisible(mutebug)</visible>
                 <control type="image">
-                    <posx>-5</posx>
-                    <posy>-5</posy>
+                    <left>-5</left>
+                    <top>-5</top>
                     <width>150</width>
                     <height>150</height>
                     <texture>$VAR[VolumeIconVar]</texture>
@@ -49,8 +49,8 @@
                     <colordiffuse>$VAR[VolumeColorVar]</colordiffuse>
                 </control>
                 <control type="image">
-                    <posx>44</posx>
-                    <posy>45</posy>
+                    <left>44</left>
+                    <top>45</top>
                     <width>55</width>
                     <height>55</height>
                     <texture>dialogs/volume.png</texture>
@@ -64,8 +64,8 @@
                     <info>Player.Volume</info>
                 </control>
                 <control type="label">
-                    <posx>153</posx>
-                    <posy>-35</posy>
+                    <left>153</left>
+                    <top>-35</top>
                     <width>564</width>
                     <height>200</height>
                     <align>left</align>
@@ -83,16 +83,16 @@
             <control type="group">
                 <visible>Window.IsVisible(mutebug)</visible>
                 <control type="image">
-                    <posx>21</posx>
-                    <posy>20</posy>
+                    <left>21</left>
+                    <top>20</top>
                     <width>100</width>
                     <height>100</height>
                     <texture>dialogs/mute.png</texture>
                     <colordiffuse>white2</colordiffuse>
                 </control>
                 <control type="label">
-                    <posx>153</posx>
-                    <posy>-35</posy>
+                    <left>153</left>
+                    <top>-35</top>
                     <width>564</width>
                     <height>200</height>
                     <align>left</align>

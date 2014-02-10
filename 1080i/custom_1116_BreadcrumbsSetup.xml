@@ -3,17 +3,17 @@
     <defaultcontrol>450</defaultcontrol>
     <zorder>4</zorder>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <include>Animation_DialogPopup</include>
     <controls>
         <control type="group">
-            <posy>-100</posy>
+            <top>-100</top>
             <control type="image">
-                <posx>356</posx>
-                <posy>180</posy>
+                <left>356</left>
+                <top>180</top>
                 <width>1210</width>
                 <height>642</height>
                 <texture>osd/osd_settings_back_glow.png</texture>
@@ -22,23 +22,23 @@
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
             </control>
             <control type="image">
-                <posx>356</posx>
-                <posy>180</posy>
+                <left>356</left>
+                <top>180</top>
                 <width>1210</width>
                 <height>642</height>
                 <texture>osd/osd_settings_back.png</texture>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
             <control type="image">
-                <posx>375</posx>
-                <posy>232</posy>
+                <left>375</left>
+                <top>232</top>
                 <width>1172</width>
                 <height>60</height>
                 <texture border="1">osd/osd_settings_buttonnf.png</texture>
             </control>
             <control type="label">
-                <posx>356</posx>
-                <posy>225</posy>
+                <left>356</left>
+                <top>225</top>
                 <width>1210</width>
                 <height>60</height>
                 <align>center</align>
@@ -48,8 +48,8 @@
                 <visible>Window.IsActive(home)</visible>
             </control>
             <control type="label">
-                <posx>356</posx>
-                <posy>225</posy>
+                <left>356</left>
+                <top>225</top>
                 <width>1210</width>
                 <height>60</height>
                 <align>center</align>
@@ -59,8 +59,8 @@
                 <visible>Window.IsActive(skinsettings)</visible>
             </control>
             <control type="grouplist" id="450">
-                <posx>375</posx>
-                <posy>292</posy>
+                <left>375</left>
+                <top>292</top>
                 <width>1172</width>
                 <height>610</height>
                 <aligny>center</aligny>

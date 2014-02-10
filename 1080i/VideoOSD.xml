@@ -13,13 +13,13 @@
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
             </control>
             <control type="group">
-                <posy>84</posy>
+                <top>84</top>
                 <include>Neon_Topbar</include>
             </control>
             <include condition="VideoPlayer.Content(LiveTV)">LiveTVVideoOSD</include>
             <include condition="!VideoPlayer.Content(LiveTV)">DefaultVideoOSD</include>
             <control type="label">
-                <posx>400</posx>
+                <left>400</left>
                 <width>300</width>
                 <height>125</height>
                 <label>$INFO[System.CurrentControl]</label>
@@ -30,7 +30,7 @@
                 <visible>ControlGroup(650).HasFocus | ControlGroup(201).HasFocus</visible>
             </control>
             <control type="label">
-                <posx>490r</posx>
+                <left>670r</left>
                 <width>200</width>
                 <height>125</height>
                 <align>right</align>

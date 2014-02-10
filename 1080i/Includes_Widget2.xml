@@ -5660,17 +5660,17 @@
     </include>
     <include name="Weather_Widget2">
         <control type="group">
-            <posy>30</posy>
+            <top>30</top>
             <visible>Substring(Control.GetLabel(4325),weather) + Weather.IsFetched</visible>
             <include>Animation_Widgets</include>
             <visible>!IsEmpty(Weather.Plugin)</visible>
             <visible>![!IsEmpty(Window(home).Property(DisableWidgets)) + Window.IsActive(home)]</visible>
             <control type="group">
-                <posx>75</posx>
+                <left>75</left>
                 <control type="group">
                     <include>weatherwidget2back</include>
                     <control type="label">
-                        <posy>310</posy>
+                        <top>310</top>
                         <width>284</width>
                         <height>52</height>
                         <align>center</align>
@@ -5679,8 +5679,8 @@
                         <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
                     </control>
                     <control type="label">
-                        <posx>38</posx>
-                        <posy>45</posy>
+                        <left>38</left>
+                        <top>45</top>
                         <width>210</width>
                         <height>30</height>
                         <align>center</align>
@@ -5689,15 +5689,15 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="image">
-                        <posx>82</posx>
-                        <posy>90</posy>
+                        <left>82</left>
+                        <top>90</top>
                         <width>120</width>
                         <height>120</height>
                         <aspectratio align="center">keep</aspectratio>
                         <info>Window(weather).Property(Current.ConditionIcon)</info>
                     </control>
                     <control type="label">
-                        <posy>225</posy>
+                        <top>225</top>
                         <width>284</width>
                         <height>30</height>
                         <align>center</align>
@@ -5709,11 +5709,11 @@
                 </control>
             </control>
             <control type="group">
-                <posx>450</posx>
+                <left>450</left>
                 <control type="group">
                     <include>weatherwidget2back</include>
                     <control type="label">
-                        <posy>310</posy>
+                        <top>310</top>
                         <width>284</width>
                         <height>52</height>
                         <align>center</align>
@@ -5722,8 +5722,8 @@
                         <info>Window(weather).Property(Day0.Title)</info>
                     </control>
                     <control type="label">
-                        <posx>38</posx>
-                        <posy>45</posy>
+                        <left>38</left>
+                        <top>45</top>
                         <width>210</width>
                         <height>30</height>
                         <align>center</align>
@@ -5732,16 +5732,16 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="image">
-                        <posx>82</posx>
-                        <posy>90</posy>
+                        <left>82</left>
+                        <top>90</top>
                         <width>120</width>
                         <height>120</height>
                         <aspectratio align="center">keep</aspectratio>
                         <info>Window(weather).Property(Day0.OutlookIcon)</info>
                     </control>
                     <control type="label">
-                        <posx>140</posx>
-                        <posy>221</posy>
+                        <left>140</left>
+                        <top>221</top>
                         <width>142</width>
                         <height>30</height>
                         <align>right</align>
@@ -5750,8 +5750,8 @@
                         <textcolor>grey2</textcolor>
                     </control>
                     <control type="label">
-                        <posx>150</posx>
-                        <posy>221</posy>
+                        <left>150</left>
+                        <top>221</top>
                         <width>142</width>
                         <height>30</height>
                         <label>$INFO[Window(weather).Property(Day0.HighTemp)] $INFO[System.TemperatureUnits]</label>
@@ -5760,8 +5760,8 @@
                         <visible>!IsEmpty(Window(weather).Property(Day0.HighTemp))</visible>
                     </control>
                     <control type="label">
-                        <posx>140</posx>
-                        <posy>255</posy>
+                        <left>140</left>
+                        <top>255</top>
                         <width>142</width>
                         <height>52</height>
                         <align>right</align>
@@ -5770,8 +5770,8 @@
                         <textcolor>grey2</textcolor>
                     </control>
                     <control type="label">
-                        <posx>150</posx>
-                        <posy>255</posy>
+                        <left>150</left>
+                        <top>255</top>
                         <width>142</width>
                         <height>52</height>
                         <label>$INFO[Window(weather).Property(Day0.LowTemp)] $INFO[System.TemperatureUnits]</label>
@@ -5782,11 +5782,11 @@
                 </control>
             </control>
             <control type="group">
-                <posx>825</posx>
+                <left>825</left>
                 <control type="group">
                     <include>weatherwidget2back</include>
                     <control type="label">
-                        <posy>310</posy>
+                        <top>310</top>
                         <width>284</width>
                         <height>52</height>
                         <align>center</align>
@@ -5795,8 +5795,8 @@
                         <info>Window(weather).Property(Day1.Title)</info>
                     </control>
                     <control type="label">
-                        <posx>38</posx>
-                        <posy>45</posy>
+                        <left>38</left>
+                        <top>45</top>
                         <width>210</width>
                         <height>30</height>
                         <align>center</align>
@@ -5805,16 +5805,16 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="image">
-                        <posx>82</posx>
-                        <posy>90</posy>
+                        <left>82</left>
+                        <top>90</top>
                         <width>120</width>
                         <height>120</height>
                         <aspectratio align="center">keep</aspectratio>
                         <info>Window(weather).Property(Day1.OutlookIcon)</info>
                     </control>
                     <control type="label">
-                        <posx>140</posx>
-                        <posy>221</posy>
+                        <left>140</left>
+                        <top>221</top>
                         <width>142</width>
                         <height>30</height>
                         <align>right</align>
@@ -5823,8 +5823,8 @@
                         <textcolor>grey2</textcolor>
                     </control>
                     <control type="label">
-                        <posx>150</posx>
-                        <posy>221</posy>
+                        <left>150</left>
+                        <top>221</top>
                         <width>142</width>
                         <height>30</height>
                         <label>$INFO[Window(weather).Property(Day1.HighTemp)] $INFO[System.TemperatureUnits]</label>
@@ -5833,8 +5833,8 @@
                         <visible>!IsEmpty(Window(weather).Property(Day1.HighTemp))</visible>
                     </control>
                     <control type="label">
-                        <posx>140</posx>
-                        <posy>255</posy>
+                        <left>140</left>
+                        <top>255</top>
                         <width>142</width>
                         <height>45</height>
                         <align>right</align>
@@ -5843,8 +5843,8 @@
                         <textcolor>grey2</textcolor>
                     </control>
                     <control type="label">
-                        <posx>150</posx>
-                        <posy>255</posy>
+                        <left>150</left>
+                        <top>255</top>
                         <width>142</width>
                         <height>45</height>
                         <label>$INFO[Window(weather).Property(Day1.LowTemp)] $INFO[System.TemperatureUnits]</label>
@@ -5855,11 +5855,11 @@
                 </control>
             </control>
             <control type="group">
-                <posx>1200</posx>
+                <left>1200</left>
                 <control type="group">
                     <include>weatherwidget2back</include>
                     <control type="label">
-                        <posy>310</posy>
+                        <top>310</top>
                         <width>284</width>
                         <height>52</height>
                         <align>center</align>
@@ -5868,8 +5868,8 @@
                         <info>Window(weather).Property(Day2.Title)</info>
                     </control>
                     <control type="label">
-                        <posx>38</posx>
-                        <posy>45</posy>
+                        <left>38</left>
+                        <top>45</top>
                         <width>210</width>
                         <height>30</height>
                         <align>center</align>
@@ -5878,16 +5878,16 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="image">
-                        <posx>82</posx>
-                        <posy>90</posy>
+                        <left>82</left>
+                        <top>90</top>
                         <width>120</width>
                         <height>120</height>
                         <aspectratio align="center">keep</aspectratio>
                         <info>Window(weather).Property(Day2.OutlookIcon)</info>
                     </control>
                     <control type="label">
-                        <posx>140</posx>
-                        <posy>221</posy>
+                        <left>140</left>
+                        <top>221</top>
                         <width>142</width>
                         <height>30</height>
                         <align>right</align>
@@ -5896,8 +5896,8 @@
                         <textcolor>grey2</textcolor>
                     </control>
                     <control type="label">
-                        <posx>150</posx>
-                        <posy>221</posy>
+                        <left>150</left>
+                        <top>221</top>
                         <width>142</width>
                         <height>30</height>
                         <label>$INFO[Window(weather).Property(Day2.HighTemp)] $INFO[System.TemperatureUnits]</label>
@@ -5906,8 +5906,8 @@
                         <visible>!IsEmpty(Window(weather).Property(Day2.HighTemp))</visible>
                     </control>
                     <control type="label">
-                        <posx>140</posx>
-                        <posy>255</posy>
+                        <left>140</left>
+                        <top>255</top>
                         <width>142</width>
                         <height>45</height>
                         <align>right</align>
@@ -5916,8 +5916,8 @@
                         <textcolor>grey2</textcolor>
                     </control>
                     <control type="label">
-                        <posx>150</posx>
-                        <posy>255</posy>
+                        <left>150</left>
+                        <top>255</top>
                         <width>142</width>
                         <height>45</height>
                         <label>$INFO[Window(weather).Property(Day2.LowTemp)] $INFO[System.TemperatureUnits]</label>
@@ -5928,11 +5928,11 @@
                 </control>
             </control>
             <control type="group">
-                <posx>1575</posx>
+                <left>1575</left>
                 <control type="group">
                     <include>weatherwidget2back</include>
                     <control type="label">
-                        <posy>310</posy>
+                        <top>310</top>
                         <width>284</width>
                         <height>52</height>
                         <align>center</align>
@@ -5941,8 +5941,8 @@
                         <info>Window(weather).Property(Day3.Title)</info>
                     </control>
                     <control type="label">
-                        <posx>38</posx>
-                        <posy>45</posy>
+                        <left>38</left>
+                        <top>45</top>
                         <width>210</width>
                         <height>30</height>
                         <align>center</align>
@@ -5951,16 +5951,16 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="image">
-                        <posx>82</posx>
-                        <posy>90</posy>
+                        <left>82</left>
+                        <top>90</top>
                         <width>120</width>
                         <height>120</height>
                         <aspectratio align="center">keep</aspectratio>
                         <info>Window(weather).Property(Day3.OutlookIcon)</info>
                     </control>
                     <control type="label">
-                        <posx>140</posx>
-                        <posy>221</posy>
+                        <left>140</left>
+                        <top>221</top>
                         <width>142</width>
                         <height>30</height>
                         <align>right</align>
@@ -5969,8 +5969,8 @@
                         <textcolor>grey2</textcolor>
                     </control>
                     <control type="label">
-                        <posx>150</posx>
-                        <posy>221</posy>
+                        <left>150</left>
+                        <top>221</top>
                         <width>142</width>
                         <height>30</height>
                         <label>$INFO[Window(weather).Property(Day3.HighTemp)] $INFO[System.TemperatureUnits]</label>
@@ -5979,8 +5979,8 @@
                         <visible>!IsEmpty(Window(weather).Property(Day3.HighTemp))</visible>
                     </control>
                     <control type="label">
-                        <posx>140</posx>
-                        <posy>255</posy>
+                        <left>140</left>
+                        <top>255</top>
                         <width>142</width>
                         <height>45</height>
                         <align>right</align>
@@ -5989,8 +5989,8 @@
                         <textcolor>grey2</textcolor>
                     </control>
                     <control type="label">
-                        <posx>150</posx>
-                        <posy>255</posy>
+                        <left>150</left>
+                        <top>255</top>
                         <width>142</width>
                         <height>45</height>
                         <label>$INFO[Window(weather).Property(Day3.LowTemp)] $INFO[System.TemperatureUnits]</label>

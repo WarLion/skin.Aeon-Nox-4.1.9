@@ -237,7 +237,7 @@
             <include>Animation_FlagSlideDown</include>
             <visible>Control.IsVisible(550) | Control.IsVisible(508) | [Control.IsVisible(503) + !Skin.HasSetting(landscapeonelogo)]  | Control.IsVisible(501) | Control.IsVisible(500) | Control.IsVisible(512) | Control.IsVisible(516)</visible>
             <visible>![SubString(Container.FolderPath,addons://) | SubString(Container.FolderPath,plugin.video)]</visible>
-            <posy>1000</posy>
+            <top>1000</top>
             <control type="group">
                 <visible>!ListItem.IsFolder</visible>
                 <animation effect="slide" time="560" start="0,300" end="0,0" tween="cubic">Visible</animation>
@@ -247,17 +247,17 @@
                     <animation effect="slide" end="1070" condition="Control.IsVisible(516)">Conditional</animation>
                     <control type="image">
                         <!--Source logo-->
-                        <posx>15</posx>
+                        <left>15</left>
                         <texture>$VAR[SourceFlagVar,flags/source/,.png]</texture>
                         <include>AudioFlagsVars</include>
                         <animation effect="slide" end="64" condition="Control.IsVisible(512) | Control.IsVisible(550)">Conditional</animation>
                     </control>
                     <control type="group">
                         <!--studio logo-->
-                        <posx>155</posx>
+                        <left>155</left>
                         <animation effect="slide" end="109" condition="Control.IsVisible(512) | Control.IsVisible(550)">Conditional</animation>
                         <control type="image" id="76">
-                            <posy>-7</posy>
+                            <top>-7</top>
                             <texture>$INFO[ListItem.Studio,flags/studios/,.png]</texture>
                             <width>135</width>
                             <height>82</height>
@@ -272,8 +272,8 @@
                             <visible>IsEmpty(ListItem.Studio)</visible>
                         </control>
                         <control type="label">
-                            <posx>-5</posx>
-                            <posy>-4</posy>
+                            <left>-5</left>
+                            <top>-4</top>
                             <width>155</width>
                             <height>70</height>
                             <align>center</align>
@@ -286,7 +286,7 @@
                     </control>
                     <control type="image">
                         <!--Rating logo-->
-                        <posx>295</posx>
+                        <left>295</left>
                         <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[RatingFlagVar,flags/rating/,.png]</texture>
                         <include>AudioFlagsVars</include>
                         <animation effect="slide" end="138" condition="Control.IsVisible(512) | Control.IsVisible(550)">Conditional</animation>
@@ -299,18 +299,18 @@
                         <animation effect="slide" end="-15" condition="Control.IsVisible(12100)">Conditional</animation>
                         <control type="image">
                             <!--AspectRatio logo-->
-                            <posx>1498</posx>
+                            <left>1498</left>
                             <texture>$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]</texture>
                             <include>AudioFlagsVars</include>
                         </control>
                         <control type="image">
                             <!--Resolution logo-->
-                            <posx>1621</posx>
+                            <left>1621</left>
                             <texture>$INFO[ListItem.VideoResolution,flags/resolution/,.png]</texture>
                             <include>AudioFlagsVars</include>
                         </control>
                         <control type="image">
-                            <posx>1770</posx>
+                            <left>1770</left>
                             <texture>$VAR[AudioFlagVar,flags/audio/,.png]</texture>
                             <!--Audio logo-->
                             <include>AudioFlagsVars</include>
@@ -319,7 +319,7 @@
                     </control>
                     <control type="grouplist" id="12100">
                         <animation effect="fade" start="100" end="85" time="0" condition="true">Conditional</animation>
-                        <posx>1886</posx>
+                        <left>1886</left>
                         <orientation>vertical</orientation>
                         <visible>Skin.HasSetting(languageflag)</visible>
                         <control type="image">
@@ -362,19 +362,19 @@
                 <control type="group">
                     <animation effect="slide" end="980" condition="Control.IsVisible(516)">Conditional</animation>
                     <control type="image">
-                        <posx>60</posx>
+                        <left>60</left>
                         <texture fallback="flags/studios/default-studio.png">$INFO[ListItem.Studio,flags/studios/,.png]</texture>
                         <width>150</width>
                         <height>84</height>
-                        <posy>-8</posy>
+                        <top>-8</top>
                         <aspectratio>keep</aspectratio>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <colordiffuse>white2</colordiffuse>
                         <animation effect="fade" time="200">VisibleChange</animation>
                     </control>
                     <control type="group">
-                        <posy>-5</posy>
-                        <posx>200</posx>
+                        <top>-5</top>
+                        <left>200</left>
                         <visible>Container.Content(tvshows)</visible>
                         <animation effect="slide" time="560" start="0,300" end="0,0" tween="cubic">Visible</animation>
                         <animation effect="slide" time="250" end="0,400" tween="cubic" easing="in">Hidden</animation>
@@ -387,7 +387,7 @@
                             <textcolor>floor</textcolor>
                         </control>
                         <control type="label">
-                            <posy>42</posy>
+                            <top>42</top>
                             <width>135</width>
                             <height>30</height>
                             <align>center</align>
@@ -397,8 +397,8 @@
                         </control>
                     </control>
                     <control type="group">
-                        <posy>-5</posy>
-                        <posx>200</posx>
+                        <top>-5</top>
+                        <left>200</left>
                         <visible>Container.Content(seasons)</visible>
                         <animation effect="slide" time="560" start="0,300" end="0,0" tween="cubic">Visible</animation>
                         <animation effect="slide" time="250" end="0,400" tween="cubic" easing="in">Hidden</animation>
@@ -411,7 +411,7 @@
                             <textcolor>floor</textcolor>
                         </control>
                         <control type="label">
-                            <posy>42</posy>
+                            <top>42</top>
                             <width>135</width>
                             <height>30</height>
                             <align>center</align>
@@ -421,10 +421,10 @@
                         </control>
                     </control>
                     <control type="group">
-                        <posy>-5</posy>
+                        <top>-5</top>
                         <animation effect="slide" time="560" start="0,300" end="0,0" tween="cubic">Visible</animation>
                         <animation effect="slide" time="250" end="0,400" tween="cubic" easing="in">Hidden</animation>
-                        <posx>340</posx>
+                        <left>340</left>
                         <control type="label">
                             <width>135</width>
                             <height>60</height>
@@ -434,7 +434,7 @@
                             <textcolor>floor</textcolor>
                         </control>
                         <control type="label">
-                            <posy>42</posy>
+                            <top>42</top>
                             <width>135</width>
                             <height>30</height>
                             <align>center</align>
@@ -448,13 +448,13 @@
                     <visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
                     <animation effect="slide" end="-975" condition="Control.IsVisible(512) | Control.IsVisible(550)">Conditional</animation>
                     <control type="image">
-                        <posx>1600</posx>
+                        <left>1600</left>
                         <texture>flags/IMDB.png</texture>
                         <include>AudioFlagsVars</include>
                     </control>
                     <control type="label">
-                        <posx>1600</posx>
-                        <posy>21</posy>
+                        <left>1600</left>
+                        <top>21</top>
                         <width>135</width>
                         <height>38</height>
                         <align>center</align>
@@ -463,13 +463,13 @@
                         <textcolor>floor</textcolor>
                     </control>
                     <control type="image">
-                        <posx>1450</posx>
+                        <left>1450</left>
                         <include>AudioFlagsVars</include>
                         <texture>tvguide/$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
                         <colordiffuse>floor</colordiffuse>
                     </control>
                     <control type="image">
-                        <posx>1745</posx>
+                        <left>1745</left>
                         <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[RatingFlagVar,flags/rating/,.png]</texture>
                         <include>AudioFlagsVars</include>
                         <animation effect="slide" time="560" start="0,300" end="0,0" tween="cubic">Visible</animation>
@@ -482,8 +482,8 @@
                 <animation effect="slide" time="560" start="0,300" end="0,0" tween="cubic">Visible</animation>
                 <animation effect="slide" time="250" end="0,400" tween="cubic" easing="in">Hidden</animation>
                 <control type="label">
-                    <posx>1850</posx>
-                    <posy>7</posy>
+                    <left>1850</left>
+                    <top>7</top>
                     <width>690</width>
                     <height>20</height>
                     <align>right</align>
@@ -495,8 +495,8 @@
                     <scroll>true</scroll>
                 </control>
                 <control type="label">
-                    <posx>1850</posx>
-                    <posy>40</posy>
+                    <left>1850</left>
+                    <top>40</top>
                     <width>690</width>
                     <height>20</height>
                     <align>right</align>
@@ -513,10 +513,10 @@
             <animation effect="slide" end="-1220" condition="Control.IsVisible(514)">Conditional</animation>
             <animation effect="slide" end="0,-30" time="240" tween="cubic" easing="inout" condition="Control.IsVisible(50)">Conditional</animation>
             <animation effect="slide" end="-50,0" time="240" tween="cubic" easing="inout" condition="Control.IsVisible(50) + !Skin.HasSetting(slimlist)">Conditional</animation>
-            <posy>1004</posy>
+            <top>1004</top>
             <control type="image">
-                <posx>1255</posx>
-                <posy>-9</posy>
+                <left>1255</left>
+                <top>-9</top>
                 <texture>$INFO[ListItem.Studio,flags/studios/,.png]</texture>
                 <width>150</width>
                 <height>84</height>
@@ -529,25 +529,25 @@
                 <visible>Container.Content(tvshows) | [Container.Content(seasons) + ListItem.IsFolder]</visible>
             </control>
             <control type="image">
-                <posx>1425</posx>
+                <left>1425</left>
                 <texture>$VAR[SourceFlagVar,flags/source/,.png]</texture>
                 <include>OSDFlagVars</include>
                 <visible>!ListItem.IsFolder</visible>
             </control>
             <control type="image">
-                <posx>1275</posx>
+                <left>1275</left>
                 <texture>$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]</texture>
                 <include>OSDFlagVars</include>
                 <visible>!ListItem.IsFolder</visible>
             </control>
             <control type="image">
-                <posx>1575</posx>
+                <left>1575</left>
                 <texture>$INFO[ListItem.VideoResolution,flags/resolution/,.png]</texture>
                 <include>OSDFlagVars</include>
                 <visible>!ListItem.IsFolder</visible>
             </control>
             <control type="image">
-                <posx>1740</posx>
+                <left>1740</left>
                 <texture>$VAR[AudioFlagVar,flags/audio/,.png]</texture>
                 <include>OSDFlagVars</include>
                 <visible>!ListItem.IsFolder</visible>
@@ -555,19 +555,19 @@
             <control type="group">
                 <visible>Container.Content(tvshows) | [Container.Content(seasons) + !IsEmpty(ListItem.TVShowTitle)]</visible>
                 <control type="image">
-                    <posx>1375</posx>
+                    <left>1375</left>
                     <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[RatingFlagVar,flags/rating/,.png]</texture>
                     <include>OSDFlagVars</include>
                 </control>
                 <control type="image">
-                    <posx>1480</posx>
+                    <left>1480</left>
                     <include>OSDFlagVars</include>
                     <texture background="true">tvguide/$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
                 </control>
                 <control type="group">
-                    <posx>1630</posx>
+                    <left>1630</left>
                     <control type="label">
-                        <posy>-27</posy>
+                        <top>-27</top>
                         <width>330</width>
                         <height>90</height>
                         <align>left</align>
@@ -575,7 +575,7 @@
                         <label>$LOCALIZE[210]: [B]$VAR[LastEpisodeVar][/B]</label>
                     </control>
                     <control type="label">
-                        <posy>0</posy>
+                        <top>0</top>
                         <width>330</width>
                         <height>90</height>
                         <align>left</align>
@@ -589,7 +589,7 @@
     </include>
     <include name="MusicMediaFlags">
         <control type="group">
-            <posy>988</posy>
+            <top>988</top>
             <visible>!Control.IsVisible(506) + !Control.IsVisible(518)</visible>
             <include>Animation_FlagSlideDown</include>
             <control type="group">
@@ -602,7 +602,7 @@
                                     <animation effect="slide" end="1190" time="0" condition="Control.IsVisible(53) | Control.IsVisible(50) | Control.IsVisible(57)">Conditional</animation>
                 <control type="group">
                     <!--totals-->
-                    <posx>150</posx>
+                    <left>150</left>
                     <control type="label">
                         <width>135</width>
                         <height>60</height>
@@ -612,7 +612,7 @@
                         <textcolor>floor</textcolor>
                     </control>
                     <control type="label">
-                        <posy>42</posy>
+                        <top>42</top>
                         <width>135</width>
                         <height>30</height>
                         <align>center</align>
@@ -623,7 +623,7 @@
                 </control>
                 <control type="group">
                     <!--playcount-->
-                    <posx>15</posx>
+                    <left>15</left>
                     <visible>!Control.IsVisible(53)</visible>
                     <control type="label">
                         <width>135</width>
@@ -634,7 +634,7 @@
                         <textcolor>floor</textcolor>
                     </control>
                     <control type="label">
-                        <posy>42</posy>
+                        <top>42</top>
                         <width>135</width>
                         <height>30</height>
                         <align>center</align>
@@ -647,12 +647,12 @@
 
                 <control type="group">
                     <!--artist newest/oldest-->
-                    <posx>1500</posx>
+                    <left>1500</left>
                     <animation effect="slide" end="-1190" time="0" condition="Control.IsVisible(512) | Control.IsVisible(514)">Conditional</animation>
                     <animation effect="slide" time="560" start="0,300" end="0,0" tween="cubic">Visible</animation>
                     <animation effect="slide" time="250" end="0,400" tween="cubic" easing="in">Hidden</animation>
                     <control type="label">
-                        <posx>200</posx>
+                        <left>200</left>
                         <width>135</width>
                         <height>60</height>
                         <align>center</align>
@@ -661,8 +661,8 @@
                         <textcolor>floor</textcolor>
                     </control>
                     <control type="label">
-                        <posx>200</posx>
-                        <posy>42</posy>
+                        <left>200</left>
+                        <top>42</top>
                         <width>135</width>
                         <height>30</height>
                         <align>center</align>
@@ -679,7 +679,7 @@
                         <textcolor>floor</textcolor>
                     </control>
                     <control type="label">
-                        <posy>42</posy>
+                        <top>42</top>
                         <width>135</width>
                         <height>30</height>
                         <align>center</align>
@@ -698,7 +698,7 @@
                 <control type="group">
                                     <animation effect="slide" end="1210,0" time="0" condition="Control.IsVisible(53) | Control.IsVisible(50) | Control.IsVisible(57)">Conditional</animation>
                 <control type="image">
-                    <posx>0</posx>
+                    <left>0</left>
                     <width>135</width>
                     <height>88</height>
                     <texture fallback="flags/music/rating/rating0.png">$INFO[ListItem.StarRating,flags/music/rating/]</texture>
@@ -706,14 +706,14 @@
                     <colordiffuse>floor</colordiffuse>
                 </control>
                 <control type="image">
-                    <posx>130</posx>
-                    <posy>12</posy>
+                    <left>130</left>
+                    <top>12</top>
                     <texture>$INFO[Window(home).Property(Album.Song.1.FileExtension),flags/audio/,.png]</texture>
                     <include>AudioFlagsVars</include>
                 </control>
                 <control type="group">
                     <!-- Year -->
-                    <posx>285</posx>
+                    <left>285</left>
                     <visible>!Control.IsVisible(50) + !Control.IsVisible(53)</visible>
                     <control type="label">
                         <width>135</width>
@@ -724,7 +724,7 @@
                         <textcolor>floor</textcolor>
                     </control>
                     <control type="label">
-                        <posy>42</posy>
+                        <top>42</top>
                         <width>135</width>
                         <height>35</height>
                         <align>center</align>
@@ -737,8 +737,8 @@
                 <control type="group">
                <!-- Label -->
                 <control type="group">
-                    <posx>1500</posx>
-                    <posy>11</posy>
+                    <left>1500</left>
+                    <top>11</top>
                     <visible>!Control.IsVisible(57)</visible>
                     <control type="image" id="76">
                         <texture>$INFO[ListItem.Property(Album_Label),flags/music/recordlabel/,.png]</texture>
@@ -750,8 +750,8 @@
                         <visible>IsEmpty(ListItem.Property(Album_Label))</visible>
                     </control>
                     <control type="label">
-                        <posx>-5</posx>
-                        <posy>0</posy>
+                        <left>-5</left>
+                        <top>0</top>
                         <width>155</width>
                         <height>70</height>
                         <align>center</align>
@@ -764,7 +764,7 @@
                 </control>
                 <control type="group">
                     <!--totals-->
-                    <posx>1630</posx>
+                    <left>1630</left>
                     <control type="label">
                         <width>135</width>
                         <height>65</height>
@@ -774,7 +774,7 @@
                         <textcolor>floor</textcolor>
                     </control>
                     <control type="label">
-                        <posy>42</posy>
+                        <top>42</top>
                         <width>135</width>
                         <height>35</height>
                         <align>center</align>
@@ -787,7 +787,7 @@
                 <!-- Genre -->
                 <include>Animation_VisibleChange200</include>
                 <control type="image">
-                    <posx>1795</posx>
+                    <left>1795</left>
                     <width>175</width>
                     <height>88</height>
                     <texture>flags/music/genre/genre.png</texture>
@@ -795,8 +795,8 @@
                     <animation effect="fade" start="100" end="30" time="40" condition="true">Conditional</animation>
                 </control>
                 <control type="label">
-                    <posx>1768</posx>
-                    <posy>0</posy>
+                    <left>1768</left>
+                    <top>0</top>
                     <width>135</width>
                     <height>88</height>
                     <aligny>center</aligny>
@@ -815,7 +815,7 @@
                 <animation effect="slide" time="250" end="0,400" tween="cubic" easing="in">Hidden</animation>
                 <control type="group">
                     <!--playcount-->
-                    <posx>15</posx>
+                    <left>15</left>
                     <control type="label">
                         <width>135</width>
                         <height>60</height>
@@ -825,7 +825,7 @@
                         <textcolor>floor</textcolor>
                     </control>
                     <control type="label">
-                        <posy>42</posy>
+                        <top>42</top>
                         <width>135</width>
                         <height>30</height>
                         <align>center</align>
@@ -836,7 +836,7 @@
                 </control>
                 <!-- Rating -->
                 <control type="image">
-                    <posx>120</posx>
+                    <left>120</left>
                     <width>135</width>
                     <height>88</height>
                     <texture fallback="flags/music/rating/rating0.png">$INFO[ListItem.StarRating,flags/music/rating/]</texture>
@@ -848,14 +848,14 @@
                     <include>Animation_VisibleChange200</include>
                     <visible>!IsEmpty(ListItem.Year)</visible>
                     <control type="image">
-                        <posx>285</posx>
+                        <left>285</left>
                         <width>135</width>
                         <height>88</height>
                         <texture>flags/music/year/year.png</texture>
                         <colordiffuse>floor</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>285</posx>
+                        <left>285</left>
                         <width>135</width>
                         <height>83</height>
                         <align>center</align>
@@ -867,8 +867,8 @@
                 </control>
                 <!-- Codec -->
                 <control type="image">
-                    <posx>1500</posx>
-                    <posy>10</posy>
+                    <left>1500</left>
+                    <top>10</top>
                     <texture>$INFO[ListItem.FileExtension,flags/audio/,.png]</texture>
                     <include>AudioFlagsVars</include>
                     <visible>Container.Content(Songs)</visible>
@@ -878,7 +878,7 @@
                 <visible>!IsEmpty(ListItem.Genre)</visible>
                 <include>Animation_VisibleChange200</include>
                 <control type="image">
-                    <posx>1795</posx>
+                    <left>1795</left>
                     <width>175</width>
                     <height>88</height>
                     <texture>flags/music/genre/genre.png</texture>
@@ -886,8 +886,8 @@
                     <animation effect="fade" start="100" end="30" time="40" condition="true">Conditional</animation>
                 </control>
                 <control type="label">
-                    <posx>1768</posx>
-                    <posy>0</posy>
+                    <left>1768</left>
+                    <top>0</top>
                     <width>135</width>
                     <height>88</height>
                     <aligny>center</aligny>
@@ -903,7 +903,7 @@
     </include>
     <include name="Posters_Furniture">
         <control type="group">
-            <posy>1005</posy>
+            <top>1005</top>
             <visible>[Control.IsVisible(57) | Control.IsVisible(510) | Control.IsVisible(52)] + !Container.Content(files)</visible>
             <visible>!Stringcompare(ListItem.Label,..)</visible>
             <animation effect="slide" end="-0,-15" condition="Control.IsVisible(52)">Conditional</animation>
@@ -914,14 +914,14 @@
                 <animation effect="slide" time="250" end="0,400" tween="cubic" easing="in">Hidden</animation>
                 <control type="group">
                     <visible>!IsEmpty(ListItem.Rating)</visible>
-                    <posx>1400</posx>
+                    <left>1400</left>
                     <control type="image">
                         <texture>flags/IMDB.png</texture>
                         <include>AudioFlagsVars</include>
                     </control>
                     <control type="label">
-                        <posx>-1</posx>
-                        <posy>20</posy>
+                        <left>-1</left>
+                        <top>20</top>
                         <width>135</width>
                         <height>38</height>
                         <align>center</align>
@@ -931,17 +931,17 @@
                     </control>
                 </control>
                 <control type="image">
-                    <posx>1535</posx>
+                    <left>1535</left>
                     <texture>$VAR[AudioFlagVar,flags/audio/,.png]</texture>
                     <include>AudioFlagsVars</include>
                 </control>
                 <control type="image">
-                    <posx>1670</posx>
+                    <left>1670</left>
                     <texture>$VAR[SourceFlagVar,flags/source/,.png]</texture>
                     <include>AudioFlagsVars</include>
                 </control>
                 <control type="image">
-                    <posx>1770</posx>
+                    <left>1770</left>
                     <texture>$INFO[ListItem.VideoResolution,flags/resolution/,.png]</texture>
                     <include>AudioFlagsVars</include>
                 </control>
@@ -959,13 +959,13 @@
                 </control>
                 <control type="group">
                     <width>120</width>
-                    <posx>-20</posx>
+                    <left>-20</left>
                     <control type="image">
                         <texture>flags/IMDB.png</texture>
                         <include>AudioFlagsVars</include>
                     </control>
                     <control type="label">
-                        <posy>22</posy>
+                        <top>22</top>
                         <width>135</width>
                         <height>38</height>
                         <align>center</align>
@@ -979,7 +979,7 @@
                     <include>AudioFlagsVars</include>
                 </control>
                 <control type="image">
-                    <posy>-10</posy>
+                    <top>-10</top>
                     <texture fallback="flags/studios/default-studio.png">$INFO[ListItem.Studio,flags/studios/,.png]</texture>
                     <width>125</width>
                     <height>90</height>
@@ -992,8 +992,8 @@
                 </control>
             </control>
             <control type="label">
-                <posx>1890</posx>
-                <posy>27</posy>
+                <left>1890</left>
+                <top>27</top>
                 <width>450</width>
                 <height>38</height>
                 <align>right</align>

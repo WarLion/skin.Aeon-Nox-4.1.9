@@ -14,8 +14,8 @@
             <visible>!Window.IsVisible(script.pseudotv.ChannelConfig.xml)</visible>
             <include>DialogBackFade</include>
             <control type="image">
-                <posx>36</posx>
-                <posy>36</posy>
+                <left>36</left>
+                <top>36</top>
                 <width>1846</width>
                 <height>1006</height>
                 <texture>settings/settings_panelback_shadow.png</texture>
@@ -23,8 +23,8 @@
                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
             </control>
             <control type="image">
-                <posx>34</posx>
-                <posy>34</posy>
+                <left>34</left>
+                <top>34</top>
                 <width>925</width>
                 <height>1010</height>
                 <aspectratio align="left">scale</aspectratio>
@@ -32,8 +32,8 @@
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
             <control type="image">
-                <posx>959</posx>
-                <posy>34</posy>
+                <left>959</left>
+                <top>34</top>
                 <width>925</width>
                 <height>1010</height>
                 <aspectratio align="right">scale</aspectratio>
@@ -41,8 +41,8 @@
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
             <control type="grouplist" id="9">
-                <posx>63</posx>
-                <posy>180</posy>
+                <left>63</left>
+                <top>180</top>
                 <width>387</width>
                 <height>768</height>
                 <onleft>9001</onleft>
@@ -51,15 +51,15 @@
                 <ondown>9</ondown>
             </control>
             <control type="label" id="20">
-                <posy>-800</posy>
+                <top>-800</top>
                 <width>1920</width>
                 <align>center</align>
                 <label>-</label>
                 <font>Font_ShowcaseMainLabel2</font>
             </control>
             <control type="grouplist" id="2">
-                <posx>388</posx>
-                <posy>180</posy>
+                <left>388</left>
+                <top>180</top>
                 <width>1142</width>
                 <height>801</height>
                 <pagecontrol>30</pagecontrol>
@@ -89,12 +89,12 @@
                 <texturenofocus>settings/settings_radiobuttonoff.png</texturenofocus>
                 <textcolor>grey2</textcolor>
                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-                <radioposx>1000</radioposx>
+                <radioleft>1000</radioleft>
             </control>
             <control type="spincontrolex" id="5">
                 <textoffsetx>40</textoffsetx>
                 <include>Default_SettingButton</include>
-                <spinposx>12</spinposx>
+                <spinleft>12</spinleft>
             </control>
             <control type="image" id="6">
                 <include>HiddenObject</include>
@@ -112,8 +112,8 @@
                 <textcolor>grey2</textcolor>
             </control>
             <control type="grouplist" id="9001">
-                <posx>1531</posx>
-                <posy>180</posy>
+                <left>1531</left>
+                <top>180</top>
                 <width>426</width>
                 <height>768</height>
                 <onup>9001</onup>

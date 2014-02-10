@@ -2,7 +2,7 @@
 <includes>
     <include name="ShowcaseInfoPaneMusic">
         <control type="group" id="7679">
-            <posy>75</posy>
+            <top>75</top>
             <width>1920</width>
             <height>750</height>
             <visible>Window.IsActive(1112) | Control.IsVisible(199) | Control.HasFocus(7000) | Stringcompare(Control.GetLabel(4421),infopanelon)</visible>
@@ -16,7 +16,7 @@
             <animation effect="slide" end="0,-1200" time="320" tween="cubic">WindowClose</animation>
             <control type="group">
                 <control type="image">
-                    <posx>112</posx>
+                    <left>112</left>
                     <width>1695</width>
                     <height>1050</height>
                     <texture>wall/wall_bg_glow.png</texture>
@@ -25,22 +25,22 @@
                     <include>PanelGlowFade</include>
                 </control>
                 <control type="image">
-                    <posx>112</posx>
+                    <left>112</left>
                     <width>1695</width>
                     <height>1050</height>
                     <texture>wall/wall_bg.png</texture>
                     <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
                 </control>
                 <control type="image">
-                    <posx>112</posx>
-                    <posy>7</posy>
+                    <left>112</left>
+                    <top>7</top>
                     <width>1695</width>
                     <height>700</height>
                     <texture border="12">$VAR[MusicShowcaseLayoutVar]</texture>
                 </control>
                 <control type="image">
-                    <posx>154</posx>
-                    <posy>-27</posy>
+                    <left>154</left>
+                    <top>-27</top>
                     <width>240</width>
                     <height>75</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
@@ -54,12 +54,12 @@
                     <animation effect="slide" end="460,20" time="0" condition="!Stringcompare(Control.GetLabel(4420),fanart)">Conditional</animation>
                     <animation effect="zoom" end="95" time="0" condition="!Stringcompare(Control.GetLabel(4420),fanart)">Conditional</animation>
                     <control type="group">
-                        <posx>832</posx>
-                        <posy>47</posy>
+                        <left>832</left>
+                        <top>47</top>
                         <!--fanart-->
                         <control type="image">
-                            <posx>127</posx>
-                            <posy>15</posy>
+                            <left>127</left>
+                            <top>15</top>
                             <width>776</width>
                             <height>435</height>
                             <aspectratio>scale</aspectratio>
@@ -69,16 +69,16 @@
                             <visible>Stringcompare(Control.GetLabel(4420),fanart)</visible>
                         </control>
                         <control type="image">
-                            <posx>127</posx>
-                            <posy>15</posy>
+                            <left>127</left>
+                            <top>15</top>
                             <width>776</width>
                             <height>435</height>
                             <texture>common/black.png</texture>
                             <visible>Player.HasVideo</visible>
                         </control>
                         <control type="videowindow" id="2">
-                            <posx>127</posx>
-                            <posy>15</posy>
+                            <left>127</left>
+                            <top>15</top>
                             <width>776</width>
                             <height>435</height>
                             <animation effect="fade" end="100" time="0" delay="880">Visible</animation>
@@ -86,10 +86,10 @@
                         </control>
                     </control>
                     <control type="group">
-                        <posx>158</posx>
-                        <posy>65</posy>
+                        <left>158</left>
+                        <top>65</top>
                         <control type="label">
-                            <posy>-9</posy>
+                            <top>-9</top>
                             <width>600</width>
                             <height>20</height>
                             <aligny>bottom</aligny>
@@ -97,7 +97,7 @@
                             <textcolor>white3</textcolor>
                         </control>
                         <control type="label">
-                            <posy>24</posy>
+                            <top>24</top>
                             <width>735</width>
                             <height>20</height>
                             <aligny>bottom</aligny>
@@ -105,7 +105,7 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posy>61</posy>
+                            <top>61</top>
                             <width>420</width>
                             <height>20</height>
                             <aligny>bottom</aligny>
@@ -113,7 +113,7 @@
                             <textcolor>white3</textcolor>
                         </control>
                         <control type="label">
-                            <posy>94</posy>
+                            <top>94</top>
                             <width>735</width>
                             <height>20</height>
                             <aligny>bottom</aligny>
@@ -121,7 +121,7 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posy>131</posy>
+                            <top>131</top>
                             <width>420</width>
                             <height>20</height>
                             <aligny>bottom</aligny>
@@ -129,7 +129,7 @@
                             <textcolor>white3</textcolor>
                         </control>
                         <control type="label">
-                            <posy>162</posy>
+                            <top>162</top>
                             <width>735</width>
                             <height>20</height>
                             <aligny>bottom</aligny>
@@ -137,8 +137,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="textbox">
-                            <posx>0</posx>
-                            <posy>209</posy>
+                            <left>0</left>
+                            <top>209</top>
                             <width>729</width>
                             <height>220</height>
                             <label fallback="31006">$VAR[InfoWallTextboxVar]</label>
@@ -152,31 +152,31 @@
                     <control type="group">
                         <!-- left side-->
                         <control type="image">
-                            <posx>154</posx>
+                            <left>154</left>
                             <animation effect="zoom" end="200" center="154,70" time="320" tween="cubic" easing="inout" condition="IsEmpty(Window(home).Property(Artist.Album.3.Thumb)) + !IsEmpty(Window(home).Property(Artist.Album.1.Thumb)) + IsEmpty(Window(home).Property(Artist.Album.5.Thumb)) + IsEmpty(Window(home).Property(Artist.Album.7.Thumb))">Conditional</animation>
-                            <posy>70</posy>
+                            <top>70</top>
                             <width>200</width>
                             <height>200</height>
                             <texture>$INFO[Window(home).Property(Artist.Album.1.Thumb)]</texture>
                         </control>
                         <control type="image">
-                            <posx>360</posx>
+                            <left>360</left>
                             <animation effect="zoom" end="200" center="560,70" time="320" tween="cubic" easing="inout" condition="!IsEmpty(Window(home).Property(Artist.Album.3.Thumb)) + IsEmpty(Window(home).Property(Artist.Album.1.Thumb)) + IsEmpty(Window(home).Property(Artist.Album.5.Thumb)) + IsEmpty(Window(home).Property(Artist.Album.7.Thumb))">Conditional</animation>
-                            <posy>70</posy>
+                            <top>70</top>
                             <width>200</width>
                             <height>200</height>
                             <texture>$INFO[Window(home).Property(Artist.Album.3.Thumb)]</texture>
                         </control>
                         <control type="image">
-                            <posx>154</posx>
-                            <posy>285</posy>
+                            <left>154</left>
+                            <top>285</top>
                             <width>200</width>
                             <height>200</height>
                             <texture>$INFO[Window(home).Property(Artist.Album.5.Thumb)]</texture>
                         </control>
                         <control type="image">
-                            <posx>360</posx>
-                            <posy>285</posy>
+                            <left>360</left>
+                            <top>285</top>
                             <width>200</width>
                             <height>200</height>
                             <texture>$INFO[Window(home).Property(Artist.Album.7.Thumb)]</texture>
@@ -185,31 +185,31 @@
                     <control type="group">
                         <!-- right side-->
                         <control type="image">
-                            <posx>1570</posx>
-                            <posy>70</posy>
+                            <left>1570</left>
+                            <top>70</top>
                             <width>200</width>
                             <height>200</height>
                             <animation effect="zoom" end="200" center="1780,70" time="320" tween="cubic" easing="inout" condition="IsEmpty(Window(home).Property(Artist.Album.4.Thumb)) + IsEmpty(Window(home).Property(Artist.Album.6.Thumb)) + IsEmpty(Window(home).Property(Artist.Album.8.Thumb)) + !IsEmpty(Window(home).Property(Artist.Album.2.Thumb))">Conditional</animation>
                             <texture>$INFO[Window(home).Property(Artist.Album.2.Thumb)]</texture>
                         </control>
                         <control type="image">
-                            <posx>1364</posx>
+                            <left>1364</left>
                             <animation effect="zoom" end="200" center="1364,70" time="320" tween="cubic" easing="inout" condition="!IsEmpty(Window(home).Property(Artist.Album.4.Thumb)) + IsEmpty(Window(home).Property(Artist.Album.6.Thumb)) + IsEmpty(Window(home).Property(Artist.Album.8.Thumb)) + IsEmpty(Window(home).Property(Artist.Album.2.Thumb))">Conditional</animation>
-                            <posy>70</posy>
+                            <top>70</top>
                             <width>200</width>
                             <height>200</height>
                             <texture>$INFO[Window(home).Property(Artist.Album.4.Thumb)]</texture>
                         </control>
                         <control type="image">
-                            <posx>1570</posx>
-                            <posy>285</posy>
+                            <left>1570</left>
+                            <top>285</top>
                             <width>200</width>
                             <height>200</height>
                             <texture>$INFO[Window(home).Property(Artist.Album.6.Thumb)]</texture>
                         </control>
                         <control type="image">
-                            <posx>1364</posx>
-                            <posy>285</posy>
+                            <left>1364</left>
+                            <top>285</top>
                             <width>200</width>
                             <height>200</height>
                             <texture>$INFO[Window(home).Property(Artist.Album.8.Thumb)]</texture>
@@ -678,8 +678,8 @@
     </include>
     <include name="NextTracksList">
         <control type="grouplist">
-            <posx>1144</posx>
-            <posy>680</posy>
+            <left>1144</left>
+            <top>680</top>
             <width>1290</width>
             <height>1080</height>
             <orientation>vertical</orientation>
@@ -694,7 +694,7 @@
                 <visible>!IsEmpty(MusicPlayer.Offset(1).Title)</visible>
             </control>
             <control type="grouplist">
-                <posy>694</posy>
+                <top>694</top>
                 <width>610</width>
                 <height>30</height>
                 <itemgap>3</itemgap>
@@ -722,7 +722,7 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posy>694</posy>
+                <top>694</top>
                 <width>610</width>
                 <height>30</height>
                 <itemgap>3</itemgap>
@@ -750,7 +750,7 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posy>694</posy>
+                <top>694</top>
                 <width>610</width>
                 <height>30</height>
                 <visible>!IsEmpty(MusicPlayer.Offset(3).Title)</visible>
@@ -778,7 +778,7 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posy>694</posy>
+                <top>694</top>
                 <width>610</width>
                 <height>30</height>
                 <visible>!IsEmpty(MusicPlayer.Offset(4).Title)</visible>
@@ -806,7 +806,7 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posy>694</posy>
+                <top>694</top>
                 <width>610</width>
                 <height>30</height>
                 <itemgap>3</itemgap>
@@ -834,7 +834,7 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posy>694</posy>
+                <top>694</top>
                 <width>610</width>
                 <height>30</height>
                 <visible>!IsEmpty(MusicPlayer.Offset(6).Title)</visible>
@@ -863,7 +863,7 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posy>694</posy>
+                <top>694</top>
                 <width>610</width>
                 <height>30</height>
                 <visible>!IsEmpty(MusicPlayer.Offset(7).Title)</visible>
@@ -892,7 +892,7 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posy>694</posy>
+                <top>694</top>
                 <width>610</width>
                 <height>30</height>
                 <visible>!IsEmpty(MusicPlayer.Offset(8).Title)</visible>
@@ -921,7 +921,7 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posy>694</posy>
+                <top>694</top>
                 <width>610</width>
                 <height>30</height>
                 <visible>!IsEmpty(MusicPlayer.Offset(9).Title)</visible>
@@ -950,7 +950,7 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posy>694</posy>
+                <top>694</top>
                 <width>610</width>
                 <height>30</height>
                 <visible>!IsEmpty(MusicPlayer.Offset(10).Title)</visible>
@@ -979,7 +979,7 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posy>694</posy>
+                <top>694</top>
                 <width>610</width>
                 <height>30</height>
                 <visible>!IsEmpty(MusicPlayer.Offset(11).Title)</visible>
@@ -1008,7 +1008,7 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posy>694</posy>
+                <top>694</top>
                 <width>610</width>
                 <height>30</height>
                 <visible>!IsEmpty(MusicPlayer.Offset(12).Title)</visible>
@@ -1037,7 +1037,7 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posy>694</posy>
+                <top>694</top>
                 <width>610</width>
                 <height>30</height>
                 <visible>!Window.IsActive(home) + !Window.IsActive(1158)</visible>
@@ -1087,15 +1087,15 @@
     </include>
     <include name="MusicVisPanelLayout">
         <control type="image">
-            <posx>15</posx>
-            <posy>10</posy>
+            <left>15</left>
+            <top>10</top>
             <width>180</width>
             <height>230</height>
             <texture border="4">osd/osd_settings_buttonnf.png</texture>
         </control>
         <control type="image">
-            <posx>0</posx>
-            <posy>10</posy>
+            <left>0</left>
+            <top>10</top>
             <width>235</width>
             <height>235</height>
             <aspectratio>scale</aspectratio>
@@ -1103,15 +1103,15 @@
             <colordiffuse>FFFFFFFF</colordiffuse>
         </control>
         <control type="image">
-            <posy>190</posy>
+            <top>190</top>
             <width>235</width>
             <height>60</height>
             <texture>common/bgcolor.png</texture>
             <animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
         </control>
         <control type="textbox">
-            <posx>5</posx>
-            <posy>191</posy>
+            <left>5</left>
+            <top>191</top>
             <width>230</width>
             <height>108</height>
             <align>center</align>
@@ -1123,7 +1123,7 @@
     <include name="ClassicMusicOSD">
         <control type="group">
             <control type="grouplist" id="650">
-                <posy>4</posy>
+                <top>4</top>
                 <width>640</width>
                 <height>150</height>
                 <align>left</align>
@@ -1165,7 +1165,7 @@
             </control>
             <control type="grouplist" id="652">
                 <description>Video settings buttons</description>
-                <posy>4</posy>
+                <top>4</top>
                 <width>1920</width>
                 <height>150</height>
                 <align>center</align>
@@ -1234,7 +1234,7 @@
             </control>
             <control type="grouplist" id="651">
                 <description>Video settings buttons</description>
-                <posy>4</posy>
+                <top>4</top>
                 <width>1920</width>
                 <height>150</height>
                 <align>right</align>
@@ -1296,7 +1296,7 @@
     </include>
     <include name="DefaultMusicOSD">
         <control type="grouplist">
-            <posy>21</posy>
+            <top>21</top>
             <width>960</width>
             <height>135</height>
             <itemgap>7</itemgap>
@@ -1329,7 +1329,7 @@
             </control>
         </control>
         <control type="grouplist" id="650">
-            <posy>21</posy>
+            <top>21</top>
             <width>960</width>
             <height>135</height>
             <itemgap>7</itemgap>
@@ -1381,8 +1381,8 @@
             </control>
         </control>
         <control type="grouplist">
-            <posx>480</posx>
-            <posy>21</posy>
+            <left>480</left>
+            <top>21</top>
             <width>960</width>
             <height>135</height>
             <align>center</align>
@@ -1437,8 +1437,8 @@
             </control>
         </control>
         <control type="grouplist" id="652">
-            <posx>480</posx>
-            <posy>21</posy>
+            <left>480</left>
+            <top>21</top>
             <width>960</width>
             <height>135</height>
             <align>center</align>
@@ -1528,8 +1528,8 @@
             </control>
         </control>
         <control type="grouplist">
-            <posx>960</posx>
-            <posy>21</posy>
+            <left>960</left>
+            <top>21</top>
             <width>960</width>
             <height>135</height>
             <align>right</align>
@@ -1573,8 +1573,8 @@
             </control>
         </control>
         <control type="grouplist" id="651">
-            <posx>960</posx>
-            <posy>21</posy>
+            <left>960</left>
+            <top>21</top>
             <width>960</width>
             <height>135</height>
             <align>right</align>
@@ -1649,8 +1649,8 @@
     <include name="MusicInfoModePanels">
         <!-- Main Group -->
         <control type="grouplist" id="40">
-            <posx>-135</posx>
-            <posy>5</posy>
+            <left>-135</left>
+            <top>5</top>
             <width>2325</width>
             <height>780</height>
             <visible>!IsEmpty(Player.FolderPath)</visible>
@@ -1685,14 +1685,14 @@
                     <onclick>SetFocus(5001)</onclick>
                 </control>
                 <control type="group" id="5001">
-                    <posx>450</posx>
+                    <left>450</left>
                     <include>FeaturedPanel</include>
                     <control type="group">
-                        <posx>131</posx>
-                        <posy>91</posy>
+                        <left>131</left>
+                        <top>91</top>
                         <control type="label">
-                            <posx>-100</posx>
-                            <posy>-15</posy>
+                            <left>-100</left>
+                            <top>-15</top>
                             <width>445</width>
                             <height>34</height>
                             <align>center</align>
@@ -1701,11 +1701,11 @@
                             <textcolor>$VAR[TitleColorVar]</textcolor>
                         </control>
                         <control type="group">
-                            <posx>-90</posx>
-                            <posy>27</posy>
+                            <left>-90</left>
+                            <top>27</top>
                             <control type="image">
-                                <posx>-20</posx>
-                                <posy>-8</posy>
+                                <left>-20</left>
+                                <top>-8</top>
                                 <width>465</width>
                                 <height>465</height>
                                 <texture>thumbs/boxes/cd_shadow_light_shadow.png</texture>
@@ -1715,8 +1715,8 @@
                                 <include>Animation_VisibleChange400</include>
                             </control>
                             <control type="multiimage">
-                                <posx>2</posx>
-                                <posy>11</posy>
+                                <left>2</left>
+                                <top>11</top>
                                 <width>420</width>
                                 <height>420</height>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
@@ -1725,16 +1725,16 @@
                                 <timeperimage>5000</timeperimage>
                             </control>
                             <control type="image">
-                                <posx>-20</posx>
-                                <posy>-8</posy>
+                                <left>-20</left>
+                                <top>-8</top>
                                 <width>465</width>
                                 <height>465</height>
                                 <texture>thumbs/boxes/cd_shadow_light.png</texture>
                             </control>
                         </control>
                         <control type="panel" id="5010">
-                            <posx>379</posx>
-                            <posy>-22</posy>
+                            <left>379</left>
+                            <top>-22</top>
                             <width>800</width>
                             <height>490</height>
                             <onup>5012</onup>
@@ -1750,7 +1750,7 @@
                             <itemlayout height="240" width="266">
                                 <include>MusicVisPanelLayout</include>
                                 <control type="image">
-                                    <posy>10</posy>
+                                    <top>10</top>
                                     <width>240</width>
                                     <height>240</height>
                                     <texture border="6">common/bgcolor.png</texture>
@@ -1762,7 +1762,7 @@
                             <focusedlayout height="240" width="266">
                                 <include>MusicVisPanelLayout</include>
                                 <control type="image">
-                                    <posy>10</posy>
+                                    <top>10</top>
                                     <width>240</width>
                                     <height>240</height>
                                     <texture border="6">views/addonwall_select.png</texture>
@@ -1777,8 +1777,8 @@
                         <!--content-->
                     </control>
                     <control type="image">
-                        <posx>21</posx>
-                        <posy>59</posy>
+                        <left>21</left>
+                        <top>59</top>
                         <width>1290</width>
                         <height>516</height>
                         <texture>featured/panel_featured_overlay.png</texture>
@@ -1806,14 +1806,14 @@
                     <onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
                 </control>
                 <control type="group">
-                    <posx>450</posx>
+                    <left>450</left>
                     <include>FeaturedPanel</include>
                     <control type="group" id="6001">
-                        <posx>131</posx>
-                        <posy>91</posy>
+                        <left>131</left>
+                        <top>91</top>
                         <control type="label">
-                            <posx>-100</posx>
-                            <posy>-15</posy>
+                            <left>-100</left>
+                            <top>-15</top>
                             <width>445</width>
                             <height>34</height>
                             <align>center</align>
@@ -1822,11 +1822,11 @@
                             <textcolor>$VAR[TitleColorVar]</textcolor>
                         </control>
                         <control type="group">
-                            <posx>-90</posx>
-                            <posy>27</posy>
+                            <left>-90</left>
+                            <top>27</top>
                             <control type="image">
-                                <posx>-20</posx>
-                                <posy>-8</posy>
+                                <left>-20</left>
+                                <top>-8</top>
                                 <width>465</width>
                                 <height>465</height>
                                 <texture>thumbs/boxes/cd_shadow_light_shadow.png</texture>
@@ -1836,8 +1836,8 @@
                                 <include>Animation_VisibleChange400</include>
                             </control>
                             <control type="multiimage">
-                                <posx>2</posx>
-                                <posy>11</posy>
+                                <left>2</left>
+                                <top>11</top>
                                 <width>420</width>
                                 <height>420</height>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
@@ -1846,16 +1846,16 @@
                                 <timeperimage>5000</timeperimage>
                             </control>
                             <control type="image">
-                                <posx>-20</posx>
-                                <posy>-8</posy>
+                                <left>-20</left>
+                                <top>-8</top>
                                 <width>465</width>
                                 <height>465</height>
                                 <texture>thumbs/boxes/cd_shadow_light.png</texture>
                             </control>
                         </control>
                         <control type="panel" id="6010">
-                            <posx>379</posx>
-                            <posy>-22</posy>
+                            <left>379</left>
+                            <top>-22</top>
                             <width>800</width>
                             <height>490</height>
                             <onup>6012</onup>
@@ -1871,7 +1871,7 @@
                             <itemlayout height="240" width="266">
                                 <include>MusicVisPanelLayout</include>
                                 <control type="image">
-                                    <posy>10</posy>
+                                    <top>10</top>
                                     <width>240</width>
                                     <height>240</height>
                                     <texture border="6">common/bgcolor.png</texture>
@@ -1883,7 +1883,7 @@
                             <focusedlayout height="240" width="266">
                                 <include>MusicVisPanelLayout</include>
                                 <control type="image">
-                                    <posy>10</posy>
+                                    <top>10</top>
                                     <width>240</width>
                                     <height>240</height>
                                     <texture border="6">views/addonwall_select.png</texture>
@@ -1898,8 +1898,8 @@
                         <!--content-->
                     </control>
                     <control type="image">
-                        <posx>21</posx>
-                        <posy>59</posy>
+                        <left>21</left>
+                        <top>59</top>
                         <width>1290</width>
                         <height>516</height>
                         <texture>featured/panel_featured_overlay.png</texture>
@@ -1926,11 +1926,11 @@
                     <onclick>Action(Close)</onclick>
                 </control>
                 <control type="group">
-                    <posx>450</posx>
+                    <left>450</left>
                     <include>FeaturedPanel</include>
                     <control type="image">
-                        <posx>37</posx>
-                        <posy>60</posy>
+                        <left>37</left>
+                        <top>60</top>
                         <width>1260</width>
                         <height>506</height>
                         <aspectratio aligny="top">scale</aspectratio>
@@ -1938,11 +1938,11 @@
                         <colordiffuse>44FFFFFF</colordiffuse>
                     </control>
                     <control type="group" id="7001">
-                        <posx>131</posx>
-                        <posy>91</posy>
+                        <left>131</left>
+                        <top>91</top>
                         <control type="label">
-                            <posx>-100</posx>
-                            <posy>-15</posy>
+                            <left>-100</left>
+                            <top>-15</top>
                             <width>445</width>
                             <height>34</height>
                             <align>center</align>
@@ -1951,11 +1951,11 @@
                             <textcolor>$VAR[TitleColorVar]</textcolor>
                         </control>
                         <control type="group">
-                            <posx>-90</posx>
-                            <posy>27</posy>
+                            <left>-90</left>
+                            <top>27</top>
                             <control type="image">
-                                <posx>-20</posx>
-                                <posy>-8</posy>
+                                <left>-20</left>
+                                <top>-8</top>
                                 <width>465</width>
                                 <height>465</height>
                                 <texture>thumbs/boxes/cd_shadow_light_shadow.png</texture>
@@ -1965,8 +1965,8 @@
                                 <include>Animation_VisibleChange400</include>
                             </control>
                             <control type="multiimage">
-                                <posx>2</posx>
-                                <posy>11</posy>
+                                <left>2</left>
+                                <top>11</top>
                                 <width>420</width>
                                 <height>420</height>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
@@ -1975,16 +1975,16 @@
                                 <timeperimage>5000</timeperimage>
                             </control>
                             <control type="image">
-                                <posx>-20</posx>
-                                <posy>-8</posy>
+                                <left>-20</left>
+                                <top>-8</top>
                                 <width>465</width>
                                 <height>465</height>
                                 <texture>thumbs/boxes/cd_shadow_light.png</texture>
                             </control>
                         </control>
                         <control type="textbox">
-                            <posx>360</posx>
-                            <posy>-10</posy>
+                            <left>360</left>
+                            <top>-10</top>
                             <width>724</width>
                             <height>474</height>
                             <label>$INFO[Window(visualisation).Property(ArtistSlideshow.ArtistBiography)]</label>
@@ -1993,8 +1993,8 @@
                             <autoscroll delay="8000" time="AutoScrollTime" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
                         </control>
                         <control type="spincontrol" id="7010">
-                            <posx>1080</posx>
-                            <posy>-30</posy>
+                            <left>1080</left>
+                            <top>-30</top>
                             <width>50</width>
                             <height>88</height>
                             <onup>7012</onup>
@@ -2005,8 +2005,8 @@
                         </control>
                     </control>
                     <control type="image">
-                        <posx>21</posx>
-                        <posy>59</posy>
+                        <left>21</left>
+                        <top>59</top>
                         <width>1290</width>
                         <height>516</height>
                         <texture>featured/panel_featured_overlay.png</texture>
@@ -2032,11 +2032,11 @@
                     <onclick>SetFocus(8001)</onclick>
                 </control>
                 <control type="group" id="8001">
-                    <posx>450</posx>
+                    <left>450</left>
                     <include>FeaturedPanel</include>
                     <control type="image">
-                        <posx>37</posx>
-                        <posy>60</posy>
+                        <left>37</left>
+                        <top>60</top>
                         <width>1260</width>
                         <height>506</height>
                         <aspectratio aligny="top">scale</aspectratio>
@@ -2044,11 +2044,11 @@
                         <colordiffuse>44FFFFFF</colordiffuse>
                     </control>
                     <control type="group">
-                        <posx>131</posx>
-                        <posy>91</posy>
+                        <left>131</left>
+                        <top>91</top>
                         <control type="label">
-                            <posx>-100</posx>
-                            <posy>-15</posy>
+                            <left>-100</left>
+                            <top>-15</top>
                             <width>445</width>
                             <height>34</height>
                             <align>center</align>
@@ -2057,11 +2057,11 @@
                             <textcolor>$VAR[TitleColorVar]</textcolor>
                         </control>
                         <control type="group">
-                            <posx>-90</posx>
-                            <posy>27</posy>
+                            <left>-90</left>
+                            <top>27</top>
                             <control type="image">
-                                <posx>-20</posx>
-                                <posy>-8</posy>
+                                <left>-20</left>
+                                <top>-8</top>
                                 <width>465</width>
                                 <height>465</height>
                                 <texture>thumbs/boxes/cd_shadow_light_shadow.png</texture>
@@ -2071,8 +2071,8 @@
                                 <include>Animation_VisibleChange400</include>
                             </control>
                             <control type="multiimage">
-                                <posx>2</posx>
-                                <posy>11</posy>
+                                <left>2</left>
+                                <top>11</top>
                                 <width>420</width>
                                 <height>420</height>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
@@ -2081,16 +2081,16 @@
                                 <timeperimage>5000</timeperimage>
                             </control>
                             <control type="image">
-                                <posx>-20</posx>
-                                <posy>-8</posy>
+                                <left>-20</left>
+                                <top>-8</top>
                                 <width>465</width>
                                 <height>465</height>
                                 <texture>thumbs/boxes/cd_shadow_light.png</texture>
                             </control>
                         </control>
                         <control type="panel" id="8010">
-                            <posx>379</posx>
-                            <posy>-18</posy>
+                            <left>379</left>
+                            <top>-18</top>
                             <width>800</width>
                             <height>480</height>
                             <onup>8012</onup>
@@ -2104,15 +2104,15 @@
                             <preloaditems>2</preloaditems>
                             <itemlayout height="48" width="800">
                                 <control type="image">
-                                    <posx>15</posx>
-                                    <posy>0</posy>
+                                    <left>15</left>
+                                    <top>0</top>
                                     <width>770</width>
                                     <height>48</height>
                                     <texture border="3">osd/osd_settings_buttonnf.png</texture>
                                 </control>
                                 <control type="label">
-                                    <posx>35</posx>
-                                    <posy>0</posy>
+                                    <left>35</left>
+                                    <top>0</top>
                                     <width>60</width>
                                     <height>48</height>
                                     <align>right</align>
@@ -2121,8 +2121,8 @@
                                     <textcolor>$VAR[TitleColorVar]</textcolor>
                                 </control>
                                 <control type="label">
-                                    <posx>45</posx>
-                                    <posy>0</posy>
+                                    <left>45</left>
+                                    <top>0</top>
                                     <width>765</width>
                                     <height>48</height>
                                     <align>left</align>
@@ -2131,8 +2131,8 @@
                                     <textcolor>grey2</textcolor>
                                 </control>
                                 <!--                 <control type="label">
-                    <posy>10</posy>
-                    <posx>235</posx>
+                    <top>10</top>
+                    <left>235</left>
                     <width>660</width>
                     <height>60</height>
                     <textcolor>grey2</textcolor>
@@ -2151,15 +2151,15 @@
                                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                                 </control>
                                 <control type="image">
-                                    <posx>15</posx>
-                                    <posy>0</posy>
+                                    <left>15</left>
+                                    <top>0</top>
                                     <width>370</width>
                                     <height>48</height>
                                     <texture border="3">osd/osd_settings_buttonnf.png</texture>
                                 </control>
                                 <control type="label">
-                                    <posx>35</posx>
-                                    <posy>0</posy>
+                                    <left>35</left>
+                                    <top>0</top>
                                     <width>60</width>
                                     <height>48</height>
                                     <align>right</align>
@@ -2168,8 +2168,8 @@
                                     <textcolor>$VAR[TitleColorVar]</textcolor>
                                 </control>
                                 <control type="label">
-                                    <posx>45</posx>
-                                    <posy>0</posy>
+                                    <left>45</left>
+                                    <top>0</top>
                                     <width>765</width>
                                     <height>48</height>
                                     <align>left</align>
@@ -2263,8 +2263,8 @@
                         </control>
                     </control>
                     <control type="image">
-                        <posx>21</posx>
-                        <posy>59</posy>
+                        <left>21</left>
+                        <top>59</top>
                         <width>1290</width>
                         <height>516</height>
                         <texture>featured/panel_featured_overlay.png</texture>
@@ -2292,11 +2292,11 @@
                     <onclick>ActivateWindow(musiclibrary,root,return)</onclick>
                 </control>
                 <control type="group" id="9001">
-                    <posx>450</posx>
+                    <left>450</left>
                     <include>FeaturedPanel</include>
                     <control type="group">
-                        <posx>31</posx>
-                        <posy>31</posy>
+                        <left>31</left>
+                        <top>31</top>
                         <control type="button" id="9010">
                             <include>HiddenObject</include>
                             <onup>9012</onup>
@@ -2306,8 +2306,8 @@
                             <onclick>SetFocus(9010)</onclick>
                         </control>
                         <control type="image">
-                            <posx>21</posx>
-                            <posy>29</posy>
+                            <left>21</left>
+                            <top>29</top>
                             <width>1230</width>
                             <height>506</height>
                             <aspectratio aligny="top">scale</aspectratio>
@@ -2315,16 +2315,16 @@
                             <visible>!SubString(Control.getLabel(8870),extrafanart)</visible>
                         </control>
                         <control type="multiimage" id="8870">
-                            <posx>21</posx>
-                            <posy>29</posy>
+                            <left>21</left>
+                            <top>29</top>
                             <width>1230</width>
                             <height>506</height>
                             <aspectratio aligny="top">scale</aspectratio>
                             <imagepath background="true">$INFO[Skin.String(ArtistsLogosPath)]$INFO[MusicPlayer.Artist,,/extrafanart/]</imagepath>
                         </control>
                         <control type="image">
-                            <posx>21</posx>
-                            <posy>500</posy>
+                            <left>21</left>
+                            <top>500</top>
                             <width>1230</width>
                             <height>35</height>
                             <texture>common/bgcolor.png</texture>
@@ -2332,8 +2332,8 @@
                             <animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
                         </control>
                         <control type="grouplist">
-                            <posx>31</posx>
-                            <posy>500</posy>
+                            <left>31</left>
+                            <top>500</top>
                             <width>1230</width>
                             <height>35</height>
                             <align>center</align>
@@ -2378,8 +2378,8 @@
                         </control>
                     </control>
                     <control type="image">
-                        <posx>21</posx>
-                        <posy>59</posy>
+                        <left>21</left>
+                        <top>59</top>
                         <width>1290</width>
                         <height>516</height>
                         <texture>featured/panel_featured_overlay.png</texture>
@@ -2399,14 +2399,14 @@
                 <colordiffuse>$VAR[ExtendedColorVar]</colordiffuse>
             </control>
             <control type="grouplist">
-                <posx>0</posx>
+                <left>0</left>
                 <width>1920</width>
                 <align>center</align>
                 <itemgap>50</itemgap>
                 <orientation>horizontal</orientation>
                 <usecontrolcoords>true</usecontrolcoords>
                 <control type="image">
-                    <posy>6</posy>
+                    <top>6</top>
                     <width>38</width>
                     <height>30</height>
                     <aspectratio>keep</aspectratio>
@@ -2418,7 +2418,7 @@
                     <width>68</width>
                     <visible>Window.IsActive(visualisation)</visible>
                     <control type="image">
-                        <posy>6</posy>
+                        <top>6</top>
                         <width>38</width>
                         <height>30</height>
                         <aspectratio>keep</aspectratio>
@@ -2426,8 +2426,8 @@
                         <colordiffuse>$VAR[BreadCrumbsContentColorVar]</colordiffuse>
                     </control>
                     <control type="image">
-                        <posy>6</posy>
-                        <posx>-30</posx>
+                        <top>6</top>
+                        <left>-30</left>
                         <width>38</width>
                         <height>30</height>
                         <animation effect="rotate" end="-90" center="auto" time="0" condition="true">Conditional</animation>

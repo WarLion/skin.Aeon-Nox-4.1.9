@@ -2,8 +2,8 @@
 <window>
     <allowoverlay>yes</allowoverlay>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <animation type="WindowOpen" reversible="false">
@@ -34,7 +34,7 @@
             <include>FullscreenDimensions</include>
         </control>
         <control type="image">
-            <posy>404</posy>
+            <top>404</top>
             <width>1923</width>
             <height>780</height>
             <texture>home/nowplaying_shadow.png</texture>
@@ -44,14 +44,14 @@
             <visible>!IsEmpty(ListItem.Property(videosizebig))</visible>
         </control>
         <control type="image">
-            <posy>404</posy>
+            <top>404</top>
             <width>1923</width>
             <height>780</height>
             <texture>home/nowplaying_shadow.png</texture>
             <colordiffuse>grey2</colordiffuse>
         </control>
         <control type="image">
-            <posy>622</posy>
+            <top>622</top>
             <width>1920</width>
             <height>608</height>
             <texture>views/showcase_glow.png</texture>
@@ -59,7 +59,7 @@
             <visible>!Skin.HasSetting(DisableGlowbar)</visible>
         </control>
         <control type="group">
-            <posx>30</posx>
+            <left>30</left>
             <control type="image">
                 <width>445</width>
                 <height>250</height>
@@ -69,7 +69,7 @@
                 <bordersize>7</bordersize>
             </control>
             <control type="image">
-                <posy>277</posy>
+                <top>277</top>
                 <width>445</width>
                 <height>250</height>
                 <aspectratio>keep</aspectratio>
@@ -79,7 +79,7 @@
             </control>
         </control>
         <control type="group">
-            <posx>475r</posx>
+            <left>475r</left>
             <control type="image">
                 <width>445</width>
                 <height>250</height>
@@ -89,7 +89,7 @@
                 <bordersize>7</bordersize>
             </control>
             <control type="image">
-                <posy>277</posy>
+                <top>277</top>
                 <width>445</width>
                 <height>250</height>
                 <aspectratio>keep</aspectratio>
@@ -99,8 +99,8 @@
             </control>
         </control>
         <control type="grouplist">
-            <posx>500</posx>
-            <posy>727</posy>
+            <left>500</left>
+            <top>727</top>
             <width>1290</width>
             <itemgap>40</itemgap>
             <orientation>horizontal</orientation>
@@ -140,10 +140,10 @@
             </control>
         </control>
         <control type="group">
-            <posy>854</posy>
+            <top>854</top>
             <control type="image">
-                <posx>40</posx>
-                <posy>-315</posy>
+                <left>40</left>
+                <top>-315</top>
                 <width>410</width>
                 <height>465</height>
                 <aspectratio aligny="bottom">keep</aspectratio>
@@ -153,8 +153,8 @@
             </control>
             <control type="group">
                 <control type="image">
-                    <posx>500</posx>
-                    <posy>-136</posy>
+                    <left>500</left>
+                    <top>-136</top>
                     <width>900</width>
                     <height>4</height>
                     <texture>views/list_divider.png</texture>
@@ -162,8 +162,8 @@
                 </control>
                 <control type="group">
                     <control type="label">
-                        <posx>500</posx>
-                        <posy>-270</posy>
+                        <left>500</left>
+                        <top>-270</top>
                         <width>1405</width>
                         <height>38</height>
                         <label>$INFO[Listitem.Label]</label>
@@ -172,8 +172,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
-                        <posx>500</posx>
-                        <posy>-210</posy>
+                        <left>500</left>
+                        <top>-210</top>
                         <width>1405</width>
                         <height>38</height>
                         <label>$INFO[ListItem.Property(year)]$INFO[ListItem.Property(genre), • ]</label>
@@ -184,8 +184,8 @@
                     </control>
                 </control>
                 <control type="textbox" id="8000">
-                    <posx>1420</posx>
-                    <posy>-134</posy>
+                    <left>1420</left>
+                    <top>-134</top>
                     <width>485</width>
                     <height>312</height>
                     <label>$INFO[ListItem.Property(plot)]</label>
@@ -197,8 +197,8 @@
                 </control>
                 <control type="group">
                     <control type="grouplist">
-                        <posx>500</posx>
-                        <posy>-80</posy>
+                        <left>500</left>
+                        <top>-80</top>
                         <width>778</width>
                         <itemgap>10</itemgap>
                         <orientation>horizontal</orientation>
@@ -221,8 +221,8 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posx>500</posx>
-                        <posy>-32</posy>
+                        <left>500</left>
+                        <top>-32</top>
                         <width>778</width>
                         <itemgap>10</itemgap>
                         <orientation>horizontal</orientation>
@@ -245,8 +245,8 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posx>500</posx>
-                        <posy>16</posy>
+                        <left>500</left>
+                        <top>16</top>
                         <width>778</width>
                         <itemgap>10</itemgap>
                         <orientation>horizontal</orientation>
@@ -269,8 +269,8 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posx>500</posx>
-                        <posy>64</posy>
+                        <left>500</left>
+                        <top>64</top>
                         <width>778</width>
                         <itemgap>10</itemgap>
                         <orientation>horizontal</orientation>
@@ -293,8 +293,8 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posx>500</posx>
-                        <posy>112</posy>
+                        <left>500</left>
+                        <top>112</top>
                         <width>778</width>
                         <itemgap>10</itemgap>
                         <orientation>horizontal</orientation>
@@ -321,8 +321,8 @@
         </control>
         <control type="label" id="4000">
             <label></label>
-            <posx>10</posx>
-            <posy>560</posy>
+            <left>10</left>
+            <top>560</top>
             <width>680</width>
             <height>10</height>
             <font>font10</font>

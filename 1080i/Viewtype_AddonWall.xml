@@ -5,10 +5,10 @@
             <include>Animation_Widgets</include>
             <visible>Control.IsVisible(512)</visible>
             <control type="group">
-                <posy>-30</posy>
+                <top>-30</top>
                 <control type="panel" id="512">
-                    <posx>60</posx>
-                    <posy>154</posy>
+                    <left>60</left>
+                    <top>154</top>
                     <width>1140</width>
                     <height>807</height>
                     <visible>![!IsEmpty(Skin.String(DisableInfoWallVL)) + Window.IsActive(videos)] + !IsEmpty(Container.FolderPath) + !Container.Content(years)</visible>
@@ -53,24 +53,24 @@
                         <control type="group">
                             <visible>Skin.HasSetting(useclearcasesinfowall)</visible>
                             <control type="image">
-                                <posx>4</posx>
-                                <posy>10</posy>
+                                <left>4</left>
+                                <top>10</top>
                                 <width>165</width>
                                 <height>246</height>
                                 <aspectratio scalediffuse="false">stretch</aspectratio>
                                 <texture background="true" diffuse="wall/wall_movie_mask.png">$VAR[ListPosterVar]</texture>
                             </control>
                             <control type="image">
-                                <posx>-3</posx>
-                                <posy>4</posy>
+                                <left>-3</left>
+                                <top>4</top>
                                 <width>180</width>
                                 <height>262</height>
                                 <aspectratio scalediffuse="false">stretch</aspectratio>
                                 <texture>wall/boxes/wall_movie_overlay.png</texture>
                             </control>
                             <control type="image">
-                                <posx>110</posx>
-                                <posy>10</posy>
+                                <left>110</left>
+                                <top>10</top>
                                 <width>60</width>
                                 <height>60</height>
                                 <include>OverlayVisibility0</include>
@@ -88,15 +88,15 @@
                                 <bordersize>5</bordersize>
                             </control>
                             <control type="image">
-                                <posx>125</posx>
-                                <posy>5</posy>
+                                <left>125</left>
+                                <top>5</top>
                                 <width>60</width>
                                 <height>60</height>
                                 <include>OverlayVisibility0</include>
                             </control>
                         </control>
                         <control type="group">
-                            <posy>5</posy>
+                            <top>5</top>
                             <include>UnwatchedIcon</include>
                         </control>
                     </itemlayout>
@@ -105,30 +105,30 @@
                             <visible>Skin.HasSetting(useclearcasesinfowall)</visible>
                             <animation effect="zoom" center="87,133" start="100" end="118" time="160" tween="quadratic" reversible="false">Focus</animation>
                             <control type="image">
-                                <posx>4</posx>
-                                <posy>10</posy>
+                                <left>4</left>
+                                <top>10</top>
                                 <width>165</width>
                                 <height>246</height>
                                 <aspectratio scalediffuse="false">stretch</aspectratio>
                                 <texture background="true" diffuse="wall/wall_movie_mask.png">$VAR[ListPosterVar]</texture>
                             </control>
                             <control type="image">
-                                <posx>-3</posx>
-                                <posy>4</posy>
+                                <left>-3</left>
+                                <top>4</top>
                                 <width>180</width>
                                 <height>262</height>
                                 <aspectratio scalediffuse="false">stretch</aspectratio>
                                 <texture>wall/boxes/wall_movie_overlay.png</texture>
                             </control>
                             <control type="image">
-                                <posx>110</posx>
-                                <posy>10</posy>
+                                <left>110</left>
+                                <top>10</top>
                                 <width>60</width>
                                 <height>60</height>
                                 <include>OverlayVisibility0</include>
                             </control>
                             <control type="group">
-                                <posy>5</posy>
+                                <top>5</top>
                                 <include>UnwatchedIcon</include>
                             </control>
                         </control>
@@ -149,38 +149,38 @@
                                 <bordersize>5</bordersize>
                             </control>
                             <control type="image">
-                                <posx>125</posx>
-                                <posy>5</posy>
+                                <left>125</left>
+                                <top>5</top>
                                 <width>60</width>
                                 <height>60</height>
                                 <include>OverlayVisibility0</include>
                             </control>
                             <control type="group">
-                                <posy>5</posy>
+                                <top>5</top>
                                 <include>UnwatchedIcon</include>
                             </control>
                         </control>
                     </focusedlayout>
                     <itemlayout height="268" width="189" condition="Container.Content(movies) + Skin.HasSetting(usecasesinfowall)">
                         <control type="image">
-                            <posx>9</posx>
-                            <posy>30</posy>
+                            <left>9</left>
+                            <top>30</top>
                             <width>150</width>
                             <height>225</height>
                             <aspectratio scalediffuse="false">stretch</aspectratio>
                             <texture background="true" diffuse="thumbs/boxes/case_mask.png">$VAR[ListPosterVar]</texture>
                         </control>
                         <control type="image">
-                            <posx>-20</posx>
-                            <posy>7</posy>
+                            <left>-20</left>
+                            <top>7</top>
                             <width>189</width>
                             <height>257</height>
                             <aspectratio scalediffuse="false">stretch</aspectratio>
                             <texture>thumbs/boxes/tvshows/$VAR[GlobalCaseVar]</texture>
                         </control>
                         <control type="image">
-                            <posx>106</posx>
-                            <posy>31</posy>
+                            <left>106</left>
+                            <top>31</top>
                             <width>52</width>
                             <height>52</height>
                             <include>OverlayVisibility0</include>
@@ -190,24 +190,24 @@
                         <control type="group">
                             <animation effect="zoom" center="90,134" start="100" end="110" time="160" tween="cubic" reversible="false">Focus</animation>
                             <control type="image">
-                                <posx>9</posx>
-                                <posy>30</posy>
+                                <left>9</left>
+                                <top>30</top>
                                 <width>150</width>
                                 <height>225</height>
                                 <aspectratio scalediffuse="false">stretch</aspectratio>
                                 <texture background="true" diffuse="thumbs/boxes/case_mask.png">$VAR[ListPosterVar]</texture>
                             </control>
                             <control type="image">
-                                <posx>-20</posx>
-                                <posy>7</posy>
+                                <left>-20</left>
+                                <top>7</top>
                                 <width>189</width>
                                 <height>257</height>
                                 <aspectratio scalediffuse="false">stretch</aspectratio>
                                 <texture>thumbs/boxes/tvshows/$VAR[GlobalCaseVar]</texture>
                             </control>
                             <control type="image">
-                                <posx>106</posx>
-                                <posy>31</posy>
+                                <left>106</left>
+                                <top>31</top>
                                 <width>52</width>
                                 <height>52</height>
                                 <include>OverlayVisibility0</include>
@@ -216,7 +216,7 @@
                     </focusedlayout>
                     <itemlayout height="161" width="285" condition="Container.Content(episodes) | [Container.Content(tvshows) + Skin.HasSetting(TVInfoWallLandscape)]">
                         <control type="group">
-                            <posy>1</posy>
+                            <top>1</top>
                             <control type="group">
                                 <visible>Container.Content(episodes)</visible>
                                 <control type="image">
@@ -228,7 +228,7 @@
                                     <bordersize>5</bordersize>
                                 </control>
                                 <control type="image">
-                                    <posy>116</posy>
+                                    <top>116</top>
                                     <width>285</width>
                                     <height>45</height>
                                     <texture>common/bgcolor.png</texture>
@@ -236,8 +236,8 @@
                                     <bordersize>5</bordersize>
                                 </control>
                                 <control type="label">
-                                    <posx>142</posx>
-                                    <posy>110</posy>
+                                    <left>142</left>
+                                    <top>110</top>
                                     <width>285</width>
                                     <height>51</height>
                                     <textoffsetx>5</textoffsetx>
@@ -258,8 +258,8 @@
                                 <animation effect="fade" end="90" time="0" condition="true">Conditional</animation>
                             </control>
                             <control type="image">
-                                <posx>205</posx>
-                                <posy>5</posy>
+                                <left>205</left>
+                                <top>5</top>
                                 <width>75</width>
                                 <height>75</height>
                                 <include>OverlayVisibility0</include>
@@ -268,7 +268,7 @@
                     </itemlayout>
                     <focusedlayout height="161" width="285" condition="Container.Content(episodes) | [Container.Content(tvshows) + Skin.HasSetting(TVInfoWallLandscape)]">
                         <control type="group">
-                            <posy>1</posy>
+                            <top>1</top>
                             <control type="group">
                                 <visible>Container.Content(episodes)</visible>
                                 <control type="image">
@@ -285,7 +285,7 @@
                                     <colordiffuse>$VAR{FocusTextureColorVar]</colordiffuse>
                                 </control>
                                 <control type="image">
-                                    <posy>116</posy>
+                                    <top>116</top>
                                     <width>285</width>
                                     <height>45</height>
                                     <texture>common/bgcolor.png</texture>
@@ -293,8 +293,8 @@
                                     <bordersize>5</bordersize>
                                 </control>
                                 <control type="label">
-                                    <posx>142</posx>
-                                    <posy>110</posy>
+                                    <left>142</left>
+                                    <top>110</top>
                                     <width>285</width>
                                     <height>51</height>
                                     <textoffsetx>5</textoffsetx>
@@ -319,8 +319,8 @@
                                 <visible>Container.Content(tvshows)</visible>
                             </control>
                             <control type="image">
-                                <posx>205</posx>
-                                <posy>5</posy>
+                                <left>205</left>
+                                <top>5</top>
                                 <width>75</width>
                                 <height>75</height>
                                 <include>OverlayVisibility0</include>
@@ -329,8 +329,8 @@
                     </focusedlayout>
                     <itemlayout height="115" width="570" condition="Container.Content(tvshows) + Skin.HasSetting(TVInfoWallBanner)">
                         <control type="image">
-                            <posx>11</posx>
-                            <posy>4</posy>
+                            <left>11</left>
+                            <top>4</top>
                             <width>549</width>
                             <height>112</height>
                             <aspectratio align="center">scale</aspectratio>
@@ -339,8 +339,8 @@
                             <bordersize>5</bordersize>
                         </control>
                         <control type="label">
-                            <posx>285</posx>
-                            <posy>10</posy>
+                            <left>285</left>
+                            <top>10</top>
                             <width>540</width>
                             <height>99</height>
                             <align>center</align>
@@ -351,8 +351,8 @@
                             <visible>IsEmpty(ListItem.Art(banner)) + IsEmpty(ListItem.Art(tvshow.banner)) + IsEmpty(ListItem.Art(clearlogo))</visible>
                         </control>
                         <control type="image">
-                            <posx>465</posx>
-                            <posy>8</posy>
+                            <left>465</left>
+                            <top>8</top>
                             <width>90</width>
                             <height>90</height>
                             <include>OverlayVisibility0</include>
@@ -362,8 +362,8 @@
                     <focusedlayout height="115" width="570" condition="Container.Content(tvshows) + Skin.HasSetting(TVInfoWallBanner)">
                         <control type="group">
                             <control type="image">
-                                <posx>11</posx>
-                                <posy>4</posy>
+                                <left>11</left>
+                                <top>4</top>
                                 <width>549</width>
                                 <height>112</height>
                                 <aspectratio align="center">stretch</aspectratio>
@@ -371,8 +371,8 @@
                                 <colordiffuse>$VAR{FocusTextureColorVar]</colordiffuse>
                             </control>
                             <control type="image">
-                                <posx>11</posx>
-                                <posy>4</posy>
+                                <left>11</left>
+                                <top>4</top>
                                 <width>549</width>
                                 <height>112</height>
                                 <aspectratio align="center">scale</aspectratio>
@@ -380,8 +380,8 @@
                                 <bordersize>5</bordersize>
                             </control>
                             <control type="label">
-                                <posx>285</posx>
-                                <posy>10</posy>
+                                <left>285</left>
+                                <top>10</top>
                                 <width>540</width>
                                 <height>99</height>
                                 <align>center</align>
@@ -391,8 +391,8 @@
                                 <visible>IsEmpty(ListItem.Art(banner)) + IsEmpty(ListItem.Art(tvshow.banner)) + IsEmpty(ListItem.Art(clearlogo))</visible>
                             </control>
                             <control type="image">
-                                <posx>465</posx>
-                                <posy>8</posy>
+                                <left>465</left>
+                                <top>8</top>
                                 <width>90</width>
                                 <height>90</height>
                                 <include>OverlayVisibility0</include>
@@ -402,8 +402,8 @@
                     </focusedlayout>
                     <itemlayout height="204" width="285" condition="Container.Content(tvshows) + Skin.HasSetting(TVInfoWallLogo)">
                         <control type="image">
-                            <posx>22</posx>
-                            <posy>56</posy>
+                            <left>22</left>
+                            <top>56</top>
                             <width>240</width>
                             <height>93</height>
                             <aspectratio align="center">keep</aspectratio>
@@ -414,8 +414,8 @@
                     </itemlayout>
                     <focusedlayout height="204" width="285" condition="Container.Content(tvshows) + Skin.HasSetting(TVInfoWallLogo)">
                         <control type="image">
-                            <posx>22</posx>
-                            <posy>56</posy>
+                            <left>22</left>
+                            <top>56</top>
                             <width>240</width>
                             <height>93</height>
                             <aspectratio align="center">keep</aspectratio>
@@ -426,8 +426,8 @@
                     </focusedlayout>
                 </control>
                 <control type="scrollbar" id="60">
-                    <posx>1190</posx>
-                    <posy>164</posy>
+                    <left>1190</left>
+                    <top>164</top>
                     <width>46</width>
                     <height>787</height>
                     <include>Animation_VerticalScrollBar</include>
@@ -436,10 +436,10 @@
                     <onright>9000</onright>
                 </control>
                 <control type="group">
-                    <posx>-22</posx>
+                    <left>-22</left>
                     <control type="image" id="8827">
-                        <posx>1290</posx>
-                        <posy>140</posy>
+                        <left>1290</left>
+                        <top>140</top>
                         <width>450</width>
                         <height>110</height>
                         <aspectratio>keep</aspectratio>
@@ -449,8 +449,8 @@
                         <visible>[Skin.HasSetting(movielogosfloor) + Container.Content(movies)] | [Skin.HasSetting(tvshowlogosfloor) + Container.Content(tvshows)]</visible>
                     </control>
                     <control type="image" id="8827">
-                        <posx>1290</posx>
-                        <posy>138</posy>
+                        <left>1290</left>
+                        <top>138</top>
                         <width>450</width>
                         <height>108</height>
                         <aspectratio>keep</aspectratio>
@@ -460,8 +460,8 @@
                         <visible>[Skin.HasSetting(artistslogosfloor) + Container.Content(artists)]</visible>
                     </control>
                     <control type="image" id="8827">
-                        <posx>1290</posx>
-                        <posy>153</posy>
+                        <left>1290</left>
+                        <top>153</top>
                         <width>494</width>
                         <height>95</height>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
@@ -474,8 +474,8 @@
                     <control type="group">
                         <visible>[Control.IsVisible(8827) + !Container.OnNext + !Container.OnPrevious + Stringcompare(Control.GetLabel(8827),empty.png)] | !Control.IsVisible(8827)</visible>
                         <control type="label">
-                            <posx>1260</posx>
-                            <posy>154</posy>
+                            <left>1260</left>
+                            <top>154</top>
                             <width>570</width>
                             <height>20</height>
                             <aligny>top</aligny>
@@ -486,8 +486,8 @@
                             <animation effect="fade" start="100" end="0" time="0" reversible="false">Hidden</animation>
                         </control>
                         <control type="label">
-                            <posx>1260</posx>
-                            <posy>202</posy>
+                            <left>1260</left>
+                            <top>202</top>
                             <width>570</width>
                             <height>20</height>
                             <aligny>top</aligny>
@@ -498,8 +498,8 @@
                             <animation effect="fade" start="100" end="0" time="0" reversible="false">Hidden</animation>
                         </control>
                         <control type="image">
-                            <posx>1245</posx>
-                            <posy>190</posy>
+                            <left>1245</left>
+                            <top>190</top>
                             <width>600</width>
                             <height>60</height>
                             <texture border="1">osd/osd_settings_buttonnf.png</texture>
@@ -507,8 +507,8 @@
                     </control>
                     <control type="group">
                         <control type="textbox">
-                            <posx>1260</posx>
-                            <posy>260</posy>
+                            <left>1260</left>
+                            <top>260</top>
                             <width>570</width>
                             <height>338</height>
                             <label>$VAR[InfoWallTextboxVar]</label>
@@ -518,11 +518,11 @@
                         </control>
                     </control>
                     <control type="group">
-                        <posx>1252</posx>
-                        <posy>622</posy>
+                        <left>1252</left>
+                        <top>622</top>
                         <control type="image">
-                            <posx>-15</posx>
-                            <posy>-15</posy>
+                            <left>-15</left>
+                            <top>-15</top>
                             <width>603</width>
                             <height>352</height>
                             <texture>common/black.png</texture>

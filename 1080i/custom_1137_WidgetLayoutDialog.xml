@@ -6,8 +6,8 @@
  -->
     <zorder>4</zorder>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <include>Animation_DialogPopup</include>
@@ -19,8 +19,8 @@
         <control type="group">
             <animation effect="slide" end="0,-338" time="0" condition="Window.IsActive(1124)">Conditional</animation>
             <control type="group">
-                <posx>570</posx>
-                <posy>375</posy>
+                <left>570</left>
+                <top>375</top>
                 <control type="group">
                     <animation effect="zoom" end="100,130" center="960,0" time="0" condition="SubString(Window(1124).Property(CustomYesNoDialog),movie) | SubString(Window(1124).Property(CustomYesNoDialog),tv)">Conditional</animation>
                     <control type="image">
@@ -39,13 +39,13 @@
                     </control>
                 </control>
                 <control type="image">
-                    <posx>15</posx>
+                    <left>15</left>
                     <width>750</width>
                     <height>60</height>
                     <texture border="1">osd/osd_settings_buttonnf.png</texture>
                 </control>
                 <control type="label" id="4">
-                    <posy>88</posy>
+                    <top>88</top>
                     <width>780</width>
                     <height>45</height>
                     <align>center</align>
@@ -54,7 +54,7 @@
                     <scroll>true</scroll>
                 </control>
                 <control type="grouplist" id="5400">
-                    <posy>180</posy>
+                    <top>180</top>
                     <width>740</width>
                     <height>200</height>
                     <align>center</align>
@@ -145,7 +145,7 @@
                     </control>
                 </control>
                 <control type="grouplist" id="5401">
-                    <posy>230</posy>
+                    <top>230</top>
                     <width>740</width>
                     <height>200</height>
                     <align>center</align>

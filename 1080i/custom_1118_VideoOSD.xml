@@ -2,15 +2,15 @@
 <window type="dialog" id="1118">
     <defaultcontrol always="true">450</defaultcontrol>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <include>Animation_DialogPopup</include>
     <controls>
         <control type="image">
-            <posx>357</posx>
-            <posy>180</posy>
+            <left>357</left>
+            <top>180</top>
             <width>1212</width>
             <height>630</height>
             <texture>osd/osd_settings_back_glow.png</texture>
@@ -19,23 +19,23 @@
             <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
         </control>
         <control type="image">
-            <posx>357</posx>
-            <posy>180</posy>
+            <left>357</left>
+            <top>180</top>
             <width>1212</width>
             <height>630</height>
             <texture>osd/osd_settings_back.png</texture>
             <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
         </control>
         <control type="image">
-            <posx>375</posx>
-            <posy>212</posy>
+            <left>375</left>
+            <top>212</top>
             <width>1172</width>
             <height>60</height>
             <texture border="1">osd/osd_settings_buttonnf.png</texture>
         </control>
         <control type="label">
-            <posx>420</posx>
-            <posy>205</posy>
+            <left>420</left>
+            <top>205</top>
             <width>600</width>
             <height>60</height>
             <label>$LOCALIZE[31619]</label>
@@ -43,8 +43,8 @@
             <textcolor>$VAR[TitleColorVar]</textcolor>
         </control>
         <control type="grouplist" id="450">
-            <posx>375</posx>
-            <posy>272</posy>
+            <left>375</left>
+            <top>272</top>
             <width>1172</width>
             <height>540</height>
             <aligny>center</aligny>

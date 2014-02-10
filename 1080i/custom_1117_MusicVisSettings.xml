@@ -3,18 +3,18 @@
     <defaultcontrol always="true">450</defaultcontrol>
     <onload>Dialog.Close(1154)</onload>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <include>Animation_DialogPopup</include>
     <controls>
         <control type="group">
-            <posy>-30</posy>
+            <top>-30</top>
             <animation effect="fade" start="100" end="0" time="160" condition="Window.IsActive(1134)">Conditional</animation>
             <control type="image">
-                <posx>356</posx>
-                <posy>180</posy>
+                <left>356</left>
+                <top>180</top>
                 <width>1208</width>
                 <height>782</height>
                 <texture>osd/osd_settings_back_glow.png</texture>
@@ -23,23 +23,23 @@
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
             </control>
             <control type="image">
-                <posx>356</posx>
-                <posy>180</posy>
+                <left>356</left>
+                <top>180</top>
                 <width>1208</width>
                 <height>780</height>
                 <texture>osd/osd_settings_back.png</texture>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
             <control type="image">
-                <posx>374</posx>
-                <posy>232</posy>
+                <left>374</left>
+                <top>232</top>
                 <width>1172</width>
                 <height>60</height>
                 <texture border="1">osd/osd_settings_buttonnf.png</texture>
             </control>
             <control type="label">
-                <posx>420</posx>
-                <posy>225</posy>
+                <left>420</left>
+                <top>225</top>
                 <width>600</width>
                 <height>60</height>
                 <label>$LOCALIZE[12006]</label>
@@ -47,8 +47,8 @@
                 <textcolor>$VAR[TitleColorVar]</textcolor>
             </control>
             <control type="grouplist" id="450">
-                <posx>374</posx>
-                <posy>292</posy>
+                <left>374</left>
+                <top>292</top>
                 <width>1172</width>
                 <height>600</height>
                 <aligny>center</aligny>

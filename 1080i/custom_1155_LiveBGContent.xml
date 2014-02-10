@@ -5,10 +5,10 @@
     <onunload>ClearProperty(LiveCasesType,Home)</onunload>
     <controls>
         <control type="group">
-            <posy>200</posy>
+            <top>200</top>
             <control type="image">
-                <posx>326</posx>
-                <posy>100</posy>
+                <left>326</left>
+                <top>100</top>
                 <width>1240</width>
                 <height>560</height>
                 <texture border="20">osd/osd_settings_back_glow.png</texture>
@@ -17,8 +17,8 @@
                 <include>PanelGlowFade</include>
             </control>
             <control type="image">
-                <posx>326</posx>
-                <posy>100</posy>
+                <left>326</left>
+                <top>100</top>
                 <width>1240</width>
                 <height>560</height>
                 <texture border="20">osd/osd_settings_back.png</texture>
@@ -26,8 +26,8 @@
             </control>
             <include>Animation_OpenCloseZoom</include>
             <control type="button">
-                <posx>347</posx>
-                <posy>120</posy>
+                <left>347</left>
+                <top>120</top>
                 <width>1200</width>
                 <height>60</height>
                 <texturefocus>-</texturefocus>
@@ -39,8 +39,8 @@
                 <enable>no</enable>
             </control>
             <control type="button" id="5">
-                <posx>347</posx>
-                <posy>180</posy>
+                <left>347</left>
+                <top>180</top>
                 <width>1200</width>
                 <height>60</height>
                 <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
@@ -56,8 +56,8 @@
                 <onclick>Dialog.Close(1155)</onclick>
             </control>
             <control type="button" id="6">
-                <posx>347</posx>
-                <posy>240</posy>
+                <left>347</left>
+                <top>240</top>
                 <width>1200</width>
                 <height>60</height>
                 <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
@@ -73,8 +73,8 @@
                 <onclick>Dialog.Close(1155)</onclick>
             </control>
             <control type="button" id="7">
-                <posx>347</posx>
-                <posy>360</posy>
+                <left>347</left>
+                <top>360</top>
                 <width>1200</width>
                 <height>60</height>
                 <font>Font_Reg30_2</font>
@@ -94,8 +94,8 @@
                 <onclick condition="Stringcompare(Skin.String(LiveBGCase),clear)">Skin.SetString(LiveBGCase,movies)</onclick>
             </control>
             <control type="radiobutton" id="8">
-                <posx>347</posx>
-                <posy>360</posy>
+                <left>347</left>
+                <top>360</top>
                 <width>1200</width>
                 <height>60</height>
                 <font>Font_Reg30_2</font>
@@ -112,8 +112,8 @@
                 <selected>Skin.HasSetting(LiveBGCDCase)</selected>
             </control>
             <control type="button">
-                <posx>347</posx>
-                <posy>300</posy>
+                <left>347</left>
+                <top>300</top>
                 <width>1200</width>
                 <height>60</height>
                 <texturefocus>-</texturefocus>
@@ -126,8 +126,8 @@
                 <onclick>Dialog.Close(1155)</onclick>
             </control>
             <control type="button">
-                <posx>347</posx>
-                <posy>420</posy>
+                <left>347</left>
+                <top>420</top>
                 <width>1200</width>
                 <height>60</height>
                 <texturefocus>-</texturefocus>
@@ -140,8 +140,8 @@
                 <onclick>Dialog.Close(1155)</onclick>
             </control>
             <control type="panel" id="4">
-                <posx>347</posx>
-                <posy>480</posy>
+                <left>347</left>
+                <top>480</top>
                 <width>1200</width>
                 <height>900</height>
                 <aligny>center</aligny>

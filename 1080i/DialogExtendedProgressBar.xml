@@ -19,8 +19,8 @@
     <onunload condition="!IsEmpty(Skin.String(SmartPlaylist12.Call))">$INFO[Skin.String(SmartPlaylist12.Call)]</onunload>
     <controls>
         <control type="group">
-            <posx>1140</posx>
-            <posy>57</posy>
+            <left>1140</left>
+            <top>57</top>
             <width>764</width>
             <height>136</height>
             <include>Dialogs_Tablet</include>
@@ -31,11 +31,11 @@
             <animation effect="fade" start="100" end="0" time="160" condition="Window.Next(videolibrary) | Window.Next(musiclibrary) | Window.Next(videofiles) | Window.Next(musicfiles) | Window.Next(pictures) | Window.Next(scripts) | Window.Next(musicplaylist) | Window.Next(videoplaylist) | Window.Next(programs) | Window.Next(home) |[Window.Next(settings) + Window.IsActive(home)]" reversible="false">Conditional</animation>
             <include>Dialogs_HardDrive</include>
             <control type="label" id="30">
-                <posy>18</posy>
+                <top>18</top>
                 <include>Dialogs_LabelVars</include>
             </control>
             <control type="label" id="31">
-                <posy>54</posy>
+                <top>54</top>
                 <include>Dialogs_LabelVars</include>
             </control>
             <control type="progress" id="32">

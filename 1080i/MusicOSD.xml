@@ -16,16 +16,16 @@
             <control type="group" id="5800">
                 <animation effect="slide" end="0,-200" time="400" tween="cubic" condition="!ControlGroup(650).HasFocus + !ControlGroup(651).HasFocus+ !ControlGroup(652).HasFocus">Conditional</animation>
                 <control type="image">
-                    <posx>623</posx>
-                    <posy>127</posy>
+                    <left>623</left>
+                    <top>127</top>
                     <width>673</width>
                     <height>87</height>
                     <texture flipy="true">osd/osd_bottom_bar.png</texture>
                     <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
                 </control>
                 <control type="label" id="1">
-                    <posx>703</posx>
-                    <posy>100</posy>
+                    <left>703</left>
+                    <top>100</top>
                     <width>513</width>
                     <height>87</height>
                     <align>center</align>
@@ -44,7 +44,7 @@
                 <include condition="!Skin.HasSetting(ClassicOSD)">DefaultMusicOSD</include>
             </control>
             <control type="label">
-                <posx>440</posx>
+                <left>440</left>
                 <width>200</width>
                 <height>125</height>
                 <label>$INFO[System.CurrentControl]</label>
@@ -54,7 +54,7 @@
                 <visible>ControlGroup(650).HasFocus</visible>
             </control>
             <control type="label">
-                <posx>440r</posx>
+                <left>650r</left>
                 <width>200</width>
                 <height>125</height>
                 <align>right</align>
@@ -70,8 +70,8 @@
             <include>MusicInfoModePanels</include>
         </control>
         <control type="slider" id="87">
-            <posx>1568</posx>
-            <posy>1055</posy>
+            <left>1568</left>
+            <top>1055</top>
             <width>310</width>
             <height>20</height>
             <action>seek</action>

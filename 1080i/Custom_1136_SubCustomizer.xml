@@ -262,8 +262,8 @@
             <visible>!Window.IsActive(1134) + !Window.IsActive(1138) + !Window.IsActive(1142) + !Window.IsActive(1143) + !Window.IsActive(1144) + !Window.IsActive(1145) + !Window.IsActive(1155)</visible>
             <include>Animation_DialogPopup</include>
             <control type="image">
-                <posx>456</posx>
-                <posy>200</posy>
+                <left>456</left>
+                <top>200</top>
                 <width>1010</width>
                 <height>450</height>
                 <texture>osd/osd_settings_back_glow.png</texture>
@@ -272,8 +272,8 @@
                 <include>PanelGlowFade</include>
             </control>
             <control type="image">
-                <posx>456</posx>
-                <posy>200</posy>
+                <left>456</left>
+                <top>200</top>
                 <width>1010</width>
                 <height>450</height>
                 <texture>osd/osd_settings_back.png</texture>
@@ -281,8 +281,8 @@
             </control>
             <control type="group">
                 <control type="grouplist">
-                    <posx>875</posx>
-                    <posy>240</posy>
+                    <left>875</left>
+                    <top>240</top>
                     <width>1172</width>
                     <height>540</height>
                     <aligny>center</aligny>
@@ -319,7 +319,7 @@
                         <visible>Window.IsActive(1124)</visible>
                     </control>
                     <control type="image">
-                        <posx>100</posx>
+                        <left>100</left>
                         <width>600</width>
                         <height>100</height>
                         <align>center</align>
@@ -329,8 +329,8 @@
                 </control>
                 <control type="group">
                     <control type="grouplist" id="4">
-                        <posx>475</posx>
-                        <posy>240</posy>
+                        <left>475</left>
+                        <top>240</top>
                         <width>1172</width>
                         <height>540</height>
                         <aligny>center</aligny>

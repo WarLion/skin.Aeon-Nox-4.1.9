@@ -8,7 +8,7 @@
             <animation effect="slide" end="0,135" time="160" tween="cubic" condition="!VideoPlayer.Content(LiveTV) + Window.IsVisible(fullscreeninfo) + IsEmpty(Window(home).Property(morefullscreeninfo)) + !Player.Paused">Conditional</animation>
             <!-- codec infos -->
             <control type="image">
-                <posy>-465</posy>
+                <top>-465</top>
                 <width>1920</width>
                 <height>651</height>
                 <texture flipy="true">views/lowlist_panelback.png</texture>
@@ -16,26 +16,26 @@
                 <animation effect="slide" end="0,270" time="160" tween="cubic" condition="VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)">Conditional</animation>
             </control>
             <control type="group">
-                <posy>-52</posy>
+                <top>-52</top>
                 <control type="label" id="10">
-                    <posx>75</posx>
-                    <posy>60</posy>
+                    <left>75</left>
+                    <top>60</top>
                     <width>1770</width>
                     <height>30</height>
                     <label>-</label>
                     <font>Font_Reg28</font>
                 </control>
                 <control type="label" id="11">
-                    <posx>75</posx>
-                    <posy>90</posy>
+                    <left>75</left>
+                    <top>90</top>
                     <width>1770</width>
                     <height>30</height>
                     <label>-</label>
                     <font>Font_Reg28</font>
                 </control>
                 <control type="label" id="12">
-                    <posx>75</posx>
-                    <posy>120</posy>
+                    <left>75</left>
+                    <top>120</top>
                     <width>1770</width>
                     <height>60</height>
                     <label>-</label>
@@ -43,13 +43,13 @@
                 </control>
             </control>
             <control type="group">
-                <posx>25</posx>
-                <posy>145</posy>
+                <left>25</left>
+                <top>145</top>
                 <visible>VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)</visible>
                 <control type="label">
                     <description>Header</description>
-                    <posx>50</posx>
-                    <posy>5</posy>
+                    <left>50</left>
+                    <top>5</top>
                     <width>1200</width>
                     <height>25</height>
                     <align>left</align>
@@ -60,8 +60,8 @@
                 </control>
                 <control type="label">
                     <description>Backend</description>
-                    <posx>50</posx>
-                    <posy>40</posy>
+                    <left>50</left>
+                    <top>40</top>
                     <width>250</width>
                     <height>25</height>
                     <align>left</align>
@@ -72,8 +72,8 @@
                 </control>
                 <control type="label">
                     <description>Backend value</description>
-                    <posx>270</posx>
-                    <posy>40</posy>
+                    <left>270</left>
+                    <top>40</top>
                     <width>1000</width>
                     <height>25</height>
                     <align>left</align>
@@ -84,8 +84,8 @@
                 </control>
                 <control type="label">
                     <description>Device</description>
-                    <posx>50</posx>
-                    <posy>70</posy>
+                    <left>50</left>
+                    <top>70</top>
                     <width>250</width>
                     <height>25</height>
                     <align>left</align>
@@ -96,8 +96,8 @@
                 </control>
                 <control type="label">
                     <description>Device value</description>
-                    <posx>270</posx>
-                    <posy>70</posy>
+                    <left>270</left>
+                    <top>70</top>
                     <width>1000</width>
                     <height>25</height>
                     <align>left</align>
@@ -108,8 +108,8 @@
                 </control>
                 <control type="label">
                     <description>Status</description>
-                    <posx>50</posx>
-                    <posy>100</posy>
+                    <left>50</left>
+                    <top>100</top>
                     <width>250</width>
                     <height>25</height>
                     <align>left</align>
@@ -120,8 +120,8 @@
                 </control>
                 <control type="label">
                     <description>Status value</description>
-                    <posx>270</posx>
-                    <posy>100</posy>
+                    <left>270</left>
+                    <top>100</top>
                     <width>1000</width>
                     <height>25</height>
                     <align>left</align>
@@ -132,8 +132,8 @@
                 </control>
                 <control type="label">
                     <description>Signal</description>
-                    <posx>50</posx>
-                    <posy>130</posy>
+                    <left>50</left>
+                    <top>130</top>
                     <width>250</width>
                     <height>25</height>
                     <align>left</align>
@@ -144,8 +144,8 @@
                 </control>
                 <control type="progress">
                     <description>Progressbar</description>
-                    <posx>270</posx>
-                    <posy>137</posy>
+                    <left>270</left>
+                    <top>137</top>
                     <width>910</width>
                     <height>14</height>
                     <texturebg border="12,0,12,0">dialogs/progress/progress_back.png</texturebg>
@@ -155,8 +155,8 @@
                 </control>
                 <control type="label">
                     <description>Signal value</description>
-                    <posx>1210</posx>
-                    <posy>135</posy>
+                    <left>1210</left>
+                    <top>135</top>
                     <width>180</width>
                     <height>25</height>
                     <align>left</align>
@@ -167,8 +167,8 @@
                 </control>
                 <control type="label">
                     <description>SNR</description>
-                    <posx>50</posx>
-                    <posy>160</posy>
+                    <left>50</left>
+                    <top>160</top>
                     <width>250</width>
                     <height>25</height>
                     <align>left</align>
@@ -179,8 +179,8 @@
                 </control>
                 <control type="progress">
                     <description>Progressbar</description>
-                    <posx>270</posx>
-                    <posy>167</posy>
+                    <left>270</left>
+                    <top>167</top>
                     <width>910</width>
                     <height>14</height>
                     <texturebg border="12,0,12,0">dialogs/progress/progress_back.png</texturebg>
@@ -191,8 +191,8 @@
                 </control>
                 <control type="label">
                     <description>SNR value</description>
-                    <posx>1210</posx>
-                    <posy>160</posy>
+                    <left>1210</left>
+                    <top>160</top>
                     <width>180</width>
                     <height>25</height>
                     <align>left</align>
@@ -203,8 +203,8 @@
                 </control>
                 <control type="label">
                     <description>BER</description>
-                    <posx>50</posx>
-                    <posy>190</posy>
+                    <left>50</left>
+                    <top>190</top>
                     <width>250</width>
                     <height>25</height>
                     <align>left</align>
@@ -215,8 +215,8 @@
                 </control>
                 <control type="label">
                     <description>BER value</description>
-                    <posx>270</posx>
-                    <posy>190</posy>
+                    <left>270</left>
+                    <top>190</top>
                     <width>1000</width>
                     <height>25</height>
                     <align>left</align>
@@ -227,8 +227,8 @@
                 </control>
                 <control type="label">
                     <description>UNC</description>
-                    <posx>480</posx>
-                    <posy>190</posy>
+                    <left>480</left>
+                    <top>190</top>
                     <width>165</width>
                     <height>25</height>
                     <align>left</align>
@@ -239,8 +239,8 @@
                 </control>
                 <control type="label">
                     <description>UNC value</description>
-                    <posx>650</posx>
-                    <posy>190</posy>
+                    <left>650</left>
+                    <top>190</top>
                     <width>1000</width>
                     <height>25</height>
                     <align>left</align>
@@ -251,8 +251,8 @@
                 </control>
                 <control type="label">
                     <description>Encryption</description>
-                    <posx>50</posx>
-                    <posy>220</posy>
+                    <left>50</left>
+                    <top>220</top>
                     <width>250</width>
                     <height>25</height>
                     <align>left</align>
@@ -263,8 +263,8 @@
                 </control>
                 <control type="label">
                     <description>Encryption value</description>
-                    <posx>270</posx>
-                    <posy>220</posy>
+                    <left>270</left>
+                    <top>220</top>
                     <width>1000</width>
                     <height>25</height>
                     <align>left</align>

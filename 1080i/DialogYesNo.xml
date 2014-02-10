@@ -3,8 +3,8 @@
     <defaultcontrol>10</defaultcontrol>
     <zorder>8</zorder>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <include>Animation_DialogPopup</include>
@@ -12,8 +12,8 @@
         <include>InvisibleIncludeLabels</include>
         <include>DialogBackFade</include>
         <control type="group">
-            <posx>570</posx>
-            <posy>375</posy>
+            <left>570</left>
+            <top>375</top>
             <control type="image">
                 <width>780</width>
                 <height>330</height>
@@ -29,7 +29,7 @@
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
             <control type="image">
-                <posx>15</posx>
+                <left>15</left>
                 <width>750</width>
                 <height>60</height>
                 <texture border="1">osd/osd_settings_buttonnf.png</texture>
@@ -43,7 +43,7 @@
                 <scroll>true</scroll>
             </control>
             <control type="grouplist">
-                <posy>68</posy>
+                <top>68</top>
                 <width>780</width>
                 <height>330</height>
               <!--  <control type="label" id="2">
@@ -83,8 +83,8 @@
             </control>
             <control type="button" id="10">
                 <textoffsety></textoffsety>
-                <posx>390</posx>
-                <posy>258</posy>
+                <left>390</left>
+                <top>258</top>
                 <width>225</width>
                 <height>45</height>
                 <textoffsetx>30</textoffsetx>
@@ -100,8 +100,8 @@
             </control>
             <control type="button" id="11">
                 <textoffsety></textoffsety>
-                <posx>165</posx>
-                <posy>258</posy>
+                <left>165</left>
+                <top>258</top>
                 <width>225</width>
                 <height>45</height>
                 <textoffsetx>30</textoffsetx>

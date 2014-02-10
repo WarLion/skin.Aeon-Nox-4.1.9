@@ -7,7 +7,7 @@
             <animation effect="slide" end="0,400" time="560" tween="quadratic" condition="Control.HasFocus(109)">Conditional</animation>
             <visible>![Control.IsVisible(516) | Control.IsVisible(514) | [Control.IsVisible(518) + Skin.HasSetting(infopanelbackground)] | [Control.IsVisible(500) + Skin.HasSetting(wallfullscreen)] | Control.IsVisible(511) | Control.IsVisible(506) | Control.IsVisible(8858) | [Skin.HasSetting(addonwallaltbackground) + Control.IsVisible(512)]]</visible>
             <control type="image">
-                <posy>472</posy>
+                <top>472</top>
                 <width>1920</width>
                 <height>608</height>
                 <texture>views/showcase_floor.png</texture>
@@ -18,8 +18,8 @@
                 <animation effect="slide" time="800" start="1200,0" end="0,0" tween="cubic">WindowOpen</animation>
                 <animation effect="slide" time="800" end="1200,0" tween="cubic">WindowClose</animation>
                 <control type="image">
-                    <posx>216</posx>
-                    <posy>874</posy>
+                    <left>216</left>
+                    <top>874</top>
                     <width>1490</width>
                     <height>206</height>
                     <texture>views/showcase_spot.png</texture>
@@ -30,8 +30,8 @@
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 </control>
                 <control type="image">
-                    <posx>1040</posx>
-                    <posy>874</posy>
+                    <left>1040</left>
+                    <top>874</top>
                     <width>880</width>
                     <height>206</height>
                     <texture>views/list_spot.png</texture>
@@ -54,7 +54,7 @@
                     <colordiffuse>vignette</colordiffuse>
                 </control>
                 <control type="image">
-                    <posx>1224</posx>
+                    <left>1224</left>
                     <width>696</width>
                     <height>1080</height>
                     <texture flipx="true">views/showcase_vignette.png</texture>
@@ -62,7 +62,7 @@
                 </control>
             </control>
             <control type="image">
-                <posy>874</posy>
+                <top>874</top>
                 <width>1920</width>
                 <height>206</height>
                 <texture>views/panel_spot.png</texture>
@@ -74,7 +74,7 @@
             <include>Neon_Floor</include>
         </control>
         <control type="image" id="8858">
-            <posy>105</posy>
+            <top>105</top>
             <texture>views/logo_back.png</texture>
             <visible>[Control.IsVisible(503) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(artists)] + [Skin.HasSetting(landscapelogo) | Skin.HasSetting(landscapeonelogo)] + Skin.HasSetting(altfloor)]</visible>
             <include>Animation_CommonFade</include>
@@ -86,7 +86,7 @@
     </include>
     <include name="PanelSpot">
         <control type="image">
-            <posy>874</posy>
+            <top>874</top>
             <width>1920</width>
             <height>206</height>
             <texture>views/panel_spot.png</texture>
@@ -100,9 +100,9 @@
             <visible>[Control.IsVisible(503) + Skin.HasSetting(landscapeonelogo) + !Container.Content(episodes) + !Container.Content(seasons)] | Control.IsVisible(509) | [Control.IsVisible(500) + !StringCompare(Container.FolderName,youtube)] | Control.IsVisible(508) | Control.IsVisible(501)</visible>
             <include>Animation_WindowFade200</include>
             <visible>[Control.IsVisible(8822) + !Container.OnNext + !Container.OnPrevious + Stringcompare(Control.GetLabel(8822),empty.png)] | !Control.IsVisible(8822) | Container.Content(seasons) | Container.Content(albums)</visible>
-            <posx>410</posx>
+            <left>410</left>
             <control type="label">
-                <posy>1050</posy>
+                <top>1050</top>
                 <width>1100</width>
                 <align>center</align>
                 <label>$VAR[SecondLabelVar]</label>
@@ -113,7 +113,7 @@
                 <include>Animation_VisibleChange400</include>
             </control>
             <control type="label">
-                <posy>952</posy>
+                <top>952</top>
                 <width>1100</width>
                 <align>center</align>
                 <label>$VAR[FirstLabelVar]</label>
@@ -127,7 +127,7 @@
     </include>
     <include name="Furniture_DarkGradient">
         <control type="image">
-            <posy>1012</posy>
+            <top>1012</top>
             <width>1920</width>
             <height>72</height>
             <texture>views/showcase_gradient.png</texture>
@@ -142,8 +142,8 @@
             <animation effect="fade" time="800">Hidden</animation>
         </control>
         <control type="scrollbar" id="61">
-            <posx>465</posx>
-            <posy>1035</posy>
+            <left>465</left>
+            <top>1035</top>
             <height>40</height>
             <width>975</width>
             <visible>Control.IsVisible(509) | Control.IsVisible(508) | Control.IsVisible(500) | Control.IsVisible(501) | Control.IsVisible(57) | Control.IsVisible(510) | Control.IsVisible(503)</visible>
@@ -160,7 +160,7 @@
             <ondown condition="Control.IsVisible(500)">50</ondown>
         </control>
         <control type="image">
-            <posy>924</posy>
+            <top>924</top>
             <width>1920</width>
             <height>224</height>
             <texture border="1">home/homemenu_gradient.png</texture>
@@ -176,8 +176,8 @@
             <onback>50</onback>
         </control>
         <control type="group">
-            <posx>20</posx>
-            <posy>-1020</posy>
+            <left>20</left>
+            <top>-1020</top>
             <visible>Control.HasFocus(109)</visible>
             <include>Animation_WindowFade200</include>
             <animation type="Visible">
@@ -204,7 +204,7 @@
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
             <control type="label">
-                <posx>15</posx>
+                <left>15</left>
                 <width>100</width>
                 <height>74</height>
                 <align>center</align>
@@ -217,7 +217,7 @@
     </include>
     <include name="Furniture_Glow">
         <control type="image">
-            <posy>-100</posy>
+            <top>-100</top>
             <width>1920</width>
             <height>608</height>
             <texture flipy="true">views/showcase_glow.png</texture>
@@ -242,8 +242,8 @@
             <visible>[Control.IsVisible(512) + !Skin.HasSetting(addonwallaltbackground)] | [Control.IsVisible(500) + !Skin.HasSetting(wallfullscreen)] | [Control.IsVisible(518) + !Skin.HasSetting(infopanelbackground)]</visible>
             <control type="group">
                 <control type="image">
-                    <posx>112</posx>
-                    <posy>68</posy>
+                    <left>112</left>
+                    <top>68</top>
                     <animation effect="zoom" start="112,68,1695,1038" end="38,68,1845,1038" time="240" condition="Control.IsVisible(512)">Conditional</animation>
                     <animation effect="zoom" start="112,68,1695,1038" end="136,38,1651,1132" time="240" condition="Control.IsVisible(518)">Conditional</animation>
                     <width>1695</width>
@@ -254,8 +254,8 @@
                     <include>PanelGlowFade</include>
                 </control>
                 <control type="image">
-                    <posx>112</posx>
-                    <posy>68</posy>
+                    <left>112</left>
+                    <top>68</top>
                     <animation effect="zoom" start="112,68,1695,1038" end="38,68,1845,1038" time="240" condition="Control.IsVisible(512)">Conditional</animation>
                     <animation effect="zoom" start="112,68,1695,1038" end="136,38,1651,1132" time="240" condition="Control.IsVisible(518)">Conditional</animation>
                     <width>1695</width>
@@ -264,8 +264,8 @@
                     <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
                 </control>
                 <control type="image">
-                    <posx>112</posx>
-                    <posy>68</posy>
+                    <left>112</left>
+                    <top>68</top>
                     <animation effect="zoom" start="112,68,1695,1038" end="38,68,1845,1038" time="240" condition="Control.IsVisible(512)">Conditional</animation>
                     <animation effect="zoom" start="112,68,1695,1038" end="136,38,1651,1132" time="240" condition="Control.IsVisible(518)">Conditional</animation>
                     <width>1695</width>
@@ -357,7 +357,7 @@
     </include>
     <include name="ShowcaseInfoPaneMovies">
         <control type="group" id="7550">
-            <posy>39</posy>
+            <top>39</top>
             <width>1920</width>
             <height>750</height>
             <visible>Window.IsActive(1112) | Control.IsVisible(197) | Control.HasFocus(7000) | Stringcompare(Control.GetLabel(4421),infopanelon)</visible>
@@ -375,7 +375,7 @@
                 <visible>!Skin.HasSetting(no_infopane_panel)</visible>
                 <include>Animation_VisibleChange400</include>
                 <control type="image">
-                    <posx>112</posx>
+                    <left>112</left>
                     <width>1695</width>
                     <height>1050</height>
                     <texture>wall/wall_bg_glow.png</texture>
@@ -384,7 +384,7 @@
                     <include>PanelGlowFade</include>
                 </control>
                 <control type="image">
-                    <posx>112</posx>
+                    <left>112</left>
                     <width>1695</width>
                     <height>1050</height>
                     <texture>wall/wall_bg.png</texture>
@@ -392,16 +392,16 @@
                 </control>
             </control>
             <control type="image">
-                <posx>112</posx>
-                <posy>8</posy>
+                <left>112</left>
+                <top>8</top>
                 <width>1695</width>
                 <height>750</height>
                 <texture>$VAR[InfoPanelLayoutVar]</texture>
                 <fadetime>400</fadetime>
             </control>
             <control type="image">
-                <posx>165</posx>
-                <posy>100</posy>
+                <left>165</left>
+                <top>100</top>
                 <width>1600</width>
                 <height>280</height>
                 <aspectratio>keep</aspectratio>
@@ -417,8 +417,8 @@
                 <include>Animation_VisibleChange400</include>
             </control>
             <control type="image">
-                <posx>1747</posx>
-                <posy>15</posy>
+                <left>1747</left>
+                <top>15</top>
                 <width>45</width>
                 <height>45</height>
                 <texture>$VAR[WatchedIconVar]</texture>
@@ -426,8 +426,8 @@
                 <visible>!StringCompare(ListItem.Overlay,OverlayWatched.png) | Container.ListItem.IsResumable</visible>
             </control>
             <control type="image">
-                <posx>136</posx>
-                <posy>20</posy>
+                <left>136</left>
+                <top>20</top>
                 <width>32</width>
                 <height>32</height>
                 <texture background="true">$VAR[CountryFlagVar]</texture>
@@ -438,8 +438,8 @@
                 <visible>!Skin.HasSetting(no_infopane_panel)</visible>
                 <include>Animation_VisibleChange400</include>
                 <control type="label">
-                    <posx>170</posx>
-                    <posy>12</posy>
+                    <left>170</left>
+                    <top>12</top>
                     <width>1580</width>
                     <height>42</height>
                     <align>center</align>
@@ -449,8 +449,8 @@
                 </control>
             </control>
             <control type="image">
-                <posx>909</posx>
-                <posy>69</posy>
+                <left>909</left>
+                <top>69</top>
                 <width>798</width>
                 <height>454</height>
                 <aspectratio align="center">scale</aspectratio>
@@ -465,8 +465,8 @@
                 </animation>
             </control>
             <control type="group">
-                <posx>158</posx>
-                <posy>74</posy>
+                <left>158</left>
+                <top>74</top>
                 <visible>StringCompare(Control.GetLabel(4420),fanart) | StringCompare(Control.GetLabel(4420),fourthumbs)</visible>
                 <animation effect="slide" end="472,0" time="0" easing="inout" tween="cubic" condition="StringCompare(Control.GetLabel(4420),fourthumbs)">Conditional</animation>
                 <animation effect="fade" start="100" end="0" time="880" condition="Player.HasVideo + StringCompare(Control.GetLabel(4420),fourthumbs)">Conditional</animation>
@@ -475,7 +475,7 @@
                 </animation>
                 <control type="grouplist">
                     <orientation>vertical</orientation>
-                    <posy>-4</posy>
+                    <top>-4</top>
                     <control type="label">
                         <width>420</width>
                         <height>22</height>
@@ -515,8 +515,8 @@
                 </control>
                 <control type="grouplist">
                     <orientation>vertical</orientation>
-                    <posy>-4</posy>
-                    <posx>352</posx>
+                    <top>-4</top>
+                    <left>352</left>
                     <control type="label">
                         <width>420</width>
                         <height>22</height>
@@ -565,7 +565,7 @@
                     </control>
                 </control>
                 <control type="textbox">
-                    <posy>209</posy>
+                    <top>209</top>
                     <width>652</width>
                     <height>249</height>
                     <label>$VAR[FanartPanelPlotVar]</label>
@@ -579,8 +579,8 @@
                     <effect type="fade" end="100" delay="320" time="160" />
                 </animation>
                 <control type="image">
-                    <posx>1400</posx>
-                    <posy>63</posy>
+                    <left>1400</left>
+                    <top>63</top>
                     <width>323</width>
                     <height>470</height>
                     <aspectratio scalediffuse="false" align="center">scale</aspectratio>
@@ -591,8 +591,8 @@
                     <visible>StringCompare(Control.GetLabel(4420),poster)</visible>
                 </control>
                 <control type="image">
-                    <posx>1387.5</posx>
-                    <posy>50.5</posy>
+                    <left>1387.5</left>
+                    <top>50.5</top>
                     <width>348</width>
                     <height>495</height>
                     <texture diffuse="thumbs/movieposter_mask.png">thumbs/thumb_glass.png</texture>
@@ -601,11 +601,11 @@
                     <visible>StringCompare(Control.GetLabel(4420),poster)</visible>
                 </control>
                 <control type="group">
-                    <posx>158</posx>
-                    <posy>71</posy>
+                    <left>158</left>
+                    <top>71</top>
                     <control type="grouplist">
                         <orientation>vertical</orientation>
-                        <posy>0</posy>
+                        <top>0</top>
                         <control type="label">
                             <width>420</width>
                             <height>22</height>
@@ -713,8 +713,8 @@
                         </control>
                     </control>
                     <control type="textbox" id="5777">
-                        <posx>480</posx>
-                        <posy>-9</posy>
+                        <left>480</left>
+                        <top>-9</top>
                         <width>657</width>
                         <height>393</height>
                         <label fallback="31006">$VAR[FanartPanelPlotVar]</label>
@@ -725,8 +725,8 @@
                         <visible>[[Skin.HasSetting(noflow) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [Skin.HasSetting(noflowtv) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]]</visible>
                     </control>
                     <control type="textbox">
-                        <posx>486</posx>
-                        <posy>-9</posy>
+                        <left>486</left>
+                        <top>-9</top>
                         <width>657</width>
                         <height>460</height>
                         <label fallback="31006">$VAR[FanartPanelPlotVar]</label>
@@ -740,13 +740,13 @@
             <control type="group">
                 <visible>Container.Content(movies)</visible>
                 <control type="group">
-                    <posx>155</posx>
+                    <left>155</left>
                     <visible>StringCompare(Control.GetLabel(4420),fourthumbs)</visible>
                     <animation type="VisibleChange">
                         <effect type="fade" end="100" delay="320" time="160" />
                     </animation>
                     <control type="image">
-                        <posy>62</posy>
+                        <top>62</top>
                         <width>391</width>
                         <height>220</height>
                         <aspectratio>keep</aspectratio>
@@ -756,7 +756,7 @@
                         <bordersize>7</bordersize>
                     </control>
                     <control type="image">
-                        <posy>315</posy>
+                        <top>315</top>
                         <width>391</width>
                         <height>220</height>
                         <aspectratio>keep</aspectratio>
@@ -767,13 +767,13 @@
                     </control>
                 </control>
                 <control type="group">
-                    <posx>1363</posx>
+                    <left>1363</left>
                     <visible>SubString(Control.GetLabel(4420),thumbs)</visible>
                     <animation type="VisibleChange">
                         <effect type="fade" end="100" delay="320" time="160" />
                     </animation>
                     <control type="image">
-                        <posy>62</posy>
+                        <top>62</top>
                         <width>391</width>
                         <height>220</height>
                         <aspectratio>keep</aspectratio>
@@ -783,7 +783,7 @@
                         <bordersize>7</bordersize>
                     </control>
                     <control type="image">
-                        <posy>315</posy>
+                        <top>315</top>
                         <width>391</width>
                         <height>220</height>
                         <aspectratio>keep</aspectratio>
@@ -800,9 +800,9 @@
                     <effect type="fade" end="100" delay="320" time="160" />
                 </animation>
                 <control type="group">
-                    <posx>155</posx>
+                    <left>155</left>
                     <control type="image">
-                        <posy>62</posy>
+                        <top>62</top>
                         <width>391</width>
                         <height>220</height>
                         <aspectratio align="center">keep</aspectratio>
@@ -810,7 +810,7 @@
                         <fadetime>400</fadetime>
                     </control>
                     <control type="image">
-                        <posy>315</posy>
+                        <top>315</top>
                         <width>391</width>
                         <height>220</height>
                         <aspectratio aligny="top">scale</aspectratio>
@@ -821,9 +821,9 @@
                     </control>
                 </control>
                 <control type="group">
-                    <posx>1363</posx>
+                    <left>1363</left>
                     <control type="image">
-                        <posy>62</posy>
+                        <top>62</top>
                         <width>391</width>
                         <height>220</height>
                         <aspectratio aligny="top">keep</aspectratio>
@@ -832,7 +832,7 @@
                         <bordersize>7</bordersize>
                     </control>
                     <control type="image">
-                        <posy>315</posy>
+                        <top>315</top>
                         <width>391</width>
                         <height>220</height>
                         <aspectratio aligny="top">keep</aspectratio>
@@ -844,8 +844,8 @@
                 </control>
             </control>
             <control type="group">
-                <posx>915</posx>
-                <posy>75</posy>
+                <left>915</left>
+                <top>75</top>
                 <animation effect="slide" end="-348,-22" reversible="false" condition="StringCompare(Control.GetLabel(4420),poster) | StringCompare(Control.GetLabel(4420),extrathumbs)">Conditional</animation>
                 <animation effect="zoom" center="auto" start="100" end="92" time="480" tween="back" reversible="false" condition="StringCompare(Control.GetLabel(4420),poster) | StringCompare(Control.GetLabel(4420),extrathumbs)">Conditional</animation>
                 <animation effect="slide" end="-358,-38" reversible="false" condition="StringCompare(Control.GetLabel(4420),fourthumbs)">Conditional</animation>
@@ -876,8 +876,8 @@
             <control type="group">
             <control type="group">
                 <control type="image">
-                    <posx>2630</posx>
-                    <posy>704</posy>
+                    <left>2630</left>
+                    <top>704</top>
                     <width>280</width>
                     <height>280</height>
                     <aspectratio>keep</aspectratio>
@@ -889,8 +889,8 @@
                     </animation>
                 </control>
                 <control type="image">
-                    <posx>2630</posx>
-                    <posy>984</posy>
+                    <left>2630</left>
+                    <top>984</top>
                     <width>280</width>
                     <height>280</height>
                     <aspectratio>keep</aspectratio>
@@ -905,8 +905,8 @@
             </control>
             <control type="group">
                 <control type="image">
-                    <posx>2880</posx>
-                    <posy>704</posy>
+                    <left>2880</left>
+                    <top>704</top>
                     <width>280</width>
                     <height>280</height>
                     <aspectratio>keep</aspectratio>
@@ -918,8 +918,8 @@
                     </animation>
                 </control>
                 <control type="image">
-                    <posx>2880</posx>
-                    <posy>984</posy>
+                    <left>2880</left>
+                    <top>984</top>
                     <width>280</width>
                     <height>280</height>
                     <aspectratio>keep</aspectratio>
@@ -934,8 +934,8 @@
             </control>
             <control type="group">
                 <control type="image">
-                    <posx>3130</posx>
-                    <posy>704</posy>
+                    <left>3130</left>
+                    <top>704</top>
                     <width>280</width>
                     <height>280</height>
                     <aspectratio>keep</aspectratio>
@@ -947,8 +947,8 @@
                     </animation>
                 </control>
                 <control type="image">
-                    <posx>3130</posx>
-                    <posy>984</posy>
+                    <left>3130</left>
+                    <top>984</top>
                     <width>280</width>
                     <height>280</height>
                     <aspectratio>keep</aspectratio>
@@ -965,8 +965,8 @@
             <control type="group">
             <control type="group">
                 <control type="image">
-                    <posx>-990</posx>
-                    <posy>704</posy>
+                    <left>-990</left>
+                    <top>704</top>
                     <width>280</width>
                     <height>280</height>
                     <aspectratio>keep</aspectratio>
@@ -978,8 +978,8 @@
                     </animation>
                 </control>
                 <control type="image">
-                    <posx>-990</posx>
-                    <posy>984</posy>
+                    <left>-990</left>
+                    <top>984</top>
                     <width>280</width>
                     <height>280</height>
                     <aspectratio>keep</aspectratio>
@@ -994,8 +994,8 @@
             </control>
             <control type="group">
                 <control type="image">
-                    <posx>-1240</posx>
-                    <posy>704</posy>
+                    <left>-1240</left>
+                    <top>704</top>
                     <width>280</width>
                     <height>280</height>
                     <aspectratio>keep</aspectratio>
@@ -1007,8 +1007,8 @@
                     </animation>
                 </control>
                 <control type="image">
-                    <posx>-1240</posx>
-                    <posy>984</posy>
+                    <left>-1240</left>
+                    <top>984</top>
                     <width>280</width>
                     <height>280</height>
                     <aspectratio>keep</aspectratio>
@@ -1023,8 +1023,8 @@
             </control>
             <control type="group">
                 <control type="image">
-                    <posx>-1490</posx>
-                    <posy>704</posy>
+                    <left>-1490</left>
+                    <top>704</top>
                     <width>280</width>
                     <height>280</height>
                     <aspectratio>keep</aspectratio>
@@ -1036,8 +1036,8 @@
                     </animation>
                 </control>
                 <control type="image">
-                    <posx>-1490</posx>
-                    <posy>984</posy>
+                    <left>-1490</left>
+                    <top>984</top>
                     <width>280</width>
                     <height>280</height>
                     <aspectratio>keep</aspectratio>
@@ -1065,13 +1065,13 @@
             <visible>!Skin.HasSetting(DisableGlowbar)</visible>
             <include>Animation_VisibleChange400</include>
             <control type="image">
-                <posy>22</posy>
+                <top>22</top>
                 <texture>common/topbar_left.png</texture>
                 <include>Topbar</include>
                 <include>TopbarPulseAnimationLeft</include>
             </control>
             <control type="image">
-                <posy>22</posy>
+                <top>22</top>
                 <texture>common/topbar_right.png</texture>
                 <include>Topbar</include>
                 <include>TopbarPulseAnimationRight</include>
@@ -1102,13 +1102,13 @@
         <control type="group">
             <visible>!Skin.HasSetting(DisableGlowbar) | [Skin.HasSetting(DisableGlowbar) + Skin.HasSetting(ExtendedGlowMode)]</visible>
             <control type="image">
-                <posy>854</posy>
+                <top>854</top>
                 <texture>common/topbar_left.png</texture>
                 <include>Topbar</include>
                 <include>TopbarPulseAnimationLeft</include>
             </control>
             <control type="image">
-                <posy>854</posy>
+                <top>854</top>
                 <texture>common/topbar_right.png</texture>
                 <include>Topbar</include>
                 <include>TopbarPulseAnimationRight</include>
@@ -1119,13 +1119,13 @@
         <control type="group">
             <visible>!Skin.HasSetting(DisableGlowbar)</visible>
             <control type="image">
-                <posy>735</posy>
+                <top>735</top>
                 <texture>common/topbar_left.png</texture>
                 <include>Topbar</include>
                 <include>TopbarPulseAnimationLeft</include>
             </control>
             <control type="image">
-                <posy>735</posy>
+                <top>735</top>
                 <texture>common/topbar_right.png</texture>
                 <include>Topbar</include>
                 <include>TopbarPulseAnimationRight</include>
@@ -1137,25 +1137,25 @@
             <visible>!Skin.HasSetting(DisableGlowbar)</visible>
             <include>Animation_VisibleChange400</include>
             <control type="image">
-                <posy>494</posy>
+                <top>494</top>
                 <texture>common/topbar_left.png</texture>
                 <include>Topbar</include>
                 <include>TopbarPulseAnimationLeft</include>
             </control>
             <control type="image">
-                <posy>494</posy>
+                <top>494</top>
                 <texture>common/topbar_right.png</texture>
                 <include>Topbar</include>
                 <include>TopbarPulseAnimationRight</include>
             </control>
             <control type="image">
-                <posy>590</posy>
+                <top>590</top>
                 <texture>common/topbar_left.png</texture>
                 <include>Topbar</include>
                 <include>TopbarPulseAnimationLeft</include>
             </control>
             <control type="image">
-                <posy>590</posy>
+                <top>590</top>
                 <texture>common/topbar_right.png</texture>
                 <include>Topbar</include>
                 <include>TopbarPulseAnimationRight</include>

@@ -3,8 +3,8 @@
     <defaultcontrol always="true">450</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <controls>
@@ -22,15 +22,15 @@
                 <height>834</height>
                 <animation effect="slide" start="-615,0" end="0,0" time="320" delay="400" tween="cubic">WindowOpen</animation>
                 <control type="image">
-                    <posx>1214</posx>
-                    <posy>154</posy>
+                    <left>1214</left>
+                    <top>154</top>
                     <width>609</width>
                     <height>834</height>
                     <texture>views/filebrowser_sidecar.png</texture>
                 </control>
                 <control type="image">
-                    <posx>1300</posx>
-                    <posy>250</posy>
+                    <left>1300</left>
+                    <top>250</top>
                     <width>429</width>
                     <height>429</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
@@ -38,8 +38,8 @@
                     <fadetime>400</fadetime>
                 </control>
                 <control type="image">
-                    <posx>1300</posx>
-                    <posy>680</posy>
+                    <left>1300</left>
+                    <top>680</top>
                     <width>429</width>
                     <height>429</height>
                     <aspectratio aligny="top">keep</aspectratio>
@@ -47,15 +47,15 @@
                     <fadetime>400</fadetime>
                 </control>
                 <control type="label" id="412">
-                    <posx>1226</posx>
-                    <posy>810</posy>
+                    <left>1226</left>
+                    <top>810</top>
                     <width>579</width>
                     <align>center</align>
                     <font>Font_Reg26</font>
                 </control>
                 <control type="label" id="411">
-                    <posx>1226</posx>
-                    <posy>900</posy>
+                    <left>1226</left>
+                    <top>900</top>
                     <width>579</width>
                     <align>center</align>
                     <font>Font_Bold46</font>
@@ -64,8 +64,8 @@
             </control>
             <include>FileBrowserPanel</include>
             <control type="scrollbar" id="60">
-                <posx>1200</posx>
-                <posy>158</posy>
+                <left>1200</left>
+                <top>158</top>
                 <width>46</width>
                 <height>728</height>
                 <include>Animation_VerticalScrollBar</include>
@@ -75,8 +75,8 @@
                 <onright>413</onright>
             </control>
             <control type="list" id="450">
-                <posx>90</posx>
-                <posy>158</posy>
+                <left>90</left>
+                <top>158</top>
                 <width>1140</width>
                 <height>728</height>
                 <pagecontrol>60</pagecontrol>
@@ -93,7 +93,7 @@
                         <texture border="1">osd/osd_settings_buttonnf.png</texture>
                     </control>
                     <control type="label">
-                        <posx>68</posx>
+                        <left>68</left>
                         <width>810</width>
                         <height>60</height>
                         <font>Font_Reg30_2</font>
@@ -101,7 +101,7 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
-                        <posx>1041</posx>
+                        <left>1041</left>
                         <width>795</width>
                         <height>60</height>
                         <align>right</align>
@@ -110,8 +110,8 @@
                         <info>ListItem.Label2</info>
                     </control>
                     <control type="image">
-                        <posx>1032</posx>
-                        <posy>16</posy>
+                        <left>1032</left>
+                        <top>16</top>
                         <width>120</width>
                         <height>30</height>
                         <info>ListItem.Overlay</info>
@@ -124,7 +124,7 @@
                         <texture border="1">osd/osd_settings_buttonnf.png</texture>
                     </control>
                     <control type="image">
-                        <posx>10</posx>
+                        <left>10</left>
                         <width>1117</width>
                         <height>58</height>
                         <texture border="8">views/tripanel/listselect_fo.png</texture>
@@ -132,7 +132,7 @@
                         <animation effect="fade" start="100" end="50" time="160" condition="!Control.HasFocus(450)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>68</posx>
+                        <left>68</left>
                         <width>810</width>
                         <height>60</height>
                         <font>Font_Reg30_2</font>
@@ -140,7 +140,7 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
-                        <posx>1041</posx>
+                        <left>1041</left>
                         <width>795</width>
                         <height>60</height>
                         <align>right</align>
@@ -149,8 +149,8 @@
                         <info>ListItem.Label2</info>
                     </control>
                     <control type="image">
-                        <posx>1032</posx>
-                        <posy>16</posy>
+                        <left>1032</left>
+                        <top>16</top>
                         <width>120</width>
                         <height>30</height>
                         <info>ListItem.Overlay</info>
@@ -158,8 +158,8 @@
                 </focusedlayout>
             </control>
             <control type="list" id="451">
-                <posx>90</posx>
-                <posy>158</posy>
+                <left>90</left>
+                <top>158</top>
                 <width>1156</width>
                 <height>728</height>
                 <pagecontrol>60</pagecontrol>
@@ -176,7 +176,7 @@
                         <texture border="1">osd/osd_settings_buttonnf.png</texture>
                     </control>
                     <control type="label">
-                        <posx>68</posx>
+                        <left>68</left>
                         <width>810</width>
                         <height>60</height>
                         <font>Font_Reg30_2</font>
@@ -184,7 +184,7 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
-                        <posx>1041</posx>
+                        <left>1041</left>
                         <width>795</width>
                         <height>60</height>
                         <align>right</align>
@@ -193,8 +193,8 @@
                         <info>ListItem.Label2</info>
                     </control>
                     <control type="image">
-                        <posx>1032</posx>
-                        <posy>16</posy>
+                        <left>1032</left>
+                        <top>16</top>
                         <width>120</width>
                         <height>30</height>
                         <info>ListItem.Overlay</info>
@@ -207,7 +207,7 @@
                         <texture border="1">osd/osd_settings_buttonnf.png</texture>
                     </control>
                     <control type="image">
-                        <posx>10</posx>
+                        <left>10</left>
                         <width>1117</width>
                         <height>58</height>
                         <texture border="8">views/tripanel/listselect_fo.png</texture>
@@ -215,7 +215,7 @@
                         <animation effect="fade" start="100" end="50" time="160" condition="!Control.HasFocus(451)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>68</posx>
+                        <left>68</left>
                         <width>810</width>
                         <height>60</height>
                         <font>Font_Reg30_2</font>
@@ -223,7 +223,7 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
-                        <posx>1041</posx>
+                        <left>1041</left>
                         <width>795</width>
                         <height>60</height>
                         <align>right</align>
@@ -232,8 +232,8 @@
                         <info>ListItem.Label2</info>
                     </control>
                     <control type="image">
-                        <posx>1032</posx>
-                        <posy>16</posy>
+                        <left>1032</left>
+                        <top>16</top>
                         <width>120</width>
                         <height>30</height>
                         <info>ListItem.Overlay</info>
@@ -241,8 +241,8 @@
                 </focusedlayout>
             </control>
             <control type="grouplist" id="9000">
-                <posx>102</posx>
-                <posy>910</posy>
+                <left>102</left>
+                <top>910</top>
                 <width>1117</width>
                 <height>80</height>
                 <onleft>9000</onleft>
@@ -312,8 +312,8 @@
                 <effect type="fade" start="100" end="0" time="240" />
             </animation>
             <control type="group">
-                <posx>570</posx>
-                <posy>375</posy>
+                <left>570</left>
+                <top>375</top>
                 <control type="image">
                     <width>780</width>
                     <height>330</height>
@@ -329,7 +329,7 @@
                     <visible>!Skin.HasSetting(DisableGlowbar)</visible>
                 </control>
                 <control type="image">
-                    <posx>15</posx>
+                    <left>15</left>
                     <width>750</width>
                     <height>60</height>
                     <texture border="1">osd/osd_settings_buttonnf.png</texture>
@@ -346,7 +346,7 @@
                     <scroll>true</scroll>
                 </control>
                 <control type="grouplist">
-                    <posy>68</posy>
+                    <top>68</top>
                     <control type="label" id="1012">
                         <width>780</width>
                         <height>45</height>
@@ -367,15 +367,15 @@
                     </control>
                 </control>
                 <control type="progress" id="1015">
-                    <posx>45</posx>
-                    <posy>225</posy>
+                    <left>45</left>
+                    <top>225</top>
                     <width>690</width>
                     <height>21</height>
                 </control>
                 <control type="button" id="1010">
                     <textoffsety></textoffsety>
-                    <posx>278</posx>
-                    <posy>258</posy>
+                    <left>278</left>
+                    <top>258</top>
                     <width>225</width>
                     <height>45</height>
                     <textoffsetx>30</textoffsetx>

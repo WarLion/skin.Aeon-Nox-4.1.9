@@ -17,20 +17,20 @@
                 <include>FullscreenDimensions</include>
             </control>
             <control type="image">
-                <posy>404</posy>
+                <top>404</top>
                 <width>1923</width>
                 <height>780</height>
                 <texture>home/nowplaying_shadow.png</texture>
             </control>
             <control type="image">
-                <posy>404</posy>
+                <top>404</top>
                 <width>1923</width>
                 <height>780</height>
                 <texture>home/nowplaying_shadow.png</texture>
                 <colordiffuse>grey2</colordiffuse>
             </control>
             <control type="image">
-                <posy>622</posy>
+                <top>622</top>
                 <width>1920</width>
                 <height>608</height>
                 <texture>views/showcase_glow.png</texture>
@@ -40,16 +40,16 @@
             </control>
             <!-- Thumb -->
             <control type="group">
-                <posy>854</posy>
+                <top>854</top>
                 <control type="group">
-                    <posx>8</posx>
-                    <posy>20</posy>
+                    <left>8</left>
+                    <top>20</top>
                     <animation type="Conditional" condition="Container.Content(artists)">
                         <effect type="rotatey" center="248" end="180" time="1200" />
                     </animation>
                     <control type="image" id="5001">
-                        <posx>-1500</posx>
-                        <posy>-1500</posy>
+                        <left>-1500</left>
+                        <top>-1500</top>
                         <width>1</width>
                         <height>1</height>
                         <aspectratio>keep</aspectratio>
@@ -57,8 +57,8 @@
                         <fadetime>300</fadetime>
                     </control>
                     <control type="image">
-                        <posx>68</posx>
-                        <posy>-428</posy>
+                        <left>68</left>
+                        <top>-428</top>
                         <width>387</width>
                         <height>381</height>
                         <aspectratio>keep</aspectratio>
@@ -80,15 +80,15 @@
                     <control type="group">
                         <animation effect="fade" time="600">VisibleChange</animation>
                         <control type="image" id="3">
-                            <posx>68</posx>
-                            <posy>-248</posy>
+                            <left>68</left>
+                            <top>-248</top>
                             <width>390</width>
                             <height>398</height>
                             <texture diffuse="thumbs/boxes/cdcover_mask.png">$INFO[ListItem.Icon]</texture>
                         </control>
                     </control>
                     <control type="image">
-                        <posy>-270</posy>
+                        <top>-270</top>
                         <width>480</width>
                         <height>450</height>
                         <texture>thumbs/boxes/cd_shadow_light.png</texture>
@@ -96,7 +96,7 @@
                     <control type="group">
                         <animation effect="fade" time="600">VisibleChange</animation>
                         <control type="image">
-                            <posy>-270</posy>
+                            <top>-270</top>
                             <width>480</width>
                             <height>450</height>
                             <texture>thumbs/boxes/cd_glass.png</texture>
@@ -105,8 +105,8 @@
                 </control>
                 <control type="group">
                     <control type="image">
-                        <posx>500</posx>
-                        <posy>-136</posy>
+                        <left>500</left>
+                        <top>-136</top>
                         <width>900</width>
                         <height>4</height>
                         <texture>views/list_divider.png</texture>
@@ -114,8 +114,8 @@
                     </control>
                     <control type="group">
                         <control type="label">
-                            <posx>500</posx>
-                            <posy>-270</posy>
+                            <left>500</left>
+                            <top>-270</top>
                             <width>1405</width>
                             <height>38</height>
                             <label>$INFO[ListItem.Tracknumber,,: ][COLOR FF777777]$INFO[ListItem.Title][/COLOR]</label>
@@ -125,8 +125,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>500</posx>
-                            <posy>-210</posy>
+                            <left>500</left>
+                            <top>-210</top>
                             <width>1405</width>
                             <height>38</height>
                             <label>$INFO[ListItem.Artist]$INFO[ListItem.Album, • ]</label>
@@ -137,8 +137,8 @@
                         </control>
                     </control>
                     <control type="textbox">
-                        <posx>1420</posx>
-                        <posy>-134</posy>
+                        <left>1420</left>
+                        <top>-134</top>
                         <width>485</width>
                         <height>198</height>
                         <label>$INFO[ListItem.Comment,$LOCALIZE[569]: ]</label>
@@ -150,8 +150,8 @@
                     </control>
                     <control type="group">
                         <control type="grouplist">
-                            <posx>500</posx>
-                            <posy>-80</posy>
+                            <left>500</left>
+                            <top>-80</top>
                             <width>778</width>
                             <itemgap>10</itemgap>
                             <orientation>horizontal</orientation>
@@ -174,8 +174,8 @@
                             </control>
                         </control>
                         <control type="grouplist">
-                            <posx>500</posx>
-                            <posy>-32</posy>
+                            <left>500</left>
+                            <top>-32</top>
                             <width>778</width>
                             <itemgap>10</itemgap>
                             <orientation>horizontal</orientation>
@@ -198,8 +198,8 @@
                             </control>
                         </control>
                         <control type="grouplist">
-                            <posx>500</posx>
-                            <posy>16</posy>
+                            <left>500</left>
+                            <top>16</top>
                             <width>778</width>
                             <itemgap>10</itemgap>
                             <orientation>horizontal</orientation>
@@ -222,8 +222,8 @@
                             </control>
                         </control>
                         <control type="grouplist">
-                            <posx>500</posx>
-                            <posy>64</posy>
+                            <left>500</left>
+                            <top>64</top>
                             <width>778</width>
                             <itemgap>10</itemgap>
                             <orientation>horizontal</orientation>
@@ -246,8 +246,8 @@
                             </control>
                         </control>
                         <control type="grouplist">
-                            <posx>500</posx>
-                            <posy>112</posy>
+                            <left>500</left>
+                            <top>112</top>
                             <width>778</width>
                             <itemgap>10</itemgap>
                             <orientation>horizontal</orientation>
@@ -270,8 +270,8 @@
                             </control>
                         </control>
                         <control type="grouplist">
-                            <posx>1430</posx>
-                            <posy>80</posy>
+                            <left>1430</left>
+                            <top>80</top>
                             <width>800</width>
                             <itemgap>10</itemgap>
                             <orientation>horizontal</orientation>
@@ -335,8 +335,8 @@
             </control>
             <!-- List -->
             <control type="grouplist">
-                <posx>500</posx>
-                <posy>727</posy>
+                <left>500</left>
+                <top>727</top>
                 <width>1290</width>
                 <itemgap>40</itemgap>
                 <orientation>horizontal</orientation>
@@ -421,8 +421,8 @@
             </control>
             <!-- Artist Logo / Record Label flag-->
             <!--<control type="image">
-      <posx>1271</posx>
-      <posy>720</posy>
+      <left>1271</left>
+      <top>720</top>
       <width>149</width>
       <height>88</height>
       <aspectratio>keep</aspectratio>
@@ -431,8 +431,8 @@
       <visible>!IsEmpty(Skin.String(ArtistsLogosPath))</visible>
     </control>-->
             <control type="label">
-                <posx>1905</posx>
-                <posy>1030</posy>
+                <left>1905</left>
+                <top>1030</top>
                 <width>1920</width>
                 <height>60</height>
                 <align>right</align>

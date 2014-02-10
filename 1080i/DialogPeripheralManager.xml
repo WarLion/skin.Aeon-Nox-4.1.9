@@ -3,16 +3,16 @@
     <defaultcontrol always="true">20</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <include>Animation_DialogPopup</include>
     <controls>
         <include>DialogBackFade</include>
         <control type="group">
-            <posx>240</posx>
-            <posy>82</posy>
+            <left>240</left>
+            <top>82</top>
             <control type="image">
                 <width>1440</width>
                 <height>915</height>
@@ -29,8 +29,8 @@
             <control type="group">
                 <animation effect="fade" start="100" end="0" time="160" condition="Window.IsVisible(DialogPeripheralSettings.xml)">Conditional</animation>
                 <control type="label">
-                    <posx>300</posx>
-                    <posy>45</posy>
+                    <left>300</left>
+                    <top>45</top>
                     <width>1050</width>
                     <height>74</height>
                     <align>center</align>
@@ -40,8 +40,8 @@
                 </control>
                 <control type="group">
                     <control type="scrollbar" id="60">
-                        <posx>1340</posx>
-                        <posy>120</posy>
+                        <left>1340</left>
+                        <top>120</top>
                         <width>98</width>
                         <height>420</height>
                         <texturesliderbackground>views/scrollbarbacklist.png</texturesliderbackground>
@@ -49,8 +49,8 @@
                         <onright>20</onright>
                     </control>
                     <control type="list" id="20">
-                        <posx>274</posx>
-                        <posy>120</posy>
+                        <left>274</left>
+                        <top>120</top>
                         <width>1144</width>
                         <height>420</height>
                         <onup>20</onup>
@@ -66,7 +66,7 @@
                                 <texture>settings/settings_radiobuttonoff.png</texture>
                             </control>
                             <control type="label">
-                                <posx>15</posx>
+                                <left>15</left>
                                 <width>1144</width>
                                 <height>60</height>
                                 <font>Font_Info</font>
@@ -89,7 +89,7 @@
                                 <visible>Control.HasFocus(20)</visible>
                             </control>
                             <control type="label">
-                                <posx>15</posx>
+                                <left>15</left>
                                 <width>1144</width>
                                 <height>60</height>
                                 <font>Font_Info</font>
@@ -98,15 +98,15 @@
                         </focusedlayout>
                     </control>
                     <control type="image">
-                        <posx>305</posx>
-                        <posy>540</posy>
+                        <left>305</left>
+                        <top>540</top>
                         <width>1065</width>
                         <height>1</height>
                         <texture>views/lowlistpanel_line.png</texture>
                     </control>
                     <control type="label">
-                        <posx>1350</posx>
-                        <posy>550</posy>
+                        <left>1350</left>
+                        <top>550</top>
                         <width>630</width>
                         <height>30</height>
                         <align>right</align>
@@ -118,12 +118,12 @@
                 </control>
                 <control type="group" id="9002">
                     <control type="group">
-                        <posx>525</posx>
-                        <posy>585</posy>
+                        <left>525</left>
+                        <top>585</top>
                         <width>252</width>
                         <height>668</height>
                         <control type="label">
-                            <posy>30</posy>
+                            <top>30</top>
                             <width>252</width>
                             <height>30</height>
                             <align>right</align>
@@ -131,15 +131,15 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>18</posx>
-                            <posy>30</posy>
+                            <left>18</left>
+                            <top>30</top>
                             <width>850</width>
                             <height>30</height>
                             <label fallback="13205">$INFO[Container(20).ListItem.Label]</label>
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posy>68</posy>
+                            <top>68</top>
                             <width>252</width>
                             <height>30</height>
                             <align>right</align>
@@ -147,15 +147,15 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>18</posx>
-                            <posy>68</posy>
+                            <left>18</left>
+                            <top>68</top>
                             <width>850</width>
                             <height>30</height>
                             <label fallback="13205">$INFO[Container(20).ListItem.Property(Bus)] - $INFO[Container(20).ListItem.Property(Location)]</label>
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posy>105</posy>
+                            <top>105</top>
                             <width>252</width>
                             <height>30</height>
                             <align>right</align>
@@ -163,15 +163,15 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>18</posx>
-                            <posy>105</posy>
+                            <left>18</left>
+                            <top>105</top>
                             <width>850</width>
                             <height>30</height>
                             <label fallback="13205">$INFO[Container(20).ListItem.Property(Class)]</label>
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posy>142</posy>
+                            <top>142</top>
                             <width>252</width>
                             <height>30</height>
                             <align>right</align>
@@ -179,15 +179,15 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>18</posx>
-                            <posy>142</posy>
+                            <left>18</left>
+                            <top>142</top>
                             <width>850</width>
                             <height>30</height>
                             <label fallback="13205">$INFO[Container(20).ListItem.Property(Vendor)]</label>
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posy>180</posy>
+                            <top>180</top>
                             <width>252</width>
                             <height>30</height>
                             <align>right</align>
@@ -195,8 +195,8 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>18</posx>
-                            <posy>180</posy>
+                            <left>18</left>
+                            <top>180</top>
                             <width>850</width>
                             <height>30</height>
                             <label fallback="13205">$INFO[Container(20).ListItem.Property(Product)]</label>
@@ -205,10 +205,10 @@
                     </control>
                 </control>
                 <control type="group" id="9000">
-                    <posy>25</posy>
+                    <top>25</top>
                     <control type="button" id="10">
-                        <posx>22</posx>
-                        <posy>39</posy>
+                        <left>22</left>
+                        <top>39</top>
                         <width>252</width>
                         <height>96</height>
                         <textoffsetx>40</textoffsetx>
@@ -226,8 +226,8 @@
                         <focusedcolor>white</focusedcolor>
                     </control>
                     <control type="button" id="11">
-                        <posx>22</posx>
-                        <posy>124</posy>
+                        <left>22</left>
+                        <top>124</top>
                         <width>252</width>
                         <height>96</height>
                         <textoffsetx>40</textoffsetx>

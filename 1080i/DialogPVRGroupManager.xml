@@ -2,8 +2,8 @@
 <window>
     <defaultcontrol always="true">29</defaultcontrol>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <controls>
@@ -14,10 +14,10 @@
                 <animation effect="fade" delay="320" end="100" time="160">WindowOpen</animation>
                 <animation effect="fade" start="100" end="0" time="160">WindowClose</animation>
                 <control type="group">
-                    <posx>387</posx>
-                    <posy>0</posy>
+                    <left>387</left>
+                    <top>0</top>
                     <control type="label">
-                        <posy>120</posy>
+                        <top>120</top>
                         <width>489</width>
                         <height>60</height>
                         <textoffsetx>15</textoffsetx>
@@ -25,8 +25,8 @@
                         <font>Font_Bold37_Caps</font>
                     </control>
                     <control type="list" id="13">
-                        <posx>0</posx>
-                        <posy>180</posy>
+                        <left>0</left>
+                        <top>180</top>
                         <width>489</width>
                         <height>741</height>
                         <onup>13</onup>
@@ -36,15 +36,15 @@
                         <scrolltime>200</scrolltime>
                         <itemlayout height="74">
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
+                                <left>0</left>
+                                <top>0</top>
                                 <width>489</width>
                                 <height>74</height>
                                 <texture>settings/settings_radiobuttonoff.png</texture>
                                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                             </control>
                             <control type="label">
-                                <posx>0</posx>
+                                <left>0</left>
                                 <width>489</width>
                                 <height>74</height>
                                 <textoffsetx>30</textoffsetx>
@@ -57,8 +57,8 @@
                         </itemlayout>
                         <focusedlayout height="74">
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
+                                <left>0</left>
+                                <top>0</top>
                                 <width>489</width>
                                 <height>74</height>
                                 <texture border="8">views/tripanel/listselect_fo.png</texture>
@@ -66,7 +66,7 @@
                                 <animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(13)">Conditional</animation>
                             </control>
                             <control type="label">
-                                <posx>0</posx>
+                                <left>0</left>
                                 <width>489</width>
                                 <height>74</height>
                                 <textoffsetx>30</textoffsetx>
@@ -79,18 +79,18 @@
                     </control>
                 </control>
                 <control type="group">
-                    <posx>876</posx>
-                    <posy>0</posy>
+                    <left>876</left>
+                    <top>0</top>
                     <control type="label" id="21">
-                        <posy>120</posy>
+                        <top>120</top>
                         <width>489</width>
                         <height>60</height>
                         <textoffsetx>15</textoffsetx>
                         <font>Font_Bold34_Caps</font>
                     </control>
                     <control type="list" id="11">
-                        <posx>0</posx>
-                        <posy>180</posy>
+                        <left>0</left>
+                        <top>180</top>
                         <width>489</width>
                         <height>741</height>
                         <onup>11</onup>
@@ -100,16 +100,16 @@
                         <scrolltime>200</scrolltime>
                         <itemlayout height="74">
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
+                                <left>0</left>
+                                <top>0</top>
                                 <width>489</width>
                                 <height>74</height>
                                 <texture>settings/settings_radiobuttonoff.png</texture>
                                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                             </control>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
+                                <left>0</left>
+                                <top>0</top>
                                 <width>74</width>
                                 <height>74</height>
                                 <aspectratio>keep</aspectratio>
@@ -118,8 +118,8 @@
                                 <colordiffuse>88FFFFFF</colordiffuse>
                             </control>
                             <control type="label">
-                                <posx>74</posx>
-                                <posy>0</posy>
+                                <left>74</left>
+                                <top>0</top>
                                 <width>415</width>
                                 <height>74</height>
                                 <textoffsetx>15</textoffsetx>
@@ -130,8 +130,8 @@
                         </itemlayout>
                         <focusedlayout height="74">
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
+                                <left>0</left>
+                                <top>0</top>
                                 <width>489</width>
                                 <height>74</height>
                                 <texture>settings/settings_radiobuttonoff.png</texture>
@@ -139,8 +139,8 @@
                                 <visible>!Control.HasFocus(11)</visible>
                             </control>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
+                                <left>0</left>
+                                <top>0</top>
                                 <width>489</width>
                                 <height>74</height>
                                 <texture border="8">views/tripanel/listselect_fo.png</texture>
@@ -148,8 +148,8 @@
                                 <visible>Control.HasFocus(11)</visible>
                             </control>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
+                                <left>0</left>
+                                <top>0</top>
                                 <width>74</width>
                                 <height>74</height>
                                 <aspectratio>keep</aspectratio>
@@ -157,8 +157,8 @@
                                 <bordersize>8</bordersize>
                             </control>
                             <control type="label">
-                                <posx>74</posx>
-                                <posy>0</posy>
+                                <left>74</left>
+                                <top>0</top>
                                 <width>415</width>
                                 <height>74</height>
                                 <textoffsetx>15</textoffsetx>
@@ -169,18 +169,18 @@
                     </control>
                 </control>
                 <control type="group">
-                    <posx>1365</posx>
-                    <posy>0</posy>
+                    <left>1365</left>
+                    <top>0</top>
                     <control type="label" id="22">
-                        <posy>120</posy>
+                        <top>120</top>
                         <width>489</width>
                         <height>60</height>
                         <textoffsetx>15</textoffsetx>
                         <font>Font_Bold34_Caps</font>
                     </control>
                     <control type="list" id="12">
-                        <posx>0</posx>
-                        <posy>180</posy>
+                        <left>0</left>
+                        <top>180</top>
                         <width>489</width>
                         <height>741</height>
                         <onup>12</onup>
@@ -190,16 +190,16 @@
                         <scrolltime>200</scrolltime>
                         <itemlayout height="74">
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
+                                <left>0</left>
+                                <top>0</top>
                                 <width>489</width>
                                 <height>74</height>
                                 <texture>settings/settings_radiobuttonoff.png</texture>
                                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                             </control>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
+                                <left>0</left>
+                                <top>0</top>
                                 <width>74</width>
                                 <height>74</height>
                                 <aspectratio>keep</aspectratio>
@@ -208,8 +208,8 @@
                                 <colordiffuse>88FFFFFF</colordiffuse>
                             </control>
                             <control type="label">
-                                <posx>74</posx>
-                                <posy>0</posy>
+                                <left>74</left>
+                                <top>0</top>
                                 <width>415</width>
                                 <height>74</height>
                                 <textoffsetx>15</textoffsetx>
@@ -220,8 +220,8 @@
                         </itemlayout>
                         <focusedlayout height="74">
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
+                                <left>0</left>
+                                <top>0</top>
                                 <width>489</width>
                                 <height>74</height>
                                 <texture>settings/settings_radiobuttonoff.png</texture>
@@ -229,8 +229,8 @@
                                 <visible>!Control.HasFocus(12)</visible>
                             </control>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
+                                <left>0</left>
+                                <top>0</top>
                                 <width>489</width>
                                 <height>74</height>
                                 <texture border="8">views/tripanel/listselect_fo.png</texture>
@@ -238,8 +238,8 @@
                                 <visible>Control.HasFocus(12)</visible>
                             </control>
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
+                                <left>0</left>
+                                <top>0</top>
                                 <width>74</width>
                                 <height>74</height>
                                 <aspectratio>keep</aspectratio>
@@ -247,8 +247,8 @@
                                 <bordersize>8</bordersize>
                             </control>
                             <control type="label">
-                                <posx>74</posx>
-                                <posy>0</posy>
+                                <left>74</left>
+                                <top>0</top>
                                 <width>415</width>
                                 <height>74</height>
                                 <textoffsetx>15</textoffsetx>
@@ -259,8 +259,8 @@
                     </control>
                 </control>
                 <control type="grouplist" id="9000">
-                    <posx>63</posx>
-                    <posy>180</posy>
+                    <left>63</left>
+                    <top>180</top>
                     <width>326</width>
                     <height>768</height>
                     <onleft>13</onleft>

@@ -16,16 +16,16 @@
         </control>
         <control type="image">
             <description>Main background</description>
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1920</width>
             <height>1080</height>
             <texture>common/bgcolor.png</texture>
         </control>
         <control type="image" id="101">
             <description>The spinning animation in the background</description>
-            <posx>923</posx>
-            <posy>503</posy>
+            <left>923</left>
+            <top>503</top>
             <width>74</width>
             <height>74</height>
             <texture>loader.gif</texture>
@@ -35,8 +35,8 @@
         </control>
         <control type="wraplist" id="100">
             <description>List of Images</description>
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1920</width>
             <height>1080</height>
             <scrolltime tween="cubic" easing="inout">500</scrolltime>
@@ -45,8 +45,8 @@
             <itemlayout width="1920" height="1080">
                 <control type="largeimage">
                     <description>Picture in ratio scale</description>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>1920</width>
                     <height>1080</height>
                     <aspectratio>scale</aspectratio>
@@ -55,8 +55,8 @@
                 </control>
                 <control type="largeimage">
                     <description>Picture in ratio keep (default)</description>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>1920</width>
                     <height>1080</height>
                     <aspectratio>keep</aspectratio>
@@ -67,8 +67,8 @@
             <focusedlayout width="1920" height="1080">
                 <control type="largeimage">
                     <description>Picture in ratio scale</description>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>1920</width>
                     <height>1080</height>
                     <aspectratio>scale</aspectratio>
@@ -77,8 +77,8 @@
                 </control>
                 <control type="largeimage">
                     <description>Picture in ratio keep (default)</description>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>1920</width>
                     <height>1080</height>
                     <aspectratio>keep</aspectratio>
@@ -94,7 +94,7 @@
                     </animation>
                     <control type="image">
                         <description>Description background</description>
-                        <posy>780</posy>
+                        <top>780</top>
                         <width>1920</width>
                         <height>651</height>
                         <texture>views/lowlist_panelback.png</texture>
@@ -102,8 +102,8 @@
                     </control>
                     <control type="textbox">
                         <description>Description text</description>
-                        <posx>30</posx>
-                        <posy>840</posy>
+                        <left>30</left>
+                        <top>840</top>
                         <width>1860</width>
                         <height>220</height>
                         <align>left</align>
@@ -129,7 +129,7 @@
                     <colordiffuse>$VAR[ExtendedColorVar]</colordiffuse>
                 </control>
                 <control type="image">
-                    <posy>-40</posy>
+                    <top>-40</top>
                     <width>1920</width>
                     <height>115</height>
                     <texture>views/logo_tagline_gradient.png</texture>
@@ -137,8 +137,8 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posx>10</posx>
-                <posy>0</posy>
+                <left>10</left>
+                <top>0</top>
                 <width>1500</width>
                 <itemgap>10</itemgap>
                 <orientation>horizontal</orientation>
@@ -156,7 +156,7 @@
             </control>
             <control type="label">
                 <description>Label TYPE: (CurrentPage/NumPages)</description>
-                <posx>1910</posx>
+                <left>1910</left>
                 <align>right</align>
                 <label>$INFO[Window.Property(Category)] ($INFO[Container(100).CurrentPage]/$INFO[Container(100).NumPages])</label>
                 <include>BreadcrumbsLabel</include>
@@ -164,8 +164,8 @@
             </control>
             <control type="image">
                 <description>Arrow left</description>
-                <posx>10</posx>
-                <posy>480</posy>
+                <left>10</left>
+                <top>480</top>
                 <width>49</width>
                 <height>55</height>
                 <texture>views/multiplex_arrow2.png</texture>
@@ -173,8 +173,8 @@
             </control>
             <control type="image">
                 <description>Arrow right</description>
-                <posx>1861</posx>
-                <posy>480</posy>
+                <left>1861</left>
+                <top>480</top>
                 <width>49</width>
                 <height>55</height>
                 <texture>views/multiplex_arrow.png</texture>
@@ -184,8 +184,8 @@
         <control type="label">
             <label></label>
             <description>TEST label</description>
-            <posx>240</posx>
-            <posy>200</posy>
+            <left>240</left>
+            <top>200</top>
             <width>800</width>
             <height>20</height>
             <align>center</align>

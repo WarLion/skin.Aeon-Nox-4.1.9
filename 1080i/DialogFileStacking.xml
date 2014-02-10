@@ -2,8 +2,8 @@
 <window>
     <defaultcontrol>450</defaultcontrol>
     <coordinates>
-        <posx>472</posx>
-        <posy>390</posy>
+        <left>472</left>
+        <top>390</top>
         <system>1</system>
     </coordinates>
     <animation type="WindowOpen" reversible="false">
@@ -17,8 +17,8 @@
     <controls>
         <include>Dialogs_Tablet</include>
         <control type="list" id="450">
-            <posx>352</posx>
-            <posy>18</posy>
+            <left>352</left>
+            <top>18</top>
             <width>720</width>
             <height>150</height>
             <align>center</align>
@@ -46,7 +46,7 @@
             </focusedlayout>
         </control>
         <control type="label">
-            <posy>82</posy>
+            <top>82</top>
             <width>855</width>
             <height>33</height>
             <align>center</align>

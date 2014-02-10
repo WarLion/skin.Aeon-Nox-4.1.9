@@ -2,15 +2,15 @@
 <includes>
     <include name="MovieWallIcons">
         <control type="image">
-            <posx>120</posx>
-            <posy>4</posy>
+            <left>120</left>
+            <top>4</top>
             <width>60</width>
             <height>60</height>
             <include>OverlayVisibility0</include>
         </control>
         <control type="image">
-            <posx>-4</posx>
-            <posy>-2</posy>
+            <left>-4</left>
+            <top>-2</top>
             <width>192</width>
             <height>277</height>
             <texture>wall/boxes/wall_movie_overlay.png</texture>
@@ -20,23 +20,23 @@
     </include>
     <include name="WallIcons">
         <control type="image">
-            <posx>12</posx>
-            <posy>11</posy>
+            <left>12</left>
+            <top>11</top>
             <width>185</width>
             <height>182</height>
             <aspectratio scalediffuse="false">scale</aspectratio>
             <texture background="true" diffuse="thumbs/boxes/cdcover_mask.png" fallback="DefaultAudio.png">$VAR[ListAlbumVar]</texture>
         </control>
         <control type="image">
-            <posy>1</posy>
+            <top>1</top>
             <width>208</width>
             <height>204</height>
             <texture>wall/boxes/wall_overlay.png</texture>
             <visible>!Container.Content(artists)</visible>
         </control>
         <control type="image">
-            <posx>148</posx>
-            <posy>6</posy>
+            <left>148</left>
+            <top>6</top>
             <width>50</width>
             <height>50</height>
             <include>OverlayVisibility0</include>
@@ -45,7 +45,7 @@
     <include name="WallContent">
         <itemlayout height="268" width="275" condition="![Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(musicvideos) | [Window.IsActive(videolibrary) + Container.Content(genres)] | [Window.IsActive(pictures) + Substring(Container.FolderPath,\comics\)]] + [Skin.HasSetting(titlewall) | StringCompare(Container.FolderName,youtube)]">
             <control type="image">
-                <posx>5</posx>
+                <left>5</left>
                 <width>265</width>
                 <height>185</height>
                 <aspectratio aligny="top">keep</aspectratio>
@@ -54,7 +54,7 @@
                 <bordersize>5</bordersize>
             </control>
             <control type="image">
-                <posx>5</posx>
+                <left>5</left>
                 <width>265</width>
                 <height>185</height>
                 <texture background="true">common/bgcolor.png</texture>
@@ -64,7 +64,7 @@
             <control type="group">
                 <visible>!Container.Content(artists)</visible>
                 <control type="label">
-                    <posy>195</posy>
+                    <top>195</top>
                     <width>276</width>
                     <textoffsetx>15</textoffsetx>
                     <label>$INFO[ListItem.Label2]</label>
@@ -72,8 +72,8 @@
                     <textcolor>grey2</textcolor>
                 </control>
                 <control type="label">
-                    <posx>276</posx>
-                    <posy>195</posy>
+                    <left>276</left>
+                    <top>195</top>
                     <width>276</width>
                     <textoffsetx>15</textoffsetx>
                     <align>right</align>
@@ -82,7 +82,7 @@
                     <textcolor>grey2</textcolor>
                 </control>
                 <control type="label">
-                    <posy>230</posy>
+                    <top>230</top>
                     <width>276</width>
                     <textoffsetx>15</textoffsetx>
                     <label>$INFO[ListItem.Label]</label>
@@ -91,8 +91,8 @@
                 </control>
             </control>
             <control type="label">
-                <posx>138</posx>
-                <posy>210</posy>
+                <left>138</left>
+                <top>210</top>
                 <width>276</width>
                 <textoffsetx>15</textoffsetx>
                 <align>center</align>
@@ -110,7 +110,7 @@
                 <texture border="8">views/tripanel/listselect_fo.png</texture>
             </control>
             <control type="image">
-                <posx>5</posx>
+                <left>5</left>
                 <width>265</width>
                 <height>185</height>
                 <aspectratio aligny="top">keep</aspectratio>
@@ -121,15 +121,15 @@
             <control type="group">
                 <visible>!Container.Content(artists)</visible>
                 <control type="label">
-                    <posy>195</posy>
+                    <top>195</top>
                     <width>276</width>
                     <textoffsetx>15</textoffsetx>
                     <label>$INFO[ListItem.Label2]</label>
                     <font>Font_Reg26</font>
                 </control>
                 <control type="label">
-                    <posx>276</posx>
-                    <posy>195</posy>
+                    <left>276</left>
+                    <top>195</top>
                     <width>276</width>
                     <textoffsetx>15</textoffsetx>
                     <align>right</align>
@@ -137,7 +137,7 @@
                     <font>Font_Reg26</font>
                 </control>
                 <control type="label">
-                    <posy>230</posy>
+                    <top>230</top>
                     <width>276</width>
                     <textoffsetx>15</textoffsetx>
                     <label>$INFO[ListItem.Label]</label>
@@ -146,8 +146,8 @@
                 </control>
             </control>
             <control type="label">
-                <posx>138</posx>
-                <posy>210</posy>
+                <left>138</left>
+                <top>210</top>
                 <width>276</width>
                 <textoffsetx>15</textoffsetx>
                 <align>center</align>
@@ -167,8 +167,8 @@
                     <bordersize>5</bordersize>
                 </control>
                 <control type="image">
-                    <posx>30</posx>
-                    <posy>18</posy>
+                    <left>30</left>
+                    <top>18</top>
                     <width>831</width>
                     <height>121</height>
                     <aspectratio align="left">keep</aspectratio>
@@ -176,8 +176,8 @@
                     <visible>IsEmpty(ListItem.Art(banner)) + IsEmpty(ListItem.Art(tvshow.banner))</visible>
                 </control>
                 <control type="label">
-                    <posx>416</posx>
-                    <posy>8</posy>
+                    <left>416</left>
+                    <top>8</top>
                     <width>816</width>
                     <height>146</height>
                     <align>center</align>
@@ -187,8 +187,8 @@
                     <visible>IsEmpty(ListItem.Art(banner)) + IsEmpty(ListItem.Art(tvshow.banner)) + IsEmpty(ListItem.Art(clearlogo))</visible>
                 </control>
                 <control type="image">
-                    <posx>735</posx>
-                    <posy>6</posy>
+                    <left>735</left>
+                    <top>6</top>
                     <width>90</width>
                     <height>90</height>
                     <include>OverlayVisibility0</include>
@@ -207,7 +207,7 @@
         <focusedlayout height="161" width="831" condition="[Container.Content(movies) + Skin.HasSetting(MovieWallBanner)] | [Container.Content(tvshows) + Skin.HasSetting(TVWallBanner)]">
             <control type="group">
                 <control type="image">
-                    <posy>2</posy>
+                    <top>2</top>
                     <width>831</width>
                     <height>157</height>
                     <aspectratio>stretch</aspectratio>
@@ -222,8 +222,8 @@
                     <bordersize>5</bordersize>
                 </control>
                 <control type="image">
-                    <posx>30</posx>
-                    <posy>18</posy>
+                    <left>30</left>
+                    <top>18</top>
                     <width>831</width>
                     <height>121</height>
                     <aspectratio align="left">keep</aspectratio>
@@ -231,8 +231,8 @@
                     <visible>IsEmpty(ListItem.Art(banner)) + IsEmpty(ListItem.Art(tvshow.banner))</visible>
                 </control>
                 <control type="label">
-                    <posx>416</posx>
-                    <posy>8</posy>
+                    <left>416</left>
+                    <top>8</top>
                     <width>816</width>
                     <height>146</height>
                     <align>center</align>
@@ -243,8 +243,8 @@
                 </control>
                 <include>UnwatchedIcon</include>
                 <control type="image">
-                    <posx>735</posx>
-                    <posy>5</posy>
+                    <left>735</left>
+                    <top>5</top>
                     <width>90</width>
                     <height>90</height>
                     <include>OverlayVisibility0</include>
@@ -253,8 +253,8 @@
         </focusedlayout>
         <itemlayout width="185" height="268" condition="[[Container.Content(movies) + !Skin.HasSetting(MovieWallBanner)] | [Container.Content(tvshows) + !Skin.HasSetting(TVWallBanner)] | Container.Content(seasons) | Container.Content(sets) | Container.Content(musicvideos) | [Window.IsActive(videolibrary) + Container.Content(genres)] | [Window.IsActive(pictures) + Substring(Container.FolderPath,\comics\)]]">
             <control type="image">
-                <posx>-14</posx>
-                <posy>-14</posy>
+                <left>-14</left>
+                <top>-14</top>
                 <width>212</width>
                 <height>296</height>
                 <aspectratio scalediffuse="false">scale</aspectratio>
@@ -263,8 +263,8 @@
             </control>
             <include>MovieWallIcons</include>
             <control type="image">
-                <posx>4</posx>
-                <posy>4</posy>
+                <left>4</left>
+                <top>4</top>
                 <width>177</width>
                 <height>260</height>
                 <texture diffuse="wall/wall_movie_mask.png">common/bgcolor.png</texture>
@@ -283,8 +283,8 @@
                 <animation effect="slide" end="20,0" time="320" reversible="false" tween="cubic" condition="Container(500).Column(0) + Skin.HasSetting(wallfullscreen)">Conditional</animation>
                 <animation effect="slide" end="-20,0" time="320" reversible="false" tween="cubic" condition="Container(500).Column(8) + Skin.HasSetting(wallfullscreen)">Conditional</animation>
                 <control type="image">
-                    <posx>-14</posx>
-                    <posy>-14</posy>
+                    <left>-14</left>
+                    <top>-14</top>
                     <width>212</width>
                     <height>296</height>
                     <aspectratio scalediffuse="false">scale</aspectratio>
@@ -313,8 +313,8 @@
     </include>
     <include name="WallHorizontal">
         <control type="panel" id="500">
-            <posx>129</posx>
-            <posy>124</posy>
+            <left>129</left>
+            <top>124</top>
             <width>1665</width>
             <height>820</height>
             <visible>!IsEmpty(Container.FolderPath) | Window.IsActive(videoplaylist)</visible>
@@ -334,8 +334,8 @@
     </include>
     <include name="WallVertical">
         <control type="scrollbar" id="72">
-            <posx>1774</posx>
-            <posy>132</posy>
+            <left>1774</left>
+            <top>132</top>
             <width>46</width>
             <height>802</height>
             <include>Animation_VerticalScrollBar</include>
@@ -343,8 +343,8 @@
             <onright>9000</onright>
         </control>
         <control type="panel" id="500">
-            <posx>129</posx>
-            <posy>124</posy>
+            <left>129</left>
+            <top>124</top>
             <width>1665</width>
             <height>805</height>
             <visible>!IsEmpty(Container.FolderPath) | Window.IsActive(videoplaylist)</visible>
@@ -367,8 +367,8 @@
             <visible>Control.IsVisible(500)</visible>
             <include>Animation_Widgets</include>
             <control type="image">
-                <posx>147</posx>
-                <posy>147</posy>
+                <left>147</left>
+                <top>147</top>
                 <width>1628</width>
                 <height>765</height>
                 <texture background="true">wall/wall_movie_squares.png</texture>
@@ -377,8 +377,8 @@
                 <animation effect="zoom" end="113" center="960,600" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(wallfullscreen)">Conditional</animation>
             </control>
             <control type="image">
-                <posx>144</posx>
-                <posy>140</posy>
+                <left>144</left>
+                <top>140</top>
                 <width>1632</width>
                 <height>775</height>
                 <texture background="true">wall/wall_squares.png</texture>
@@ -391,8 +391,8 @@
                 <include>Animation_VisibleChange400</include>
                 <visible>[!Skin.HasSetting(WallVertical) + Control.IsVisible(500) + !Window.IsActive(musiclibrary)] | [!Skin.HasSetting(WallMusicVertical) + Control.IsVisible(500) + Window.IsActive(musiclibrary)]</visible>
                 <control type="image">
-                    <posx>86</posx>
-                    <posy>150</posy>
+                    <left>86</left>
+                    <top>150</top>
                     <width>30</width>
                     <height>786</height>
                     <texture>wall/wall_arrow.png</texture>
@@ -400,8 +400,8 @@
                     <animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
                 </control>
                 <control type="image">
-                    <posx>1804</posx>
-                    <posy>150</posy>
+                    <left>1804</left>
+                    <top>150</top>
                     <width>30</width>
                     <height>786</height>
                     <texture flipx="true">wall/wall_arrow.png</texture>
@@ -412,8 +412,8 @@
             <include condition="!Skin.HasSetting(WallVertical)">WallHorizontal</include>
             <include condition="Skin.HasSetting(WallVertical)">WallVertical</include>
             <control type="label">
-                <posx>150</posx>
-                <posy>1022</posy>
+                <left>150</left>
+                <top>1022</top>
                 <width>1622</width>
                 <height>5</height>
                 <align>center</align>

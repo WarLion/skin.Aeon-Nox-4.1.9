@@ -81,39 +81,39 @@
                 <effect type="slide" time="240" end="0,135" easing="in" tween="cubic" />
             </animation>
             <control type="image">
-                <posy>188r</posy>
+                <top>188r</top>
                 <width>1920</width>
                 <height>188</height>
                 <texture>osd/osd_back.png</texture>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
             <control type="group">
-                <posy>860</posy>
+                <top>860</top>
                 <include>Neon_Topbar</include>
             </control>
             <control type="image">
-                <posx>22</posx>
-                <posy>148r</posy>
+                <left>22</left>
+                <top>148r</top>
                 <width>40</width>
                 <height>40</height>
                 <texture flipx="true">arrowright.png</texture>
                 <colordiffuse>$VAR[TitleColorVar]</colordiffuse>
             </control>
             <control type="image">
-                <posx>74r</posx>
-                <posy>148r</posy>
+                <left>74r</left>
+                <top>148r</top>
                 <width>40</width>
                 <height>40</height>
                 <texture>arrowright.png</texture>
                 <colordiffuse>$VAR[TitleColorVar]</colordiffuse>
             </control>
             <control type="group">
-                <posx>-54</posx>
-                <posy>588</posy>
+                <left>-54</left>
+                <top>588</top>
                 <visible>![Skin.HasSetting(bigfanclearart) | Skin.HasSetting(bigfanlandscape) | Skin.HasSetting(bigfanlogo)] | Container.Content(genres)</visible>
                 <control type="image">
-                    <posx>164</posx>
-                    <posy>166</posy>
+                    <left>164</left>
+                    <top>166</top>
                     <width>204</width>
                     <height>303</height>
                     <aspectratio scalediffuse="false">scale</aspectratio>
@@ -121,8 +121,8 @@
                     <fadetime>275</fadetime>
                 </control>
                 <control type="image">
-                    <posx>144</posx>
-                    <posy>146</posy>
+                    <left>144</left>
+                    <top>146</top>
                     <width>243</width>
                     <height>342</height>
                     <aspectratio scalediffuse="false">stretch</aspectratio>
@@ -131,8 +131,8 @@
                     <bordersize>19</bordersize>
                 </control>
                 <control type="image">
-                    <posx>308</posx>
-                    <posy>166</posy>
+                    <left>308</left>
+                    <top>166</top>
                     <width>60</width>
                     <height>60</height>
                     <include>OverlayVisibility0</include>
@@ -141,8 +141,8 @@
             <control type="group">
                 <visible>[Skin.HasSetting(bigfanclearart) | Skin.HasSetting(bigfanlandscape) | Skin.HasSetting(bigfanlogo)] + !Container.Content(genres)</visible>
                 <control type="image">
-                    <posx>75</posx>
-                    <posy>915</posy>
+                    <left>75</left>
+                    <top>915</top>
                     <width>270</width>
                     <height>152</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
@@ -155,8 +155,8 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posx>352</posx>
-                <posy>159r</posy>
+                <left>352</left>
+                <top>159r</top>
                 <width>1500</width>
                 <height>60</height>
                 <itemgap>10</itemgap>
@@ -171,7 +171,7 @@
                     <scroll>true</scroll>
                 </control>
                 <control type="image">
-                    <posy>-2</posy>
+                    <top>-2</top>
                     <width>55</width>
                     <height>55</height>
                     <texture>$VAR[WatchedIconVar]</texture>
@@ -179,8 +179,8 @@
                 </control>
             </control>
             <control type="label">
-                <posx>352</posx>
-                <posy>98r</posy>
+                <left>352</left>
+                <top>98r</top>
                 <width>720</width>
                 <height>52</height>
                 <label>$VAR[TriPanelValue2Var]</label>
@@ -189,8 +189,8 @@
                 <visible>!Container.Content(seasons)</visible>
             </control>
             <control type="label">
-                <posx>352</posx>
-                <posy>98r</posy>
+                <left>352</left>
+                <top>98r</top>
                 <width>720</width>
                 <height>52</height>
                 <label>$INFO[ListItem.TvShowTitle]</label>
@@ -199,8 +199,8 @@
                 <visible>Container.Content(seasons)</visible>
             </control>
             <control type="label">
-                <posx>352</posx>
-                <posy>60r</posy>
+                <left>352</left>
+                <top>60r</top>
                 <width>700</width>
                 <height>52</height>
                 <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[12391]]$INFO[ListItem.RatingAndVotes, • ]</label>
@@ -209,8 +209,8 @@
                 <visible>Container.Content(movies) | Container.Content(sets)</visible>
             </control>
             <control type="label">
-                <posx>352</posx>
-                <posy>60r</posy>
+                <left>352</left>
+                <top>60r</top>
                 <width>1500</width>
                 <height>52</height>
                 <label>$INFO[ListItem.Label2] [LOWERCASE]$INFO[ListItem.Property(UnWatchedEpisodes),($LOCALIZE[16101]: ,)][/LOWERCASE]</label>
@@ -219,8 +219,8 @@
                 <visible>Container.Content(tvshows)</visible>
             </control>
             <control type="label">
-                <posx>352</posx>
-                <posy>60r</posy>
+                <left>352</left>
+                <top>60r</top>
                 <width>1500</width>
                 <height>52</height>
                 <label>$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20360]]$INFO[ListItem.Property(UnWatchedEpisodes), ($LOCALIZE[16101]: ,)]</label>

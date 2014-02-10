@@ -37,12 +37,12 @@
             <animation effect="fade" start="100" end="0" time="0" condition="true">conditional</animation>
         </control>
         <control type="group">
-            <posx>240</posx>
-            <posy>-60</posy>
+            <left>240</left>
+            <top>-60</top>
             <include>Animation_OpenCloseZoom</include>
             <control type="image">
-                <posx>230</posx>
-                <posy>120</posy>
+                <left>230</left>
+                <top>120</top>
                 <width>1020</width>
                 <height>780</height>
                 <texture border="20">osd/osd_settings_back_glow.png</texture>
@@ -51,16 +51,16 @@
                 <include>PanelGlowFade</include>
             </control>
             <control type="image">
-                <posx>230</posx>
-                <posy>120</posy>
+                <left>230</left>
+                <top>120</top>
                 <width>1020</width>
                 <height>780</height>
                 <texture border="20">osd/osd_settings_back.png</texture>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
             <control type="label">
-                <posx>100</posx>
-                <posy>180</posy>
+                <left>100</left>
+                <top>180</top>
                 <width>746</width>
                 <height>40</height>
                 <align>center</align>
@@ -68,8 +68,8 @@
                 <font>Font_Reg31_Caps</font>
             </control>
             <control type="label">
-                <posx>550</posx>
-                <posy>180</posy>
+                <left>550</left>
+                <top>180</top>
                 <width>746</width>
                 <height>40</height>
                 <align>center</align>
@@ -77,8 +77,8 @@
                 <font>Font_Reg31_Caps</font>
             </control>
             <control type="panel" id="4">
-                <posx>250</posx>
-                <posy>240</posy>
+                <left>250</left>
+                <top>240</top>
                 <width>600</width>
                 <height>540</height>
                 <aligny>center</aligny>
@@ -198,8 +198,8 @@
                 </content>
             </control>
             <control type="grouplist" id="5">
-                <posx>700</posx>
-                <posy>240</posy>
+                <left>700</left>
+                <top>240</top>
                 <width>1172</width>
                 <height>720</height>
                 <aligny>center</aligny>

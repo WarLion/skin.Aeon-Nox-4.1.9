@@ -24,8 +24,8 @@
             <control type="group">
                 <animation effect="fade" start="100" end="0" time="160" tween="cubic" easing="inout" condition="Window.IsActive(DialogPVRChannelManager.xml)">Conditional</animation>
                 <control type="grouplist" id="3">
-                    <posx>63</posx>
-                    <posy>180</posy>
+                    <left>63</left>
+                    <top>180</top>
                     <width>326</width>
                     <height>768</height>
                     <onleft>ActivateWindow(1121)</onleft>
@@ -34,16 +34,16 @@
                     <ondown>20</ondown>
                 </control>
                 <control type="label">
-                    <posx>358</posx>
-                    <posy>-800</posy>
+                    <left>358</left>
+                    <top>-800</top>
                     <width>1491</width>
                     <align>center</align>
                     <label>$INFO[Control.GetLabel(2)] - $LOCALIZE[5]</label>
                     <font>Font_ShowcaseMainLabel2</font>
                 </control>
                 <control type="grouplist" id="5">
-                    <posx>387</posx>
-                    <posy>180</posy>
+                    <left>387</left>
+                    <top>180</top>
                     <width>1469</width>
                     <height>742</height>
                     <pagecontrol>60</pagecontrol>
@@ -53,8 +53,8 @@
                     <ondown>5</ondown>
                 </control>
                 <control type="image">
-                    <posx>1000</posx>
-                    <posy>918</posy>
+                    <left>1000</left>
+                    <top>918</top>
                     <width>30</width>
                     <height>20</height>
                     <texture>arrowdown.png</texture>
@@ -63,8 +63,8 @@
                     <visible>Container(5).HasNext</visible>
                 </control>
                 <control type="scrollbar" id="60">
-                    <posx>1834</posx>
-                    <posy>150</posy>
+                    <left>1834</left>
+                    <top>150</top>
                     <width>46</width>
                     <height>800</height>
                     <include>Animation_VerticalScrollBar</include>
@@ -93,7 +93,7 @@
             </control>
             <control type="spincontrolex" id="9">
                 <include>Default_SettingButton</include>
-                <spinposx>40</spinposx>
+                <spinleft>40</spinleft>
             </control>
             <control type="image" id="11">
                 <include>HiddenObject</include>
@@ -110,15 +110,15 @@
         </control>
         <include>Furniture_NowPlayingWidget</include>
 		<control type="label">
-			<posx>194</posx>
-			<posy>700</posy>
+			<left>194</left>
+			<top>700</top>
 			<width>294</width>
 			<font>Font_Bold22_Caps</font>	
 			<label>$LOCALIZE[32967]</label>		
 		</control>
 		<control type="button" id="20">
-			<posx>144</posx>
-			<posy>870</posy>
+			<left>144</left>
+			<top>870</top>
 			<width>294</width>
 			<onleft>ActivateWindow(1121)</onleft>
 			<onright>5</onright>

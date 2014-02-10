@@ -4,13 +4,13 @@
     <allowoverlay>no</allowoverlay>
     <controls>
         <control type="group">
-            <posx>280</posx>
-            <posy>-60</posy>
+            <left>280</left>
+            <top>-60</top>
             <include>Animation_OpenCloseZoom</include>
             <visible>!Window.IsActive(script-RSS_Editor-rssEditor.xml)</visible>
             <control type="image">
-                <posx>230</posx>
-                <posy>200</posy>
+                <left>230</left>
+                <top>200</top>
                 <width>940</width>
                 <height>540</height>
                 <texture border="20">osd/osd_settings_back_glow.png</texture>
@@ -19,16 +19,16 @@
                 <include>PanelGlowFade</include>
             </control>
             <control type="image">
-                <posx>230</posx>
-                <posy>200</posy>
+                <left>230</left>
+                <top>200</top>
                 <width>940</width>
                 <height>540</height>
                 <texture border="20">osd/osd_settings_back.png</texture>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
             <control type="panel" id="4">
-                <posx>250</posx>
-                <posy>240</posy>
+                <left>250</left>
+                <top>240</top>
                 <width>900</width>
                 <height>600</height>
                 <aligny>center</aligny>

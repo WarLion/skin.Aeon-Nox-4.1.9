@@ -3,8 +3,8 @@
     <defaultcontrol>1000</defaultcontrol>
     <zorder>6</zorder>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <include>Animation_DialogZoom</include>
@@ -173,14 +173,14 @@
             </control>
         </control>
         <control type="image" id="997">
-            <posy>-39</posy>
+            <top>-39</top>
             <width>462</width>
             <height>39</height>
             <texture>$VAR[ContextTopVar]</texture>
             <colordiffuse>$VAR[SpotColorVar2]</colordiffuse>
         </control>
         <control type="image" id="998">
-            <posy>585</posy>
+            <top>585</top>
             <width>462</width>
             <height>40</height>
             <texture>$VAR[ContextBottomVar]</texture>

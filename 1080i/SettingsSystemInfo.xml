@@ -20,23 +20,23 @@
             <include>Furniture_SettingsBackPanel2</include>
             <include>Furniture_SettingsInternalBackPanel</include>
             <control type="image">
-                <posx>498</posx>
-                <posy>87</posy>
+                <left>498</left>
+                <top>87</top>
                 <width>1260</width>
                 <height>708</height>
                 <texture background="true">special://skin/backgrounds/system/systeminfo.jpg</texture>
             </control>
             <control type="image">
-                <posx>498</posx>
-                <posy>87</posy>
+                <left>498</left>
+                <top>87</top>
                 <width>1260</width>
                 <height>708</height>
                 <texture>common/bgcolor.png</texture>
                 <animation effect="fade" start="95" end="60" time="4000" pulse="true" condition="true">conditional</animation>
             </control>
             <control type="grouplist" id="7000">
-                <posx>63</posx>
-                <posy>180</posy>
+                <left>63</left>
+                <top>180</top>
                 <width>434</width>
                 <height>1080</height>
                 <onup>7000</onup>
@@ -122,80 +122,80 @@
                 </control>
             </control>
             <control type="group">
-                <posx>510</posx>
-                <posy>195</posy>
+                <left>510</left>
+                <top>195</top>
                 <control type="label" id="2">
-				    <posy>-700</posy>
+				    <top>-700</top>
                     <width>1125</width>
                     <label>-</label>
                     <font>Font_Bold34_Caps</font>
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label" id="3">
-                    <posy>-600</posy>
+                    <top>-600</top>
                     <width>1125</width>
                     <label>-</label>
                     <font>Font_Bold34_Caps</font>
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label" id="4">
-                    <posy>-500</posy>
+                    <top>-500</top>
                     <width>1425</width>
                     <label>-</label>
                     <font>Font_Bold34_Caps</font>
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label" id="5">
-                    <posy>-400</posy>
+                    <top>-400</top>
                     <width>1275</width>
                     <label>-</label>
                     <font>Font_Bold34_Caps</font>
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label" id="6">
-                    <posy>-300</posy>
+                    <top>-300</top>
                     <width>1125</width>
                     <label>-</label>
                     <font>Font_Bold34_Caps</font>
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label" id="7">
-                    <posy>-200</posy>
+                    <top>-200</top>
                     <width>1125</width>
                     <label>-</label>
                     <font>Font_Bold34_Caps</font>
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label" id="8">
-                    <posy>-100</posy>
+                    <top>-100</top>
                     <width>1125</width>
                     <label>-</label>
                     <font>Font_Bold34_Caps</font>
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label" id="9">
-                    <posy>0</posy>
+                    <top>0</top>
                     <width>1125</width>
                     <label>-</label>
                     <font>Font_Bold34_Caps</font>
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label" id="10">
-                    <posy>100</posy>
+                    <top>100</top>
                     <width>1125</width>
                     <label>-</label>
                     <font>Font_Bold34_Caps</font>
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label" id="11">
-                    <posy>472</posy>
+                    <top>472</top>
                     <width>1125</width>
                     <label>-</label>
                     <font>Font_Reg32</font>
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label" id="52">
-                    <posy>608</posy>
+                    <top>608</top>
                     <width>1050</width>
                     <aligny>top</aligny>
                     <label>144</label>
@@ -203,7 +203,7 @@
                     <textcolor>$VAR[FontColorVar]</textcolor>
                 </control>
                 <control type="label">
-                    <posy>648</posy>
+                    <top>648</top>
                     <width>1050</width>
                     <aligny>top</aligny>
                     <label>144</label>
@@ -212,7 +212,7 @@
                     <info>System.ProfileName</info>
                 </control>
                 <control type="label">
-                    <posy>720</posy>
+                    <top>720</top>
                     <width>525</width>
                     <height>38</height>
                     <label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
@@ -220,14 +220,14 @@
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="progress">
-                    <posy>764</posy>
+                    <top>764</top>
                     <width>480</width>
                     <height>21</height>
                     <info>System.CPUUsage</info>
                 </control>
                 <control type="label">
-                    <posx>530</posx>
-                    <posy>720</posy>
+                    <left>530</left>
+                    <top>720</top>
                     <width>525</width>
                     <height>38</height>
                     <label>$LOCALIZE[31309] $INFO[system.memory(used.percent)]</label>
@@ -235,8 +235,8 @@
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="progress">
-                    <posx>530</posx>
-                    <posy>764</posy>
+                    <left>530</left>
+                    <top>764</top>
                     <width>480</width>
                     <height>21</height>
                     <info>system.memory(used)</info>
@@ -246,8 +246,8 @@
                 <include>Furniture_SettingsInternalFrontPanel</include>
             </control>
             <control type="label">
-                <posx>358</posx>
-                <posy>-800</posy>
+                <left>358</left>
+                <top>-800</top>
                 <width>1491</width>
                 <align>center</align>
                 <label>$LOCALIZE[130]$INFO[System.FriendlyName, - ]</label>

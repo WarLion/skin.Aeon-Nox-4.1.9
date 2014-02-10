@@ -4,13 +4,13 @@
     <allowoverlay>no</allowoverlay>
     <controls>
         <control type="group">
-            <posy>-50</posy>
+            <top>-50</top>
             <include>Animation_DialogPopup</include>
             <!--             <visible>!Window.IsActive(1160) + !Window.IsActive(1137)</visible>
  -->
             <control type="image">
-                <posx>160</posx>
-                <posy>100</posy>
+                <left>160</left>
+                <top>100</top>
                 <width>1600</width>
                 <height>1000</height>
                 <texture>osd/osd_settings_back_glow.png</texture>
@@ -19,16 +19,16 @@
                 <include>PanelGlowFade</include>
             </control>
             <control type="image">
-                <posx>160</posx>
-                <posy>100</posy>
+                <left>160</left>
+                <top>100</top>
                 <width>1600</width>
                 <height>1000</height>
                 <texture>osd/osd_settings_back.png</texture>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
             <control type="label">
-                <posx>630</posx>
-                <posy>145</posy>
+                <left>630</left>
+                <top>145</top>
                 <width>572</width>
                 <height>60</height>
                 <textoffsety>10</textoffsety>
@@ -38,8 +38,8 @@
                 <textcolor>$VAR[TitleColorVar]</textcolor>
             </control>
             <control type="label">
-                <posx>630</posx>
-                <posy>600</posy>
+                <left>630</left>
+                <top>600</top>
                 <width>572</width>
                 <height>60</height>
                 <textoffsety>10</textoffsety>
@@ -49,8 +49,8 @@
                 <textcolor>$VAR[TitleColorVar]</textcolor>
             </control>
             <control type="grouplist" id="4">
-                <posx>185</posx>
-                <posy>240</posy>
+                <left>185</left>
+                <top>240</top>
                 <width>272</width>
                 <height>900</height>
                 <aligny>center</aligny>
@@ -135,8 +135,8 @@
                 </control>
             </control>
             <control type="grouplist" id="20">
-                <posx>457</posx>
-                <posy>240</posy>
+                <left>457</left>
+                <top>240</top>
                 <width>1172</width>
                 <height>900</height>
                 <aligny>center</aligny>
@@ -233,8 +233,8 @@
                 </control>
             </control>
             <control type="grouplist" id="220">
-                <posx>792</posx>
-                <posy>240</posy>
+                <left>792</left>
+                <top>240</top>
                 <width>1172</width>
                 <height>900</height>
                 <aligny>center</aligny>
@@ -355,8 +355,8 @@
                 </control>
             </control>
             <control type="grouplist" id="720">
-                <posx>1127</posx>
-                <posy>240</posy>
+                <left>1127</left>
+                <top>240</top>
                 <width>1172</width>
                 <height>900</height>
                 <aligny>center</aligny>

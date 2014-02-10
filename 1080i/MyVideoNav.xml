@@ -13,7 +13,7 @@
     <views>50,52,53,57,500,501,503,550,508,509,510,511,512,514,516,518</views>
     <controls>
         <control type="fadelabel" id="4325">
-            <posy>-10000</posy>
+            <top>-10000</top>
             <pauseatend>7500</pauseatend>
             <width>11479</width>
             <height>118</height>
@@ -191,8 +191,8 @@
                     <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
                 </animation>
                 <control type="image">
-                    <posx>2530</posx>
-                    <posy>704</posy>
+                    <left>2530</left>
+                    <top>704</top>
                     <width>280</width>
                     <height>280</height>
                     <aspectratio>keep</aspectratio>
@@ -204,8 +204,8 @@
                     </animation>
                 </control>
                 <control type="image">
-                    <posx>2530</posx>
-                    <posy>984</posy>
+                    <left>2530</left>
+                    <top>984</top>
                     <width>280</width>
                     <height>280</height>
                     <aspectratio>keep</aspectratio>
@@ -261,8 +261,8 @@
                 <visible>![Control.HasFocus(61) | Control.IsVisible(4050)]</visible>
                 <include>Animation_OpenCloseZoom_New</include>
                 <control type="image" id="8822">
-                    <posx>720</posx>
-                    <posy>978</posy>
+                    <left>720</left>
+                    <top>978</top>
                     <width>494</width>
                     <height>95</height>
                     <aspectratio scalediffuse="false">keep</aspectratio>
@@ -273,8 +273,8 @@
                     <visible>Control.IsVisible(57) | Control.IsVisible(508) | [Control.IsVisible(500) + !StringCompare(Container.FolderName,youtube)] | Control.IsVisible(501)</visible>
                 </control>
                 <control type="image" id="8822">
-                    <posx>817.5</posx>
-                    <posy>958</posy>
+                    <left>817.5</left>
+                    <top>958</top>
                     <width>300</width>
                     <height>105</height>
                     <aspectratio>keep</aspectratio>

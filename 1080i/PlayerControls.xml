@@ -23,8 +23,8 @@
             <animation effect="slide" end="0,-473" time="400" tween="cubic" delay="160" condition="Window.IsActive(1154)">Conditional</animation>
             <!--         <control type="button" id="451">
             
-            <posx>-30</posx>
-            <posy>-30</posy>
+            <left>-30</left>
+            <top>-30</top>
             <width>1</width>
             <height>1</height>
             <label>-</label>
@@ -44,19 +44,19 @@
                     <animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
                 </control>
                 <control type="group">
-                    <posy>355</posy>
+                    <top>355</top>
                     <visible>Player.HasVideo</visible>
                     <include condition="VideoPlayer.Content(LiveTV)">LiveTVVideoOSD</include>
                     <include condition="!VideoPlayer.Content(LiveTV)">DefaultVideoOSD</include>
                 </control>
                 <control type="group">
-                    <posy>355</posy>
+                    <top>355</top>
                     <visible>Player.HasAudio</visible>
                     <include condition="Skin.HasSetting(ClassicOSD)">ClassicMusicOSD</include>
                     <include condition="!Skin.HasSetting(ClassicOSD)">DefaultMusicOSD</include>
                 </control>
                 <control type="list" id="9011">
-                    <posy>472</posy>
+                    <top>472</top>
                     <width>1920</width>
                     <height>135</height>
                     <orientation>horizontal</orientation>
@@ -67,15 +67,15 @@
                     <focusposition>4</focusposition>
                     <itemlayout height="225" width="209">
                         <control type="image">
-                            <posx>63</posx>
+                            <left>63</left>
                             <width>88</width>
                             <height>88</height>
                             <texture>$INFO[ListItem.Thumb]</texture>
                             <colordiffuse>white5</colordiffuse>
                         </control>
                         <control type="label">
-                            <posx>107</posx>
-                            <posy>29</posy>
+                            <left>107</left>
+                            <top>29</top>
                             <width>213</width>
                             <height>120</height>
                             <align>center</align>
@@ -93,15 +93,15 @@
                             <visible>Control.HasFocus(9011)</visible>
                         </control>
                         <control type="image">
-                            <posx>63</posx>
+                            <left>63</left>
                             <width>88</width>
                             <height>88</height>
                             <texture>$INFO[ListItem.Thumb]</texture>
                             <colordiffuse>white2</colordiffuse>
                         </control>
                         <control type="label">
-                            <posx>107</posx>
-                            <posy>29</posy>
+                            <left>107</left>
+                            <top>29</top>
                             <width>213</width>
                             <height>120</height>
                             <align>center</align>
@@ -115,8 +115,8 @@
                 </control>
                 <control type="group">
                     <visible>!Skin.HasSetting(kioskmode)</visible>
-                    <posx>1881</posx>
-                    <posy>472</posy>
+                    <left>1881</left>
+                    <top>472</top>
                     <control type="button" id="9012">
                         <width>39</width>
                         <height>115</height>
@@ -134,7 +134,7 @@
                         <onclick condition="!IsEmpty(Window(home).Property(quicknavsetup))">ClearProperty(quicknavsetup,home)</onclick>
                     </control>
                     <control type="image">
-                        <posy>40</posy>
+                        <top>40</top>
                         <width>39</width>
                         <height>39</height>
                         <texture>$VAR[QuickConfigIconVar]</texture>
@@ -175,8 +175,8 @@
             <include>BottomProgressBar</include>
         </control>
         <!--         <control type="group">
-            <posx>100</posx>
-            <posy>-450</posy>
+            <left>100</left>
+            <top>-450</top>
             <animation effect="slide" start="700,0" end="0,0" time="500" tween="cubic" delay="1000">WindowOpen</animation>
             <animation effect="slide" end="700,0" time="500" tween="cubic">WindowClose</animation>
             <include>NextTracksList</include>

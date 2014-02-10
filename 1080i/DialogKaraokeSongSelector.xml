@@ -4,24 +4,24 @@
     <animation effect="slide" end="0,-60" delay="320" time="80">WindowClose</animation>
     <controls>
         <control type="group">
-            <posx>150</posx>
+            <left>150</left>
             <control type="image">
-                <posy>-15</posy>
+                <top>-15</top>
                 <width>555</width>
                 <height>105</height>
                 <texture flipy="true" border="30,30,30,3">InfoMessagePanel.png</texture>
             </control>
             <control type="label" id="401">
-                <posx>22</posx>
-                <posy>3</posy>
+                <left>22</left>
+                <top>3</top>
                 <width>510</width>
                 <height>38</height>
                 <font>Font_Reg29</font>
                 <textcolor>$VAR[FontColorVar]</textcolor>
             </control>
             <control type="label" id="402">
-                <posx>22</posx>
-                <posy>40</posy>
+                <left>22</left>
+                <top>40</top>
                 <width>510</width>
                 <height>30</height>
                 <font>Font_Reg29</font>

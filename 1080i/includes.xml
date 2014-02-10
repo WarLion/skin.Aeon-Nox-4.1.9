@@ -39,15 +39,15 @@
 	 <include file="Includes_VideoExtras.xml" />
     <constant name="AutoScrollTime">2000</constant>
     <include name="Dialogs_Group">
-        <posx>579</posx>
-        <posy>900</posy>
+        <left>579</left>
+        <top>900</top>
         <width>764</width>
         <height>136</height>
     </include>
     <include name="Dialogs_Tablet">
         <control type="image">
-            <posx>-4</posx>
-            <posy>-4</posy>
+            <left>-4</left>
+            <top>-4</top>
             <width>776</width>
             <height>147</height>
             <texture>dialogs/scan_backg_shadow.png</texture>
@@ -57,8 +57,8 @@
             <include>Animation_VisibleChange400</include>
         </control>
         <control type="image">
-            <posx>-4</posx>
-            <posy>-4</posy>
+            <left>-4</left>
+            <top>-4</top>
             <width>776</width>
             <height>147</height>
             <texture>dialogs/scan_backg.png</texture>
@@ -67,8 +67,8 @@
     </include>
     <include name="Dialogs_Exclam">
         <control type="image">
-            <posx>4</posx>
-            <posy>18</posy>
+            <left>4</left>
+            <top>18</top>
             <width>133</width>
             <height>100</height>
             <aspectratio aligny="top">scale</aspectratio>
@@ -79,8 +79,8 @@
     </include>
     <include name="Dialogs_HardDrive">
         <control type="image">
-            <posx>26</posx>
-            <posy>25</posy>
+            <left>26</left>
+            <top>25</top>
             <width>90</width>
             <height>90</height>
             <texture>loader.gif</texture>
@@ -89,7 +89,7 @@
     </include>
     <include name="Dialogs_Settings">
         <control type="image">
-            <posx>4</posx>
+            <left>4</left>
             <width>133</width>
             <height>100</height>
             <aspectratio aligny="top">scale</aspectratio>
@@ -98,28 +98,28 @@
         </control>
     </include>
     <include name="Dialogs_Progress">
-        <posx>150</posx>
-        <posy>96</posy>
+        <left>150</left>
+        <top>96</top>
         <width>578</width>
         <height>21</height>
     </include>
     <include name="Dialogs_LabelVars">
-        <posx>158</posx>
+        <left>158</left>
         <width>564</width>
         <height>32</height>
         <textcolor>white3</textcolor>
         <scroll>true</scroll>
     </include>
     <include name="Dialogs_Label1">
-        <posy>4</posy>
+        <top>4</top>
         <include>Dialogs_LabelVars</include>
     </include>
     <include name="Dialogs_Label2">
-        <posy>34</posy>
+        <top>34</top>
         <include>Dialogs_LabelVars</include>
     </include>
     <include name="Dialogs_Label3">
-        <posy>66</posy>
+        <top>66</top>
         <include>Dialogs_LabelVars</include>
     </include>
     <include name="Objects_MediaMenuButtonAlt">
@@ -138,7 +138,7 @@
         <onleft>ClearProperty(viewtypeselect,home)</onleft>
         <onleft>ActivateWindow(1121)</onleft>
         <radiowidth>98</radiowidth>
-        <radioposx>308</radioposx>
+        <radioleft>308</radioleft>
     </include>
     <include name="Objects_MediaMenuButtonIcons">
         <width>450</width>
@@ -157,7 +157,7 @@
         <onleft>ClearProperty(viewtypeselect,home)</onleft>
         <onleft>ActivateWindow(1121)</onleft>
         <radiowidth>98</radiowidth>
-        <radioposx>308</radioposx>
+        <radioleft>308</radioleft>
     </include>
     <include name="Objects_MediaMenuButtonAround">
         <width>400</width>
@@ -173,7 +173,7 @@
         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
         <focusedcolor>white6</focusedcolor>
         <radiowidth>98</radiowidth>
-        <radioposx>308</radioposx>
+        <radioleft>308</radioleft>
     </include>
     <include name="Objects_MediaMenuButtonAlt2">
         <width>470</width>
@@ -192,7 +192,7 @@
         <onright>Dialog.Close(1126)</onright>
         <onright>SetFocus(50)</onright>
         <radiowidth>98</radiowidth>
-        <radioposx>378</radioposx>
+        <radioleft>378</radioleft>
     </include>
     <include name="Objects_MediaBackgroundsButton">
         <width>470</width>
@@ -208,7 +208,7 @@
         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
         <focusedcolor>white6</focusedcolor>
         <radiowidth>98</radiowidth>
-        <radioposx>378</radioposx>
+        <radioleft>378</radioleft>
     </include>
     <include name="Objects_MediaMenuLabelAlt2">
         <width>470</width>
@@ -286,8 +286,8 @@
         <colordiffuse>white2</colordiffuse>
     </include>
     <include name="HiddenObject">
-        <posx>-300</posx>
-        <posy>-300</posy>
+        <left>-300</left>
+        <top>-300</top>
         <width>1</width>
         <height>1</height>
         <texturefocus>-</texturefocus>
@@ -307,7 +307,7 @@
         <selectedcolor>grey2</selectedcolor>
     </include>
     <include name="Objects_DoubleKeyOff">
-        <posx>-129</posx>
+        <left>-129</left>
         <width>300</width>
         <height>102</height>
         <texturefocus>keyboard/keyboard_triplef.png</texturefocus>
@@ -347,14 +347,14 @@
                 <include>Animation_VisibleChange400</include>
             </control>
             <control type="image">
-                <posy>472</posy>
+                <top>472</top>
                 <width>1920</width>
                 <height>608</height>
                 <texture>views/showcase_floor.png</texture>
                 <colordiffuse>$VAR[ExtendedColorDiffuseVar]</colordiffuse>
             </control>
             <control type="image">
-                <posy>874</posy>
+                <top>874</top>
                 <width>1920</width>
                 <height>206</height>
                 <texture>views/panel_spot.png</texture>
@@ -362,7 +362,7 @@
             </control>
             <include>Neon_Floor</include>
             <control type="image">
-                <posy>-100</posy>
+                <top>-100</top>
                 <width>1920</width>
                 <height>608</height>
                 <texture flipy="true">views/showcase_glow.png</texture>
@@ -372,8 +372,8 @@
     </include>
     <include name="Furniture_SettingsBackPanel">
         <control type="image">
-            <posx>36</posx>
-            <posy>36</posy>
+            <left>36</left>
+            <top>36</top>
             <width>1846</width>
             <height>1006</height>
             <texture>settings/settings_panelback_shadow.png</texture>
@@ -382,16 +382,16 @@
             <include>Animation_VisibleChange400</include>
         </control>
         <control type="image">
-            <posx>34</posx>
-            <posy>34</posy>
+            <left>34</left>
+            <top>34</top>
             <width>1850</width>
             <height>1010</height>
             <texture>settings/settings_panelback.png</texture>
             <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
         </control>
         <control type="image">
-            <posx>50</posx>
-            <posy>37</posy>
+            <left>50</left>
+            <top>37</top>
             <width>360</width>
             <height>178</height>
             <aspectratio>keep</aspectratio>
@@ -399,8 +399,8 @@
             <colordiffuse>white</colordiffuse>
         </control>
         <control type="image">
-            <posx>49</posx>
-            <posy>112</posy>
+            <left>49</left>
+            <top>112</top>
             <width>1819</width>
             <height>1038</height>
             <texture>wall/wall_bg_reflection.png</texture>
@@ -408,8 +408,8 @@
     </include>
     <include name="Furniture_SettingsBackPanel2">
         <control type="image">
-            <posx>36</posx>
-            <posy>36</posy>
+            <left>36</left>
+            <top>36</top>
             <width>1846</width>
             <height>1006</height>
             <texture>settings/settings_panelback_shadow.png</texture>
@@ -418,16 +418,16 @@
             <include>Animation_VisibleChange400</include>
         </control>
         <control type="image">
-            <posx>34</posx>
-            <posy>34</posy>
+            <left>34</left>
+            <top>34</top>
             <width>1850</width>
             <height>1010</height>
             <texture>settings/settings_panelback2.png</texture>
             <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
         </control>
         <control type="image">
-            <posx>80</posx>
-            <posy>45</posy>
+            <left>80</left>
+            <top>45</top>
             <width>400</width>
             <height>158</height>
             <aspectratio>keep</aspectratio>
@@ -435,8 +435,8 @@
             <colordiffuse>white</colordiffuse>
         </control>
         <control type="image">
-            <posx>49</posx>
-            <posy>112</posy>
+            <left>49</left>
+            <top>112</top>
             <width>1819</width>
             <height>1038</height>
             <texture>wall/wall_bg_reflection.png</texture>
@@ -444,8 +444,8 @@
     </include>
     <include name="Furniture_SettingsInternalBackPanel">
         <control type="image">
-            <posx>34</posx>
-            <posy>34</posy>
+            <left>34</left>
+            <top>34</top>
             <width>1850</width>
             <height>1010</height>
             <texture background="true">settings/settings_intframe_bottom.png</texture>
@@ -454,8 +454,8 @@
     </include>
     <include name="Furniture_SettingsInternalFrontPanel">
         <control type="image">
-            <posx>34</posx>
-            <posy>34</posy>
+            <left>34</left>
+            <top>34</top>
             <width>1850</width>
             <height>1010</height>
             <texture>settings/settings_intframe_top.png</texture>
@@ -471,7 +471,7 @@
         <font>Font_Reg32</font>
         <textcolor>grey2</textcolor>
         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-        <radioposx>1300</radioposx>
+        <radioleft>1300</radioleft>
     </include>
     <include name="Default_SettingRadioButtonShort">
         <width>734</width>
@@ -482,7 +482,7 @@
         <font>Font_Reg32</font>
         <textcolor>grey2</textcolor>
         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-        <radioposx>565</radioposx>
+        <radioleft>565</radioleft>
     </include>
     <include name="Default_SettingButton">
         <width>1449</width>
@@ -540,7 +540,7 @@
         <texturenofocus border="3">osd/osd_settings_buttonnf.png</texturenofocus>
         <font>Font_Reg32</font>
         <textcolor>grey2</textcolor>
-        <radioposx>1020</radioposx>
+        <radioleft>1020</radioleft>
         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
     </include>
     <include name="Objects_NowPlayingSettingsButton">
@@ -551,7 +551,7 @@
         <texturenofocus border="3">osd/osd_settings_buttonnf.png</texturenofocus>
         <font>Font_Reg32</font>
         <textcolor>grey2</textcolor>
-        <radioposx>550</radioposx>
+        <radioleft>550</radioleft>
         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
     </include>
     <include name="Objects_CustomizerSettingsButton">
@@ -563,7 +563,7 @@
         <font>Font_Reg32</font>
         <textcolor>grey2</textcolor>
         <focusedcolor>white2</focusedcolor>
-        <radioposx>290</radioposx>
+        <radioleft>290</radioleft>
         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
     </include>
     <include name="Objects_SubMenuSettingsButton">
@@ -575,7 +575,7 @@
         <font>Font_Reg32</font>
         <textcolor>grey2</textcolor>
         <focusedcolor>white2</focusedcolor>
-        <radioposx>420</radioposx>
+        <radioleft>420</radioleft>
         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
     </include>
     <include name="Objects_CustomizerInfoButton">
@@ -588,8 +588,8 @@
         <textcolor>$VAR[SubTitleColorVar]</textcolor>
     </include>
     <include name="Objects_CommonSettingsScrollbar">
-        <posx>1524</posx>
-        <posy>285</posy>
+        <left>1524</left>
+        <top>285</top>
         <width>46</width>
         <height>540</height>
         <include>Animation_VerticalScrollBar</include>
@@ -599,7 +599,7 @@
             <visible>Player.Paused + Skin.HasSetting(AlaskaPausedLabel)</visible>
             <include>Animation_CommonFade</include>
             <control type="label">
-                <posy>-150</posy>
+                <top>-150</top>
                 <width>1920</width>
                 <align>center</align>
                 <label>$LOCALIZE[112]</label>
@@ -752,16 +752,16 @@
         <control type="group">
             <visible>Skin.HasSetting(unwatchedicon) + [Container.Content(tvshows) | Container.Content(seasons)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
             <control type="image">
-                <posx>10</posx>
-                <posy>5</posy>
+                <left>10</left>
+                <top>5</top>
                 <width>35</width>
                 <height>35</height>
                 <aspectratio>keep</aspectratio>
                 <texture>common/circle.png</texture>
             </control>
             <control type="label">
-                <posx>27</posx>
-                <posy>2</posy>
+                <left>27</left>
+                <top>2</top>
                 <width>50</width>
                 <height>38</height>
                 <align>center</align>
@@ -786,7 +786,7 @@
         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
         <focusedcolor>white6</focusedcolor>
         <radiowidth>98</radiowidth>
-        <radioposx>508</radioposx>
+        <radioleft>508</radioleft>
     </include>
     <include name="DialogVideoInfoButton">
         <width>254.5</width>
@@ -938,8 +938,8 @@
     </include>
     <include name="FileManagerPanels">
         <control type="image">
-            <posx>105</posx>
-            <posy>110</posy>
+            <left>105</left>
+            <top>110</top>
             <width>748</width>
             <height>683</height>
             <texture>wall/wall_bg_glow.png</texture>
@@ -948,23 +948,23 @@
             <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
         </control>
         <control type="image">
-            <posx>105</posx>
-            <posy>110</posy>
+            <left>105</left>
+            <top>110</top>
             <width>748</width>
             <height>683</height>
             <texture>wall/wall_bg.png</texture>
             <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
         </control>
         <control type="image">
-            <posx>105</posx>
-            <posy>112</posy>
+            <left>105</left>
+            <top>112</top>
             <width>748</width>
             <height>683</height>
             <texture>wall/wall_bg_reflection.png</texture>
         </control>
         <control type="image">
-            <posx>675</posx>
-            <posy>149</posy>
+            <left>675</left>
+            <top>149</top>
             <width>128</width>
             <height>540</height>
             <texture>views/listpanel_detailwide.png</texture>
@@ -973,8 +973,8 @@
     </include>
     <include name="FileBrowserPanel">
         <control type="image">
-            <posx>92</posx>
-            <posy>110</posy>
+            <left>92</left>
+            <top>110</top>
             <width>1132</width>
             <height>1056</height>
             <texture>wall/wall_bg_glow.png</texture>
@@ -984,8 +984,8 @@
             <include>PanelGlowFade</include>
         </control>
         <control type="image">
-            <posx>92</posx>
-            <posy>110</posy>
+            <left>92</left>
+            <top>110</top>
             <width>1132</width>
             <height>1056</height>
             <texture>wall/wall_bg.png</texture>
@@ -994,18 +994,18 @@
     </include>
     <include name="FullScreenInfoBarLiveTV">
         <control type="image" id="1">
-            <posy>900</posy>
+            <top>900</top>
             <width>1920</width>
             <height>180</height>
             <texture>osd/osd_back.png</texture>
             <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
         </control>
         <control type="group" id="1">
-            <posy>865</posy>
+            <top>865</top>
             <include>Neon_Topbar</include>
         </control>
         <control type="group" id="1">
-            <posx>-1536</posx>
+            <left>-1536</left>
             <animation type="WindowOpen">
                 <effect type="slide" start="-450,0" end="0,0" time="480" tween="cubic" />
             </animation>
@@ -1014,8 +1014,8 @@
                 <effect type="fade" start="100" end="0" time="480" />
             </animation>
             <control type="image" id="1">
-                <posx>1580</posx>
-                <posy>842</posy>
+                <left>1580</left>
+                <top>842</top>
                 <width>300</width>
                 <height>180</height>
                 <aspectratio>keep</aspectratio>
@@ -1031,8 +1031,8 @@
                 <effect type="fade" start="100" end="0" time="480" />
             </animation>
             <control type="label" id="1">
-                <posx>1560</posx>
-                <posy>975</posy>
+                <left>1560</left>
+                <top>975</top>
                 <width>350</width>
                 <height>68</height>
                 <align>center</align>
@@ -1043,8 +1043,8 @@
             </control>
         </control>
         <control type="progress" id="1">
-            <posx>390</posx>
-            <posy>1002</posy>
+            <left>390</left>
+            <top>1002</top>
             <width>1140</width>
             <height>22</height>
             <info>Player.ProgressCache</info>
@@ -1055,8 +1055,8 @@
             <visible>VideoPlayer.HasEpg</visible>
         </control>
         <control type="progress" id="1">
-            <posx>390</posx>
-            <posy>1002</posy>
+            <left>390</left>
+            <top>1002</top>
             <width>1140</width>
             <height>22</height>
             <info>Player.Progress</info>
@@ -1067,9 +1067,9 @@
             <visible>VideoPlayer.HasEpg</visible>
         </control>
         <control type="group" id="1">
-            <posy>908</posy>
+            <top>908</top>
             <control type="label" id="1">
-                <posy>8</posy>
+                <top>8</top>
                 <width>1920</width>
                 <height>38</height>
                 <align>center</align>
@@ -1078,7 +1078,7 @@
                 <visible>!IsEmpty(VideoPlayer.Title)</visible>
             </control>
             <control type="label" id="1">
-                <posy>50</posy>
+                <top>50</top>
                 <width>1920</width>
                 <height>38</height>
                 <align>center</align>
@@ -1089,10 +1089,10 @@
             </control>
         </control>
         <control type="group" id="1">
-            <posy>908</posy>
+            <top>908</top>
             <control type="label" id="1">
-                <posx>390</posx>
-                <posy>128</posy>
+                <left>390</left>
+                <top>128</top>
                 <width>1140</width>
                 <height>38</height>
                 <label>$INFO[VideoPlayer.StartTime]</label>
@@ -1100,7 +1100,7 @@
                 <textcolor>white6</textcolor>
             </control>
             <control type="label" id="1">
-                <posy>128</posy>
+                <top>128</top>
                 <width>1920</width>
                 <height>38</height>
                 <align>center</align>
@@ -1110,7 +1110,7 @@
                 <visible>!Skin.HasSetting(PreferRemaining)</visible>
             </control>
             <control type="label" id="1">
-                <posy>128</posy>
+                <top>128</top>
                 <width>1920</width>
                 <height>38</height>
                 <align>center</align>
@@ -1120,8 +1120,8 @@
                 <visible>Skin.HasSetting(PreferRemaining)</visible>
             </control>
             <control type="label" id="1">
-                <posx>1530</posx>
-                <posy>128</posy>
+                <left>1530</left>
+                <top>128</top>
                 <width>1140</width>
                 <height>38</height>
                 <align>right</align>
@@ -1133,8 +1133,8 @@
     </include>
     <include name="FullScreenInfoBar">
         <control type="group">
-            <posx>1552</posx>
-            <posy>789</posy>
+            <left>1552</left>
+            <top>789</top>
             <visible>VideoPlayer.Content(episodes) | VideoPlayer.Content(movies)</visible>
             <animation type="WindowOpen">
                 <effect type="slide" start="450,0" end="0,0" time="480" tween="cubic" />
@@ -1145,8 +1145,8 @@
                 <effect type="fade" start="100" end="0" time="480" />
             </animation>
             <control type="image">
-                <posx>22</posx>
-                <posy>-70</posy>
+                <left>22</left>
+                <top>-70</top>
                 <width>345</width>
                 <height>234</height>
                 <aspectratio aligny="bottom">keep</aspectratio>
@@ -1154,16 +1154,16 @@
             </control>
         </control>
         <control type="image">
-            <posx>704</posx>
-            <posy>866</posy>
+            <left>704</left>
+            <top>866</top>
             <width>513</width>
             <height>87</height>
             <texture>osd/osd_bottom_bar.png</texture>
             <visible>player.chaptercount + ![Player.Forwarding | Player.Rewinding]</visible>
         </control>
         <control type="label">
-            <posx>750</posx>
-            <posy>910</posy>
+            <left>750</left>
+            <top>910</top>
             <width>420</width>
             <height>42</height>
             <align>center</align>
@@ -1174,14 +1174,14 @@
             <visible>player.chaptercount + ![Player.Forwarding | Player.Rewinding]</visible>
         </control>
         <control type="image">
-            <posy>945</posy>
+            <top>945</top>
             <width>1920</width>
             <height>135</height>
             <texture>osd/osd_back.png</texture>
             <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
         </control>
         <control type="group">
-            <posy>910</posy>
+            <top>910</top>
             <include>Neon_Topbar</include>
         </control>
         <control type="image" id="888777">
@@ -1202,8 +1202,8 @@
                     <effect type="fade" start="100" end="0" time="480" />
                 </animation>
                 <control type="image">
-                    <posx>12</posx>
-                    <posy>581</posy>
+                    <left>12</left>
+                    <top>581</top>
                     <width>335</width>
                     <height>504</height>
                     <texture>thumbs/thumb_glass_shadow.png</texture>
@@ -1213,8 +1213,8 @@
                     <include>Animation_VisibleChange400</include>
                 </control>
                 <control type="image">
-                    <posx>25</posx>
-                    <posy>600</posy>
+                    <left>25</left>
+                    <top>600</top>
                     <width>310</width>
                     <height>465</height>
                     <aspectratio aligny="bottom">stretch</aspectratio>
@@ -1222,8 +1222,8 @@
                     <visible>VideoPlayer.Content(movies) | VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(episodes)</visible>
                 </control>
                 <control type="image">
-                    <posx>5</posx>
-                    <posy>580</posy>
+                    <left>5</left>
+                    <top>580</top>
                     <width>349</width>
                     <height>504</height>
                     <texture diffuse="thumbs/movieposter_mask.png">thumbs/thumb_glass_noreflect.png</texture>
@@ -1241,8 +1241,8 @@
                     <effect type="fade" start="100" end="0" time="480" />
                 </animation>
                 <control type="image">
-                    <posx>1568</posx>
-                    <posy>594</posy>
+                    <left>1568</left>
+                    <top>594</top>
                     <width>324</width>
                     <height>479</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
@@ -1253,8 +1253,8 @@
             </control>
         </control>
         <control type="progress" id="23">
-            <posx>390</posx>
-            <posy>1002</posy>
+            <left>390</left>
+            <top>1002</top>
             <width>1140</width>
             <height>22</height>
             <info>Player.ProgressCache</info>
@@ -1264,8 +1264,8 @@
             <righttexture border="1">osd/info/osd_progresscache_right.png</righttexture>
         </control>
         <control type="progress" id="23">
-            <posx>390</posx>
-            <posy>1002</posy>
+            <left>390</left>
+            <top>1002</top>
             <width>1140</width>
             <height>22</height>
             <info>Player.Progress</info>
@@ -1275,8 +1275,8 @@
             <righttexture border="1">osd/info/osd_progress_right.png</righttexture>
         </control>
         <control type="fadelabel">
-            <posx>390</posx>
-            <posy>956</posy>
+            <left>390</left>
+            <top>956</top>
             <width>1140</width>
             <height>8</height>
             <align>center</align>
@@ -1294,8 +1294,8 @@
             <visible>VideoPlayer.Content(movies)</visible>
         </control>
         <control type="fadelabel">
-            <posx>390</posx>
-            <posy>956</posy>
+            <left>390</left>
+            <top>956</top>
             <width>1140</width>
             <height>8</height>
             <align>center</align>
@@ -1311,14 +1311,14 @@
             <visible>VideoPlayer.Content(episodes)</visible>
         </control>
         <control type="group">
-            <posx>1552</posx>
-            <posy>922</posy>
+            <left>1552</left>
+            <top>922</top>
             <control type="group">
                 <visible>VideoPlayer.Content(movies) | VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(episodes)</visible>
                 <animation effect="slide" end="0,30" condition="IsEmpty(VideoPlayer.Rating)">Conditional</animation>
                 <control type="label">
-                    <posx>38</posx>
-                    <posy>56</posy>
+                    <left>38</left>
+                    <top>56</top>
                     <width>300</width>
                     <height>38</height>
                     <align>center</align>
@@ -1327,8 +1327,8 @@
                     <visible>VideoPlayer.Content(episodes)</visible>
                 </control>
                 <control type="label">
-                    <posx>38</posx>
-                    <posy>56</posy>
+                    <left>38</left>
+                    <top>56</top>
                     <width>300</width>
                     <height>38</height>
                     <align>center</align>
@@ -1337,8 +1337,8 @@
                     <visible>!VideoPlayer.Content(episodes)</visible>
                 </control>
                 <control type="image">
-                    <posx>98</posx>
-                    <posy>110</posy>
+                    <left>98</left>
+                    <top>110</top>
                     <width>180</width>
                     <height>36</height>
                     <texture>$INFO[VideoPlayer.Rating,stars/,.png]</texture>
@@ -1347,10 +1347,10 @@
             </control>
         </control>
         <control type="group">
-            <posy>908</posy>
+            <top>908</top>
             <control type="label">
-                <posx>390</posx>
-                <posy>128</posy>
+                <left>390</left>
+                <top>128</top>
                 <width>1140</width>
                 <height>38</height>
                 <label>$INFO[VideoPlayer.Time]</label>
@@ -1358,7 +1358,7 @@
                 <textcolor>white6</textcolor>
             </control>
             <control type="label">
-                <posy>128</posy>
+                <top>128</top>
                 <width>1920</width>
                 <height>38</height>
                 <align>center</align>
@@ -1367,8 +1367,8 @@
                 <textcolor>white6</textcolor>
             </control>
             <control type="label">
-                <posx>1530</posx>
-                <posy>128</posy>
+                <left>1530</left>
+                <top>128</top>
                 <width>1140</width>
                 <height>38</height>
                 <align>right</align>
@@ -1378,8 +1378,8 @@
                 <visible>!Skin.HasSetting(PreferRemaining)</visible>
             </control>
             <control type="label">
-                <posx>1530</posx>
-                <posy>128</posy>
+                <left>1530</left>
+                <top>128</top>
                 <width>1140</width>
                 <height>38</height>
                 <align>right</align>
@@ -1392,7 +1392,7 @@
     </include>
     <include name="BottomProgressBar">
         <control type="group">
-            <posy>993</posy>
+            <top>993</top>
             <animation type="WindowOpen">
                 <effect type="fade" time="160" end="100" />
                 <effect type="slide" time="160" start="0,98" end="0,0" tween="cubic" />
@@ -1402,15 +1402,15 @@
                 <effect type="slide" time="160" end="0,98" easing="in" tween="cubic" />
             </animation>
             <control type="image">
-                <posx>-80</posx>
+                <left>-80</left>
                 <width>2080</width>
                 <height>87</height>
                 <texture border="80,0,80,0">osd/osd_progress_bar_back.png</texture>
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
             </control>
             <control type="progress" id="23">
-                <posx>150</posx>
-                <posy>57</posy>
+                <left>150</left>
+                <top>57</top>
                 <width>1620</width>
                 <height>20</height>
                 <info>Player.ProgressCache</info>
@@ -1420,8 +1420,8 @@
                 <righttexture border="1">osd/info/osd_progresscache_right.png</righttexture>
             </control>
             <control type="progress" id="23">
-                <posx>150</posx>
-                <posy>57</posy>
+                <left>150</left>
+                <top>57</top>
                 <width>1620</width>
                 <height>20</height>
                 <info>Player.Progress</info>
@@ -1432,15 +1432,15 @@
                 <overlaytexture>-</overlaytexture>
             </control>
             <control type="slider" id="87">
-                <posx>150</posx>
-                <posy>57</posy>
+                <left>150</left>
+                <top>57</top>
                 <width>1620</width>
                 <height>20</height>
                 <action>seek</action>
             </control>
             <control type="label">
-                <posx>135</posx>
-                <posy>45</posy>
+                <left>135</left>
+                <top>45</top>
                 <width>300</width>
                 <height>42</height>
                 <align>right</align>
@@ -1449,8 +1449,8 @@
                 <textcolor>osdseek</textcolor>
             </control>
             <control type="label">
-                <posx>135r</posx>
-                <posy>45</posy>
+                <left>135r</left>
+                <top>45</top>
                 <width>300</width>
                 <height>42</height>
                 <label>$INFO[Player.Duration]</label>
@@ -1459,8 +1459,8 @@
                 <visible>!Skin.HasSetting(PreferRemaining)</visible>
             </control>
             <control type="label">
-                <posx>135r</posx>
-                <posy>45</posy>
+                <left>135r</left>
+                <top>45</top>
                 <width>300</width>
                 <height>42</height>
                 <label>$INFO[Player.TimeRemaining,- ]</label>
@@ -1533,11 +1533,11 @@
     </include>
     <include name="QuickList">
         <control type="group">
-            <posx>665</posx>
+            <left>665</left>
             <include>Animation_OpenCloseZoom_New</include>
             <control type="image">
-                <posx>30</posx>
-                <posy>100</posy>
+                <left>30</left>
+                <top>100</top>
                 <width>590</width>
                 <height>870</height>
                 <texture border="20">osd/osd_settings_back_glow.png</texture>
@@ -1547,8 +1547,8 @@
                 <include>Animation_VisibleChange400</include>
             </control>
             <control type="image">
-                <posx>30</posx>
-                <posy>100</posy>
+                <left>30</left>
+                <top>100</top>
                 <width>590</width>
                 <height>870</height>
                 <texture border="20">osd/osd_settings_back.png</texture>
@@ -1577,7 +1577,7 @@
                 <visible>!IsEmpty(Window(home).Property(quicknavsetup))</visible>
             </control>
             <control type="list" id="800">
-                <posy>150</posy>
+                <top>150</top>
                 <width>600</width>
                 <height>1080</height>
                 <visible>!Window.IsVisible(script-globalsearch-main.xml)</visible>
@@ -1588,14 +1588,14 @@
                 <onright>Dialog.Close(1157)</onright>
                 <itemlayout width="600" height="80">
                     <control type="image">
-                        <posx>50</posx>
+                        <left>50</left>
                         <width>600</width>
                         <height>80</height>
                         <texture border="0,0,0,4">settings/listselect_nf.png</texture>
                     </control>
                     <control type="image">
-                        <posx>72</posx>
-                        <posy>1</posy>
+                        <left>72</left>
+                        <top>1</top>
                         <width>80</width>
                         <height>80</height>
                         <aspectratio align="center">keep</aspectratio>
@@ -1603,7 +1603,7 @@
                         <colordiffuse>white3</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>200</posx>
+                        <left>200</left>
                         <width>600</width>
                         <height>80</height>
                         <font>Font_Reg37_Caps</font>
@@ -1620,13 +1620,13 @@
                 </itemlayout>
                 <focusedlayout width="600" height="80">
                     <control type="image">
-                        <posx>50</posx>
+                        <left>50</left>
                         <width>600</width>
                         <height>80</height>
                         <texture border="0,0,0,4">settings/listselect_nf.png</texture>
                     </control>
                     <control type="image">
-                        <posx>50</posx>
+                        <left>50</left>
                         <width>600</width>
                         <height>80</height>
                         <texture border="8">views/tripanel/listselect_fo.png</texture>
@@ -1635,8 +1635,8 @@
                         <visible>Control.HasFocus(800)</visible>
                     </control>
                     <control type="image">
-                        <posx>72</posx>
-                        <posy>1</posy>
+                        <left>72</left>
+                        <top>1</top>
                         <width>80</width>
                         <height>80</height>
                         <aspectratio align="center">keep</aspectratio>
@@ -1644,7 +1644,7 @@
                         <colordiffuse>white2</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>200</posx>
+                        <left>200</left>
                         <width>600</width>
                         <height>80</height>
                         <font>Font_Reg37_Caps</font>
@@ -1752,8 +1752,8 @@
                 </content>
             </control>
             <control type="button" id="9012">
-                <posx>50</posx>
-                <posy>900</posy>
+                <left>50</left>
+                <top>900</top>
                 <width>550</width>
                 <height>40</height>
                 <align>center</align>
@@ -1782,8 +1782,8 @@
             <visible>!Skin.HasSetting(ClassicOSD)</visible>
             <animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
             <control type="grouplist">
-                <posx>50</posx>
-                <posy>11</posy>
+                <left>50</left>
+                <top>11</top>
                 <width>960</width>
                 <height>135</height>
                 <itemgap>-18</itemgap>
@@ -1807,8 +1807,8 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posx>460</posx>
-                <posy>11</posy>
+                <left>460</left>
+                <top>11</top>
                 <width>960</width>
                 <height>135</height>
                 <align>center</align>
@@ -1881,8 +1881,8 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posx>910</posx>
-                <posy>11</posy>
+                <left>910</left>
+                <top>11</top>
                 <width>960</width>
                 <height>135</height>
                 <align>right</align>
@@ -1915,8 +1915,8 @@
             </control>
             <control type="group" id="703">
                 <control type="grouplist" id="70014">
-                    <posx>50</posx>
-                    <posy>11</posy>
+                    <left>50</left>
+                    <top>11</top>
                     <width>960</width>
                     <height>135</height>
                     <itemgap>-18</itemgap>
@@ -1948,8 +1948,8 @@
                     </control>
                 </control>
                 <control type="grouplist" id="70017">
-                    <posx>460</posx>
-                    <posy>11</posy>
+                    <left>460</left>
+                    <top>11</top>
                     <width>960</width>
                     <height>135</height>
                     <align>center</align>
@@ -2056,8 +2056,8 @@
                     </control>
                 </control>
                 <control type="grouplist" id="70026">
-                    <posx>910</posx>
-                    <posy>11</posy>
+                    <left>910</left>
+                    <top>11</top>
                     <width>960</width>
                     <height>135</height>
                     <align>right</align>
@@ -2108,8 +2108,8 @@
         <control type="group" id="703">
             <visible>Skin.HasSetting(ClassicOSD)</visible>
             <control type="grouplist" id="70030">
-                <posx>355</posx>
-                <posy>11</posy>
+                <left>355</left>
+                <top>11</top>
                 <width>960</width>
                 <height>135</height>
                 <onleft>70045</onleft>
@@ -2135,8 +2135,8 @@
                 </control>
             </control>
             <control type="grouplist" id="70033">
-                <posx>460</posx>
-                <posy>11</posy>
+                <left>460</left>
+                <top>11</top>
                 <width>960</width>
                 <height>135</height>
                 <align>center</align>
@@ -2217,8 +2217,8 @@
                 </control>
             </control>
             <control type="grouplist" id="70042">
-                <posx>655</posx>
-                <posy>11</posy>
+                <left>655</left>
+                <top>11</top>
                 <width>960</width>
                 <height>135</height>
                 <align>right</align>
@@ -2260,11 +2260,11 @@
     </include>
     <include name="DefaultVideoOSD">
         <control type="group">
-            <posy>10</posy>
+            <top>10</top>
             <visible>!Skin.HasSetting(ClassicOSD)</visible>
             <control type="grouplist">
-                <posx>50</posx>
-                <posy>11</posy>
+                <left>50</left>
+                <top>11</top>
                 <width>960</width>
                 <height>135</height>
                 <itemgap>7</itemgap>
@@ -2303,8 +2303,8 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posx>480</posx>
-                <posy>11</posy>
+                <left>480</left>
+                <top>11</top>
                 <width>960</width>
                 <height>135</height>
                 <align>center</align>
@@ -2352,8 +2352,8 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posx>910</posx>
-                <posy>11</posy>
+                <left>910</left>
+                <top>11</top>
                 <width>960</width>
                 <height>135</height>
                 <align>right</align>
@@ -2394,8 +2394,8 @@
                 </control>			
             </control>
             <control type="grouplist" id="650">
-                <posx>50</posx>
-                <posy>11</posy>
+                <left>50</left>
+                <top>11</top>
                 <width>960</width>
                 <height>135</height>
                 <itemgap>7</itemgap>
@@ -2438,8 +2438,8 @@
                 </control>
             </control>
             <control type="grouplist" id="651">
-                <posx>480</posx>
-                <posy>11</posy>
+                <left>480</left>
+                <top>11</top>
                 <width>960</width>
                 <height>135</height>
                 <align>center</align>
@@ -2517,8 +2517,8 @@
                 </control>
             </control>
             <control type="grouplist" id="652">
-                <posx>910</posx>
-                <posy>11</posy>
+                <left>910</left>
+                <top>11</top>
                 <width>960</width>
                 <height>135</height>
                 <align>right</align>
@@ -2583,7 +2583,7 @@
         <control type="group">
             <visible>Skin.HasSetting(ClassicOSD)</visible>
             <control type="grouplist" id="201">
-                <posy>6</posy>
+                <top>6</top>
                 <width>1920</width>
                 <height>135</height>
                 <align>left</align>
@@ -2619,7 +2619,7 @@
                 </control>
             </control>
             <control type="grouplist" id="202">
-                <posy>6</posy>
+                <top>6</top>
                 <width>1920</width>
                 <height>135</height>
                 <align>center</align>
@@ -2679,7 +2679,7 @@
                 </control>
             </control>
             <control type="grouplist" id="203">
-                <posy>6</posy>
+                <top>6</top>
                 <width>1920</width>
                 <height>135</height>
                 <align>right</align>
@@ -2771,8 +2771,8 @@
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
             <control type="image">
-                <posx>21</posx>
-                <posy>593</posy>
+                <left>21</left>
+                <top>593</top>
                 <width>1290</width>
                 <height>119</height>
                 <texture>featured/panel_featured_reflect.png</texture>

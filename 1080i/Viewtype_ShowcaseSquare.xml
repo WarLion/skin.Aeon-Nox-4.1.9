@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
     <include name="contents509list">
-        <posx>-368</posx>
-        <posy>580</posy>
+        <left>-368</left>
+        <top>580</top>
         <width>2655</width>
         <height>525</height>
         <visible>[Window.IsActive(musicfiles) | Window.IsActive(musiclibrary) | Window.IsActive(programs) | Window.IsActive(pictures) | Container.Content(addons) | Window.IsActive(addonbrowser) | Window.IsActive(musicplaylist)]</visible>
@@ -84,60 +84,60 @@
             <animation effect="zoom" start="100" end="165" time="640" easing="inout" tween="circle" center="960,960" condition="Skin.HasSetting(showcasesquarezoom)">Conditional</animation>
             <animation effect="slide" tween="cubic" time="720" start="0,806" end="0,0">VisibleChange</animation>
             <control type="group" id="7007">
-                <posy>580</posy>
+                <top>580</top>
                 <visible>Container.OnNext + !Skin.HasSetting(noflowalbum)</visible>
                 <animation effect="slide" end="-150,0" time="200" reversible="false">Hidden</animation>
                 <control type="group">
-                    <posx>75</posx>
+                    <left>75</left>
                     <visible>Container.OnNext</visible>
                     <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
                     <animation effect="rotatey" center="-75" start="-65" end="-65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem-6</include>
                 </control>
                 <control type="group">
-                    <posx>225</posx>
+                    <left>225</left>
                     <animation effect="rotatey" center="75" start="-65" end="-65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem-5</include>
                 </control>
                 <control type="group">
-                    <posx>375</posx>
+                    <left>375</left>
                     <animation effect="rotatey" center="225" start="-65" end="-65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem-4</include>
                 </control>
                 <control type="group">
-                    <posx>525</posx>
+                    <left>525</left>
                     <animation effect="rotatey" center="375" start="-65" end="-65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem-3</include>
                 </control>
                 <control type="group">
-                    <posx>675</posx>
+                    <left>675</left>
                     <animation effect="rotatey" center="525" start="-65" end="-65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem-2</include>
                 </control>
                 <control type="group">
-                    <posx>1590</posx>
+                    <left>1590</left>
                     <visible>!Container.OnNext</visible>
                     <animation effect="fade" end="100" time="200" reversible="false">Visible</animation>
                     <animation effect="rotatey" center="2145" start="65" end="65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem5</include>
                 </control>
                 <control type="group">
-                    <posx>1440</posx>
+                    <left>1440</left>
                     <animation effect="rotatey" center="1995" start="65" end="65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem4</include>
                 </control>
                 <control type="group">
-                    <posx>1290</posx>
+                    <left>1290</left>
                     <animation effect="rotatey" center="1845" start="65" end="65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem3</include>
                 </control>
                 <control type="group">
-                    <posx>1140</posx>
+                    <left>1140</left>
                     <animation effect="rotatey" center="1695" start="65" end="65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem2</include>
                 </control>
                 <control type="group">
-                    <posx>990</posx>
+                    <left>990</left>
                     <animation effect="rotatey" center="1545" start="65" end="65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem1</include>
                 </control>
@@ -145,14 +145,14 @@
                     <visible>Container.OnNext</visible>
                     <animation effect="slide" end="68,0" time="200" reversible="false">Hidden</animation>
                     <control type="group">
-                        <posx>840</posx>
+                        <left>840</left>
                         <visible>Container.OnNext</visible>
                         <animation effect="rotatey" center="1395" end="-65" time="200" reversible="false" tween="quadratic" easing="in">Hidden</animation>
                         <animation effect="rotatey" center="1395" start="65" end="65" time="0" condition="true">Conditional</animation>
                         <include>MusicShowcaseItem0</include>
                     </control>
                     <control type="group">
-                        <posx>758</posx>
+                        <left>758</left>
                         <visible>Container.OnNext</visible>
                         <animation effect="rotatey" center="608" end="-65" time="200" reversible="false" tween="quadratic">Hidden</animation>
                         <include>MusicShowcaseItem-1</include>
@@ -160,60 +160,60 @@
                 </control>
             </control>
             <control type="group" id="7002">
-                <posy>580</posy>
+                <top>580</top>
                 <visible>Container.OnPrevious + !Skin.HasSetting(noflowalbum)</visible>
                 <animation effect="slide" end="150,0" time="200" reversible="false">Hidden</animation>
                 <control type="group">
-                    <posx>1440</posx>
+                    <left>1440</left>
                     <visible>Container.OnPrevious</visible>
                     <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
                     <animation effect="rotatey" center="1995" start="65" end="65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem6</include>
                 </control>
                 <control type="group">
-                    <posx>1290</posx>
+                    <left>1290</left>
                     <animation effect="rotatey" center="1845" start="65" end="65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem5</include>
                 </control>
                 <control type="group">
-                    <posx>1140</posx>
+                    <left>1140</left>
                     <animation effect="rotatey" center="1695" start="65" end="65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem4</include>
                 </control>
                 <control type="group">
-                    <posx>990</posx>
+                    <left>990</left>
                     <animation effect="rotatey" center="1545" start="65" end="65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem3</include>
                 </control>
                 <control type="group">
-                    <posx>840</posx>
+                    <left>840</left>
                     <animation effect="rotatey" center="1395" start="65" end="65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem2</include>
                 </control>
                 <control type="group">
-                    <posx>-75</posx>
+                    <left>-75</left>
                     <visible>!Container.OnPrevious</visible>
                     <animation effect="fade" end="100" time="200" reversible="false">Visible</animation>
                     <animation effect="rotatey" center="-225" start="-65" end="-65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem-5</include>
                 </control>
                 <control type="group">
-                    <posx>75</posx>
+                    <left>75</left>
                     <animation effect="rotatey" center="-75" start="-65" end="-65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem-4</include>
                 </control>
                 <control type="group">
-                    <posx>225</posx>
+                    <left>225</left>
                     <animation effect="rotatey" center="75" start="-65" end="-65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem-3</include>
                 </control>
                 <control type="group">
-                    <posx>375</posx>
+                    <left>375</left>
                     <animation effect="rotatey" center="225" start="-65" end="-65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem-2</include>
                 </control>
                 <control type="group">
-                    <posx>525</posx>
+                    <left>525</left>
                     <animation effect="rotatey" center="375" start="-65" end="-65" time="0" condition="true">Conditional</animation>
                     <include>MusicShowcaseItem-1</include>
                 </control>
@@ -221,14 +221,14 @@
                     <visible>Container.OnPrevious</visible>
                     <animation effect="slide" end="-68,0" time="200" reversible="false">Hidden</animation>
                     <control type="group">
-                        <posx>675</posx>
+                        <left>675</left>
                         <visible>Container.OnPrevious</visible>
                         <animation effect="rotatey" center="525" end="65" time="200" reversible="false" tween="quadratic" easing="in">Hidden</animation>
                         <animation effect="rotatey" center="525" start="-65" end="-65" time="0" condition="true">Conditional</animation>
                         <include>MusicShowcaseItem0</include>
                     </control>
                     <control type="group">
-                        <posx>758</posx>
+                        <left>758</left>
                         <visible>Container.OnPrevious</visible>
                         <animation effect="rotatey" center="1312" end="65" time="200" reversible="false" tween="quadratic">Hidden</animation>
                         <include>MusicShowcaseItem1</include>
@@ -242,7 +242,7 @@
                 <animation effect="fade" start="100" end="0" time="640">Hidden</animation>
             </control>
             <control type="group" id="7003">
-                <posy>580</posy>
+                <top>580</top>
                 <animation type="WindowOpen" reversible="false">
                     <effect type="zoom" start="150" end="100" center="960,540" time="240" tween="cubic" />
                     <effect type="fade" end="100" time="240" />
@@ -253,7 +253,7 @@
                 </animation>
                 <visible>!Control.IsVisible(7007) + !Control.IsVisible(7002) + Control.IsVisible(970)</visible>
                 <control type="group">
-                    <posx>75</posx>
+                    <left>75</left>
                     <animation effect="slide" time="240" end="818" tween="cubic" easing="in">WindowClose</animation>
                     <animation effect="slide" time="640" delay="240" end="0" start="818" tween="cubic">WindowOpen</animation>
                     <animation effect="rotatey" center="-75" start="-65" end="-65" time="0" condition="true">Conditional</animation>
@@ -264,7 +264,7 @@
                     <include>MusicShowcaseItem-5</include>
                 </control>
                 <control type="group">
-                    <posx>225</posx>
+                    <left>225</left>
                     <animation effect="slide" time="240" end="668" tween="cubic" easing="in">WindowClose</animation>
                     <animation effect="slide" time="640" delay="240" end="0" start="668" tween="cubic">WindowOpen</animation>
                     <animation effect="rotatey" center="75" start="-65" end="-65" time="0" condition="true">Conditional</animation>
@@ -275,7 +275,7 @@
                     <include>MusicShowcaseItem-4</include>
                 </control>
                 <control type="group">
-                    <posx>375</posx>
+                    <left>375</left>
                     <animation effect="slide" time="240" end="518" tween="cubic" easing="in">WindowClose</animation>
                     <animation effect="slide" time="640" delay="240" end="0" start="518" tween="cubic">WindowOpen</animation>
                     <animation effect="rotatey" center="225" start="-65" end="-65" time="0" condition="true">Conditional</animation>
@@ -286,7 +286,7 @@
                     <include>MusicShowcaseItem-3</include>
                 </control>
                 <control type="group">
-                    <posx>525</posx>
+                    <left>525</left>
                     <animation effect="slide" time="240" end="368" tween="cubic" easing="in">WindowClose</animation>
                     <animation effect="slide" time="640" delay="240" end="0" start="368" tween="cubic">WindowOpen</animation>
                     <animation effect="rotatey" center="375" start="-65" end="-65" time="0" condition="true">Conditional</animation>
@@ -297,7 +297,7 @@
                     <include>MusicShowcaseItem-2</include>
                 </control>
                 <control type="group">
-                    <posx>675</posx>
+                    <left>675</left>
                     <animation effect="slide" time="240" end="218" tween="cubic" easing="in">WindowClose</animation>
                     <animation effect="slide" time="640" delay="240" end="0" start="218" tween="cubic">WindowOpen</animation>
                     <animation effect="rotatey" center="525" start="-65" end="-65" time="0" condition="true">Conditional</animation>
@@ -308,7 +308,7 @@
                     <include>MusicShowcaseItem-1</include>
                 </control>
                 <control type="group">
-                    <posx>1440</posx>
+                    <left>1440</left>
                     <animation effect="slide" time="240" end="-818" tween="cubic" easing="in">WindowClose</animation>
                     <animation effect="slide" time="640" delay="240" end="0" start="-818" tween="cubic">WindowOpen</animation>
                     <animation effect="rotatey" center="1995" start="65" end="65" time="0" condition="true">Conditional</animation>
@@ -319,7 +319,7 @@
                     <include>MusicShowcaseItem5</include>
                 </control>
                 <control type="group">
-                    <posx>1290</posx>
+                    <left>1290</left>
                     <animation effect="slide" time="240" end="-668" tween="cubic" easing="in">WindowClose</animation>
                     <animation effect="slide" time="640" delay="240" end="0" start="-668" tween="cubic">WindowOpen</animation>
                     <animation effect="rotatey" center="1845" start="65" end="65" time="0" condition="true">Conditional</animation>
@@ -330,7 +330,7 @@
                     <include>MusicShowcaseItem4</include>
                 </control>
                 <control type="group">
-                    <posx>1140</posx>
+                    <left>1140</left>
                     <animation effect="slide" time="240" end="-518" tween="cubic" easing="in">WindowClose</animation>
                     <animation effect="slide" time="640" delay="240" end="0" start="-518" tween="cubic">WindowOpen</animation>
                     <animation effect="rotatey" center="1695" start="65" end="65" time="0" condition="true">Conditional</animation>
@@ -341,7 +341,7 @@
                     <include>MusicShowcaseItem3</include>
                 </control>
                 <control type="group">
-                    <posx>990</posx>
+                    <left>990</left>
                     <animation effect="slide" time="240" end="-368" tween="cubic" easing="in">WindowClose</animation>
                     <animation effect="slide" time="640" delay="240" end="0" start="-368" tween="cubic">WindowOpen</animation>
                     <animation effect="rotatey" center="1545" start="65" end="65" time="0" condition="true">Conditional</animation>
@@ -352,7 +352,7 @@
                     <include>MusicShowcaseItem2</include>
                 </control>
                 <control type="group">
-                    <posx>840</posx>
+                    <left>840</left>
                     <animation effect="slide" time="240" end="-218" tween="cubic" easing="in">WindowClose</animation>
                     <animation effect="slide" time="640" delay="240" end="0" start="-218" tween="cubic">WindowOpen</animation>
                     <animation effect="rotatey" center="1395" start="65" end="65" time="0" condition="true">Conditional</animation>
@@ -363,7 +363,7 @@
                     <include>MusicShowcaseItem1</include>
                 </control>
                 <control type="group">
-                    <posx>758</posx>
+                    <left>758</left>
                     <control type="group">
                         <visible>!IsEmpty(Container(509).ListItemNoWrap(0).FolderPath) | Skin.HasSetting(showcasewrap)</visible>
                         <include>MusicShowcaseGlow</include>
@@ -399,8 +399,8 @@
                 <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
             </animation>
             <control type="image">
-                <posx>2570</posx>
-                <posy>692</posy>
+                <left>2570</left>
+                <top>692</top>
                 <width>280</width>
                 <height>280</height>
                 <aspectratio>keep</aspectratio>
@@ -416,8 +416,8 @@
                 </animation>
             </control>
             <control type="image">
-                <posx>2570</posx>
-                <posy>972</posy>
+                <left>2570</left>
+                <top>972</top>
                 <width>280</width>
                 <height>280</height>
                 <aspectratio>keep</aspectratio>
@@ -688,8 +688,8 @@
         <bordertexture>thumbs/boxes/cd_shadow_light.png</bordertexture>
     </include>
     <include name="MusicShowcaseThumbReflectionCD">
-        <posx>-30</posx>
-        <posy>370</posy>
+        <left>-30</left>
+        <top>370</top>
         <width>426</width>
         <height>342</height>
         <aspectratio scalediffuse="false">scale</aspectratio>
@@ -702,8 +702,8 @@
     </include>
     <include name="MusicShowcaseCase">
         <control type="image">
-            <posx>-30</posx>
-            <posy>12</posy>
+            <left>-30</left>
+            <top>12</top>
             <width>426</width>
             <height>391</height>
             <include>ShowcaseMusicCoverCD</include>
@@ -711,14 +711,14 @@
         </control>
     </include>
     <include name="MusicShowcaseThumbReflectionDimensions">
-        <posx>27</posx>
-        <posy>378</posy>
+        <left>27</left>
+        <top>378</top>
         <width>351</width>
         <height>351</height>
     </include>
     <include name="MusicShowcaseThumb">
-        <posx>11</posx>
-        <posy>11</posy>
+        <left>11</left>
+        <top>11</top>
         <width>383</width>
         <height>383</height>
         <aspectratio scalediffuse="false">scale</aspectratio>
@@ -728,7 +728,7 @@
     </include>
     <include name="MusicShowcaseGlow">
         <control type="image">
-            <posy>3</posy>
+            <top>3</top>
             <width>404</width>
             <height>403</height>
             <texture background="true">thumbs/boxes/cd_shadow_light_shadow.png</texture>
@@ -757,8 +757,8 @@
     <!-- Music Showcase Variables: Thumb glass overlays -->
     <include name="MusicShowcaseGlassOverlayAngled">
         <control type="image">
-            <posx>27</posx>
-            <posy>27</posy>
+            <left>27</left>
+            <top>27</top>
             <width>351</width>
             <height>351</height>
             <aspectratio scalediffuse="false" align="right">scale</aspectratio>
@@ -767,8 +767,8 @@
     </include>
     <include name="MusicShowcaseGlassOverlayMain">
         <control type="image">
-            <posx>27</posx>
-            <posy>27</posy>
+            <left>27</left>
+            <top>27</top>
             <width>351</width>
             <height>351</height>
             <aspectratio scalediffuse="false" align="right">scale</aspectratio>

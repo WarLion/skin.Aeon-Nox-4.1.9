@@ -14,7 +14,7 @@
         <control type="group">
             <include>Animation_OpenClose_Furniture</include>
             <control type="image">
-                <posy>472</posy>
+                <top>472</top>
                 <width>1920</width>
                 <height>608</height>
                 <texture>views/showcase_floor.png</texture>
@@ -27,14 +27,14 @@
                 <colordiffuse>vignette</colordiffuse>
             </control>
             <control type="image">
-                <posx>1224</posx>
+                <left>1224</left>
                 <width>696</width>
                 <height>1080</height>
                 <texture flipx="true">views/showcase_vignette.png</texture>
                 <colordiffuse>vignette</colordiffuse>
             </control>
             <control type="image">
-                <posy>874</posy>
+                <top>874</top>
                 <width>1920</width>
                 <height>206</height>
                 <texture>views/panel_spot.png</texture>
@@ -55,14 +55,14 @@
         </control>
         <include>Furniture_Glow</include>
         <control type="group">
-            <posy>30</posy>
+            <top>30</top>
             <include>Animation_OpenCloseZoom_New</include>
             <control type="group">
                 <include>Animation_VisibleChange200</include>
                 <visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13) | Control.IsVisible(14) | Control.IsVisible(15) | Control.IsVisible(16) | Control.IsVisible(17)</visible>
                 <control type="image">
-                    <posx>45</posx>
-                    <posy>38</posy>
+                    <left>45</left>
+                    <top>38</top>
                     <width>1830</width>
                     <height>1068</height>
                     <texture>wall/wall_bg_glow.png</texture>
@@ -71,16 +71,16 @@
                     <include>PanelGlowFade</include>
                 </control>
                 <control type="image">
-                    <posx>45</posx>
-                    <posy>38</posy>
+                    <left>45</left>
+                    <top>38</top>
                     <width>1830</width>
                     <height>1068</height>
                     <texture>wall/wall_bg.png</texture>
                     <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
                 </control>
                 <control type="image">
-                    <posx>45</posx>
-                    <posy>38</posy>
+                    <left>45</left>
+                    <top>38</top>
                     <width>1830</width>
                     <height>1068</height>
                     <texture>wall/wall_bg_reflection.png</texture>
@@ -88,16 +88,16 @@
                 <control type="group">
                     <visible>Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)</visible>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>95</posy>
+                        <left>0</left>
+                        <top>95</top>
                         <width>940</width>
                         <height>830</height>
                         <texture>views/listpanel_detailwide.png</texture>
                         <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                     </control>
                     <control type="image">
-                        <posx>938</posx>
-                        <posy>95</posy>
+                        <left>938</left>
+                        <top>95</top>
                         <width>2</width>
                         <height>830</height>
                         <texture>views/tripanel/upright.png</texture>
@@ -108,22 +108,22 @@
             </control>
         </control>
         <control type="group">
-            <posx>100</posx>
-            <posy>135</posy>
+            <left>100</left>
+            <top>135</top>
             <visible>Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13)</visible>
             <include>Animation_VisibleChange200</include>
             <include>Animation_OpenCloseZoom_New</include>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>814</width>
                 <height>458</height>
                 <texture border="5">pvr/Border.png</texture>
                 <colordiffuse>$VAR[ExtendedColorDiffuseVar]</colordiffuse>
             </control>
             <control type="image">
-                <posx>5</posx>
-                <posy>5</posy>
+                <left>5</left>
+                <top>5</top>
                 <width>804</width>
                 <height>448</height>
                 <texture>$VAR[PVRThumbVar]</texture>
@@ -131,8 +131,8 @@
                 <visible>!Player.HasVideo</visible>
             </control>
             <control type="videowindow">
-                <posx>5</posx>
-                <posy>5</posy>
+                <left>5</left>
+                <top>5</top>
                 <width>804</width>
                 <height>448</height>
                 <visible>Player.HasVideo</visible>
@@ -140,7 +140,7 @@
             </control>
         </control>
         <control type="group" id="50">
-            <posy>30</posy>
+            <top>30</top>
             <include>Animation_OpenCloseZoom_New</include>
             <!-- view id = 10 -->
             <include>EPGTimelineView</include>
@@ -164,7 +164,7 @@
                 <visible>!Skin.HasSetting(disabletopbar)</visible>
                 <!--right widget -->
                 <control type="image">
-                    <posx>654r</posx>
+                    <left>654r</left>
                     <width>794</width>
                     <height>87</height>
                     <texture flipy="true">home/timepanel_mid.png</texture>
@@ -181,7 +181,7 @@
                     <animation effect="slide" start="750" end="0" time="240">VisibleChange</animation>
                 </control>
                 <control type="group">
-                    <posx>60</posx>
+                    <left>60</left>
                     <control type="grouplist">
                         <width>1882</width>
                         <align>right</align>
@@ -243,33 +243,33 @@
                         <include>Objects_MediaMenuButtonIcons</include>
                     </control>
                     <control type="button" id="33">
-                        <posy>38</posy>
+                        <top>38</top>
                         <label>19024</label>
                         <visible>!Skin.HasSetting(noradio)</visible>
                         <include>Objects_MediaMenuButtonIcons</include>
                     </control>
                     <control type="button" id="34">
-                        <posy>112</posy>
+                        <top>112</top>
                         <label>19163</label>
                         <include>Objects_MediaMenuButtonIcons</include>
                     </control>
                     <control type="button" id="31">
-                        <posy>38</posy>
+                        <top>38</top>
                         <label>-</label>
                         <include>Objects_MediaMenuButtonIcons</include>
                     </control>
                     <control type="button" id="35">
-                        <posy>150</posy>
+                        <top>150</top>
                         <label>19040</label>
                         <include>Objects_MediaMenuButtonIcons</include>
                     </control>
                     <control type="button" id="36">
-                        <posy>188</posy>
+                        <top>188</top>
                         <label>137</label>
                         <include>Objects_MediaMenuButtonIcons</include>
                     </control>
                     <control type="radiobutton" id="326">
-                        <posy>188</posy>
+                        <top>188</top>
                         <label>31175</label>
                         <onclick>Skin.ToggleSetting(smalltvlist)</onclick>
                         <include>Objects_MediaMenuButtonIcons</include>
@@ -283,7 +283,7 @@
                     </control>
                 </control>
                 <control type="grouplist">
-                    <posy>15</posy>
+                    <top>15</top>
                     <orientation>vertical</orientation>
                     <itemgap>20</itemgap>
                     <visible>ControlGroup(9003).HasFocus</visible>

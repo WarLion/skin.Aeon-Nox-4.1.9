@@ -2,16 +2,16 @@
 <window>
     <defaultcontrol always="true">11</defaultcontrol>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <include>Animation_DialogPopup</include>
     <controls>
         <include>DialogBackFade</include>
         <control type="group">
-            <posx>326</posx>
-            <posy>294</posy>
+            <left>326</left>
+            <top>294</top>
             <width>1270</width>
             <height>492</height>
             <control type="image">
@@ -29,8 +29,8 @@
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
             <control type="list" id="10">
-                <posx>60</posx>
-                <posy>80</posy>
+                <left>60</left>
+                <top>80</top>
                 <width>908</width>
                 <height>246</height>
                 <onup>12</onup>
@@ -40,7 +40,7 @@
                 <scrolltime>0</scrolltime>
                 <itemlayout height="62">
                     <control type="label">
-                        <posx>8</posx>
+                        <left>8</left>
                         <width>908</width>
                         <height>48</height>
                         <font>Font_Info</font>
@@ -50,7 +50,7 @@
                 </itemlayout>
                 <focusedlayout height="62">
                     <control type="label">
-                        <posx>8</posx>
+                        <left>8</left>
                         <width>908</width>
                         <height>48</height>
                         <font>Font_Info</font>
@@ -60,8 +60,8 @@
                 </focusedlayout>
             </control>
             <control type="image">
-                <posx>27</posx>
-                <posy>69</posy>
+                <left>27</left>
+                <top>69</top>
                 <width>980</width>
                 <height>261</height>
                 <texture>dialogs/addsource_highlighttop.png</texture>
@@ -70,8 +70,8 @@
                 <visible>Control.HasFocus(10)</visible>
             </control>
             <control type="label" id="0">
-                <posx>15</posx>
-                <posy>12</posy>
+                <left>15</left>
+                <top>12</top>
                 <width>1010</width>
                 <height>42</height>
                 <align>center</align>
@@ -80,8 +80,8 @@
                 <animation effect="fade" start="100" end="60" time="240" condition="!Control.HasFocus(10)">Conditional</animation>
             </control>
             <control type="label" id="0">
-                <posx>15</posx>
-                <posy>333</posy>
+                <left>15</left>
+                <top>333</top>
                 <width>1010</width>
                 <height>42</height>
                 <align>center</align>
@@ -90,8 +90,8 @@
                 <animation effect="fade" start="100" end="60" time="240" condition="!Control.HasFocus(12)">Conditional</animation>
             </control>
             <control type="button" id="12">
-                <posx>27</posx>
-                <posy>386</posy>
+                <left>27</left>
+                <top>386</top>
                 <width>980</width>
                 <height>66</height>
                 <align>center</align>
@@ -107,8 +107,8 @@
                 <ondown>10</ondown>
             </control>
             <control type="image">
-                <posx>27</posx>
-                <posy>382</posy>
+                <left>27</left>
+                <top>382</top>
                 <width>980</width>
                 <height>76</height>
                 <texture>dialogs/addsource_highlight.png</texture>
@@ -117,8 +117,8 @@
                 <visible>Control.HasFocus(12)</visible>
             </control>
             <control type="group" id="9000">
-                <posx>1023</posx>
-                <posy>46</posy>
+                <left>1023</left>
+                <top>46</top>
                 <control type="button" id="11">
                     <width>230</width>
                     <height>62</height>
@@ -134,7 +134,7 @@
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 </control>
                 <control type="button" id="13">
-                    <posy>62</posy>
+                    <top>62</top>
                     <width>230</width>
                     <height>62</height>
                     <textoffsetx>30</textoffsetx>
@@ -149,7 +149,7 @@
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 </control>
                 <control type="button" id="14">
-                    <posy>123</posy>
+                    <top>123</top>
                     <width>230</width>
                     <height>62</height>
                     <textoffsetx>30</textoffsetx>
@@ -164,7 +164,7 @@
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 </control>
                 <control type="button" id="19">
-                    <posy>184</posy>
+                    <top>184</top>
                     <width>230</width>
                     <height>62</height>
                     <textoffsetx>30</textoffsetx>
@@ -179,7 +179,7 @@
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 </control>
                 <control type="button" id="18">
-                    <posy>246</posy>
+                    <top>246</top>
                     <width>230</width>
                     <height>62</height>
                     <textoffsetx>30</textoffsetx>
@@ -195,7 +195,7 @@
                 </control>
             </control>
             <control type="image">
-                <posx>1</posx>
+                <left>1</left>
                 <width>1270</width>
                 <height>492</height>
                 <texture>dialogs/addsource_front.png</texture>

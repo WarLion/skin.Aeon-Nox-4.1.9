@@ -2,8 +2,8 @@
 <window>
     <defaultcontrol always="true">450</defaultcontrol>
     <coordinates>
-        <posx>300</posx>
-        <posy>180</posy>
+        <left>300</left>
+        <top>180</top>
         <system>1</system>
     </coordinates>
     <include>Animation_DialogPopup2</include>
@@ -23,22 +23,22 @@
             <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
         </control>	
         <control type="image">
-            <posx>75</posx>
-            <posy>52</posy>
+            <left>75</left>
+            <top>52</top>
             <width>1172</width>
             <height>60</height>
             <texture border="1">osd/osd_settings_buttonnf.png</texture>
         </control>
         <control type="image">
-            <posx>75</posx>
-            <posy>578</posy>
+            <left>75</left>
+            <top>578</top>
             <width>1172</width>
             <height>60</height>
             <texture border="1">osd/osd_settings_buttonnf.png</texture>
         </control>
         <control type="label">
-            <posx>120</posx>
-            <posy>45</posy>
+            <left>120</left>
+            <top>45</top>
             <width>1322</width>
             <height>45</height>
             <label>$LOCALIZE[298]</label>
@@ -46,8 +46,8 @@
             <textcolor>$VAR[TitleColorVar]</textcolor>
         </control>
         <control type="grouplist" id="450">
-            <posx>-40</posx>
-            <posy>638</posy>
+            <left>-40</left>
+            <top>638</top>
             <width>1000</width>
             <height>135</height>
             <align>center</align>
@@ -98,8 +98,8 @@
             </control>
         </control>
         <control type="label">
-            <posx>1214</posx>
-            <posy>658</posy>
+            <left>1214</left>
+            <top>658</top>
             <width>315</width>
             <height>60</height>
             <align>right</align>
@@ -109,8 +109,8 @@
             <textcolor>grey2</textcolor>
         </control>
         <control type="panel" id="11">
-            <posx>124</posx>
-            <posy>114</posy>
+            <left>124</left>
+            <top>114</top>
             <width>1080</width>
             <height>525</height>
             <onleft>450</onleft>
@@ -130,8 +130,8 @@
                     <bordersize>5</bordersize>
                 </control>
                 <control type="label">
-                    <posx>168</posx>
-                    <posy>228</posy>
+                    <left>168</left>
+                    <top>228</top>
                     <width>338</width>
                     <height>22</height>
                     <align>center</align>
@@ -154,8 +154,8 @@
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 </control>
                 <control type="label">
-                    <posx>168</posx>
-                    <posy>228</posy>
+                    <left>168</left>
+                    <top>228</top>
                     <width>338</width>
                     <height>22</height>
                     <align>center</align>
@@ -164,8 +164,8 @@
             </focusedlayout>
         </control>
         <control type="scrollbar" id="61">
-            <posx>1283</posx>
-            <posy>105</posy>
+            <left>1283</left>
+            <top>105</top>
             <width>42</width>
             <height>540</height>
             <include>Animation_VerticalScrollBar</include>

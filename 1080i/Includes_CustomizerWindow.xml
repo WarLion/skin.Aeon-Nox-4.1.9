@@ -2,8 +2,8 @@
 <includes>
     <include name="HomePanelWidget_1124">
         <control type="group" id="5000">
-            <posx>135</posx>
-            <posy>674</posy>
+            <left>135</left>
+            <top>674</top>
             <width>1920</width>
             <height>825</height>
             <visible>[Substring(Control.GetLabel(4321),featured) | Substring(Control.GetLabel(4321),panel)] + !Window.IsActive(1120)</visible>
@@ -41,8 +41,8 @@
                 <visible>Substring(Control.GetLabel(4321),concertspanel)</visible>
                 <include>Animation_VisibleChange400</include>
                 <control type="panel" id="5010">
-                    <posx>27</posx>
-                    <posy>26</posy>
+                    <left>27</left>
+                    <top>26</top>
                     <width>1596</width>
                     <height>360</height>
                     <preloaditems>2</preloaditems>
@@ -67,7 +67,7 @@
                                 <texture border="6">button-nofocus.png</texture>
                             </control>
                             <control type="textbox">
-                                <posx>12</posx>
+                                <left>12</left>
                                 <width>375</width>
                                 <height>66</height>
                                 <align>left</align>
@@ -76,8 +76,8 @@
                                 <info>ListItem.Label</info>
                             </control>
                             <control type="label">
-                                <posx>12</posx>
-                                <posy>80</posy>
+                                <left>12</left>
+                                <top>80</top>
                                 <width>375</width>
                                 <height>40</height>
                                 <font>Font_Reg26</font>
@@ -86,8 +86,8 @@
                                 <info>ListItem.Label2</info>
                             </control>
                             <control type="label">
-                                <posx>12</posx>
-                                <posy>110</posy>
+                                <left>12</left>
+                                <top>110</top>
                                 <width>375</width>
                                 <height>40</height>
                                 <label>$INFO[ListItem.Property(City)] - $INFO[ListItem.Property(Name)]</label>
@@ -124,7 +124,7 @@
                                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                             </control>
                             <control type="textbox">
-                                <posx>12</posx>
+                                <left>12</left>
                                 <width>375</width>
                                 <height>66</height>
                                 <align>left</align>
@@ -133,8 +133,8 @@
                                 <info>ListItem.Label</info>
                             </control>
                             <control type="label">
-                                <posx>12</posx>
-                                <posy>80</posy>
+                                <left>12</left>
+                                <top>80</top>
                                 <width>375</width>
                                 <height>40</height>
                                 <font>Font_Reg26</font>
@@ -143,8 +143,8 @@
                                 <info>ListItem.Label2</info>
                             </control>
                             <control type="label">
-                                <posx>12</posx>
-                                <posy>110</posy>
+                                <left>12</left>
+                                <top>110</top>
                                 <width>375</width>
                                 <height>40</height>
                                 <label>$INFO[ListItem.Property(City)] - $INFO[ListItem.Property(Name)]</label>
@@ -164,13 +164,13 @@
                 <include condition="SubString(Weather.Plugin,weather.wunderground)">WundergroundWidget</include>
             </control>
             <control type="group">
-                <posy>31</posy>
+                <top>31</top>
                 <visible>Substring(Control.GetLabel(4321),featured)</visible>
                 <include>Animation_VisibleChange400</include>
                 <control type="group">
-                    <posx>31</posx>
+                    <left>31</left>
                     <control type="label">
-                        <posy>350</posy>
+                        <top>350</top>
                         <width>607</width>
                         <height>25</height>
                         <textoffsetx>15</textoffsetx>
@@ -257,7 +257,7 @@
                         </content>
                     </control>
                     <control type="label">
-                        <posy>300</posy>
+                        <top>300</top>
                         <width>466</width>
                         <height>40</height>
                         <textoffsetx>15</textoffsetx>
@@ -266,15 +266,15 @@
                         <textcolor>white2</textcolor>
                     </control>
                     <control type="image">
-                        <posx>466</posx>
-                        <posy>315</posy>
+                        <left>466</left>
+                        <top>315</top>
                         <width>138</width>
                         <height>12</height>
                         <texture>$INFO[Container(5001).ListItem.Property(NavItem),featured/panel_mid/]</texture>
                     </control>
                 </control>
                 <control type="group">
-                    <posx>655</posx>
+                    <left>655</left>
                     <control type="wraplist" id="5002">
                         <width>340</width>
                         <height>340</height>
@@ -347,7 +347,7 @@
                         </content>
                     </control>
                     <control type="label">
-                        <posy>300</posy>
+                        <top>300</top>
                         <width>246</width>
                         <height>40</height>
                         <textoffsetx>15</textoffsetx>
@@ -356,18 +356,18 @@
                         <textcolor>white2</textcolor>
                     </control>
                     <control type="image">
-                        <posx>246</posx>
-                        <posy>315</posy>
+                        <left>246</left>
+                        <top>315</top>
                         <width>84</width>
                         <height>12</height>
                         <texture>$INFO[Container(5002).ListItem.Property(NavItem),featured/panel_right/]</texture>
                     </control>
                 </control>
                 <control type="group">
-                    <posx>1005</posx>
+                    <left>1005</left>
                     <control type="label">
-                        <posx>618</posx>
-                        <posy>350</posy>
+                        <left>618</left>
+                        <top>350</top>
                         <width>607</width>
                         <height>25</height>
                         <textoffsetx>15</textoffsetx>
@@ -457,7 +457,7 @@
                         </content>
                     </control>
                     <control type="label">
-                        <posy>300</posy>
+                        <top>300</top>
                         <width>466</width>
                         <height>40</height>
                         <textoffsetx>15</textoffsetx>
@@ -466,8 +466,8 @@
                         <textcolor>white2</textcolor>
                     </control>
                     <control type="image">
-                        <posx>466</posx>
-                        <posy>315</posy>
+                        <left>466</left>
+                        <top>315</top>
                         <width>138</width>
                         <height>12</height>
                         <texture>$INFO[Container(5003).ListItem.Property(NavItem),featured/panel_mid/]</texture>
@@ -475,8 +475,8 @@
                 </control>
             </control>
             <control type="image">
-                <posx>21</posx>
-                <posy>21</posy>
+                <left>21</left>
+                <top>21</top>
                 <width>1608</width>
                 <height>360</height>
                 <texture border="50">featured/panel_featured_overlay.png</texture>
@@ -488,8 +488,8 @@
     </include>
     <include name="HomePanelWidget2_1124">
         <control type="group" id="6000">
-            <posx>135</posx>
-            <posy>-7</posy>
+            <left>135</left>
+            <top>-7</top>
             <width>1920</width>
             <height>825</height>
             <animation effect="slide" end="0,35" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
@@ -526,8 +526,8 @@
                 <visible>Substring(Control.GetLabel(4325),concertspanel)</visible>
                 <include>Animation_VisibleChange400</include>
                 <control type="panel" id="6010">
-                    <posx>27</posx>
-                    <posy>26</posy>
+                    <left>27</left>
+                    <top>26</top>
                     <width>1596</width>
                     <height>360</height>
                     <preloaditems>2</preloaditems>
@@ -552,7 +552,7 @@
                                 <texture border="6">button-nofocus.png</texture>
                             </control>
                             <control type="textbox">
-                                <posx>12</posx>
+                                <left>12</left>
                                 <width>375</width>
                                 <height>66</height>
                                 <align>left</align>
@@ -561,8 +561,8 @@
                                 <info>ListItem.Label</info>
                             </control>
                             <control type="label">
-                                <posx>12</posx>
-                                <posy>80</posy>
+                                <left>12</left>
+                                <top>80</top>
                                 <width>375</width>
                                 <height>40</height>
                                 <font>Font_Reg26</font>
@@ -571,8 +571,8 @@
                                 <info>ListItem.Label2</info>
                             </control>
                             <control type="label">
-                                <posx>12</posx>
-                                <posy>110</posy>
+                                <left>12</left>
+                                <top>110</top>
                                 <width>375</width>
                                 <height>40</height>
                                 <label>$INFO[ListItem.Property(City)] - $INFO[ListItem.Property(Name)]</label>
@@ -609,7 +609,7 @@
                                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                             </control>
                             <control type="textbox">
-                                <posx>12</posx>
+                                <left>12</left>
                                 <width>375</width>
                                 <height>66</height>
                                 <align>left</align>
@@ -618,8 +618,8 @@
                                 <info>ListItem.Label</info>
                             </control>
                             <control type="label">
-                                <posx>12</posx>
-                                <posy>80</posy>
+                                <left>12</left>
+                                <top>80</top>
                                 <width>375</width>
                                 <height>40</height>
                                 <font>Font_Reg26</font>
@@ -628,8 +628,8 @@
                                 <info>ListItem.Label2</info>
                             </control>
                             <control type="label">
-                                <posx>12</posx>
-                                <posy>110</posy>
+                                <left>12</left>
+                                <top>110</top>
                                 <width>375</width>
                                 <height>40</height>
                                 <label>$INFO[ListItem.Property(City)] - $INFO[ListItem.Property(Name)]</label>
@@ -649,13 +649,13 @@
                 <include condition="SubString(Weather.Plugin,weather.wunderground)">WundergroundWidget</include>
             </control>
             <control type="group">
-                <posy>31</posy>
+                <top>31</top>
                 <visible>Substring(Control.GetLabel(4325),featured)</visible>
                 <include>Animation_VisibleChange400</include>
                 <control type="group">
-                    <posx>31</posx>
+                    <left>31</left>
                     <control type="label">
-                        <posy>350</posy>
+                        <top>350</top>
                         <width>607</width>
                         <height>25</height>
                         <textoffsetx>15</textoffsetx>
@@ -740,7 +740,7 @@
                         </content>
                     </control>
                     <control type="label">
-                        <posy>300</posy>
+                        <top>300</top>
                         <width>466</width>
                         <height>40</height>
                         <textoffsetx>15</textoffsetx>
@@ -749,15 +749,15 @@
                         <textcolor>white2</textcolor>
                     </control>
                     <control type="image">
-                        <posx>466</posx>
-                        <posy>315</posy>
+                        <left>466</left>
+                        <top>315</top>
                         <width>138</width>
                         <height>12</height>
                         <texture>$INFO[Container(6001).ListItem.Property(NavItem),featured/panel_mid/]</texture>
                     </control>
                 </control>
                 <control type="group">
-                    <posx>655</posx>
+                    <left>655</left>
                     <control type="wraplist" id="6002">
                         <width>340</width>
                         <height>340</height>
@@ -828,7 +828,7 @@
                         </content>
                     </control>
                     <control type="label">
-                        <posy>300</posy>
+                        <top>300</top>
                         <width>246</width>
                         <height>40</height>
                         <textoffsetx>15</textoffsetx>
@@ -837,18 +837,18 @@
                         <textcolor>white2</textcolor>
                     </control>
                     <control type="image">
-                        <posx>246</posx>
-                        <posy>315</posy>
+                        <left>246</left>
+                        <top>315</top>
                         <width>84</width>
                         <height>12</height>
                         <texture>$INFO[Container(6002).ListItem.Property(NavItem),featured/panel_right/]</texture>
                     </control>
                 </control>
                 <control type="group">
-                    <posx>1005</posx>
+                    <left>1005</left>
                     <control type="label">
-                        <posx>618</posx>
-                        <posy>350</posy>
+                        <left>618</left>
+                        <top>350</top>
                         <width>607</width>
                         <height>25</height>
                         <textoffsetx>15</textoffsetx>
@@ -936,7 +936,7 @@
                         </content>
                     </control>
                     <control type="label">
-                        <posy>300</posy>
+                        <top>300</top>
                         <width>466</width>
                         <height>40</height>
                         <textoffsetx>15</textoffsetx>
@@ -945,8 +945,8 @@
                         <textcolor>white2</textcolor>
                     </control>
                     <control type="image">
-                        <posx>466</posx>
-                        <posy>315</posy>
+                        <left>466</left>
+                        <top>315</top>
                         <width>138</width>
                         <height>12</height>
                         <texture>$INFO[Container(6003).ListItem.Property(NavItem),featured/panel_mid/]</texture>
@@ -954,8 +954,8 @@
                 </control>
             </control>
             <control type="image">
-                <posx>21</posx>
-                <posy>21</posy>
+                <left>21</left>
+                <top>21</top>
                 <width>1608</width>
                 <height>360</height>
                 <texture border="50">featured/panel_featured_overlay.png</texture>
@@ -967,8 +967,8 @@
     </include>
     <include name="RecentWidget_1124">
         <control type="group" id="8998">
-            <posx>1542</posx>
-            <posy>678</posy>
+            <left>1542</left>
+            <top>678</top>
             <visible>Substring(Control.GetLabel(4321),classic) + !Window.IsActive(1120)</visible>
             <include>Animation_Widgets</include>
             <animation effect="slide" end="0,-270" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
@@ -981,8 +981,8 @@
                     <visible>Substring(Control.GetLabel(4321),default) | Substring(Control.GetLabel(4321),glass)</visible>
                     <include>Animation_VisibleChange200</include>
                     <control type="image">
-                        <posx>-12</posx>
-                        <posy>-4</posy>
+                        <left>-12</left>
+                        <top>-4</top>
                         <width>385</width>
                         <height>370</height>
                         <texture border="50">keyboard/keyboard_back_shadow.png</texture>
@@ -992,8 +992,8 @@
                         <visible>Substring(Control.GetLabel(4321),default)</visible>
                     </control>
                     <control type="image">
-                        <posx>-12</posx>
-                        <posy>-5</posy>
+                        <left>-12</left>
+                        <top>-5</top>
                         <width>385</width>
                         <height>370</height>
                         <texture border="20">$VAR[WidgetBackVar]</texture>
@@ -1001,8 +1001,8 @@
                     </control>
                 </control>
                 <control type="label">
-                    <posx>15</posx>
-                    <posy>8</posy>
+                    <left>15</left>
+                    <top>8</top>
                     <width>335</width>
                     <height>60</height>
                     <align>center</align>
@@ -1013,8 +1013,8 @@
                     <visible>!SubString(Control.GetLabel(4321),panel)</visible>
                 </control>
                 <control type="image">
-                    <posx>105</posx>
-                    <posy>264</posy>
+                    <left>105</left>
+                    <top>264</top>
                     <width>150</width>
                     <height>30</height>
                     <texture>$INFO[Container(8000).ListItem.Property(Rating),stars/,.png]</texture>
@@ -1023,8 +1023,8 @@
                     <include>Animation_HomeWidget</include>
                 </control>
                 <control type="label">
-                    <posx>15</posx>
-                    <posy>264</posy>
+                    <left>15</left>
+                    <top>264</top>
                     <width>330</width>
                     <height>30</height>
                     <align>center</align>
@@ -1039,8 +1039,8 @@
                 <control type="group">
                     <visible>!Substring(Control.GetLabel(4321),systemclassic)</visible>
                     <control type="image">
-                        <posx>7</posx>
-                        <posy>63</posy>
+                        <left>7</left>
+                        <top>63</top>
                         <width>345</width>
                         <height>240</height>
                         <aspectratio aligny="top" align="center">keep</aspectratio>
@@ -1052,8 +1052,8 @@
                         <visible>Substring(Control.GetLabel(4321),addons) | Substring(Control.GetLabel(4321),Icon) | Substring(Control.GetLabel(4321),albums) | Substring(Control.GetLabel(4321),actor) | Substring(Control.GetLabel(4321),pics) | Substring(Control.GetLabel(4321),artists) | Substring(Control.GetLabel(4321),roms)</visible>
                     </control>
                     <control type="image">
-                        <posx>7</posx>
-                        <posy>63</posy>
+                        <left>7</left>
+                        <top>63</top>
                         <width>345</width>
                         <height>194</height>
                         <aspectratio aligny="top" align="center">scale</aspectratio>
@@ -1065,8 +1065,8 @@
                         <visible>Substring(Control.GetLabel(4321),tv) | Substring(Control.GetLabel(4321),rss)</visible>
                     </control>
                     <control type="image">
-                        <posx>7</posx>
-                        <posy>63</posy>
+                        <left>7</left>
+                        <top>63</top>
                         <width>345</width>
                         <height>194</height>
                         <aspectratio aligny="top" align="center">scale</aspectratio>
@@ -1083,8 +1083,8 @@
                     <include>HomeSystemWidget</include>
                 </control>
                 <control type="label">
-                    <posx>15</posx>
-                    <posy>308</posy>
+                    <left>15</left>
+                    <top>308</top>
                     <width>330</width>
                     <height>30</height>
                     <align>center</align>
@@ -1098,12 +1098,12 @@
             </control>
             <!--Actual list-->
             <control type="group">
-                <posx>513</posx>
-                <posy>-16</posy>
+                <left>513</left>
+                <top>-16</top>
                 <animation effect="slide" end="-570,0" time="400" easing="inout" tween="cubic" condition="Control.HasFocus(8000)">Conditional</animation>
                 <control type="list" id="8000">
-                    <posx>8</posx>
-                    <posy>64</posy>
+                    <left>8</left>
+                    <top>64</top>
                     <width>450</width>
                     <height>280</height>
                     <preloaditems>2</preloaditems>
@@ -1372,8 +1372,8 @@
     </include>
     <include name="RecentWidget2_1124">
         <control type="group" id="7998">
-            <posx>1542</posx>
-            <posy>13</posy>
+            <left>1542</left>
+            <top>13</top>
             <animation effect="slide" end="0,40" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
             <animation effect="slide" end="0,25" time="320" tween="cubic" easing="inout" condition="[[Skin.HasSetting(totalshomehigh) + !Skin.HasSetting(DisableLibraryStats)] | [Skin.HasSetting(timehomehigh) + !Skin.HasSetting(DisableTimePanel)]]">Conditional</animation>
             <visible>Substring(Control.GetLabel(4325),classic) + !Window.IsActive(1120)</visible>
@@ -1384,8 +1384,8 @@
                     <visible>Substring(Control.GetLabel(4325),default) | Substring(Control.GetLabel(4325),glass)</visible>
                     <include>Animation_VisibleChange200</include>
                     <control type="image">
-                        <posx>-12</posx>
-                        <posy>-4</posy>
+                        <left>-12</left>
+                        <top>-4</top>
                         <width>385</width>
                         <height>370</height>
                         <texture border="50">keyboard/keyboard_back_shadow.png</texture>
@@ -1395,8 +1395,8 @@
                         <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                     </control>
                     <control type="image">
-                        <posx>-12</posx>
-                        <posy>-5</posy>
+                        <left>-12</left>
+                        <top>-5</top>
                         <width>385</width>
                         <height>370</height>
                         <texture border="20">$VAR[Widget2BackVar]</texture>
@@ -1404,8 +1404,8 @@
                     </control>
                 </control>
                 <control type="label">
-                    <posx>15</posx>
-                    <posy>8</posy>
+                    <left>15</left>
+                    <top>8</top>
                     <width>330</width>
                     <height>60</height>
                     <align>center</align>
@@ -1416,8 +1416,8 @@
                     <visible>!SubString(Control.GetLabel(4325),panel)</visible>
                 </control>
                 <control type="image">
-                    <posx>105</posx>
-                    <posy>264</posy>
+                    <left>105</left>
+                    <top>264</top>
                     <width>150</width>
                     <height>30</height>
                     <texture>$INFO[Container(7000).ListItem.Property(Rating),stars/,.png]</texture>
@@ -1426,8 +1426,8 @@
                     <include>Animation_HomeWidget</include>
                 </control>
                 <control type="label">
-                    <posx>15</posx>
-                    <posy>264</posy>
+                    <left>15</left>
+                    <top>264</top>
                     <width>330</width>
                     <height>30</height>
                     <align>center</align>
@@ -1442,8 +1442,8 @@
                 <control type="group">
                     <visible>!Substring(Control.GetLabel(4325),systemclassic)</visible>
                     <control type="image">
-                        <posx>7</posx>
-                        <posy>63</posy>
+                        <left>7</left>
+                        <top>63</top>
                         <width>345</width>
                         <height>240</height>
                         <aspectratio aligny="top" align="center">keep</aspectratio>
@@ -1455,8 +1455,8 @@
                         <visible>Substring(Control.GetLabel(4325),addons) | Substring(Control.GetLabel(4325),Icon) | Substring(Control.GetLabel(4325),albums) | Substring(Control.GetLabel(4325),artists) | Substring(Control.GetLabel(4325),actor) | Substring(Control.GetLabel(4325),pics) | Substring(Control.GetLabel(4325),roms)</visible>
                     </control>
                     <control type="image">
-                        <posx>7</posx>
-                        <posy>63</posy>
+                        <left>7</left>
+                        <top>63</top>
                         <width>345</width>
                         <height>194</height>
                         <aspectratio aligny="top" align="center">scale</aspectratio>
@@ -1468,8 +1468,8 @@
                         <visible>Substring(Control.GetLabel(4325),tv) | Substring(Control.GetLabel(4325),rss)</visible>
                     </control>
                     <control type="image">
-                        <posx>7</posx>
-                        <posy>63</posy>
+                        <left>7</left>
+                        <top>63</top>
                         <width>345</width>
                         <height>194</height>
                         <aspectratio aligny="top" align="center">scale</aspectratio>
@@ -1487,8 +1487,8 @@
                     <include>HomeSystemWidget</include>
                 </control>
                 <control type="label">
-                    <posx>15</posx>
-                    <posy>308</posy>
+                    <left>15</left>
+                    <top>308</top>
                     <width>330</width>
                     <height>30</height>
                     <align>center</align>
@@ -1502,12 +1502,12 @@
             </control>
             <!--Actual list-->
             <control type="group">
-                <posx>513</posx>
-                <posy>-16</posy>
+                <left>513</left>
+                <top>-16</top>
                 <animation effect="slide" end="-570,0" time="400" easing="inout" tween="cubic" condition="Control.HasFocus(7000)">Conditional</animation>
                 <control type="list" id="7000">
-                    <posx>8</posx>
-                    <posy>64</posy>
+                    <left>8</left>
+                    <top>64</top>
                     <width>450</width>
                     <height>280</height>
                     <preloaditems>2</preloaditems>
@@ -1797,8 +1797,8 @@
         <include>WeatherMainMenu</include>
     </include>
     <include name="MainMenuListContent1124">
-        <posx>-338</posx>
-        <posy>450</posy>
+        <left>-338</left>
+        <top>450</top>
         <width>3069</width>
         <height>225</height>
         <hitrect x="-238" y="475" w="2400" h="130" />
@@ -1814,14 +1814,14 @@
         <animation effect="fade" start="100" end="30" time="160" condition="Window.IsVisible(1113) | ControlGroup(9001).HasFocus">conditional</animation>
         <itemlayout height="225" width="519" condition="!Skin.HasSetting(biggergap) + !Skin.HasSetting(mainmenuicons)">
             <control type="label">
-                <posx>260</posx>
+                <left>260</left>
                 <width>519</width>
                 <textcolor>white5</textcolor>
                 <include>MainMenuLabels</include>
             </control>
             <control type="image">
-                <posx>214</posx>
-                <posy>68</posy>
+                <left>214</left>
+                <top>68</top>
                 <width>90</width>
                 <height>90</height>
                 <texture>close.png</texture>
@@ -1830,14 +1830,14 @@
         </itemlayout>
         <focusedlayout height="225" width="519" condition="!Skin.HasSetting(biggergap) + !Skin.HasSetting(mainmenuicons)">
             <control type="label">
-                <posx>260</posx>
+                <left>260</left>
                 <width>519</width>
                 <textcolor>$VAR[MainMenuFontColorVar]</textcolor>
                 <include>MainMenuLabels</include>
             </control>
             <control type="image">
-                <posx>214</posx>
-                <posy>68</posy>
+                <left>214</left>
+                <top>68</top>
                 <width>90</width>
                 <height>90</height>
                 <texture>close.png</texture>
@@ -1846,14 +1846,14 @@
         </focusedlayout>
         <itemlayout height="225" width="639" condition="Skin.HasSetting(biggergap) + !Skin.HasSetting(mainmenuicons)">
             <control type="label">
-                <posx>260</posx>
+                <left>260</left>
                 <width>639</width>
                 <textcolor>white5</textcolor>
                 <include>MainMenuLabels</include>
             </control>
             <control type="image">
-                <posx>274</posx>
-                <posy>68</posy>
+                <left>274</left>
+                <top>68</top>
                 <width>90</width>
                 <height>90</height>
                 <texture>close.png</texture>
@@ -1862,14 +1862,14 @@
         </itemlayout>
         <focusedlayout height="225" width="639" condition="Skin.HasSetting(biggergap) + !Skin.HasSetting(mainmenuicons)">
             <control type="label">
-                <posx>320</posx>
+                <left>320</left>
                 <width>639</width>
                 <textcolor>$VAR[MainMenuFontColorVar]</textcolor>
                 <include>MainMenuLabels</include>
             </control>
             <control type="image">
-                <posx>274</posx>
-                <posy>68</posy>
+                <left>274</left>
+                <top>68</top>
                 <width>90</width>
                 <height>90</height>
                 <texture>close.png</texture>
@@ -1878,8 +1878,8 @@
         </focusedlayout>
         <itemlayout height="225" width="250" condition="Skin.HasSetting(mainmenuicons)">
             <control type="image">
-                <posx>252</posx>
-                <posy>64</posy>
+                <left>252</left>
+                <top>64</top>
                 <width>88</width>
                 <height>88</height>
                 <texture background="true">$INFO[ListItem.Property(BigIcon)]</texture>
@@ -1887,8 +1887,8 @@
                 <visible>SubString(ListItem.Property(BigIcon),/BigIcons/)</visible>
             </control>
             <control type="image">
-                <posx>252</posx>
-                <posy>66</posy>
+                <left>252</left>
+                <top>66</top>
                 <width>88</width>
                 <height>60</height>
                 <aspectratio>keep</aspectratio>
@@ -1897,8 +1897,8 @@
                 <visible>!SubString(ListItem.Property(BigIcon),/BigIcons/)</visible>
             </control>
             <control type="label">
-                <posx>297</posx>
-                <posy>29</posy>
+                <left>297</left>
+                <top>29</top>
                 <width>250</width>
                 <height>225</height>
                 <align>center</align>
@@ -1907,8 +1907,8 @@
                 <textcolor>white4</textcolor>
             </control>
             <control type="image">
-                <posx>266</posx>
-                <posy>67</posy>
+                <left>266</left>
+                <top>67</top>
                 <width>60</width>
                 <height>60</height>
                 <texture>close.png</texture>
@@ -1919,8 +1919,8 @@
             <control type="group">
                 <animation effect="zoom" start="80" end="100" center="296,108" delay="160" tween="back" time="240">Focus</animation>
                 <control type="image">
-                    <posx>252</posx>
-                    <posy>64</posy>
+                    <left>252</left>
+                    <top>64</top>
                     <width>88</width>
                     <height>88</height>
                     <texture background="true">$INFO[ListItem.Property(BigIcon)]</texture>
@@ -1928,8 +1928,8 @@
                     <visible>SubString(ListItem.Property(BigIcon),/BigIcons/)</visible>
                 </control>
                 <control type="image">
-                    <posx>252</posx>
-                    <posy>66</posy>
+                    <left>252</left>
+                    <top>66</top>
                     <width>88</width>
                     <height>60</height>
                     <aspectratio>keep</aspectratio>
@@ -1939,8 +1939,8 @@
                 </control>
             </control>
             <control type="label">
-                <posx>297</posx>
-                <posy>29</posy>
+                <left>297</left>
+                <top>29</top>
                 <width>250</width>
                 <height>225</height>
                 <align>center</align>
@@ -1949,8 +1949,8 @@
                 <textcolor>$VAR[MainMenuFontColorVar]</textcolor>
             </control>
             <control type="image">
-                <posx>266</posx>
-                <posy>67</posy>
+                <left>266</left>
+                <top>67</top>
                 <width>60</width>
                 <height>60</height>
                 <texture>close.png</texture>
@@ -1962,8 +1962,8 @@
         </content>
     </include>
     <include name="SubMenuListContent1124">
-        <posx>145</posx>
-        <posy>-2</posy>
+        <left>145</left>
+        <top>-2</top>
         <width>1150</width>
         <height>50</height>
         <hitrect x="-238" y="0" w="2400" h="130" />
@@ -1975,7 +1975,7 @@
         <onup>9000</onup>
         <itemlayout width="230" height="50">
             <control type="label">
-                <posx>115</posx>
+                <left>115</left>
                 <width>224</width>
                 <height>50</height>
                 <align>center</align>
@@ -1984,8 +1984,8 @@
                 <textcolor>grey</textcolor>
             </control>
             <control type="image">
-                <posx>98</posx>
-                <posy>12</posy>
+                <left>98</left>
+                <top>12</top>
                 <width>30</width>
                 <height>30</height>
                 <texture>close.png</texture>
@@ -1994,7 +1994,7 @@
         </itemlayout>
         <focusedlayout width="230" height="50">
             <control type="label">
-                <posx>115</posx>
+                <left>115</left>
                 <width>224</width>
                 <height>50</height>
                 <align>center</align>
@@ -2007,7 +2007,7 @@
                 <visible>Control.HasFocus(9010)</visible>
             </control>
             <control type="label">
-                <posx>115</posx>
+                <left>115</left>
                 <width>224</width>
                 <height>50</height>
                 <align>center</align>
@@ -2019,8 +2019,8 @@
                 <visible>!Control.HasFocus(9010)</visible>
             </control>
             <control type="image">
-                <posx>98</posx>
-                <posy>12</posy>
+                <left>98</left>
+                <top>12</top>
                 <width>30</width>
                 <height>30</height>
                 <texture>close.png</texture>

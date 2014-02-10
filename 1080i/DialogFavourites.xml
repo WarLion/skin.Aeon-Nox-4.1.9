@@ -2,8 +2,8 @@
 <window type="dialog" id="134">
     <defaultcontrol always="true">450</defaultcontrol>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <onunload condition="Substring(Skin.String(widgetlist),favourite) | Substring(Skin.String(widget2list),favourite)">AlarmClock(FavouriteUpdate,RunScript(script.favourites),00:01,silent)</onunload>
@@ -11,8 +11,8 @@
     <controls>
         <include>DialogBackFade</include>
         <control type="image">
-            <posx>157</posx>
-            <posy>80</posy>
+            <left>157</left>
+            <top>80</top>
             <width>1608</width>
             <height>922</height>
             <texture>osd/osd_settings_back_glow.png</texture>
@@ -21,31 +21,31 @@
             <include>PanelGlowFade</include>
         </control>
         <control type="image">
-            <posx>157</posx>
-            <posy>80</posy>
+            <left>157</left>
+            <top>80</top>
             <width>1608</width>
             <height>922</height>
             <texture>osd/osd_settings_back.png</texture>
             <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
         </control>
         <control type="image">
-            <posx>175</posx>
-            <posy>132</posy>
+            <left>175</left>
+            <top>132</top>
             <width>1572</width>
             <height>60</height>
             <texture border="1">osd/osd_settings_buttonnf.png</texture>
         </control>
         <control type="image">
-            <posx>175</posx>
-            <posy>874</posy>
+            <left>175</left>
+            <top>874</top>
             <width>1572</width>
             <height>60</height>
             <texture border="1">osd/osd_settings_buttonnf.png</texture>
             <visible>!Skin.HasSetting(ThumbsFavorites)</visible>
         </control>
         <control type="label">
-            <posx>220</posx>
-            <posy>125</posy>
+            <left>220</left>
+            <top>125</top>
             <width>1000</width>
             <height>60</height>
             <label>$LOCALIZE[1036]</label>
@@ -53,8 +53,8 @@
             <textcolor>$VAR[TitleColorVar]</textcolor>
         </control>
         <control type="button" id="449">
-            <posx>1393</posx>
-            <posy>125</posy>
+            <left>1393</left>
+            <top>125</top>
             <width>346</width>
             <height>60</height>
             <textoffsetx>20</textoffsetx>
@@ -75,8 +75,8 @@
             <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
         </control>
         <control type="panel" id="450">
-            <posx>185</posx>
-            <posy>192</posy>
+            <left>185</left>
+            <top>192</top>
             <width>1599</width>
             <height>740</height>
             <onleft>61</onleft>
@@ -93,7 +93,7 @@
                     <texture border="1">osd/osd_settings_buttonnf.png</texture>
                 </control>
                 <control type="label">
-                    <posx>45</posx>
+                    <left>45</left>
                     <width>550</width>
                     <height>60</height>
                     <font>Font_Reg30_2</font>
@@ -115,7 +115,7 @@
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 </control>
                 <control type="label">
-                    <posx>45</posx>
+                    <left>45</left>
                     <width>550</width>
                     <height>60</height>
                     <font>Font_Reg30_2</font>
@@ -124,14 +124,14 @@
             </focusedlayout>
             <itemlayout height="90" width="800" condition="Stringcompare(Skin.String(FavoritesListType),2)">
                 <control type="image">
-                    <posx>15</posx>
-                    <posy>30</posy>
+                    <left>15</left>
+                    <top>30</top>
                     <width>750</width>
                     <height>60</height>
                     <texture border="1">osd/osd_settings_buttonnf.png</texture>
                 </control>
                 <control type="label">
-                    <posx>150</posx>
+                    <left>150</left>
                     <width>600</width>
                     <height>90</height>
                     <font>Font_Reg38</font>
@@ -139,8 +139,8 @@
                     <info>ListItem.Label</info>
                 </control>
                 <control type="image">
-                    <posx>52</posx>
-                    <posy>8</posy>
+                    <left>52</left>
+                    <top>8</top>
                     <width>75</width>
                     <height>75</height>
                     <aspectratio>keep</aspectratio>
@@ -149,8 +149,8 @@
             </itemlayout>
             <focusedlayout height="90" width="800" condition="Stringcompare(Skin.String(FavoritesListType),2)">
                 <control type="image">
-                    <posx>15</posx>
-                    <posy>30</posy>
+                    <left>15</left>
+                    <top>30</top>
                     <width>750</width>
                     <height>60</height>
                     <texture border="1">osd/osd_settings_buttonnf.png</texture>
@@ -163,15 +163,15 @@
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 </control>
                 <control type="label">
-                    <posx>150</posx>
+                    <left>150</left>
                     <width>600</width>
                     <height>90</height>
                     <font>Font_Reg38</font>
                     <info>ListItem.Label</info>
                 </control>
                 <control type="image">
-                    <posx>52</posx>
-                    <posy>8</posy>
+                    <left>52</left>
+                    <top>8</top>
                     <width>75</width>
                     <height>75</height>
                     <aspectratio>keep</aspectratio>
@@ -180,14 +180,14 @@
             </focusedlayout>
             <itemlayout height="185" width="790" condition="Stringcompare(Skin.String(FavoritesListType),3)">
                 <control type="image">
-                    <posx>15</posx>
-                    <posy>125</posy>
+                    <left>15</left>
+                    <top>125</top>
                     <width>750</width>
                     <height>60</height>
                     <texture border="1">osd/osd_settings_buttonnf.png</texture>
                 </control>
                 <control type="label">
-                    <posx>205</posx>
+                    <left>205</left>
                     <width>580</width>
                     <height>185</height>
                     <font>Font_Reg38</font>
@@ -195,8 +195,8 @@
                     <info>ListItem.Label</info>
                 </control>
                 <control type="image">
-                    <posx>15</posx>
-                    <posy>5</posy>
+                    <left>15</left>
+                    <top>5</top>
                     <width>175</width>
                     <height>175</height>
                     <aspectratio>keep</aspectratio>
@@ -205,8 +205,8 @@
             </itemlayout>
             <focusedlayout height="185" width="790" condition="Stringcompare(Skin.String(FavoritesListType),3)">
                 <control type="image">
-                    <posx>15</posx>
-                    <posy>125</posy>
+                    <left>15</left>
+                    <top>125</top>
                     <width>750</width>
                     <height>60</height>
                     <texture border="1">osd/osd_settings_buttonnf.png</texture>
@@ -219,15 +219,15 @@
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 </control>
                 <control type="label">
-                    <posx>205</posx>
+                    <left>205</left>
                     <width>580</width>
                     <height>185</height>
                     <font>Font_Reg38</font>
                     <info>ListItem.Label</info>
                 </control>
                 <control type="image">
-                    <posx>15</posx>
-                    <posy>5</posy>
+                    <left>15</left>
+                    <top>5</top>
                     <width>175</width>
                     <height>175</height>
                     <aspectratio>keep</aspectratio>
@@ -236,8 +236,8 @@
             </focusedlayout>
         </control>
         <control type="image">
-            <posx>1069</posx>
-            <posy>275</posy>
+            <left>1069</left>
+            <top>275</top>
             <width>575</width>
             <height>575</height>
             <aspectratio>keep</aspectratio>
@@ -247,8 +247,8 @@
             <visible>Stringcompare(Skin.String(FavoritesListType),2)</visible>
         </control>
         <control type="image">
-            <posx>1289</posx>
-            <posy>275</posy>
+            <left>1289</left>
+            <top>275</top>
             <width>445</width>
             <height>445</height>
             <aspectratio>keep</aspectratio>
@@ -258,8 +258,8 @@
             <visible>Stringcompare(Skin.String(FavoritesListType),1) | IsEmpty(Skin.String(FavoritesListType))</visible>
         </control>
         <control type="label">
-            <posx>1634</posx>
-            <posy>935</posy>
+            <left>1634</left>
+            <top>935</top>
             <width>315</width>
             <height>60</height>
             <align>right</align>
@@ -269,7 +269,7 @@
             <textcolor>grey2</textcolor>
         </control>
         <control type="group">
-            <posx>200</posx>
+            <left>200</left>
             <control type="scrollbar" id="61">
                 <include>Objects_CommonSettingsScrollbar</include>
                 <onleft>450</onleft>

@@ -8,12 +8,12 @@
     <onunload>ClearProperty(MusicVizBG,visualisation)</onunload>
     <controls>
         <control type="group">
-            <posx>60</posx>
+            <left>60</left>
             <visible>!Window.IsActive(1155)</visible>
             <include>Animation_DialogPopup</include>
             <control type="image">
-                <posx>379</posx>
-                <posy>200</posy>
+                <left>379</left>
+                <top>200</top>
                 <width>943</width>
                 <height>680</height>
                 <texture border="20">osd/osd_settings_back_glow.png</texture>
@@ -22,16 +22,16 @@
                 <include>PanelGlowFade</include>
             </control>
             <control type="image">
-                <posx>379</posx>
-                <posy>200</posy>
+                <left>379</left>
+                <top>200</top>
                 <width>943</width>
                 <height>680</height>
                 <texture border="20">osd/osd_settings_back.png</texture>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
             <control type="panel" id="4">
-                <posx>400</posx>
-                <posy>240</posy>
+                <left>400</left>
+                <top>240</top>
                 <width>900</width>
                 <height>600</height>
                 <aligny>center</aligny>

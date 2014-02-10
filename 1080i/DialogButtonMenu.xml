@@ -5,8 +5,8 @@
     <defaultcontrol always="true">800</defaultcontrol>
     <zorder>7</zorder>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <include>Animation_DialogZoom</include>
@@ -22,10 +22,10 @@
         </control>
         <include>DialogBackFade</include>
         <control type="group">
-            <posx>40</posx>
+            <left>40</left>
             <visible>!Skin.HasSetting(quicklistmenu)</visible>
             <control type="grouplist" id="800">
-                <posx>670</posx>
+                <left>670</left>
                 <width>550</width>
                 <height>1080</height>
                 <align>center</align>
@@ -35,7 +35,7 @@
                 <ondown>800</ondown>
                 <orientation>vertical</orientation>
                 <control type="image" id="18">
-                    <posy>-39</posy>
+                    <top>-39</top>
                     <width>488</width>
                     <height>39</height>
                     <texture>$VAR[ShutdownTopVar]</texture>
@@ -134,7 +134,7 @@
                     <visible>System.HasShutdown + System.IsInhibit</visible>
                 </control>
                 <control type="image" id="19">
-                    <posy>699</posy>
+                    <top>699</top>
                     <width>488</width>
                     <height>41</height>
                     <texture>$VAR[ContextBottomVar]</texture>
@@ -142,8 +142,8 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posx>714</posx>
-                <posy>0</posy>
+                <left>714</left>
+                <top>0</top>
                 <width>550</width>
                 <height>1080</height>
                 <align>center</align>

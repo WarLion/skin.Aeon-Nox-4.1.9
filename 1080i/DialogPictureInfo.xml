@@ -24,20 +24,20 @@
             <animation effect="slide" start="0" end="0,540" time="0" reversible="false" condition="!IntegerGreaterThan(Container(5).NumItems,4)">Conditional</animation>
             <animation effect="slide" start="0" end="0,180" time="0" reversible="false" condition="IntegerGreaterThan(Container(5).NumItems,4) + !IntegerGreaterThan(Container(5).NumItems,12)">Conditional</animation>
             <control type="image">
-                <posy>204</posy>
+                <top>204</top>
                 <width>1923</width>
                 <height>980</height>
                 <texture>home/nowplaying_shadow.png</texture>
             </control>
             <control type="image">
-                <posy>204</posy>
+                <top>204</top>
                 <width>1923</width>
                 <height>980</height>
                 <texture>home/nowplaying_shadow.png</texture>
                 <colordiffuse>grey2</colordiffuse>
             </control>
             <control type="panel" id="5">
-                <posy>660</posy>
+                <top>660</top>
                 <width>1920</width>
                 <height>420</height>
                 <aligny>bottom</aligny>
@@ -55,7 +55,7 @@
                         <texture border="1">osd/osd_settings_buttonnf.png</texture>
                     </control>
                     <control type="label">
-                        <posx>10</posx>
+                        <left>10</left>
                         <width>640</width>
                         <height>60</height>
                         <textoffsetx>15</textoffsetx>
@@ -65,7 +65,7 @@
                         <textcolor>grey2</textcolor>
                     </control>
                     <control type="label">
-                        <posx>640</posx>
+                        <left>640</left>
                         <width>750</width>
                         <height>60</height>
                         <textoffsetx>15</textoffsetx>
@@ -84,7 +84,7 @@
                             <texture border="1">osd/osd_settings_buttonnf.png</texture>
                         </control>
                         <control type="label">
-                            <posx>10</posx>
+                            <left>10</left>
                             <width>640</width>
                             <height>60</height>
                             <textoffsetx>15</textoffsetx>
@@ -94,7 +94,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>640</posx>
+                            <left>640</left>
                             <width>640</width>
                             <height>60</height>
                             <textoffsetx>15</textoffsetx>
@@ -113,7 +113,7 @@
                             <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         </control>
                         <control type="label">
-                            <posx>10</posx>
+                            <left>10</left>
                             <width>640</width>
                             <height>60</height>
                             <textoffsetx>15</textoffsetx>
@@ -122,7 +122,7 @@
                             <shadowcolor>black</shadowcolor>
                         </control>
                         <control type="label">
-                            <posx>640</posx>
+                            <left>640</left>
                             <width>640</width>
                             <height>60</height>
                             <textoffsetx>15</textoffsetx>

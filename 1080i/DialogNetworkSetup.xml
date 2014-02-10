@@ -2,15 +2,15 @@
 <window>
     <defaultcontrol>10</defaultcontrol>
     <coordinates>
-        <posx>309</posx>
-        <posy>303</posy>
+        <left>309</left>
+        <top>303</top>
         <system>1</system>
     </coordinates>
     <zorder>4</zorder>
     <include>Animation_DialogPopup</include>
     <controls>
         <control type="image">
-            <posy>22</posy>
+            <top>22</top>
             <width>1288</width>
             <height>431</height>
             <texture>osd/osd_settings_back_glow.png</texture>
@@ -26,8 +26,8 @@
         </control>
         <control type="group" id="9000">
             <control type="spincontrolex" id="10">
-                <posx>20</posx>
-                <posy>51</posy>
+                <left>20</left>
+                <top>51</top>
                 <width>1014</width>
                 <height>62</height>
                 <textoffsetx>30</textoffsetx>
@@ -37,11 +37,11 @@
                 <onup>16</onup>
                 <ondown>11</ondown>
                 <onright>9001</onright>
-                <spinposx>-4</spinposx>
+                <spinleft>-4</spinleft>
             </control>
             <control type="button" id="11">
-                <posx>20</posx>
-                <posy>113</posy>
+                <left>20</left>
+                <top>113</top>
                 <width>1014</width>
                 <height>62</height>
                 <textoffsetx>30</textoffsetx>
@@ -54,8 +54,8 @@
                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
             </control>
             <control type="button" id="13">
-                <posx>20</posx>
-                <posy>175</posy>
+                <left>20</left>
+                <top>175</top>
                 <width>1014</width>
                 <height>62</height>
                 <textoffsetx>30</textoffsetx>
@@ -68,8 +68,8 @@
                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
             </control>
             <control type="button" id="14">
-                <posx>20</posx>
-                <posy>237</posy>
+                <left>20</left>
+                <top>237</top>
                 <width>1014</width>
                 <height>62</height>
                 <textoffsetx>30</textoffsetx>
@@ -83,8 +83,8 @@
                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
             </control>
             <control type="button" id="15">
-                <posx>20</posx>
-                <posy>299</posy>
+                <left>20</left>
+                <top>299</top>
                 <width>1014</width>
                 <height>62</height>
                 <textoffsetx>30</textoffsetx>
@@ -98,8 +98,8 @@
                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
             </control>
             <control type="button" id="16">
-                <posx>20</posx>
-                <posy>361</posy>
+                <left>20</left>
+                <top>361</top>
                 <width>1014</width>
                 <height>62</height>
                 <textoffsetx>30</textoffsetx>
@@ -118,8 +118,8 @@
             <texture>dialogs/setcontent_front.png</texture>
         </control>
         <control type="grouplist" id="9001">
-            <posx>1034</posx>
-            <posy>237</posy>
+            <left>1034</left>
+            <top>237</top>
             <width>234</width>
             <height>186</height>
             <onleft>9000</onleft>

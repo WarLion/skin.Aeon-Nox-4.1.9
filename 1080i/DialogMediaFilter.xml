@@ -2,14 +2,14 @@
 <window>
     <defaultcontrol always="true">5</defaultcontrol>
     <coordinates>
-        <posx>550</posx>
-        <posy>15</posy>
+        <left>550</left>
+        <top>15</top>
         <system>1</system>
     </coordinates>
     <include>Animation_DialogPopup</include>
     <controls>
         <control type="image">
-            <posx>23</posx>
+            <left>23</left>
             <width>744</width>
             <height>650</height>
             <texture border="50">dialogs/dialog_back_shadow.png</texture>
@@ -18,15 +18,15 @@
             <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
         </control>
         <control type="image">
-            <posx>23</posx>
+            <left>23</left>
             <width>744</width>
             <height>650</height>
             <texture border="50">dialogs/dialog_back.png</texture>
             <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
         </control>
         <control type="grouplist" id="5">
-            <posx>42</posx>
-            <posy>75</posy>
+            <left>42</left>
+            <top>75</top>
             <width>706</width>
             <height>540</height>
             <pagecontrol>6</pagecontrol>
@@ -77,8 +77,8 @@
             <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
         </control>
         <control type="group" id="9001">
-            <posx>95</posx>
-            <posy>540</posy>
+            <left>95</left>
+            <top>540</top>
             <control type="button" id="28">
                 <width>300</width>
                 <height>60</height>
@@ -95,7 +95,7 @@
                 <ondown>5</ondown>
             </control>
             <control type="button" id="27">
-                <posx>315</posx>
+                <left>315</left>
                 <width>300</width>
                 <height>60</height>
                 <align>center</align>

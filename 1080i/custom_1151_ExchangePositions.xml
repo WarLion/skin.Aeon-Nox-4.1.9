@@ -8,12 +8,12 @@
     <onunload>SetProperty(MenuName,MenuItem,home)</onunload>
     <controls>
         <control type="group">
-            <posx>280</posx>
+            <left>280</left>
             <include>Animation_OpenCloseZoom</include>
             <visible>!Window.IsActive(1143)</visible>
             <control type="image">
-                <posx>380</posx>
-                <posy>60</posy>
+                <left>380</left>
+                <top>60</top>
                 <width>340</width>
                 <height>880</height>
                 <texture border="20">osd/osd_settings_back_glow.png</texture>
@@ -22,16 +22,16 @@
                 <include>PanelGlowFade</include>
             </control>
             <control type="image">
-                <posx>380</posx>
-                <posy>60</posy>
+                <left>380</left>
+                <top>60</top>
                 <width>340</width>
                 <height>880</height>
                 <texture border="20">osd/osd_settings_back.png</texture>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
             <control type="panel" id="4">
-                <posx>400</posx>
-                <posy>100</posy>
+                <left>400</left>
+                <top>100</top>
                 <width>300</width>
                 <height>800</height>
                 <aligny>center</aligny>
@@ -46,7 +46,7 @@
                         <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>150</posx>
+                        <left>150</left>
                         <width>300</width>
                         <height>40</height>
                         <textoffsetx>10</textoffsetx>
@@ -64,7 +64,7 @@
                             <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                         </control>
                         <control type="label">
-                            <posx>150</posx>
+                            <left>150</left>
                             <width>300</width>
                             <height>40</height>
                             <textoffsetx>10</textoffsetx>

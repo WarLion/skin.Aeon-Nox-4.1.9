@@ -2,15 +2,15 @@
 <window>
     <allowoverlay>no</allowoverlay>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <include>Animation_DialogZoom</include>
     <controls>
         <control type="image">
-            <posx>36</posx>
-            <posy>36</posy>
+            <left>36</left>
+            <top>36</top>
             <width>1846</width>
             <height>1006</height>
             <texture>settings/settings_panelback_shadow.png</texture>
@@ -19,16 +19,16 @@
             <include>Animation_VisibleChange400</include>
         </control>
         <control type="image">
-            <posx>34</posx>
-            <posy>34</posy>
+            <left>34</left>
+            <top>34</top>
             <width>1850</width>
             <height>1010</height>
             <texture>settings/settings_panelback.png</texture>
             <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
         </control>
         <control type="image">
-            <posx>50</posx>
-            <posy>37</posy>
+            <left>50</left>
+            <top>37</top>
             <width>360</width>
             <height>178</height>
             <aspectratio>keep</aspectratio>
@@ -37,8 +37,8 @@
         </control>
         <control type="group">
             <control type="grouplist">
-                <posx>417</posx>
-                <posy>730</posy>
+                <left>417</left>
+                <top>730</top>
                 <width>1374</width>
                 <height>60</height>
                 <orientation>horizontal</orientation>
@@ -67,8 +67,8 @@
                 </control>
             </control>
             <control type="label" id="502">
-                <posx>417</posx>
-                <posy>795</posy>
+                <left>417</left>
+                <top>795</top>
                 <width>1374</width>
                 <height>150</height>
                 <aligny>top</aligny>
@@ -79,8 +79,8 @@
                 <scroll>true</scroll>
             </control>
             <control type="image" id="503">
-                <posx>93</posx>
-                <posy>848</posy>
+                <left>93</left>
+                <top>848</top>
                 <width>262</width>
                 <height>150</height>
                 <aligny>top</aligny>
@@ -94,8 +94,8 @@
                 <!--focused text color-->
             </control>
             <control type="label" id="101">
-                <posx>398</posx>
-                <posy>135</posy>
+                <left>398</left>
+                <top>135</top>
                 <width>405</width>
                 <height>39</height>
                 <label>Time 1</label>
@@ -103,8 +103,8 @@
                 <textcolor>FF6db9e5</textcolor>
             </control>
             <control type="label" id="102">
-                <posx>866</posx>
-                <posy>135</posy>
+                <left>866</left>
+                <top>135</top>
                 <width>405</width>
                 <height>39</height>
                 <label>Time 2</label>
@@ -112,8 +112,8 @@
                 <textcolor>FF6db9e5</textcolor>
             </control>
             <control type="label" id="103">
-                <posx>1334</posx>
-                <posy>135</posy>
+                <left>1334</left>
+                <top>135</top>
                 <width>405</width>
                 <height>39</height>
                 <label>Time 2</label>
@@ -121,8 +121,8 @@
                 <textcolor>FF6db9e5</textcolor>
             </control>
             <control type="label" id="104">
-                <posx>417</posx>
-                <posy>690</posy>
+                <left>417</left>
+                <top>690</top>
                 <width>468</width>
                 <height>39</height>
                 <label>Current Date</label>
@@ -131,60 +131,60 @@
             </control>
             <!--SHOW LISTINGS-->
             <control type="group" id="111">
-                <posx>387</posx>
-                <posy>180</posy>
+                <left>387</left>
+                <top>180</top>
                 <width>1464</width>
                 <height>63</height>
             </control>
             <control type="group" id="112">
-                <posx>387</posx>
-                <posy>255</posy>
+                <left>387</left>
+                <top>255</top>
                 <width>1464</width>
                 <height>63</height>
             </control>
             <control type="group" id="113">
-                <posx>387</posx>
-                <posy>330</posy>
+                <left>387</left>
+                <top>330</top>
                 <width>1464</width>
                 <height>63</height>
             </control>
             <control type="group" id="114">
-                <posx>387</posx>
-                <posy>405</posy>
+                <left>387</left>
+                <top>405</top>
                 <width>1464</width>
                 <height>63</height>
             </control>
             <control type="group" id="115">
-                <posx>387</posx>
-                <posy>480</posy>
+                <left>387</left>
+                <top>480</top>
                 <width>1464</width>
                 <height>63</height>
             </control>
             <control type="group" id="116">
-                <posx>387</posx>
-                <posy>555</posy>
+                <left>387</left>
+                <top>555</top>
                 <width>1464</width>
                 <height>63</height>
             </control>
             <!-- colordiffuse doesnt work  -->
             <control type="image" id="120">
-                <posx>387</posx>
-                <posy>116</posy>
+                <left>387</left>
+                <top>116</top>
                 <width>30</width>
                 <height>510</height>
             </control>
             <!-- Nav texture -->
             <control type="image">
-                <posx>1440</posx>
-                <posy>640</posy>
+                <left>1440</left>
+                <top>640</top>
                 <width>360</width>
                 <height>30</height>
                 <texture>script.pseudotv/NavFlagEpg.png</texture>
             </control>
             <!--CHANNEL BUTTONS AND LABELS-->
             <control type="label" id="301">
-                <posx>123</posx>
-                <posy>180</posy>
+                <left>123</left>
+                <top>180</top>
                 <width>279</width>
                 <height>63</height>
                 <label>19148</label>
@@ -192,8 +192,8 @@
                 <scroll>true</scroll>
             </control>
             <control type="label" id="311">
-                <posx>108</posx>
-                <posy>180</posy>
+                <left>108</left>
+                <top>180</top>
                 <width>45</width>
                 <height>63</height>
                 <align>right</align>
@@ -203,16 +203,16 @@
             </control>
             <!--<control type="image" id="321">
             
-            <posx>4</posx>
-            <posy>204</posy>
+            <left>4</left>
+            <top>204</top>
             <width>30</width>
             <height>30</height>
             <texture></texture>
             <colordiffuse>FFFFFFFF</colordiffuse>
         </control>-->
             <control type="label" id="302">
-                <posx>123</posx>
-                <posy>255</posy>
+                <left>123</left>
+                <top>255</top>
                 <width>279</width>
                 <height>63</height>
                 <label>19148</label>
@@ -220,8 +220,8 @@
                 <scroll>true</scroll>
             </control>
             <control type="label" id="312">
-                <posx>108</posx>
-                <posy>255</posy>
+                <left>108</left>
+                <top>255</top>
                 <width>45</width>
                 <height>63</height>
                 <align>right</align>
@@ -231,16 +231,16 @@
             </control>
             <!--<control type="image" id="322">
             
-            <posx>4</posx>
-            <posy>368</posy>
+            <left>4</left>
+            <top>368</top>
             <width>74</width>
             <height>74</height>
             <texture></texture>
             <colordiffuse>FFFFFFFF</colordiffuse>
         </control>-->
             <control type="label" id="303">
-                <posx>123</posx>
-                <posy>330</posy>
+                <left>123</left>
+                <top>330</top>
                 <width>279</width>
                 <height>63</height>
                 <label>19148</label>
@@ -248,8 +248,8 @@
                 <scroll>true</scroll>
             </control>
             <control type="label" id="313">
-                <posx>108</posx>
-                <posy>330</posy>
+                <left>108</left>
+                <top>330</top>
                 <width>45</width>
                 <height>63</height>
                 <align>right</align>
@@ -259,16 +259,16 @@
             </control>
             <!--<control type="image" id="323">
             
-            <posx>4</posx>
-            <posy>448</posy>
+            <left>4</left>
+            <top>448</top>
             <width>74</width>
             <height>74</height>
             <texture></texture>
             <colordiffuse>FFFFFFFF</colordiffuse>
         </control>-->
             <control type="label" id="304">
-                <posx>123</posx>
-                <posy>405</posy>
+                <left>123</left>
+                <top>405</top>
                 <width>279</width>
                 <height>63</height>
                 <label>19148</label>
@@ -276,8 +276,8 @@
                 <scroll>true</scroll>
             </control>
             <control type="label" id="314">
-                <posx>108</posx>
-                <posy>405</posy>
+                <left>108</left>
+                <top>405</top>
                 <width>45</width>
                 <height>63</height>
                 <align>right</align>
@@ -287,16 +287,16 @@
             </control>
             <!--<control type="image" id="324">
             
-            <posx>4</posx>
-            <posy>528</posy>
+            <left>4</left>
+            <top>528</top>
             <width>74</width>
             <height>74</height>
             <texture></texture>
             <colordiffuse>FFFFFFFF</colordiffuse>
         </control>-->
             <control type="label" id="305">
-                <posx>123</posx>
-                <posy>480</posy>
+                <left>123</left>
+                <top>480</top>
                 <width>279</width>
                 <height>63</height>
                 <label>19148</label>
@@ -304,8 +304,8 @@
                 <scroll>true</scroll>
             </control>
             <control type="label" id="315">
-                <posx>108</posx>
-                <posy>480</posy>
+                <left>108</left>
+                <top>480</top>
                 <width>45</width>
                 <height>63</height>
                 <align>right</align>
@@ -315,16 +315,16 @@
             </control>
             <!--<control type="image" id="325">
             
-            <posx>4</posx>
-            <posy>608</posy>
+            <left>4</left>
+            <top>608</top>
             <width>74</width>
             <height>74</height>
             <texture></texture>
             <colordiffuse>FFFFFFFF</colordiffuse>
         </control>-->
             <control type="label" id="306">
-                <posx>123</posx>
-                <posy>555</posy>
+                <left>123</left>
+                <top>555</top>
                 <width>279</width>
                 <height>63</height>
                 <label>19148</label>
@@ -332,8 +332,8 @@
                 <scroll>true</scroll>
             </control>
             <control type="label" id="316">
-                <posx>108</posx>
-                <posy>555</posy>
+                <left>108</left>
+                <top>555</top>
                 <width>45</width>
                 <height>63</height>
                 <align>right</align>
@@ -343,8 +343,8 @@
             </control>
             <!--<control type="image" id="326">
             
-            <posx>4</posx>
-            <posy>608</posy>
+            <left>4</left>
+            <top>608</top>
             <width>74</width>
             <height>74</height>
             <texture></texture>

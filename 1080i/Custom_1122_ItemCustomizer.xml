@@ -20,12 +20,12 @@
     <onunload condition="Skin.HasSetting(mainmenuicons) | !IsEmpty(Window(1124).Property(ResetItem))">ActivateWindow(1156)</onunload>
     <controls>
         <control type="group">
-            <posy>-40</posy>
+            <top>-40</top>
             <visible>!Window.IsActive(script-RSS_Editor-rssEditor.xml) + !Window.IsActive(1137) + !Window.IsActive(1150) + !Window.IsActive(1160) + !Window.IsActive(1162) + !Window.IsActive(1133) + !Window.IsActive(1134) + !Window.IsActive(1138) + !Window.IsActive(1142) + !Window.IsActive(1143) + !Window.IsActive(1144) + !Window.IsActive(1145) + !Window.IsActive(1146) + !Window.IsActive(1155) + !Window.IsVisible(DialogKeyboard.xml)</visible>
             <include>Animation_DialogPopup</include>
             <control type="image">
-                <posx>456</posx>
-                <posy>200</posy>
+                <left>456</left>
+                <top>200</top>
                 <width>1010</width>
                 <height>810</height>
                 <texture>osd/osd_settings_back_glow.png</texture>
@@ -35,8 +35,8 @@
                 <include>Animation_VisibleChange400</include>
             </control>
             <control type="image">
-                <posx>456</posx>
-                <posy>200</posy>
+                <left>456</left>
+                <top>200</top>
                 <width>1010</width>
                 <height>810</height>
                 <texture>osd/osd_settings_back.png</texture>
@@ -44,8 +44,8 @@
             </control>
             <control type="group">
                 <control type="grouplist">
-                    <posx>875</posx>
-                    <posy>240</posy>
+                    <left>875</left>
+                    <top>240</top>
                     <width>1172</width>
                     <height>720</height>
                     <aligny>center</aligny>
@@ -100,7 +100,7 @@
                         <include>Objects_CustomizerInfoButton</include>
                     </control>
                     <control type="image">
-                        <posx>100</posx>
+                        <left>100</left>
                         <width>600</width>
                         <height>100</height>
                         <align>center</align>
@@ -110,7 +110,7 @@
                         <visible>!Substring(Skin.String(ItemToEdit.Icon),/BigIcons/)</visible>
                     </control>
                     <control type="image">
-                        <posx>100</posx>
+                        <left>100</left>
                         <width>600</width>
                         <height>100</height>
                         <align>center</align>
@@ -121,8 +121,8 @@
                     </control>
                 </control>
                 <control type="grouplist" id="4">
-                    <posx>475</posx>
-                    <posy>240</posy>
+                    <left>475</left>
+                    <top>240</top>
                     <width>1172</width>
                     <height>720</height>
                     <aligny>center</aligny>

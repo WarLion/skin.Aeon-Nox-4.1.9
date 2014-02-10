@@ -8,8 +8,8 @@
             <animation effect="fade" time="200">WindowClose</animation>
             <include>CommonMediaPlayingBackground</include>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<include>FullscreenDimensions</include>
 				<aspectratio>scale</aspectratio>
 				<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
@@ -19,14 +19,14 @@
         <control type="group">
             <include>Animation_OpenClose_Furniture</include>
             <control type="image">
-                <posy>472</posy>
+                <top>472</top>
                 <width>1920</width>
                 <height>608</height>
                 <texture>views/showcase_floor.png</texture>
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
             </control>
             <control type="image">
-                <posy>-207</posy>
+                <top>-207</top>
                 <width>1920</width>
                 <height>1080</height>
                 <texture>common/bgcolor.png</texture>
@@ -36,14 +36,14 @@
                 <visible>Skin.HasSetting(darkinfopaneve)</visible>
             </control>
             <control type="image">
-                <posx>-105</posx>
+                <left>-105</left>
                 <width>696</width>
                 <height>1080</height>
                 <texture>views/showcase_vignette.png</texture>
                 <colordiffuse>vignette</colordiffuse>
             </control>
             <control type="image">
-                <posx>1329</posx>
+                <left>1329</left>
                 <width>696</width>
                 <height>1080</height>
                 <texture flipx="true">views/showcase_vignette.png</texture>
@@ -55,7 +55,7 @@
        <include>VideoExtras_Layout1</include>
      <!--  <include condition="!Skin.HasSetting(ClassicVideoExtra)">VideoExtras_Layout2</include>-->
         <control type="image">
-            <posy>1012</posy>
+            <top>1012</top>
             <width>1920</width>
             <height>72</height>
             <texture>views/showcase_gradient.png</texture>
@@ -76,8 +76,8 @@
             </control>
             <include>Breadcrumbs_Furniture</include>
 			<control type="group">
-				<posx>20</posx>
-				<posy>1</posy>
+				<left>20</left>
+				<top>1</top>
 				<width>800</width>
 				<height>50</height>
 				<animation type="WindowOpen" reversible="false">

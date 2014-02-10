@@ -3,8 +3,8 @@
     <defaultcontrol>12</defaultcontrol>
     <zorder>4</zorder>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <include>Animation_DialogPopup</include>
@@ -54,8 +54,8 @@
             </control>
         </control>
         <control type="image">
-            <posx>748r</posx>
-            <posy>460</posy>
+            <left>748r</left>
+            <top>460</top>
             <width>748</width>
             <height>60</height>
             <texture>home/settings_furniture_timepanel.png</texture>
@@ -67,7 +67,7 @@
             <animation effect="slide" end="0,-812" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(timehomehigh) + Skin.HasSetting(lowermainmenu)">Conditional</animation>
         </control>
         <control type="image">
-            <posy>460</posy>
+            <top>460</top>
             <width>748</width>
             <height>60</height>
             <texture>home/settings_furniture_timepanel.png</texture>
@@ -79,7 +79,7 @@
             <animation effect="slide" end="0,-812" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(totalshomehigh) + Skin.HasSetting(lowermainmenu)">Conditional</animation>
         </control>
         <control type="image">
-            <posy>505</posy>
+            <top>505</top>
             <width>1920</width>
             <height>115</height>
             <texture border="20">home/settings_furniture_timepanel.png</texture>
@@ -91,8 +91,8 @@
             <animation effect="slide" end="0,338" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
         </control>
         <control type="image">
-            <posx>700</posx>
-            <posy>460</posy>
+            <left>700</left>
+            <top>460</top>
             <width>520</width>
             <height>60</height>
             <texture border="20">home/settings_furniture_timepanel.png</texture>
@@ -102,7 +102,7 @@
             <animation effect="slide" end="0,338" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
         </control>
         <control type="image">
-            <posy>604</posy>
+            <top>604</top>
             <width>1920</width>
             <height>60</height>
             <texture border="20">home/settings_furniture_timepanel.png</texture>

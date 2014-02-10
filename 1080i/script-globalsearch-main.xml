@@ -4,8 +4,8 @@
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>backgroundcolor</backgroundcolor>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <controls>
@@ -71,8 +71,8 @@
                 <control type="group">
                     <animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
                     <control type="list" id="9000">
-                        <posx>63</posx>
-                        <posy>190</posy>
+                        <left>63</left>
+                        <top>190</top>
                         <width>570</width>
                         <height>819</height>
                         <onright>200</onright>
@@ -81,7 +81,7 @@
                         <scrolltime tween="quadratic">200</scrolltime>
                         <itemlayout height="74" width="570">
                             <control type="label">
-                                <posx>30</posx>
+                                <left>30</left>
                                 <width>389</width>
                                 <height>74</height>
                                 <label>$INFO[ListItem.Label]</label>
@@ -89,7 +89,7 @@
                                 <textcolor>grey2</textcolor>
                             </control>
                             <control type="label">
-                                <posx>419</posx>
+                                <left>419</left>
                                 <width>389</width>
                                 <height>74</height>
                                 <align>right</align>
@@ -107,14 +107,14 @@
                                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                             </control>
                             <control type="label">
-                                <posx>30</posx>
+                                <left>30</left>
                                 <width>389</width>
                                 <height>74</height>
                                 <label>$INFO[ListItem.Label]</label>
                                 <font>Font_Bold34</font>
                             </control>
                             <control type="label">
-                                <posx>419</posx>
+                                <left>419</left>
                                 <width>389</width>
                                 <height>74</height>
                                 <align>right</align>
@@ -184,8 +184,8 @@
                     </control>
                     <control type="group" id="200">
                         <control type="group" id="119">
-                            <posx>498</posx>
-                            <posy>100</posy>
+                            <left>498</left>
+                            <top>100</top>
                             <width>1358</width>
                             <height>888</height>
                             <visible>Container(9000).HasFocus(1) | Control.HasFocus(111)</visible>
@@ -203,8 +203,8 @@
                                 <preloaditems>2</preloaditems>
                                 <itemlayout width="1358" height="296">
                                     <control type="image">
-                                        <posx>-8</posx>
-                                        <posy>3</posy>
+                                        <left>-8</left>
+                                        <top>3</top>
                                         <width>290</width>
                                         <height>290</height>
                                         <aspectratio aligny="center">keep</aspectratio>
@@ -213,14 +213,14 @@
                                         <bordersize>7</bordersize>
                                     </control>
                                     <control type="image">
-                                        <posy>224</posy>
+                                        <top>224</top>
                                         <width>1358</width>
                                         <height>72</height>
                                         <texture>settings/settings_radiobuttonoff.png</texture>
                                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                                     </control>
                                     <control type="group">
-                                        <posx>250</posx>
+                                        <left>250</left>
                                         <animation effect="fade" end="60" time="0" condition="true">Conditional</animation>
                                         <control type="label">
                                             <width>1108</width>
@@ -230,7 +230,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>49</posy>
+                                            <top>49</top>
                                             <width>1108</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -238,7 +238,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>98</posy>
+                                            <top>98</top>
                                             <width>1108</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -246,8 +246,8 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="textbox">
-                                            <posx>22</posx>
-                                            <posy>150</posy>
+                                            <left>22</left>
+                                            <top>150</top>
                                             <width>1064</width>
                                             <height>120</height>
                                             <aligny>top</aligny>
@@ -257,8 +257,8 @@
                                             <visible>IsEmpty(ListItem.Property(Plotoutline))</visible>
                                         </control>
                                         <control type="textbox">
-                                            <posx>22</posx>
-                                            <posy>150</posy>
+                                            <left>22</left>
+                                            <top>150</top>
                                             <width>1064</width>
                                             <height>120</height>
                                             <aligny>top</aligny>
@@ -270,7 +270,7 @@
                                 </itemlayout>
                                 <focusedlayout width="1358" height="296">
                                     <control type="image">
-                                        <posy>224</posy>
+                                        <top>224</top>
                                         <width>1358</width>
                                         <height>72</height>
                                         <texture>settings/settings_radiobuttonoff.png</texture>
@@ -285,8 +285,8 @@
                                         <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(111)">Conditional</animation>
                                     </control>
                                     <control type="image">
-                                        <posx>-8</posx>
-                                        <posy>3</posy>
+                                        <left>-8</left>
+                                        <top>3</top>
                                         <width>290</width>
                                         <height>290</height>
                                         <aspectratio aligny="center">keep</aspectratio>
@@ -295,7 +295,7 @@
                                         <bordersize>7</bordersize>
                                     </control>
                                     <control type="group">
-                                        <posx>250</posx>
+                                        <left>250</left>
                                         <animation effect="fade" start="100" end="60" time="40" condition="!Control.HasFocus(111)">Conditional</animation>
                                         <control type="label">
                                             <width>1108</width>
@@ -305,7 +305,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>49</posy>
+                                            <top>49</top>
                                             <width>1108</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -313,7 +313,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>98</posy>
+                                            <top>98</top>
                                             <width>1108</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -321,8 +321,8 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="textbox">
-                                            <posx>22</posx>
-                                            <posy>150</posy>
+                                            <left>22</left>
+                                            <top>150</top>
                                             <width>1064</width>
                                             <height>120</height>
                                             <aligny>top</aligny>
@@ -332,8 +332,8 @@
                                             <visible>IsEmpty(ListItem.Property(Plotoutline))</visible>
                                         </control>
                                         <control type="textbox">
-                                            <posx>22</posx>
-                                            <posy>150</posy>
+                                            <left>22</left>
+                                            <top>150</top>
                                             <width>1064</width>
                                             <height>120</height>
                                             <aligny>top</aligny>
@@ -346,8 +346,8 @@
                             </control>
                         </control>
                         <control type="group" id="129">
-                            <posx>498</posx>
-                            <posy>100</posy>
+                            <left>498</left>
+                            <top>100</top>
                             <width>1358</width>
                             <height>741</height>
                             <visible>Container(9000).HasFocus(2) | Control.HasFocus(121)</visible>
@@ -365,8 +365,8 @@
                                 <preloaditems>2</preloaditems>
                                 <itemlayout width="1358" height="296">
                                     <control type="image">
-                                        <posx>-8</posx>
-                                        <posy>3</posy>
+                                        <left>-8</left>
+                                        <top>3</top>
                                         <width>290</width>
                                         <height>290</height>
                                         <aspectratio aligny="center">keep</aspectratio>
@@ -375,14 +375,14 @@
                                         <bordersize>7</bordersize>
                                     </control>
                                     <control type="image">
-                                        <posy>224</posy>
+                                        <top>224</top>
                                         <width>1358</width>
                                         <height>72</height>
                                         <texture>settings/settings_radiobuttonoff.png</texture>
                                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                                     </control>
                                     <control type="group">
-                                        <posx>250</posx>
+                                        <left>250</left>
                                         <animation effect="fade" end="60" time="0" condition="true">Conditional</animation>
                                         <control type="label">
                                             <width>1108</width>
@@ -392,7 +392,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>49</posy>
+                                            <top>49</top>
                                             <width>1108</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -400,7 +400,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>98</posy>
+                                            <top>98</top>
                                             <width>1108</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -408,8 +408,8 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="textbox">
-                                            <posx>22</posx>
-                                            <posy>150</posy>
+                                            <left>22</left>
+                                            <top>150</top>
                                             <width>1064</width>
                                             <height>120</height>
                                             <aligny>top</aligny>
@@ -419,8 +419,8 @@
                                             <visible>IsEmpty(ListItem.Property(Plotoutline))</visible>
                                         </control>
                                         <control type="textbox">
-                                            <posx>22</posx>
-                                            <posy>150</posy>
+                                            <left>22</left>
+                                            <top>150</top>
                                             <width>1064</width>
                                             <height>120</height>
                                             <aligny>top</aligny>
@@ -432,7 +432,7 @@
                                 </itemlayout>
                                 <focusedlayout width="1358" height="296">
                                     <control type="image">
-                                        <posy>224</posy>
+                                        <top>224</top>
                                         <width>1358</width>
                                         <height>72</height>
                                         <texture>settings/settings_radiobuttonoff.png</texture>
@@ -447,8 +447,8 @@
                                         <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(121)">Conditional</animation>
                                     </control>
                                     <control type="image">
-                                        <posx>-8</posx>
-                                        <posy>3</posy>
+                                        <left>-8</left>
+                                        <top>3</top>
                                         <width>290</width>
                                         <height>290</height>
                                         <aspectratio aligny="center">keep</aspectratio>
@@ -457,7 +457,7 @@
                                         <bordersize>7</bordersize>
                                     </control>
                                     <control type="group">
-                                        <posx>250</posx>
+                                        <left>250</left>
                                         <animation effect="fade" start="100" end="60" time="40" condition="!Control.HasFocus(121)">Conditional</animation>
                                         <control type="label">
                                             <width>1108</width>
@@ -467,7 +467,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>49</posy>
+                                            <top>49</top>
                                             <width>1108</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -475,7 +475,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>98</posy>
+                                            <top>98</top>
                                             <width>1108</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -483,8 +483,8 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="textbox">
-                                            <posx>22</posx>
-                                            <posy>150</posy>
+                                            <left>22</left>
+                                            <top>150</top>
                                             <width>1064</width>
                                             <height>120</height>
                                             <aligny>top</aligny>
@@ -494,8 +494,8 @@
                                             <visible>IsEmpty(ListItem.Property(Plotoutline))</visible>
                                         </control>
                                         <control type="textbox">
-                                            <posx>22</posx>
-                                            <posy>150</posy>
+                                            <left>22</left>
+                                            <top>150</top>
                                             <width>1064</width>
                                             <height>120</height>
                                             <aligny>top</aligny>
@@ -508,8 +508,8 @@
                             </control>
                         </control>
                         <control type="group" id="139">
-                            <posx>498</posx>
-                            <posy>190</posy>
+                            <left>498</left>
+                            <top>190</top>
                             <width>1358</width>
                             <height>741</height>
                             <visible>Container(9000).HasFocus(3) | Control.HasFocus(131)</visible>
@@ -527,7 +527,7 @@
                                 <preloaditems>2</preloaditems>
                                 <itemlayout width="1358" height="148">
                                     <control type="image">
-                                        <posx>8</posx>
+                                        <left>8</left>
                                         <width>148</width>
                                         <height>148</height>
                                         <aspectratio aligny="center">keep</aspectratio>
@@ -536,14 +536,14 @@
                                         <bordersize>7</bordersize>
                                     </control>
                                     <control type="image">
-                                        <posy>76</posy>
+                                        <top>76</top>
                                         <width>1358</width>
                                         <height>72</height>
                                         <texture>settings/settings_radiobuttonoff.png</texture>
                                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                                     </control>
                                     <control type="group">
-                                        <posx>150</posx>
+                                        <left>150</left>
                                         <animation effect="fade" end="60" time="0" condition="true">Conditional</animation>
                                         <control type="label">
                                             <width>612</width>
@@ -553,7 +553,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>49</posy>
+                                            <top>49</top>
                                             <width>612</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -561,7 +561,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>98</posy>
+                                            <top>98</top>
                                             <width>612</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -569,8 +569,8 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="textbox">
-                                            <posx>634</posx>
-                                            <posy>15</posy>
+                                            <left>634</left>
+                                            <top>15</top>
                                             <width>568</width>
                                             <height>120</height>
                                             <aligny>top</aligny>
@@ -589,7 +589,7 @@
                                         <visible>Control.HasFocus(131)</visible>
                                     </control>
                                     <control type="image">
-                                        <posy>76</posy>
+                                        <top>76</top>
                                         <width>1358</width>
                                         <height>72</height>
                                         <texture>settings/settings_radiobuttonoff.png</texture>
@@ -597,7 +597,7 @@
                                         <visible>!Control.HasFocus(131)</visible>
                                     </control>
                                     <control type="image">
-                                        <posx>8</posx>
+                                        <left>8</left>
                                         <width>148</width>
                                         <height>148</height>
                                         <aspectratio aligny="center">keep</aspectratio>
@@ -606,7 +606,7 @@
                                         <bordersize>7</bordersize>
                                     </control>
                                     <control type="group">
-                                        <posx>150</posx>
+                                        <left>150</left>
                                         <animation effect="fade" start="100" end="60" time="40" condition="!Control.HasFocus(131)">Conditional</animation>
                                         <control type="label">
                                             <width>612</width>
@@ -616,7 +616,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>49</posy>
+                                            <top>49</top>
                                             <width>612</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -624,7 +624,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>98</posy>
+                                            <top>98</top>
                                             <width>612</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -632,8 +632,8 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="textbox">
-                                            <posx>634</posx>
-                                            <posy>15</posy>
+                                            <left>634</left>
+                                            <top>15</top>
                                             <width>568</width>
                                             <height>120</height>
                                             <aligny>top</aligny>
@@ -646,8 +646,8 @@
                             </control>
                         </control>
                         <control type="group" id="149">
-                            <posx>498</posx>
-                            <posy>100</posy>
+                            <left>498</left>
+                            <top>100</top>
                             <width>1358</width>
                             <height>741</height>
                             <visible>Container(9000).HasFocus(4) | Control.HasFocus(141)</visible>
@@ -665,8 +665,8 @@
                                 <preloaditems>2</preloaditems>
                                 <itemlayout width="1358" height="296">
                                     <control type="image">
-                                        <posx>15</posx>
-                                        <posy>3</posy>
+                                        <left>15</left>
+                                        <top>3</top>
                                         <width>290</width>
                                         <height>290</height>
                                         <aspectratio aligny="center">keep</aspectratio>
@@ -675,14 +675,14 @@
                                         <bordersize>7</bordersize>
                                     </control>
                                     <control type="image">
-                                        <posy>224</posy>
+                                        <top>224</top>
                                         <width>1358</width>
                                         <height>72</height>
                                         <texture>settings/settings_radiobuttonoff.png</texture>
                                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                                     </control>
                                     <control type="group">
-                                        <posx>300</posx>
+                                        <left>300</left>
                                         <animation effect="fade" end="60" time="0" condition="true">Conditional</animation>
                                         <control type="label">
                                             <width>1108</width>
@@ -692,7 +692,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>49</posy>
+                                            <top>49</top>
                                             <width>1108</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -700,7 +700,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>98</posy>
+                                            <top>98</top>
                                             <width>1108</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -708,8 +708,8 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="textbox">
-                                            <posx>22</posx>
-                                            <posy>150</posy>
+                                            <left>22</left>
+                                            <top>150</top>
                                             <width>1014</width>
                                             <height>120</height>
                                             <aligny>top</aligny>
@@ -721,7 +721,7 @@
                                 </itemlayout>
                                 <focusedlayout width="1358" height="296">
                                     <control type="image">
-                                        <posy>224</posy>
+                                        <top>224</top>
                                         <width>1358</width>
                                         <height>72</height>
                                         <texture>settings/settings_radiobuttonoff.png</texture>
@@ -736,8 +736,8 @@
                                         <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(141)">Conditional</animation>
                                     </control>
                                     <control type="image">
-                                        <posx>15</posx>
-                                        <posy>3</posy>
+                                        <left>15</left>
+                                        <top>3</top>
                                         <width>290</width>
                                         <height>290</height>
                                         <aspectratio aligny="center">keep</aspectratio>
@@ -746,7 +746,7 @@
                                         <bordersize>7</bordersize>
                                     </control>
                                     <control type="group">
-                                        <posx>300</posx>
+                                        <left>300</left>
                                         <animation effect="fade" start="100" end="60" time="40" condition="!Control.HasFocus(141)">Conditional</animation>
                                         <control type="label">
                                             <width>1108</width>
@@ -756,7 +756,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>49</posy>
+                                            <top>49</top>
                                             <width>1108</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -764,7 +764,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>98</posy>
+                                            <top>98</top>
                                             <width>1108</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -772,8 +772,8 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="textbox">
-                                            <posx>22</posx>
-                                            <posy>150</posy>
+                                            <left>22</left>
+                                            <top>150</top>
                                             <width>1014</width>
                                             <height>120</height>
                                             <aligny>top</aligny>
@@ -786,8 +786,8 @@
                             </control>
                         </control>
                         <control type="group" id="159">
-                            <posx>498</posx>
-                            <posy>100</posy>
+                            <left>498</left>
+                            <top>100</top>
                             <width>1358</width>
                             <height>741</height>
                             <visible>Container(9000).HasFocus(5) | Control.HasFocus(151)</visible>
@@ -805,8 +805,8 @@
                                 <preloaditems>2</preloaditems>
                                 <itemlayout width="1358" height="296">
                                     <control type="image">
-                                        <posx>-8</posx>
-                                        <posy>3</posy>
+                                        <left>-8</left>
+                                        <top>3</top>
                                         <width>290</width>
                                         <height>290</height>
                                         <aspectratio aligny="center">keep</aspectratio>
@@ -815,14 +815,14 @@
                                         <bordersize>7</bordersize>
                                     </control>
                                     <control type="image">
-                                        <posy>224</posy>
+                                        <top>224</top>
                                         <width>1358</width>
                                         <height>72</height>
                                         <texture>settings/settings_radiobuttonoff.png</texture>
                                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                                     </control>
                                     <control type="group">
-                                        <posx>250</posx>
+                                        <left>250</left>
                                         <animation effect="fade" end="60" time="0" condition="true">Conditional</animation>
                                         <control type="label">
                                             <width>1108</width>
@@ -832,7 +832,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>49</posy>
+                                            <top>49</top>
                                             <width>1108</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -840,7 +840,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>98</posy>
+                                            <top>98</top>
                                             <width>1108</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -848,8 +848,8 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="textbox">
-                                            <posx>22</posx>
-                                            <posy>150</posy>
+                                            <left>22</left>
+                                            <top>150</top>
                                             <width>1064</width>
                                             <height>120</height>
                                             <aligny>top</aligny>
@@ -861,7 +861,7 @@
                                 </itemlayout>
                                 <focusedlayout width="1358" height="296">
                                     <control type="image">
-                                        <posy>224</posy>
+                                        <top>224</top>
                                         <width>1358</width>
                                         <height>72</height>
                                         <texture>settings/settings_radiobuttonoff.png</texture>
@@ -876,8 +876,8 @@
                                         <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(151)">Conditional</animation>
                                     </control>
                                     <control type="image">
-                                        <posx>-8</posx>
-                                        <posy>3</posy>
+                                        <left>-8</left>
+                                        <top>3</top>
                                         <width>290</width>
                                         <height>290</height>
                                         <aspectratio aligny="center">keep</aspectratio>
@@ -886,7 +886,7 @@
                                         <bordersize>7</bordersize>
                                     </control>
                                     <control type="group">
-                                        <posx>250</posx>
+                                        <left>250</left>
                                         <animation effect="fade" start="100" end="60" time="40" condition="!Control.HasFocus(151)">Conditional</animation>
                                         <control type="label">
                                             <width>1108</width>
@@ -896,7 +896,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>49</posy>
+                                            <top>49</top>
                                             <width>1108</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -904,7 +904,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>98</posy>
+                                            <top>98</top>
                                             <width>1108</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -912,8 +912,8 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="textbox">
-                                            <posx>22</posx>
-                                            <posy>150</posy>
+                                            <left>22</left>
+                                            <top>150</top>
                                             <width>1064</width>
                                             <height>120</height>
                                             <aligny>top</aligny>
@@ -926,8 +926,8 @@
                             </control>
                         </control>
                         <control type="group" id="169">
-                            <posx>498</posx>
-                            <posy>100</posy>
+                            <left>498</left>
+                            <top>100</top>
                             <width>1358</width>
                             <height>741</height>
                             <visible>Container(9000).HasFocus(6) | Control.HasFocus(161)</visible>
@@ -945,8 +945,8 @@
                                 <preloaditems>2</preloaditems>
                                 <itemlayout width="679" height="296">
                                     <control type="image">
-                                        <posx>15</posx>
-                                        <posy>3</posy>
+                                        <left>15</left>
+                                        <top>3</top>
                                         <width>290</width>
                                         <height>290</height>
                                         <aspectratio aligny="center">keep</aspectratio>
@@ -955,14 +955,14 @@
                                         <bordersize>7</bordersize>
                                     </control>
                                     <control type="image">
-                                        <posy>224</posy>
+                                        <top>224</top>
                                         <width>679</width>
                                         <height>72</height>
                                         <texture>settings/settings_radiobuttonoff.png</texture>
                                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                                     </control>
                                     <control type="group">
-                                        <posx>300</posx>
+                                        <left>300</left>
                                         <animation effect="fade" end="60" time="0" condition="true">Conditional</animation>
                                         <control type="label">
                                             <width>379</width>
@@ -972,7 +972,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>49</posy>
+                                            <top>49</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -980,7 +980,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>98</posy>
+                                            <top>98</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -991,7 +991,7 @@
                                 </itemlayout>
                                 <focusedlayout width="679" height="296">
                                     <control type="image">
-                                        <posy>224</posy>
+                                        <top>224</top>
                                         <width>679</width>
                                         <height>72</height>
                                         <texture>settings/settings_radiobuttonoff.png</texture>
@@ -1006,8 +1006,8 @@
                                         <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(161)">Conditional</animation>
                                     </control>
                                     <control type="image">
-                                        <posx>15</posx>
-                                        <posy>3</posy>
+                                        <left>15</left>
+                                        <top>3</top>
                                         <width>290</width>
                                         <height>290</height>
                                         <aspectratio aligny="center">keep</aspectratio>
@@ -1016,7 +1016,7 @@
                                         <bordersize>7</bordersize>
                                     </control>
                                     <control type="group">
-                                        <posx>300</posx>
+                                        <left>300</left>
                                         <animation effect="fade" start="100" end="60" time="40" condition="!Control.HasFocus(161)">Conditional</animation>
                                         <control type="label">
                                             <width>379</width>
@@ -1026,7 +1026,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>49</posy>
+                                            <top>49</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -1034,7 +1034,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>98</posy>
+                                            <top>98</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -1046,8 +1046,8 @@
                             </control>
                         </control>
                         <control type="group" id="179">
-                            <posx>498</posx>
-                            <posy>100</posy>
+                            <left>498</left>
+                            <top>100</top>
                             <width>1358</width>
                             <height>741</height>
                             <visible>Container(9000).HasFocus(7) | Control.HasFocus(171)</visible>
@@ -1065,8 +1065,8 @@
                                 <preloaditems>2</preloaditems>
                                 <itemlayout width="679" height="296">
                                     <control type="image">
-                                        <posx>15</posx>
-                                        <posy>3</posy>
+                                        <left>15</left>
+                                        <top>3</top>
                                         <width>290</width>
                                         <height>290</height>
                                         <aspectratio aligny="center">keep</aspectratio>
@@ -1075,14 +1075,14 @@
                                         <bordersize>7</bordersize>
                                     </control>
                                     <control type="image">
-                                        <posy>224</posy>
+                                        <top>224</top>
                                         <width>679</width>
                                         <height>72</height>
                                         <texture>settings/settings_radiobuttonoff.png</texture>
                                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                                     </control>
                                     <control type="group">
-                                        <posx>300</posx>
+                                        <left>300</left>
                                         <animation effect="fade" end="60" time="0" condition="true">Conditional</animation>
                                         <control type="label">
                                             <width>379</width>
@@ -1092,7 +1092,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>49</posy>
+                                            <top>49</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -1100,7 +1100,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>98</posy>
+                                            <top>98</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -1108,7 +1108,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>147</posy>
+                                            <top>147</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -1116,7 +1116,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>196</posy>
+                                            <top>196</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -1124,8 +1124,8 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="image">
-                                            <posx>105</posx>
-                                            <posy>149</posy>
+                                            <left>105</left>
+                                            <top>149</top>
                                             <width>180</width>
                                             <height>45</height>
                                             <aspectratio align="center">keep</aspectratio>
@@ -1136,7 +1136,7 @@
                                 </itemlayout>
                                 <focusedlayout width="679" height="296">
                                     <control type="image">
-                                        <posy>224</posy>
+                                        <top>224</top>
                                         <width>679</width>
                                         <height>72</height>
                                         <texture>settings/settings_radiobuttonoff.png</texture>
@@ -1151,8 +1151,8 @@
                                         <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(171)">Conditional</animation>
                                     </control>
                                     <control type="image">
-                                        <posx>15</posx>
-                                        <posy>3</posy>
+                                        <left>15</left>
+                                        <top>3</top>
                                         <width>290</width>
                                         <height>290</height>
                                         <aspectratio aligny="center">keep</aspectratio>
@@ -1161,7 +1161,7 @@
                                         <bordersize>7</bordersize>
                                     </control>
                                     <control type="group">
-                                        <posx>300</posx>
+                                        <left>300</left>
                                         <animation effect="fade" start="100" end="60" time="40" condition="!Control.HasFocus(171)">Conditional</animation>
                                         <control type="label">
                                             <width>379</width>
@@ -1171,7 +1171,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>49</posy>
+                                            <top>49</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -1179,7 +1179,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>98</posy>
+                                            <top>98</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -1187,7 +1187,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>147</posy>
+                                            <top>147</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -1195,7 +1195,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>196</posy>
+                                            <top>196</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -1203,8 +1203,8 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="image">
-                                            <posx>105</posx>
-                                            <posy>149</posy>
+                                            <left>105</left>
+                                            <top>149</top>
                                             <width>180</width>
                                             <height>45</height>
                                             <aspectratio align="center">keep</aspectratio>
@@ -1216,8 +1216,8 @@
                             </control>
                         </control>
                         <control type="group" id="189">
-                            <posx>498</posx>
-                            <posy>100</posy>
+                            <left>498</left>
+                            <top>100</top>
                             <width>1358</width>
                             <height>741</height>
                             <visible>Container(9000).HasFocus(8) | Control.HasFocus(181)</visible>
@@ -1235,8 +1235,8 @@
                                 <preloaditems>2</preloaditems>
                                 <itemlayout width="679" height="296">
                                     <control type="image">
-                                        <posx>15</posx>
-                                        <posy>3</posy>
+                                        <left>15</left>
+                                        <top>3</top>
                                         <width>290</width>
                                         <height>290</height>
                                         <aspectratio aligny="center">keep</aspectratio>
@@ -1245,14 +1245,14 @@
                                         <bordersize>7</bordersize>
                                     </control>
                                     <control type="image">
-                                        <posy>224</posy>
+                                        <top>224</top>
                                         <width>679</width>
                                         <height>72</height>
                                         <texture>settings/settings_radiobuttonoff.png</texture>
                                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                                     </control>
                                     <control type="group">
-                                        <posx>300</posx>
+                                        <left>300</left>
                                         <animation effect="fade" end="60" time="0" condition="true">Conditional</animation>
                                         <control type="label">
                                             <width>379</width>
@@ -1262,7 +1262,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>49</posy>
+                                            <top>49</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -1270,7 +1270,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>98</posy>
+                                            <top>98</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -1278,7 +1278,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>245</posy>
+                                            <top>245</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -1286,7 +1286,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>147</posy>
+                                            <top>147</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -1294,8 +1294,8 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="image">
-                                            <posx>105</posx>
-                                            <posy>247</posy>
+                                            <left>105</left>
+                                            <top>247</top>
                                             <width>180</width>
                                             <height>45</height>
                                             <aspectratio align="center">keep</aspectratio>
@@ -1303,7 +1303,7 @@
                                             <colordiffuse>white2</colordiffuse>
                                         </control>
                                         <control type="label">
-                                            <posy>196</posy>
+                                            <top>196</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -1314,7 +1314,7 @@
                                 </itemlayout>
                                 <focusedlayout width="679" height="296">
                                     <control type="image">
-                                        <posy>224</posy>
+                                        <top>224</top>
                                         <width>679</width>
                                         <height>72</height>
                                         <texture>settings/settings_radiobuttonoff.png</texture>
@@ -1329,8 +1329,8 @@
                                         <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(181)">Conditional</animation>
                                     </control>
                                     <control type="image">
-                                        <posx>15</posx>
-                                        <posy>3</posy>
+                                        <left>15</left>
+                                        <top>3</top>
                                         <width>290</width>
                                         <height>290</height>
                                         <aspectratio aligny="center">keep</aspectratio>
@@ -1339,7 +1339,7 @@
                                         <bordersize>7</bordersize>
                                     </control>
                                     <control type="group">
-                                        <posx>300</posx>
+                                        <left>300</left>
                                         <animation effect="fade" start="100" end="60" time="40" condition="!Control.HasFocus(181)">Conditional</animation>
                                         <control type="label">
                                             <width>379</width>
@@ -1349,7 +1349,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>49</posy>
+                                            <top>49</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -1357,7 +1357,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>98</posy>
+                                            <top>98</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -1365,7 +1365,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>245</posy>
+                                            <top>245</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -1373,7 +1373,7 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="label">
-                                            <posy>147</posy>
+                                            <top>147</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>
@@ -1381,8 +1381,8 @@
                                             <font>Font_Reg32</font>
                                         </control>
                                         <control type="image">
-                                            <posx>105</posx>
-                                            <posy>247</posy>
+                                            <left>105</left>
+                                            <top>247</top>
                                             <width>180</width>
                                             <height>45</height>
                                             <aspectratio align="center">keep</aspectratio>
@@ -1390,7 +1390,7 @@
                                             <colordiffuse>white2</colordiffuse>
                                         </control>
                                         <control type="label">
-                                            <posy>196</posy>
+                                            <top>196</top>
                                             <width>379</width>
                                             <height>45</height>
                                             <textoffsetx>22</textoffsetx>

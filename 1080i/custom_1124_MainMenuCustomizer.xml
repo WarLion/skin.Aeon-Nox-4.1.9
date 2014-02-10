@@ -25,8 +25,8 @@
     <onunload>Skin.SetString(backgroundlist,$INFO[Control.GetLabel(11113)])</onunload>
     <onunload>Skin.SetString(submenulist,$INFO[Control.GetLabel(11114)])</onunload>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <controls>
@@ -82,7 +82,7 @@
             <include>Animation_VisibleChange400</include>
         </control>
         <control type="image">
-            <posy>-150</posy>
+            <top>-150</top>
             <width>1920</width>
             <height>608</height>
             <texture flipy="true">views/showcase_glow.png</texture>
@@ -93,7 +93,7 @@
             <include>Animation_WindowFade200</include>
         </control>
         <control type="image">
-            <posy>622</posy>
+            <top>622</top>
             <width>1920</width>
             <height>608</height>
             <texture>views/showcase_glow.png</texture>
@@ -107,7 +107,7 @@
             <visible>!Skin.HasSetting(lowermainmenu) + Skin.HasSetting(DisableGlowbar)</visible>
             <include>Animation_VisibleChangeDelayed</include>
             <control type="image">
-                <posy>360</posy>
+                <top>360</top>
                 <width>1920</width>
                 <height>945</height>
                 <texture>home/nowplaying_shadow.png</texture>
@@ -129,7 +129,7 @@
             <visible>Skin.HasSetting(lowermainmenu) + Skin.HasSetting(DisableGlowbar)</visible>
             <include>Animation_VisibleChangeDelayed</include>
             <control type="image">
-                <posy>160</posy>
+                <top>160</top>
                 <width>1920</width>
                 <height>694</height>
                 <texture>home/nowplaying_shadow.png</texture>
@@ -149,7 +149,7 @@
         <include>HomePanelWidget2_1124</include>
         <!-- Alternate Stats + Time -->
         <control type="group" id="8996">
-            <posy>472</posy>
+            <top>472</top>
             <animation effect="slide" end="0,338" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
             <animation type="WindowClose">
                 <effect type="fade" start="100" end="0" time="200" tween="quadratic" />
@@ -162,14 +162,14 @@
             <animation effect="slide" start="-1860,0" end="0,0" delay="WidgetSlideDelay" time="240" condition="Skin.HasSetting(AlternateTimeStats) + ![Skin.HasSetting(totalshomehigh) | Skin.HasSetting(timehomehigh)]">WindowOpen</animation>
             <animation effect="slide" start="-1260,0" end="0,0" delay="WidgetSlideDelay" time="240" condition="[Skin.HasSetting(totalshomehigh) | Skin.HasSetting(timehomehigh)]">WindowOpen</animation>
             <control type="image">
-                <posy>-46</posy>
+                <top>-46</top>
                 <width>1920</width>
                 <height>87</height>
                 <texture>$VAR[NavBarImageVar]</texture>
                 <colordiffuse>$VAR[ExtendedColorVar]</colordiffuse>
             </control>
             <control type="grouplist" id="8992">
-                <posx>704</posx>
+                <left>704</left>
                 <width>513</width>
                 <height>58</height>
                 <align>center</align>
@@ -179,7 +179,7 @@
                 <usecontrolcoords>true</usecontrolcoords>
                 <scrolltime tween="quadratic">200</scrolltime>
                 <control type="image">
-                    <posy>2</posy>
+                    <top>2</top>
                     <width>35</width>
                     <height>35</height>
                     <texture>defaulticons/DefaultFolderBack.png</texture>
@@ -196,7 +196,7 @@
             </control>
         </control>
         <control type="group">
-            <posy>472</posy>
+            <top>472</top>
             <include>LibraryStats</include>
             <include>TimePanel</include>
             <include>AlternateTimeAndStats</include>
@@ -216,13 +216,13 @@
             <include>Animation_OpenCloseZoom</include>
             <!-- Submenu -->
             <control type="group" id="9001">
-                <posx>240</posx>
-                <posy>609</posy>
+                <left>240</left>
+                <top>609</top>
                 <animation effect="fade" start="100" end="0" time="240" condition="!IntegerGreaterThan(Container(9010).NumItems,0)">conditional</animation>
                 <animation effect="slide" end="0,-60" time="240" tween="cubic" easing="inout" condition="!IntegerGreaterThan(Container(9010).NumItems,0)">conditional</animation>
                 <control type="image">
-                    <posx>70</posx>
-                    <posy>3</posy>
+                    <left>70</left>
+                    <top>3</top>
                     <width>1300</width>
                     <height>87</height>
                     <texture>$VAR[SubMenuImageVar]</texture>
@@ -233,7 +233,7 @@
             </control>
             <!-- Home Menu Bar -->
             <control type="image">
-                <posy>453</posy>
+                <top>453</top>
                 <width>1920</width>
                 <height>225</height>
                 <texture>$VAR[HomeMenuBackVar]</texture>

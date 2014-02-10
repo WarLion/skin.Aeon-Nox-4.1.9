@@ -2,8 +2,8 @@
 <includes>
     <include name="weatherwidgetback">
         <control type="image">
-            <posx>8</posx>
-            <posy>8</posy>
+            <left>8</left>
+            <top>8</top>
             <width>267</width>
             <height>380</height>
             <texture border="40">keyboard/keyboard_back_shadow.png</texture>
@@ -20,8 +20,8 @@
     </include>
     <include name="weatherwidget2back">
         <control type="image">
-            <posx>8</posx>
-            <posy>8</posy>
+            <left>8</left>
+            <top>8</top>
             <width>267</width>
             <height>380</height>
             <texture border="40">keyboard/keyboard_back_shadow.png</texture>
@@ -51,22 +51,22 @@
         <texture>pointer-focus-click.png</texture>
     </include>
     <include name="WeatherWorldTopRightPointer">
-        <posx>340</posx>
+        <left>340</left>
         <width>20</width>
         <height>20</height>
         <aspectratio>keep</aspectratio>
         <texture flipx="true">pointer-focus-click.png</texture>
     </include>
     <include name="WeatherWorldConditionIconCommonValues">
-        <posy>20</posy>
+        <top>20</top>
         <width>40</width>
         <height>40</height>
         <aspectratio>keep</aspectratio>
         <fadetime>200</fadetime>
     </include>
     <include name="WeatherWorldCityNameCommonValues">
-        <posx>20</posx>
-        <posy>-5</posy>
+        <left>20</left>
+        <top>-5</top>
         <width>340</width>
         <height>20</height>
         <aligny>top</aligny>
@@ -74,8 +74,8 @@
         <shadowcolor>black</shadowcolor>
     </include>
     <include name="WeatherWorldGroupListCommonValues">
-        <posx>45</posx>
-        <posy>20</posy>
+        <left>45</left>
+        <top>20</top>
         <width>315</width>
         <height>20</height>
         <orientation>horizontal</orientation>
@@ -101,8 +101,8 @@
         <textcolor>grey2</textcolor>
     </include>
     <include name="WeatherWorldOutLookCommonValues">
-        <posx>45</posx>
-        <posy>40</posy>
+        <left>45</left>
+        <top>40</top>
         <width>315</width>
         <height>20</height>
         <font>Font_Reg22</font>
@@ -110,7 +110,7 @@
         <textcolor>grey2</textcolor>
     </include>
     <include name="WeatherWorldLatitudeLongitudeCommonValues">
-        <posy>60</posy>
+        <top>60</top>
         <width>360</width>
         <height>20</height>
         <aligny>top</aligny>
@@ -120,7 +120,7 @@
     </include>
     <include name="WeatherWorldGroup2601">
         <control type="group" id="2601">
-            <posy>-60</posy>
+            <top>-60</top>
             <control type="group">
                 <visible>!IsEmpty(Window.Property(weatherworld.city.1.name))</visible>
                 <animation effect="slide" end="-360,0" time="0" condition="IntegerGreaterThan(Window.Property(weatherworld.city.1.flipx),0)">conditional</animation>
@@ -142,7 +142,7 @@
                 <control type="group">
                     <visible>IntegerGreaterThan(Window.Property(weatherworld.city.1.flipx),0)</visible>
                     <control type="label">
-                        <posx>340</posx>
+                        <left>340</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.1.name)]</label>
                         <include>WeatherWorldCityNameCommonValues</include>
@@ -164,13 +164,13 @@
                         </control>
                     </control>
                     <control type="label">
-                        <posx>315</posx>
+                        <left>315</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.1.outlook)]</label>
                         <include>WeatherWorldOutLookCommonValues</include>
                     </control>
                     <control type="label">
-                        <posx>360</posx>
+                        <left>360</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.1.latitude)] - $INFO[Window.Property(weatherworld.city.1.longitude)]</label>
                         <include>WeatherWorldLatitudeLongitudeCommonValues</include>
@@ -211,7 +211,7 @@
     </include>
     <include name="WeatherWorldGroup2602">
         <control type="group" id="2602">
-            <posy>-60</posy>
+            <top>-60</top>
             <control type="group">
                 <visible>!IsEmpty(Window.Property(weatherworld.city.2.name))</visible>
                 <animation effect="slide" end="-360,0" time="0" condition="IntegerGreaterThan(Window.Property(weatherworld.city.2.flipx),0)">conditional</animation>
@@ -233,7 +233,7 @@
                 <control type="group">
                     <visible>IntegerGreaterThan(Window.Property(weatherworld.city.2.flipx),0)</visible>
                     <control type="label">
-                        <posx>340</posx>
+                        <left>340</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.2.name)]</label>
                         <include>WeatherWorldCityNameCommonValues</include>
@@ -255,13 +255,13 @@
                         </control>
                     </control>
                     <control type="label">
-                        <posx>315</posx>
+                        <left>315</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.2.outlook)]</label>
                         <include>WeatherWorldOutLookCommonValues</include>
                     </control>
                     <control type="label">
-                        <posx>360</posx>
+                        <left>360</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.2.latitude)] - $INFO[Window.Property(weatherworld.city.2.longitude)]</label>
                         <include>WeatherWorldLatitudeLongitudeCommonValues</include>
@@ -302,7 +302,7 @@
     </include>
     <include name="WeatherWorldGroup2603">
         <control type="group" id="2603">
-            <posy>-60</posy>
+            <top>-60</top>
             <control type="group">
                 <visible>!IsEmpty(Window.Property(weatherworld.city.3.name))</visible>
                 <animation effect="slide" end="-360,0" time="0" condition="IntegerGreaterThan(Window.Property(weatherworld.city.3.flipx),0)">conditional</animation>
@@ -324,7 +324,7 @@
                 <control type="group">
                     <visible>IntegerGreaterThan(Window.Property(weatherworld.city.3.flipx),0)</visible>
                     <control type="label">
-                        <posx>340</posx>
+                        <left>340</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.3.name)]</label>
                         <include>WeatherWorldCityNameCommonValues</include>
@@ -346,13 +346,13 @@
                         </control>
                     </control>
                     <control type="label">
-                        <posx>315</posx>
+                        <left>315</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.3.outlook)]</label>
                         <include>WeatherWorldOutLookCommonValues</include>
                     </control>
                     <control type="label">
-                        <posx>360</posx>
+                        <left>360</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.3.latitude)] - $INFO[Window.Property(weatherworld.city.3.longitude)]</label>
                         <include>WeatherWorldLatitudeLongitudeCommonValues</include>
@@ -393,7 +393,7 @@
     </include>
     <include name="WeatherWorldGroup2604">
         <control type="group" id="2604">
-            <posy>-60</posy>
+            <top>-60</top>
             <control type="group">
                 <visible>!IsEmpty(Window.Property(weatherworld.city.4.name))</visible>
                 <animation effect="slide" end="-360,0" time="0" condition="IntegerGreaterThan(Window.Property(weatherworld.city.4.flipx),0)">conditional</animation>
@@ -415,7 +415,7 @@
                 <control type="group">
                     <visible>IntegerGreaterThan(Window.Property(weatherworld.city.4.flipx),0)</visible>
                     <control type="label">
-                        <posx>340</posx>
+                        <left>340</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.4.name)]</label>
                         <include>WeatherWorldCityNameCommonValues</include>
@@ -437,13 +437,13 @@
                         </control>
                     </control>
                     <control type="label">
-                        <posx>315</posx>
+                        <left>315</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.4.outlook)]</label>
                         <include>WeatherWorldOutLookCommonValues</include>
                     </control>
                     <control type="label">
-                        <posx>360</posx>
+                        <left>360</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.4.latitude)] - $INFO[Window.Property(weatherworld.city.4.longitude)]</label>
                         <include>WeatherWorldLatitudeLongitudeCommonValues</include>
@@ -484,7 +484,7 @@
     </include>
     <include name="WeatherWorldGroup2605">
         <control type="group" id="2605">
-            <posy>-60</posy>
+            <top>-60</top>
             <control type="group">
                 <visible>!IsEmpty(Window.Property(weatherworld.city.5.name))</visible>
                 <animation effect="slide" end="-360,0" time="0" condition="IntegerGreaterThan(Window.Property(weatherworld.city.5.flipx),0)">conditional</animation>
@@ -506,7 +506,7 @@
                 <control type="group">
                     <visible>IntegerGreaterThan(Window.Property(weatherworld.city.5.flipx),0)</visible>
                     <control type="label">
-                        <posx>340</posx>
+                        <left>340</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.5.name)]</label>
                         <include>WeatherWorldCityNameCommonValues</include>
@@ -528,13 +528,13 @@
                         </control>
                     </control>
                     <control type="label">
-                        <posx>315</posx>
+                        <left>315</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.5.outlook)]</label>
                         <include>WeatherWorldOutLookCommonValues</include>
                     </control>
                     <control type="label">
-                        <posx>360</posx>
+                        <left>360</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.5.latitude)] - $INFO[Window.Property(weatherworld.city.5.longitude)]</label>
                         <include>WeatherWorldLatitudeLongitudeCommonValues</include>
@@ -575,7 +575,7 @@
     </include>
     <include name="WeatherWorldGroup2606">
         <control type="group" id="2606">
-            <posy>-60</posy>
+            <top>-60</top>
             <control type="group">
                 <visible>!IsEmpty(Window.Property(weatherworld.city.6.name))</visible>
                 <animation effect="slide" end="-360,0" time="0" condition="IntegerGreaterThan(Window.Property(weatherworld.city.6.flipx),0)">conditional</animation>
@@ -597,7 +597,7 @@
                 <control type="group">
                     <visible>IntegerGreaterThan(Window.Property(weatherworld.city.6.flipx),0)</visible>
                     <control type="label">
-                        <posx>340</posx>
+                        <left>340</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.6.name)]</label>
                         <include>WeatherWorldCityNameCommonValues</include>
@@ -619,13 +619,13 @@
                         </control>
                     </control>
                     <control type="label">
-                        <posx>315</posx>
+                        <left>315</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.6.outlook)]</label>
                         <include>WeatherWorldOutLookCommonValues</include>
                     </control>
                     <control type="label">
-                        <posx>360</posx>
+                        <left>360</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.6.latitude)] - $INFO[Window.Property(weatherworld.city.6.longitude)]</label>
                         <include>WeatherWorldLatitudeLongitudeCommonValues</include>
@@ -666,7 +666,7 @@
     </include>
     <include name="WeatherWorldGroup2607">
         <control type="group" id="2607">
-            <posy>-60</posy>
+            <top>-60</top>
             <control type="group">
                 <visible>!IsEmpty(Window.Property(weatherworld.city.7.name))</visible>
                 <animation effect="slide" end="-360,0" time="0" condition="IntegerGreaterThan(Window.Property(weatherworld.city.7.flipx),0)">conditional</animation>
@@ -688,7 +688,7 @@
                 <control type="group">
                     <visible>IntegerGreaterThan(Window.Property(weatherworld.city.7.flipx),0)</visible>
                     <control type="label">
-                        <posx>340</posx>
+                        <left>340</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.7.name)]</label>
                         <include>WeatherWorldCityNameCommonValues</include>
@@ -710,13 +710,13 @@
                         </control>
                     </control>
                     <control type="label">
-                        <posx>315</posx>
+                        <left>315</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.7.outlook)]</label>
                         <include>WeatherWorldOutLookCommonValues</include>
                     </control>
                     <control type="label">
-                        <posx>360</posx>
+                        <left>360</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.7.latitude)] - $INFO[Window.Property(weatherworld.city.7.longitude)]</label>
                         <include>WeatherWorldLatitudeLongitudeCommonValues</include>
@@ -757,7 +757,7 @@
     </include>
     <include name="WeatherWorldGroup2608">
         <control type="group" id="2608">
-            <posy>-60</posy>
+            <top>-60</top>
             <control type="group">
                 <visible>!IsEmpty(Window.Property(weatherworld.city.8.name))</visible>
                 <animation effect="slide" end="-360,0" time="0" condition="IntegerGreaterThan(Window.Property(weatherworld.city.8.flipx),0)">conditional</animation>
@@ -779,7 +779,7 @@
                 <control type="group">
                     <visible>IntegerGreaterThan(Window.Property(weatherworld.city.8.flipx),0)</visible>
                     <control type="label">
-                        <posx>340</posx>
+                        <left>340</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.8.name)]</label>
                         <include>WeatherWorldCityNameCommonValues</include>
@@ -801,13 +801,13 @@
                         </control>
                     </control>
                     <control type="label">
-                        <posx>315</posx>
+                        <left>315</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.8.outlook)]</label>
                         <include>WeatherWorldOutLookCommonValues</include>
                     </control>
                     <control type="label">
-                        <posx>360</posx>
+                        <left>360</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.8.latitude)] - $INFO[Window.Property(weatherworld.city.8.longitude)]</label>
                         <include>WeatherWorldLatitudeLongitudeCommonValues</include>
@@ -848,7 +848,7 @@
     </include>
     <include name="WeatherWorldGroup2609">
         <control type="group" id="2609">
-            <posy>-60</posy>
+            <top>-60</top>
             <control type="group">
                 <visible>!IsEmpty(Window.Property(weatherworld.city.9.name))</visible>
                 <animation effect="slide" end="-360,0" time="0" condition="IntegerGreaterThan(Window.Property(weatherworld.city.9.flipx),0)">conditional</animation>
@@ -870,7 +870,7 @@
                 <control type="group">
                     <visible>IntegerGreaterThan(Window.Property(weatherworld.city.9.flipx),0)</visible>
                     <control type="label">
-                        <posx>340</posx>
+                        <left>340</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.9.name)]</label>
                         <include>WeatherWorldCityNameCommonValues</include>
@@ -892,13 +892,13 @@
                         </control>
                     </control>
                     <control type="label">
-                        <posx>315</posx>
+                        <left>315</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.9.outlook)]</label>
                         <include>WeatherWorldOutLookCommonValues</include>
                     </control>
                     <control type="label">
-                        <posx>360</posx>
+                        <left>360</left>
                         <align>right</align>
                         <label>$INFO[Window.Property(weatherworld.city.9.latitude)] - $INFO[Window.Property(weatherworld.city.9.longitude)]</label>
                         <include>WeatherWorldLatitudeLongitudeCommonValues</include>

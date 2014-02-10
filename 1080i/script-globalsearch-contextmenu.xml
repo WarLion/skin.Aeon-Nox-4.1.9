@@ -3,14 +3,14 @@
     <defaultcontrol>1001</defaultcontrol>
     <include>Animation_DialogZoom</include>
     <coordinates>
-        <posx>269</posx>
-        <posy>200</posy>
+        <left>269</left>
+        <top>200</top>
         <system>1</system>
     </coordinates>
     <controls>
         <control type="image">
-            <posx>-2000</posx>
-            <posy>-1000</posy>
+            <left>-2000</left>
+            <top>-1000</top>
             <width>6000</width>
             <height>3000</height>
             <texture>common/bgcolor.png</texture>
@@ -19,7 +19,7 @@
             <animation effect="fade" start="100" end="0" time="240">WindowClose</animation>
         </control>
         <control type="image" id="997">
-            <posy>-39</posy>
+            <top>-39</top>
             <width>462</width>
             <height>39</height>
             <texture>dialogs/context_top.png</texture>

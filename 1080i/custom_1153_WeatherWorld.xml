@@ -34,8 +34,8 @@
         <control type="group">
             <include>Animation_WindowFade200</include>
             <control type="label">
-                <posx>40r</posx>
-                <posy>70r</posy>
+                <left>40r</left>
+                <top>70r</top>
                 <width>500</width>
                 <height>20</height>
                 <align>right</align>
@@ -45,8 +45,8 @@
                 <scroll>false</scroll>
             </control>
             <control type="label">
-                <posx>40r</posx>
-                <posy>32r</posy>
+                <left>40r</left>
+                <top>32r</top>
                 <width>500</width>
                 <height>20</height>
                 <align>right</align>

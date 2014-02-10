@@ -4,8 +4,8 @@
     <backgroundcolor>backgroundcolor</backgroundcolor>
     <onload>Notification($LOCALIZE[31902],$LOCALIZE[31878])</onload>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <controls>
@@ -42,12 +42,12 @@
         <!-- NowPlaying Info -->
         <include>Furniture_HomeNowPlaying</include>
         <control type="group">
-            <posy>280</posy>
+            <top>280</top>
             <include>Animation_DialogPopup2</include>
             <animation effect="slide" end="0,-460" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(movenowplayingwidget)">Conditional</animation>
             <control type="image">
-                <posx>267</posx>
-                <posy>180</posy>
+                <left>267</left>
+                <top>180</top>
                 <width>1387</width>
                 <height>600</height>
                 <texture>osd/osd_settings_back_glow.png</texture>
@@ -57,23 +57,23 @@
                 <include>Animation_VisibleChange400</include>
             </control>
             <control type="image">
-                <posx>267</posx>
-                <posy>180</posy>
+                <left>267</left>
+                <top>180</top>
                 <width>1387</width>
                 <height>600</height>
                 <texture>osd/osd_settings_back.png</texture>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
             <control type="image">
-                <posx>375</posx>
-                <posy>232</posy>
+                <left>375</left>
+                <top>232</top>
                 <width>1172</width>
                 <height>60</height>
                 <texture border="1">osd/osd_settings_buttonnf.png</texture>
             </control>
             <control type="label">
-                <posx>360</posx>
-                <posy>215</posy>
+                <left>360</left>
+                <top>215</top>
                 <width>600</width>
                 <height>60</height>
                 <align>center</align>
@@ -82,8 +82,8 @@
                 <textcolor>$VAR[TitleColorVar]</textcolor>
             </control>
             <control type="label">
-                <posx>990</posx>
-                <posy>215</posy>
+                <left>990</left>
+                <top>215</top>
                 <width>572</width>
                 <height>60</height>
                 <textoffsety>10</textoffsety>
@@ -93,8 +93,8 @@
                 <textcolor>$VAR[TitleColorVar]</textcolor>
             </control>
             <control type="group">
-                <posx>790</posx>
-                <posy>210</posy>
+                <left>790</left>
+                <top>210</top>
                 <control type="togglebutton" id="440">
                     <width>100</width>
                     <height>100</height>
@@ -124,8 +124,8 @@
                 </control>
             </control>
             <control type="group">
-                <posx>1450</posx>
-                <posy>210</posy>
+                <left>1450</left>
+                <top>210</top>
                 <control type="togglebutton" id="441">
                     <width>100</width>
                     <height>100</height>
@@ -157,8 +157,8 @@
                 </control>
             </control>
             <control type="grouplist" id="450">
-                <posx>288</posx>
-                <posy>312</posy>
+                <left>288</left>
+                <top>312</top>
                 <width>1172</width>
                 <height>540</height>
                 <aligny>center</aligny>
@@ -219,8 +219,8 @@
                 </control>
             </control>
             <control type="grouplist" id="20">
-                <posx>960</posx>
-                <posy>312</posy>
+                <left>960</left>
+                <top>312</top>
                 <width>1172</width>
                 <height>540</height>
                 <aligny>center</aligny>

@@ -66,8 +66,8 @@
             <colordiffuse>black</colordiffuse>
         </control>
         <control type="image">
-            <posx>923</posx>
-            <posy>603</posy>
+            <left>923</left>
+            <top>603</top>
             <width>74</width>
             <height>74</height>
             <texture>loader.gif</texture>
@@ -75,8 +75,8 @@
             <animation effect="fade" start="70" time="1200" condition="true" pulse="true">Conditional</animation>
         </control>
         <control type="image">
-            <posx>704</posx>
-            <posy>300</posy>
+            <left>704</left>
+            <top>300</top>
             <width>512</width>
             <height>180</height>
             <aspectratio>keep</aspectratio>

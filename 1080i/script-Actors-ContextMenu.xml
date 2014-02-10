@@ -4,13 +4,13 @@
     <zorder>6</zorder>
     <include>Animation_DialogZoom</include>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <controls>
         <control type="grouplist" id="1000">
-            <posx>729</posx>
+            <left>729</left>
             <width>462</width>
             <height>1080</height>
             <align>center</align>
@@ -20,7 +20,7 @@
             <ondown>800</ondown>
             <orientation>vertical</orientation>
             <control type="image" id="1">
-                <posy>-39</posy>
+                <top>-39</top>
                 <width>462</width>
                 <height>39</height>
                 <texture>dialogs/context_top_shutdown.png</texture>
@@ -81,7 +81,7 @@
                 <include>Objects_ContextMenuButton</include>
             </control>
             <control type="image" id="2">
-                <posy>699</posy>
+                <top>699</top>
                 <width>462</width>
                 <height>40</height>
                 <texture>dialogs/context_bottom.png</texture>

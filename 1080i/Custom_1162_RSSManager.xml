@@ -4,12 +4,12 @@
     <allowoverlay>no</allowoverlay>
     <controls>
         <control type="group">
-            <posy>90</posy>
+            <top>90</top>
             <include>Animation_DialogPopup</include>
             <visible>!Window.IsActive(1160) + !Window.IsActive(1137)</visible>
             <control type="image">
-                <posx>456</posx>
-                <posy>200</posy>
+                <left>456</left>
+                <top>200</top>
                 <width>1010</width>
                 <height>300</height>
                 <texture>osd/osd_settings_back_glow.png</texture>
@@ -18,8 +18,8 @@
                 <include>PanelGlowFade</include>
             </control>
             <control type="image">
-                <posx>456</posx>
-                <posy>200</posy>
+                <left>456</left>
+                <top>200</top>
                 <width>1010</width>
                 <height>300</height>
                 <texture>osd/osd_settings_back.png</texture>
@@ -27,8 +27,8 @@
             </control>
             <control type="group">
                 <control type="grouplist" id="20">
-                    <posx>875</posx>
-                    <posy>240</posy>
+                    <left>875</left>
+                    <top>240</top>
                     <width>1172</width>
                     <height>540</height>
                     <aligny>center</aligny>
@@ -61,8 +61,8 @@
                 </control>
                 <control type="group">
                     <control type="grouplist" id="4">
-                        <posx>475</posx>
-                        <posy>240</posy>
+                        <left>475</left>
+                        <top>240</top>
                         <width>1172</width>
                         <height>540</height>
                         <aligny>center</aligny>

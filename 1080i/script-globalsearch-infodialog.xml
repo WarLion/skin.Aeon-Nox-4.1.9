@@ -4,14 +4,14 @@
     <animation effect="fade" time="200">WindowOpen</animation>
     <animation effect="fade" time="200">WindowClose</animation>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <controls>
         <control type="list" id="100">
-            <posx>-10</posx>
-            <posy>-10</posy>
+            <left>-10</left>
+            <top>-10</top>
             <width>1</width>
             <height>1</height>
             <visible>false</visible>
@@ -19,15 +19,15 @@
             <focusedlayout width="1" height="1" />
         </control>
         <control type="label">
-            <posx>580</posx>
-            <posy>143</posy>
+            <left>580</left>
+            <top>143</top>
             <width>1160</width>
             <label>$INFO[Container(100).ListItem.Label]</label>
             <font>Font_Reg57_Caps</font>
         </control>
         <control type="image">
-            <posx>1350</posx>
-            <posy>180</posy>
+            <left>1350</left>
+            <top>180</top>
             <width>400</width>
             <height>400</height>
             <aspectratio aligny="top">keep</aspectratio>
@@ -37,15 +37,15 @@
             <bordersize>7</bordersize>
         </control>
         <control type="group">
-            <posx>580</posx>
-            <posy>197</posy>
+            <left>580</left>
+            <top>197</top>
             <control type="group" id="101">
                 <control type="group" id="110">
-                    <posy>-9</posy>
+                    <top>-9</top>
                     <width>894</width>
                     <height>540</height>
                     <control type="grouplist">
-                        <posy>-20</posy>
+                        <top>-20</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -58,7 +58,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>45</posy>
+                        <top>45</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -77,7 +77,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>90</posy>
+                        <top>90</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -96,7 +96,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>135</posy>
+                        <top>135</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -115,7 +115,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>180</posy>
+                        <top>180</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -134,7 +134,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>225</posy>
+                        <top>225</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -153,7 +153,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>270</posy>
+                        <top>270</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -172,7 +172,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>315</posy>
+                        <top>315</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -191,7 +191,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>360</posy>
+                        <top>360</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -211,7 +211,7 @@
                     </control>
                 </control>
                 <control type="group" id="120">
-                    <posy>-9</posy>
+                    <top>-9</top>
                     <width>894</width>
                     <height>540</height>
                     <control type="grouplist">
@@ -233,7 +233,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>45</posy>
+                        <top>45</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -252,7 +252,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>90</posy>
+                        <top>90</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -271,7 +271,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>135</posy>
+                        <top>135</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -290,7 +290,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>180</posy>
+                        <top>180</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -309,7 +309,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>225</posy>
+                        <top>225</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -329,7 +329,7 @@
                     </control>
                 </control>
                 <control type="group" id="130">
-                    <posy>-9</posy>
+                    <top>-9</top>
                     <width>894</width>
                     <height>540</height>
                     <control type="grouplist">
@@ -351,7 +351,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>45</posy>
+                        <top>45</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -371,7 +371,7 @@
                     </control>
                 </control>
                 <control type="group" id="140">
-                    <posy>-9</posy>
+                    <top>-9</top>
                     <width>894</width>
                     <height>540</height>
                     <control type="grouplist">
@@ -393,7 +393,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>45</posy>
+                        <top>45</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -412,7 +412,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>90</posy>
+                        <top>90</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -431,7 +431,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>135</posy>
+                        <top>135</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -450,7 +450,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>180</posy>
+                        <top>180</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -469,7 +469,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>225</posy>
+                        <top>225</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -488,7 +488,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>270</posy>
+                        <top>270</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -508,7 +508,7 @@
                     </control>
                 </control>
                 <control type="group" id="150">
-                    <posy>-9</posy>
+                    <top>-9</top>
                     <width>894</width>
                     <height>540</height>
                     <control type="grouplist">
@@ -530,7 +530,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>45</posy>
+                        <top>45</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -549,7 +549,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>90</posy>
+                        <top>90</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -568,7 +568,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>135</posy>
+                        <top>135</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -587,7 +587,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>180</posy>
+                        <top>180</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -606,7 +606,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>225</posy>
+                        <top>225</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -625,7 +625,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>270</posy>
+                        <top>270</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -644,7 +644,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>315</posy>
+                        <top>315</top>
                         <width>780</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -664,7 +664,7 @@
                     </control>
                 </control>
                 <control type="group" id="160">
-                    <posy>36</posy>
+                    <top>36</top>
                     <width>894</width>
                     <height>540</height>
                     <control type="grouplist">
@@ -686,7 +686,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>45</posy>
+                        <top>45</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -705,7 +705,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>90</posy>
+                        <top>90</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -724,7 +724,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>135</posy>
+                        <top>135</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -743,7 +743,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>180</posy>
+                        <top>180</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -762,7 +762,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>225</posy>
+                        <top>225</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -781,7 +781,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>270</posy>
+                        <top>270</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -800,7 +800,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>315</posy>
+                        <top>315</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -820,7 +820,7 @@
                     </control>
                 </control>
                 <control type="group" id="170">
-                    <posy>-9</posy>
+                    <top>-9</top>
                     <width>894</width>
                     <height>540</height>
                     <control type="grouplist">
@@ -842,7 +842,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>45</posy>
+                        <top>45</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -861,7 +861,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>90</posy>
+                        <top>90</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -880,7 +880,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>135</posy>
+                        <top>135</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -899,7 +899,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>180</posy>
+                        <top>180</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -918,7 +918,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>225</posy>
+                        <top>225</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -937,7 +937,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>270</posy>
+                        <top>270</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -956,7 +956,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>360</posy>
+                        <top>360</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -975,7 +975,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>315</posy>
+                        <top>315</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -995,7 +995,7 @@
                     </control>
                 </control>
                 <control type="group" id="180">
-                    <posy>-9</posy>
+                    <top>-9</top>
                     <width>894</width>
                     <height>540</height>
                     <control type="grouplist">
@@ -1017,7 +1017,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>45</posy>
+                        <top>45</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -1036,7 +1036,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>90</posy>
+                        <top>90</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -1055,7 +1055,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>135</posy>
+                        <top>135</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -1074,7 +1074,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>180</posy>
+                        <top>180</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -1093,7 +1093,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>225</posy>
+                        <top>225</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -1112,7 +1112,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>270</posy>
+                        <top>270</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -1131,7 +1131,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>315</posy>
+                        <top>315</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -1150,7 +1150,7 @@
                         </control>
                     </control>
                     <control type="grouplist">
-                        <posy>360</posy>
+                        <top>360</top>
                         <width>760</width>
                         <orientation>horizontal</orientation>
                         <itemgap>10</itemgap>
@@ -1171,7 +1171,7 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posy>660</posy>
+                <top>660</top>
                 <width>1354</width>
                 <height>540</height>
                 <orientation>horizontal</orientation>
@@ -1211,7 +1211,7 @@
                 </control>
             </control>
             <control type="textbox">
-                <posy>397</posy>
+                <top>397</top>
                 <width>1160</width>
                 <height>260</height>
                 <label>$INFO[Container(100).ListItem.Property(Plot),$LOCALIZE[207]: [COLOR white2],[/COLOR]]</label>
@@ -1220,7 +1220,7 @@
                 <visible>Control.IsVisible(110) | Control.IsVisible(120) | Control.IsVisible(150)</visible>
             </control>
             <control type="textbox">
-                <posy>307</posy>
+                <top>307</top>
                 <width>1160</width>
                 <height>330</height>
                 <label>$INFO[Container(100).ListItem.Property(Plot),$LOCALIZE[207]: [COLOR white2],[/COLOR]]</label>
@@ -1229,7 +1229,7 @@
                 <visible>Control.IsVisible(140)</visible>
             </control>
             <control type="textbox">
-                <posy>396</posy>
+                <top>396</top>
                 <width>1160</width>
                 <height>330</height>
                 <label>$INFO[Container(100).ListItem.Property(Artist_Description),$LOCALIZE[207]: [COLOR white2],[/COLOR]]</label>
@@ -1238,7 +1238,7 @@
                 <visible>Control.IsVisible(160)</visible>
             </control>
             <control type="textbox">
-                <posy>396</posy>
+                <top>396</top>
                 <width>1160</width>
                 <height>330</height>
                 <label>$INFO[Container(100).ListItem.Property(Comment),$LOCALIZE[569]: [COLOR white2],[/COLOR]]</label>
@@ -1247,7 +1247,7 @@
                 <visible>Control.IsVisible(180)</visible>
             </control>
             <control type="textbox">
-                <posy>396</posy>
+                <top>396</top>
                 <width>1160</width>
                 <height>330</height>
                 <label>$INFO[Container(100).ListItem.Property(Album_Description),$LOCALIZE[183]: [COLOR white2],[/COLOR]]</label>
@@ -1257,8 +1257,8 @@
             </control>
         </control>
         <control type="grouplist" id="190">
-            <posx>63</posx>
-            <posy>190</posy>
+            <left>63</left>
+            <top>190</top>
             <width>570</width>
             <height>768</height>
             <onleft>190</onleft>

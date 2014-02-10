@@ -5,14 +5,14 @@
     <include>Animation_DialogPopup</include>
     <controls>
         <control type="image" id="0">
-            <posx>489</posx>
-            <posy>273</posy>
+            <left>489</left>
+            <top>273</top>
             <width>940</width>
             <height>474</height>
             <texture>keyboard/keyboard_back.png</texture>
         </control>
         <control type="label" id="311">
-            <posy>308</posy>
+            <top>308</top>
             <width>1920</width>
             <height>33</height>
             <align>center</align>
@@ -20,15 +20,15 @@
             <textcolor>$VAR[FontColorVar]</textcolor>
         </control>
         <control type="label" id="310">
-            <posy>688</posy>
+            <top>688</top>
             <width>1920</width>
             <height>33</height>
             <align>center</align>
             <font>Font_Reg35</font>
         </control>
         <control type="group">
-            <posx>622</posx>
-            <posy>334</posy>
+            <left>622</left>
+            <top>334</top>
             <width>940</width>
             <height>434</height>
             <!-- Row 1 -->
@@ -43,7 +43,7 @@
                     <include>Objects_DoubleKeyOff</include>
                 </control>
                 <control type="button" id="49">
-                    <posx>126</posx>
+                    <left>126</left>
                     <onleft>304</onleft>
                     <onright>50</onright>
                     <onup>32</onup>
@@ -51,7 +51,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="50">
-                    <posx>189</posx>
+                    <left>189</left>
                     <onleft>49</onleft>
                     <onright>51</onright>
                     <onup>32</onup>
@@ -59,7 +59,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="51">
-                    <posx>252</posx>
+                    <left>252</left>
                     <onleft>50</onleft>
                     <onright>52</onright>
                     <onup>32</onup>
@@ -67,7 +67,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="52">
-                    <posx>315</posx>
+                    <left>315</left>
                     <onleft>51</onleft>
                     <onright>53</onright>
                     <onup>32</onup>
@@ -75,7 +75,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="53">
-                    <posx>378</posx>
+                    <left>378</left>
                     <onleft>52</onleft>
                     <onright>54</onright>
                     <onup>32</onup>
@@ -83,7 +83,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="54">
-                    <posx>441</posx>
+                    <left>441</left>
                     <onleft>53</onleft>
                     <onright>55</onright>
                     <onup>32</onup>
@@ -91,7 +91,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="55">
-                    <posx>504</posx>
+                    <left>504</left>
                     <onleft>54</onleft>
                     <onright>56</onright>
                     <onup>305</onup>
@@ -99,7 +99,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="56">
-                    <posx>567</posx>
+                    <left>567</left>
                     <onleft>55</onleft>
                     <onright>57</onright>
                     <onup>305</onup>
@@ -107,7 +107,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="57">
-                    <posx>630</posx>
+                    <left>630</left>
                     <onleft>56</onleft>
                     <onright>48</onright>
                     <onup>306</onup>
@@ -115,7 +115,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="48">
-                    <posx>693</posx>
+                    <left>693</left>
                     <onleft>57</onleft>
                     <onright>304</onright>
                     <onup>306</onup>
@@ -125,7 +125,7 @@
             </control>
             <!-- Row 2 -->
             <control type="group">
-                <posy>63</posy>
+                <top>63</top>
                 <control type="button" id="307">
                     <label>1006</label>
                     <onleft>80</onleft>
@@ -135,7 +135,7 @@
                     <include>Objects_DoubleKeyOff</include>
                 </control>
                 <control type="button" id="81">
-                    <posx>126</posx>
+                    <left>126</left>
                     <onleft>307</onleft>
                     <onright>87</onright>
                     <onup>49</onup>
@@ -143,7 +143,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="87">
-                    <posx>189</posx>
+                    <left>189</left>
                     <onleft>81</onleft>
                     <onright>69</onright>
                     <onup>50</onup>
@@ -151,7 +151,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="69">
-                    <posx>252</posx>
+                    <left>252</left>
                     <onleft>87</onleft>
                     <onright>82</onright>
                     <onup>51</onup>
@@ -159,7 +159,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="82">
-                    <posx>315</posx>
+                    <left>315</left>
                     <onleft>69</onleft>
                     <onright>84</onright>
                     <onup>52</onup>
@@ -167,7 +167,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="84">
-                    <posx>378</posx>
+                    <left>378</left>
                     <onleft>82</onleft>
                     <onright>89</onright>
                     <onup>53</onup>
@@ -175,7 +175,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="89">
-                    <posx>441</posx>
+                    <left>441</left>
                     <onleft>84</onleft>
                     <onright>85</onright>
                     <onup>54</onup>
@@ -183,7 +183,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="85">
-                    <posx>504</posx>
+                    <left>504</left>
                     <onleft>89</onleft>
                     <onright>73</onright>
                     <onup>55</onup>
@@ -191,7 +191,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="73">
-                    <posx>567</posx>
+                    <left>567</left>
                     <onleft>85</onleft>
                     <onright>79</onright>
                     <onup>56</onup>
@@ -199,7 +199,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="79">
-                    <posx>630</posx>
+                    <left>630</left>
                     <onleft>73</onleft>
                     <onright>80</onright>
                     <onup>57</onup>
@@ -207,7 +207,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="80">
-                    <posx>693</posx>
+                    <left>693</left>
                     <onleft>79</onleft>
                     <onright>307</onright>
                     <onup>48</onup>
@@ -217,7 +217,7 @@
             </control>
             <!-- Row 3 -->
             <control type="group">
-                <posy>126</posy>
+                <top>126</top>
                 <control type="togglebutton" id="303">
                     <label>20179</label>
                     <altlabel>[COLOR=$VAR[ColorDiffuseVar]]$LOCALIZE[20179][/COLOR]</altlabel>
@@ -228,7 +228,7 @@
                     <include>Objects_DoubleKeyOff</include>
                 </control>
                 <control type="button" id="65">
-                    <posx>126</posx>
+                    <left>126</left>
                     <onleft>303</onleft>
                     <onright>83</onright>
                     <onup>81</onup>
@@ -236,7 +236,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="83">
-                    <posx>189</posx>
+                    <left>189</left>
                     <onleft>65</onleft>
                     <onright>68</onright>
                     <onup>87</onup>
@@ -244,7 +244,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="68">
-                    <posx>252</posx>
+                    <left>252</left>
                     <onleft>83</onleft>
                     <onright>70</onright>
                     <onup>69</onup>
@@ -252,7 +252,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="70">
-                    <posx>315</posx>
+                    <left>315</left>
                     <onleft>68</onleft>
                     <onright>71</onright>
                     <onup>82</onup>
@@ -260,7 +260,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="71">
-                    <posx>378</posx>
+                    <left>378</left>
                     <onleft>70</onleft>
                     <onright>72</onright>
                     <onup>84</onup>
@@ -268,7 +268,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="72">
-                    <posx>441</posx>
+                    <left>441</left>
                     <onleft>71</onleft>
                     <onright>74</onright>
                     <onup>89</onup>
@@ -276,7 +276,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="74">
-                    <posx>504</posx>
+                    <left>504</left>
                     <onleft>72</onleft>
                     <onright>75</onright>
                     <onup>85</onup>
@@ -284,7 +284,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="75">
-                    <posx>567</posx>
+                    <left>567</left>
                     <onleft>74</onleft>
                     <onright>76</onright>
                     <onup>73</onup>
@@ -292,7 +292,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="76">
-                    <posx>630</posx>
+                    <left>630</left>
                     <onleft>75</onleft>
                     <onright>303</onright>
                     <onup>79</onup>
@@ -300,7 +300,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button">
-                    <posx>693</posx>
+                    <left>693</left>
                     <label>-</label>
                     <onleft>76</onleft>
                     <onright>303</onright>
@@ -311,7 +311,7 @@
             </control>
             <!-- Row 4 -->
             <control type="group">
-                <posy>189</posy>
+                <top>189</top>
                 <control type="togglebutton" id="302">
                     <label>$LOCALIZE[20178]</label>
                     <altlabel>[COLOR=$VAR[ColorDiffuseVar]]$LOCALIZE[20178][/COLOR]</altlabel>
@@ -322,7 +322,7 @@
                     <include>Objects_DoubleKeyOff</include>
                 </control>
                 <control type="button" id="90">
-                    <posx>126</posx>
+                    <left>126</left>
                     <onleft>302</onleft>
                     <onright>88</onright>
                     <onup>65</onup>
@@ -330,7 +330,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="88">
-                    <posx>189</posx>
+                    <left>189</left>
                     <onleft>90</onleft>
                     <onright>67</onright>
                     <onup>83</onup>
@@ -338,7 +338,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="67">
-                    <posx>252</posx>
+                    <left>252</left>
                     <onleft>88</onleft>
                     <onright>86</onright>
                     <onup>68</onup>
@@ -346,7 +346,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="86">
-                    <posx>315</posx>
+                    <left>315</left>
                     <onleft>67</onleft>
                     <onright>66</onright>
                     <onup>70</onup>
@@ -354,7 +354,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="66">
-                    <posx>378</posx>
+                    <left>378</left>
                     <onleft>86</onleft>
                     <onright>78</onright>
                     <onup>71</onup>
@@ -362,7 +362,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="78">
-                    <posx>441</posx>
+                    <left>441</left>
                     <onleft>66</onleft>
                     <onright>77</onright>
                     <onup>72</onup>
@@ -370,7 +370,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="77">
-                    <posx>504</posx>
+                    <left>504</left>
                     <onleft>78</onleft>
                     <onright>8</onright>
                     <onup>74</onup>
@@ -378,7 +378,7 @@
                     <include>Objects_SingleKeyOff</include>
                 </control>
                 <control type="button" id="8">
-                    <posx>567</posx>
+                    <left>567</left>
                     <width>228</width>
                     <height>102</height>
                     <texturefocus>keyboard/keyboard_triplef.png</texturefocus>
@@ -393,7 +393,7 @@
             </control>
             <!-- Row 5 -->
             <control type="group">
-                <posy>252</posy>
+                <top>252</top>
                 <control type="button" id="300">
                     <label>$LOCALIZE[20177]</label>
                     <onleft>306</onleft>
@@ -403,7 +403,7 @@
                     <include>Objects_DoubleKeyOff</include>
                 </control>
                 <control type="button" id="32">
-                    <posx>126</posx>
+                    <left>126</left>
                     <width>417</width>
                     <height>102</height>
                     <texturefocus>keyboard/keyboard_spacef.png</texturefocus>
@@ -416,7 +416,7 @@
                     <include>Objects_KeyOffVars</include>
                 </control>
                 <control type="button" id="305">
-                    <posx>504</posx>
+                    <left>504</left>
                     <label>&lt;</label>
                     <onleft>32</onleft>
                     <onright>306</onright>
@@ -425,7 +425,7 @@
                     <include>Objects_DoubleKeyOffSymbol</include>
                 </control>
                 <control type="button" id="306">
-                    <posx>630</posx>
+                    <left>630</left>
                     <label>&gt;</label>
                     <onleft>305</onleft>
                     <onright>300</onright>

@@ -8,13 +8,13 @@
     <controls>
         <control type="group">
             <control type="image">
-                <posy>978</posy>
+                <top>978</top>
                 <width>1920</width>
                 <height>630</height>
                 <texture>views/lowlist_panelback.png</texture>
             </control>
             <control type="button" id="2019">
-                <posy>1020</posy>
+                <top>1020</top>
                 <width>60</width>
                 <height>60</height>
                 <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
@@ -29,14 +29,14 @@
                 <onclick condition="!IsEmpty(Window(home).Property(DisableWidgets))">ClearProperty(DisableWidgets,home)</onclick>
             </control>
             <control type="image" id="2016">
-                <posy>1025</posy>
+                <top>1025</top>
                 <width>60</width>
                 <height>60</height>
                 <texture>$VAR[WidgetModeIconVar]</texture>
             </control>
             <control type="list" id="2020">
-                <posx>60</posx>
-                <posy>1020</posy>
+                <left>60</left>
+                <top>1020</top>
                 <width>1920</width>
                 <height>135</height>
                 <orientation>horizontal</orientation>
@@ -47,7 +47,7 @@
                 <focusposition>4</focusposition>
                 <itemlayout height="60" width="310">
                     <control type="image">
-                        <posy>7</posy>
+                        <top>7</top>
                         <width>62</width>
                         <height>52</height>
                         <aspectratio align="left">keep</aspectratio>
@@ -55,8 +55,8 @@
                         <colordiffuse>grey</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>58</posx>
-                        <posy>2</posy>
+                        <left>58</left>
+                        <top>2</top>
                         <width>250</width>
                         <height>30</height>
                         <align>left</align>
@@ -65,8 +65,8 @@
                         <textcolor>white2</textcolor>
                     </control>
                     <control type="textbox">
-                        <posx>58</posx>
-                        <posy>26</posy>
+                        <left>58</left>
+                        <top>26</top>
                         <width>250</width>
                         <height>30</height>
                         <align>left</align>
@@ -85,7 +85,7 @@
                         <visible>Control.HasFocus(2020)</visible>
                     </control>
                     <control type="image">
-                        <posy>7</posy>
+                        <top>7</top>
                         <width>62</width>
                         <height>52</height>
                         <aspectratio align="left">keep</aspectratio>
@@ -93,8 +93,8 @@
                         <colordiffuse>white2</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>58</posx>
-                        <posy>2</posy>
+                        <left>58</left>
+                        <top>2</top>
                         <width>250</width>
                         <height>30</height>
                         <align>left</align>
@@ -102,8 +102,8 @@
                         <font>Font_Reg22_Caps</font>
                     </control>
                     <control type="textbox">
-                        <posx>58</posx>
-                        <posy>26</posy>
+                        <left>58</left>
+                        <top>26</top>
                         <width>250</width>
                         <height>30</height>
                         <align>left</align>
@@ -187,8 +187,8 @@
                 </content>
             </control>
             <!--        <control type="grouplist" id="2020">
-                <posx>0</posx>
-                <posy>1007</posy>
+                <left>0</left>
+                <top>1007</top>
                 <width>600</width>
                 <align>left</align>
                 <itemgap>7</itemgap>
@@ -206,8 +206,8 @@
                 </control>
             </control>
             <control type="image" id="2018">
-                <posx>0</posx>
-                <posy>1007</posy>
+                <left>0</left>
+                <top>1007</top>
                 <width>45</width>
                 <height>45</height>
                 <colordiffuse>white</colordiffuse>

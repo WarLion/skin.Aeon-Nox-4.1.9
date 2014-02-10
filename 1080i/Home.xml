@@ -341,7 +341,7 @@
                 <colordiffuse>$INFO[Skin.String(BackgroundDarkness)]</colordiffuse>
             </control>
             <control type="image">
-                <posy>-150</posy>
+                <top>-150</top>
                 <width>1920</width>
                 <height>608</height>
                 <texture flipy="true">views/showcase_glow.png</texture>
@@ -352,7 +352,7 @@
                 <visible>Skin.HasSetting(ExtendedGlowMode)</visible>
             </control>
             <control type="image">
-                <posy>622</posy>
+                <top>622</top>
                 <width>1920</width>
                 <height>608</height>
                 <texture>views/showcase_glow.png</texture>
@@ -369,7 +369,7 @@
             <include>Animation_VisibleChangeDelayed</include>
             <include>Animation_WindowFade200</include>
             <control type="image">
-                <posy>480</posy>
+                <top>480</top>
                 <width>1920</width>
                 <height>600</height>
                 <texture>home/nowplaying_shadow.png</texture>
@@ -392,7 +392,7 @@
             <animation effect="slide" end="0,-330" time="560" tween="cubic" delay="160" condition="!Skin.HasSetting(lowermainmenu) + !IsEmpty(Window(home).Property(PanelWidgetInfo)) + !Window.IsActive(1115)">Conditional</animation>
             <animation effect="slide" end="0,330" time="480" tween="cubic" delay="160" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + [Window.IsActive(1115) | Window.IsActive(1154)]">Conditional</animation>
             <control type="group">
-                <posy>472</posy>
+                <top>472</top>
                 <include>LibraryStats</include>
                 <include>TimePanel</include>
                 <include>AlternateTimeAndStats</include>
@@ -406,8 +406,8 @@
                     <animation effect="zoom" end="80" center="960,520" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(smallermainmenu)">Conditional</animation>
                     <!-- Submenu -->
                     <control type="image">
-                        <posx>935</posx>
-                        <posy>613</posy>
+                        <left>935</left>
+                        <top>613</top>
                         <width>50</width>
                         <height>15</height>
                         <texture>arrowdown.png</texture>
@@ -418,14 +418,14 @@
                         <animation effect="zoom" start="100,0" end="100,100" time="400" delay="160" tween="cubic" center="0,613" easing="inout">VisibleChange</animation>
                     </control>
                     <control type="group" id="9001">
-                        <posx>240</posx>
-                        <posy>609</posy>
+                        <left>240</left>
+                        <top>609</top>
                         <animation effect="zoom" end="120" center="960,610" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(smallermainmenu)">Conditional</animation>
                         <animation effect="fade" start="100" end="0" time="240" condition="!Control.HasFocus(9010) + ![IntegerGreaterThan(Container(9010).NumItems,0) + Skin.HasSetting(showsubmenu)]">conditional</animation>
                         <animation effect="slide" end="0,-60" time="240" tween="cubic" easing="inout" condition="!Control.HasFocus(9010) + ![IntegerGreaterThan(Container(9010).NumItems,0) + Skin.HasSetting(showsubmenu)]">conditional</animation>
                         <control type="image">
-                            <posx>70</posx>
-                            <posy>3</posy>
+                            <left>70</left>
+                            <top>3</top>
                             <width>1300</width>
                             <height>87</height>
                             <texture>$VAR[SubMenuImageVar]</texture>
@@ -436,14 +436,14 @@
                     </control>
                     <!-- Home OSD -->
                     <control type="group">
-                        <posy>62</posy>
+                        <top>62</top>
                         <width>1920</width>
                         <height>1080</height>
                         <visible>Player.HasMedia + System.IdleTime(8)</visible>
                         <animation effect="zoom" end="125,100" center="960,500" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(smallermainmenu)">Conditional</animation>
                         <animation effect="fade" end="100" time="600" condition="Player.HasAudio + System.IdleTime(8)">Conditional</animation>
                         <control type="progress">
-                            <posy>452</posy>
+                            <top>452</top>
                             <width>1920</width>
                             <height>96</height>
                             <info>Player.Progress</info>
@@ -455,7 +455,7 @@
                     </control>
                     <!-- Home Menu Bar -->
                     <control type="image">
-                        <posy>453</posy>
+                        <top>453</top>
                         <width>1920</width>
                         <height>225</height>
                         <texture>$VAR[HomeMenuBackVar]</texture>
@@ -464,7 +464,7 @@
                         <animation effect="fade" start="100" end="90" time="40" condition="Skin.HasSetting(glasshome) + ![Player.HasMedia + System.IdleTime(8)]">Conditional</animation>
                     </control>
                     <control type="image">
-                        <posy>453</posy>
+                        <top>453</top>
                         <width>1920</width>
                         <height>225</height>
                         <texture>home/homemenu_back_glow.png</texture>
@@ -476,7 +476,7 @@
                     </control>
                     <!-- Home OSD -->
                     <control type="label">
-                        <posy>445</posy>
+                        <top>445</top>
                         <width>1920</width>
                         <height>225</height>
                         <align>center</align>
@@ -564,9 +564,9 @@
             <include>RecentWidget2</include>
         </control>
         <control type="group">
-            <posx>135</posx>
+            <left>135</left>
             <include>Animation_OpenCloseZoom</include>
-            <posy>389</posy>
+            <top>389</top>
             <width>1920</width>
             <height>825</height>
             <animation type="Conditional" condition="true">
@@ -593,8 +593,8 @@
         </control>
         <include condition="!Skin.HasSetting(nohomepageMusicinfo) | !Skin.HasSetting(homepageVideoinfo)">Furniture_HomeNowPlaying</include>
         <control type="group">
-            <posx>0</posx>
-            <posy>20</posy>
+            <left>0</left>
+            <top>20</top>
             <visible>!IsEmpty(Window(home).Property(DisableWidgets)) + !Player.HasMedia + !Window.IsActive(1115) + !Window.IsActive(1154)</visible>
             <include>Animation_WindowFade200</include>
             <animation type="Visible">
@@ -606,8 +606,8 @@
                 <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
             </animation>
             <control type="image">
-                <posx>-20</posx>
-                <posy>-20</posy>
+                <left>-20</left>
+                <top>-20</top>
                 <width>290</width>
                 <height>100</height>
                 <texture>home/fade.png</texture>
@@ -615,8 +615,8 @@
                 <colordiffuse>black</colordiffuse>
             </control>
             <control type="image">
-                <posx>0</posx>
-                <posy>6</posy>
+                <left>0</left>
+                <top>6</top>
                 <width>65</width>
                 <height>49</height>
                 <aspectratio aligny="top">scale</aspectratio>
@@ -625,8 +625,8 @@
                 <colordiffuse>white</colordiffuse>
             </control>
             <control type="image">
-                <posx>50</posx>
-                <posy>10</posy>
+                <left>50</left>
+                <top>10</top>
                 <width>50</width>
                 <height>38</height>
                 <aspectratio aligny="top">scale</aspectratio>
@@ -663,23 +663,23 @@
                     <randomize>false</randomize>
                 </control>
                 <control type="image">
-                    <posx>500</posx>
-                    <posy>990</posy>
+                    <left>500</left>
+                    <top>990</top>
                     <width>920</width>
                     <height>47</height>
                     <texture>weather/whitepanel.png</texture>
                 </control>
                 <control type="image">
-                    <posx>480</posx>
-                    <posy>992</posy>
+                    <left>480</left>
+                    <top>992</top>
                     <width>506</width>
                     <height>42</height>
                     <aspectratio>keep</aspectratio>
                     <texture>weather/key1.png</texture>
                 </control>
                 <control type="image">
-                    <posx>930</posx>
-                    <posy>992</posy>
+                    <left>930</left>
+                    <top>992</top>
                     <width>506</width>
                     <height>42</height>
                     <aspectratio>keep</aspectratio>

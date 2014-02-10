@@ -4,8 +4,8 @@
     <onunload>ClearProperty(quicknavsetup,home)</onunload>
     <onunload>ClearProperty(viewtypeselect,home)</onunload>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <animation type="WindowClose">
@@ -33,7 +33,7 @@
                 <effect type="slide" start="-450" end="0" time="320" tween="cubic" />
             </animation>
             <control type="image">
-                <posx>-42</posx>
+                <left>-42</left>
                 <width>462</width>
                 <height>1080</height>
                 <texture>dialogs/context_middle.png</texture>
@@ -44,7 +44,7 @@
                 </animation>
             </control>
             <control type="group">
-                <posx>380</posx>
+                <left>380</left>
                 <animation type="Conditional" condition="Window.IsActive(1121)">
                     <effect type="slide" end="-180" time="320" easing="in" tween="cubic" />
                 </animation>
@@ -68,7 +68,7 @@
                     <texture border="3">settings/listselect_nf.png</texture>
                 </control>
                 <control type="label">
-                    <posx>15</posx>
+                    <left>15</left>
                     <width>219</width>
                     <height>60</height>
                     <font>Font_Reg30_2</font>
@@ -77,7 +77,7 @@
                     <visible>!StringCompare(ListItem.Label,Container.Viewmode)</visible>
                 </control>
                 <control type="label">
-                    <posx>15</posx>
+                    <left>15</left>
                     <width>219</width>
                     <height>60</height>
                     <font>Font_Reg30_2</font>
@@ -108,7 +108,7 @@
                     <visible>Control.HasFocus(9011)</visible>
                 </control>
                 <control type="label">
-                    <posx>15</posx>
+                    <left>15</left>
                     <width>219</width>
                     <height>60</height>
                     <font>Font_Reg30_2</font>
@@ -117,7 +117,7 @@
                     <visible>!Control.HasFocus(9011)</visible>
                 </control>
                 <control type="label">
-                    <posx>15</posx>
+                    <left>15</left>
                     <width>219</width>
                     <height>60</height>
                     <font>Font_Reg30_2</font>
@@ -393,8 +393,8 @@
                     <texture border="0,0,0,4">settings/listselect_nf.png</texture>
                 </control>
                 <control type="image">
-                    <posx>72</posx>
-                    <posy>5</posy>
+                    <left>72</left>
+                    <top>5</top>
                     <width>75</width>
                     <height>75</height>
                     <aspectratio align="center">keep</aspectratio>
@@ -402,8 +402,8 @@
                     <colordiffuse>white3</colordiffuse>
                 </control>
                 <control type="label">
-                    <posx>110</posx>
-                    <posy>53</posy>
+                    <left>110</left>
+                    <top>53</top>
                     <width>219</width>
                     <height>60</height>
                     <align>center</align>
@@ -427,8 +427,8 @@
                     <include>PanelGlowFade</include>
                 </control>
                 <control type="image">
-                    <posx>72</posx>
-                    <posy>5</posy>
+                    <left>72</left>
+                    <top>5</top>
                     <width>75</width>
                     <height>75</height>
                     <aspectratio align="center">keep</aspectratio>
@@ -436,8 +436,8 @@
                     <colordiffuse>white2</colordiffuse>
                 </control>
                 <control type="label">
-                    <posx>110</posx>
-                    <posy>53</posy>
+                    <left>110</left>
+                    <top>53</top>
                     <width>219</width>
                     <height>60</height>
                     <align>center</align>
@@ -450,7 +450,7 @@
             </content>
         </control>
         <control type="button" id="9012">
-            <posy>1040</posy>
+            <top>1040</top>
             <width>60</width>
             <height>40</height>
             <align>center</align>
@@ -471,8 +471,8 @@
             <visible>!Skin.HasSetting(kioskmode)</visible>
         </control>
         <control type="image">
-            <posx>10</posx>
-            <posy>1043</posy>
+            <left>10</left>
+            <top>1043</top>
             <width>42</width>
             <height>42</height>
             <texture>$VAR[QuickConfigIconVar]</texture>
@@ -480,8 +480,8 @@
             <visible>Control.IsVisible(9012)</visible>
         </control>
         <control type="button" id="9013">
-            <posx>65</posx>
-            <posy>1040</posy>
+            <left>65</left>
+            <top>1040</top>
             <width>50</width>
             <height>40</height>
             <align>center</align>
@@ -501,8 +501,8 @@
             <visible>IsEmpty(Window(home).Property(viewtypeselect)) + Player.HasMedia</visible>
         </control>
         <control type="image">
-            <posx>65</posx>
-            <posy>1043</posy>
+            <left>65</left>
+            <top>1043</top>
             <width>42</width>
             <height>42</height>
             <texture>special://skin/extras/BigIcons/Fullscreen2.png</texture>
@@ -510,8 +510,8 @@
             <visible>Control.IsVisible(9013)</visible>
         </control>
         <control type="button" id="9014">
-            <posx>110</posx>
-            <posy>1040</posy>
+            <left>110</left>
+            <top>1040</top>
             <width>50</width>
             <height>40</height>
             <align>center</align>
@@ -531,8 +531,8 @@
             <visible>IsEmpty(Window(home).Property(viewtypeselect)) + Player.HasAudio + !Window.IsActive(musicplaylist)</visible>
         </control>
         <control type="image">
-            <posx>115</posx>
-            <posy>1043</posy>
+            <left>115</left>
+            <top>1043</top>
             <width>42</width>
             <height>42</height>
             <texture>special://skin/extras/BigIcons/Format.png</texture>
@@ -540,8 +540,8 @@
             <visible>Control.IsVisible(9014)</visible>
         </control>
         <control type="button" id="9015">
-            <posx>160</posx>
-            <posy>1040</posy>
+            <left>160</left>
+            <top>1040</top>
             <width>60</width>
             <height>40</height>
             <align>center</align>
@@ -561,8 +561,8 @@
             <visible>IsEmpty(Window(home).Property(viewtypeselect)) + System.HasMediadvd</visible>
         </control>
         <control type="image">
-            <posx>165</posx>
-            <posy>1043</posy>
+            <left>165</left>
+            <top>1043</top>
             <width>42</width>
             <height>42</height>
             <texture>special://skin/extras/BigIcons/CD-DVD.png</texture>

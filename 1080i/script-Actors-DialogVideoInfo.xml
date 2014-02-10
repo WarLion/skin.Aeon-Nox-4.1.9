@@ -41,7 +41,7 @@
                 <texture background="true">$INFO[ListItem.Icon]</texture>
             </control>
             <control type="image">
-                <posx>709</posx>
+                <left>709</left>
                 <width>40</width>
                 <height>1080</height>
                 <texture>common/topbar_down.png</texture>
@@ -56,28 +56,28 @@
             <animation effect="slide" start="1192,0" end="0,0" time="320" tween="quadratic">WindowOpen</animation>
             <animation effect="slide" end="1192,0" time="320" tween="quadratic">WindowClose</animation>
             <control type="image">
-                <posx>729</posx>
+                <left>729</left>
                 <width>1192</width>
                 <height>1080</height>
                 <texture>info/info_rightpanelbottom.png</texture>
                 <visible>IsEmpty(ListItem.Art(fanart))</visible>
             </control>
             <control type="image">
-                <posx>729</posx>
+                <left>729</left>
                 <width>1192</width>
                 <height>1080</height>
                 <aspectratio align="center">scale</aspectratio>
                 <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
             </control>
             <control type="image">
-                <posx>729</posx>
+                <left>729</left>
                 <width>1192</width>
                 <height>1080</height>
                 <texture>info/info_rightpaneltop.png</texture>
             </control>
             <control type="label">
-                <posx>825</posx>
-                <posy>1042</posy>
+                <left>825</left>
+                <top>1042</top>
                 <width>1050</width>
                 <label>$INFO[ListItem.FileNameAndPath]</label>
                 <font>Font_Info</font>
@@ -87,8 +87,8 @@
             </control>
             <!-- Buttons -->
             <control type="grouplist" id="9000">
-                <posx>827</posx>
-                <posy>544</posy>
+                <left>827</left>
+                <top>544</top>
                 <width>1000</width>
                 <height>60</height>
                 <onleft>9000</onleft>
@@ -132,19 +132,19 @@
             </control>
             <!-- Movie information -->
             <control type="group">
-                <posx>825</posx>
-                <posy>68</posy>
+                <left>825</left>
+                <top>68</top>
                 <width>1042</width>
                 <height>854</height>
                 <control type="image">
-                    <posy>90</posy>
+                    <top>90</top>
                     <width>1042</width>
                     <height>854</height>
                     <texture>info/info_panellines_movie.png</texture>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 </control>
                 <control type="label">
-                    <posy>16</posy>
+                    <top>16</top>
                     <width>1050</width>
                     <label>$INFO[ListItem.Title]</label>
                     <font>Font_Reg57_Caps</font>
@@ -152,7 +152,7 @@
                     <animation effect="slide" start="0,-38" end="0,-38" time="0" condition="!IsEmpty(ListItem.Tagline)">Conditional</animation>
                 </control>
                 <control type="label">
-                    <posy>40</posy>
+                    <top>40</top>
                     <width>1050</width>
                     <label>$INFO[ListItem.Tagline]</label>
                     <font>Font_Reg38</font>
@@ -161,8 +161,8 @@
                 </control>
                 <!-- First Row -->
                 <control type="image">
-                    <posx>10</posx>
-                    <posy>102</posy>
+                    <left>10</left>
+                    <top>102</top>
                     <width>249</width>
                     <height>57</height>
                     <aspectratio>keep</aspectratio>
@@ -171,8 +171,8 @@
                     <colordiffuse>grey</colordiffuse>
                 </control>
                 <control type="label">
-                    <posx>272</posx>
-                    <posy>87</posy>
+                    <left>272</left>
+                    <top>87</top>
                     <width>164</width>
                     <height>85</height>
                     <align>center</align>
@@ -181,8 +181,8 @@
                     <textcolor>grey</textcolor>
                 </control>
                 <control type="label">
-                    <posx>465</posx>
-                    <posy>87</posy>
+                    <left>465</left>
+                    <top>87</top>
                     <width>555</width>
                     <height>85</height>
                     <label fallback="31006">$INFO[ListItem.Genre]</label>
@@ -192,10 +192,10 @@
                 </control>
                 <!-- Second Row -->
                 <control type="group">
-                    <posy>-4</posy>
+                    <top>-4</top>
                     <control type="label">
-                        <posx>4</posx>
-                        <posy>171</posy>
+                        <left>4</left>
+                        <top>171</top>
                         <width>165</width>
                         <height>44</height>
                         <label>$LOCALIZE[20339]:</label>
@@ -203,8 +203,8 @@
                         <textcolor>grey</textcolor>
                     </control>
                     <control type="label">
-                        <posx>180</posx>
-                        <posy>171</posy>
+                        <left>180</left>
+                        <top>171</top>
                         <width>750</width>
                         <height>44</height>
                         <label fallback="31006">$INFO[ListItem.Director]</label>
@@ -214,10 +214,10 @@
                 </control>
                 <!-- Third Row -->
                 <control type="group">
-                    <posy>-4</posy>
+                    <top>-4</top>
                     <control type="label">
-                        <posx>4</posx>
-                        <posy>214</posy>
+                        <left>4</left>
+                        <top>214</top>
                         <width>165</width>
                         <height>44</height>
                         <label>$LOCALIZE[20417]:</label>
@@ -225,8 +225,8 @@
                         <textcolor>grey</textcolor>
                     </control>
                     <control type="label">
-                        <posx>180</posx>
-                        <posy>214</posy>
+                        <left>180</left>
+                        <top>214</top>
                         <width>750</width>
                         <height>44</height>
                         <label fallback="31006">$INFO[ListItem.Writer]</label>
@@ -236,10 +236,10 @@
                 </control>
                 <!-- Fourth Row Left-->
                 <control type="group">
-                    <posy>-4</posy>
+                    <top>-4</top>
                     <control type="label">
-                        <posx>4</posx>
-                        <posy>255</posy>
+                        <left>4</left>
+                        <top>255</top>
                         <width>165</width>
                         <height>44</height>
                         <label>$LOCALIZE[2050]:</label>
@@ -247,8 +247,8 @@
                         <textcolor>grey</textcolor>
                     </control>
                     <control type="label">
-                        <posx>180</posx>
-                        <posy>255</posy>
+                        <left>180</left>
+                        <top>255</top>
                         <width>750</width>
                         <height>44</height>
                         <label fallback="31006">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
@@ -258,19 +258,19 @@
                 <!-- Fourth Row Right -->
                 <control type="group">
                     <control type="image">
-                        <posx>569</posx>
-                        <posy>256</posy>
+                        <left>569</left>
+                        <top>256</top>
                         <width>2</width>
                         <height>40</height>
                         <texture>views/tripanel/upright.png</texture>
                         <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                     </control>
                     <control type="group">
-                        <posy>-4</posy>
+                        <top>-4</top>
                         <visible>!IsEmpty(ListItem.Rating)</visible>
                         <control type="label">
-                            <posx>562</posx>
-                            <posy>255</posy>
+                            <left>562</left>
+                            <top>255</top>
                             <width>165</width>
                             <height>44</height>
                             <align>right</align>
@@ -279,8 +279,8 @@
                             <textcolor>grey</textcolor>
                         </control>
                         <control type="label">
-                            <posx>585</posx>
-                            <posy>255</posy>
+                            <left>585</left>
+                            <top>255</top>
                             <width>750</width>
                             <height>44</height>
                             <label fallback="-">$INFO[ListItem.RatingAndVotes]$INFO[ListItem.Top250, / $LOCALIZE[13409] #]</label>
@@ -288,11 +288,11 @@
                         </control>
                     </control>
                     <control type="group">
-                        <posy>-4</posy>
+                        <top>-4</top>
                         <visible>IsEmpty(ListItem.Rating) + !IsEmpty(ListItem.Date)</visible>
                         <control type="label">
-                            <posx>562</posx>
-                            <posy>255</posy>
+                            <left>562</left>
+                            <top>255</top>
                             <width>200</width>
                             <height>44</height>
                             <align>right</align>
@@ -301,8 +301,8 @@
                             <textcolor>grey</textcolor>
                         </control>
                         <control type="label">
-                            <posx>585</posx>
-                            <posy>255</posy>
+                            <left>585</left>
+                            <top>255</top>
                             <width>750</width>
                             <height>44</height>
                             <label fallback="-">$INFO[ListItem.Date]</label>
@@ -311,8 +311,8 @@
                     </control>
                 </control>
                 <control type="label">
-                    <posx>4</posx>
-                    <posy>292</posy>
+                    <left>4</left>
+                    <top>292</top>
                     <width>165</width>
                     <height>44</height>
                     <label>$LOCALIZE[206]:</label>
@@ -320,8 +320,8 @@
                     <textcolor>grey</textcolor>
                 </control>
                 <control type="textbox">
-                    <posx>4</posx>
-                    <posy>528</posy>
+                    <left>4</left>
+                    <top>528</top>
                     <width>945</width>
                     <height>340</height>
                     <label fallback="31006">$INFO[ListItem.Plot]</label>
@@ -331,8 +331,8 @@
                     <visible>![Control.HasFocus(20) | Control.HasFocus(5055)]</visible>
                 </control>
                 <control type="grouplist">
-                    <posx>2</posx>
-                    <posy>872</posy>
+                    <left>2</left>
+                    <top>872</top>
                     <width>1045</width>
                     <height>90</height>
                     <orientation>horizontal</orientation>
@@ -423,8 +423,8 @@
             </control>
             <!-- Actor Panel -->
             <control type="panel" id="150">
-                <posx>991</posx>
-                <posy>366</posy>
+                <left>991</left>
+                <top>366</top>
                 <width>645</width>
                 <height>177</height>
                 <onleft>9000</onleft>
@@ -460,8 +460,8 @@
                 </focusedlayout>
             </control>
             <control type="image">
-                <posx>1606</posx>
-                <posy>364</posy>
+                <left>1606</left>
+                <top>364</top>
                 <width>180</width>
                 <height>180</height>
                 <aspectratio>keep</aspectratio>
@@ -471,7 +471,7 @@
             </control>
             <!-- Topbar -->
             <control type="image">
-                <posx>709</posx>
+                <left>709</left>
                 <width>40</width>
                 <height>1080</height>
                 <texture>common/topbar_top.png</texture>
@@ -481,8 +481,8 @@
             </control>
             <!-- Fanart -->
             <control type="image">
-                <posx>1067</posx>
-                <posy>601</posy>
+                <left>1067</left>
+                <top>601</top>
                 <width>550</width>
                 <height>314</height>
                 <texture border="6">views/addonwall_select.png</texture>
@@ -491,8 +491,8 @@
                 <visible>Control.HasFocus(5055)</visible>
             </control>
             <control type="image">
-                <posx>1072</posx>
-                <posy>606</posy>
+                <left>1072</left>
+                <top>606</top>
                 <width>540</width>
                 <height>304</height>
                 <aspectratio align="center">scale</aspectratio>

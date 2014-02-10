@@ -4,8 +4,8 @@
     <allowoverlay>no</allowoverlay>
     <zorder>4</zorder>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <controls>
@@ -16,15 +16,15 @@
                 <width>609</width>
                 <height>834</height>
                 <control type="image">
-                    <posx>1214</posx>
-                    <posy>154</posy>
+                    <left>1214</left>
+                    <top>154</top>
                     <width>609</width>
                     <height>834</height>
                     <texture>views/filebrowser_sidecar.png</texture>
                 </control>
                 <control type="image">
-                    <posx>1300</posx>
-                    <posy>250</posy>
+                    <left>1300</left>
+                    <top>250</top>
                     <width>429</width>
                     <height>429</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
@@ -32,8 +32,8 @@
                     <fadetime>400</fadetime>
                 </control>
                 <control type="image">
-                    <posx>1300</posx>
-                    <posy>680</posy>
+                    <left>1300</left>
+                    <top>680</top>
                     <width>429</width>
                     <height>429</height>
                     <aspectratio aligny="top">keep</aspectratio>
@@ -41,16 +41,16 @@
                     <fadetime>400</fadetime>
                 </control>
                 <control type="label" id="412">
-                    <posx>1226</posx>
-                    <posy>810</posy>
+                    <left>1226</left>
+                    <top>810</top>
                     <width>579</width>
                     <height>60</height>
                     <align>center</align>
                     <font>Font_Reg26</font>
                 </control>
                 <control type="label" id="411">
-                    <posx>1226</posx>
-                    <posy>900</posy>
+                    <left>1226</left>
+                    <top>900</top>
                     <width>579</width>
                     <align>center</align>
                     <font>Font_Reg40</font>
@@ -59,16 +59,16 @@
             </control>
             <include>FileBrowserPanel</include>
             <control type="image">
-                <posx>990</posx>
-                <posy>123</posy>
+                <left>990</left>
+                <top>123</top>
                 <width>170</width>
                 <height>790</height>
                 <texture>views/listpanel_detailwide.png</texture>
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
             </control>
             <control type="scrollbar" id="60">
-                <posx>1200</posx>
-                <posy>158</posy>
+                <left>1200</left>
+                <top>158</top>
                 <width>40</width>
                 <height>728</height>
                 <include>Animation_VerticalScrollBar</include>
@@ -78,8 +78,8 @@
                 <onright>413</onright>
             </control>
             <control type="list" id="450">
-                <posx>90</posx>
-                <posy>167</posy>
+                <left>90</left>
+                <top>167</top>
                 <width>1140</width>
                 <height>731</height>
                 <pagecontrol>60</pagecontrol>
@@ -90,13 +90,13 @@
                 <ondown>450</ondown>
                 <itemlayout height="61">
                     <control type="image">
-                        <posy>1</posy>
+                        <top>1</top>
                         <width>1140</width>
                         <height>60</height>
                         <texture border="1">osd/osd_settings_buttonnf.png</texture>
                     </control>
                     <control type="label">
-                        <posx>68</posx>
+                        <left>68</left>
                         <width>810</width>
                         <height>61</height>
                         <font>Font_Reg30_2</font>
@@ -104,7 +104,7 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
-                        <posx>1041</posx>
+                        <left>1041</left>
                         <width>795</width>
                         <height>61</height>
                         <align>right</align>
@@ -113,8 +113,8 @@
                         <info>ListItem.Label2</info>
                     </control>
                     <control type="image">
-                        <posx>1032</posx>
-                        <posy>16</posy>
+                        <left>1032</left>
+                        <top>16</top>
                         <width>120</width>
                         <height>30</height>
                         <info>ListItem.Overlay</info>
@@ -122,13 +122,13 @@
                 </itemlayout>
                 <focusedlayout height="61">
                     <control type="image">
-                        <posy>1</posy>
+                        <top>1</top>
                         <width>1140</width>
                         <height>60</height>
                         <texture border="1">osd/osd_settings_buttonnf.png</texture>
                     </control>
                     <control type="image">
-                        <posx>10</posx>
+                        <left>10</left>
                         <width>1117</width>
                         <height>61</height>
                         <texture border="8">views/tripanel/listselect_fo.png</texture>
@@ -136,7 +136,7 @@
                         <animation effect="fade" start="100" end="50" time="160" condition="!Control.HasFocus(450)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>68</posx>
+                        <left>68</left>
                         <width>810</width>
                         <height>61</height>
                         <font>Font_Reg30_2</font>
@@ -144,7 +144,7 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
-                        <posx>1041</posx>
+                        <left>1041</left>
                         <width>795</width>
                         <height>61</height>
                         <align>right</align>
@@ -153,8 +153,8 @@
                         <info>ListItem.Label2</info>
                     </control>
                     <control type="image">
-                        <posx>1032</posx>
-                        <posy>16</posy>
+                        <left>1032</left>
+                        <top>16</top>
                         <width>120</width>
                         <height>30</height>
                         <info>ListItem.Overlay</info>
@@ -162,8 +162,8 @@
                 </focusedlayout>
             </control>
             <control type="list" id="451">
-                <posx>90</posx>
-                <posy>158</posy>
+                <left>90</left>
+                <top>158</top>
                 <width>1156</width>
                 <height>732</height>
                 <pagecontrol>60</pagecontrol>
@@ -174,13 +174,13 @@
                 <ondown>451</ondown>
                 <itemlayout height="61">
                     <control type="image">
-                        <posy>1</posy>
+                        <top>1</top>
                         <width>1156</width>
                         <height>60</height>
                         <texture border="1">osd/osd_settings_buttonnf.png</texture>
                     </control>
                     <control type="label">
-                        <posx>68</posx>
+                        <left>68</left>
                         <width>810</width>
                         <height>61</height>
                         <font>Font_Reg30_2</font>
@@ -188,7 +188,7 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
-                        <posx>1041</posx>
+                        <left>1041</left>
                         <width>795</width>
                         <height>61</height>
                         <align>right</align>
@@ -197,8 +197,8 @@
                         <info>ListItem.Label2</info>
                     </control>
                     <control type="image">
-                        <posx>1032</posx>
-                        <posy>16</posy>
+                        <left>1032</left>
+                        <top>16</top>
                         <width>120</width>
                         <height>30</height>
                         <info>ListItem.Overlay</info>
@@ -206,13 +206,13 @@
                 </itemlayout>
                 <focusedlayout height="61">
                     <control type="image">
-                        <posy>1</posy>
+                        <top>1</top>
                         <width>1156</width>
                         <height>60</height>
                         <texture border="1">osd/osd_settings_buttonnf.png</texture>
                     </control>
                     <control type="image">
-                        <posx>10</posx>
+                        <left>10</left>
                         <width>1117</width>
                         <height>61</height>
                         <texture border="8">views/tripanel/listselect_fo.png</texture>
@@ -220,7 +220,7 @@
                         <animation effect="fade" start="100" end="50" time="160" condition="!Control.HasFocus(451)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>68</posx>
+                        <left>68</left>
                         <width>810</width>
                         <height>61</height>
                         <font>Font_Reg30_2</font>
@@ -228,7 +228,7 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
-                        <posx>1041</posx>
+                        <left>1041</left>
                         <width>795</width>
                         <height>61</height>
                         <align>right</align>
@@ -237,8 +237,8 @@
                         <info>ListItem.Label2</info>
                     </control>
                     <control type="image">
-                        <posx>1032</posx>
-                        <posy>16</posy>
+                        <left>1032</left>
+                        <top>16</top>
                         <width>120</width>
                         <height>30</height>
                         <info>ListItem.Overlay</info>
@@ -246,8 +246,8 @@
                 </focusedlayout>
             </control>
             <control type="grouplist">
-                <posx>102</posx>
-                <posy>898</posy>
+                <left>102</left>
+                <top>898</top>
                 <width>1117</width>
                 <height>100</height>
                 <onleft>451</onleft>

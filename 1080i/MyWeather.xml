@@ -19,14 +19,14 @@
         <control type="group">
             <include>Animation_OpenClose_Furniture</include>
             <control type="image">
-                <posy>472</posy>
+                <top>472</top>
                 <width>1920</width>
                 <height>608</height>
                 <texture>views/showcase_floor.png</texture>
                 <colordiffuse>$VAR[ExtendedColorDiffuseVar]</colordiffuse>
             </control>
             <control type="image">
-                <posy>-45</posy>
+                <top>-45</top>
                 <width>1920</width>
                 <height>920</height>
                 <texture>common/bgcolor.png</texture>
@@ -41,7 +41,7 @@
                 <colordiffuse>vignette</colordiffuse>
             </control>
             <control type="image">
-                <posx>1224</posx>
+                <left>1224</left>
                 <width>696</width>
                 <height>1080</height>
                 <texture flipx="true">views/showcase_vignette.png</texture>
@@ -60,10 +60,10 @@
                 <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
             </animation>
             <control type="group">
-                <posy>-15</posy>
+                <top>-15</top>
                 <control type="image">
-                    <posx>112</posx>
-                    <posy>82</posy>
+                    <left>112</left>
+                    <top>82</top>
                     <width>1695</width>
                     <height>1012</height>
                     <texture>wall/wall_bg_glow.png</texture>
@@ -73,24 +73,24 @@
                     <include>Animation_VisibleChange400</include>
                 </control>
                 <control type="image">
-                    <posx>112</posx>
-                    <posy>82</posy>
+                    <left>112</left>
+                    <top>82</top>
                     <width>1695</width>
                     <height>1012</height>
                     <texture>wall/wall_bg.png</texture>
                     <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
                 </control>
                 <control type="image">
-                    <posx>960</posx>
-                    <posy>136</posy>
+                    <left>960</left>
+                    <top>136</top>
                     <width>1</width>
                     <height>789</height>
                     <texture>dialogs/weatherline.png</texture>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 </control>
                 <control type="image">
-                    <posx>112</posx>
-                    <posy>82</posy>
+                    <left>112</left>
+                    <top>82</top>
                     <width>1695</width>
                     <height>1012</height>
                     <texture>wall/wall_bg_reflection.png</texture>
@@ -103,16 +103,16 @@
                 </animation>
                 <control type="group">
                     <control type="label">
-                        <posx>548</posx>
-                        <posy>135</posy>
+                        <left>548</left>
+                        <top>135</top>
                         <width>825</width>
                         <height>172</height>
                         <label>$INFO[Window.Property(Current.Temperature)] $INFO[System.TemperatureUnits]</label>
                         <font>Font_MainMenu</font>
                     </control>
                     <control type="label">
-                        <posx>548</posx>
-                        <posy>225</posy>
+                        <left>548</left>
+                        <top>225</top>
                         <width>412</width>
                         <height>135</height>
                         <label>$LOCALIZE[402] : $INFO[Window.Property(Current.FeelsLike)] $INFO[System.TemperatureUnits]</label>
@@ -120,8 +120,8 @@
                         <textcolor>grey2</textcolor>
                     </control>
                     <control type="label">
-                        <posx>548</posx>
-                        <posy>270</posy>
+                        <left>548</left>
+                        <top>270</top>
                         <width>412</width>
                         <height>135</height>
                         <label>[LOWERCASE]$INFO[Window.Property(Current.Condition)][/LOWERCASE]</label>
@@ -130,16 +130,16 @@
                         <wrapmultiline>true</wrapmultiline>
                     </control>
                     <control type="image">
-                        <posx>135</posx>
-                        <posy>135</posy>
+                        <left>135</left>
+                        <top>135</top>
                         <width>345</width>
                         <height>270</height>
                         <aspectratio>keep</aspectratio>
                         <info>Window.Property(Current.ConditionIcon)</info>
                     </control>
                     <control type="label">
-                        <posx>135</posx>
-                        <posy>375</posy>
+                        <left>135</left>
+                        <top>375</top>
                         <width>825</width>
                         <height>135</height>
                         <align>center</align>
@@ -148,11 +148,11 @@
                         <wrapmultiline>true</wrapmultiline>
                     </control>
                     <control type="group">
-                        <posx>278</posx>
-                        <posy>-120</posy>
+                        <left>278</left>
+                        <top>-120</top>
                         <control type="label">
-                            <posx>255</posx>
-                            <posy>645</posy>
+                            <left>255</left>
+                            <top>645</top>
                             <width>255</width>
                             <height>52</height>
                             <align>right</align>
@@ -161,8 +161,8 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>255</posx>
-                            <posy>690</posy>
+                            <left>255</left>
+                            <top>690</top>
                             <width>255</width>
                             <height>52</height>
                             <align>right</align>
@@ -171,8 +171,8 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>255</posx>
-                            <posy>735</posy>
+                            <left>255</left>
+                            <top>735</top>
                             <width>255</width>
                             <height>52</height>
                             <align>right</align>
@@ -181,8 +181,8 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>255</posx>
-                            <posy>780</posy>
+                            <left>255</left>
+                            <top>780</top>
                             <width>255</width>
                             <height>52</height>
                             <align>right</align>
@@ -191,8 +191,8 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>255</posx>
-                            <posy>825</posy>
+                            <left>255</left>
+                            <top>825</top>
                             <width>255</width>
                             <height>52</height>
                             <align>right</align>
@@ -201,8 +201,8 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>255</posx>
-                            <posy>870</posy>
+                            <left>255</left>
+                            <top>870</top>
                             <width>255</width>
                             <height>52</height>
                             <align>right</align>
@@ -211,8 +211,8 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>255</posx>
-                            <posy>915</posy>
+                            <left>255</left>
+                            <top>915</top>
                             <width>255</width>
                             <height>52</height>
                             <align>right</align>
@@ -221,56 +221,56 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>278</posx>
-                            <posy>645</posy>
+                            <left>278</left>
+                            <top>645</top>
                             <width>450</width>
                             <height>52</height>
                             <label>$INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]</label>
                             <font>Font_Reg32</font>
                         </control>
                         <control type="label">
-                            <posx>278</posx>
-                            <posy>690</posy>
+                            <left>278</left>
+                            <top>690</top>
                             <width>450</width>
                             <height>52</height>
                             <font>Font_Reg32</font>
                             <info>Window.Property(Current.Humidity)</info>
                         </control>
                         <control type="label">
-                            <posx>278</posx>
-                            <posy>735</posy>
+                            <left>278</left>
+                            <top>735</top>
                             <width>450</width>
                             <height>52</height>
                             <font>Font_Reg32</font>
                             <info>Window.Property(Current.Pressure)</info>
                         </control>
                         <control type="label">
-                            <posx>278</posx>
-                            <posy>780</posy>
+                            <left>278</left>
+                            <top>780</top>
                             <width>450</width>
                             <height>52</height>
                             <font>Font_Reg32</font>
                             <info>Window.Property(Current.Wind)</info>
                         </control>
                         <control type="label">
-                            <posx>278</posx>
-                            <posy>825</posy>
+                            <left>278</left>
+                            <top>825</top>
                             <width>450</width>
                             <height>52</height>
                             <font>Font_Reg32</font>
                             <info>Window.Property(Current.Visibility)</info>
                         </control>
                         <control type="label">
-                            <posx>278</posx>
-                            <posy>870</posy>
+                            <left>278</left>
+                            <top>870</top>
                             <width>450</width>
                             <height>52</height>
                             <font>Font_Reg32</font>
                             <info>Window.Property(Today.Sunrise)</info>
                         </control>
                         <control type="label">
-                            <posx>278</posx>
-                            <posy>915</posy>
+                            <left>278</left>
+                            <top>915</top>
                             <width>450</width>
                             <height>52</height>
                             <font>Font_Reg32</font>
@@ -281,8 +281,8 @@
                 <control type="group" id="7510">
                     <control type="group">
                         <control type="list" id="7500">
-                            <posx>960</posx>
-                            <posy>122</posy>
+                            <left>960</left>
+                            <top>122</top>
                             <width>840</width>
                             <height>550</height>
                             <orientation>vertical</orientation>
@@ -295,24 +295,24 @@
                             <include>Animation_VisibleChange200</include>
                             <itemlayout width="840" height="109">
                                 <control type="image">
-                                    <posx>22</posx>
-                                    <posy>0</posy>
+                                    <left>22</left>
+                                    <top>0</top>
                                     <width>109</width>
                                     <height>109</height>
                                     <aspectratio align="center">keep</aspectratio>
                                     <info>ListItem.ActualIcon</info>
                                 </control>
                                 <control type="label">
-                                    <posx>165</posx>
-                                    <posy>5</posy>
+                                    <left>165</left>
+                                    <top>5</top>
                                     <width>375</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Label]</label>
                                     <font>Font_Reg31_Caps</font>
                                 </control>
                                 <control type="label">
-                                    <posx>165</posx>
-                                    <posy>35</posy>
+                                    <left>165</left>
+                                    <top>35</top>
                                     <width>660</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Property(Outlook)]</label>
@@ -320,8 +320,8 @@
                                     <scroll>true</scroll>
                                 </control>
                                 <control type="label">
-                                    <posx>165</posx>
-                                    <posy>66</posy>
+                                    <left>165</left>
+                                    <top>66</top>
                                     <width>660</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Property(HighTemperature),[COLOR grey2]$LOCALIZE[419]: [/COLOR]]</label>
@@ -329,15 +329,15 @@
                                     <selectedcolor>red</selectedcolor>
                                 </control>
                                 <control type="label">
-                                    <posx>390</posx>
-                                    <posy>66</posy>
+                                    <left>390</left>
+                                    <top>66</top>
                                     <width>660</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Property(LowTemperature),[COLOR grey2]$LOCALIZE[418]: [/COLOR]]</label>
                                     <textcolor>blue</textcolor>
                                 </control>
                                 <control type="image">
-                                    <posy>49</posy>
+                                    <top>49</top>
                                     <width>840</width>
                                     <height>60</height>
                                     <texture border="1">osd/osd_settings_buttonnf.png</texture>
@@ -346,7 +346,7 @@
                             </itemlayout>
                             <focusedlayout width="840" height="109">
                                 <control type="image">
-                                    <posy>49</posy>
+                                    <top>49</top>
                                     <width>840</width>
                                     <height>60</height>
                                     <texture border="1">osd/osd_settings_buttonnf.png</texture>
@@ -360,8 +360,8 @@
                                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                                 </control>
                                 <control type="image">
-                                    <posx>22</posx>
-                                    <posy>0</posy>
+                                    <left>22</left>
+                                    <top>0</top>
                                     <width>109</width>
                                     <height>109</height>
                                     <aspectratio align="center">keep</aspectratio>
@@ -370,24 +370,24 @@
                                 <control type="group">
                                     <visible>Control.HasFocus(7500)</visible>
                                     <control type="label">
-                                        <posx>165</posx>
-                                        <posy>5</posy>
+                                        <left>165</left>
+                                        <top>5</top>
                                         <width>375</width>
                                         <height>34</height>
                                         <label>$INFO[ListItem.Label]</label>
                                         <font>Font_Reg31_Caps</font>
                                     </control>
                                     <control type="label">
-                                        <posx>165</posx>
-                                        <posy>35</posy>
+                                        <left>165</left>
+                                        <top>35</top>
                                         <width>660</width>
                                         <height>34</height>
                                         <label>$INFO[ListItem.Property(Outlook)]</label>
                                         <scroll>true</scroll>
                                     </control>
                                     <control type="label">
-                                        <posx>165</posx>
-                                        <posy>66</posy>
+                                        <left>165</left>
+                                        <top>66</top>
                                         <width>660</width>
                                         <height>34</height>
                                         <label>$INFO[ListItem.Property(HighTemperature),[COLOR grey2]$LOCALIZE[419]: [/COLOR]]</label>
@@ -395,8 +395,8 @@
                                         <selectedcolor>red</selectedcolor>
                                     </control>
                                     <control type="label">
-                                        <posx>390</posx>
-                                        <posy>66</posy>
+                                        <left>390</left>
+                                        <top>66</top>
                                         <width>660</width>
                                         <height>34</height>
                                         <label>$INFO[ListItem.Property(LowTemperature),[COLOR grey2]$LOCALIZE[418]: [/COLOR]]</label>
@@ -406,16 +406,16 @@
                                 <control type="group">
                                     <visible>!Control.HasFocus(7500)</visible>
                                     <control type="label">
-                                        <posx>165</posx>
-                                        <posy>5</posy>
+                                        <left>165</left>
+                                        <top>5</top>
                                         <width>375</width>
                                         <height>34</height>
                                         <label>$INFO[ListItem.Label]</label>
                                         <font>Font_Reg31_Caps</font>
                                     </control>
                                     <control type="label">
-                                        <posx>165</posx>
-                                        <posy>35</posy>
+                                        <left>165</left>
+                                        <top>35</top>
                                         <width>660</width>
                                         <height>34</height>
                                         <label>$INFO[ListItem.Property(Outlook)]</label>
@@ -423,8 +423,8 @@
                                         <scroll>true</scroll>
                                     </control>
                                     <control type="label">
-                                        <posx>165</posx>
-                                        <posy>66</posy>
+                                        <left>165</left>
+                                        <top>66</top>
                                         <width>660</width>
                                         <height>34</height>
                                         <label>$INFO[ListItem.Property(HighTemperature),[COLOR grey2]$LOCALIZE[419]: [/COLOR]]</label>
@@ -432,8 +432,8 @@
                                         <selectedcolor>red</selectedcolor>
                                     </control>
                                     <control type="label">
-                                        <posx>390</posx>
-                                        <posy>66</posy>
+                                        <left>390</left>
+                                        <top>66</top>
                                         <width>660</width>
                                         <height>34</height>
                                         <label>$INFO[ListItem.Property(LowTemperature),[COLOR grey2]$LOCALIZE[418]: [/COLOR]]</label>
@@ -585,8 +585,8 @@
                             </content>
                         </control>
                         <control type="list" id="7502">
-                            <posx>960</posx>
-                            <posy>122</posy>
+                            <left>960</left>
+                            <top>122</top>
                             <width>840</width>
                             <height>540</height>
                             <orientation>vertical</orientation>
@@ -599,24 +599,24 @@
                             <visible>SubString(Window.Property(Weather.CurrentView),36hour)</visible>
                             <itemlayout width="840" height="135">
                                 <control type="image">
-                                    <posx>15</posx>
-                                    <posy>0</posy>
+                                    <left>15</left>
+                                    <top>0</top>
                                     <width>135</width>
                                     <height>135</height>
                                     <aspectratio align="center">keep</aspectratio>
                                     <info>ListItem.ActualIcon</info>
                                 </control>
                                 <control type="label">
-                                    <posx>165</posx>
-                                    <posy>8</posy>
+                                    <left>165</left>
+                                    <top>8</top>
                                     <width>375</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Label]</label>
                                     <font>Font_Reg31_Caps</font>
                                 </control>
                                 <control type="label">
-                                    <posx>165</posx>
-                                    <posy>45</posy>
+                                    <left>165</left>
+                                    <top>45</top>
                                     <width>660</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Property(Forecast)]</label>
@@ -624,21 +624,21 @@
                                     <scroll>true</scroll>
                                 </control>
                                 <control type="label">
-                                    <posx>165</posx>
-                                    <posy>82</posy>
+                                    <left>165</left>
+                                    <top>82</top>
                                     <width>660</width>
                                     <height>34</height>
                                     <label>[COLOR grey2]$INFO[ListItem.Property(TemperatureHeading)] [/COLOR]$INFO[ListItem.Property(Temperature)]</label>
                                 </control>
                                 <control type="label">
-                                    <posx>390</posx>
-                                    <posy>82</posy>
+                                    <left>390</left>
+                                    <top>82</top>
                                     <width>660</width>
                                     <height>34</height>
                                     <label>[COLOR grey2]$LOCALIZE[31917]: [/COLOR]$INFO[ListItem.Property(ChancePrecipitation)]</label>
                                 </control>
                                 <control type="image">
-                                    <posy>75</posy>
+                                    <top>75</top>
                                     <width>840</width>
                                     <height>60</height>
                                     <texture border="1">osd/osd_settings_buttonnf.png</texture>
@@ -646,7 +646,7 @@
                             </itemlayout>
                             <focusedlayout width="840" height="135">
                                 <control type="image">
-                                    <posy>75</posy>
+                                    <top>75</top>
                                     <width>840</width>
                                     <height>60</height>
                                     <texture border="1">osd/osd_settings_buttonnf.png</texture>
@@ -659,24 +659,24 @@
                                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                                 </control>
                                 <control type="image">
-                                    <posx>15</posx>
-                                    <posy>0</posy>
+                                    <left>15</left>
+                                    <top>0</top>
                                     <width>135</width>
                                     <height>135</height>
                                     <aspectratio align="center">keep</aspectratio>
                                     <info>ListItem.ActualIcon</info>
                                 </control>
                                 <control type="label">
-                                    <posx>165</posx>
-                                    <posy>8</posy>
+                                    <left>165</left>
+                                    <top>8</top>
                                     <width>375</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Label]</label>
                                     <font>Font_Reg31_Caps</font>
                                 </control>
                                 <control type="label">
-                                    <posx>165</posx>
-                                    <posy>45</posy>
+                                    <left>165</left>
+                                    <top>45</top>
                                     <width>660</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Property(Forecast)]</label>
@@ -684,15 +684,15 @@
                                     <scroll>true</scroll>
                                 </control>
                                 <control type="label">
-                                    <posx>165</posx>
-                                    <posy>82</posy>
+                                    <left>165</left>
+                                    <top>82</top>
                                     <width>660</width>
                                     <height>34</height>
                                     <label>[COLOR grey2]$INFO[ListItem.Property(TemperatureHeading)] [/COLOR]$INFO[ListItem.Property(Temperature)]</label>
                                 </control>
                                 <control type="label">
-                                    <posx>390</posx>
-                                    <posy>82</posy>
+                                    <left>390</left>
+                                    <top>82</top>
                                     <width>660</width>
                                     <height>34</height>
                                     <label>[COLOR grey2]$LOCALIZE[31917]: [/COLOR]$INFO[ListItem.Property(ChancePrecipitation)]</label>
@@ -738,8 +738,8 @@
                             </content>
                         </control>
                         <control type="list" id="7503">
-                            <posx>960</posx>
-                            <posy>122</posy>
+                            <left>960</left>
+                            <top>122</top>
                             <width>840</width>
                             <height>540</height>
                             <orientation>vertical</orientation>
@@ -752,24 +752,24 @@
                             <include>Animation_VisibleChange200</include>
                             <itemlayout width="840" height="135">
                                 <control type="image">
-                                    <posx>15</posx>
-                                    <posy>0</posy>
+                                    <left>15</left>
+                                    <top>0</top>
                                     <width>135</width>
                                     <height>135</height>
                                     <aspectratio align="center">keep</aspectratio>
                                     <info>ListItem.ActualIcon</info>
                                 </control>
                                 <control type="label">
-                                    <posx>165</posx>
-                                    <posy>8</posy>
+                                    <left>165</left>
+                                    <top>8</top>
                                     <width>375</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Label]</label>
                                     <font>Font_Reg31_Caps</font>
                                 </control>
                                 <control type="label">
-                                    <posx>165</posx>
-                                    <posy>45</posy>
+                                    <left>165</left>
+                                    <top>45</top>
                                     <width>660</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Property(Forecast)]</label>
@@ -777,8 +777,8 @@
                                     <scroll>true</scroll>
                                 </control>
                                 <control type="label">
-                                    <posx>165</posx>
-                                    <posy>82</posy>
+                                    <left>165</left>
+                                    <top>82</top>
                                     <width>660</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Property(HighTemperature),[COLOR grey2]$LOCALIZE[419]: [/COLOR]]</label>
@@ -786,15 +786,15 @@
                                     <selectedcolor>red</selectedcolor>
                                 </control>
                                 <control type="label">
-                                    <posx>390</posx>
-                                    <posy>82</posy>
+                                    <left>390</left>
+                                    <top>82</top>
                                     <width>660</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Property(LowTemperature),[COLOR grey2]$LOCALIZE[418]: [/COLOR]]</label>
                                     <textcolor>blue</textcolor>
                                 </control>
                                 <control type="image">
-                                    <posy>75</posy>
+                                    <top>75</top>
                                     <width>840</width>
                                     <height>60</height>
                                     <texture border="1">osd/osd_settings_buttonnf.png</texture>
@@ -802,7 +802,7 @@
                             </itemlayout>
                             <focusedlayout width="840" height="135">
                                 <control type="image">
-                                    <posy>75</posy>
+                                    <top>75</top>
                                     <width>840</width>
                                     <height>60</height>
                                     <texture border="1">osd/osd_settings_buttonnf.png</texture>
@@ -815,24 +815,24 @@
                                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                                 </control>
                                 <control type="image">
-                                    <posx>15</posx>
-                                    <posy>0</posy>
+                                    <left>15</left>
+                                    <top>0</top>
                                     <width>135</width>
                                     <height>135</height>
                                     <aspectratio align="center">keep</aspectratio>
                                     <info>ListItem.ActualIcon</info>
                                 </control>
                                 <control type="label">
-                                    <posx>165</posx>
-                                    <posy>8</posy>
+                                    <left>165</left>
+                                    <top>8</top>
                                     <width>375</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Label]</label>
                                     <font>Font_Reg31_Caps</font>
                                 </control>
                                 <control type="label">
-                                    <posx>165</posx>
-                                    <posy>45</posy>
+                                    <left>165</left>
+                                    <top>45</top>
                                     <width>660</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Property(Forecast)]</label>
@@ -840,8 +840,8 @@
                                     <scroll>true</scroll>
                                 </control>
                                 <control type="label">
-                                    <posx>165</posx>
-                                    <posy>82</posy>
+                                    <left>165</left>
+                                    <top>82</top>
                                     <width>660</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Property(HighTemperature),[COLOR grey2]$LOCALIZE[419]: [/COLOR]]</label>
@@ -849,8 +849,8 @@
                                     <selectedcolor>red</selectedcolor>
                                 </control>
                                 <control type="label">
-                                    <posx>390</posx>
-                                    <posy>82</posy>
+                                    <left>390</left>
+                                    <top>82</top>
                                     <width>660</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Property(LowTemperature),[COLOR grey2]$LOCALIZE[418]: [/COLOR]]</label>
@@ -909,8 +909,8 @@
                             </content>
                         </control>
                         <control type="list" id="7504">
-                            <posx>960</posx>
-                            <posy>122</posy>
+                            <left>960</left>
+                            <top>122</top>
                             <width>840</width>
                             <height>786</height>
                             <orientation>vertical</orientation>
@@ -923,24 +923,24 @@
                             <include>Animation_VisibleChange200</include>
                             <itemlayout width="840" height="109">
                                 <control type="image">
-                                    <posx>22</posx>
-                                    <posy>0</posy>
+                                    <left>22</left>
+                                    <top>0</top>
                                     <width>109</width>
                                     <height>109</height>
                                     <aspectratio align="center">keep</aspectratio>
                                     <info>ListItem.ActualIcon</info>
                                 </control>
                                 <control type="label">
-                                    <posx>165</posx>
-                                    <posy>5</posy>
+                                    <left>165</left>
+                                    <top>5</top>
                                     <width>375</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Label]</label>
                                     <font>Font_Reg31_Caps</font>
                                 </control>
                                 <control type="label">
-                                    <posx>165</posx>
-                                    <posy>35</posy>
+                                    <left>165</left>
+                                    <top>35</top>
                                     <width>660</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Property(Outlook)]</label>
@@ -948,21 +948,21 @@
                                     <scroll>true</scroll>
                                 </control>
                                 <control type="label">
-                                    <posx>165</posx>
-                                    <posy>66</posy>
+                                    <left>165</left>
+                                    <top>66</top>
                                     <width>660</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Property(Temperature)]  •  [COLOR grey2]$INFO[ListItem.Property(Humidity)][/COLOR]</label>
                                 </control>
                                 <control type="label">
-                                    <posx>390</posx>
-                                    <posy>66</posy>
+                                    <left>390</left>
+                                    <top>66</top>
                                     <width>660</width>
                                     <height>34</height>
                                     <label>$INFO[ListItem.Property(FeelsLike),[COLOR grey2]$LOCALIZE[402]: [/COLOR]]</label>
                                 </control>
                                 <control type="image">
-                                    <posy>49</posy>
+                                    <top>49</top>
                                     <width>840</width>
                                     <height>60</height>
                                     <texture border="1">osd/osd_settings_buttonnf.png</texture>
@@ -970,7 +970,7 @@
                             </itemlayout>
                             <focusedlayout width="840" height="109">
                                 <control type="image">
-                                    <posy>49</posy>
+                                    <top>49</top>
                                     <width>840</width>
                                     <height>60</height>
                                     <texture border="1">osd/osd_settings_buttonnf.png</texture>
@@ -983,8 +983,8 @@
                                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                                 </control>
                                 <control type="image">
-                                    <posx>22</posx>
-                                    <posy>0</posy>
+                                    <left>22</left>
+                                    <top>0</top>
                                     <width>109</width>
                                     <height>109</height>
                                     <aspectratio align="center">keep</aspectratio>
@@ -993,31 +993,31 @@
                                 <control type="group">
                                     <visible>Control.HasFocus(7504)</visible>
                                     <control type="label">
-                                        <posx>165</posx>
-                                        <posy>5</posy>
+                                        <left>165</left>
+                                        <top>5</top>
                                         <width>375</width>
                                         <height>34</height>
                                         <label>$INFO[ListItem.Label]</label>
                                         <font>Font_Reg31_Caps</font>
                                     </control>
                                     <control type="label">
-                                        <posx>165</posx>
-                                        <posy>35</posy>
+                                        <left>165</left>
+                                        <top>35</top>
                                         <width>660</width>
                                         <height>34</height>
                                         <label>$INFO[ListItem.Property(Outlook)]</label>
                                         <scroll>true</scroll>
                                     </control>
                                     <control type="label">
-                                        <posx>165</posx>
-                                        <posy>66</posy>
+                                        <left>165</left>
+                                        <top>66</top>
                                         <width>660</width>
                                         <height>34</height>
                                         <label>$INFO[ListItem.Property(Temperature)]  •  $INFO[ListItem.Property(Humidity)]</label>
                                     </control>
                                     <control type="label">
-                                        <posx>390</posx>
-                                        <posy>66</posy>
+                                        <left>390</left>
+                                        <top>66</top>
                                         <width>660</width>
                                         <height>34</height>
                                         <label>$INFO[ListItem.Property(FeelsLike),$LOCALIZE[402]: ]</label>
@@ -1026,16 +1026,16 @@
                                 <control type="group">
                                     <visible>!Control.HasFocus(7504)</visible>
                                     <control type="label">
-                                        <posx>165</posx>
-                                        <posy>5</posy>
+                                        <left>165</left>
+                                        <top>5</top>
                                         <width>375</width>
                                         <height>34</height>
                                         <label>$INFO[ListItem.Label]</label>
                                         <font>Font_Reg31_Caps</font>
                                     </control>
                                     <control type="label">
-                                        <posx>165</posx>
-                                        <posy>35</posy>
+                                        <left>165</left>
+                                        <top>35</top>
                                         <width>660</width>
                                         <height>34</height>
                                         <label>$INFO[ListItem.Property(Outlook)]</label>
@@ -1043,15 +1043,15 @@
                                         <scroll>true</scroll>
                                     </control>
                                     <control type="label">
-                                        <posx>165</posx>
-                                        <posy>66</posy>
+                                        <left>165</left>
+                                        <top>66</top>
                                         <width>660</width>
                                         <height>34</height>
                                         <label>$INFO[ListItem.Property(Temperature)]  •  [COLOR grey2]$INFO[ListItem.Property(Humidity)][/COLOR]</label>
                                     </control>
                                     <control type="label">
-                                        <posx>390</posx>
-                                        <posy>66</posy>
+                                        <left>390</left>
+                                        <top>66</top>
                                         <width>660</width>
                                         <height>34</height>
                                         <label>$INFO[ListItem.Property(FeelsLike),[COLOR grey2]$LOCALIZE[402]: [/COLOR]]</label>
@@ -1440,30 +1440,30 @@
                             </content>
                         </control>
                         <control type="group" id="7508">
-                            <posx>892</posx>
-                            <posy>30</posy>
+                            <left>892</left>
+                            <top>30</top>
                             <visible>StringCompare(Window.Property(Weather.CurrentView),videos)</visible>
                             <include>Animation_VisibleChange200</include>
                             <control type="group">
                                 <visible>Player.HasVideo</visible>
                                 <control type="image">
-                                    <posx>98</posx>
-                                    <posy>120</posy>
+                                    <left>98</left>
+                                    <top>120</top>
                                     <width>780</width>
                                     <height>525</height>
                                     <texture>common/black.png</texture>
                                 </control>
                                 <control type="videowindow" id="2">
-                                    <posx>98</posx>
-                                    <posy>120</posy>
+                                    <left>98</left>
+                                    <top>120</top>
                                     <width>780</width>
                                     <height>525</height>
                                     <visible>Player.HasVideo</visible>
                                 </control>
                             </control>
                             <control type="list" id="7505">
-                                <posx>68</posx>
-                                <posy>675</posy>
+                                <left>68</left>
+                                <top>675</top>
                                 <width>840</width>
                                 <height>192</height>
                                 <onleft>9000</onleft>
@@ -1479,14 +1479,14 @@
                                         <texture border="1">osd/osd_settings_buttonnf.png</texture>
                                     </control>
                                     <control type="image">
-                                        <posx>45</posx>
-                                        <posy>8</posy>
+                                        <left>45</left>
+                                        <top>8</top>
                                         <width>45</width>
                                         <height>45</height>
                                         <texture>$INFO[ListItem.Icon]</texture>
                                     </control>
                                     <control type="label">
-                                        <posx>120</posx>
+                                        <left>120</left>
                                         <width>810</width>
                                         <height>60</height>
                                         <label>$INFO[ListItem.Label]</label>
@@ -1505,15 +1505,15 @@
                                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                                     </control>
                                     <control type="image">
-                                        <posx>45</posx>
-                                        <posy>8</posy>
+                                        <left>45</left>
+                                        <top>8</top>
                                         <width>45</width>
                                         <height>45</height>
                                         <texture>$INFO[ListItem.Icon]</texture>
                                         <colordiffuse>ff2e2e2e</colordiffuse>
                                     </control>
                                     <control type="label">
-                                        <posx>120</posx>
+                                        <left>120</left>
                                         <width>810</width>
                                         <height>60</height>
                                         <label>$INFO[ListItem.Label]</label>
@@ -1758,13 +1758,13 @@
                             </control>
                         </control>
                         <control type="group" id="7509">
-                            <posx>892</posx>
-                            <posy>30</posy>
+                            <left>892</left>
+                            <top>30</top>
                             <visible>StringCompare(Window.Property(Weather.CurrentView),maps)</visible>
                             <include>Animation_VisibleChange200</include>
                             <control type="label">
-                                <posx>305</posx>
-                                <posy>158</posy>
+                                <left>305</left>
+                                <top>158</top>
                                 <width>310</width>
                                 <height>34</height>
                                 <align>center</align>
@@ -1772,32 +1772,32 @@
                                 <font>Font_Bold37</font>
                             </control>
                             <control type="image">
-                                <posx>80</posx>
-                                <posy>682</posy>
+                                <left>80</left>
+                                <top>682</top>
                                 <width>816</width>
                                 <height>122</height>
                                 <aspectratio>keep</aspectratio>
                                 <texture>weather/whitepanel.png</texture>
                             </control>
                             <control type="image">
-                                <posx>27</posx>
-                                <posy>722</posy>
+                                <left>27</left>
+                                <top>722</top>
                                 <width>506</width>
                                 <height>42</height>
                                 <aspectratio>keep</aspectratio>
                                 <texture>weather/key1.png</texture>
                             </control>
                             <control type="image">
-                                <posx>427</posx>
-                                <posy>722</posy>
+                                <left>427</left>
+                                <top>722</top>
                                 <width>506</width>
                                 <height>42</height>
                                 <aspectratio>keep</aspectratio>
                                 <texture>weather/key2.png</texture>
                             </control>
                             <control type="image">
-                                <posx>77</posx>
-                                <posy>242</posy>
+                                <left>77</left>
+                                <top>242</top>
                                 <width>806</width>
                                 <height>462</height>
                                 <texture>common/black.png</texture>
@@ -1807,8 +1807,8 @@
                                 <visible>Control.HasFocus(5)</visible>
                             </control>
                             <control type="multiimage">
-                                <posx>85</posx>
-                                <posy>205</posy>
+                                <left>85</left>
+                                <top>205</top>
                                 <width>790</width>
                                 <height>532</height>
                                 <aspectratio>keep</aspectratio>
@@ -1831,8 +1831,8 @@
                             </control>
                         </control>
                         <control type="list" id="7501">
-                            <posx>960</posx>
-                            <posy>690</posy>
+                            <left>960</left>
+                            <top>690</top>
                             <width>840</width>
                             <height>222</height>
                             <pagecontrol>60</pagecontrol>
@@ -1844,7 +1844,7 @@
                             <include>Animation_VisibleChange200</include>
                             <itemlayout width="210" height="195">
                                 <control type="label">
-                                    <posx>105</posx>
+                                    <left>105</left>
                                     <width>210</width>
                                     <height>34</height>
                                     <align>center</align>
@@ -1852,16 +1852,16 @@
                                     <font>Font_Reg31_Caps</font>
                                 </control>
                                 <control type="image">
-                                    <posx>50</posx>
-                                    <posy>38</posy>
+                                    <left>50</left>
+                                    <top>38</top>
                                     <width>120</width>
                                     <height>120</height>
                                     <aspectratio align="center">keep</aspectratio>
                                     <info>ListItem.ActualIcon</info>
                                 </control>
                                 <control type="label">
-                                    <posx>105</posx>
-                                    <posy>158</posy>
+                                    <left>105</left>
+                                    <top>158</top>
                                     <width>210</width>
                                     <height>34</height>
                                     <align>center</align>
@@ -1870,7 +1870,7 @@
                             </itemlayout>
                             <focusedlayout width="210" height="195">
                                 <control type="label">
-                                    <posx>105</posx>
+                                    <left>105</left>
                                     <width>210</width>
                                     <height>34</height>
                                     <align>center</align>
@@ -1878,16 +1878,16 @@
                                     <font>Font_Reg31_Caps</font>
                                 </control>
                                 <control type="image">
-                                    <posx>50</posx>
-                                    <posy>38</posy>
+                                    <left>50</left>
+                                    <top>38</top>
                                     <width>120</width>
                                     <height>120</height>
                                     <aspectratio align="center">keep</aspectratio>
                                     <info>ListItem.ActualIcon</info>
                                 </control>
                                 <control type="label">
-                                    <posx>105</posx>
-                                    <posy>158</posy>
+                                    <left>105</left>
+                                    <top>158</top>
                                     <width>210</width>
                                     <height>34</height>
                                     <align>center</align>
@@ -1970,7 +1970,7 @@
                     </control>
                 </control>
                 <control type="fadelabel">
-                    <posy>1030</posy>
+                    <top>1030</top>
                     <width>1920</width>
                     <height>20</height>
                     <textoffsetx>0</textoffsetx>
@@ -1991,8 +1991,8 @@
                     <effect type="fade" end="100" delay="320" time="160" />
                 </animation>
                 <control type="image">
-                    <posx>126</posx>
-                    <posy>123</posy>
+                    <left>126</left>
+                    <top>123</top>
                     <width>1670</width>
                     <height>786</height>
                     <texture background="true">$INFO[Window.Property(Current.Earth.Phase.LargeImage)]</texture>
@@ -2000,16 +2000,16 @@
                 </control>
                 <control type="group">
                     <control type="label">
-                        <posx>548</posx>
-                        <posy>135</posy>
+                        <left>548</left>
+                        <top>135</top>
                         <width>825</width>
                         <height>172</height>
                         <label>$INFO[Window.Property(Current.Temperature)] $INFO[System.TemperatureUnits]</label>
                         <font>Font_MainMenu</font>
                     </control>
                     <control type="label">
-                        <posx>548</posx>
-                        <posy>225</posy>
+                        <left>548</left>
+                        <top>225</top>
                         <width>412</width>
                         <height>135</height>
                         <label>$LOCALIZE[402] : $INFO[Window.Property(Current.FeelsLike)] $INFO[System.TemperatureUnits]</label>
@@ -2017,8 +2017,8 @@
                         <textcolor>grey2</textcolor>
                     </control>
                     <control type="label">
-                        <posx>548</posx>
-                        <posy>270</posy>
+                        <left>548</left>
+                        <top>270</top>
                         <width>412</width>
                         <height>135</height>
                         <label>[LOWERCASE]$INFO[Window.Property(Current.Condition)][/LOWERCASE]</label>
@@ -2027,16 +2027,16 @@
                         <wrapmultiline>true</wrapmultiline>
                     </control>
                     <control type="image">
-                        <posx>135</posx>
-                        <posy>135</posy>
+                        <left>135</left>
+                        <top>135</top>
                         <width>345</width>
                         <height>270</height>
                         <aspectratio>keep</aspectratio>
                         <info>Window.Property(Current.ConditionIcon)</info>
                     </control>
                     <control type="label">
-                        <posx>135</posx>
-                        <posy>375</posy>
+                        <left>135</left>
+                        <top>375</top>
                         <width>825</width>
                         <height>135</height>
                         <align>center</align>
@@ -2045,11 +2045,11 @@
                         <wrapmultiline>true</wrapmultiline>
                     </control>
                     <control type="group">
-                        <posx>278</posx>
-                        <posy>-120</posy>
+                        <left>278</left>
+                        <top>-120</top>
                         <control type="label">
-                            <posx>255</posx>
-                            <posy>645</posy>
+                            <left>255</left>
+                            <top>645</top>
                             <width>255</width>
                             <height>52</height>
                             <align>right</align>
@@ -2058,8 +2058,8 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>255</posx>
-                            <posy>690</posy>
+                            <left>255</left>
+                            <top>690</top>
                             <width>255</width>
                             <height>52</height>
                             <align>right</align>
@@ -2068,8 +2068,8 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <posx>255</posx>
-                            <posy>735</posy>
+                            <left>255</left>
+                            <top>735</top>
                             <width>255</width>
                             <height>52</height>
                             <align>right</align>
@@ -2078,10 +2078,10 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="group">
-                            <posy>780</posy>
+                            <top>780</top>
                             <visible>!IsEmpty(Window.Property(Current.Sunrise))</visible>
                             <control type="label">
-                                <posx>255</posx>
+                                <left>255</left>
                                 <width>255</width>
                                 <height>52</height>
                                 <align>right</align>
@@ -2090,7 +2090,7 @@
                                 <textcolor>grey2</textcolor>
                             </control>
                             <control type="label">
-                                <posx>278</posx>
+                                <left>278</left>
                                 <width>450</width>
                                 <height>52</height>
                                 <font>Font_Reg32</font>
@@ -2098,11 +2098,11 @@
                             </control>
                         </control>
                         <control type="group">
-                            <posy>825</posy>
+                            <top>825</top>
                             <dwescription>Sunset</dwescription>
                             <visible>!IsEmpty(Window.Property(Current.Sunset))</visible>
                             <control type="label">
-                                <posx>255</posx>
+                                <left>255</left>
                                 <width>255</width>
                                 <height>52</height>
                                 <align>right</align>
@@ -2111,7 +2111,7 @@
                                 <textcolor>grey2</textcolor>
                             </control>
                             <control type="label">
-                                <posx>278</posx>
+                                <left>278</left>
                                 <width>450</width>
                                 <height>52</height>
                                 <font>Font_Reg32</font>
@@ -2119,10 +2119,10 @@
                             </control>
                         </control>
                         <control type="group">
-                            <posy>870</posy>
+                            <top>870</top>
                             <visible>!IsEmpty(Window.Property(Current.Moon.Phase))</visible>
                             <control type="label">
-                                <posx>255</posx>
+                                <left>255</left>
                                 <width>255</width>
                                 <height>52</height>
                                 <align>right</align>
@@ -2131,7 +2131,7 @@
                                 <textcolor>grey2</textcolor>
                             </control>
                             <control type="label">
-                                <posx>278</posx>
+                                <left>278</left>
                                 <width>450</width>
                                 <height>52</height>
                                 <font>Font_Reg32</font>
@@ -2139,24 +2139,24 @@
                             </control>
                         </control>
                         <control type="label">
-                            <posx>278</posx>
-                            <posy>645</posy>
+                            <left>278</left>
+                            <top>645</top>
                             <width>450</width>
                             <height>52</height>
                             <label>$INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]</label>
                             <font>Font_Reg32</font>
                         </control>
                         <control type="label">
-                            <posx>278</posx>
-                            <posy>690</posy>
+                            <left>278</left>
+                            <top>690</top>
                             <width>450</width>
                             <height>52</height>
                             <font>Font_Reg32</font>
                             <info>Window.Property(Current.Humidity)</info>
                         </control>
                         <control type="label">
-                            <posx>278</posx>
-                            <posy>735</posy>
+                            <left>278</left>
+                            <top>735</top>
                             <width>450</width>
                             <height>52</height>
                             <font>Font_Reg32</font>
@@ -2165,8 +2165,8 @@
                     </control>
                 </control>
                 <control type="list" id="7510">
-                    <posx>960</posx>
-                    <posy>122</posy>
+                    <left>960</left>
+                    <top>122</top>
                     <width>840</width>
                     <height>786</height>
                     <orientation>vertical</orientation>
@@ -2178,24 +2178,24 @@
                     <include>Animation_VisibleChange200</include>
                     <itemlayout width="840" height="109">
                         <control type="image">
-                            <posx>22</posx>
-                            <posy>0</posy>
+                            <left>22</left>
+                            <top>0</top>
                             <width>109</width>
                             <height>109</height>
                             <aspectratio align="center">keep</aspectratio>
                             <info>ListItem.ActualIcon</info>
                         </control>
                         <control type="label">
-                            <posx>165</posx>
-                            <posy>5</posy>
+                            <left>165</left>
+                            <top>5</top>
                             <width>375</width>
                             <height>34</height>
                             <label>$INFO[ListItem.Label]</label>
                             <font>Font_Reg31_Caps</font>
                         </control>
                         <control type="label">
-                            <posx>165</posx>
-                            <posy>35</posy>
+                            <left>165</left>
+                            <top>35</top>
                             <width>660</width>
                             <height>34</height>
                             <label>$INFO[ListItem.Label2]</label>
@@ -2203,8 +2203,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>165</posx>
-                            <posy>66</posy>
+                            <left>165</left>
+                            <top>66</top>
                             <width>660</width>
                             <height>34</height>
                             <label>$INFO[ListItem.Property(HighTemp),[COLOR grey2]$LOCALIZE[419]: [/COLOR]]</label>
@@ -2212,15 +2212,15 @@
                             <selectedcolor>red</selectedcolor>
                         </control>
                         <control type="label">
-                            <posx>390</posx>
-                            <posy>66</posy>
+                            <left>390</left>
+                            <top>66</top>
                             <width>660</width>
                             <height>34</height>
                             <label>$INFO[ListItem.Property(LowTemp),[COLOR grey2]$LOCALIZE[418]: [/COLOR]]</label>
                             <textcolor>blue</textcolor>
                         </control>
                         <control type="image">
-                            <posy>49</posy>
+                            <top>49</top>
                             <width>840</width>
                             <height>60</height>
                             <texture border="1">osd/osd_settings_buttonnf.png</texture>
@@ -2228,7 +2228,7 @@
                     </itemlayout>
                     <focusedlayout width="840" height="109">
                         <control type="image">
-                            <posy>49</posy>
+                            <top>49</top>
                             <width>840</width>
                             <height>60</height>
                             <texture border="1">osd/osd_settings_buttonnf.png</texture>
@@ -2241,8 +2241,8 @@
                             <visible>Control.HasFocus(7510)</visible>
                         </control>
                         <control type="image">
-                            <posx>22</posx>
-                            <posy>0</posy>
+                            <left>22</left>
+                            <top>0</top>
                             <width>109</width>
                             <height>109</height>
                             <aspectratio align="center">keep</aspectratio>
@@ -2251,16 +2251,16 @@
                         <control type="group">
                             <visible>!Control.HasFocus(7510) | !IntegerGreaterThan(Container(7510).NumPages,1)</visible>
                             <control type="label">
-                                <posx>165</posx>
-                                <posy>5</posy>
+                                <left>165</left>
+                                <top>5</top>
                                 <width>375</width>
                                 <height>34</height>
                                 <label>$INFO[ListItem.Label]</label>
                                 <font>Font_Reg31_Caps</font>
                             </control>
                             <control type="label">
-                                <posx>165</posx>
-                                <posy>35</posy>
+                                <left>165</left>
+                                <top>35</top>
                                 <width>660</width>
                                 <height>34</height>
                                 <label>$INFO[ListItem.Label2]</label>
@@ -2268,8 +2268,8 @@
                                 <scroll>true</scroll>
                             </control>
                             <control type="label">
-                                <posx>165</posx>
-                                <posy>66</posy>
+                                <left>165</left>
+                                <top>66</top>
                                 <width>660</width>
                                 <height>34</height>
                                 <label>$INFO[ListItem.Property(HighTemp),[COLOR grey2]$LOCALIZE[419]: [/COLOR]]</label>
@@ -2277,8 +2277,8 @@
                                 <selectedcolor>red</selectedcolor>
                             </control>
                             <control type="label">
-                                <posx>390</posx>
-                                <posy>66</posy>
+                                <left>390</left>
+                                <top>66</top>
                                 <width>660</width>
                                 <height>34</height>
                                 <label>$INFO[ListItem.Property(LowTemp),[COLOR grey2]$LOCALIZE[418]: [/COLOR]]</label>
@@ -2350,8 +2350,8 @@
                 </control>
             </control>
             <control type="label">
-                <posx>135</posx>
-                <posy>862</posy>
+                <left>135</left>
+                <top>862</top>
                 <width>1695</width>
                 <height>135</height>
                 <align>center</align>
@@ -2414,7 +2414,7 @@
                         <textcolor>$VAR[FontColorVar]</textcolor>
                         <focusedcolor>white6</focusedcolor>
                         <onleft>ActivateWindow(1121)</onleft>
-                        <spinposx>-20</spinposx>
+                        <spinleft>-20</spinleft>
                     </control>
                     <control type="togglebutton" id="307">
                         <label>$LOCALIZE[20088]: [COLOR $VAR[FontColorVar]]$LOCALIZE[571][/COLOR]</label>

@@ -2,16 +2,16 @@
 <window>
     <allowoverlay>no</allowoverlay>
     <coordinates>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <system>1</system>
     </coordinates>
     <controls>
         <control type="group">
             <control type="image" id="299">
                 <description>list</description>
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>0</width>
                 <height>0</height>
                 <texture>-</texture>
@@ -24,8 +24,8 @@
                 <animation effect="fade" start="100" end="85" time="40" condition="true">Conditional</animation>
             </control>
             <control type="label">
-                <posx>82</posx>
-                <posy>15</posy>
+                <left>82</left>
+                <top>15</top>
                 <width>1754</width>
                 <height>45</height>
                 <align>center</align>
@@ -37,8 +37,8 @@
             </control>
             <!-- ** Required ** Do not change <id> or <type> (Smooth scrolling list for lyrics) -->
             <control type="list" id="110">
-                <posx>82</posx>
-                <posy>90</posy>
+                <left>82</left>
+                <top>90</top>
                 <width>1754</width>
                 <height>460</height>
                 <onleft>111</onleft>
@@ -51,7 +51,7 @@
                 <animation effect="fade" time="160">WindowClose</animation>
                 <itemlayout height="38">
                     <control type="label">
-                        <posx>878</posx>
+                        <left>878</left>
                         <width>1754</width>
                         <height>38</height>
                         <align>center</align>
@@ -62,7 +62,7 @@
                 </itemlayout>
                 <focusedlayout height="38">
                     <control type="label">
-                        <posx>878</posx>
+                        <left>878</left>
                         <width>1754</width>
                         <height>38</height>
                         <align>center</align>
@@ -72,7 +72,7 @@
                         <visible>!Control.HasFocus(110)</visible>
                     </control>
                     <control type="label">
-                        <posx>878</posx>
+                        <left>878</left>
                         <width>1754</width>
                         <height>38</height>
                         <align>center</align>
@@ -88,7 +88,7 @@
                         </animation>
                     </control>
                     <control type="label">
-                        <posx>878</posx>
+                        <left>878</left>
                         <width>1754</width>
                         <height>38</height>
                         <align>center</align>
@@ -106,12 +106,12 @@
                 </focusedlayout>
             </control>
             <control type="spincontrol" id="111">
-                <posx>1800</posx>
-                <posy>6</posy>
+                <left>1800</left>
+                <top>6</top>
                 <height>98</height>
                 <textoffsetx>0</textoffsetx>
                 <textcolor>grey</textcolor>
-                <spinposx>-4</spinposx>
+                <spinleft>-4</spinleft>
                 <subtype>page</subtype>
                 <onleft>110</onleft>
                 <onright>110</onright>
@@ -124,8 +124,8 @@
                 <animation effect="fade" time="160">WindowClose</animation>
             </control>
             <control type="label">
-                <posx>82</posx>
-                <posy>150</posy>
+                <left>82</left>
+                <top>150</top>
                 <width>1754</width>
                 <height>478</height>
                 <align>center</align>
@@ -136,8 +136,8 @@
             </control>
             <!-- ** Required ** Do not change <id> or <type> (Song Chooser if it gets it wrong) -->
             <control type="list" id="120">
-                <posx>82</posx>
-                <posy>90</posy>
+                <left>82</left>
+                <top>90</top>
                 <width>1754</width>
                 <height>450</height>
                 <onleft>121</onleft>
@@ -155,7 +155,7 @@
                         <texture>dialogs/setcontent_button_nofocus.png</texture>
                     </control>
                     <control type="label">
-                        <posx>52</posx>
+                        <left>52</left>
                         <width>1724</width>
                         <height>60</height>
                         <font>Font_Reg57</font>
@@ -177,7 +177,7 @@
                         <visible>Control.HasFocus(120)</visible>
                     </control>
                     <control type="label">
-                        <posx>52</posx>
+                        <left>52</left>
                         <width>1724</width>
                         <height>60</height>
                         <font>Font_Reg57</font>
@@ -187,12 +187,12 @@
                 </focusedlayout>
             </control>
             <control type="spincontrol" id="121">
-                <posx>1800</posx>
-                <posy>6</posy>
+                <left>1800</left>
+                <top>6</top>
                 <height>98</height>
                 <textoffsetx>0</textoffsetx>
                 <textcolor>grey</textcolor>
-                <spinposx>-4</spinposx>
+                <spinleft>-4</spinleft>
                 <subtype>page</subtype>
                 <onleft>120</onleft>
                 <onright>120</onright>
@@ -205,8 +205,8 @@
                 <animation effect="fade" time="160">WindowClose</animation>
             </control>
             <control type="label" id="130">
-                <posx>75</posx>
-                <posy>15</posy>
+                <left>75</left>
+                <top>15</top>
                 <width>600</width>
                 <height>45</height>
                 <textoffsetx>30</textoffsetx>

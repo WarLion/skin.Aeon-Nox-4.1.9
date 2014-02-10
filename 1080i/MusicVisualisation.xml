@@ -103,18 +103,18 @@
             <animation effect="slide" start="735,0" end="0,0" time="240">Visible</animation>
             <animation effect="slide" end="735,0" time="240">WindowClose</animation>
             <control type="group">
-                <posx>748r</posx>
-                <posy>0</posy>
+                <left>748r</left>
+                <top>0</top>
                 <control type="image">
-                    <posx>-45</posx>
+                    <left>-45</left>
                     <width>794</width>
                     <height>87</height>
                     <texture flipy="true">home/timepanel_mid.png</texture>
                     <colordiffuse>$VAR[ExtendedColorVar]</colordiffuse>
                 </control>
                 <control type="label">
-                    <posx>734</posx>
-                    <posy>-2</posy>
+                    <left>734</left>
+                    <top>-2</top>
                     <width>600</width>
                     <height>40</height>
                     <align>right</align>
@@ -123,8 +123,8 @@
                     <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
                 </control>
                 <control type="grouplist">
-                    <posx>30</posx>
-                    <posy>-2</posy>
+                    <left>30</left>
+                    <top>-2</top>
                     <width>500</width>
                     <aligny>center</aligny>
                     <orientation>horizontal</orientation>
@@ -160,7 +160,7 @@
             </control>
         </control>
         <control type="group">
-            <posy>854</posy>
+            <top>854</top>
             <width>1920</width>
             <height>226</height>
             <visible>Player.ShowInfo | Skin.HasSetting(showvisinfo) | Window.IsActive(musicosd)</visible>
@@ -173,8 +173,8 @@
                 <effect type="slide" time="320" end="0,226" easing="in" tween="cubic" />
             </animation>
             <control type="image">
-                <posx>704</posx>
-                <posy>-854</posy>
+                <left>704</left>
+                <top>-854</top>
                 <width>513</width>
                 <height>87</height>
                 <texture flipy="true">osd/osd_top_bar.png</texture>
@@ -185,8 +185,8 @@
                 <visible>Player.Paused</visible>
             </control>
             <control type="label">
-                <posx>750</posx>
-                <posy>-854</posy>
+                <left>750</left>
+                <top>-854</top>
                 <width>420</width>
                 <height>42</height>
                 <align>center</align>
@@ -200,13 +200,13 @@
                 <visible>Player.Paused</visible>
             </control>
             <control type="image">
-                <posy>-400</posy>
+                <top>-400</top>
                 <width>1923</width>
                 <height>780</height>
                 <texture>home/nowplaying_shadow.png</texture>
             </control>
             <control type="image">
-                <posy>-400</posy>
+                <top>-400</top>
                 <width>1923</width>
                 <height>780</height>
                 <texture>home/nowplaying_shadow.png</texture>
@@ -214,14 +214,14 @@
                 <colordiffuse>black</colordiffuse>
             </control>
             <control type="group">
-                <posx>8</posx>
-                <posy>30</posy>
+                <left>8</left>
+                <top>30</top>
                 <animation effect="slide" start="-975" end="0" time="560" tween="cubic" delay="320">WindowOpen</animation>
                 <animation effect="slide" end="-975" time="320" tween="cubic" easing="in" delay="320" condition="Skin.HasSetting(CDArtinVis)">WindowClose</animation>
                 <animation effect="slide" end="-975" time="400" tween="cubic" easing="in" condition="!Skin.HasSetting(CDArtinVis)">WindowClose</animation>
                 <control type="image">
-                    <posx>56</posx>
-                    <posy>-282</posy>
+                    <left>56</left>
+                    <top>-282</top>
                     <width>447</width>
                     <height>450</height>
                     <texture>thumbs/cd_shadow_glow.png</texture>
@@ -230,8 +230,8 @@
                     <visible>!Skin.HasSetting(DisableGlowbar) + Skin.HasSetting(vinylart)</visible>
                 </control>
                 <control type="image">
-                    <posx>262</posx>
-                    <posy>-243</posy>
+                    <left>262</left>
+                    <top>-243</top>
                     <width>387</width>
                     <height>381</height>
                     <aspectratio>keep</aspectratio>
@@ -250,8 +250,8 @@
                     <include>cdart</include>
                 </control>
                 <control type="image">
-                    <posx>262</posx>
-                    <posy>-243</posy>
+                    <left>262</left>
+                    <top>-243</top>
                     <width>387</width>
                     <height>381</height>
                     <aspectratio>keep</aspectratio>
@@ -270,8 +270,8 @@
                     <visible>Skin.HasSetting(vinylart)</visible>
                 </control>
                 <control type="image">
-                    <posx>262</posx>
-                    <posy>-243</posy>
+                    <left>262</left>
+                    <top>-243</top>
                     <width>387</width>
                     <height>381</height>
                     <aspectratio>keep</aspectratio>
@@ -293,50 +293,50 @@
                     <animation effect="fade" time="600">VisibleChange</animation>
                     <visible>!Skin.HasSetting(vinylart)</visible>
                     <control type="image">
-                        <posx>68</posx>
-                        <posy>-248</posy>
+                        <left>68</left>
+                        <top>-248</top>
                         <width>398</width>
                         <height>398</height>
                         <aspectratio>scale</aspectratio>
                         <texture diffuse="thumbs/boxes/cdcover_mask.png">$INFO[MusicPlayer.Cover]</texture>
                     </control>
                     <control type="image">
-                        <posy>-270</posy>
+                        <top>-270</top>
                         <width>490</width>
                         <height>450</height>
                         <texture>thumbs/boxes/cd_shadow_light.png</texture>
                     </control>
                     <control type="image">
-                        <posy>-270</posy>
+                        <top>-270</top>
                         <width>490</width>
                         <height>450</height>
                         <texture>thumbs/boxes/cd_glass.png</texture>
                     </control>
                 </control>
                 <control type="group">
-                    <posx>40</posx>
-                    <posy>13</posy>
+                    <left>40</left>
+                    <top>13</top>
                     <animation effect="fade" time="600">VisibleChange</animation>
                     <visible>Skin.HasSetting(vinylart)</visible>
                     <control type="image">
-                        <posx>42</posx>
-                        <posy>-270</posy>
+                        <left>42</left>
+                        <top>-270</top>
                         <width>400</width>
                         <height>400</height>
                         <texture fallback="DefaultAlbumCover.png" diffuse="thumbs/cdcover_mask2.png">$INFO[MusicPlayer.Cover]</texture>
                         <bordertexture border="-90">thumbs/cd_shadow2.png</bordertexture>
                     </control>
                     <control type="image">
-                        <posx>42</posx>
-                        <posy>-270</posy>
+                        <left>42</left>
+                        <top>-270</top>
                         <width>400</width>
                         <height>400</height>
                         <aspectratio scalediffuse="false" align="right">scale</aspectratio>
                         <texture diffuse="thumbs/cdcover_mask2.png">thumbs/cdcover_glass_noreflect.png</texture>
                     </control>
                     <control type="image">
-                        <posx>42</posx>
-                        <posy>132</posy>
+                        <left>42</left>
+                        <top>132</top>
                         <width>400</width>
                         <height>400</height>
                         <texture flipy="true" fallback="DefaultAlbumCover.png" diffuse="thumbs/cdcover_mask2.png">$INFO[MusicPlayer.Cover]</texture>
@@ -346,29 +346,29 @@
                 </control>
             </control>
             <control type="group">
-                <posx>30</posx>
+                <left>30</left>
                 <include>Animation_OpenCloseZoom</include>
                 <control type="group">
-                    <posy>70</posy>
+                    <top>70</top>
                     <control type="image">
-                        <posx>525</posx>
-                        <posy>-134</posy>
+                        <left>525</left>
+                        <top>-134</top>
                         <width>900</width>
                         <height>4</height>
                         <texture>views/list_divider.png</texture>
                         <animation effect="slide" start="1950" end="0" time="560" tween="cubic" delay="880">WindowOpen</animation>
                     </control>
                     <control type="image">
-                        <posx>525</posx>
-                        <posy>-48</posy>
+                        <left>525</left>
+                        <top>-48</top>
                         <width>900</width>
                         <height>4</height>
                         <texture>views/list_divider.png</texture>
                         <animation effect="slide" start="1950" end="0" time="560" tween="cubic" delay="880">WindowOpen</animation>
                     </control>
                     <control type="label">
-                        <posx>650</posx>
-                        <posy>-109</posy>
+                        <left>650</left>
+                        <top>-109</top>
                         <width>1425</width>
                         <height>36</height>
                         <label>[COLOR grey]$INFO[MusicPlayer.Album][/COLOR]$INFO[MusicPlayer.Year, [,] ]</label>
@@ -381,8 +381,8 @@
                         <animation effect="slide" end="-162" time="400" tween="cubic" easing="in" condition="!Skin.HasSetting(CDArtinVis)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>650</posx>
-                        <posy>-109</posy>
+                        <left>650</left>
+                        <top>-109</top>
                         <width>1230</width>
                         <height>36</height>
                         <label>[COLOR grey]$INFO[MusicPlayer.Album][/COLOR]$INFO[MusicPlayer.Year, [,] ]</label>
@@ -395,8 +395,8 @@
                         <animation effect="slide" end="-162" time="400" tween="cubic" easing="in" condition="!Skin.HasSetting(CDArtinVis)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>635</posx>
-                        <posy>-32</posy>
+                        <left>635</left>
+                        <top>-32</top>
                         <width>1410</width>
                         <height>45</height>
                         <label>$INFO[MusicPlayer.TrackNumber,,: ][COLOR=grey]$INFO[MusicPlayer.Title][/COLOR]</label>
@@ -409,8 +409,8 @@
                         <animation effect="slide" end="-148" time="400" tween="cubic" easing="in" condition="!Skin.HasSetting(CDArtinVis)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>635</posx>
-                        <posy>-32</posy>
+                        <left>635</left>
+                        <top>-32</top>
                         <width>1230</width>
                         <height>45</height>
                         <label>$INFO[MusicPlayer.TrackNumber,,: ][COLOR=grey]$INFO[MusicPlayer.Title][/COLOR]</label>
@@ -423,8 +423,8 @@
                         <animation effect="slide" end="-148" time="400" tween="cubic" easing="in" condition="!Skin.HasSetting(CDArtinVis)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>635</posx>
-                        <posy>-207</posy>
+                        <left>635</left>
+                        <top>-207</top>
                         <width>1275</width>
                         <height>38</height>
                         <label>$INFO[MusicPlayer.Artist]</label>
@@ -436,8 +436,8 @@
                         <visible>Substring(Control.GetLabel(8308),empty.png) | IsEmpty(Skin.String(ArtistsLogosPath))</visible>
                     </control>
                     <control type="image" id="8308">
-                        <posx>635</posx>
-                        <posy>-345</posy>
+                        <left>635</left>
+                        <top>-345</top>
                         <width>500</width>
                         <height>205</height>
                         <texture background="true" fallback="empty.png">$INFO[Skin.String(ArtistsLogosPath)]$INFO[MusicPlayer.Artist,,/logo.png]</texture>
@@ -448,11 +448,11 @@
                     </control>
                 </control>
                 <control type="group">
-                    <posy>55</posy>
+                    <top>55</top>
                     <animation effect="slide" end="-120" time="400" tween="cubic" easing="in" condition="!Skin.HasSetting(CDArtinVis)">Conditional</animation>
                     <control type="image" id="8310">
-                        <posx>791</posx>
-                        <posy>66</posy>
+                        <left>791</left>
+                        <top>66</top>
                         <width>150</width>
                         <height>99</height>
                         <texture fallback="empty.png">$INFO[MusicPlayer.Codec,flags/audio/]$INFO[MusicPlayer.Channels,,.png]</texture>
@@ -460,8 +460,8 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image" id="8309">
-                        <posx>791</posx>
-                        <posy>66</posy>
+                        <left>791</left>
+                        <top>66</top>
                         <width>150</width>
                         <height>99</height>
                         <texture fallback="empty.png">$INFO[MusicPlayer.Codec,flags/audio/,.png]</texture>
@@ -470,8 +470,8 @@
                         <visible>StringCompare(Control.GetLabel(8310),empty.png)</visible>
                     </control>
                     <control type="label">
-                        <posx>944</posx>
-                        <posy>52</posy>
+                        <left>944</left>
+                        <top>52</top>
                         <width>1350</width>
                         <height>126</height>
                         <align>left</align>
@@ -481,8 +481,8 @@
                         <textcolor>$VAR[TitleColorVar]</textcolor>
                     </control>
                     <control type="label">
-                        <posx>788</posx>
-                        <posy>69</posy>
+                        <left>788</left>
+                        <top>69</top>
                         <width>210</width>
                         <height>86</height>
                         <align>center</align>
@@ -494,8 +494,8 @@
                         <visible>StringCompare(Control.GetLabel(8309),empty.png) + StringCompare(Control.GetLabel(8310),empty.png)</visible>
                     </control>
                     <control type="image">
-                        <posx>1056</posx>
-                        <posy>70</posy>
+                        <left>1056</left>
+                        <top>70</top>
                         <width>150</width>
                         <height>90</height>
                         <aspectratio>keep</aspectratio>
@@ -506,16 +506,16 @@
                         <visible>!Window.IsActive(musicosd)</visible>
                         <include>Animation_VisibleChange200</include>
                         <control type="image">
-                            <posx>1106</posx>
-                            <posy>145</posy>
+                            <left>1106</left>
+                            <top>145</top>
                             <width>50</width>
                             <height>15</height>
                             <texture>arrowdown.png</texture>
                             <colordiffuse>white</colordiffuse>
                         </control>
                         <control type="image">
-                            <posx>1106</posx>
-                            <posy>70</posy>
+                            <left>1106</left>
+                            <top>70</top>
                             <width>50</width>
                             <height>15</height>
                             <texture flipy="true">arrowdown.png</texture>
@@ -523,8 +523,8 @@
                         </control>
                     </control>
                     <control type="image" id="8669">
-                        <posx>612</posx>
-                        <posy>70</posy>
+                        <left>612</left>
+                        <top>70</top>
                         <width>150</width>
                         <height>90</height>
                         <aspectratio>keep</aspectratio>
@@ -532,8 +532,8 @@
                         <colordiffuse>white3</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>607</posx>
-                        <posy>73</posy>
+                        <left>607</left>
+                        <top>73</top>
                         <width>155</width>
                         <height>70</height>
                         <align>center</align>
@@ -545,10 +545,10 @@
                     </control>
                     <control type="group">
                         <visible>!IsEmpty(MusicPlayer.Genre)</visible>
-                        <posx>140</posx>
+                        <left>140</left>
                         <control type="image">
-                            <posx>1080</posx>
-                            <posy>75</posy>
+                            <left>1080</left>
+                            <top>75</top>
                             <width>80</width>
                             <height>80</height>
                             <aspectratio>keep</aspectratio>
@@ -556,8 +556,8 @@
                             <colordiffuse>$VAR[TitleColorVar]</colordiffuse>
                         </control>
                         <control type="label">
-                            <posx>1155</posx>
-                            <posy>73</posy>
+                            <left>1155</left>
+                            <top>73</top>
                             <width>210</width>
                             <height>86</height>
                             <label>[COLOR=white3]$INFO[MusicPlayer.Genre][/COLOR]</label>
@@ -569,8 +569,8 @@
                     </control>
                 </control>
                 <control type="grouplist">
-                    <posx>1490</posx>
-                    <posy>101</posy>
+                    <left>1490</left>
+                    <top>101</top>
                     <width>1920</width>
                     <height>150</height>
                     <itemgap>10</itemgap>
@@ -587,8 +587,8 @@
                     </control>
                 </control>
                 <control type="progress" id="23">
-                    <posx>1498</posx>
-                    <posy>188</posy>
+                    <left>1498</left>
+                    <top>188</top>
                     <width>320</width>
                     <height>15</height>
                     <info>Player.Progress</info>
@@ -605,38 +605,38 @@
             <visible>Player.ShowCodec + ![Window.IsVisible(script-XBMC_Lyrics-main.xml) | Window.IsVisible(VisualisationSettings) | Window.IsVisible(VisualisationPresetList)]</visible>
             <animation effect="slide" start="0,-255" end="0,0" time="400" tween="cubic">VisibleChange</animation>
             <control type="image">
-                <posy>-455</posy>
+                <top>-455</top>
                 <width>1920</width>
                 <height>631</height>
                 <texture flipy="true">views/lowlist_panelback.png</texture>
                 <animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
             </control>
             <control type="label">
-                <posx>75</posx>
-                <posy>20</posy>
+                <left>75</left>
+                <top>20</top>
                 <label>$INFO[musicplayer.Codec,$LOCALIZE[21446]: ,]$INFO[musicplayer.Bitrate, • $LOCALIZE[623]: ,kbps]$INFO[musicplayer.bitspersample, • $LOCALIZE[612]: ,bit]$INFO[musicplayer.Samplerate, • $LOCALIZE[613]: ,kHz]$INFO[musicplayer.Channels, • $LOCALIZE[21444]: ]</label>
                 <label>-</label>
                 <font>Font_Reg30_2</font>
             </control>
             <control type="label">
-                <posx>75</posx>
-                <posy>55</posy>
+                <left>75</left>
+                <top>55</top>
                 <label>$INFO[Visualisation.Name] [I][COLOR=$VAR[ColorDiffuseVar]]($LOCALIZE[20166])[/COLOR][/I] • fps: $INFO[System.FPS]</label>
                 <label>-</label>
                 <font>Font_Reg30_2</font>
                 <visible>Visualisation.Locked</visible>
             </control>
             <control type="label">
-                <posx>75</posx>
-                <posy>55</posy>
+                <left>75</left>
+                <top>55</top>
                 <label>$INFO[Visualisation.Name] • fps: $INFO[System.FPS]</label>
                 <label>-</label>
                 <font>Font_Reg30_2</font>
                 <visible>!Visualisation.Locked</visible>
             </control>
             <control type="label">
-                <posx>75</posx>
-                <posy>90</posy>
+                <left>75</left>
+                <top>90</top>
                 <label>$LOCALIZE[13388]: $INFO[Visualisation.Preset]</label>
                 <label>-</label>
                 <font>Font_Reg30_2</font>
@@ -647,8 +647,8 @@
             <include>Animation_Widgets</include>
             <visible>!Window.IsActive(musicosd)</visible>
             <control type="group" id="8995">
-                <posx>22</posx>
-                <posy>-597</posy>
+                <left>22</left>
+                <top>-597</top>
                 <animation type="Conditional" condition="Skin.HasSetting(vispanelrotate) + Skin.HasSetting(activatepanelrotation) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow.1.SimilarName))" reversible="false">
                     <effect type="rotatex" center="251" end="90" time="440" tween="cubic" easing="in" />
                     <effect type="rotatex" center="251" start="90" end="-90" time="0" delay="440" />
@@ -673,8 +673,8 @@
                 <control type="group">
                     <animation effect="fade" time="320">VisibleChange</animation>
                     <control type="image">
-                        <posx>120</posx>
-                        <posy>650</posy>
+                        <left>120</left>
+                        <top>650</top>
                         <width>1650</width>
                         <height>593</height>
                         <texture>wall/wall_bg_glow.png</texture>
@@ -685,8 +685,8 @@
                         <include>Animation_VisibleChange400</include>
                     </control>
                     <control type="image">
-                        <posx>120</posx>
-                        <posy>650</posy>
+                        <left>120</left>
+                        <top>650</top>
                         <width>1650</width>
                         <height>593</height>
                         <texture>wall/wall_bg.png</texture>
@@ -700,12 +700,12 @@
                         <animation effect="slide" end="-1388,-21" time="0" condition="true">Conditional</animation>
                         <animation effect="zoom" start="100" end="118" time="0" center="960,500" condition="true">Conditional</animation>
                         <control type="group">
-                            <posx>1436</posx>
-                            <posy>672</posy>
+                            <left>1436</left>
+                            <top>672</top>
                             <visible>IsEmpty(Window(Visualisation).Property(ArtistSlideshowRefresh))</visible>
                             <animation effect="fade" time="320">VisibleChange</animation>
                             <control type="image">
-                                <posy>3</posy>
+                                <top>3</top>
                                 <width>425</width>
                                 <height>390</height>
                                 <texture>thumbs/boxes/cd_shadow_light_shadow.png</texture>
@@ -715,16 +715,16 @@
                                 <include>Animation_VisibleChange400</include>
                             </control>
                             <control type="image">
-                                <posx>22</posx>
-                                <posy>22</posy>
+                                <left>22</left>
+                                <top>22</top>
                                 <width>380</width>
                                 <height>354</height>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
                                 <texture background="true" fallback="DefaultArtist.png" diffuse="thumbs/boxes/cdcover_mask.png">$INFO[Player.Art(fanart)]</texture>
                             </control>
                             <control type="multiimage">
-                                <posx>22</posx>
-                                <posy>22</posy>
+                                <left>22</left>
+                                <top>22</top>
                                 <width>380</width>
                                 <height>354</height>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
@@ -734,8 +734,8 @@
                                 <timeperimage>5000</timeperimage>
                             </control>
                             <control type="multiimage">
-                                <posx>22</posx>
-                                <posy>22</posy>
+                                <left>22</left>
+                                <top>22</top>
                                 <width>380</width>
                                 <height>354</height>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
@@ -745,7 +745,7 @@
                                 <timeperimage>5000</timeperimage>
                             </control>
                             <control type="image">
-                                <posy>3</posy>
+                                <top>3</top>
                                 <width>425</width>
                                 <height>400</height>
                                 <texture>thumbs/boxes/cd_shadow_light.png</texture>
@@ -756,8 +756,8 @@
                     <!-- Playlist -->
                     <include>NextTracksList</include>
                     <control type="textbox">
-                        <posx>640</posx>
-                        <posy>690</posy>
+                        <left>640</left>
+                        <top>690</top>
                         <width>480</width>
                         <height>440</height>
                         <aligny>top</aligny>
@@ -769,8 +769,8 @@
                 </control>
             </control>
             <control type="group">
-                <posx>22</posx>
-                <posy>-597</posy>
+                <left>22</left>
+                <top>-597</top>
                 <visible>Skin.HasSetting(vispanelrotate) + Skin.HasSetting(activatepanelrotation) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow.1.SimilarName))</visible>
                 <animation effect="fade" time="400">WindowOpen</animation>
                 <animation effect="fade" time="160">WindowClose</animation>
@@ -787,8 +787,8 @@
                     <effect type="rotatex" center="251" start="90" end="0" time="440" delay="440" tween="cubic" />
                 </animation>
                 <control type="image">
-                    <posx>120</posx>
-                    <posy>650</posy>
+                    <left>120</left>
+                    <top>650</top>
                     <width>1650</width>
                     <height>593</height>
                     <texture>wall/wall_bg_glow.png</texture>
@@ -799,19 +799,19 @@
                     <include>Animation_VisibleChange400</include>
                 </control>
                 <control type="image">
-                    <posx>120</posx>
-                    <posy>650</posy>
+                    <left>120</left>
+                    <top>650</top>
                     <width>1650</width>
                     <height>593</height>
                     <texture>wall/wall_bg.png</texture>
                     <animation effect="fade" start="100" end="73" time="0" condition="true">Conditional</animation>
                 </control>
                 <control type="group">
-                    <posx>150</posx>
-                    <posy>732</posy>
+                    <left>150</left>
+                    <top>732</top>
                     <control type="label">
-                        <posx>20</posx>
-                        <posy>-43</posy>
+                        <left>20</left>
+                        <top>-43</top>
                         <width>375</width>
                         <height>34</height>
                         <label>$LOCALIZE[31635]</label>
@@ -822,8 +822,8 @@
                     <visible>IsEmpty(Window(Visualisation).Property(ArtistSlideshowRefresh))</visible>
                     <animation effect="fade" time="320">VisibleChange</animation>
                     <control type="image">
-                        <posx>-20</posx>
-                        <posy>-8</posy>
+                        <left>-20</left>
+                        <top>-8</top>
                         <width>445</width>
                         <height>418</height>
                         <texture>thumbs/boxes/cd_shadow_light_shadow.png</texture>
@@ -833,8 +833,8 @@
                         <include>Animation_VisibleChange400</include>
                     </control>
                     <control type="multiimage">
-                        <posx>2</posx>
-                        <posy>11</posy>
+                        <left>2</left>
+                        <top>11</top>
                         <width>400</width>
                         <height>374</height>
                         <aspectratio scalediffuse="false">scale</aspectratio>
@@ -843,15 +843,15 @@
                         <timeperimage>5000</timeperimage>
                     </control>
                     <control type="image">
-                        <posx>-20</posx>
-                        <posy>-8</posy>
+                        <left>-20</left>
+                        <top>-8</top>
                         <width>445</width>
                         <height>420</height>
                         <texture>thumbs/boxes/cd_shadow_light.png</texture>
                     </control>
                     <control type="list" id="5222">
-                        <posx>323</posx>
-                        <posy>-85</posy>
+                        <left>323</left>
+                        <top>-85</top>
                         <width>340</width>
                         <height>460</height>
                         <onup>5011</onup>
@@ -865,7 +865,7 @@
                         <preloaditems>2</preloaditems>
                         <itemlayout width="614" height="30">
                             <control type="label">
-                                <posx>15</posx>
+                                <left>15</left>
                                 <width>375</width>
                                 <height>34</height>
                                 <label>$INFO[ListItem.Label]</label>
@@ -875,7 +875,7 @@
                         </itemlayout>
                         <focusedlayout width="614" height="30">
                             <control type="label">
-                                <posx>15</posx>
+                                <left>15</left>
                                 <width>368</width>
                                 <height>34</height>
                                 <label>$INFO[ListItem.Label]</label>
@@ -889,8 +889,8 @@
                     </control>
                 </control>
                 <control type="textbox">
-                    <posx>900</posx>
-                    <posy>690</posy>
+                    <left>900</left>
+                    <top>690</top>
                     <width>500</width>
                     <height>440</height>
                     <aligny>top</aligny>
@@ -900,8 +900,8 @@
                     <autoscroll delay="5000" time="AutoScrollTime" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
                 </control>
                 <control type="group">
-                    <posx>1730</posx>
-                    <posy>790</posy>
+                    <left>1730</left>
+                    <top>790</top>
                     <animation effect="zoom" start="100" end="65" time="640" easing="inout" tween="circle" center="960,500" condition="true">Conditional</animation>
                     <control type="image">
                         <width>445</width>
@@ -913,8 +913,8 @@
                         <include>Animation_VisibleChange400</include>
                     </control>
                     <control type="multiimage">
-                        <posx>22</posx>
-                        <posy>19</posy>
+                        <left>22</left>
+                        <top>19</top>
                         <width>400</width>
                         <height>374</height>
                         <aspectratio scalediffuse="false">scale</aspectratio>
@@ -929,8 +929,8 @@
                     </control>
                 </control>
                 <control type="list" id="5223">
-                    <posx>1440</posx>
-                    <posy>1040</posy>
+                    <left>1440</left>
+                    <top>1040</top>
                     <width>620</width>
                     <height>210</height>
                     <onup>5011</onup>
@@ -944,7 +944,7 @@
                     <preloaditems>2</preloaditems>
                     <itemlayout width="614" height="30">
                         <control type="label">
-                            <posx>425</posx>
+                            <left>425</left>
                             <width>300</width>
                             <height>34</height>
                             <align>right</align>
@@ -955,7 +955,7 @@
                     </itemlayout>
                     <focusedlayout width="614" height="30">
                         <control type="label">
-                            <posx>425</posx>
+                            <left>425</left>
                             <width>300</width>
                             <height>34</height>
                             <align>right</align>

@@ -22,7 +22,7 @@
                     <animation effect="slide" end="0,-50" time="120" condition="!Skin.HasSetting(lowlist) + Control.HasFocus(7002)">Conditional</animation>
                     <animation effect="slide" end="0,-165" time="120" condition="!Skin.HasSetting(lowlist)">Conditional</animation>
                     <control type="image">
-                        <posy>710</posy>
+                        <top>710</top>
                         <width>1920</width>
                         <height>651</height>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
@@ -31,8 +31,8 @@
                     </control>
                     <include>Neon_LowList</include>
                     <control type="image">
-                        <posx>465</posx>
-                        <posy>754</posy>
+                        <left>465</left>
+                        <top>754</top>
                         <width>75</width>
                         <height>490</height>
                         <texture>views/listpanel_detailwide.png</texture>
@@ -41,8 +41,8 @@
                         <visible>Container.Content(songs)</visible>
                     </control>
                     <control type="image">
-                        <posx>1214</posx>
-                        <posy>754</posy>
+                        <left>1214</left>
+                        <top>754</top>
                         <width>146</width>
                         <height>490</height>
                         <texture>views/listpanel_detailwide.png</texture>
@@ -53,8 +53,8 @@
                     <control type="group">
                         <visible>!Skin.HasSetting(lowlistmusicwidelist)</visible>
                         <control type="textbox">
-                            <posx>1390</posx>
-                            <posy>755</posy>
+                            <left>1390</left>
+                            <top>755</top>
                             <width>515</width>
                             <height>338</height>
                             <label>$VAR[InfoWallTextboxVar]</label>
@@ -64,8 +64,8 @@
                             <visible>Skin.HasSetting(lowlist)</visible>
                         </control>
                         <control type="textbox">
-                            <posx>1390</posx>
-                            <posy>755</posy>
+                            <left>1390</left>
+                            <top>755</top>
                             <width>515</width>
                             <height>503</height>
                             <label>$VAR[InfoWallTextboxVar]</label>
@@ -81,56 +81,56 @@
                     <animation effect="fade" start="100" end="0" time="80">Hidden</animation>
                     <visible>Control.HasFocus(7002)</visible>
                     <control type="image">
-                        <posx>450</posx>
-                        <posy>600</posy>
+                        <left>450</left>
+                        <top>600</top>
                         <width>1440</width>
                         <height>1</height>
                         <texture>views/lowlistpanel_line.png</texture>
                         <colordiffuse>66FFFFFF</colordiffuse>
                     </control>
                     <control type="image">
-                        <posx>450</posx>
-                        <posy>975</posy>
+                        <left>450</left>
+                        <top>975</top>
                         <width>1440</width>
                         <height>1</height>
                         <texture>views/lowlistpanel_line.png</texture>
                         <colordiffuse>66FFFFFF</colordiffuse>
                     </control>
                     <control type="image">
-                        <posx>450</posx>
-                        <posy>675</posy>
+                        <left>450</left>
+                        <top>675</top>
                         <width>398</width>
                         <height>1</height>
                         <texture>views/lowlistpanel_line.png</texture>
                         <colordiffuse>66FFFFFF</colordiffuse>
                     </control>
                     <control type="image">
-                        <posx>450</posx>
-                        <posy>750</posy>
+                        <left>450</left>
+                        <top>750</top>
                         <width>398</width>
                         <height>1</height>
                         <texture>views/lowlistpanel_line.png</texture>
                         <colordiffuse>66FFFFFF</colordiffuse>
                     </control>
                     <control type="image">
-                        <posx>450</posx>
-                        <posy>825</posy>
+                        <left>450</left>
+                        <top>825</top>
                         <width>398</width>
                         <height>1</height>
                         <texture>views/lowlistpanel_line.png</texture>
                         <colordiffuse>66FFFFFF</colordiffuse>
                     </control>
                     <control type="image">
-                        <posx>450</posx>
-                        <posy>900</posy>
+                        <left>450</left>
+                        <top>900</top>
                         <width>398</width>
                         <height>1</height>
                         <texture>views/lowlistpanel_line.png</texture>
                         <colordiffuse>66FFFFFF</colordiffuse>
                     </control>
                     <control type="image">
-                        <posx>855</posx>
-                        <posy>607</posy>
+                        <left>855</left>
+                        <top>607</top>
                         <width>628</width>
                         <height>360</height>
                         <aspectratio>scale</aspectratio>
@@ -139,8 +139,8 @@
                         <bordersize>7</bordersize>
                     </control>
                     <control type="multiimage">
-                        <posx>862</posx>
-                        <posy>614</posy>
+                        <left>862</left>
+                        <top>614</top>
                         <width>614</width>
                         <height>346</height>
                         <aspectratio>scale</aspectratio>
@@ -155,8 +155,8 @@
                     <animation effect="fade" end="100" time="320">Visible</animation>
                     <animation effect="fade" start="100" end="0" time="80">Hidden</animation>
                     <control type="fadelabel">
-                        <posx>450</posx>
-                        <posy>540</posy>
+                        <left>450</left>
+                        <top>540</top>
                         <width>1440</width>
                         <height>60</height>
                         <align>center</align>
@@ -166,8 +166,8 @@
                         <visible>Container.Content(songs)</visible>
                     </control>
                     <control type="fadelabel">
-                        <posx>450</posx>
-                        <posy>540</posy>
+                        <left>450</left>
+                        <top>540</top>
                         <width>1440</width>
                         <height>60</height>
                         <align>center</align>
@@ -177,8 +177,8 @@
                         <visible>Container.Content(albums)</visible>
                     </control>
                     <control type="fadelabel">
-                        <posx>458</posx>
-                        <posy>975</posy>
+                        <left>458</left>
+                        <top>975</top>
                         <width>1242</width>
                         <height>105</height>
                         <label>$INFO[ListItem.Label]</label>
@@ -186,8 +186,8 @@
                         <textcolor>white3</textcolor>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>600</posy>
+                        <left>458</left>
+                        <top>600</top>
                         <width>390</width>
                         <height>38</height>
                         <label>$LOCALIZE[515]:</label>
@@ -195,8 +195,8 @@
                         <visible>Container.Content(songs) | Container.Content(albums)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>600</posy>
+                        <left>458</left>
+                        <top>600</top>
                         <width>390</width>
                         <height>38</height>
                         <label>$LOCALIZE[21900]:</label>
@@ -204,8 +204,8 @@
                         <visible>Container.Content(artists)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>638</posy>
+                        <left>458</left>
+                        <top>638</top>
                         <width>390</width>
                         <height>38</height>
                         <aligny>top</aligny>
@@ -214,8 +214,8 @@
                         <visible>Container.Content(artists)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>638</posy>
+                        <left>458</left>
+                        <top>638</top>
                         <width>390</width>
                         <height>38</height>
                         <aligny>top</aligny>
@@ -223,8 +223,8 @@
                         <visible>Container.Content(songs) | Container.Content(albums)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>675</posy>
+                        <left>458</left>
+                        <top>675</top>
                         <width>390</width>
                         <height>38</height>
                         <label>$LOCALIZE[21897]/$LOCALIZE[21896]:</label>
@@ -232,8 +232,8 @@
                         <visible>Container.Content(artists)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>712</posy>
+                        <left>458</left>
+                        <top>712</top>
                         <width>390</width>
                         <height>38</height>
                         <aligny>top</aligny>
@@ -242,8 +242,8 @@
                         <visible>Container.Content(artists)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>675</posy>
+                        <left>458</left>
+                        <top>675</top>
                         <width>390</width>
                         <height>38</height>
                         <label>$LOCALIZE[567]:</label>
@@ -251,8 +251,8 @@
                         <visible>Container.Content(songs)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>712</posy>
+                        <left>458</left>
+                        <top>712</top>
                         <width>390</width>
                         <height>38</height>
                         <aligny>top</aligny>
@@ -260,8 +260,8 @@
                         <visible>Container.Content(songs)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>750</posy>
+                        <left>458</left>
+                        <top>750</top>
                         <width>390</width>
                         <height>38</height>
                         <label>$LOCALIZE[21898]:</label>
@@ -269,8 +269,8 @@
                         <visible>Container.Content(artists)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>788</posy>
+                        <left>458</left>
+                        <top>788</top>
                         <width>390</width>
                         <height>38</height>
                         <aligny>top</aligny>
@@ -279,8 +279,8 @@
                         <visible>Container.Content(artists)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>750</posy>
+                        <left>458</left>
+                        <top>750</top>
                         <width>390</width>
                         <height>38</height>
                         <label>$LOCALIZE[568]:</label>
@@ -288,8 +288,8 @@
                         <visible>Container.Content(songs)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>788</posy>
+                        <left>458</left>
+                        <top>788</top>
                         <width>390</width>
                         <height>38</height>
                         <aligny>top</aligny>
@@ -297,8 +297,8 @@
                         <visible>Container.Content(songs)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>675</posy>
+                        <left>458</left>
+                        <top>675</top>
                         <width>390</width>
                         <height>38</height>
                         <label>$LOCALIZE[21899]:</label>
@@ -306,8 +306,8 @@
                         <visible>Container.Content(albums)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>712</posy>
+                        <left>458</left>
+                        <top>712</top>
                         <width>390</width>
                         <height>38</height>
                         <aligny>top</aligny>
@@ -316,8 +316,8 @@
                         <visible>Container.Content(albums)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>750</posy>
+                        <left>458</left>
+                        <top>750</top>
                         <width>390</width>
                         <height>38</height>
                         <label>$LOCALIZE[563]:</label>
@@ -326,8 +326,8 @@
                         <visible>Container.Content(songs) | Container.Content(albums)</visible>
                     </control>
                     <control type="image">
-                        <posx>333</posx>
-                        <posy>788</posy>
+                        <left>333</left>
+                        <top>788</top>
                         <width>390</width>
                         <height>30</height>
                         <aspectratio>keep</aspectratio>
@@ -336,8 +336,8 @@
                         <visible>Container.Content(songs) | Container.Content(albums)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>825</posy>
+                        <left>458</left>
+                        <top>825</top>
                         <width>390</width>
                         <height>38</height>
                         <label>$LOCALIZE[515]:</label>
@@ -345,8 +345,8 @@
                         <visible>Container.Content(artists)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>862</posy>
+                        <left>458</left>
+                        <top>862</top>
                         <width>390</width>
                         <height>38</height>
                         <aligny>top</aligny>
@@ -355,8 +355,8 @@
                         <visible>Container.Content(artists)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>825</posy>
+                        <left>458</left>
+                        <top>825</top>
                         <width>390</width>
                         <height>38</height>
                         <label>$LOCALIZE[467]:</label>
@@ -364,8 +364,8 @@
                         <visible>Container.Content(albums)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>862</posy>
+                        <left>458</left>
+                        <top>862</top>
                         <width>390</width>
                         <height>38</height>
                         <aligny>top</aligny>
@@ -373,8 +373,8 @@
                         <visible>Container.Content(albums)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>900</posy>
+                        <left>458</left>
+                        <top>900</top>
                         <width>390</width>
                         <height>38</height>
                         <label>$LOCALIZE[176]:</label>
@@ -382,8 +382,8 @@
                         <visible>Container.Content(artists)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>938</posy>
+                        <left>458</left>
+                        <top>938</top>
                         <width>390</width>
                         <height>38</height>
                         <aligny>top</aligny>
@@ -392,8 +392,8 @@
                         <visible>Container.Content(artists)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>900</posy>
+                        <left>458</left>
+                        <top>900</top>
                         <width>390</width>
                         <height>38</height>
                         <label>$LOCALIZE[345]:</label>
@@ -401,8 +401,8 @@
                         <visible>Container.Content(songs) | Container.Content(albums)</visible>
                     </control>
                     <control type="label">
-                        <posx>458</posx>
-                        <posy>938</posy>
+                        <left>458</left>
+                        <top>938</top>
                         <width>390</width>
                         <height>38</height>
                         <aligny>top</aligny>
@@ -410,8 +410,8 @@
                         <visible>Container.Content(songs) | Container.Content(albums)</visible>
                     </control>
                     <control type="textbox">
-                        <posx>1500</posx>
-                        <posy>615</posy>
+                        <left>1500</left>
+                        <top>615</top>
                         <width>405</width>
                         <height>348</height>
                         <label fallback="547">$VAR[InfoWallTextboxVar]</label>
@@ -424,8 +424,8 @@
                     <animation effect="slide" end="0,-214" time="120" condition="Skin.HasSetting(lowlist) + Control.HasFocus(7002)">Conditional</animation>
                     <animation effect="slide" end="0,-50" time="120" condition="!Skin.HasSetting(lowlist) + Control.HasFocus(7002)">Conditional</animation>
                     <control type="image">
-                        <posx>1500</posx>
-                        <posy>604</posy>
+                        <left>1500</left>
+                        <top>604</top>
                         <width>390</width>
                         <height>150</height>
                         <texture background="true">$VAR[LogoVar]</texture>
@@ -434,8 +434,8 @@
                     </control>
                 </control>
                 <control type="group">
-                    <posx>1725</posx>
-                    <posy>987</posy>
+                    <left>1725</left>
+                    <top>987</top>
                     <visible>Control.HasFocus(7002)</visible>
                     <control type="image">
                         <width>135</width>
@@ -459,15 +459,15 @@
                 <animation effect="slide" tween="cubic" easing="in" time="240" end="-450">WindowClose</animation>
                 <animation effect="slide" end="-60,0" time="200" easing="inout" tween="cubic" condition="Control.HasFocus(60)">Conditional</animation>
                 <control type="group">
-                    <posx>12</posx>
-                    <posy>420</posy>
+                    <left>12</left>
+                    <top>420</top>
                     <visible>Control.IsVisible(802) + Container.Content(songs)</visible>
                     <animation type="Conditional" condition="Skin.HasSetting(cdartlowlist)">
                         <effect type="slide" end="0,180" time="640" tween="cubic" easing="inout" />
                     </animation>
                     <control type="image">
-                        <posx>8</posx>
-                        <posy>8</posy>
+                        <left>8</left>
+                        <top>8</top>
                         <width>412</width>
                         <height>412</height>
                         <aspectratio>keep</aspectratio>
@@ -479,8 +479,8 @@
                     </control>
                 </control>
                 <control type="group">
-                    <posx>12</posx>
-                    <posy>600</posy>
+                    <left>12</left>
+                    <top>600</top>
                     <visible>Window.IsActive(musicplaylist) | Window.IsActive(musicfiles) | Window.IsActive(musiclibrary)</visible>
                     <control type="image">
                         <width>428</width>
@@ -489,8 +489,8 @@
                         <texture diffuse="thumbs/cdcover_mask.png" fallback="DefaultAudio.png">$VAR[ListAlbumVar]</texture>
                     </control>
                     <control type="image">
-                        <posx>-20</posx>
-                        <posy>-20</posy>
+                        <left>-20</left>
+                        <top>-20</top>
                         <width>468</width>
                         <height>468</height>
                         <aspectratio scalediffuse="false" align="right">scale</aspectratio>
@@ -499,7 +499,7 @@
                         <bordersize>20</bordersize>
                     </control>
                     <control type="image">
-                        <posy>430</posy>
+                        <top>430</top>
                         <width>428</width>
                         <height>428</height>
                         <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
@@ -509,8 +509,8 @@
                 </control>
             </control>
             <control type="fixedlist" id="506">
-                <posx>450</posx>
-                <posy>754</posy>
+                <left>450</left>
+                <top>754</top>
                 <width>1500</width>
                 <include condition="!Skin.HasSetting(lowlist)">LowListHeightHigh</include>
                 <include condition="Skin.HasSetting(lowlist)">LowListHeightLow</include>
@@ -529,23 +529,23 @@
                 <animation effect="fade" start="100" end="0" time="40" condition="Control.HasFocus(7002)">Conditional</animation>
                 <itemlayout height="66" width="1470">
                     <control type="image">
-                        <posx>1</posx>
-                        <posy>65</posy>
+                        <left>1</left>
+                        <top>65</top>
                         <width>910</width>
                         <height>1</height>
                         <texture>views/lowlistpanel_line.png</texture>
                         <visible>!Skin.HasSetting(lowlistmusicwidelist)</visible>
                     </control>
                     <control type="image">
-                        <posx>1</posx>
-                        <posy>65</posy>
+                        <left>1</left>
+                        <top>65</top>
                         <width>1470</width>
                         <height>1</height>
                         <texture>views/lowlistpanel_line.png</texture>
                         <visible>Skin.HasSetting(lowlistmusicwidelist)</visible>
                     </control>
                     <control type="label">
-                        <posx>52</posx>
+                        <left>52</left>
                         <width>75</width>
                         <height>66</height>
                         <align>center</align>
@@ -555,7 +555,7 @@
                         <visible>Container.Content(songs)</visible>
                     </control>
                     <control type="label">
-                        <posx>30</posx>
+                        <left>30</left>
                         <width>700</width>
                         <height>66</height>
                         <label>$INFO[ListItem.Label]</label>
@@ -564,7 +564,7 @@
                         <visible>!Container.Content(songs)</visible>
                     </control>
                     <control type="label">
-                        <posx>105</posx>
+                        <left>105</left>
                         <width>650</width>
                         <height>66</height>
                         <label>$INFO[ListItem.Title]</label>
@@ -575,7 +575,7 @@
                     <control type="group">
                         <animation effect="slide" end="500,0" time="0" condition="Skin.HasSetting(lowlistmusicwidelist)">Conditional</animation>
                         <control type="label">
-                            <posx>730</posx>
+                            <left>730</left>
                             <width>650</width>
                             <height>66</height>
                             <align>right</align>
@@ -585,8 +585,8 @@
                             <visible>Container.Content(albums)</visible>
                         </control>
                         <control type="label">
-                            <posx>838</posx>
-                            <posy>4</posy>
+                            <left>838</left>
+                            <top>4</top>
                             <width>146</width>
                             <height>33</height>
                             <align>center</align>
@@ -596,7 +596,7 @@
                             <visible>!Container.Content(albums)</visible>
                         </control>
                         <control type="label">
-                            <posx>838</posx>
+                            <left>838</left>
                             <width>146</width>
                             <height>33</height>
                             <align>center</align>
@@ -606,7 +606,7 @@
                             <visible>Container.Content(albums)</visible>
                         </control>
                         <control type="label">
-                            <posx>838</posx>
+                            <left>838</left>
                             <width>146</width>
                             <height>66</height>
                             <align>center</align>
@@ -616,8 +616,8 @@
                             <visible>Container.Content(artists)</visible>
                         </control>
                         <control type="image">
-                            <posx>766</posx>
-                            <posy>38</posy>
+                            <left>766</left>
+                            <top>38</top>
                             <width>146</width>
                             <height>21</height>
                             <aspectratio>keep</aspectratio>
@@ -631,14 +631,14 @@
                     <control type="group">
                         <visible>!Skin.HasSetting(lowlistmusicwidelist)</visible>
                         <control type="image">
-                            <posx>1</posx>
-                            <posy>65</posy>
+                            <left>1</left>
+                            <top>65</top>
                             <width>910</width>
                             <height>1</height>
                             <texture>views/lowlistpanel_line.png</texture>
                         </control>
                         <control type="image">
-                            <posx>14</posx>
+                            <left>14</left>
                             <width>897</width>
                             <height>66</height>
                             <texture border="8">views/tripanel/listselect_fo.png</texture>
@@ -650,14 +650,14 @@
                     <control type="group">
                         <visible>Skin.HasSetting(lowlistmusicwidelist)</visible>
                         <control type="image">
-                            <posx>1</posx>
-                            <posy>65</posy>
+                            <left>1</left>
+                            <top>65</top>
                             <width>1470</width>
                             <height>1</height>
                             <texture>views/lowlistpanel_line.png</texture>
                         </control>
                         <control type="image">
-                            <posx>14</posx>
+                            <left>14</left>
                             <width>1470</width>
                             <height>66</height>
                             <texture border="8">views/tripanel/listselect_fo.png</texture>
@@ -667,7 +667,7 @@
                         </control>
                     </control>
                     <control type="label">
-                        <posx>52</posx>
+                        <left>52</left>
                         <width>75</width>
                         <height>66</height>
                         <align>center</align>
@@ -676,7 +676,7 @@
                         <visible>Container.Content(songs)</visible>
                     </control>
                     <control type="label">
-                        <posx>30</posx>
+                        <left>30</left>
                         <width>650</width>
                         <height>33</height>
                         <label>$INFO[ListItem.Label]</label>
@@ -684,7 +684,7 @@
                         <visible>!Container.Content(songs)</visible>
                     </control>
                     <control type="label">
-                        <posx>105</posx>
+                        <left>105</left>
                         <width>650</width>
                         <height>33</height>
                         <label>$INFO[ListItem.Title]</label>
@@ -692,8 +692,8 @@
                         <visible>Container.Content(songs)</visible>
                     </control>
                     <control type="label">
-                        <posx>30</posx>
-                        <posy>32</posy>
+                        <left>30</left>
+                        <top>32</top>
                         <width>645</width>
                         <height>33</height>
                         <label>$INFO[ListItem.Genre]</label>
@@ -701,8 +701,8 @@
                         <visible>Container.Content(albums)</visible>
                     </control>
                     <control type="label">
-                        <posx>30</posx>
-                        <posy>32</posy>
+                        <left>30</left>
+                        <top>32</top>
                         <width>945</width>
                         <height>33</height>
                         <label>$INFO[ListItem.Property(Artist_Genre)]</label>
@@ -710,8 +710,8 @@
                         <visible>Container.Content(artists)</visible>
                     </control>
                     <control type="label">
-                        <posx>105</posx>
-                        <posy>32</posy>
+                        <left>105</left>
+                        <top>32</top>
                         <width>645</width>
                         <height>33</height>
                         <label>$INFO[ListItem.Artist]</label>
@@ -719,8 +719,8 @@
                         <visible>Container.Content(songs)</visible>
                     </control>
                     <control type="label">
-                        <posx>30</posx>
-                        <posy>32</posy>
+                        <left>30</left>
+                        <top>32</top>
                         <width>645</width>
                         <height>33</height>
                         <label>$INFO[ListItem.Path]</label>
@@ -730,7 +730,7 @@
                     <control type="group">
                         <animation effect="slide" end="500,0" time="0" condition="Skin.HasSetting(lowlistmusicwidelist)">Conditional</animation>
                         <control type="label">
-                            <posx>730</posx>
+                            <left>730</left>
                             <width>650</width>
                             <height>33</height>
                             <align>right</align>
@@ -739,7 +739,7 @@
                             <visible>Container.Content(albums)</visible>
                         </control>
                         <control type="label">
-                            <posx>838</posx>
+                            <left>838</left>
                             <width>146</width>
                             <height>33</height>
                             <align>center</align>
@@ -748,8 +748,8 @@
                             <visible>Container.Content(albums)</visible>
                         </control>
                         <control type="label">
-                            <posx>838</posx>
-                            <posy>4</posy>
+                            <left>838</left>
+                            <top>4</top>
                             <width>146</width>
                             <height>33</height>
                             <align>center</align>
@@ -758,8 +758,8 @@
                             <visible>!Container.Content(albums)</visible>
                         </control>
                         <control type="label">
-                            <posx>730</posx>
-                            <posy>32</posy>
+                            <left>730</left>
+                            <top>32</top>
                             <width>650</width>
                             <height>33</height>
                             <align>right</align>
@@ -768,8 +768,8 @@
                             <visible>Container.Content(albums)</visible>
                         </control>
                         <control type="image">
-                            <posx>766</posx>
-                            <posy>38</posy>
+                            <left>766</left>
+                            <top>38</top>
                             <width>146</width>
                             <height>21</height>
                             <aspectratio>keep</aspectratio>
@@ -778,7 +778,7 @@
                             <visible>Container.Content(albums) | Container.Content(songs)</visible>
                         </control>
                         <control type="label">
-                            <posx>838</posx>
+                            <left>838</left>
                             <width>146</width>
                             <height>66</height>
                             <align>center</align>
@@ -796,8 +796,8 @@
                 <animation effect="slide" tween="cubic" easing="in" time="240" end="0,606">WindowClose</animation>
                 <animation effect="fade" start="100" end="0" time="200" condition="!Control.HasFocus(60)">Conditional</animation>
                 <control type="scrollbar" id="60">
-                    <posx>407</posx>
-                    <posy>606</posy>
+                    <left>407</left>
+                    <top>606</top>
                     <width>46</width>
                     <height>460</height>
                     <include>Animation_VerticalScrollBar</include>
@@ -807,8 +807,8 @@
                     <visible>!Skin.HasSetting(lowlist)</visible>
                 </control>
                 <control type="scrollbar" id="60">
-                    <posx>407</posx>
-                    <posy>771</posy>
+                    <left>407</left>
+                    <top>771</top>
                     <width>46</width>
                     <height>300</height>
                     <include>Animation_VerticalScrollBar</include>
