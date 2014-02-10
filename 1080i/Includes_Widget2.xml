@@ -1018,6 +1018,7 @@
             <property name="Plot">$INFO[Window(Home).Property(SmartPlaylist10.2.Plot)]$INFO[Window(Home).Property(SmartPlaylist10.2.Description)]</property>
             <thumb>$INFO[Window(Home).Property(SmartPlaylist10.2.Art(thumb))]</thumb>
             <onclick>SetFocus(6014)</onclick>
+
             <visible>Substring(Control.GetLabel(4325),10custom)</visible>
             <visible>!IsEmpty(Window(Home).Property(SmartPlaylist10.2.Title))</visible>
         </item>
@@ -4252,6 +4253,7 @@
             <property name="Logo">$INFO[Window(Home).Property(RandomEpisode.1.Art(tvshow.clearlogo))]</property>
             <property name="Banner">$INFO[Window(Home).Property(RandomEpisode.1.Art(tvshow.banner))]</property>
             <property name="Poster">$INFO[Window(Home).Property(RandomEpisode.1.Art(tvshow.poster))]</property>
+
             <property name="Fanart">$INFO[Window(Home).Property(RandomEpisode.1.Art(tvshow.fanart))]</property>
             <property name="EpisodeNumber">$INFO[Window(Home).Property(RandomEpisode.1.EpisodeNo)]</property>
             <property name="Rating">$INFO[Window(Home).Property(RandomEpisode.1.Rating)]</property>
@@ -5740,7 +5742,7 @@
                         <info>Window(weather).Property(Day0.OutlookIcon)</info>
                     </control>
                     <control type="label">
-                        <left>140</left>
+                        <left>-10</left>
                         <top>221</top>
                         <width>142</width>
                         <height>30</height>
@@ -5760,7 +5762,7 @@
                         <visible>!IsEmpty(Window(weather).Property(Day0.HighTemp))</visible>
                     </control>
                     <control type="label">
-                        <left>140</left>
+                        <left>-10</left>
                         <top>255</top>
                         <width>142</width>
                         <height>52</height>
@@ -5813,7 +5815,7 @@
                         <info>Window(weather).Property(Day1.OutlookIcon)</info>
                     </control>
                     <control type="label">
-                        <left>140</left>
+                        <left>-10</left>
                         <top>221</top>
                         <width>142</width>
                         <height>30</height>
@@ -5833,7 +5835,7 @@
                         <visible>!IsEmpty(Window(weather).Property(Day1.HighTemp))</visible>
                     </control>
                     <control type="label">
-                        <left>140</left>
+                        <left>-10</left>
                         <top>255</top>
                         <width>142</width>
                         <height>45</height>
@@ -5886,7 +5888,7 @@
                         <info>Window(weather).Property(Day2.OutlookIcon)</info>
                     </control>
                     <control type="label">
-                        <left>140</left>
+                        <left>-10</left>
                         <top>221</top>
                         <width>142</width>
                         <height>30</height>
@@ -5906,7 +5908,7 @@
                         <visible>!IsEmpty(Window(weather).Property(Day2.HighTemp))</visible>
                     </control>
                     <control type="label">
-                        <left>140</left>
+                        <left>-10</left>
                         <top>255</top>
                         <width>142</width>
                         <height>45</height>
@@ -5959,7 +5961,7 @@
                         <info>Window(weather).Property(Day3.OutlookIcon)</info>
                     </control>
                     <control type="label">
-                        <left>140</left>
+                        <left>-10</left>
                         <top>221</top>
                         <width>142</width>
                         <height>30</height>
@@ -5979,7 +5981,7 @@
                         <visible>!IsEmpty(Window(weather).Property(Day3.HighTemp))</visible>
                     </control>
                     <control type="label">
-                        <left>140</left>
+                        <left>-10</left>
                         <top>255</top>
                         <width>142</width>
                         <height>45</height>
@@ -6624,6 +6626,7 @@
             <visible>Substring(Control.GetLabel(4325),babesimagespanel)</visible>
         </item>    
 		<item>
+
             <property name="Fanart">http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/12/$INFO[System.Date(dd)]/1.jpg</property>
             <thumb>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/12/$INFO[System.Date(dd)]/1.jpg</thumb>
             <onclick>SetFocus(6014)</onclick>
@@ -6822,6 +6825,7 @@
         <item>
             <label>$INFO[Window(home).Property(CyanideHappiness.7.Title)]</label>
             <thumb>$INFO[Window(home).Property(CyanideHappiness.7.Image)]</thumb>
+
             <onclick>SetFocus(6014)</onclick>
             <visible>Substring(Control.GetLabel(4325),cyanide)</visible>
             <visible>!IsEmpty(Window(Home).Property(CyanideHappiness.7.Title))</visible>
