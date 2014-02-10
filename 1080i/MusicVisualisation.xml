@@ -113,7 +113,7 @@
                     <colordiffuse>$VAR[ExtendedColorVar]</colordiffuse>
                 </control>
                 <control type="label">
-                    <left>734</left>
+                    <left>120</left>
                     <top>-2</top>
                     <width>600</width>
                     <height>40</height>

@@ -728,13 +728,14 @@
                         <width>135</width>
                         <height>35</height>
                         <align>center</align>
-                        <label>$LOCALIZE[134]</label>
+                        <label>$LOCALIZE[345]</label>
                         <font>Font_Reg19_Caps</font>
                         <textcolor>floor</textcolor>
                     </control>
                 </control>
                 </control>
                 <control type="group">
+				<animation effect="slide" end="-1000,0" time="0" condition="Control.IsVisible(514)">Conditional</animation>
                <!-- Label -->
                 <control type="group">
                     <left>1500</left>
@@ -872,8 +873,10 @@
                     <texture>$INFO[ListItem.FileExtension,flags/audio/,.png]</texture>
                     <include>AudioFlagsVars</include>
                     <visible>Container.Content(Songs)</visible>
+					<animation effect="slide" end="-1000,0" time="0" condition="Control.IsVisible(514)">Conditional</animation>
                 </control>
             <control type="group">
+			<animation effect="slide" end="-1000,0" time="0" condition="Control.IsVisible(514)">Conditional</animation>
                 <!-- Genre -->
                 <visible>!IsEmpty(ListItem.Genre)</visible>
                 <include>Animation_VisibleChange200</include>

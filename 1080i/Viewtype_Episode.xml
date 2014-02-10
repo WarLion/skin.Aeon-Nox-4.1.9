@@ -99,6 +99,16 @@
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                     <visible>!IsEmpty(Control.GetLabel(3822))</visible>
                 </control>
+						         <control type="textbox">
+                    <left>0</left>
+                    <top>0</top>
+                    <width>740</width>
+                    <height>194</height>
+                    <align>right</align>
+                    <label>sudfhikjshdf sjhaskdjfkjsadhf ksjdfhf kjash kjashfjashkjashfkjasdhfkjasdhf kljasdhfkjsdhfkjasdfjsdhf s</label>
+                    <font>Font_Reg30_2</font>
+                    <autoscroll time="AutoScrollTime" delay="6000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
+                </control>
                 <control type="image" id="3822">
                     <left>49</left>
                     <top>190</top>

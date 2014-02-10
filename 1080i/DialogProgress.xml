@@ -73,7 +73,7 @@
 				<control type="textbox" id="9">
 					<description>text</description>
                     <width>780</width>
-                    <height>60</height>
+                    <height>150</height>
                     <textoffsetx>45</textoffsetx>
                     <align>center</align>
                     <textcolor>white3</textcolor>
@@ -84,7 +84,7 @@
             </control>
             <control type="progress" id="20">
                 <left>45</left>
-                <top>225</top>
+                <top>205</top>
                 <width>690</width>
                 <height>21</height>
                 <texturebg border="12,0,12,0">dialogs/progress/progress_back.png</texturebg>
@@ -95,7 +95,7 @@
             <control type="button" id="10">
                 <textoffsety></textoffsety>
                 <left>278</left>
-                <top>258</top>
+                <top>238</top>
                 <width>225</width>
                 <height>45</height>
                 <textoffsetx>30</textoffsetx>

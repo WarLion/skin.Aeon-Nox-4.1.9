@@ -61,34 +61,11 @@
             <texture>views/showcase_gradient.png</texture>
         </control>
         <control type="group">
-            <include>Animation_HideBreadCrumbs</include>
             <include>Breadcrumbs_BackBar</include>
             <include>BreadcrumbsContent</include>
-            <control type="grouplist">
-                <width>1920</width>
-                <align>center</align>
-                <aligny>center</aligny>
-                <itemgap>10</itemgap>
-                <orientation>horizontal</orientation>
-                <visible>!Skin.HasSetting(ClassicTopBar)</visible>
-                <animation effect="fade" time="320" delay="320">Visible</animation>
-                <animation effect="fade" time="320">Hidden</animation>
-            </control>
             <include>Breadcrumbs_Furniture</include>
-			<control type="group">
-				<left>20</left>
-				<top>1</top>
-				<width>800</width>
-				<height>50</height>
-				<animation type="WindowOpen" reversible="false">
-					<effect type="fade" end="100" time="300" />
-				</animation>
-				<animation type="WindowClose" reversible="false">
-					<effect type="fade" start="100" end="0" time="300" />
-				</animation>				
-			</control>			
+			<include>Furniture_NowPlayingWidget</include>
         </control>
-        <include>Furniture_NowPlayingWidget</include>
         <!---MEDIA MENU-->
         <control type="group" id="9000">
             <visible>!Skin.HasSetting(kioskmode)</visible>
