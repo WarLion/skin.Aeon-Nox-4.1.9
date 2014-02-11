@@ -46,34 +46,10 @@
                 <top>68</top>
                 <width>780</width>
                 <height>330</height>
-              <!--  <control type="label" id="2">
-                    <width>780</width>
-                    <height>45</height>
-                    <textoffsetx>45</textoffsetx>
-                    <align>center</align>
-                    <textcolor>white3</textcolor>
-                    <scroll>true</scroll>
-                </control>
-                <control type="label" id="3">
-                    <width>780</width>
-                    <height>45</height>
-                    <textoffsetx>45</textoffsetx>
-                    <align>center</align>
-                    <textcolor>white3</textcolor>
-                    <scroll>true</scroll>
-                </control>
-                <control type="label" id="4">
-                    <width>780</width>
-                    <height>45</height>
-                    <textoffsetx>45</textoffsetx>
-                    <align>center</align>
-                    <textcolor>white3</textcolor>
-                    <scroll>true</scroll>
-                </control>-->
 				<control type="textbox" id="9">
 					<description>text</description>
                     <width>780</width>
-                    <height>45</height>
+                    <height>330</height>
                     <textoffsetx>45</textoffsetx>
                     <align>center</align>
                     <textcolor>white3</textcolor>
@@ -84,7 +60,7 @@
             <control type="button" id="10">
                 <textoffsety></textoffsety>
                 <left>390</left>
-                <top>258</top>
+                <top>228</top>
                 <width>225</width>
                 <height>45</height>
                 <textoffsetx>30</textoffsetx>
@@ -101,7 +77,7 @@
             <control type="button" id="11">
                 <textoffsety></textoffsety>
                 <left>165</left>
-                <top>258</top>
+                <top>228</top>
                 <width>225</width>
                 <height>45</height>
                 <textoffsetx>30</textoffsetx>

@@ -44,37 +44,10 @@
             </control>
             <control type="grouplist">
                 <top>68</top>
-          <!--      <control type="label" id="2">
-                    <width>780</width>
-                    <height>60</height>
-                    <textoffsetx>45</textoffsetx>
-                    <align>center</align>
-                    <textcolor>white3</textcolor>
-                    <scroll>true</scroll>
-                    <wrapmultiline>true</wrapmultiline>
-                </control>
-                <control type="label" id="3">
-                    <width>780</width>
-                    <height>60</height>
-                    <textoffsetx>45</textoffsetx>
-                    <align>center</align>
-                    <textcolor>white3</textcolor>
-                    <wrapmultiline>true</wrapmultiline>
-                    <scroll>true</scroll>
-                </control>
-                <control type="label" id="4">
-                    <width>780</width>
-                    <height>60</height>
-                    <textoffsetx>45</textoffsetx>
-                    <align>center</align>
-                    <textcolor>white3</textcolor>
-                    <wrapmultiline>true</wrapmultiline>
-                    <scroll>true</scroll>
-                </control>-->
 				<control type="textbox" id="9">
 					<description>text</description>
                     <width>780</width>
-                    <height>60</height>
+                    <height>330</height>
                     <textoffsetx>45</textoffsetx>
                     <align>center</align>
                     <textcolor>white3</textcolor>
@@ -84,7 +57,7 @@
             </control>
             <control type="button" id="10">
                 <left>278</left>
-                <top>258</top>
+                <top>228</top>
                 <width>225</width>
                 <height>45</height>
                 <textoffsetx>30</textoffsetx>

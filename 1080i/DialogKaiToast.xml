@@ -9,6 +9,7 @@
     <include>Animation_DialogPopup</include>
     <controls>
         <control type="group">
+		<!--	<visible>!Player.HasMedia</visible>-->
             <include>Dialogs_Group</include>
             <include>Dialogs_Tablet</include>
             <animation effect="slide" end="0,-870" time="0" condition="VideoPlayer.IsFullscreen | [[Window.IsActive(home) | Window.IsActive(1124)] + Skin.HasSetting(lowermainmenu)]">Conditional</animation>
@@ -42,5 +43,43 @@
                 <scroll>true</scroll>
             </control>
         </control>
+	<!--	<control type="group">
+			<visible>Player.HasMedia</visible>
+			<left>1509</left>
+			<top>1000</top>
+			<width>500</width>
+			<height>80</height>             
+		<control type="image">
+            <left>-4</left>
+            <top>-4</top>
+            <width>500</width>
+            <height>80</height>
+            <texture>dialogs/scan_backg_shadow.png</texture>
+            <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+            <visible>!Skin.HasSetting(DisableGlowbar)</visible>
+            <include>PanelGlowFade</include>
+            <include>Animation_VisibleChange400</include>
+        </control>
+        <control type="image">
+            <left>-4</left>
+            <top>-4</top>
+            <width>400</width>
+            <height>80</height>
+            <texture>dialogs/scan_backg.png</texture>
+            <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
+        </control>
+            <animation effect="slide" end="0,0" time="0" condition="VideoPlayer.IsFullscreen | [[Window.IsActive(home) | Window.IsActive(1124)] + Skin.HasSetting(lowermainmenu)]">Conditional</animation>
+            <animation effect="slide" end="0,470" time="0" condition="[Window.IsActive(home) + Skin.HasSetting(lowermainmenu) + Window.IsActive(1128)]">Conditional</animation>
+            <control type="label" id="401">
+                <left>30</left>
+                <top>17.5</top>
+                <width>340</width>
+                <height>32</height>
+                <align>center</align>
+                <font>Font_Bold26_Caps</font>
+                <textcolor>white3</textcolor>
+                <scroll>true</scroll>
+            </control>	
+        </control>	-->
     </controls>
 </window>

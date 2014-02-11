@@ -25,49 +25,54 @@
             <control type="image">
                 <left>34</left>
                 <top>34</top>
-                <width>925</width>
+                <width>1850</width>
                 <height>1010</height>
-                <aspectratio align="left">scale</aspectratio>
-                <texture>settings/settings_panelback.png</texture>
+                <texture>settings/settings_panelback-mod.png</texture>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
-            <control type="image">
-                <left>959</left>
-                <top>34</top>
-                <width>925</width>
-                <height>1010</height>
-                <aspectratio align="right">scale</aspectratio>
-                <texture flipx="true">settings/settings_panelback.png</texture>
-                <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
+			<control type="label" id="20">
+				<left>418</left>
+				<top>-850</top>
+                <width>800</width>
+                <align>left</align>
+                <label>-</label>
+                <font>Font_ShowcaseMainLabel2</font>
             </control>
             <control type="grouplist" id="9">
                 <left>63</left>
                 <top>180</top>
                 <width>387</width>
-                <height>768</height>
-                <onleft>9001</onleft>
-                <onright>2</onright>
-                <onup>9</onup>
-                <ondown>9</ondown>
-            </control>
-            <control type="label" id="20">
-                <top>-800</top>
-                <width>1920</width>
-                <align>center</align>
-                <label>-</label>
-                <font>Font_ShowcaseMainLabel2</font>
-            </control>
-            <control type="grouplist" id="2">
-                <left>388</left>
+                <height>800</height>
+				<onleft>30</onleft>
+				<onright>2</onright>
+				<onup>9</onup>
+				<ondown>9</ondown>
+				<orientation>vertical</orientation>
+			</control>
+			<control type="grouplist" id="2">
+				<description>control area</description>
+				<left>388</left>
+				<top>180</top>
+				<width>1464</width>
+				<height>690</height>
+				<itemgap>5</itemgap>
+				<pagecontrol>30</pagecontrol>
+				<onup>9001</onup>
+				<ondown>9001</ondown>
+				<onleft>9</onleft>
+				<onright>30</onright>
+			</control>		
+            <control type="scrollbar" id="30">
+                <left>1835</left>
                 <top>180</top>
-                <width>1142</width>
-                <height>801</height>
-                <pagecontrol>30</pagecontrol>
-                <onup>2</onup>
-                <ondown>2</ondown>
-                <onleft>9</onleft>
-                <onright>9001</onright>
-            </control>
+                <width>46</width>
+                <height>795</height>
+                <texturesliderbackground>views/scrollbarbacklist.png</texturesliderbackground>
+                <onleft>2</onleft>
+                <onright>10</onright>
+                <ondown>30</ondown>
+                <onup>30</onup>
+            </control>			
             <control type="button" id="13">
                 <width>323</width>
                 <height>74</height>
@@ -89,7 +94,7 @@
                 <texturenofocus>settings/settings_radiobuttonoff.png</texturenofocus>
                 <textcolor>grey2</textcolor>
                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-                <radioleft>1000</radioleft>
+                <radioleft>900</radioleft>
             </control>
             <control type="spincontrolex" id="5">
                 <textoffsetx>40</textoffsetx>
@@ -112,52 +117,60 @@
                 <textcolor>grey2</textcolor>
             </control>
             <control type="grouplist" id="9001">
-                <left>1531</left>
-                <top>180</top>
-                <width>426</width>
-                <height>768</height>
-                <onup>9001</onup>
-                <ondown>9001</ondown>
-                <onleft>2</onleft>
-                <onright>9</onright>
-                <orientation>vertical</orientation>
+                <left>600</left>
+                <top>918</top>
+                <onleft>9</onleft>
+                <onright>9</onright>				
+                <orientation>Horizontal</orientation>
                 <control type="button" id="10">
                     <width>324</width>
-                    <height>74</height>
-                    <textoffsetx>18</textoffsetx>
-                    <textoffsety>18</textoffsety>
+                    <height>97</height>					
                     <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
-                    <label>186</label>
+					<label>186</label>
+					<onleft>12</onleft>
+					<onright>11</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<onup>2</onup>
+					<ondown>2</ondown>
                     <font>Font_Bold34</font>
                     <textcolor>grey</textcolor>
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 </control>
                 <control type="button" id="11">
                     <width>324</width>
-                    <height>74</height>
-                    <textoffsetx>18</textoffsetx>
-                    <textoffsety>18</textoffsety>
+                    <height>97</height>
                     <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
-                    <label>222</label>
+					<label>222</label>
+					<onleft>10</onleft>
+					<onright>12</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<onup>2</onup>
+					<ondown>2</ondown>
                     <font>Font_Bold34</font>
                     <textcolor>grey</textcolor>
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 </control>
                 <control type="button" id="12">
                     <width>324</width>
-                    <height>74</height>
-                    <textoffsetx>18</textoffsetx>
-                    <textoffsety>18</textoffsety>
+                    <height>97</height>
                     <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
-                    <label>409</label>
+					<label>409</label>
+					<onleft>11</onleft>
+					<onright>10</onright>
+					<align>center</align>
+					<aligny>center</aligny>
+					<onup>2</onup>
+					<ondown>2</ondown>
                     <font>Font_Bold34</font>
                     <textcolor>grey</textcolor>
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 </control>
-            </control>
+            </control>	
         </control>
     </controls>
 </window>
