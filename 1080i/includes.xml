@@ -141,7 +141,7 @@
         <radioleft>308</radioleft>
     </include>
     <include name="Objects_MediaMenuButtonIcons">
-        <width>450</width>
+        <width>420</width>
         <height>95</height>
         <textoffsetx>82</textoffsetx>
         <textoffsety>28</textoffsety>

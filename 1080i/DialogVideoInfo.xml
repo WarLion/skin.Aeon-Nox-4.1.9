@@ -1573,7 +1573,7 @@
 								<visible>Container.Content(tvshows) + system.hasaddon(script.tvtunes) + Skin.HasSetting(TVTunes.Enabled)</visible>
 							</control>							
 					</control>	
-					<control type="button" id="10">
+					<control type="button" id="70095">
 						<label>$LOCALIZE[31284]</label>
 						<include>DialogVideoInfoButton</include>
 						<onclick>Playlist.Clear</onclick>

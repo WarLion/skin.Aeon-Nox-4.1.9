@@ -112,7 +112,7 @@
 		<control type="label">
 			<left>194</left>
 			<top>700</top>
-			<width>294</width>
+			<width>300</width>
 			<font>Font_Bold22_Caps</font>	
 			<label>$LOCALIZE[32967]</label>		
 		</control>

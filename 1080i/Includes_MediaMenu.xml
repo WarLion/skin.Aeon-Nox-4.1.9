@@ -182,6 +182,14 @@
             <include>Objects_MediaMenuButtonIcons</include>
             <visible>Control.IsEnabled(10)</visible>
         </control>
+		<control type="togglebutton" id="2667">
+			<description>Update library</description>
+			<include>Objects_MediaMenuButtonIcons</include>
+			<label>653</label>
+			<altlabel>13353</altlabel>
+			<usealttexture>library.isscanningvideo</usealttexture>
+			<onclick>UpdateLibrary(music)</onclick>
+		</control>			
         <control type="radiobutton" id="102">
             <label>$LOCALIZE[29800]</label>
             <include>Objects_MediaMenuButtonIcons</include>
@@ -492,7 +500,7 @@
                 </control>
                 <control type="image">
                     <texture>special://skin/extras/BigIcons/ButtonReload.png</texture>
-                    <animation effect="fade" start="100" end="55" time="0" condition="![Control.HasFocus(2666)]">Conditional</animation>
+                    <animation effect="fade" start="100" end="55" time="0" condition="![Control.HasFocus(2666) + Control.HasFocus(2667)]">Conditional</animation>
                     <include>MediaMenuIcons</include>
                     <visible>Control.IsVisible(100) | Control.IsVisible(102)</visible>
                 </control>			
