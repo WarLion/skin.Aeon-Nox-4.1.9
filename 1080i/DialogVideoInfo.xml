@@ -1628,7 +1628,7 @@
                         <width>254.5</width>
                         <orientation>vertical</orientation>
                         <visible>!Skin.HasSetting(kioskmode) + !substring(Container.FolderPath,plugin://)</visible>
-                        <control type="button" id="5050">
+                        <control type="button" id="10">
                             <label>$LOCALIZE[13511]</label>
                             <include>DialogVideoInfoButton</include>
                         </control>
