@@ -2780,4 +2780,24 @@
             </control>
         </control>
     </include>
+	<include name="autoratote_extendedinfo_fanart">
+		<onunfocus>CancelAlarm(MusicInfo5PanelsFanart,true)</onunfocus>
+ 		<onfocus>AlarmClock(MusicInfo5PanelsDiscography,SetFocus(6012),00:10,silent)</onfocus>	
+	</include>
+	<include name="autoratote_extendedinfo_Artist">
+		<onunfocus>CancelAlarm(MusicInfo5PanelsArtists,true)</onunfocus>
+ 		<onfocus>AlarmClock(MusicInfo5PanelsBio,SetFocus(7012),00:10,silent)</onfocus>	
+	</include>	
+	<include name="autoratote_extendedinfo_Discography">
+		<onunfocus>CancelAlarm(MusicInfo5PanelsDiscography,true)</onunfocus>
+ 		<onfocus>AlarmClock(MusicInfo5PanelsPlaylist,SetFocus(8012),00:10,silent)</onfocus>
+	</include>	
+	<include name="autoratote_extendedinfo_Bio">
+		<onunfocus>CancelAlarm(MusicInfo5PanelsBio,true)</onunfocus>
+ 		<onfocus>AlarmClock(MusicInfo5PanelsFanart,SetFocus(9012),00:10,silent)</onfocus>
+	</include>	
+	<include name="autoratote_extendedinfo_Playlist">
+		<onunfocus>CancelAlarm(MusicInfo5PanelsPlaylist,true)</onunfocus>
+ 		<onfocus>AlarmClock(MusicInfo5PanelsArtists,SetFocus(5012),00:10,silent)</onfocus>
+	</include>		
 </includes>

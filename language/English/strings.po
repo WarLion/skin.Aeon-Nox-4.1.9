@@ -2293,3 +2293,7 @@ msgstr ""
 msgctxt "#32974"
 msgid "Video Info Options"
 msgstr ""
+
+msgctxt "#32975"
+msgid " -AutoRotate Music Info"
+msgstr ""
