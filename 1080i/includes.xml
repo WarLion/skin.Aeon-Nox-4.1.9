@@ -1439,7 +1439,7 @@
                 <action>seek</action>
             </control>
             <control type="label">
-                <left>135</left>
+                <left>-160</left>
                 <top>45</top>
                 <width>300</width>
                 <height>42</height>

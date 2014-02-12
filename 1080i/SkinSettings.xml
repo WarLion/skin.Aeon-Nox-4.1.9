@@ -233,8 +233,8 @@
                         <label>$LOCALIZE[32974]</label>
                         <include>Default_SettingButton</include>
                         <onclick>ActivateWindow(1165)</onclick>
-                    </control>					
-                </control>
+                    </control>										
+                </control>			
                 <control type="grouplist" id="9004">
                     <left>387</left>
                     <top>200</top>
@@ -550,7 +550,7 @@
                         <onclick condition="Stringcompare(Skin.String(LibraryStructure),1)">Skin.SetString(LibraryStructure,2)</onclick>
                     </control>
                 </control>
-            </control>
+            </control>			
             <control type="group">
                 <left>1170</left>
                 <top>780</top>
