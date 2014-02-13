@@ -1367,7 +1367,7 @@
                 <textcolor>white6</textcolor>
             </control>
             <control type="label">
-                <left>1530</left>
+                <left>390</left>
                 <top>128</top>
                 <width>1140</width>
                 <height>38</height>
@@ -1378,7 +1378,7 @@
                 <visible>!Skin.HasSetting(PreferRemaining)</visible>
             </control>
             <control type="label">
-                <left>1530</left>
+                <left>390</left>
                 <top>128</top>
                 <width>1140</width>
                 <height>38</height>
