@@ -37,7 +37,7 @@
             </control>
             <control type="label">
                 <left>267</left>
-                <top>320</top>
+                <top>-320</top>
                 <width>954</width>
                 <align>center</align>
                 <label>$LOCALIZE[21421]</label>

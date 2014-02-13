@@ -7,6 +7,7 @@
     <onunload>Skin.SetString($INFO[Window(home).Property(MenuItem)].Label,$ESCINFO[Skin.String(ItemToEdit.Label)])</onunload>
     <onunload>Skin.SetString($INFO[Window(home).Property(MenuItem)].Path,$ESCINFO[Skin.String(ItemToEdit.Path)])</onunload>
     <onunload>Skin.SetString($INFO[Window(home).Property(MenuItem)].Icon,$ESCINFO[Skin.String(ItemToEdit.Icon)])</onunload>
+	<onunload>SetFocus(1132)</onunload>
     <controls>
         <control type="group">
             <visible>!Window.IsActive(1137) + !Window.IsActive(1133) + !Window.IsActive(1138) + !Window.IsActive(1142) + !Window.IsActive(1143) + !Window.IsActive(1144) + !Window.IsActive(1145)</visible>
