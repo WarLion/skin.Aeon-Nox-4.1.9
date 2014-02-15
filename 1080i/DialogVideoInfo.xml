@@ -1582,14 +1582,14 @@
 						<visible>Container.Content(Movies) + system.hasaddon(script.cinema.experience) + !SubString(Container.FolderPath,plugin)</visible>
 						<visible>!Skin.HasSetting(Extra.Disable)</visible>
 					</control>
-					<control type="button" id="11">
+					<control type="button" id="100">
 						<include>DialogVideoInfoButton</include>
 						<label>Video $LOCALIZE[31020]</label>
 						<onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
 						<visible>System.HasAddon(script.videoextras) + !IsEmpty(Window.Property(flag)) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(TVShows)]</visible>
 						<visible>!Skin.HasSetting(Extra.Disable)</visible>
 					</control>						
-                    <control type="button" id="12">
+                    <control type="button" id="11">
                         <label>$LOCALIZE[20410]</label>
                         <include>DialogVideoInfoButton</include>
                         <visible>!IsEmpty(ListItem.Trailer)</visible>
