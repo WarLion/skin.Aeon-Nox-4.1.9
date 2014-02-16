@@ -13,7 +13,7 @@
             <top>-2</top>
             <width>192</width>
             <height>277</height>
-            <texture>wall/boxes/wall_movie_overlay.png</texture>
+            <texture>wall/boxes/wall_movie_overlay.png</texture><!--texture for cases--->
             <visible>Skin.HasSetting(wallcases)</visible>
         </control>
         <include>UnwatchedIcon</include>
