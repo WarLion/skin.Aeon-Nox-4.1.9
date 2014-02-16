@@ -166,7 +166,7 @@
                 </control>
                 <control type="label">
                     <left>510</left>
-                    <top>1040</top>
+                    <top>1000</top>
                     <width>900</width>
                     <align>center</align>
                     <label>$INFO[ListItem.Label]</label>
@@ -182,7 +182,7 @@
                 </control>
                 <control type="label">
                     <left>510</left>
-                    <top>1040</top>
+                    <top>1000</top>
                     <width>900</width>
                     <align>center</align>
                     <label>$INFO[ListItem.Title]</label>
@@ -198,7 +198,7 @@
                 </control>
                 <control type="label">
                     <left>510</left>
-                    <top>1030</top>
+                    <top>1000</top>
                     <width>900</width>
                     <align>center</align>
                     <label>$VAR[LandscapeLogoLabelVar]</label>
@@ -270,17 +270,7 @@
             <visible>IsEmpty(ListItem.Art(clearlogo))</visible>
             <control type="label">
                 <left>248</left>
-                <top>330</top>
-                <width>470</width>
-                <align>center</align>
-                <label>$VAR[SecondLabelVar]</label>
-                <font>Font_Reg28_Caps</font>
-                <shadowcolor>floorshadow</shadowcolor>
-                <textcolor>white2</textcolor>
-            </control>
-            <control type="label">
-                <left>248</left>
-                <top>296</top>
+                <top>100</top>
                 <width>470</width>
                 <align>center</align>
                 <label>$VAR[FirstLabelVar]</label>
@@ -314,17 +304,7 @@
             <visible>IsEmpty(ListItem.Art(clearlogo)) + IsEmpty(ListItem.Art(clearart))</visible>
             <control type="label">
                 <left>248</left>
-                <top>330</top>
-                <width>470</width>
-                <align>center</align>
-                <label>$VAR[SecondLabelVar]</label>
-                <font>Font_Reg28_Caps</font>
-                <shadowcolor>floorshadow</shadowcolor>
-                <textcolor>white2</textcolor>
-            </control>
-            <control type="label">
-                <left>248</left>
-                <top>296</top>
+                <top>100</top>
                 <width>470</width>
                 <align>center</align>
                 <label>$VAR[FirstLabelVar]</label>

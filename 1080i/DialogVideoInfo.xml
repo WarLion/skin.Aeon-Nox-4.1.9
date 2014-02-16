@@ -1528,6 +1528,13 @@
                         <label>$VAR[DialogVideoInfoButtonLabelVar]</label>
                         <include>DialogVideoInfoButton</include>
                     </control>
+               		<control type="button" id="101">
+						<description>Extras</description>
+						<include>DialogVideoInfoButton</include>
+						<label>Play Theme</label>
+						<onclick>PlayMedia($INFO[ListItem.FileNameAndPath]\theme.mp3)</onclick>
+						<visible>Container.Content(tvshows)</visible>
+					</control>						
                     <control type="button" id="9">
                         <label>$LOCALIZE[13404]</label>
                         <include>DialogVideoInfoButton</include>
@@ -1659,6 +1666,20 @@
                             <visible>ControlGroup(6000).HasFocus</visible>
                             <visible>Container.Content(movies) | Container.Content(tvshows)</visible>
                         </control>
+						<control type="button" id="22">
+							<label>$LOCALIZE[31316]</label>
+							<include>DialogVideoInfoButtonSolid</include>
+							<onclick>ActivateWindow(1163)</onclick>
+							<visible>ControlGroup(6000).HasFocus</visible>
+							<visible>[Container.Content(tvshows) | Container.Content(movies)] + system.hasaddon(script.artwork.downloader) + !substring(Container.FolderPath,plugin://)</visible>
+						</control>		
+						<control type="button" id="23">
+							<label>$LOCALIZE[31365]</label>
+							<include>DialogVideoInfoButtonSolid</include>
+							<onclick>RunScript(script.tvtunes,mode=solo&amp;tvpath=$ESCINFO[ListItem.FilenameAndPath]&amp;t vname=$INFO[ListItem.TVShowTitle])</onclick>
+							<visible>ControlGroup(6000).HasFocus</visible>
+							<visible>Container.Content(tvshows) + system.hasaddon(script.tvtunes)</visible>	
+						</control>								
                         <control type="button" id="24">
                             <label>$LOCALIZE[31468]</label>
                             <include>DialogVideoInfoButtonSolid</include>

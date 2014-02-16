@@ -270,7 +270,7 @@
                             </control>
                         </control>
                         <control type="grouplist">
-                            <left>1430</left>
+                            <left>1320</left>
                             <top>80</top>
                             <width>800</width>
                             <itemgap>10</itemgap>
@@ -308,31 +308,29 @@
                                 <animation effect="slide" end="-145,23" time="0" condition="true">Conditional</animation>
                                 <visible>!IsEmpty(ListItem.Year)</visible>
                             </control>
-                            <!--<control type="image">
-                
-                
+              <control type="image">
                 <width>135</width>
                 <height>88</height>
                 <colordiffuse>grey2</colordiffuse>
                 <fadetime>IconCrossfadeTime2</fadetime>
                 <texture>$INFO[ListItem.Property(Album_Label),flags/music/recordlabel/,.png]</texture>
                 <animation effect="slide" end="-145" time="0" condition="!IsEmpty(ListItem.Year)">Conditional</animation>
-              </control>-->
-                            <!--<control type="image">
-                
-                
-                <width>135</width>
-                <height>88</height>
-                <aspectratio>keep</aspectratio>
-                <fadetime>400</fadetime>
-                <texture background="true">$INFO[Skin.String(ArtistsLogosPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
-                <visible>!IsEmpty(Skin.String(ArtistsLogosPath))</visible>
-                <animation effect="slide" end="-145" time="0" condition="!IsEmpty(ListItem.Year)">Conditional</animation>
-              </control>-->
+              </control>
                         </control>
                     </control>
                 </control>
             </control>
+			<control type="image"> 
+				<left>1450</left>
+				<top>450</top>             
+				<width>570</width>
+				<height>403</height>
+				<aspectratio>keep</aspectratio>
+				<fadetime>400</fadetime>
+				<texture background="true">$INFO[Skin.String(ArtistsLogosPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
+				<visible>!IsEmpty(Skin.String(ArtistsLogosPath))</visible>
+				<animation effect="slide" end="-145" time="0" condition="!IsEmpty(ListItem.Year)">Conditional</animation>
+			</control>			
             <!-- List -->
             <control type="grouplist">
                 <left>500</left>

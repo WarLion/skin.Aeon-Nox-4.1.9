@@ -251,9 +251,7 @@
                 <height>42</height>
                 <texture>$VAR[WatchedIconVar]</texture>
                 <animation type="Conditional" condition="Container.Content(episodes)">
-                    <!--                     <effect type="fade" end="15" time="400" easing="in" tween="cubic" />
- -->
-                    <effect type="slide" end="46,2" time="0" easing="in" tween="cubic" />
+                <effect type="slide" end="46,2" time="0" easing="in" tween="cubic" />
                 </animation>
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 <animation effect="slide" end="0,-20" time="240" tween="cubic" easing="inout" condition="Container.Content(seasons)">Conditional</animation>
@@ -353,7 +351,7 @@
                     </control>
                     <control type="label">
                         <left>1240</left>
-                        <top>60</top>
+                        <top>0</top>
                         <width>870</width>
                         <align>right</align>
                         <label>$VAR[FirstLabelVar]</label>
