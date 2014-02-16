@@ -1,3 +1,14 @@
+[B]4.1.9.3[/B]
+bug fixes
+add hdtv case
+better 3D tags
+left and top instead posx and posy
+fix playlist widgets and backgrounds Thanks to mikebzh44 for pointing the error
+use this fixed for gotham script.extendedinfo https://github.com/azraelomega/script.extendedinfo
+fix a few button problems with Video Information 
+add one live background (Babe of Today)
+
+
 [B]4.1.9.2[/B]
 -change source for the babes of the day 
 -fix flags alignment on Featured Widgets
@@ -193,9 +204,9 @@
 [B]By applying this update all settings from previous version are lost! This includes custom backgrounds and assigned favorites to the main menu. You can set them again in the skin settings customizer windows. Please use the rollback function if you need to check your previous settings[/B]
 - Changed skin codebase to 1080 - thx to Phil65 for his great conversion program!
 - Reworked custom items on Home screen: 
-  •	It's now possible to have 9 custom items with 5 custom submenu items, all which can be fully customizable.
-  • Over 25 different widgets, most with 2 modes, which can be attached to every menu item.
-  • Background customizer has been moved to 'Main menu item customizer'. Every menu item can have all available background types.
+  ï¿½	It's now possible to have 9 custom items with 5 custom submenu items, all which can be fully customizable.
+  ï¿½ Over 25 different widgets, most with 2 modes, which can be attached to every menu item.
+  ï¿½ Background customizer has been moved to 'Main menu item customizer'. Every menu item can have all available background types.
 - Reworked Music visualisation screen.
 - Added options to show logos instead of labels, whenever available, in Showcase view and Shift view.
 - Wall view now only has clear case thumbs.
@@ -353,7 +364,7 @@
 - Updated audio flags.
 - New aspect ratio flags.
 - Updated Dutch languages strings - thx Machine-Sanctum
-- Fixed: Uppercase labels with glyphs were forced lowercase (e.g. DJ TIëSTO instead of DJ TIËSTO)
+- Fixed: Uppercase labels with glyphs were forced lowercase (e.g. DJ TIï¿½STO instead of DJ TIï¿½STO)
 - Playlist widget now shows instead of Recent/Random widgets when playing music on Home window. Widgets are still accessible.
 - New InfoWall layout + added banner style for tv shows.
 - Restored ClearART in pause osd.
