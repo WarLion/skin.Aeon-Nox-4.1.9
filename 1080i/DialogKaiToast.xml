@@ -9,7 +9,6 @@
     <include>Animation_DialogPopup</include>
     <controls>
         <control type="group">
-		<visible>!VideoPlayer.IsFullscreen</visible>
             <include>Dialogs_Group</include>
             <include>Dialogs_Tablet</include>
             <animation effect="slide" end="0,-870" time="0" condition="VideoPlayer.IsFullscreen | [[Window.IsActive(home) | Window.IsActive(1124)] + Skin.HasSetting(lowermainmenu)]">Conditional</animation>
