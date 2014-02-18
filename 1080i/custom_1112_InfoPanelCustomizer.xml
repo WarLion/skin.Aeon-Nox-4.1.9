@@ -82,6 +82,7 @@
                     <include>Objects_MediaMenuButtonAround</include>
                     <onclick>Skin.ToggleSetting(no_infopane_panel)</onclick>
                     <selected>Skin.HasSetting(no_infopane_panel)</selected>
+					<visible>![Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]</visible>
                 </control>
             </control>
             <control type="panel" id="451">
@@ -177,6 +178,7 @@
                         <thumb>views/poster_focus.png</thumb>
                         <property name="type">poster</property>
                         <onclick>Skin.SetString(InfoPanel$INFO[Window(home).Property(Area)]$INFO[Window(home).Property(actualViewtype)],poster)</onclick>
+						<visible>![Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]</visible>
                     </item>
                     <item id="4">
                         <label>$LOCALIZE[31287]</label>
@@ -184,6 +186,7 @@
                         <thumb>views/fourthumbs_focus.png</thumb>
                         <property name="type">fourthumbs</property>
                         <onclick>Skin.SetString(InfoPanel$INFO[Window(home).Property(Area)]$INFO[Window(home).Property(actualViewtype)],fourthumbs)</onclick>
+						<visible>![Container.Content(albums) | Container.Content(songs)]</visible>
                     </item>
                 </content>
             </control>
