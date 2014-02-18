@@ -20,7 +20,77 @@
                     <scrolltime tween="cubic">200</scrolltime>
                     <viewtype label="$LOCALIZE[31283]">icon</viewtype>
                     <pagecontrol>60</pagecontrol>
-                    <itemlayout height="268" width="285" condition="[Container.Content(Addons)]">
+					<itemlayout height="268" width="285" condition="Container.Content(artists)">
+                        <control type="image">
+                            <width>261</width>
+                            <height>261</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true" fallback="DefaultAddonMusic.png">$VAR[ThumbnailVar]</texture>
+                            <bordertexture border="5">thumbs/bordershadow4.png</bordertexture>
+                            <bordersize>5</bordersize>
+                            <colordiffuse>FF727171</colordiffuse>
+                        </control>
+                        <control type="image">
+							<left>-6</left>
+							<top>211</top>
+                            <width>274</width>
+                            <height>40</height>
+                            <texture background="true">dialogs/shutdown_nofocus2.png</texture>
+							<colordiffuse>99ffffff</colordiffuse>
+                        </control>		
+                        <control type="label">
+                            <left>15</left>
+                            <top>213</top>
+                            <width>230</width>
+                            <height>40</height>
+                            <aligny>top</aligny>
+                            <label>$INFO[ListItem.Label]</label>
+                            <textcolor>white3</textcolor>
+                            <autoscroll>false</autoscroll>
+							<font>Font_Reg22_Caps</font>
+                        </control>										
+                    </itemlayout>
+                    <focusedlayout height="268" width="285" condition="Container.Content(artists)">
+						<control type="group">
+							<control type="image">
+								<left>-10</left>
+								<top>-10</top>								
+								<width>281</width>
+								<height>281</height>
+								<aspectratio>keep</aspectratio>
+								<texture background="true" fallback="DefaultAddonMusic.png">$VAR[ThumbnailVar]</texture>
+								<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+								<bordertexture border="15">home/nowplaying/OverlayDialogBackground.png</bordertexture>
+								<bordersize>15</bordersize>
+							</control>
+							<control type="image">
+								<width>261</width>
+								<height>261</height>
+								<aspectratio>keep</aspectratio>
+								<texture background="true" fallback="DefaultAddonMusic.png">$VAR[ThumbnailVar]</texture>
+								<bordersize>5</bordersize>
+							</control>							
+							<control type="image">
+								<left>-6</left>
+								<top>211</top>
+								<width>274</width>
+								<height>40</height>
+								<texture background="true">dialogs/shutdown_nofocus2.png</texture>
+							</control>	
+							<control type="label">
+								<left>15</left>
+								<top>213</top>
+								<width>230</width>
+								<height>40</height>
+								<aligny>top</aligny>
+								<label>$INFO[ListItem.Label]</label>
+								<textcolor>white3</textcolor>
+								<autoscroll delay="8000" time="AutoScrollTime" repeat="8000">focus</autoscroll>
+								<font>Font_Reg22_Caps</font>							
+							</control>
+						</control>											
+                    </focusedlayout>										
+                    <itemlayout height="268" width="285" condition="Container.Content(Addons) | ![Container.Content(artists) | Container.Content(Albums) | Container.Content(songs)]">
                         <control type="image">
                             <width>261</width>
                             <height>261</height>
@@ -31,7 +101,7 @@
                             <animation effect="fade" end="90" time="0" condition="true">Conditional</animation>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="268" width="285" condition="[Container.Content(Addons)]">
+                    <focusedlayout height="268" width="285" condition="Container.Content(Addons) | ![Container.Content(artists) | Container.Content(Albums) | Container.Content(songs)]">
                         <control type="image">
                             <width>261</width>
                             <height>261</height>
