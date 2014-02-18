@@ -282,6 +282,20 @@
                     <selected>Skin.HasSetting(addonwallaltbackground)</selected>
                     <visible>Stringcompare(Window(home).Property(actualViewtype),AddonWall)</visible>
                 </control>
+                <control type="radiobutton" id="1702">
+                    <label>$LOCALIZE[31282]</label>
+                    <include>Objects_MediaMenuButtonAlt2</include>
+                    <onclick>Skin.ToggleSetting(addonwallmusicCase)</onclick>
+                    <selected>Skin.HasSetting(addonwallmusicCase)</selected>
+                    <visible>Stringcompare(Window(home).Property(actualViewtype),AddonWall) + Container.Content(Albums)</visible>
+                </control>	
+                <control type="radiobutton" id="1703">
+                    <label>$LOCALIZE[31282]</label>
+                    <include>Objects_MediaMenuButtonAlt2</include>
+                    <onclick>Skin.ToggleSetting(addonwallmusicCase2)</onclick>
+                    <selected>Skin.HasSetting(addonwallmusicCase2)</selected>
+                    <visible>Stringcompare(Window(home).Property(actualViewtype),AddonWall) + Container.Content(songs)</visible>
+                </control>								
                 <!--Floor Label Options-->
                 <control type="button" id="1649">
                     <label>$LOCALIZE[31388]:</label>
