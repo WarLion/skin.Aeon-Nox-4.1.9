@@ -90,7 +90,7 @@
 							</control>
 						</control>											
                     </focusedlayout>										
-                    <itemlayout height="268" width="285" condition="Container.Content(Addons) | ![Container.Content(artists) | Container.Content(Albums) | Container.Content(songs)]">
+                    <itemlayout height="268" width="285" condition="Container.Content(Addons) | ![Container.Content(artists) | Container.Content(Albums) | Container.Content(songs) | Container.Content(sets) | Container.Content(seasons) | Container.Content(Movies) | Container.Content(tvshows) | Container.Content(episodes)]">
                         <control type="image">
                             <width>261</width>
                             <height>261</height>
@@ -101,7 +101,7 @@
                             <animation effect="fade" end="90" time="0" condition="true">Conditional</animation>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="268" width="285" condition="Container.Content(Addons) | ![Container.Content(artists) | Container.Content(Albums) | Container.Content(songs)]">
+                    <focusedlayout height="268" width="285" condition="Container.Content(Addons) | ![Container.Content(artists) | Container.Content(Albums) | Container.Content(songs) | Container.Content(sets) | Container.Content(seasons) | Container.Content(Movies) | Container.Content(tvshows) | Container.Content(episodes)]">
                         <control type="image">
                             <width>261</width>
                             <height>261</height>
