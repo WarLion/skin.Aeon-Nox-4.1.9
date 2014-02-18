@@ -151,7 +151,7 @@
                         <left>278</left>
                         <top>-120</top>
                         <control type="label">
-                            <left>255</left>
+                            <left>0</left>
                             <top>645</top>
                             <width>255</width>
                             <height>52</height>
@@ -161,7 +161,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <left>255</left>
+                            <left>0</left>
                             <top>690</top>
                             <width>255</width>
                             <height>52</height>
@@ -171,7 +171,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <left>255</left>
+                            <left>0</left>
                             <top>735</top>
                             <width>255</width>
                             <height>52</height>
@@ -181,7 +181,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <left>255</left>
+                            <left>0</left>
                             <top>780</top>
                             <width>255</width>
                             <height>52</height>
@@ -191,7 +191,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <left>255</left>
+                            <left>0</left>
                             <top>825</top>
                             <width>255</width>
                             <height>52</height>
@@ -201,7 +201,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <left>255</left>
+                            <left>0</left>
                             <top>870</top>
                             <width>255</width>
                             <height>52</height>
@@ -211,7 +211,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <left>255</left>
+                            <left>0</left>
                             <top>915</top>
                             <width>255</width>
                             <height>52</height>
@@ -2048,7 +2048,7 @@
                         <left>278</left>
                         <top>-120</top>
                         <control type="label">
-                            <left>255</left>
+                            <left>0</left>
                             <top>645</top>
                             <width>255</width>
                             <height>52</height>
@@ -2058,7 +2058,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <left>255</left>
+                            <left>0</left>
                             <top>690</top>
                             <width>255</width>
                             <height>52</height>
@@ -2068,7 +2068,7 @@
                             <textcolor>grey2</textcolor>
                         </control>
                         <control type="label">
-                            <left>255</left>
+                            <left>0</left>
                             <top>735</top>
                             <width>255</width>
                             <height>52</height>
