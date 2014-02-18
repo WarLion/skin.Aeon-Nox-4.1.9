@@ -1810,7 +1810,7 @@
         <value>-</value>
     </variable>
     <variable name="AddonWallCasesLabelVar">
-        <value condition="Skin.HasSetting(useclearcasesinfowall)">$LOCALIZE[31282]</value>
+        <value condition="Skin.HasSetting(useclearcasesinfowall2)">$LOCALIZE[31282]</value>
         <value condition="Skin.HasSetting(usecasesinfowall)">$LOCALIZE[31248]</value>
         <value>$LOCALIZE[106]</value>
     </variable>

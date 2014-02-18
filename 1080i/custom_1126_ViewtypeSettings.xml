@@ -242,7 +242,6 @@
                     <label>$LOCALIZE[31282]</label>
                     <include>Objects_MediaMenuButtonAlt2</include>
                     <onclick>Skin.ToggleSetting(useclearcasesinfowall)</onclick>
-                    <onclick>Skin.Reset(usecasesinfowall)</onclick>
                     <selected>Skin.HasSetting(useclearcasesinfowall)</selected>
                     <enable>![[Skin.HasSetting(TVInfoWallBanner) | Skin.HasSetting(TVInfoWallLandscape)] + Container.Content(tvshows)]</enable>
                     <visible>Stringcompare(Window(home).Property(actualViewtype),AddonWall) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
@@ -251,10 +250,10 @@
                     <label>$LOCALIZE[31482]:</label>
                     <label2>[COLOR $VAR[FontColorVar]]$VAR[AddonWallCasesLabelVar][/COLOR]</label2>
                     <include>Objects_MediaMenuButtonAlt2</include>
-                    <onclick condition="!Skin.HasSetting(useclearcasesinfowall) + !Skin.HasSetting(usecasesinfowall)">Skin.SetBool(usecasesinfowall)</onclick>
-                    <onclick condition="Skin.HasSetting(usecasesinfowall)">Skin.SetBool(useclearcasesinfowall)</onclick>
+                    <onclick condition="!Skin.HasSetting(useclearcasesinfowall2) + !Skin.HasSetting(usecasesinfowall)">Skin.SetBool(usecasesinfowall)</onclick>
+                    <onclick condition="Skin.HasSetting(usecasesinfowall)">Skin.SetBool(useclearcasesinfowall2)</onclick>
                     <onclick condition="Skin.HasSetting(usecasesinfowall)">Skin.Reset(usecasesinfowall)</onclick>
-                    <onclick condition="Skin.HasSetting(useclearcasesinfowall)">Skin.Reset(useclearcasesinfowall)</onclick>
+                    <onclick condition="Skin.HasSetting(useclearcasesinfowall2)">Skin.Reset(useclearcasesinfowall2)</onclick>
                     <visible>Stringcompare(Window(home).Property(actualViewtype),AddonWall) + Container.Content(movies)</visible>
                 </control>
                 <control type="button" id="1694">
