@@ -72,22 +72,17 @@
                         <selected>Skin.HasSetting(Extra.Disable)</selected>
 						<visible>system.hasaddon(script.cinema.experience) | System.HasAddon(script.videoextras) | system.hasaddon(script.tvtunes)</visible>
                     </control>	
-                <!--    <control type="button" id="112">
-                        <label>dialog kai</label>
+                    <control type="radiobutton" id="112">
+                        <label>Alternative Video Info</label>
                         <include>Objects_CommonSettingsButton</include>
-                        <onclick>ActivateWindow(infodialog)</onclick>
+                        <onclick>Skin.ToggleSetting(Alt_VideoInfo)</onclick>
+                        <selected>Skin.HasSetting(Alt_VideoInfo)</selected>
                     </control>	
                     <control type="button" id="113">
-                        <label>dialog yes no</label>
+                        <label>Themes</label>
                         <include>Objects_CommonSettingsButton</include>
-                        <onclick>ActivateWindow(yesnodialog)</onclick>
-                    </control>											
-                    <control type="button" id="114">
-                        <label>dialog progress</label>
-                        <include>Objects_CommonSettingsButton</include>
-                        <onclick>ActivateWindow(progressdialog)</onclick>
-                    </control>	-->				
-												
+                        <onclick>Skin.Theme(-1)</onclick> 
+                    </control>													
         </control>
         <control type="scrollbar" id="60">
             <include>Objects_CommonSettingsScrollbar</include>
