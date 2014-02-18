@@ -51,8 +51,8 @@
                     <visible>[Container.Content(artists) + !Skin.HasSetting(artistslogosfloor)]| Container.Content(albums)</visible>
                 </control>
                 <control type="group">
-                    <animation effect="slide" end="460,20" time="0" condition="!Stringcompare(Control.GetLabel(4420),fanart)">Conditional</animation>
-                    <animation effect="zoom" end="95" time="0" condition="!Stringcompare(Control.GetLabel(4420),fanart)">Conditional</animation>
+                    <animation effect="slide" end="0,0" time="0" condition="Stringcompare(Control.GetLabel(4420),fanart)">Conditional</animation>
+				<animation effect="slide" end="445,0" reversible="false" condition="StringCompare(Control.GetLabel(4420),fourthumbs)">Conditional</animation>	
                     <control type="group">
                         <left>832</left>
                         <top>47</top>
@@ -67,23 +67,7 @@
                             <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
                             <bordersize>7</bordersize>
                             <visible>Stringcompare(Control.GetLabel(4420),fanart)</visible>
-                        </control>
-                        <control type="image">
-                            <left>127</left>
-                            <top>15</top>
-                            <width>776</width>
-                            <height>435</height>
-                            <texture>common/black.png</texture>
-                            <visible>Player.HasVideo</visible>
-                        </control>
-                        <control type="videowindow" id="2">
-                            <left>127</left>
-                            <top>15</top>
-                            <width>776</width>
-                            <height>435</height>
-                            <animation effect="fade" end="100" time="0" delay="880">Visible</animation>
-                            <visible>Player.Hasvideo</visible>
-                        </control>
+                        </control>	
                     </control>
                     <control type="group">
                         <left>158</left>
@@ -144,8 +128,27 @@
                             <label fallback="31006">$VAR[InfoWallTextboxVar]</label>
                             <textcolor>white6</textcolor>
                             <autoscroll delay="8000" time="AutoScrollTime" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-                        </control>
+                        </control>					
                     </control>
+					<control type="group">
+                <animation effect="slide" end="-830,0" reversible="false" condition="StringCompare(Control.GetLabel(4420),fourthumbs)">Conditional</animation>					
+                      <control type="image">
+                            <left>960</left>
+                            <top>65</top>
+                            <width>776</width>
+                            <height>435</height>
+                            <texture>common/black.png</texture>
+                            <visible>Player.HasVideo</visible>
+                        </control>
+                        <control type="videowindow" id="2">
+                            <left>960</left>
+                            <top>65</top>
+                            <width>776</width>
+                            <height>435</height>
+                            <animation effect="fade" end="100" time="0" delay="880">Visible</animation>
+                            <visible>Player.Hasvideo</visible>
+                        </control>
+					</control>						
                 </control>
                 <control type="group">
                     <visible>Stringcompare(Control.GetLabel(4420),fourthumbs)</visible>
