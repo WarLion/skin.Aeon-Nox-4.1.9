@@ -80,9 +80,19 @@
                     <label>$INFO[ListItem.Rating]</label>
                     <font>Font_Reg26</font>
                     <textcolor>grey2</textcolor>
-                </control>
+					<visible>!Container.Content(songs)</visible>
+                </control>				
+            <control type="image">
+                    <left>120</left>
+                    <top>200</top>
+                    <width>200</width>
+					<aspectratio>keep</aspectratio>
+                <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+                <texture fallback="flags/music/rating/rating0.png">$INFO[ListItem.StarRating,flags/music/rating/]</texture>
+				<visible>Container.Content(songs)</visible>
+            </control>	
                 <control type="label">
-                    <top>230</top>
+                    <top>125</top>
                     <width>276</width>
                     <textoffsetx>15</textoffsetx>
                     <label>$INFO[ListItem.Label]</label>
@@ -135,9 +145,20 @@
                     <align>right</align>
                     <label>$INFO[ListItem.Rating]</label>
                     <font>Font_Reg26</font>
-                </control>
+                    <textcolor>grey2</textcolor>
+					<visible>!Container.Content(songs)</visible>
+                </control>					
+            <control type="image">
+                    <left>120</left>
+                    <top>200</top>
+                    <width>200</width>
+					<aspectratio>keep</aspectratio>
+                <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+                <texture fallback="flags/music/rating/rating0.png">$INFO[ListItem.StarRating,flags/music/rating/]</texture>
+				<visible>Container.Content(songs)</visible>
+            </control>				
                 <control type="label">
-                    <top>230</top>
+                    <top>125</top>
                     <width>276</width>
                     <textoffsetx>15</textoffsetx>
                     <label>$INFO[ListItem.Label]</label>
@@ -276,12 +297,45 @@
         <focusedlayout width="185" height="268" condition="[[Container.Content(movies) + !Skin.HasSetting(MovieWallBanner)] | [Container.Content(tvshows) + !Skin.HasSetting(TVWallBanner)] | Container.Content(seasons) | Container.Content(sets) | Container.Content(musicvideos) | [Window.IsActive(videolibrary) + Container.Content(genres)] | [Window.IsActive(pictures) + Substring(Container.FolderPath,\comics\)]]">
             <control type="group">
                 <animation type="Focus" reversible="false">
-                    <effect type="zoom" center="auto" start="100" end="140" time="320" tween="cubic" />
+                    <effect type="zoom" center="auto" start="100" end="150" time="320" tween="cubic" />
                 </animation>
                 <animation effect="slide" end="0,20" time="320" reversible="false" tween="cubic" condition="Container(500).Row(0) + Skin.HasSetting(wallfullscreen)">Conditional</animation>
                 <animation effect="slide" end="0,-20" time="320" reversible="false" tween="cubic" condition="Container(500).Row(2) + Skin.HasSetting(wallfullscreen)">Conditional</animation>
                 <animation effect="slide" end="20,0" time="320" reversible="false" tween="cubic" condition="Container(500).Column(0) + Skin.HasSetting(wallfullscreen)">Conditional</animation>
                 <animation effect="slide" end="-20,0" time="320" reversible="false" tween="cubic" condition="Container(500).Column(8) + Skin.HasSetting(wallfullscreen)">Conditional</animation>
+		<!--	<control type="group">
+                    <left>0</left>
+                    <top>-14</top>			
+			      <width>600</width>
+				  <height>300</height>
+                <control type="image">
+					<top>-13</top>
+                    <width>100</width>
+                    <height>324</height>
+                    <texture background="true">dialogs/dialog_back.png</texture>
+                    <bordersize>18</bordersize>
+					<animation effect="zoom" end="800,100" center="0,200" time="200" delay="1000" reversible="true">Focus</animation>
+                </control>	
+                <control type="textbox">
+                    <left>210</left>
+                    <top>160</top>
+                    <width>400</width>
+                    <height>100</height>
+                    <label>$INFO[Listitem.plot]</label>
+                    <font>Font_Reg17</font>
+                    <autoscroll delay="8000" time="AutoScrollTime" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<animation effect="fade" start="0" end="100" time="200" delay="1200" reversible="true">focus</animation>
+                </control>	
+                <control type="label">
+                    <left>210</left>
+                    <top>10</top>
+                    <width>400</width>
+                    <height>100</height>
+                    <label>$INFO[Listitem.label]</label>
+                    <font>Font_Reg30_Caps</font>
+					<animation effect="fade" start="0" end="100" time="200" delay="1200" reversible="true">focus</animation>
+                </control>				
+			</control>		-->			
                 <control type="image">
                     <left>-14</left>
                     <top>-14</top>
@@ -398,6 +452,7 @@
                     <texture>wall/wall_arrow.png</texture>
                     <colordiffuse>$VAR[TitleColorVar]</colordiffuse>
                     <animation effect="slide" start="-150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+					<visible>!Skin.HasSetting(WallVertical)</visible>
                 </control>
                 <control type="image">
                     <left>1804</left>
@@ -407,7 +462,28 @@
                     <texture flipx="true">wall/wall_arrow.png</texture>
                     <colordiffuse>$VAR[TitleColorVar]</colordiffuse>
                     <animation effect="slide" start="150" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+					<visible>!Skin.HasSetting(WallVertical)</visible>
                 </control>
+                <control type="image">
+                    <left>570</left>
+                    <top>90</top>
+                    <width>786</width>
+                    <height>30</height>
+                    <texture flipy="true">wall/wall_arrow_vertical.png</texture>
+                    <colordiffuse>$VAR[TitleColorVar]</colordiffuse>
+					<animation effect="slide" start="0,-50" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+					<visible>Skin.HasSetting(WallVertical)</visible>
+                </control>	
+                <control type="image">
+                    <left>570</left>
+                    <top>935</top>
+                    <width>786</width>
+                    <height>30</height>
+                    <texture>wall/wall_arrow_vertical.png</texture>
+                    <colordiffuse>$VAR[TitleColorVar]</colordiffuse>
+					<animation effect="slide" start="0,50" end="0" delay="640" time="320" tween="cubic">WindowOpen</animation>
+					<visible>Skin.HasSetting(WallVertical)</visible>
+                </control>								
             </control>
             <include condition="!Skin.HasSetting(WallVertical)">WallHorizontal</include>
             <include condition="Skin.HasSetting(WallVertical)">WallVertical</include>
