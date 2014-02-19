@@ -62,9 +62,7 @@
                 <onleft>PreviousChannelGroup</onleft>
                 <onright>NextChannelGroup</onright>
                 <onup>11</onup>
-                <!--<onup>RunScript(script.pvrepgnext,get,$INFO[Container(11).ListItem.Label])</onup>-->
                 <ondown>11</ondown>
-                <!--<ondown>RunScript(script.pvrepgnext,get,$INFO[Container(11).ListItem.Label])</ondown>-->
                 <pagecontrol>-</pagecontrol>
                 <scrolltime tween="quadratic">200</scrolltime>
                 <itemlayout height="50" width="740">
@@ -341,7 +339,7 @@
                     <top>-20</top>
                     <width>210</width>
                     <height>210</height>
-                    <texture>$INFO[Container(11).ListItem.Icon]</texture>
+                    <texture fallback="DefaultVideo.png">$INFO[Container(11).ListItem.Icon]</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
                     <control type="label">
@@ -402,7 +400,7 @@
                 <control type="label">
                     <left></left>
                     <top>-800</top>
-                    <font>Font_Bold30</font>
+                    <font>Font_Bold34</font>
                     <textcolor>white</textcolor>
                     <label>$INFO[Container(11).ListItem.StartTime] - $INFO[Container(11).ListItem.EndTime]</label>
                 </control>
@@ -422,17 +420,57 @@
                     <top>80</top>
                     <width>230</width>
                     <height>230</height>
-                    <texture>$INFO[Container(11).ListItem.Icon]</texture>
+                    <texture fallback="DefaultVideo.png">$INFO[Container(11).ListItem.Icon]</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
                 <control type="textbox">
                     <left>0</left>
                     <top>330</top>
                     <width>740</width>
-                    <height>375</height>
-                    <font>Font_Reg40</font>
+                    <height>300</height>
+                    <font>Font_Reg37</font>
                     <label fallback="31006">$INFO[Container(11).ListItem.Plot]</label>
                     <autoscroll delay="10000" time="AutoScrollTime" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+                </control>
+                <control type="image">
+                    <visible>!StringCompare(Container(11).ListItem.NextTitle,)</visible>
+                    <left>0</left>
+                    <top>645</top>
+                    <width>740</width>
+                    <height>3</height>
+                    <texture>new_pvr/osd_back_pvr_line.png</texture>
+                </control>
+                <control type="label">
+                  <left>0</left>
+                  <top>480</top>
+                  <align>left</align>
+                  <width>720</width>
+                  <font>Font_Bold19</font>
+                  <textcolor>grey</textcolor>
+                  <scrolltime tween="quadratic">200</scrolltime>
+                  <label>$INFO[Container(11).ListItem.NextStartTime] - $INFO[Container(11).ListItem.NextEndTime] [COLOR diffuse_white]$INFO[Container(11).ListItem.NextTitle][/COLOR]</label>
+                </control>
+                <control type="label">
+                  <visible>!StringCompare(Container(11).ListItem.NextTitle2,)</visible>
+                  <left>0</left>
+                  <top>545</top>
+                  <align>left</align>
+                  <width>720</width>
+                  <font>Font_Bold19</font>
+                  <textcolor>grey</textcolor>
+                  <scrolltime tween="quadratic">200</scrolltime>
+                  <label>$INFO[Container(11).ListItem.NextStartTime2] - $INFO[Container(11).ListItem.NextEndTime2] [COLOR diffuse_white]$INFO[Container(11).ListItem.NextTitle2][/COLOR]</label>
+                </control>
+                <control type="label">
+                  <visible>!StringCompare(Container(11).ListItem.NextTitle3,)</visible>
+                  <left>0</left>
+                  <top>610</top>
+                  <align>left</align>
+                  <width>720</width>
+                  <font>Font_Bold19</font>
+                  <textcolor>grey</textcolor>
+                  <scrolltime tween="quadratic">200</scrolltime>
+                  <label>$INFO[Container(11).ListItem.NextStartTime3] - $INFO[Container(11).ListItem.NextEndTime3] [COLOR diffuse_white]$INFO[Container(11).ListItem.NextTitle3][/COLOR]</label>
                 </control>
             </control>
         </control>
@@ -980,7 +1018,7 @@
                 <top>1040</top>
                 <font>Font_Reg25</font>
                 <textcolor>white6</textcolor>
-                <label>$INFO[Container(11).NumItems,, $LOCALIZE[19019]]  •$INFO[Container(11).CurrentPage, $LOCALIZE[41819],]$INFO[Container(11).NumPages,/,]</label>
+                <label>$INFO[Container(11).NumItems,, $LOCALIZE[19019]] •$INFO[Container(11).CurrentPage, $LOCALIZE[41819],]$INFO[Container(11).NumPages,/,]</label>
             </control>
         </control>
     </controls>
