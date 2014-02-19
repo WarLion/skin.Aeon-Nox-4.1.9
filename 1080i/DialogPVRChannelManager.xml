@@ -139,7 +139,7 @@
                     </control>
                     <control type="radiobutton" id="7">
                         <label>19074</label>
-                        <radioleft>575</radioleft>
+                        <radioposx>575</radioposx>
                         <include>Default_SettingRadioButtonShort</include>
                     </control>
                     <control type="edit" id="8">
@@ -152,7 +152,7 @@
                     </control>
                     <control type="radiobutton" id="12">
                         <label>19206</label>
-                        <radioleft>575</radioleft>
+                        <radioposx>575</radioposx>
                         <include>Default_SettingRadioButtonShort</include>
                     </control>
                     <control type="spincontrolex" id="13">

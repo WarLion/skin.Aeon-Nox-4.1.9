@@ -257,6 +257,9 @@
                         <top>38</top>
                         <label>-</label>
                         <include>Objects_MediaMenuButtonIcons</include>
+                        <label>-</label>
+                        <onclick condition="Substring(Control.GetLabel(31),TERAZ)">SetProperty(EpgNow,true)</onclick>
+                        <onclick condition="!Substring(Control.GetLabel(31),TERAZ)">ClearProperty(EpgNow)</onclick>
                     </control>
                     <control type="button" id="35">
                         <top>150</top>

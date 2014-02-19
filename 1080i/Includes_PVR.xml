@@ -55,17 +55,16 @@
                     <height>21</height>
                     <texturebg border="12,0,12,0">dialogs/progress/progress_back.png</texturebg>
                     <lefttexture border="12,0,0,0">dialogs/progress/progress_left.png</lefttexture>
-                    <midtexture border="12,0,12,0">dialogs/progress/progress_mid.png</midtexture>
+                    <midtexture border="0,0,12,0">dialogs/progress/progress_mid.png</midtexture>
                     <righttexture border="0,0,12,0">dialogs/progress/progress_right.png</righttexture>
                     <visible>Container(11).ListItem.HasEpg</visible>
                     <info>Container(11).ListItem.Progress</info>
                 </control>
                 <control type="label">
-                    <left>795</left>
+                    <left>735</left>
                     <top>65</top>
                     <width>100</width>
                     <height>30</height>
-                    <align>right</align>
                     <label>$INFO[Container(11).ListItem.EndTime]</label>
                     <font>Font_Reg25</font>
                     <textcolor>white</textcolor>
@@ -148,7 +147,7 @@
                     <height>21</height>
                     <texturebg border="12,0,12,0">dialogs/progress/progress_back.png</texturebg>
                     <lefttexture border="12,0,0,0">dialogs/progress/progress_left.png</lefttexture>
-                    <midtexture border="12,0,12,0">dialogs/progress/progress_mid.png</midtexture>
+                    <midtexture border="0,0,12,0">dialogs/progress/progress_mid.png</midtexture>
                     <righttexture border="0,0,12,0">dialogs/progress/progress_right.png</righttexture>
                     <visible>Container(12).ListItem.HasEpg</visible>
                     <info>Container(12).ListItem.Progress</info>
@@ -216,9 +215,9 @@
                 <width>924</width>
                 <height>60</height>
                 <texture border="1">osd/osd_settings_buttonnf.png</texture>
-                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
             </control>
             <control type="label">
+                <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                 <left>30</left>
                 <top>25</top>
                 <width>60</width>
@@ -227,13 +226,54 @@
                 <label>$INFO[ListItem.ChannelNumber]</label>
                 <font>Font_Bold19_Caps</font>
             </control>
+            <control type="label">
+                <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                <left>30</left>
+                <top>25</top>
+                <width>60</width>
+                <height>45</height>
+                <align>center</align>
+                <label>$INFO[ListItem.ChannelNumber]</label>
+                <font>Font_Bold19_Caps</font>
+            </control>
+            <control type="label">
+                <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                <left>30</left>
+                <top>25</top>
+                <width>60</width>
+                <height>45</height>
+                <align>center</align>
+                <label>$INFO[ListItem.ChannelNumber]</label>
+                <font>Font_Bold19_Caps</font>
+                <textcolor>grey3</textcolor>
+            </control>
             <control type="image">
+                <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                 <left>58</left>
                 <width>104</width>
                 <height>104</height>
                 <aspectratio>keep</aspectratio>
                 <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
                 <bordersize>8</bordersize>
+            </control>
+            <control type="image">
+                <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                <left>58</left>
+                <width>104</width>
+                <height>104</height>
+                <aspectratio>keep</aspectratio>
+                <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                <bordersize>8</bordersize>
+            </control>
+            <control type="image">
+                <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                <left>58</left>
+                <width>104</width>
+                <height>104</height>
+                <aspectratio>keep</aspectratio>
+                <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                <bordersize>8</bordersize>
+                <colordiffuse>grey3</colordiffuse>
             </control>
             <control type="image">
                 <left>130</left>
@@ -245,6 +285,7 @@
                 <visible>ListItem.IsRecording</visible>
             </control>
             <control type="label">
+                <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                 <left>170</left>
                 <top>1</top>
                 <width>720</width>
@@ -253,18 +294,61 @@
                 <font>Font_Bold33</font>
                 <animation effect="slide" end="0,30" condition="!ListItem.HasEpg">Conditional</animation>
             </control>
+            <control type="label">
+                <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                <left>170</left>
+                <top>1</top>
+                <width>720</width>
+                <height>40</height>
+                <label>$INFO[ListItem.Label]</label>
+                <font>Font_Bold33</font>
+                <animation effect="slide" end="0,30" condition="!ListItem.HasEpg">Conditional</animation>
+            </control>
+            <control type="label">
+                <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                <left>170</left>
+                <top>1</top>
+                <width>720</width>
+                <height>40</height>
+                <label>$INFO[ListItem.Label]</label>
+                <font>Font_Bold33</font>
+                <animation effect="slide" end="0,30" condition="!ListItem.HasEpg">Conditional</animation>
+                <textcolor>grey3</textcolor>
+            </control>
             <control type="group">
                 <visible>ListItem.HasEpg</visible>
                 <control type="label">
+                    <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                     <left>170</left>
                     <top>42</top>
-                    <width>720</width>
+                    <width>580</width>
                     <height>22</height>
                     <label>$INFO[ListItem.Title]</label>
                     <font>Font_Reg30_2</font>
                     <textcolor>white6</textcolor>
                 </control>
                 <control type="label">
+                    <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                    <left>170</left>
+                    <top>42</top>
+                    <width>580</width>
+                    <height>22</height>
+                    <label>$INFO[ListItem.Title]</label>
+                    <font>Font_Reg30_2</font>
+                    <textcolor>white6</textcolor>
+                </control>
+                <control type="label">
+                    <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                    <left>170</left>
+                    <top>42</top>
+                    <width>580</width>
+                    <height>22</height>
+                    <label>$INFO[ListItem.Title]</label>
+                    <font>Font_Reg30_2</font>
+                    <textcolor>grey3</textcolor>
+                </control>
+                <control type="label">
+                    <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                     <left>170</left>
                     <top>64</top>
                     <width>120</width>
@@ -273,18 +357,65 @@
                     <font>Font_Reg25</font>
                     <textcolor>grey</textcolor>
                 </control>
+                <control type="label">
+                    <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                    <left>170</left>
+                    <top>64</top>
+                    <width>120</width>
+                    <height>40</height>
+                    <label>$INFO[ListItem.StartTime]</label>
+                    <font>Font_Reg25</font>
+                    <textcolor>grey</textcolor>
+                </control>
+                <control type="label">
+                    <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                    <left>170</left>
+                    <top>64</top>
+                    <width>120</width>
+                    <height>40</height>
+                    <label>$INFO[ListItem.StartTime]</label>
+                    <font>Font_Reg25</font>
+                    <textcolor>grey3</textcolor>
+                </control>
                 <control type="progress">
+                    <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                     <left>280</left>
                     <top>78</top>
                     <width>460</width>
                     <height>15</height>
                     <texturebg border="12,0,12,0">dialogs/progress/progress_back.png</texturebg>
                     <lefttexture border="12,0,0,0">dialogs/progress/progress_left.png</lefttexture>
-                    <midtexture border="12,0,12,0">dialogs/progress/progress_mid.png</midtexture>
+                    <midtexture border="0,0,12,0">dialogs/progress/progress_mid.png</midtexture>
                     <righttexture border="0,0,12,0">dialogs/progress/progress_right.png</righttexture>
                     <info>ListItem.Progress</info>
                 </control>
+                <control type="progress">
+                    <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                    <left>280</left>
+                    <top>78</top>
+                    <width>460</width>
+                    <height>15</height>
+                    <texturebg border="12,0,12,0">dialogs/progress/progress_back.png</texturebg>
+                    <lefttexture border="12,0,0,0">dialogs/progress/progress_left.png</lefttexture>
+                    <midtexture border="0,0,12,0">dialogs/progress/progress_mid.png</midtexture>
+                    <righttexture border="0,0,12,0">dialogs/progress/progress_right.png</righttexture>
+                    <info>ListItem.Progress</info>
+                </control>
+                <control type="progress">
+                    <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                    <left>280</left>
+                    <top>78</top>
+                    <width>460</width>
+                    <height>15</height>
+                    <texturebg border="12,0,12,0">dialogs/progress/progress_back.png</texturebg>
+                    <lefttexture border="12,0,0,0">dialogs/progress/progress_left.png</lefttexture>
+                    <midtexture border="0,0,12,0">dialogs/progress/progress_mid.png</midtexture>
+                    <righttexture border="0,0,12,0">dialogs/progress/progress_right.png</righttexture>
+                    <info>ListItem.Progress</info>
+                    <colordiffuse>grey3</colordiffuse>
+                </control>
                 <control type="label">
+                    <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                     <left>750</left>
                     <top>64</top>
                     <width>120</width>
@@ -292,6 +423,26 @@
                     <label>$INFO[ListItem.EndTime]</label>
                     <font>Font_Reg25</font>
                     <textcolor>grey</textcolor>
+                </control>
+                <control type="label">
+                    <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                    <left>750</left>
+                    <top>64</top>
+                    <width>120</width>
+                    <height>40</height>
+                    <label>$INFO[ListItem.EndTime]</label>
+                    <font>Font_Reg25</font>
+                    <textcolor>grey</textcolor>
+                </control>
+                <control type="label">
+                    <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                    <left>750</left>
+                    <top>64</top>
+                    <width>120</width>
+                    <height>40</height>
+                    <label>$INFO[ListItem.EndTime]</label>
+                    <font>Font_Reg25</font>
+                    <textcolor>grey3</textcolor>
                 </control>
             </control>
         </itemlayout>
@@ -312,6 +463,7 @@
                 <animation effect="fade" start="100" end="50" time="40" condition="Control.IsVisible(11) + !Control.HasFocus(11)">Conditional</animation>
             </control>
             <control type="label">
+                <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                 <left>30</left>
                 <top>25</top>
                 <width>60</width>
@@ -320,13 +472,54 @@
                 <label>$INFO[ListItem.ChannelNumber]</label>
                 <font>Font_Bold19_Caps</font>
             </control>
+            <control type="label">
+                <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                <left>30</left>
+                <top>25</top>
+                <width>60</width>
+                <height>45</height>
+                <align>center</align>
+                <label>$INFO[ListItem.ChannelNumber]</label>
+                <font>Font_Bold19_Caps</font>
+            </control>
+            <control type="label">
+                <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                <left>30</left>
+                <top>25</top>
+                <width>60</width>
+                <height>45</height>
+                <align>center</align>
+                <label>$INFO[ListItem.ChannelNumber]</label>
+                <font>Font_Bold19_Caps</font>
+                <textcolor>grey3</textcolor>
+            </control>
             <control type="image">
+                <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                 <left>58</left>
                 <width>104</width>
                 <height>104</height>
                 <aspectratio>keep</aspectratio>
                 <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
                 <bordersize>8</bordersize>
+            </control>
+            <control type="image">
+                <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                <left>58</left>
+                <width>104</width>
+                <height>104</height>
+                <aspectratio>keep</aspectratio>
+                <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                <bordersize>8</bordersize>
+            </control>
+            <control type="image">
+                <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                <left>58</left>
+                <width>104</width>
+                <height>104</height>
+                <aspectratio>keep</aspectratio>
+                <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                <bordersize>8</bordersize>
+                <colordiffuse>grey3</colordiffuse>
             </control>
             <control type="image">
                 <left>130</left>
@@ -338,6 +531,7 @@
                 <visible>ListItem.IsRecording</visible>
             </control>
             <control type="label">
+                <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                 <left>170</left>
                 <top>1</top>
                 <width>720</width>
@@ -346,18 +540,61 @@
                 <font>Font_Bold33</font>
                 <animation effect="slide" end="0,30" condition="!ListItem.HasEpg">Conditional</animation>
             </control>
+            <control type="label">
+                <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                <left>170</left>
+                <top>1</top>
+                <width>720</width>
+                <height>40</height>
+                <label>$INFO[ListItem.Label]</label>
+                <font>Font_Bold33</font>
+                <animation effect="slide" end="0,30" condition="!ListItem.HasEpg">Conditional</animation>
+            </control>
+            <control type="label">
+                <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                <left>170</left>
+                <top>1</top>
+                <width>720</width>
+                <height>40</height>
+                <label>$INFO[ListItem.Label]</label>
+                <font>Font_Bold33</font>
+                <animation effect="slide" end="0,30" condition="!ListItem.HasEpg">Conditional</animation>
+                <textcolor>grey3</textcolor>
+            </control>
             <control type="group">
                 <visible>ListItem.HasEpg</visible>
                 <control type="label">
+                    <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                     <left>170</left>
                     <top>42</top>
-                    <width>720</width>
+                    <width>580</width>
                     <height>22</height>
                     <label>$INFO[ListItem.Title]</label>
                     <font>Font_Reg30_2</font>
                     <textcolor>white6</textcolor>
                 </control>
                 <control type="label">
+                    <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                    <left>170</left>
+                    <top>42</top>
+                    <width>580</width>
+                    <height>22</height>
+                    <label>$INFO[ListItem.Title]</label>
+                    <font>Font_Reg30_2</font>
+                    <textcolor>white6</textcolor>
+                </control>
+                <control type="label">
+                    <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                    <left>170</left>
+                    <top>42</top>
+                    <width>580</width>
+                    <height>22</height>
+                    <label>$INFO[ListItem.Title]</label>
+                    <font>Font_Reg30_2</font>
+                    <textcolor>grey3</textcolor>
+                </control>
+                <control type="label">
+                    <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                     <left>170</left>
                     <top>64</top>
                     <width>120</width>
@@ -366,18 +603,65 @@
                     <font>Font_Reg25</font>
                     <textcolor>grey</textcolor>
                 </control>
+                <control type="label">
+                    <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                    <left>170</left>
+                    <top>64</top>
+                    <width>120</width>
+                    <height>40</height>
+                    <label>$INFO[ListItem.StartTime]</label>
+                    <font>Font_Reg25</font>
+                    <textcolor>grey</textcolor>
+                </control>
+                <control type="label">
+                    <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                    <left>170</left>
+                    <top>64</top>
+                    <width>120</width>
+                    <height>40</height>
+                    <label>$INFO[ListItem.StartTime]</label>
+                    <font>Font_Reg25</font>
+                    <textcolor>grey3</textcolor>
+                </control>
                 <control type="progress">
+                    <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                     <left>280</left>
                     <top>78</top>
                     <width>460</width>
                     <height>15</height>
                     <texturebg border="12,0,12,0">dialogs/progress/progress_back.png</texturebg>
                     <lefttexture border="12,0,0,0">dialogs/progress/progress_left.png</lefttexture>
-                    <midtexture border="12,0,12,0">dialogs/progress/progress_mid.png</midtexture>
+                    <midtexture border="0,0,12,0">dialogs/progress/progress_mid.png</midtexture>
                     <righttexture border="0,0,12,0">dialogs/progress/progress_right.png</righttexture>
                     <info>ListItem.Progress</info>
                 </control>
+                <control type="progress">
+                    <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                    <left>280</left>
+                    <top>78</top>
+                    <width>460</width>
+                    <height>15</height>
+                    <texturebg border="12,0,12,0">dialogs/progress/progress_back.png</texturebg>
+                    <lefttexture border="12,0,0,0">dialogs/progress/progress_left.png</lefttexture>
+                    <midtexture border="0,0,12,0">dialogs/progress/progress_mid.png</midtexture>
+                    <righttexture border="0,0,12,0">dialogs/progress/progress_right.png</righttexture>
+                    <info>ListItem.Progress</info>
+                </control>
+                <control type="progress">
+                    <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                    <left>280</left>
+                    <top>78</top>
+                    <width>460</width>
+                    <height>15</height>
+                    <texturebg border="12,0,12,0">dialogs/progress/progress_back.png</texturebg>
+                    <lefttexture border="12,0,0,0">dialogs/progress/progress_left.png</lefttexture>
+                    <midtexture border="0,0,12,0">dialogs/progress/progress_mid.png</midtexture>
+                    <righttexture border="0,0,12,0">dialogs/progress/progress_right.png</righttexture>
+                    <info>ListItem.Progress</info>
+                    <colordiffuse>grey3</colordiffuse>
+                </control>
                 <control type="label">
+                    <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                     <left>750</left>
                     <top>64</top>
                     <width>120</width>
@@ -385,6 +669,26 @@
                     <label>$INFO[ListItem.EndTime]</label>
                     <font>Font_Reg25</font>
                     <textcolor>grey</textcolor>
+                </control>
+                <control type="label">
+                    <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                    <left>750</left>
+                    <top>64</top>
+                    <width>120</width>
+                    <height>40</height>
+                    <label>$INFO[ListItem.EndTime]</label>
+                    <font>Font_Reg25</font>
+                    <textcolor>grey</textcolor>
+                </control>
+                <control type="label">
+                    <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                    <left>750</left>
+                    <top>64</top>
+                    <width>120</width>
+                    <height>40</height>
+                    <label>$INFO[ListItem.EndTime]</label>
+                    <font>Font_Reg25</font>
+                    <textcolor>grey3</textcolor>
                 </control>
             </control>
         </focusedlayout>
@@ -397,6 +701,7 @@
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
             </control>
             <control type="label">
+                <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                 <left>30</left>
                 <top>12</top>
                 <width>60</width>
@@ -405,7 +710,29 @@
                 <font>Font_Bold19_Caps</font>
                 <info>ListItem.ChannelNumber</info>
             </control>
+            <control type="label">
+                <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                <left>30</left>
+                <top>12</top>
+                <width>60</width>
+                <height>45</height>
+                <align>center</align>
+                <font>Font_Bold19_Caps</font>
+                <info>ListItem.ChannelNumber</info>
+            </control>
+            <control type="label">
+                <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                <left>30</left>
+                <top>12</top>
+                <width>60</width>
+                <height>45</height>
+                <align>center</align>
+                <font>Font_Bold19_Caps</font>
+                <info>ListItem.ChannelNumber</info>
+                <textcolor>grey3</textcolor>
+            </control>
             <control type="image">
+                <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                 <left>58</left>
                 <top>5</top>
                 <width>60</width>
@@ -413,6 +740,27 @@
                 <aspectratio>keep</aspectratio>
                 <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
                 <bordersize>8</bordersize>
+            </control>
+            <control type="image">
+                <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                <left>58</left>
+                <top>5</top>
+                <width>60</width>
+                <height>60</height>
+                <aspectratio>keep</aspectratio>
+                <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                <bordersize>8</bordersize>
+            </control>
+            <control type="image">
+                <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                <left>58</left>
+                <top>5</top>
+                <width>60</width>
+                <height>60</height>
+                <aspectratio>keep</aspectratio>
+                <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                <bordersize>8</bordersize>
+                <colordiffuse>grey3</colordiffuse>
             </control>
             <control type="image">
                 <left>90</left>
@@ -424,6 +772,7 @@
                 <visible>ListItem.IsRecording</visible>
             </control>
             <control type="label">
+                <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                 <left>120</left>
                 <top>12</top>
                 <width>460</width>
@@ -433,6 +782,27 @@
                 <textcolor>$VAR[FontColorVar]</textcolor>
             </control>
             <control type="label">
+                <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                <left>120</left>
+                <top>12</top>
+                <width>460</width>
+                <height>40</height>
+                <label>[B][COLOR white]$INFO[ListItem.Label][/COLOR][/B]$INFO[ListItem.Title, - ]</label>
+                <font>Font_Reg32</font>
+                <textcolor>$VAR[FontColorVar]</textcolor>
+            </control>
+            <control type="label">
+                <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                <left>120</left>
+                <top>12</top>
+                <width>460</width>
+                <height>40</height>
+                <label>[B][COLOR grey3]$INFO[ListItem.Label][/COLOR][/B]$INFO[ListItem.Title, - ]</label>
+                <font>Font_Reg32</font>
+                <textcolor>grey3</textcolor>
+            </control>
+            <control type="label">
+                <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                 <left>590</left>
                 <top>12</top>
                 <width>120</width>
@@ -442,7 +812,30 @@
                 <textcolor>grey</textcolor>
                 <visible>ListItem.HasEpg</visible>
             </control>
+            <control type="label">
+                <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                <left>590</left>
+                <top>12</top>
+                <width>120</width>
+                <height>40</height>
+                <label>$INFO[ListItem.StartTime]</label>
+                <font>Font_Reg26</font>
+                <textcolor>grey</textcolor>
+                <visible>ListItem.HasEpg</visible>
+            </control>
+            <control type="label">
+                <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                <left>590</left>
+                <top>12</top>
+                <width>120</width>
+                <height>40</height>
+                <label>$INFO[ListItem.StartTime]</label>
+                <font>Font_Reg26</font>
+                <textcolor>grey3</textcolor>
+                <visible>ListItem.HasEpg</visible>
+            </control>
             <control type="progress">
+                <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                 <left>700</left>
                 <top>29</top>
                 <width>100</width>
@@ -450,7 +843,27 @@
                 <visible>ListItem.HasEpg</visible>
                 <info>ListItem.Progress</info>
             </control>
+            <control type="progress">
+                <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                <left>700</left>
+                <top>29</top>
+                <width>100</width>
+                <height>12</height>
+                <visible>ListItem.HasEpg</visible>
+                <info>ListItem.Progress</info>
+            </control>
+            <control type="progress">
+                <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                <left>700</left>
+                <top>29</top>
+                <width>100</width>
+                <height>12</height>
+                <visible>ListItem.HasEpg</visible>
+                <info>ListItem.Progress</info>
+                <colordiffuse>grey3</colordiffuse>
+            </control>
             <control type="label">
+                <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                 <left>810</left>
                 <top>12</top>
                 <width>120</width>
@@ -458,6 +871,28 @@
                 <label>$INFO[ListItem.EndTime]</label>
                 <font>Font_Reg26</font>
                 <textcolor>grey</textcolor>
+                <visible>ListItem.HasEpg</visible>
+            </control>
+            <control type="label">
+                <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                <left>810</left>
+                <top>12</top>
+                <width>120</width>
+                <height>40</height>
+                <label>$INFO[ListItem.EndTime]</label>
+                <font>Font_Reg26</font>
+                <textcolor>grey</textcolor>
+                <visible>ListItem.HasEpg</visible>
+            </control>
+            <control type="label">
+                <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                <left>810</left>
+                <top>12</top>
+                <width>120</width>
+                <height>40</height>
+                <label>$INFO[ListItem.EndTime]</label>
+                <font>Font_Reg26</font>
+                <textcolor>grey3</textcolor>
                 <visible>ListItem.HasEpg</visible>
             </control>
         </itemlayout>
@@ -477,6 +912,201 @@
                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
             </control>
             <control type="label">
+                <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
+                <left>30</left>
+                <top>12</top>
+                <width>60</width>
+                <height>45</height>
+                <align>center</align>
+                <font>Font_Bold19_Caps</font>
+                <info>ListItem.ChannelNumber</info>
+            </control>
+            <control type="label">
+                <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                <left>30</left>
+                <top>12</top>
+                <width>60</width>
+                <height>45</height>
+                <align>center</align>
+                <font>Font_Bold19_Caps</font>
+                <info>ListItem.ChannelNumber</info>
+            </control>
+            <control type="label">
+                <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                <left>30</left>
+                <top>12</top>
+                <width>60</width>
+                <height>45</height>
+                <align>center</align>
+                <font>Font_Bold19_Caps</font>
+                <info>ListItem.ChannelNumber</info>
+                <textcolor>grey3</textcolor>
+            </control>
+            <control type="image">
+                <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
+                <left>58</left>
+                <top>5</top>
+                <width>60</width>
+                <height>60</height>
+                <aspectratio>keep</aspectratio>
+                <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                <bordersize>8</bordersize>
+            </control>
+            <control type="image">
+                <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                <left>58</left>
+                <top>5</top>
+                <width>60</width>
+                <height>60</height>
+                <aspectratio>keep</aspectratio>
+                <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                <bordersize>8</bordersize>
+            </control>
+            <control type="image">
+                <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                <left>58</left>
+                <top>5</top>
+                <width>60</width>
+                <height>60</height>
+                <aspectratio>keep</aspectratio>
+                <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                <bordersize>8</bordersize>
+                <colordiffuse>grey3</colordiffuse>
+            </control>
+            <control type="image">
+                <left>90</left>
+                <top>35</top>
+                <width>25</width>
+                <height>25</height>
+                <texture>pvr/PVR-IsRecording.png</texture>
+                <animation effect="fade" start="100" end="40" time="960" pulse="true" condition="true">conditional</animation>
+                <visible>ListItem.IsRecording</visible>
+            </control>
+            <control type="label">
+                <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
+                <left>120</left>
+                <top>12</top>
+                <width>460</width>
+                <height>40</height>
+                <label>[B][COLOR white]$INFO[ListItem.Label][/COLOR][/B]$INFO[ListItem.Title, - ]</label>
+                <font>Font_Reg32</font>
+                <textcolor>$VAR[FontColorVar]</textcolor>
+            </control>
+            <control type="label">
+                <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                <left>120</left>
+                <top>12</top>
+                <width>460</width>
+                <height>40</height>
+                <label>[B][COLOR white]$INFO[ListItem.Label][/COLOR][/B]$INFO[ListItem.Title, - ]</label>
+                <font>Font_Reg32</font>
+                <textcolor>$VAR[FontColorVar]</textcolor>
+            </control>
+            <control type="label">
+                <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                <left>120</left>
+                <top>12</top>
+                <width>460</width>
+                <height>40</height>
+                <label>[B][COLOR grey3]$INFO[ListItem.Label][/COLOR][/B]$INFO[ListItem.Title, - ]</label>
+                <font>Font_Reg32</font>
+                <textcolor>grey3</textcolor>
+            </control>
+            <control type="label">
+                <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
+                <left>590</left>
+                <top>12</top>
+                <width>120</width>
+                <height>40</height>
+                <label>$INFO[ListItem.StartTime]</label>
+                <font>Font_Reg26</font>
+                <textcolor>grey</textcolor>
+                <visible>ListItem.HasEpg</visible>
+            </control>
+            <control type="label">
+                <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                <left>590</left>
+                <top>12</top>
+                <width>120</width>
+                <height>40</height>
+                <label>$INFO[ListItem.StartTime]</label>
+                <font>Font_Reg26</font>
+                <textcolor>grey</textcolor>
+                <visible>ListItem.HasEpg</visible>
+            </control>
+            <control type="label">
+                <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                <left>590</left>
+                <top>12</top>
+                <width>120</width>
+                <height>40</height>
+                <label>$INFO[ListItem.StartTime]</label>
+                <font>Font_Reg26</font>
+                <textcolor>grey3</textcolor>
+                <visible>ListItem.HasEpg</visible>
+            </control>
+            <control type="progress">
+                <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
+                <left>700</left>
+                <top>29</top>
+                <width>100</width>
+                <height>12</height>
+                <visible>ListItem.HasEpg</visible>
+                <info>ListItem.Progress</info>
+            </control>
+            <control type="progress">
+                <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                <left>700</left>
+                <top>29</top>
+                <width>100</width>
+                <height>12</height>
+                <visible>ListItem.HasEpg</visible>
+                <info>ListItem.Progress</info>
+            </control>
+            <control type="progress">
+                <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                <left>700</left>
+                <top>29</top>
+                <width>100</width>
+                <height>12</height>
+                <visible>ListItem.HasEpg</visible>
+                <info>ListItem.Progress</info>
+                <colordiffuse>grey3</colordiffuse>
+            </control>
+            <control type="label">
+                <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
+                <left>810</left>
+                <top>12</top>
+                <width>120</width>
+                <height>40</height>
+                <label>$INFO[ListItem.EndTime]</label>
+                <font>Font_Reg26</font>
+                <textcolor>grey</textcolor>
+                <visible>ListItem.HasEpg</visible>
+            </control>
+            <control type="label">
+                <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                <left>810</left>
+                <top>12</top>
+                <width>120</width>
+                <height>40</height>
+                <label>$INFO[ListItem.EndTime]</label>
+                <font>Font_Reg26</font>
+                <textcolor>grey</textcolor>
+                <visible>ListItem.HasEpg</visible>
+            </control>
+            <control type="label">
+                <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                <left>810</left>
+                <top>12</top>
+                <width>120</width>
+                <height>40</height>
+                <label>$INFO[ListItem.EndTime]</label>
+                <font>Font_Reg26</font>
+                <textcolor>grey3</textcolor>
+                <visible>ListItem.HasEpg</visible>
+            </control>
+<!--            <control type="label">
                 <left>30</left>
                 <top>12</top>
                 <width>60</width>
@@ -539,7 +1169,7 @@
                 <font>Font_Reg26</font>
                 <textcolor>grey</textcolor>
                 <visible>ListItem.HasEpg</visible>
-            </control>
+            </control>-->
         </focusedlayout>
     </include>
     <include name="LiveTVRecordingsView">
@@ -621,7 +1251,8 @@
                         <width>104</width>
                         <height>104</height>
                         <aspectratio>keep</aspectratio>
-                        <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                        <!--<texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>-->
+                        <texture fallback="DefaultVideo.png">new_pvr/picons/$INFO[ListItem.ChannelName].png</texture>
                         <bordersize>8</bordersize>
                     </control>
                     <control type="label">
@@ -670,7 +1301,8 @@
                         <width>104</width>
                         <height>104</height>
                         <aspectratio>keep</aspectratio>
-                        <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                        <!--<texture fallback="DefaultVideo.png">$INFO[Container(13).ListItem.Icon]</texture>-->
+                        <texture fallback="DefaultVideo.png">new_pvr/picons/$INFO[ListItem.ChannelName].png</texture>
                         <bordersize>8</bordersize>
                     </control>
                     <control type="label">
@@ -800,7 +1432,7 @@
                 <left>58</left>
                 <top>51</top>
                 <width>1795</width>
-                <height>605</height>
+                <height>646</height>
                 <pagecontrol>10</pagecontrol>
                 <scrolltime>350</scrolltime>
                 <timeblocks>40</timeblocks>
@@ -809,150 +1441,171 @@
                 <onright>9000</onright>
                 <onup>10</onup>
                 <ondown>10</ondown>
+                <progresstexture border="5">new_pvr/PVR-EpgProgressIndicator.png</progresstexture>
                 <rulerlayout height="45" width="400">
                     <control type="label">
                         <left>0</left>
-                        <top>0</top>
+                        <top>-2</top>
                         <width>400</width>
                         <height>45</height>
-                        <textoffsetx>10</textoffsetx>
+                        <font>Font_Reg18</font>
                         <label>$INFO[ListItem.Label]</label>
-                        <font>Font_Reg29</font>
+                        <textoffsetx>10</textoffsetx>
+                    </control>
+                    <control type="label">
+                        <left>92</left>
+                        <top>8</top>
+                        <width>400</width>
+                        <textcolor>time</textcolor>
+                        <include>BreadcrumbsLabel</include>
+                        <label>°  °  °  °  °</label>
+                        <visible>!ListItem.Property(DateLabel)</visible>
                     </control>
                 </rulerlayout>
-                <channellayout height="80" width="320">
-                    <control type="label">
-                        <left>10</left>
+                <channellayout height="50" width="320">
+                    <control type="image">
+                        <left>-20</left>
                         <top>0</top>
-                        <width>70</width>
-                        <height>80</height>
-                        <textoffsetx>10</textoffsetx>
-                        <aligny>center</aligny>
-                        <font>Font_Reg32</font>
-                        <textcolor>white6</textcolor>
-                        <info>ListItem.ChannelNumber</info>
-                    </control>
-                    <control type="label">
-                        <left>70</left>
-                        <top>0</top>
-                        <width>250</width>
-                        <height>80</height>
-                        <textoffsetx>10</textoffsetx>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.ChannelName]</label>
-                        <font>Font_Reg32</font>
-                        <textcolor>white</textcolor>
-                        <visible>IsEmpty(ListItem.Icon)</visible>
+                        <width>395</width>
+                        <height>50</height>
+                        <texture border="8">pvr/bg_channel_icon.png</texture>
+                        <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
                     </control>
                     <control type="image">
-                        <left>120</left>
-                        <top>3</top>
-                        <width>120</width>
-                        <height>74</height>
-                        <aspectratio>keep</aspectratio>
+                        <left>10</left>
+                        <top>0</top>
+                        <width>40</width>
+                        <height>50</height>
                         <texture>$INFO[ListItem.Icon]</texture>
+                        <aspectratio>keep</aspectratio>
                         <visible>!IsEmpty(ListItem.Icon)</visible>
+                    </control>
+                    <control type="label">
+                        <left>55</left>
+                        <top>-2</top>
+                        <width>300</width>
+                        <height>50</height>
+                        <font>Font_Reg20</font>
+                        <textcolor>white</textcolor>
+                        <label>$INFO[ListItem.ChannelName]</label>
+                        <aligny>center</aligny>
+                        <textoffsetx>10</textoffsetx>
                     </control>
                 </channellayout>
-                <focusedchannellayout height="80" width="320">
-                    <control type="label">
-                        <left>10</left>
+                <focusedchannellayout height="50" width="320">
+                    <control type="image">
+                        <left>-20</left>
                         <top>0</top>
-                        <width>70</width>
-                        <height>80</height>
-                        <textoffsetx>10</textoffsetx>
-                        <aligny>center</aligny>
-                        <font>Font_Reg32</font>
-                        <textcolor>$VAR[FontColorVar]</textcolor>
-                        <info>ListItem.ChannelNumber</info>
-                    </control>
-                    <control type="label">
-                        <left>70</left>
-                        <top>0</top>
-                        <width>250</width>
-                        <height>80</height>
-                        <textoffsetx>10</textoffsetx>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.ChannelName]</label>
-                        <font>Font_Reg32</font>
-                        <textcolor>white</textcolor>
-                        <visible>IsEmpty(ListItem.Icon)</visible>
+                        <width>395</width>
+                        <height>50</height>
+                        <texture border="8">pvr/bg_channel_icon.png</texture>
+                        <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
                     </control>
                     <control type="image">
-                        <left>120</left>
-                        <top>3</top>
-                        <width>120</width>
-                        <height>74</height>
-                        <aspectratio>keep</aspectratio>
+                        <left>10</left>
+                        <top>0</top>
+                        <width>40</width>
+                        <height>50</height>
                         <texture>$INFO[ListItem.Icon]</texture>
+                        <aspectratio>keep</aspectratio>
                         <visible>!IsEmpty(ListItem.Icon)</visible>
                     </control>
+                    <control type="label">
+                        <left>55</left>
+                        <top>-2</top>
+                        <width>300</width>
+                        <height>50</height>
+                        <font>Font_Reg20</font>
+                        <textcolor>white</textcolor>
+                        <label>$INFO[ListItem.ChannelName]</label>
+                        <aligny>center</aligny>
+                        <textoffsetx>10</textoffsetx>
+                    </control>
                 </focusedchannellayout>
-                <itemlayout height="80" width="60">
+                <itemlayout height="50" width="60">
                     <control type="image" id="2">
-                        <top>1</top>
                         <width>60</width>
-                        <height>78</height>
-                        <texture border="4">$INFO[ListItem.Property(GenreType),epg-genres/,.png]</texture>
+                        <height>50</height>
+                        <top>0</top>
+                        <texture border="4">$INFO[ListItem.Property(GenreType),new_pvr/epg-genres/,.png]</texture>
                     </control>
                     <control type="label" id="1">
                         <left>9</left>
-                        <top>25</top>
+                        <top>3</top>
                         <width>45</width>
                         <height>38</height>
                         <font>Font_Reg32</font>
                         <info>ListItem.Label</info>
+                        <visible>!ListItem.HasTimer + !ListItem.IsRecording</visible>
+                    </control>
+                    <control type="label" id="1">
+                        <left>45</left>
+                        <top>3</top>
+                        <width>35</width>
+                        <height>38</height>
+                        <font>Font_Reg20</font>
+                        <info>ListItem.Label</info>
+                        <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                     </control>
                     <control type="image">
-                        <left>5</left>
-                        <top>0</top>
+                        <left>8</left>
+                        <top>12</top>
                         <width>35</width>
                         <height>35</height>
                         <texture>pvr/PVR-IsRecording.png</texture>
                         <visible>ListItem.IsRecording</visible>
                     </control>
                     <control type="image">
-                        <left>5</left>
-                        <top>6</top>
+                        <left>8</left>
+                        <top>12</top>
                         <width>35</width>
                         <height>35</height>
                         <texture>pvr/PVR-HasTimer.png</texture>
                         <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                     </control>
                 </itemlayout>
-                <focusedlayout height="80" width="60">
+                <focusedlayout height="50" width="60">
                     <control type="image" id="14">
-                        <top>0</top>
                         <width>60</width>
-                        <height>80</height>
-                        <texture border="8">views/tripanel/listselect_fo.png</texture>
+                        <height>50</height>
+                        <top>0</top>
                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+                        <texture border="8">views/tripanel/listselect_fo.png</texture>
                     </control>
                     <control type="image" id="2">
-                        <top>1</top>
                         <width>60</width>
-                        <height>78</height>
-                        <texture border="4">$INFO[ListItem.Property(GenreType),epg-genres/,.png]</texture>
+                        <height>50</height>
+                        <top>0</top>
                     </control>
                     <control type="label" id="1">
                         <left>9</left>
-                        <top>25</top>
-                        <width>45</width>
+                        <top>3</top>
+                        <width>35</width>
+                        <height>38</height>
+                        <font>Font_Reg20</font>
+                        <info>ListItem.Label</info>
+                        <visible>!ListItem.HasTimer + !ListItem.IsRecording</visible>
+                    </control>
+                    <control type="label" id="1">
+                        <left>45</left>
+                        <top>3</top>
+                        <width>35</width>
                         <height>38</height>
                         <font>Font_Reg32</font>
                         <info>ListItem.Label</info>
+                        <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                     </control>
                     <control type="image">
-                        <left>5</left>
-                        <top>0</top>
+                        <left>8</left>
+                        <top>12</top>
                         <width>35</width>
                         <height>35</height>
                         <texture>pvr/PVR-IsRecording.png</texture>
                         <visible>ListItem.IsRecording</visible>
                     </control>
                     <control type="image">
-                        <left>5</left>
-                        <top>6</top>
+                        <left>8</left>
+                        <top>12</top>
                         <width>35</width>
                         <height>35</height>
                         <texture>pvr/PVR-HasTimer.png</texture>
@@ -961,85 +1614,40 @@
                 </focusedlayout>
             </control>
             <control type="group">
-                <top>790</top>
+                <visible>Control.IsVisible(10)</visible>
+                <left>108</left>
+                <top>722</top>
                 <control type="image">
-                    <left>250</left>
-                    <top>-130</top>
-                    <width>1440</width>
-                    <height>1</height>
-                    <texture>views/lowlistpanel_line.png</texture>
-                    <colordiffuse>FFFFFFFF</colordiffuse>
+                    <left>30</left>
+                    <top>5</top>
+                    <width>170</width>
+                    <height>170</height>
+                    <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
                 </control>
                 <control type="image">
-                    <left>110</left>
-                    <top>-117</top>
-                    <width>230</width>
-                    <height>230</height>
-                    <aspectratio aligny="bottom">keep</aspectratio>
-                    <texture>$INFO[ListItem.Icon]</texture>
+                    <left>30</left>
+                    <top>28</top>
+                    <width>170</width>
+                    <height>127</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture fallback="DefaultVideo.png">$INFO[Container(10).ListItem.Icon]</texture>
                 </control>
-                <control type="group">
-                	<left>378</left>
-                	<control type="label">
-	                    <left>0</left>
-	                    <top>-112</top>
-	                    <width>1500</width>
-	                    <height>20</height>
-	                    <label> $INFO[ListItem.Title]</label>
-	                    <font>Font_Bold40</font>
-	                    <shadowcolor>black</shadowcolor>
-	                    <textcolor>white2</textcolor>
-	                    <scroll>true</scroll>
-	                </control>
-	                <control type="grouplist">
-	                    <left>6</left>
-	                    <top>-85</top>
-	                    <width>1400</width>
-	                    <orientation>horizontal</orientation>
-	                    <itemgap>10</itemgap>
-	                    <control type="label">
-	                        <width min="0" max="1000">auto</width>
-	                        <height>40</height>
-	                        <label>[COLOR $VAR[FontColorVar]]$LOCALIZE[31453][/COLOR] $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>
-	                        <font>Font_Reg32</font>
-	                        <textcolor>white4</textcolor>
-	                    </control>
-	                    <control type="label">
-	                        <width min="0" max="1000">auto</width>
-	                        <height>40</height>
-	                        <label>[COLOR $VAR[FontColorVar]]• $LOCALIZE[180]:[/COLOR] $INFO[ListItem.Duration]</label>
-	                        <font>Font_Reg32</font>
-	                        <textcolor>white4</textcolor>
-	                    </control>
-	                </control>
-	                <control type="grouplist">
-	                    <left>6</left>
-	                    <top>-55</top>
-	                    <width>1400</width>
-	                    <orientation>horizontal</orientation>
-	                    <control type="label">
-	                        <width min="0" max="1000">auto</width>
-	                        <height>40</height>
-	                        <label>[COLOR $VAR[FontColorVar]]$LOCALIZE[515]:[/COLOR] $INFO[ListItem.Genre]</label>
-	                        <font>Font_Reg32</font>
-	                        <textcolor>white4</textcolor>
-	                    </control>
-	                </control>
-	                <control type="textbox">
-	                    <description>Plot</description>
-	                    <left>6</left>
-	                    <top>-10</top>
-	                    <width>1430</width>
-	                    <height>135</height>
-	                    <align>justify</align>
-	                    <label>$INFO[ListItem.Plot]</label>
-	                    <font>Font_Reg29</font>
-	                    <shadowcolor>black</shadowcolor>
-	                    <textcolor>grey</textcolor>
-	                    <pagecontrol>-</pagecontrol>
-	                    <autoscroll time="4000" delay="5000" repeat="5000">true</autoscroll>
-	                </control>
-            	</control>
+                <control type="label">
+                    <left>230</left>
+                    <top>-300</top>
+                    <textcolor>$VAR[FontColorVar]</textcolor>
+                    <font>Font_Bold18</font>
+                    <label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]  |  $INFO[ListItem.Title]  |  $INFO[ListItem.Genre]</label>
+                </control>
+                <control type="textbox">
+                    <left>230</left>
+                    <top>47</top>
+                    <width>1400</width>
+                    <height>118</height>
+                    <font>Font_Reg20</font>
+                    <label fallback="31006">$INFO[ListItem.Plot]</label>
+                    <autoscroll delay="10000" time="AutoScrollTime" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+                </control>
             </control>
         </control>
     </include>
@@ -1727,53 +2335,11 @@
             <include>Animation_VisibleChange200</include>
             <control type="group">
                 <left>120</left>
-                <top>90</top>
-                <control type="label">
-                    <left>3</left>
-                    <top>15</top>
-                    <width>375</width>
-                    <height>30</height>
-                    <label>19148</label>
-                    <font>Font_Bold34_Caps</font>
-                    <shadowcolor>black</shadowcolor>
-                </control>
-                <control type="label">
-                    <left>378</left>
-                    <top>15</top>
-                    <width>300</width>
-                    <height>30</height>
-                    <label>555</label>
-                    <font>Font_Bold34_Caps</font>
-                    <shadowcolor>black</shadowcolor>
-                </control>
-                <control type="label">
-                    <left>678</left>
-                    <top>15</top>
-                    <width>825</width>
-                    <height>30</height>
-                    <label>369</label>
-                    <font>Font_Bold34_Caps</font>
-                    <shadowcolor>black</shadowcolor>
-                </control>
-                <control type="label">
-                    <left>1400</left>
-                    <top>15</top>
-                    <width>210</width>
-                    <height>30</height>
-                    <label>126</label>
-                    <font>Font_Bold34_Caps</font>
-                    <shadowcolor>black</shadowcolor>
-                </control>
-                <control type="image">
-                    <left>-45</left>
-                    <width>1760</width>
-                    <height>60</height>
-                    <texture border="1">osd/osd_settings_buttonnf.png</texture>
-                </control>
+                <top>36</top>
                 <control type="list" id="16">
                     <top>60</top>
                     <width>1740</width>
-                    <height>750</height>
+                    <height>600</height>
                     <onup>16</onup>
                     <ondown>16</ondown>
                     <onleft>9000</onleft>
@@ -1785,53 +2351,65 @@
                             <left>-45</left>
                             <width>1760</width>
                             <height>60</height>
-                            <texture border="1">osd/osd_settings_buttonnf.png</texture>
+                            <texture>osd/osd_settings_buttonnf.png</texture>
                         </control>
                         <control type="image">
                             <left>3</left>
                             <top>8</top>
                             <width>45</width>
                             <height>45</height>
-                            <aspectratio>keep</aspectratio>
                             <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                            <aspectratio>keep</aspectratio>
                         </control>
                         <control type="label">
                             <left>60</left>
                             <width>285</width>
                             <height>52</height>
-                            <font>Font_Reg32</font>
+                            <font>Font_Reg20</font>
                             <info>ListItem.ChannelName</info>
                         </control>
                         <control type="label">
                             <left>378</left>
                             <width>300</width>
                             <height>52</height>
+                            <font>Font_Reg20</font>
                             <label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]</label>
-                            <font>Font_Reg32</font>
+                        </control>
+                        <control type="progress">
+                            <left>560</left>
+                            <top>22</top>
+                            <width>180</width>
+                            <height>12</height>
+                            <visible allowhiddenfocus="true">SubString(Window(mypvr).Property(EpgNow),true)</visible>
+                            <texturebg border="12,0,12,0">dialogs/progress/progress_back.png</texturebg>
+                            <lefttexture border="12,0,0,0">dialogs/progress/progress_left.png</lefttexture>
+                            <midtexture border="0,0,12,0">dialogs/progress/progress_mid.png</midtexture>
+                            <righttexture border="0,0,12,0">dialogs/progress/progress_right.png</righttexture>
+                            <info>ListItem.Progress</info>
                         </control>
                         <control type="label">
-                            <left>678</left>
+                            <left>750</left>
                             <width>825</width>
                             <height>52</height>
-                            <font>Font_Reg32</font>
+                            <font>Font_Reg20</font>
                             <textcolor>$VAR[FontColorVar]</textcolor>
                             <info>ListItem.Label</info>
                         </control>
                         <control type="image">
+                            <animation effect="fade" start="100" end="40" time="1200" pulse="true" condition="true">conditional</animation>
                             <left>1400</left>
                             <top>15</top>
                             <width>35</width>
                             <height>35</height>
                             <texture>pvr/PVR-IsRecording.png</texture>
-                            <animation effect="fade" start="100" end="40" time="960" pulse="true" condition="true">conditional</animation>
                             <visible>ListItem.IsRecording</visible>
                         </control>
                         <control type="label">
                             <left>1445</left>
                             <width>200</width>
                             <height>60</height>
+                            <font>Font_Reg20</font>
                             <label>31111</label>
-                            <font>Font_Reg32</font>
                             <visible>ListItem.IsRecording</visible>
                         </control>
                         <control type="image">
@@ -1846,17 +2424,17 @@
                             <left>1445</left>
                             <width>200</width>
                             <height>60</height>
+                            <font>Font_Reg20</font>
                             <label>31104</label>
-                            <font>Font_Reg32</font>
                             <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="260">
+                    <focusedlayout height="60">
                         <control type="image">
                             <left>-45</left>
                             <width>1760</width>
                             <height>60</height>
-                            <texture border="1">osd/osd_settings_buttonnf.png</texture>
+                            <texture>osd/osd_settings_buttonnf.png</texture>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -1870,56 +2448,58 @@
                             <top>8</top>
                             <width>45</width>
                             <height>45</height>
-                            <aspectratio>keep</aspectratio>
                             <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+                            <aspectratio>keep</aspectratio>
                         </control>
                         <control type="label">
                             <left>60</left>
                             <width>285</width>
                             <height>52</height>
-                            <font>Font_Reg32</font>
+                            <font>Font_Reg20</font>
                             <info>ListItem.ChannelName</info>
                         </control>
                         <control type="label">
                             <left>378</left>
                             <width>300</width>
                             <height>52</height>
+                            <font>Font_Reg20</font>
                             <label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]</label>
-                            <font>Font_Reg32</font>
+                        </control>
+                        <control type="progress">
+                            <left>560</left>
+                            <top>22</top>
+                            <width>180</width>
+                            <height>12</height>
+                            <visible allowhiddenfocus="true">SubString(Window(mypvr).Property(EpgNow),true)</visible>
+                            <texturebg border="12,0,12,0">dialogs/progress/progress_back.png</texturebg>
+                            <lefttexture border="12,0,0,0">dialogs/progress/progress_left.png</lefttexture>
+                            <midtexture border="0,0,12,0">dialogs/progress/progress_mid.png</midtexture>
+                            <righttexture border="0,0,12,0">dialogs/progress/progress_right.png</righttexture>
+                            <info>ListItem.Progress</info>
                         </control>
                         <control type="label">
-                            <left>678</left>
+                            <left>750</left>
                             <width>825</width>
                             <height>52</height>
-                            <font>Font_Reg32</font>
+                            <font>Font_Reg20</font>
                             <textcolor>$VAR[FontColorVar]</textcolor>
                             <info>ListItem.Label</info>
                         </control>
-                        <control type="textbox">
-                            <left>60</left>
-                            <top>60</top>
-                            <width>1540</width>
-                            <height>200</height>
-                            <label>$INFO[ListItem.Plot]</label>
-                            <font>Font_Reg32</font>
-                            <shadowcolor>black</shadowcolor>
-                            <textcolor>grey</textcolor>
-                        </control>
                         <control type="image">
+                            <animation effect="fade" start="100" end="40" time="1200" pulse="true" condition="true">conditional</animation>
                             <left>1400</left>
                             <top>15</top>
                             <width>35</width>
                             <height>35</height>
                             <texture>pvr/PVR-IsRecording.png</texture>
-                            <animation effect="fade" start="100" end="40" time="960" pulse="true" condition="true">conditional</animation>
                             <visible>ListItem.IsRecording</visible>
                         </control>
                         <control type="label">
                             <left>1445</left>
                             <width>200</width>
                             <height>60</height>
+                            <font>Font_Reg20</font>
                             <label>31111</label>
-                            <font>Font_Reg32</font>
                             <visible>ListItem.IsRecording</visible>
                         </control>
                         <control type="image">
@@ -1934,21 +2514,56 @@
                             <left>1445</left>
                             <width>200</width>
                             <height>60</height>
+                            <font>Font_Reg20</font>
                             <label>31104</label>
-                            <font>Font_Reg32</font>
                             <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                         </control>
                     </focusedlayout>
                 </control>
                 <control type="scrollbar" id="76">
                     <left>1722</left>
-                    <top>50</top>
+                    <top>92</top>
                     <width>46</width>
-                    <height>830</height>
-                    <include>Animation_VerticalScrollBar</include>
+                    <height>538</height>
                     <onleft>16</onleft>
                     <onright>9000</onright>
                 </control>
+            </control>
+        </control>
+        <control type="group">
+            <visible>Control.IsVisible(16)</visible>
+            <left>108</left>
+            <top>722</top>
+            <control type="image">
+                <left>30</left>
+                <top>5</top>
+                <width>170</width>
+                <height>170</height>
+                <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
+            </control>
+            <control type="image">
+                <left>30</left>
+                <top>28</top>
+                <width>170</width>
+                <height>127</height>
+                <aspectratio>keep</aspectratio>
+                <texture fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+            </control>
+            <control type="label">
+                <left>230</left>
+                <top>-300</top>
+                <textcolor>$VAR[FontColorVar]</textcolor>
+                <font>Font_Bold18</font>
+                <label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]  |  $INFO[ListItem.Title]  |  $INFO[ListItem.Genre]</label>
+            </control>
+            <control type="textbox">
+                <left>230</left>
+                <top>47</top>
+                <width>1400</width>
+                <height>118</height>
+                <font>Font_Reg20</font>
+                <label fallback="31006">$INFO[ListItem.Plot]</label>
+                <autoscroll delay="10000" time="AutoScrollTime" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
             </control>
         </control>
     </include>
@@ -1999,17 +2614,18 @@
                     <width>170</width>
                     <height>170</height>
                     <aspectratio>keep</aspectratio>
-                    <texture>$INFO[ListItem.Icon]</texture>
+                    <!--<texture>$INFO[ListItem.Icon]</texture>-->
+                    <texture fallback="DefaultVideo.png">new_pvr/picons/$INFO[ListItem.ChannelName].png</texture>
                 </control>
                 <control type="label">
-                    <top>15</top>
+                    <top>-770</top>
                     <width>1320</width>
                     <label>$INFO[ListItem.Title]</label>
                     <font>Font_Reg57_Caps</font>
                     <scroll>true</scroll>
                 </control>
                 <control type="label">
-                    <top>62</top>
+                    <top>-670</top>
                     <width>1050</width>
                     <label>$INFO[ListItem.ChannelName]</label>
                     <font>Font_Reg38</font>

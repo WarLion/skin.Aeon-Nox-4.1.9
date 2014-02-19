@@ -18,6 +18,7 @@
                 <width>1304</width>
                 <height>476</height>
                 <texture>dialogs/scrapersettings_back.png</texture>
+                <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
             </control>
             <control type="grouplist" id="5">
                 <left>20</left>
@@ -28,6 +29,7 @@
                 <ondown>5</ondown>
                 <onleft>29</onleft>
                 <onright>29</onright>
+                <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
             </control>
             <control type="button" id="7">
                 <width>705</width>
@@ -37,6 +39,7 @@
                 <texturenofocus>dialogs/setcontent_button_nofocus.png</texturenofocus>
                 <font>Font_ContextMenuButton</font>
                 <textcolor>white3</textcolor>
+                <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
             </control>
             <control type="radiobutton" id="8">
                 <width>705</width>
@@ -46,6 +49,7 @@
                 <texturenofocus>dialogs/setcontent_button_nofocus.png</texturenofocus>
                 <font>Font_ContextMenuButton</font>
                 <textcolor>white3</textcolor>
+                <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 <radioleft>892</radioleft>
             </control>
             <control type="spincontrolex" id="9">
@@ -81,7 +85,6 @@
                     <texturenofocus>-</texturenofocus>
                     <label>186</label>
                     <font>Font_SetContentMenu</font>
-                    <focusedcolor>FF262728</focusedcolor>
                     <onleft>5</onleft>
                     <onright>5</onright>
                     <onup>29</onup>
@@ -98,7 +101,6 @@
                     <texturenofocus>-</texturenofocus>
                     <label>222</label>
                     <font>Font_SetContentMenu</font>
-                    <focusedcolor>FF262728</focusedcolor>
                     <onleft>5</onleft>
                     <onright>5</onright>
                     <onup>28</onup>
