@@ -662,6 +662,7 @@
         <onload>Skin.SetBool(watchedoverlay)</onload>
         <onload>Skin.SetBool(preferplot)</onload>
         <onload>Skin.SetBool(useclearcasesinfowall)</onload>
+		<onload>Skin.SetBool(useclearcasesinfowall2)</onload>
         <onload>Skin.SetBool(infopanellauncher)</onload>
         <onload>Skin.SetBool(MoreFullscreenInfo)</onload>
         <onload>Skin.SetBool(lowlist)</onload>
