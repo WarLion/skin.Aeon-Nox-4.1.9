@@ -7,6 +7,7 @@
     </coordinates>
     <include>Animation_ListSlideRight</include>
     <include>Animation_DialogZoom</include>
+    <!--<onunload>RunScript(script.pvrosd,init_page2)</onunload>-->
     <onload>NextChannelGroup</onload>
     <onload>PreviousChannelGroup</onload>
     <onunload>RunScript(script.pvrosd,close_page)</onunload>
@@ -65,7 +66,7 @@
                 <ondown>11</ondown>
                 <pagecontrol>-</pagecontrol>
                 <scrolltime tween="quadratic">200</scrolltime>
-                <itemlayout height="50" width="740">
+                <itemlayout height="50" width="780">
                     <control type="image">
                         <left>-20</left>
                         <top>0</top>
@@ -134,6 +135,36 @@
                         <width min="29" max="500">auto</width>
                         <label>[B][COLOR grey3]$INFO[ListItem.Label][/COLOR][/B][COLOR grey3]$INFO[ListItem.Title, - ][/COLOR]</label>
                     </control>
+                    <control type="label">
+                        <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
+                        <left>755</left>
+                        <top>0</top>
+                        <align>right</align>
+                        <textcolor>grey</textcolor>
+                        <font>Font_Bold17</font>
+                        <width min="29" max="500">auto</width>
+                        <label>[COLOR white]+$INFO[ListItem.EndTime2]min[/COLOR]</label>
+                    </control>
+                    <control type="label">
+                        <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                        <left>755</left>
+                        <top>0</top>
+                        <align>right</align>
+                        <textcolor>grey</textcolor>
+                        <font>Font_Bold17</font>
+                        <width min="29" max="500">auto</width>
+                        <label>[COLOR white]+$INFO[ListItem.EndTime2]min[/COLOR]</label>
+                    </control>
+                    <control type="label">
+                        <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                        <left>755</left>
+                        <top>0</top>
+                        <align>right</align>
+                        <textcolor>grey3</textcolor>
+                        <font>Font_Bold17</font>
+                        <width min="29" max="500">auto</width>
+                        <label>[COLOR grey3]+$INFO[ListItem.EndTime2]min[/COLOR]</label>
+                    </control>
                     <control type="progress">
                         <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
                         <left>90</left>
@@ -172,11 +203,11 @@
                         <visible>ListItem.IsRecording</visible>
                     </control>
                 </itemlayout>
-                <focusedlayout height="50" width="740">
+                <focusedlayout height="50" width="780">
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>740</width>
+                        <width>780</width>
                         <height>50</height>
                         <texture>views/tripanel/listselect_fo.png</texture>
                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
@@ -240,6 +271,36 @@
                         <font>Font_Bold19</font>
                         <width min="29" max="500">auto</width>
                         <label>[B][COLOR grey3]$INFO[ListItem.Label][/COLOR][/B][COLOR grey3]$INFO[ListItem.Title, - ][/COLOR]</label>
+                    </control>
+                    <control type="label">
+                        <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
+                        <left>755</left>
+                        <top>0</top>
+                        <align>right</align>
+                        <textcolor>grey</textcolor>
+                        <font>Font_Bold17</font>
+                        <width min="29" max="500">auto</width>
+                        <label>[COLOR white]+$INFO[ListItem.EndTime2]min[/COLOR]</label>
+                    </control>
+                    <control type="label">
+                        <visible>substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label)</visible>
+                        <left>755</left>
+                        <top>0</top>
+                        <align>right</align>
+                        <textcolor>grey</textcolor>
+                        <font>Font_Bold17</font>
+                        <width min="29" max="500">auto</width>
+                        <label>[COLOR white]+$INFO[ListItem.EndTime2]min[/COLOR]</label>
+                    </control>
+                    <control type="label">
+                        <visible>!substring2(Window(home).Property(PVR_AvailChannels),ListItem.Label) + !stringcompare(Window(home).Property(PVR_AvailChannels),all)]</visible>
+                        <left>755</left>
+                        <top>0</top>
+                        <align>right</align>
+                        <textcolor>grey3</textcolor>
+                        <font>Font_Bold17</font>
+                        <width min="29" max="500">auto</width>
+                        <label>[COLOR grey3]+$INFO[ListItem.EndTime2]min[/COLOR]</label>
                     </control>
                     <control type="progress">
                         <visible>stringcompare(Window(home).Property(PVR_AvailChannels),all) | stringcompare(Window(home).Property(PVR_AvailChannels),)</visible>
