@@ -3,6 +3,30 @@ skin.Aeon-Nox-4.1.9
 
 Aeon Nox 4 for gotham
 
+4.1.9.4
+
+cosmetic changes on Wall view for music
+
+better focus for music, tvshow on infowall
+
+separate clear case on tvshow and movies infowall
+
+pvr improvement from anti2k and fixes
+
+weather fix from sveni_lee
+
+fix fanart on tvshow thanks to FrenZee
+
+support font for frensh language thanks to mikebzh44
+
+label for artist on infowall
+
+bugs fix
+
+new status for tv shows
+
+
+
 4.1.9.3
 
 -bug fixes
