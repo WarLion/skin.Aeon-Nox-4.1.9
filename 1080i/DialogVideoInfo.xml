@@ -228,7 +228,7 @@
                         <animation type="WindowOpen" reversible="false">
                             <effect type="fade" start="0" end="100" delay="460" time="960" tween="cubic" />
                             <effect type="zoom" start="100,0" end="100,100" delay="460" time="960" center="0,170" tween="cubic" />
-                        </animation>
+                        </animation>						
                         <control type="image">
                             <top>90</top>
                             <width>1042</width>
@@ -310,16 +310,28 @@
                                 <height>79</height>
                                 <include>Furniture_FlagUpright</include>
                                 <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows)</visible>
-                            </control>
-                            <control type="image">
-                                <top>5</top>
-                                <width>155</width>
-                                <height>68</height>
-                                <aspectratio>keep</aspectratio>
-                                <texture>tvguide/$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
-                                <colordiffuse>white2</colordiffuse>
-                                <visible>Container.Content(tvshows)</visible>
-                            </control>
+                            </control>		
+							<control type="group">
+								<width>155</width>
+								<control type="label">
+									<top>-5</top>				
+									<width>155</width>
+									<height>38</height>
+									<align>center</align>
+									<label>$VAR[TvGuideVarTxt]</label>
+									<font>Font_Reg19_Caps</font>
+									<textcolor>floor</textcolor>
+								</control>													
+								<control type="image">
+									<top>5</top>
+									<width>155</width>
+									<height>68</height>
+									<aspectratio>keep</aspectratio>
+									<texture>tvguide/$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
+									<colordiffuse>white2</colordiffuse>
+									<visible>Container.Content(tvshows)</visible>
+								</control>
+							</control>	
                             <control type="group">
                                 <width>155</width>
                                 <visible>Container.Content(movies) | Container.Content(episodes)</visible>

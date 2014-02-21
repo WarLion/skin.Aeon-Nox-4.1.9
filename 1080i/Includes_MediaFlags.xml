@@ -462,10 +462,20 @@
                         <font>Font_Bold40</font>
                         <textcolor>floor</textcolor>
                     </control>
+                    <control type="label">
+						<top>-10</top>					
+                        <left>1450</left>
+                        <width>135</width>
+                        <height>38</height>
+                        <align>center</align>
+                        <label>$VAR[TvGuideVarTxt]</label>
+                        <font>Font_Reg19_Caps</font>
+                        <textcolor>floor</textcolor>
+                    </control>					
                     <control type="image">
                         <left>1450</left>
                         <include>AudioFlagsVars</include>
-                        <texture>tvguide/$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
+                       <texture>tvguide/$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
                         <colordiffuse>floor</colordiffuse>
                     </control>
                     <control type="image">

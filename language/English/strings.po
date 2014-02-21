@@ -2297,3 +2297,64 @@ msgstr ""
 msgctxt "#32975"
 msgid " -AutoRotate Music Info"
 msgstr ""
+
+msgctxt "#32976"
+msgid "Returning"
+msgstr ""
+
+msgctxt "#32977"
+msgid "Ended"
+msgstr ""
+
+msgctxt "#32978"
+msgid "TBD"
+msgstr ""
+
+msgctxt "#32979"
+msgid "In Development"
+msgstr ""
+
+msgctxt "#32980"
+msgid "New Serie"
+msgstr ""
+
+msgctxt "#32981"
+msgid "Never Aired"
+msgstr ""
+
+msgctxt "#32982"
+msgid "Final Season"
+msgstr ""
+
+msgctxt "#32983"
+msgid "On Hiatus"
+msgstr ""
+
+msgctxt "#32984"
+msgid "Pilot Ordered"
+msgstr ""
+
+msgctxt "#32985"
+msgid "Pilot Rejected"
+msgstr ""
+
+msgctxt "#32986"
+msgid "Cancelled"
+msgstr ""
+
+msgctxt "#32987"
+msgid "Ended"
+msgstr ""
+
+msgctxt "#32988"
+msgid "Airing"
+msgstr ""
+
+msgctxt "#32989"
+msgid "Unknown"
+msgstr ""
+
+
+
+
+
