@@ -611,24 +611,6 @@
                         </control>
                     </focusedlayout>
                 </control>
-							<control type="image"> 
-				<left>920</left>
-				<top>-140</top>             
-				<width>450</width>
-				<height>283</height>
-				<aspectratio>keep</aspectratio>
-				<fadetime>500</fadetime>
-				<texture background="true">$INFO[Skin.String(ArtistsLogosPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
-				<visible>!IsEmpty(Skin.String(ArtistsLogosPath))</visible>
-				<visible>Stringcompare(Skin.String(TriPanelSquarePosition),3) | Stringcompare(Skin.String(TriPanelSquarePosition),1) | Stringcompare(Skin.String(TriPanelSquarePosition),2) + Container.Content(songs) | Container.Content(Albums)</visible>
-				<visible>!Container.Content(Artists)</visible>
-				<animation effect="slide" end="480,0" time="0" condition=" Stringcompare(Skin.String(TriPanelSquarePosition),1)">Conditional</animation>
-				<animation effect="slide" end="0,-20" time="0" condition=" Stringcompare(Skin.String(TriPanelSquarePosition),2)">Conditional</animation>
-				<animation effect="fade" time="400">WindowOpen</animation>
-                <animation effect="fade" time="400">WindowClose</animation>
-                    <animation effect="fade" end="100" time="320" delay="400">Visible</animation>
-                    <animation effect="fade" start="100" end="0" time="320">Hidden</animation>				
-			</control>	
                 <control type="scrollbar" id="70">
                     <left>872</left>
                     <top>126</top>
@@ -639,8 +621,31 @@
                     <ondown>70</ondown>
                     <onright>9000</onright>
                     <onleft>53</onleft>
-                </control>
+                </control>			
             </control>
+				<control type="group">	
+				<animation type="WindowClose">
+                    <effect type="fade" start="100" end="0" time="320" />
+                    <effect type="zoom" end="180,100" time="320" tween="cubic" />
+                </animation>	
+				<animation type="WindowOpen">
+                    <effect type="fade" start="0" end="100" time="320" delay="500" />
+                </animation>								
+					<control type="image"> 
+						<left>1420</left>
+						<top>170</top>             
+						<width>400</width>
+						<height>250</height>
+						<aspectratio>keep</aspectratio>
+						<fadetime>300</fadetime>
+						<texture background="true">$INFO[Skin.String(ArtistsLogosPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
+						<visible>!IsEmpty(Skin.String(ArtistsLogosPath))</visible>
+						<visible>Control.IsVisible(53)</visible>
+						<visible>!Container.Content(Artists)</visible>
+						<animation effect="slide" end="0,0" time="300" condition=" Stringcompare(Skin.String(TriPanelSquarePosition),1)">Conditional</animation>
+						<animation effect="slide" end="-450,-50" time="300" condition=" Stringcompare(Skin.String(TriPanelSquarePosition),2)">Conditional</animation>
+					</control>		
+				</control>			
         </control>
     </include>
 </includes>
