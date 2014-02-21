@@ -321,16 +321,15 @@
                 </control>
             </control>
 			<control type="image"> 
-				<left>1450</left>
-				<top>450</top>             
-				<width>570</width>
-				<height>403</height>
+				<left>1650</left>
+				<top>100</top>             
+				<width>300</width>
 				<aspectratio>keep</aspectratio>
 				<fadetime>400</fadetime>
 				<texture background="true">$INFO[Skin.String(ArtistsLogosPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
 				<visible>!IsEmpty(Skin.String(ArtistsLogosPath))</visible>
 				<animation effect="slide" end="-145" time="0" condition="!IsEmpty(ListItem.Year)">Conditional</animation>
-			</control>			
+			</control>		
             <!-- List -->
             <control type="grouplist">
                 <left>500</left>
