@@ -447,13 +447,13 @@
                     <visible>Container.Content(movies)</visible>
                     <visible>[Substring(Window(home).Property(actualViewtype),Showcase) | [Stringcompare(Window(home).Property(actualViewtype),TriPanel) + !Stringcompare(Skin.String(TriPanelPosition),3)]]</visible>
                 </control>
-                <control type="radiobutton" id="16840">
+              <!--  <control type="radiobutton" id="16840">
                     <label>31812</label>
                     <include>Objects_MediaMenuButtonAlt2</include>
                     <onclick>Skin.ToggleSetting(showcasecdartmusic)</onclick>
                     <selected>Skin.HasSetting(showcasecdartmusic)</selected>
                     <visible>Substring(Window(home).Property(actualViewtype),Showcase) + Container.Content(albums)</visible>
-                </control>
+                </control>-->
                 <control type="radiobutton" id="1683">
                     <label>$LOCALIZE[31169]</label>
                     <include>Objects_MediaMenuButtonAlt2</include>
