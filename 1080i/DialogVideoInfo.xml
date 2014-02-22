@@ -313,6 +313,7 @@
                             </control>		
 							<control type="group">
 								<width>155</width>
+								<visible>Container.Content(tvshows)</visible>								
 								<control type="label">
 									<top>-5</top>				
 									<width>155</width>
@@ -329,7 +330,6 @@
 									<aspectratio>keep</aspectratio>
 									<texture>tvguide/$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
 									<colordiffuse>white2</colordiffuse>
-									<visible>Container.Content(tvshows)</visible>
 								</control>
 							</control>	
                             <control type="group">
