@@ -288,14 +288,15 @@
                             <control type="group">
                                 <width>155</width>
                                 <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows)</visible>
-                                <control type="image">
-                                    <top>5</top>
-                                    <width>155</width>
-                                    <height>67</height>
-                                    <texture>flags/IMDB.png</texture>
-                                    <aspectratio>keep</aspectratio>
-                                    <colordiffuse>white2</colordiffuse>
-                                </control>
+								<control type="label">
+									<top>-1</top>				
+									<width>155</width>
+									<height>38</height>
+									<align>center</align>
+									<label>$LOCALIZE[368]</label>
+									<font>Font_Bold24</font>
+									<textcolor>$VAR[FontColorVar]</textcolor>
+								</control>	
                                 <control type="label">
                                     <top>29</top>
                                     <width>155</width>
@@ -335,14 +336,15 @@
                             <control type="group">
                                 <width>155</width>
                                 <visible>Container.Content(movies) | Container.Content(episodes)</visible>
-                                <control type="image">
-                                    <top>5</top>
-                                    <width>155</width>
-                                    <height>68</height>
-                                    <aspectratio>keep</aspectratio>
-                                    <texture>flags/time.png</texture>
-                                    <colordiffuse>white2</colordiffuse>
-                                </control>
+								<control type="label">
+									<top>-1</top>				
+									<width>155</width>
+									<height>38</height>
+									<align>center</align>
+									<label>$LOCALIZE[2050]</label>
+									<font>Font_Reg19_Caps</font>
+									<textcolor>floor</textcolor>
+								</control>	
                                 <control type="label">
                                     <left>0</left>
                                     <top>18</top>
@@ -363,14 +365,15 @@
                             <control type="group">
                                 <visible>!Container.Content(episodes)</visible>
                                 <width>155</width>
-                                <control type="image">
-                                    <top>5</top>
-                                    <width>155</width>
-                                    <height>68</height>
-                                    <aspectratio>keep</aspectratio>
-                                    <texture>flags/year.png</texture>
-                                    <colordiffuse>white2</colordiffuse>
-                                </control>
+								<control type="label">
+									<top>-1</top>				
+									<width>155</width>
+									<height>38</height>
+									<align>center</align>
+									<label>$LOCALIZE[345]</label>
+									<font>Font_Reg19_Caps</font>
+									<textcolor>floor</textcolor>
+								</control>	
                                 <control type="label">
                                     <top>18</top>
                                     <width>155</width>
@@ -1543,7 +1546,7 @@
                		<control type="button" id="101">
 						<description>Extras</description>
 						<include>DialogVideoInfoButton</include>
-						<label>Play Theme</label>
+						<label>$LOCALIZE[208] $LOCALIZE[15111]</label>
 						<onclick>PlayMedia($INFO[ListItem.FileNameAndPath]\theme.mp3)</onclick>
 						<visible>Container.Content(tvshows)</visible>
 					</control>						

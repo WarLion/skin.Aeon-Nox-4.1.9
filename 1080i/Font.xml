@@ -380,6 +380,12 @@
             <size>28</size>
         </font>
         <font>
+            <name>Font_Bold24</name>
+            <filename>MC360.ttf</filename>
+            <style>bold</style>
+            <size>20</size>
+        </font>		
+        <font>
             <name>font13</name>
             <filename>MC360.ttf</filename>
             <size>31</size>
@@ -763,6 +769,12 @@
             <size>28</size>
         </font>
         <font>
+            <name>Font_Bold24</name>
+            <filename>OpenSansCond.ttf</filename>
+            <style>bold</style>
+            <size>20</size>
+        </font>		
+        <font>
             <name>font13</name>
             <filename>MC360.ttf</filename>
             <size>31</size>
@@ -1128,6 +1140,12 @@
             <size>28</size>
         </font>
         <font>
+            <name>Font_Bold24</name>
+            <filename>MC360.ttf</filename>
+            <style>bold</style>
+            <size>20</size>
+        </font>		
+        <font>
             <name>font13</name>
             <filename>MC360.ttf</filename>
             <size>31</size>
@@ -1477,6 +1495,12 @@
             <size>28</size>
         </font>
         <font>
+            <name>Font_Bold24</name>
+            <filename>Ubuntu-C.ttf</filename>
+            <style>bold</style>
+            <size>20</size>
+        </font>		
+        <font>
             <name>font13</name>
             <filename>Ubuntu-C.ttf</filename>
             <size>31</size>
@@ -1787,6 +1811,11 @@
             <filename>Ubuntu-B_KOR.ttf</filename>
             <size>24</size>
         </font>
+        <font>
+            <name>Font_Bold24</name>
+            <filename>Ubuntu-B_KOR.ttf</filename>
+            <size>17</size>
+        </font>		
         <font>
             <name>font13</name>
             <filename>Ubuntu-C.ttf</filename>
@@ -2157,6 +2186,12 @@
             <style>bold</style>
             <size>28</size>
         </font>
+        <font>
+            <name>Font_Bold24</name>
+            <filename>MC360.ttf</filename>
+            <style>bold</style>
+            <size>20</size>
+        </font>		
         <font>
             <name>font13</name>
             <filename>MC360.ttf</filename>
@@ -2546,6 +2581,12 @@
             <size>28</size>
         </font>
         <font>
+            <name>Font_Bold24</name>
+            <filename>MC360.ttf</filename>
+            <style>bold</style>
+            <size>20</size>
+        </font>		
+        <font>
             <name>font13</name>
             <filename>MC360.ttf</filename>
             <size>31</size>
@@ -2852,6 +2893,11 @@
             <filename>arial.ttf</filename>
             <size>24</size>
         </font>
+        <font>
+            <name>Font_Bold24</name>
+            <filename>arial.ttf</filename>
+            <size>17</size>
+        </font>		
         <font>
             <name>font13</name>
             <filename>arial.ttf</filename>
@@ -3237,6 +3283,12 @@
             <style>bold</style>
             <size>28</size>
         </font>
+        <font>
+            <name>Font_Bold24</name>
+            <filename>MC360.ttf</filename>
+            <style>bold</style>
+            <size>20</size>
+        </font>		
         <font>
             <name>font13</name>
             <filename>MC360.ttf</filename>
