@@ -74,7 +74,17 @@
                     <height>34</height>
                     <texture>common/bgcolor.png</texture>
                     <colordiffuse>99FFFFFF</colordiffuse>
-                </control>
+                </control>					
+				<control type="label">
+                    <left>191</left>
+                    <top>850</top>				
+					<width>155</width>
+					<height>38</height>
+					<align>center</align>
+					<label>$VAR[TvGuideVarTxtScript]</label>
+					<font>Font_Reg19_Caps</font>
+					<textcolor>floor</textcolor>
+				</control>					
                 <control type="image">
                     <left>131</left>
                     <top>864</top>
@@ -121,27 +131,38 @@
                 <scroll>true</scroll>
             </control>
             <control type="label">
+				<top>490</top>
                 <left>22</left>
                 <top>538</top>
                 <width>415</width>
-                <height>80</height>
-                <label>$LOCALIZE[31189]:[CR][COLOR white2]S$INFO[ListItem.Property(LatestSeasonNumber)]E$INFO[ListItem.Property(LatestEpisodeNumber)][COLOR grey] ($LOCALIZE[31322]: $INFO[ListItem.Property(LatestDate)])[/COLOR]:[CR] $INFO[ListItem.Property(LatestTitle)][/COLOR]</label>
+                <height>130</height>
+                <label>$LOCALIZE[31189]: [COLOR white2]S$INFO[ListItem.Property(LatestSeasonNumber)]E$INFO[ListItem.Property(LatestEpisodeNumber)] [/COLOR][CR]$LOCALIZE[31322]: [COLOR white2]$INFO[ListItem.Property(LatestDate)][/COLOR]</label>
                 <textcolor>$VAR[TitleColorVar]</textcolor>
             </control>
             <control type="label">
-                <label></label>
+				<top>560</top>
+                <label>$LOCALIZE[551]:[COLOR white2] $INFO[ListItem.Property(LatestTitle)][/COLOR]</label>
                 <left>22</left>
                 <top>618</top>
                 <width>415</width>
                 <height>80</height>
                 <textcolor>$VAR[TitleColorVar]</textcolor>
-            </control>
+            </control>			
+            <control type="label">
+				<top>610</top>			
+                <label>$LOCALIZE[515]:</label>
+                <left>22</left>
+                <top>618</top>
+                <width>415</width>
+                <height>80</height>
+                <textcolor>$VAR[TitleColorVar]</textcolor>
+            </control>			
             <control type="label">
                 <left>22</left>
                 <top>638</top>
-                <width>415</width>
+                <width>400</width>
                 <height>80</height>
-                <label>$LOCALIZE[515]: [CR][COLOR white2]$INFO[ListItem.Property(Genre)][/COLOR]</label>
+                <label>[COLOR white2]$INFO[ListItem.Property(Genre)][/COLOR]</label>
                 <textcolor>$VAR[TitleColorVar]</textcolor>
             </control>
             <control type="label">
@@ -448,6 +469,7 @@
                                 <left>6</left>
                                 <control type="label">
                                     <include>NextAiredLabelVars</include>
+									<visible>!StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                                 </control>
                                 <control type="image">
                                     <include>NextAiredThumbVars</include>
@@ -478,11 +500,13 @@
                                 <control type="label">
                                     <include>NextAiredLabelVars</include>
                                     <visible>!Control.HasFocus(200)</visible>
+									<visible>!StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                                 </control>
                                 <control type="label">
                                     <textcolor>$VAR[SubTitleColorVar]</textcolor>
                                     <include>NextAiredLabelVars</include>
                                     <visible>Control.HasFocus(200)</visible>
+									<visible>!StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                                 </control>
                                 <control type="image">
                                     <include>NextAiredLogoVars</include>
