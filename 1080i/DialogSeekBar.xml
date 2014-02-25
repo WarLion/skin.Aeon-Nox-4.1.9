@@ -189,17 +189,17 @@
                     <height>87</height>
                     <texture>osd/osd_bottom_bar.png</texture>
                 </control>
-                <control type="label" id="1">
-                    <left>668</left>
-                    <width>748</width>
-                    <height>42</height>
-                    <align>right</align>
-                    <font>Font_Reg19_Caps</font>
-                    <textcolor>FF363636</textcolor>
-                    <shadowcolor>88e5e5e5</shadowcolor>
-                    <label>$LOCALIZE[21396]: $INFO[player.chapter]$INFO[player.chaptercount, / ]</label>
-                    <visible>player.chaptercount + ![Player.Forwarding | Player.Rewinding]</visible>
-                </control>
+				<control type="label" id="1">
+					<left>-150</left>
+					<width>748</width>
+					<height>42</height>
+					<align>right</align>
+					<font>Font_Reg22_Caps</font>
+					<textcolor>FF363636</textcolor>
+					<shadowcolor>88e5e5e5</shadowcolor>
+					<label>$LOCALIZE[21396]: $INFO[player.chapter]$INFO[player.chaptercount, / ]</label>
+					<visible>player.chaptercount + ![Player.Forwarding | Player.Rewinding]</visible>
+				</control>
             </control>
         </control>
         <control type="group">
@@ -331,11 +331,11 @@
                         <texture>osd/osd_bottom_bar.png</texture>
                     </control>
                     <control type="label" id="1">
-                        <left>668</left>
+                        <left>-150</left>
                         <width>748</width>
                         <height>42</height>
                         <align>right</align>
-                        <font>Font_Reg19_Caps</font>
+                        <font>Font_Reg22_Caps</font>
                         <textcolor>FF363636</textcolor>
                         <shadowcolor>88e5e5e5</shadowcolor>
                         <label>$LOCALIZE[21396]: $INFO[player.chapter]$INFO[player.chaptercount, / ]</label>
