@@ -808,6 +808,22 @@
                             <visible>!Player.Hasvideo</visible>
                             <include>Animation_VisibleChange200</include>
                         </control>
+					<!-BEGIN Add Extrafanart to Infowall View -->
+						<control type="multiimage">
+							<width>573</width>
+							<height>322</height>
+							<aspectratio>stretch</aspectratio>
+							<fadetime>FanartCrossfadeTime</fadetime>
+							<include condition="Window.IsActive(pictures)">Aspectratio_Keep</include>
+							<include condition="!Window.IsActive(pictures)">Aspectratio_Scale</include>
+							<timeperimage>3000</timeperimage>
+							<texture background="true" fallback="special://skin/backgrounds/videos/videos.jpg">$VAR[InfoWallPreviewTextureVar]</texture>
+							<imagepath background="true">$VAR[VideoExtraFanartVar]</imagepath>
+							<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
+							<visible>!SubString(ListItem.Label,*,left) + [Substring(Container.FolderPath,videodb://,left) | Substring(Container.FolderPath,special://profile/playlist,left)]</visible>
+							<include>Animation_VisibleChange200</include>
+						</control>
+					<!-END Add Extrafanart to Infowall View -->						
                         <control type="videowindow" id="40001">
                             <width>573</width>
                             <height>322</height>

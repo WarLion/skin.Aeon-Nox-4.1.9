@@ -70,45 +70,30 @@
             <label>$VAR[InfoPanelVar]</label>
             <include>HiddenObject</include>
         </control>
+		<!-- BEGIN Add Extra Fanart -->
         <control type="group">
-            <visible>!Control.IsVisible(516) + !Window.IsActive(movieinformation)</visible>
+            <visible>!Control.IsVisible(516)</visible>
             <control type="multiimage">
                 <imagepath background="true" fallback="special://skin/backgrounds/videos/">$VAR[VideoFanartVar]</imagepath>
                 <fadetime>FanartCrossfadeTime</fadetime>
                 <animation effect="zoom" start="110" end="130" center="auto" time="12000" pulse="true" condition="Skin.HasSetting(animatedbg)">Conditional</animation>
                 <animation effect="slide" start="-15,-15" end="15,15" time="6000" pulse="true" condition="Skin.HasSetting(animatedbg)">Conditional</animation>
                 <animation effect="fade" start="100" end="50" time="640">Hidden</animation>
-                <visible>!Control.IsVisible(4200) + !Control.IsVisible(4201)</visible>
-            </control>
-            <control type="multiimage" id="4201">
-                <imagepath background="true" fallback="special://skin/backgrounds/movies/">$VAR[MovieFanartVar]</imagepath>
-                <fadetime>FanartCrossfadeTime</fadetime>
-                <animation effect="zoom" start="110" end="130" center="auto" time="12000" pulse="true" condition="Skin.HasSetting(animatedbg)">Conditional</animation>
-                <animation effect="slide" start="-15,-15" end="15,15" time="6000" pulse="true" condition="Skin.HasSetting(animatedbg)">Conditional</animation>
-                <animation effect="fade" start="100" end="50" time="640">Hidden</animation>
-                <visible>Container.Content(movies) | Container.Content(sets)</visible>
-            </control>
-             <control type="multiimage" id="4200">
-                <imagepath background="true" fallback="special://skin/backgrounds/tvshows/">$VAR[TVShowFanartVar]</imagepath>
-                <fadetime>FanartCrossfadeTime</fadetime>
-                <animation effect="zoom" start="110" end="130" center="auto" time="12000" pulse="true" condition="Skin.HasSetting(animatedbg)">Conditional</animation>
-                <animation effect="slide" start="-15,-15" end="15,15" time="6000" pulse="true" condition="Skin.HasSetting(animatedbg)">Conditional</animation>
-                <animation effect="fade" start="100" end="50" time="640">Hidden</animation>
-                <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)</visible>
-            </control>
+                <visible>!Window.IsActive(movieinformation)</visible>
+			</control>	
             <control type="multiimage">
                 <imagepath background="true">$VAR[VideoExtraFanartVar]</imagepath>
                 <fadetime>FanartCrossfadeTime</fadetime>
                 <animation effect="zoom" start="110" end="130" center="auto" time="12000" pulse="true" condition="Skin.HasSetting(animatedbg)">Conditional</animation>
                 <animation effect="slide" start="-15,-15" end="15,15" time="6000" pulse="true" condition="Skin.HasSetting(animatedbg)">Conditional</animation>
-                <visible>[Container.Content(tvshows) + Skin.HasSetting(extrafanarttvshows)] | [Container.Content(seasons)] | [Container.Content(episodes) + Skin.HasSetting(extrafanartepisodes)]</visible>
+                <visible>[Container.Content(musicvideos) + Skin.HasSetting(extrafanartmusicvideos)] | [Container.Content(movies) + Skin.HasSetting(extrafanartmovies)] | [Container.Content(tvshows) + Skin.HasSetting(extrafanartseries)] | [Container.Content(seasons) + Skin.HasSetting(extrafanartseasons)] | [Container.Content(episodes) + Skin.HasSetting(extrafanartepisodes)]</visible>
                 <visible>!SubString(ListItem.Label,*,left) + [Substring(Container.FolderPath,videodb://,left) | Substring(Container.FolderPath,special://profile/playlist,left)]</visible>
             </control>
             
          <include condition="skin.hassetting(backendmode)">InteractiveNodeCases</include>
          <include condition="skin.hassetting(backendmode)">NodeFadeLabels</include>
-
         </control>
+		<!-- END Add Extra Fanart -->
         <!-- view id = 516-->
         <include condition="!Skin.HasSetting(DisableBigFanVL)">BigFan</include>
         <include>VideoBackground</include>
