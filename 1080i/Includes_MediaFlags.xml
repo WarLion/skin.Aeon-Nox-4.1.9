@@ -569,11 +569,23 @@
                     <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[RatingFlagVar,flags/rating/,.png]</texture>
                     <include>OSDFlagVars</include>
                 </control>
-                <control type="image">
+			<control type="group">	
+				<control type="label">
+					<top>-10</top>	
+					<left>1487</left>									
+					<width>135</width>
+					<height>38</height>
+					<align>center</align>
+					<label>$VAR[TvGuideVarTxt]</label>
+					<font>Font_Reg19_Caps</font>
+					<textcolor>floor</textcolor>
+				</control>	                
+				<control type="image">
                     <left>1480</left>
                     <include>OSDFlagVars</include>
                     <texture background="true">tvguide/$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
                 </control>
+			</control>	
                 <control type="group">
                     <left>1630</left>
                     <control type="label">
@@ -966,10 +978,23 @@
                 <usecontrolcoords>true</usecontrolcoords>
                 <visible>Container.Content(tvshows)</visible>
                 <include>Animation_FlagSlideDown</include>
+			<control type="group">
+				<control type="label">
+					<top>-10</top>	
+					<left>-146</left>								
+					<width>135</width>
+					<height>38</height>
+					<align>center</align>
+					<label>$VAR[TvGuideVarTxt]</label>
+					<font>Font_Reg19_Caps</font>
+					<textcolor>floor</textcolor>
+				</control>	  				
                 <control type="image">
+					<left>-146</left>
                     <include>AudioFlagsVars</include>
                     <texture>tvguide/$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
                 </control>
+			</control>	
                 <control type="group">
                     <width>120</width>
                     <left>-20</left>
