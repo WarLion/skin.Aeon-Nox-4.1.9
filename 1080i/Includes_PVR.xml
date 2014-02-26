@@ -157,7 +157,6 @@
                     <top>65</top>
                     <width>100</width>
                     <height>30</height>
-                    <align>right</align>
                     <label>$INFO[Container(12).ListItem.EndTime]</label>
                     <font>Font_Reg25</font>
                     <textcolor>white</textcolor>
