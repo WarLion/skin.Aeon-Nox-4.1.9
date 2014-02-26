@@ -24,8 +24,9 @@
             <!-- Browser -->
             <control type="fixedlist" id="514">
                 <left>590</left>
+				<top>55</top>
                 <width>1400</width>
-                <height>1080</height>
+                <height>1020</height>
                 <viewtype label="20359">list</viewtype>
                 <scrolltime>100</scrolltime>
                 <orientation>vertical</orientation>

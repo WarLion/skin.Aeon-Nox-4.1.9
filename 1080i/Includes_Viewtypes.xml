@@ -425,6 +425,8 @@
                 <texture>$VAR[WatchedIconVar]</texture>
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 <visible>!StringCompare(ListItem.Overlay,OverlayWatched.png) | Container.ListItem.IsResumable</visible>
+				<visible>!Skin.HasSetting(no_infopane_panel)</visible>
+				<include>Animation_VisibleChange400</include>
             </control>
             <control type="image">
                 <left>136</left>
