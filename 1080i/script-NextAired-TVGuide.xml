@@ -113,6 +113,16 @@
                         <label>5</label>
                         <include>Objects_MediaMenuButtonAlt</include>
                     </control>
+                    <control type="button" id="9">
+                        <label>24069</label>
+						<onclick>RunScript(script.tv.show.next.aired,force=True)</onclick>
+                        <include>Objects_MediaMenuButtonAlt</include>
+                    </control>	
+                    <control type="button" id="10">
+                        <label>$LOCALIZE[10035] & $LOCALIZE[24069]</label>
+						<onclick>RunScript(script.tv.show.next.aired,reset=True)</onclick>
+                        <include>Objects_MediaMenuButtonAlt</include>
+                    </control>										
                     <control type="button" id="1601">
                         <label>$LOCALIZE[31383]</label>
                         <font>Font_Bold26_Caps</font>
