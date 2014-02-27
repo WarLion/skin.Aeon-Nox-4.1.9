@@ -356,7 +356,7 @@
                 <width>300</width>
                 <height>52</height>
                 <align>center</align>
-                <label>409</label>
+                <label>10035</label>
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 <onleft>26</onleft>
                 <onright>25</onright>
