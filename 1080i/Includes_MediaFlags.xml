@@ -451,6 +451,7 @@
                         <left>1600</left>
                         <texture>flags/IMDB.png</texture>
                         <include>AudioFlagsVars</include>
+						<visible>!Container.Content(seasons)</visible>
                     </control>
                     <control type="label">
                         <left>1600</left>
@@ -461,7 +462,10 @@
                         <label fallback="?">$INFO[ListItem.Rating]</label>
                         <font>Font_Bold40</font>
                         <textcolor>floor</textcolor>
+						<visible>!Container.Content(seasons)</visible>
                     </control>
+					<control type="group">
+					<animation effect="slide" end="150" condition="Container.Content(seasons)">Conditional</animation>
                     <control type="label">
 						<top>-10</top>					
                         <left>1450</left>
@@ -478,6 +482,7 @@
                        <texture>tvguide/$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
                         <colordiffuse>floor</colordiffuse>
                     </control>
+					</control>
                     <control type="image">
                         <left>1745</left>
                         <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[RatingFlagVar,flags/rating/,.png]</texture>
