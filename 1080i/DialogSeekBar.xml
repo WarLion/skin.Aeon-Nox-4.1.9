@@ -492,7 +492,7 @@
                     <left>1770</left>
                     <top>12</top>
                     <include>OSDFlagVars</include>
-                    <texture fallback="flags/audio/defaultsound.png">$INFO[VideoPlayer.AudioCodec,flags/info/]$INFO[VideoPlayer.AudioChannels,,.png]</texture>
+					<texture fallback="flags/audio/defaultsound.png">$INFO[VideoPlayer.AudioCodec,flags/audio/,.png]</texture>
                 </control>
             </control>
             <control type="group" id="4004">
