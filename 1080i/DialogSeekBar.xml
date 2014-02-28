@@ -457,43 +457,43 @@
                 </control>
                 <control type="image">
                     <left>15</left>
-                    <top>12</top>
+                    <top>30</top>
                     <include>OSDFlagVars</include>
                     <texture fallback="flags/source/defaultsource.png">$VAR[VideoSourceFlagVar,flags/source/,.png]</texture>
                 </control>
                 <control type="image">
                     <left>165</left>
-                    <top>12</top>
+                    <top>30</top>
                     <include>OSDFlagVars</include>
                     <texture fallback="flags/studios/default-studio.png">$INFO[VideoPlayer.Studio,flags/studios/,.png]</texture>
                     <visible>!VideoPlayer.Content(files)</visible>
                 </control>
                 <control type="image">
                     <left>315</left>
-                    <top>12</top>
+                    <top>30</top>
                     <include>OSDFlagVars</include>
                     <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[VideoRatingFlagVar,flags/rating/,.png]</texture>
                     <visible>!VideoPlayer.Content(files)</visible>
                 </control>
                 <control type="image">
-                    <left>1470</left>
-                    <top>12</top>
+                    <left>1480</left>
+                    <top>30</top>
                     <include>OSDFlagVars</include>
                     <texture fallback="flags/aspectratio/defaultaspect.png">$INFO[VideoPlayer.VideoAspect,flags/aspectratio/,.png]</texture>
                     <animation effect="slide" end="-1305" condition="VideoPlayer.Content(files)">Conditional</animation>
                 </control>
                 <control type="image">
-                    <left>1620</left>
-                    <top>12</top>
+                    <left>1600</left>
+                    <top>30</top>
                     <include>OSDFlagVars</include>
                     <texture fallback="flags/resolution/defaultscreen.png">$INFO[VideoPlayer.VideoResolution,flags/resolution/,.png]</texture>
                 </control>
                 <control type="image">
-                    <left>1770</left>
-                    <top>12</top>
+                    <left>1750</left>
+                    <top>30</top>
                     <include>OSDFlagVars</include>
-					<texture fallback="flags/audio/defaultsound.png">$INFO[VideoPlayer.AudioCodec,flags/audio/,.png]</texture>
-                </control>
+					<texture fallback="flags/audio/defaultsound.png">flags/audio/$INFO[VideoPlayer.AudioCodec]$INFO[VideoPlayer.AudioChannels].png</texture>
+                </control>					
             </control>
             <control type="group" id="4004">
                 <visible>Player.Paused|[Player.Paused + Player.Seeking] | [Player.Paused + Player.DisplayAfterSeek]</visible>
