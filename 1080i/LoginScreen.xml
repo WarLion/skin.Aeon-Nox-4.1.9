@@ -134,7 +134,7 @@
                 <info>ListItem.Label2</info>
             </control>
             <control type="label">
-                <top>1040</top>
+                <top>900</top>
                 <width>1920</width>
                 <align>center</align>
                 <font>Font_ShowcaseMainLabel2_Caps</font>
