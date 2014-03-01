@@ -105,7 +105,7 @@
                     <item>
                         <label>31335</label>
                         <onclick>SetProperty(Type,Movie,home)</onclick>
-                        <onclick>SetProperty(Method,Last,home)</onclick>
+                        <onclick>SetProperty(Method,Playlist,home)</onclick>
                         <onclick>SetProperty(Resume,True,home)</onclick>
                         <onclick>Dialog.Close(1149)</onclick>
                         <onclick>ActivateWindow(1152)</onclick>
@@ -129,7 +129,7 @@
                     <item>
                         <label>31329</label>
                         <onclick>SetProperty(Type,Episode,home)</onclick>
-                        <onclick>SetProperty(Method,Latest,home)</onclick>
+                        <onclick>SetProperty(Method,Playlist,home)</onclick>
                         <onclick>SetProperty(Resume,True,home)</onclick>
                         <onclick>Dialog.Close(1149)</onclick>
                         <onclick>ActivateWindow(1152)</onclick>
