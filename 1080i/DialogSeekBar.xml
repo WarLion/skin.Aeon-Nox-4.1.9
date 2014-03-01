@@ -489,11 +489,11 @@
                     <texture fallback="flags/resolution/defaultscreen.png">$INFO[VideoPlayer.VideoResolution,flags/resolution/,.png]</texture>
                 </control>
                 <control type="image">
-                    <left>1750</left>
+                    <left>1745</left>
                     <top>30</top>
                     <include>OSDFlagVars</include>
 					<texture fallback="flags/audio/defaultsound.png">$INFO[VideoPlayer.AudioCodec,flags/audio/]$INFO[VideoPlayer.AudioChannels,,.png]</texture>
-                </control>					
+                </control>										
             </control>
             <control type="group" id="4004">
                 <visible>Player.Paused|[Player.Paused + Player.Seeking] | [Player.Paused + Player.DisplayAfterSeek]</visible>
@@ -515,7 +515,50 @@
                     <effect type="slide" time="400" end="0,135" easing="in" tween="cubic" />
                 </animation>
                 <include>FullScreenInfoBar</include>
-            </control>
+                <control type="image">
+                    <left>1820</left>
+                    <top>1000</top>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<fadetime>IconCrossfadeTime2</fadetime>
+					<colordiffuse>white2</colordiffuse>
+					<texture fallback="">special://skin/extras/BigIcons/Subtitle.png</texture>
+					<visible>!IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
+                </control>
+                <control type="image">
+                    <left>1820</left>
+                    <top>970</top>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<fadetime>IconCrossfadeTime2</fadetime>
+					<colordiffuse>white2</colordiffuse>
+					<texture fallback="">special://skin/extras/BigIcons/Speaker.png</texture>
+					<visible>!IsEmpty(VideoPlayer.AudioLanguage)</visible>
+                </control>				
+                <control type="image">
+                    <left>1860</left>
+                    <top>970</top>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<fadetime>IconCrossfadeTime2</fadetime>
+					<colordiffuse>white2</colordiffuse>
+					<texture fallback="">$INFO[VideoPlayer.AudioLanguage,flags/language/,.png]</texture>
+                </control>
+                <control type="image">
+                    <left>1860</left>
+                    <top>1000</top>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<fadetime>IconCrossfadeTime2</fadetime>
+					<colordiffuse>white2</colordiffuse>
+					<animation effect="fade" time="200">VisibleChange</animation>
+					<texture fallback="">$INFO[VideoPlayer.SubtitlesLanguage,flags/language/,.png]</texture>
+                </control>									
+            </control>		
         </control>
         <include>AlaskaPausedLabel</include>
     </controls>

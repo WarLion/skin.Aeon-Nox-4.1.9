@@ -54,8 +54,8 @@
                 <include>Neon_Topbar</include>
             </control>
             <control type="label">
-                <left>510</left>
-                <top>14</top>
+                <left>520</left>
+                <top>18</top>
                 <width>900</width>
                 <height>68</height>
                 <align>center</align>
@@ -110,24 +110,24 @@
                     </control>
                 </control>
                 <control type="image">
-                    <left>315</left>
+                    <left>325</left>
                     <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[VideoRatingFlagVar,flags/rating/,.png]</texture>
                     <include>OSDFlagVars</include>
                     <visible>!VideoPlayer.Content(files)</visible>
                 </control>
                 <control type="image">
-                    <left>1470</left>
+                    <left>1480</left>
                     <texture>$INFO[VideoPlayer.VideoAspect,flags/aspectratio/,.png]</texture>
                     <include>OSDFlagVars</include>
                     <animation effect="slide" end="-1305" condition="VideoPlayer.Content(files)">Conditional</animation>
                 </control>
                 <control type="image">
-                    <left>1620</left>
+                    <left>1600</left>
                     <texture fallback="flags/resolution/defaultscreen.png">$INFO[VideoPlayer.VideoResolution,flags/resolution/,.png]</texture>
                     <include>OSDFlagVars</include>
                 </control>
                 <control type="image">
-                    <left>1770</left>
+                    <left>1745</left>
                     <texture fallback="flags/audio/defaultsound.png">$INFO[VideoPlayer.AudioCodec,flags/audio/]$INFO[VideoPlayer.AudioChannels,,.png]</texture>
                     <include>OSDFlagVars</include>
                 </control>
@@ -153,6 +153,49 @@
             </animation>
             <include condition="VideoPlayer.Content(livetv)">FullScreenInfoBarLiveTV</include>
             <include condition="!VideoPlayer.Content(livetv)">FullScreenInfoBar</include>
+                <control type="image">
+                    <left>1820</left>
+                    <top>1000</top>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<fadetime>IconCrossfadeTime2</fadetime>
+					<colordiffuse>white2</colordiffuse>
+					<texture fallback="">special://skin/extras/BigIcons/Subtitle.png</texture>
+					<visible>!IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
+                </control>
+                <control type="image">
+                    <left>1820</left>
+                    <top>970</top>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<fadetime>IconCrossfadeTime2</fadetime>
+					<colordiffuse>white2</colordiffuse>
+					<texture fallback="">special://skin/extras/BigIcons/Speaker.png</texture>
+					<visible>!IsEmpty(VideoPlayer.AudioLanguage)</visible>
+                </control>				
+                <control type="image">
+                    <left>1860</left>
+                    <top>970</top>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<fadetime>IconCrossfadeTime2</fadetime>
+					<colordiffuse>white2</colordiffuse>
+					<texture fallback="">$INFO[VideoPlayer.AudioLanguage,flags/language/,.png]</texture>
+                </control>
+                <control type="image">
+                    <left>1860</left>
+                    <top>1000</top>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<fadetime>IconCrossfadeTime2</fadetime>
+					<colordiffuse>white2</colordiffuse>
+					<animation effect="fade" time="200">VisibleChange</animation>
+					<texture fallback="">$INFO[VideoPlayer.SubtitlesLanguage,flags/language/,.png]</texture>
+                </control>				
         </control>
         <include>AlaskaPausedLabel</include>
         <control type="group" id="9004">
@@ -296,7 +339,7 @@
                         <label fallback="-">$INFO[VideoPlayer.Year]</label>
                         <font>Font_Bold42</font>
                         <textcolor>grey</textcolor>
-                    </control>
+                    </control>					
                     <control type="label">
                         <left>272</left>
                         <top>136</top>
