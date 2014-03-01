@@ -194,12 +194,6 @@
                         <onclick>Skin.SetString($INFO[Window(1124).Property(colordialog)],FFfa98e0)</onclick>
                     </item>
                     <item>
-                        <label>Default</label>
-                        <icon>common/white.png</icon>
-                        <onclick>Skin.SetString($INFO[Window(1124).Property(colordialog)],FFFFFFFF)</onclick>
-                        <visible>![Substring(Skin.CurrentTheme,whit) + StringCompare(Window(1124).Property(colordialog),font_color)]</visible>
-                    </item>
-                    <item>
                         <label>Black</label>
                         <icon>common/black.png</icon>
                         <onclick>Skin.SetString($INFO[Window(1124).Property(colordialog)],FF000000)</onclick>
@@ -216,6 +210,12 @@
                         <onclick condition="System.HasAddon(script.color.picker)">RunScript(script.color.picker,Skin.SetString($INFO[Window(1124).Property(colordialog)]),SetStringInRealTime=true)</onclick>
                         <onclick condition="!System.HasAddon(script.color.picker)">Notification($LOCALIZE[31900],$LOCALIZE[31910])</onclick>
                     </item>
+					<item>
+                        <label>More Colors</label>
+                        <icon>common/QuestionMark.png</icon>
+                        <onclick>ActivateWindow(1167)</onclick>
+                        <onclick>Dialog.Close(1138,true)</onclick>
+                    </item>				
                 </content>
             </control>
             <control type="radiobutton" id="11">
