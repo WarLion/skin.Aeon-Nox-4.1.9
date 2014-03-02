@@ -22,7 +22,7 @@
                     <height>87</height>
                     <texture flipy="true">osd/osd_bottom_bar.png</texture>
                     <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
-					<visible>!Skin.HasSetting(DisablePanelWidgetVis)</visible>
+					<visible>!Skin.HasSetting(DisablePanelWidgetVis) | Skin.HasSetting(musicvisinfomode)</visible>
                 </control>
                 <control type="label" id="1">
                     <left>703</left>
@@ -34,7 +34,7 @@
                     <font>Font_Reg30_Caps</font>
                     <shadowcolor>88e5e5e5</shadowcolor>
                     <textcolor>FF363636</textcolor>
-					<visible>!Skin.HasSetting(DisablePanelWidgetVis)</visible>
+					<visible>!Skin.HasSetting(DisablePanelWidgetVis) | Skin.HasSetting(musicvisinfomode)</visible>
                 </control>
                 <control type="image">
                     <width>1920</width>

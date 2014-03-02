@@ -643,7 +643,7 @@
             </control>
         </control>
         <control type="group">
-            <visible>Player.ShowInfo + !Skin.HasSetting(DisablePanelWidgetVis)</visible>
+            <visible>Player.ShowInfo</visible>
             <include>Animation_Widgets</include>
             <visible>!Window.IsActive(musicosd)</visible>
             <control type="group" id="8995">
