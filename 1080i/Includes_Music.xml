@@ -1651,6 +1651,7 @@
     </include>
     <include name="MusicInfoModePanels">
         <!-- Main Group -->
+		<visible>!Skin.HasSetting(DisablePanelWidgetVis)</visible>
         <control type="grouplist" id="40">
             <left>-135</left>
             <top>5</top>

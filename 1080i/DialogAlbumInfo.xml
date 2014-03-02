@@ -839,6 +839,7 @@
             <top>5</top>
             <width>2325</width>
             <height>780</height>
+			<visible>!Skin.HasSetting(DisablePanelWidgetVis)</visible>
             <animation effect="slide" end="0,300" time="0" condition="Window.IsActive(1147)">Conditional</animation>
             <scrolltime tween="cubic" easing="inout">500</scrolltime>
             <orientation>horizontal</orientation>
@@ -2085,6 +2086,7 @@
                 <itemgap>50</itemgap>
                 <orientation>horizontal</orientation>
                 <usecontrolcoords>true</usecontrolcoords>
+				<visible>!Skin.HasSetting(DisablePanelWidgetVis)</visible>
                 <control type="image">
                     <top>6</top>
                     <width>38</width>
