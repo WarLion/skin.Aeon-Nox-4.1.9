@@ -2280,7 +2280,7 @@
                     <texturenofocus>special://skin/extras/BigIcons/Book.png</texturenofocus>
                     <label>298</label>
                     <font>-</font>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                     <onclick>ActivateWindow(videobookmarks)</onclick>
                 </control>
                 <control type="button">
@@ -2290,7 +2290,7 @@
                     <texturenofocus>special://skin/extras/BigIcons/Speaker.png</texturenofocus>
                     <label>13396</label>
                     <font>-</font>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                     <onclick>ActivateWindow(osdaudiosettings)</onclick>
                 </control>
                 <control type="button">
@@ -2300,7 +2300,7 @@
                     <texturenofocus>special://skin/extras/BigIcons/Camcorder.png</texturenofocus>
                     <label>13395</label>
                     <font>-</font>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                     <onclick>ActivateWindow(osdvideosettings)</onclick>
                 </control>
             </control>
@@ -2318,13 +2318,13 @@
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus>special://skin/extras/BigIcons/ButtonFirst.png</texturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                 </control>
                 <control type="button">
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus>special://skin/extras/BigIcons/ButtonFRW.png</texturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                 </control>
                 <control type="togglebutton">
                     <width>100</width>
@@ -2332,25 +2332,25 @@
                     <texturenofocus>special://skin/extras/BigIcons/ButtonPause.png</texturenofocus>
                     <alttexturenofocus>special://skin/extras/BigIcons/ButtonPlay.png</alttexturenofocus>
                     <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                 </control>
                 <control type="button">
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus>special://skin/extras/BigIcons/ButtonStop.png</texturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                 </control>
                 <control type="button">
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus>special://skin/extras/BigIcons/ButtonFFW.png</texturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                 </control>
                 <control type="button">
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus>special://skin/extras/BigIcons/ButtonEnd.png</texturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                 </control>
             </control>
             <control type="grouplist">
@@ -2369,7 +2369,7 @@
                     <texturenofocus>special://skin/extras/BigIcons/Subtitle.png</texturenofocus>
                     <alttexturenofocus>special://skin/extras/BigIcons/Subtitle.png</alttexturenofocus>
                     <usealttexture>IsEmpty(Skin.String(SubtitleScript_Path))</usealttexture>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                 </control>
                 <control type="button">
                     <width>100</width>
@@ -2377,22 +2377,21 @@
                     <texturenofocus>special://skin/extras/BigIcons/dvdmenu.png</texturenofocus>
                     <enable>VideoPlayer.HasMenu</enable>
                     <animation effect="fade" start="100" end="50" time="80" condition="!VideoPlayer.HasMenu">Conditional</animation>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                 </control>
                 <control type="button">
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus>osd/OSDStereoscopicNF.png</texturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
 					<enable>VideoPlayer.IsStereoscopic</enable>
-					<animation effect="fade" start="100" end="50" time="80" condition="!VideoPlayer.IsStereoscopic">Conditional</animation>
-					<visible>VideoPlayer.IsStereoscopic</visible>					
+					<animation effect="fade" start="100" end="50" time="80" condition="!VideoPlayer.IsStereoscopic">Conditional</animation>				
                 </control>					
                 <control type="button">
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus>special://skin/extras/BigIcons/Gears.png</texturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                 </control>			
             </control>
             <control type="grouplist" id="650">
@@ -2567,8 +2566,7 @@
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                     <onclick>StereoMode</onclick>
 					<enable>VideoPlayer.IsStereoscopic</enable>
-					<animation effect="fade" start="100" end="50" time="80" condition="!VideoPlayer.IsStereoscopic">Conditional</animation>
-					<visible>VideoPlayer.IsStereoscopic</visible>					
+					<animation effect="fade" start="100" end="50" time="80" condition="!VideoPlayer.IsStereoscopic">Conditional</animation>				
                 </control>				
                 <control type="button" id="705">
                     <width>100</width>
