@@ -2382,7 +2382,7 @@
                 <control type="button">
                     <width>100</width>
                     <height>100</height>
-                    <texturenofocus>osd/OSDStereoscopicNF.png</texturenofocus>
+                    <texturenofocus>special://skin/extras/BigIcons/Button3d.png</texturenofocus>
                     <colordiffuse>gray</colordiffuse>
 					<enable>VideoPlayer.IsStereoscopic</enable>
 					<animation effect="fade" start="100" end="50" time="80" condition="!VideoPlayer.IsStereoscopic">Conditional</animation>				
@@ -2559,14 +2559,14 @@
                 <control type="button" id="706">
                     <width>100</width>
                     <height>100</height>
-                    <texturefocus>osd/OSDStereoscopicNF.png</texturefocus>
+                    <texturefocus>special://skin/extras/BigIcons/Button3d.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <label>32971</label>
                     <font>-</font>
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                     <onclick>StereoMode</onclick>
 					<enable>VideoPlayer.IsStereoscopic</enable>
-					<animation effect="fade" start="100" end="50" time="80" condition="!VideoPlayer.IsStereoscopic">Conditional</animation>				
+					<animation effect="fade" start="100" end="50" time="80" condition="VideoPlayer.IsStereoscopic">Conditional</animation>				
                 </control>				
                 <control type="button" id="705">
                     <width>100</width>
@@ -2722,7 +2722,6 @@
                     <onclick>StereoMode</onclick>
                     <enable>VideoPlayer.IsStereoscopic</enable>
                     <animation effect="fade" start="100" end="50" time="80" condition="!VideoPlayer.IsStereoscopic">Conditional</animation>
-					<visible>VideoPlayer.IsStereoscopic</visible>
                 </control>					
                 <control type="button" id="705">
                     <texturefocus>osd/buttons/OSDSettingsFO.png</texturefocus>
