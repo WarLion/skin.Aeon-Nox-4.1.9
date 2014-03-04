@@ -188,14 +188,14 @@
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label" id="11">
-                    <top>472</top>
+                    <top>200</top>
                     <width>1125</width>
                     <label>-</label>
-                    <font>Font_Reg32</font>
+                    <font>Font_Bold34_Caps</font>
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label" id="52">
-                    <top>608</top>
+                    <top>600</top>
                     <width>1050</width>
                     <aligny>top</aligny>
                     <label>144</label>
@@ -203,42 +203,41 @@
                     <textcolor>$VAR[FontColorVar]</textcolor>
                 </control>
                 <control type="label">
-                    <top>648</top>
+                    <top>20</top>
                     <width>1050</width>
                     <aligny>top</aligny>
                     <label>144</label>
-                    <font>Font_Reg32</font>
+                    <font>Font_Bold34_Caps</font>
                     <textcolor>$VAR[FontColorVar]</textcolor>
                     <info>System.ProfileName</info>
                 </control>
                 <control type="label">
-                    <top>720</top>
-                    <width>525</width>
+                    <top>650</top>
+                    <width>1215</width>
                     <height>38</height>
                     <label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
                     <font>Font_Reg32</font>
                     <textcolor>white3</textcolor>
+					<scroll>true</scroll>
                 </control>
                 <control type="progress">
-                    <top>764</top>
-                    <width>480</width>
-                    <height>21</height>
+                    <top>694</top>
+                    <width>1215</width>
+                    <height>25</height>
                     <info>System.CPUUsage</info>
                 </control>
                 <control type="label">
-                    <left>530</left>
-                    <top>720</top>
-                    <width>525</width>
+                    <top>734</top>
+                    <width>1215</width>
                     <height>38</height>
                     <label>$LOCALIZE[31309] $INFO[system.memory(used.percent)]</label>
                     <font>Font_Reg32</font>
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="progress">
-                    <left>530</left>
-                    <top>764</top>
-                    <width>480</width>
-                    <height>21</height>
+                    <top>778</top>
+                    <width>1215</width>
+                    <height>25</height>
                     <info>system.memory(used)</info>
                 </control>
             </control>
