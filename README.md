@@ -3,6 +3,42 @@ skin.Aeon-Nox-4.1.9
 
 Aeon Nox 4 for gotham
 
+4.1.9.5
+Missing status for TvSHows Next aired
+
+Extra FanArt
+
+Logo fix for SeasonFanart
+
+SeasonLandscape
+
+Landscape Overlay Whatch statusFix
+
++ 5 Favorites on widgets
+
+Some Bugs and alingments
+
+Change TvShow Classification for Genre
+
+Next Version of Tv Show Next Aired Script
+
+Add more colors
+
+Playlist fix for In Progress
+
+Add video Language and Subtitle language on Fullvideoscreen
+
+Add 4k Flag for UHDTV
+
+Disable Extended info
+
+extra studio logos 
+
+Update Translations
+
+
+
+
 4.1.9.4
 
 cosmetic changes on Wall view for music
