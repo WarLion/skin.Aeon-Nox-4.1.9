@@ -631,6 +631,7 @@
         <value condition="[Container.Content(tvshows) | Container.Content(seasons) | [Container.Content(episodes) + !Skin.HasSetting(LandscapeThumb)]] + IsEmpty(ListItem.Art(fanart))">special://skin/backgrounds/fallback_tvshows.jpg</value>
         <value condition="Container.Content(episodes) + Skin.HasSetting(LandscapeThumb) + IsEmpty(ListItem.Thumb)">special://skin/backgrounds/fallback_tvshows.jpg</value>
         <value condition="Container.Content(episodes) + Skin.HasSetting(LandscapeThumb)">$INFO[ListItem.Thumb]</value>
+<!--		<value condition="Container.Content(seasons) ">$INFO[ListItem.Path]$INFO[ListItem.Season,season0,-landscape.jpg]</value>-->
         <value condition="[[Container.Content(tvshows) | Container.Content(seasons)] + Skin.HasSetting(TVLandscapeThumb)]">$INFO[ListItem.Path,,landscape.jpg]</value>
 		<value condition="Container.Content(seasons) + Skin.HasSetting(TVLandscapeThumb)">$INFO[Container.seasonlandscape]</value>
         <value>$INFO[ListItem.Art(fanart)]</value>
@@ -680,15 +681,15 @@
         <value condition="Container.Content(tvshows) + !Control.isVisible(503)">$INFO[Window(Home).Property(NextAired.Runtime),, $LOCALIZE[12391]]</value>
     </variable>
     <variable name="LogoVarList">
+		<value condition="Container.Content(seasons) + IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Path,,logo.png]</value>	
         <value condition="Container.Content(episodes) | Container.Content(seasons)">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value>$INFO[ListItem.Art(clearlogo)]</value>
     </variable>
-    
     <variable name="LogoVar">
             <value condition="Container.Content(albums) + Substring(Container.FolderPath,musicdb://artists/,left)">$INFO[Skin.String(ArtistsLogosPath)]$INFO[Container.FolderName,,/logo.png]</value>
             <value condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs)">$INFO[Skin.String(ArtistsLogosPath)]$INFO[ListItem.Artist,,/logo.png]</value>
-<!--         <value condition="skin.hassetting(backendmode) + SubString(ListItem.Path,videodb://movies/sets/,left)">$INFO[Control.GetLabel(4211)]</value>
- -->        <value>$VAR[LogoVarList]</value>
+<!--         <value condition="skin.hassetting(backendmode) + SubString(ListItem.Path,videodb://movies/sets/,left)">$INFO[Control.GetLabel(4211)]</value> --> 
+       <value>$VAR[LogoVarList]</value>
     </variable>
     <variable name="cdArtVar">
         <value condition="!IsEmpty(ListItem.Art(discart))">$INFO[ListItem.Art(discart)]</value>
@@ -1654,7 +1655,7 @@
     </variable>
     <variable name="LandscapeThumbVar">
         <value condition="Stringcompare(ListItem.label,..)">DefaultFolderBack.png</value>
-        <value condition="Container.Content(seasons) + Skin.HasSetting(SeasonLandscape)">$INFO[ListItem.Path,,season]$INFO[ListItem.Season,,-landscape.jpg]</value>
+        <value condition="Container.Content(seasons)">$INFO[ListItem.Path,,season]$INFO[ListItem.Season,,-landscape.jpg]</value>
         <value condition="Container.Content(episodes) | Container.Content(seasons)">$INFO[ListItem.Icon]</value>
         <value condition="[Container.Content(tvshows) | Container.Content(movies)] + !IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
         <value>$INFO[ListItem.Art(fanart)]</value>
