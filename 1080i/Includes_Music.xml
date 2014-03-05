@@ -1310,25 +1310,25 @@
                 <width>100</width>
                 <height>100</height>
                 <texturenofocus>special://skin/extras/BigIcons/Format.png</texturenofocus>
-                <colordiffuse>white</colordiffuse>
+                <colordiffuse>gray</colordiffuse>
             </control>
             <control type="button">
                 <width>100</width>
                 <height>100</height>
                 <texturenofocus>special://skin/extras/BigIcons/Oscilloscope.png</texturenofocus>
-                <colordiffuse>white</colordiffuse>
+                <colordiffuse>gray</colordiffuse>
             </control>
             <control type="button">
                 <width>100</width>
                 <height>100</height>
                 <texturenofocus>special://skin/extras/BigIcons/Controlpanel.png</texturenofocus>
-                <colordiffuse>white</colordiffuse>
+                <colordiffuse>gray</colordiffuse>
             </control>
             <control type="button">
                 <width>100</width>
                 <height>100</height>
                 <texturenofocus>special://skin/extras/BigIcons/Pin.png</texturenofocus>
-                <colordiffuse>white</colordiffuse>
+                <colordiffuse>gray</colordiffuse>
             </control>
         </control>
         <control type="grouplist" id="650">
@@ -1397,13 +1397,13 @@
                 <width>100</width>
                 <height>100</height>
                 <texturenofocus>special://skin/extras/BigIcons/ButtonFirst.png</texturenofocus>
-                <colordiffuse>white</colordiffuse>
+                <colordiffuse>gray</colordiffuse>
             </control>
             <control type="button">
                 <width>100</width>
                 <height>100</height>
                 <texturenofocus>special://skin/extras/BigIcons/ButtonFRW.png</texturenofocus>
-                <colordiffuse>white</colordiffuse>
+                <colordiffuse>gray</colordiffuse>
             </control>
             <control type="togglebutton">
                 <width>100</width>
@@ -1411,32 +1411,32 @@
                 <texturenofocus>special://skin/extras/BigIcons/ButtonPause.png</texturenofocus>
                 <alttexturenofocus>special://skin/extras/BigIcons/ButtonPlay.png</alttexturenofocus>
                 <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-                <colordiffuse>white</colordiffuse>
+                <colordiffuse>gray</colordiffuse>
             </control>
             <control type="button">
                 <width>100</width>
                 <height>100</height>
                 <texturenofocus>special://skin/extras/BigIcons/ButtonStop.png</texturenofocus>
-                <colordiffuse>white</colordiffuse>
+                <colordiffuse>gray</colordiffuse>
             </control>
             <control type="button">
                 <width>100</width>
                 <height>100</height>
                 <texturenofocus>special://skin/extras/BigIcons/ButtonFFW.png</texturenofocus>
-                <colordiffuse>white</colordiffuse>
+                <colordiffuse>gray</colordiffuse>
             </control>
             <control type="button">
                 <width>100</width>
                 <height>100</height>
                 <texturenofocus>special://skin/extras/BigIcons/ButtonEnd.png</texturenofocus>
-                <colordiffuse>white</colordiffuse>
+                <colordiffuse>gray</colordiffuse>
             </control>
             <control type="button">
                 <width>100</width>
                 <height>100</height>
                 <texturenofocus>special://skin/extras/BigIcons/Microphone.png</texturenofocus>
                 <visible>Player.CanRecord</visible>
-                <colordiffuse>white</colordiffuse>
+                <colordiffuse>gray</colordiffuse>
             </control>
         </control>
         <control type="grouplist" id="652">
@@ -1546,19 +1546,19 @@
                 <texturenofocus>special://skin/extras/BigIcons/Lyrics.png</texturenofocus>
                 <alttexturenofocus>special://skin/extras/BigIcons/Lyrics.png</alttexturenofocus>
                 <usealttexture>IsEmpty(Skin.String(LyricScript_Path))</usealttexture>
-                <colordiffuse>white</colordiffuse>
+                <colordiffuse>gray</colordiffuse>
             </control>
             <control type="button">
                 <width>1</width>
                 <height>1</height>
                 <texturenofocus>-</texturenofocus>
-                <colordiffuse>white</colordiffuse>
+                <colordiffuse>gray</colordiffuse>
             </control>
             <control type="image">
                 <width>100</width>
                 <height>100</height>
                 <texture>$VAR[MusicOSDRepeatButtonVar]</texture>
-                <colordiffuse>white</colordiffuse>
+                <colordiffuse>gray</colordiffuse>
             </control>
             <control type="togglebutton">
                 <width>100</width>
@@ -1566,13 +1566,13 @@
                 <texturenofocus>special://skin/extras/BigIcons/ArrowRight.png</texturenofocus>
                 <alttexturenofocus>special://skin/extras/BigIcons/ButtonShuffle.png</alttexturenofocus>
                 <usealttexture>Playlist.IsRandom</usealttexture>
-                <colordiffuse>white</colordiffuse>
+                <colordiffuse>gray</colordiffuse>
             </control>
             <control type="button">
                 <width>100</width>
                 <height>100</height>
                 <texturenofocus>special://skin/extras/BigIcons/Gears.png</texturenofocus>
-                <colordiffuse>white</colordiffuse>
+                <colordiffuse>gray</colordiffuse>
             </control>
         </control>
         <control type="grouplist" id="651">
