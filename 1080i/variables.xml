@@ -626,12 +626,14 @@
         <value condition="Container.Content(seasons)">$INFO[Container.ShowPlot]</value>
         <value>$INFO[ListItem.Plot]</value>
     </variable>
+	<variable name="SeasonLandscape">
+	 	<value>$INFO[ListItem.Path]$INFO[ListItem.Season,season0,-landscape.jpg]</value>
+	</variable>
     <variable name="FanartTextureVar">
         <value condition="Container.Content(movies) + IsEmpty(ListItem.Art(fanart))">special://skin/backgrounds/fallback_movies.jpg</value>
         <value condition="[Container.Content(tvshows) | Container.Content(seasons) | [Container.Content(episodes) + !Skin.HasSetting(LandscapeThumb)]] + IsEmpty(ListItem.Art(fanart))">special://skin/backgrounds/fallback_tvshows.jpg</value>
         <value condition="Container.Content(episodes) + Skin.HasSetting(LandscapeThumb) + IsEmpty(ListItem.Thumb)">special://skin/backgrounds/fallback_tvshows.jpg</value>
         <value condition="Container.Content(episodes) + Skin.HasSetting(LandscapeThumb)">$INFO[ListItem.Thumb]</value>
-<!--		<value condition="Container.Content(seasons) ">$INFO[ListItem.Path]$INFO[ListItem.Season,season0,-landscape.jpg]</value>-->
         <value condition="[[Container.Content(tvshows) | Container.Content(seasons)] + Skin.HasSetting(TVLandscapeThumb)]">$INFO[ListItem.Path,,landscape.jpg]</value>
 		<value condition="Container.Content(seasons) + Skin.HasSetting(TVLandscapeThumb)">$INFO[Container.seasonlandscape]</value>
         <value>$INFO[ListItem.Art(fanart)]</value>
@@ -1655,7 +1657,7 @@
     </variable>
     <variable name="LandscapeThumbVar">
         <value condition="Stringcompare(ListItem.label,..)">DefaultFolderBack.png</value>
-        <value condition="Container.Content(seasons)">$INFO[ListItem.Path,,season]$INFO[ListItem.Season,,-landscape.jpg]</value>
+        <value condition="Container.Content(seasons) + Skin.HasSetting(SeasonLandscape)">$INFO[ListItem.Path,,season]$INFO[ListItem.Season,,-landscape.jpg]</value>
         <value condition="Container.Content(episodes) | Container.Content(seasons)">$INFO[ListItem.Icon]</value>
         <value condition="[Container.Content(tvshows) | Container.Content(movies)] + !IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
         <value>$INFO[ListItem.Art(fanart)]</value>
