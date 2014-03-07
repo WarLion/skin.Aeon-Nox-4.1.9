@@ -53,10 +53,10 @@
                     <width>420</width>
                     <height>42</height>
                     <align>center</align>
-                    <font>Font_Reg19_Caps</font>
-                    <textcolor>FF363636</textcolor>
-                    <shadowcolor>88e5e5e5</shadowcolor>
                     <label>$VAR[VideoPlayerSeekVar]</label>
+                    <font>Font_Reg33_Caps</font>
+                    <shadowcolor>88e5e5e5</shadowcolor>
+                    <textcolor>FF363636</textcolor>
                 </control>
             </control>
             <control type="group">
@@ -375,7 +375,7 @@
                         <width>420</width>
                         <height>42</height>
                         <align>center</align>
-                        <font>Font_Reg19_Caps</font>
+                        <font>Font_Reg33_Caps</font>
                         <textcolor>FF363636</textcolor>
                         <shadowcolor>88e5e5e5</shadowcolor>
                         <label>$VAR[VideoPlayerSeekVar]</label>
@@ -416,7 +416,7 @@
                         <width>420</width>
                         <height>42</height>
                         <align>center</align>
-                        <font>Font_Reg19_Caps</font>
+                        <font>Font_Reg33_Caps</font>
                         <textcolor>FF363636</textcolor>
                         <shadowcolor>88e5e5e5</shadowcolor>
                         <label>$VAR[VideoPlayerSeekVar]</label>
@@ -425,7 +425,8 @@
                 <control type="image">
                     <width>1920</width>
                     <height>135</height>
-                    <texture flipy="true">osd/osd_back.png</texture>
+					<texture flipy="true">osd/osd_back.png</texture>
+					<colordiffuse>$VAR[DialogColorVar]</colordiffuse>
                 </control>
                 <control type="group">
                     <top>84</top>
@@ -461,12 +462,31 @@
                     <include>OSDFlagVars</include>
                     <texture fallback="flags/source/defaultsource.png">$VAR[VideoSourceFlagVar,flags/source/,.png]</texture>
                 </control>
-                <control type="image">
+                <control type="group">
                     <left>165</left>
-                    <top>30</top>
-                    <include>OSDFlagVars</include>
-                    <texture fallback="flags/studios/default-studio.png">$INFO[VideoPlayer.Studio,flags/studios/,.png]</texture>
+					<top>30</top>
                     <visible>!VideoPlayer.Content(files)</visible>
+                    <control type="image" id="76">
+                        <texture>$INFO[VideoPlayer.Studio,flags/studios/,.png]</texture>
+                        <include>OSDFlagVars</include>
+                    </control>
+                    <control type="image">
+                        <texture>flags/studios/default-studio.png</texture>
+                        <include>OSDFlagVars</include>
+                        <visible>IsEmpty(VideoPlayer.Studio)</visible>
+                    </control>
+                    <control type="label">
+                        <left>-5</left>
+                        <top>8</top>
+                        <width>155</width>
+                        <height>70</height>
+                        <align>center</align>
+                        <label>$INFO[VideoPlayer.Studio]</label>
+                        <font>Font_Reg22_Caps</font>
+                        <textcolor>grey</textcolor>
+                        <wrapmultiline>true</wrapmultiline>
+                        <visible>IsEmpty(Control.GetLabel(76))</visible>
+                    </control>
                 </control>
                 <control type="image">
                     <left>315</left>
@@ -479,7 +499,7 @@
                     <left>1480</left>
                     <top>30</top>
                     <include>OSDFlagVars</include>
-                    <texture fallback="flags/aspectratio/defaultaspect.png">$INFO[VideoPlayer.VideoAspect,flags/aspectratio/,.png]</texture>
+                    <texture>$INFO[VideoPlayer.VideoAspect,flags/aspectratio/,.png]</texture>
                     <animation effect="slide" end="-1305" condition="VideoPlayer.Content(files)">Conditional</animation>
                 </control>
                 <control type="image">
