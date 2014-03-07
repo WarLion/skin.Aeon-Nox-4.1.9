@@ -466,7 +466,7 @@
                 <animation type="VisibleChange">
                     <effect type="fade" end="100" delay="320" time="160" />
                 </animation>
-            </control>		
+            </control>					
             <control type="image">
                 <left>909</left>
                 <top>69</top>

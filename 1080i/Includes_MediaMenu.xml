@@ -500,9 +500,9 @@
                 </control>
                 <control type="image">
                     <texture>special://skin/extras/BigIcons/ButtonReload.png</texture>
-                    <animation effect="fade" start="100" end="55" time="0" condition="![Control.HasFocus(20) + Control.HasFocus(20)]">Conditional</animation>
+                    <animation effect="fade" start="100" end="55" time="0" condition="![Control.HasFocus(20)]">Conditional</animation>
                     <include>MediaMenuIcons</include>
-                    <visible>Control.IsVisible(100) | Control.IsVisible(102)</visible>
+                    <visible>Control.IsVisible(20)</visible>
                 </control>			
                 <control type="image">
                     <texture>special://skin/extras/BigIcons/book2.png</texture>
@@ -581,7 +581,9 @@
                     <texture>special://skin/extras/BigIcons/ButtonAdd.png</texture>
                     <animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(10)">Conditional</animation>
                     <include>MediaMenuIcons</include>
-                    <visible>Control.IsVisible(10) + Window.IsActive(videos) + StringCompare(Control.GetLabel(10),$LOCALIZE[16100])</visible>
+                    <visible>Control.IsVisible(10) + Window.IsActive(videos)</visible>
+					<visible>!StringCompare(Control.GetLabel(10),$LOCALIZE[16101])</visible>
+					<visible>!StringCompare(Control.GetLabel(10),$LOCALIZE[16102])</visible>
                 </control>
                 <control type="image">
                     <texture>special://skin/extras/BigIcons/QUICKPAR.png</texture>
