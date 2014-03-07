@@ -100,7 +100,7 @@
             <label>589</label>
             <include>Objects_MediaMenuButtonIcons</include>
         </control>
-		<control type="togglebutton" id="2666">
+		<control type="togglebutton" id="20">
 			<description>Update library</description>
 			<include>Objects_MediaMenuButtonIcons</include>
 			<label>653</label>
@@ -182,7 +182,7 @@
             <include>Objects_MediaMenuButtonIcons</include>
             <visible>Control.IsEnabled(10)</visible>
         </control>
-		<control type="togglebutton" id="2667">
+		<control type="togglebutton" id="20">
 			<description>Update library</description>
 			<include>Objects_MediaMenuButtonIcons</include>
 			<label>653</label>
@@ -440,9 +440,9 @@
                 </control>
                 <control type="image">
                     <texture>special://skin/extras/BigIcons/Magicwand.png</texture>
-                    <animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(19) + !Control.HasFocus(20)">Conditional</animation>
+                    <animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(2255) + !Control.HasFocus(2256)">Conditional</animation>
                     <include>MediaMenuIcons</include>
-                    <visible>Control.IsVisible(19) | [Control.IsVisible(20) + !Window.IsActive(musicplaylist) + !Window.IsActive(videoplaylist)]</visible>
+                    <visible>Control.IsVisible(2255) | [Control.IsVisible(2256) + !Window.IsActive(musicplaylist) + !Window.IsActive(videoplaylist)]</visible>
                 </control>
                 <control type="image">
                     <texture>special://skin/extras/BigIcons/Format.png</texture>
@@ -500,7 +500,7 @@
                 </control>
                 <control type="image">
                     <texture>special://skin/extras/BigIcons/ButtonReload.png</texture>
-                    <animation effect="fade" start="100" end="55" time="0" condition="![Control.HasFocus(2666) + Control.HasFocus(2667)]">Conditional</animation>
+                    <animation effect="fade" start="100" end="55" time="0" condition="![Control.HasFocus(20) + Control.HasFocus(20)]">Conditional</animation>
                     <include>MediaMenuIcons</include>
                     <visible>Control.IsVisible(100) | Control.IsVisible(102)</visible>
                 </control>			
@@ -531,9 +531,9 @@
                 </control>
                 <control type="image">
                     <texture>special://skin/extras/BigIcons/ButtonShuffle.png</texture>
-                    <animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(20)">Conditional</animation>
+                    <animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(2256)">Conditional</animation>
                     <include>MediaMenuIcons</include>
-                    <visible>Control.IsVisible(20) + [Window.IsActive(musicplaylist) | Window.IsActive(videoplaylist)]</visible>
+                    <visible>Control.IsVisible(2256) + [Window.IsActive(musicplaylist) | Window.IsActive(videoplaylist)]</visible>
                 </control>
                 <control type="image">
                     <texture>$VAR[RepeatImageVar]</texture>
@@ -666,14 +666,14 @@
         </control>
     </include>
     <include name="FilterButtons">
-        <control type="edit" id="19">
+        <control type="edit" id="2255">
             <label>587</label>
             <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
             <hinttext></hinttext>
             <visible>!Container.Content()</visible>
             <include>Objects_MediaMenuButtonIcons</include>
         </control>
-        <control type="radiobutton" id="20">
+        <control type="radiobutton" id="2256">
             <label>587</label>
             <visible>Container.CanFilterAdvanced</visible>
             <selected>Container.Filtered</selected>
