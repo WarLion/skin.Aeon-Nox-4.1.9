@@ -436,6 +436,18 @@
                 <visible>!Skin.HasSetting(no_infopane_panel)</visible>
                 <include>Animation_VisibleChange400</include>
             </control>
+<!-- text label -->
+<!--
+            <control type="label">
+				<left>200</left>
+				<top>20</top>					
+				<width>2000</width>
+				<height>47</height>
+				<label fallback="31006">$VAR[EpisodeSeasonFanart]</label>
+				<scroll>true</scroll>
+            </control>		
+-->
+<!-- end text label -->				
             <control type="group">
                 <visible>Container.Content(movies) | [Container.Content(tvshows) + Control.isVisible(8858)]</visible>
                 <visible>!Skin.HasSetting(no_infopane_panel)</visible>
