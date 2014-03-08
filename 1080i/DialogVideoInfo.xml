@@ -5,6 +5,7 @@
     <onload>AlarmClock(ActorFade,SetProperty(ActorFade,true),00:02,silent)</onload>
     <onload condition="Skin.HasSetting(TVTunes.Enabled) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True)
 </onload>	
+    <onload condition="System.HasAddon(script.videolanguage) + [Container.Content(movies) | Container.Content(episodes)]">XBMC.RunScript(script.videolanguage,movieid=$INFO[ListItem.DBID])</onload>
 	<onload condition="System.HasAddon(script.videoextras) + !Skin.HasSetting(Enable.videoextras)">XBMC.RunScript(script.videoextras,hasExtras,flag,"$INFO[ListItem.FilenameAndPath]")</onload>
     <onunload>ClearProperty(FanartZoom,movieinformation)</onunload>
     <allowoverlay>no</allowoverlay>
@@ -689,7 +690,7 @@
                                 <aspectratio aligny="center" align="center">keep</aspectratio>
                                 <texture>flags/cc.png</texture>
                                 <colordiffuse>white2</colordiffuse>
-								<visible>!IsEmpty(ListItem.SubtitleLanguage) + Stringcompare(ListItem.AudioLanguage,und)</visible>
+                                <visible>!IsEmpty(ListItem.SubtitleLanguage) + IsEmpty(Window.Property(SubtitleLanguage.1))</visible>
                             </control>
                             <!-- Language flags -->
                             <control type="grouplist">
@@ -703,7 +704,7 @@
                                     <animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
                                     <itemgap>2</itemgap>
                                     <orientation>horizontal</orientation>
-                                    <visible>!IsEmpty(ListItem.AudioLanguage) + !Stringcompare(ListItem.AudioLanguage,und)</visible>
+                                    <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.1)) + !Stringcompare(Window(movieinformation).Property(AudioLanguage.1),und)</visible>
                                     <control type="label">
                                         <width>110</width>
                                         <height>24</height>
@@ -711,14 +712,8 @@
                                         <top>3</top>
                                         <label>$LOCALIZE[445]: </label>
                                         <font>Font_Reg19_Caps</font>
-                                    </control>								
-                                    <control type="image">
-										<width>28</width>
-										<height>28</height>
-										<aspectratio>keep</aspectratio>
-										<texture background="true">$INFO[ListItem.AudioLanguage,flags/language/,.png]</texture>
-										<visible>!IsEmpty(ListItem.AudioLanguage)</visible>
-									</control>
+                                    </control>
+                                    <include>LanguageFlags</include>
                                 </control>
                                 <!-- Subtitle flags -->
                                 <control type="grouplist" id="12000">
@@ -746,15 +741,9 @@
                                         <label>31003</label>
                                         <textcolor>grey</textcolor>
                                         <font>Font_Reg19_Caps</font>
-										<visible>!IsEmpty(ListItem.AudioLanguage) + IsEmpty(ListItem.SubtitleLanguage)</visible>
+                                        <visible>IsEmpty(Window(movieinformation).Property(SubtitleLanguage.1)) + IsEmpty(Window(movieinformation).Property(SubtitleLanguage.2))</visible>
                                     </control>
-                                    <control type="image">
-										<width>28</width>
-										<height>28</height>
-										<aspectratio>keep</aspectratio>
-										<texture background="true">$INFO[ListItem.SubtitleLanguage,flags/language/,.png]</texture>
-										<visible>!IsEmpty(ListItem.SubtitleLanguage)</visible>
-									</control>
+                                    <include>SubtitleFlags</include>
                                 </control>
                             </control>
                         </control>
