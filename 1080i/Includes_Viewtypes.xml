@@ -490,7 +490,7 @@
                 <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
                 <bordersize>7</bordersize>
                 <animation effect="zoom" end="108" center="1800,270" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(no_infopane_panel) + Control.IsVisible(503)">Conditional</animation>
-                <visible>!Container.Content(tvshows) + Skin.HasSetting(TVLandscapeThumb)</visible>
+                <visible>Container.Content(seasons) + Skin.HasSetting(TVLandscapeThumb)</visible>
                 <animation type="VisibleChange">
                     <effect type="fade" end="100" delay="340" time="160" />
                 </animation>
