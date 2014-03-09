@@ -436,18 +436,18 @@
                 <visible>!Skin.HasSetting(no_infopane_panel)</visible>
                 <include>Animation_VisibleChange400</include>
             </control>
-<!-- text label -->
+<!-- test label -->
 <!--
             <control type="label">
 				<left>200</left>
 				<top>20</top>					
 				<width>2000</width>
 				<height>47</height>
-				<label fallback="31006">$VAR[EpisodeSeasonFanart]</label>
+				<label fallback="31006">$VAR[SeasonLandscapeThumbVar]</label>
 				<scroll>true</scroll>
             </control>		
 -->
-<!-- end text label -->				
+<!-- end test label -->				
             <control type="group">
                 <visible>Container.Content(movies) | [Container.Content(tvshows) + Control.isVisible(8858)]</visible>
                 <visible>!Skin.HasSetting(no_infopane_panel)</visible>
@@ -490,7 +490,7 @@
                 <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
                 <bordersize>7</bordersize>
                 <animation effect="zoom" end="108" center="1800,270" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(no_infopane_panel) + Control.IsVisible(503)">Conditional</animation>
-                <visible>Skin.HasSetting(TVLandscapeThumb)</visible>
+                <visible>!Container.Content(tvshows) + Skin.HasSetting(TVLandscapeThumb)</visible>
                 <animation type="VisibleChange">
                     <effect type="fade" end="100" delay="340" time="160" />
                 </animation>
