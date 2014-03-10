@@ -26,7 +26,7 @@
         <value>special://skin/extras/BigIcons/mainmenu.png</value>
     </variable>
     <variable name="DefaultAreaColorVar">
-        <value condition="[Window.IsActive(fullscreeninfo) | Window.IsActive(fullscreenvideo) | Window.IsActive(videoosd) | Window.IsActive(videos) | Window.IsActive(script-videoextras-main.xml) | Window.IsActive(script-NextAired-TVGuide.xml) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings)| Window.IsActive(videobookmarks)] + !IsEmpty(Skin.String(diffuse_videolibrary))">$INFO[Skin.String(diffuse_videolibrary)]</value>
+        <value condition="[Window.IsActive(fullscreeninfo) | Window.IsActive(fullscreenvideo) | Window.IsActive(videoosd) | Window.IsActive(videos) | Window.IsActive(script-videoextras-main.xml) | Window.IsActive(script-NextAired-TVGuide.xml) | Window.IsActive(script-NextAired-TVGuide2.xml) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings)| Window.IsActive(videobookmarks)] + !IsEmpty(Skin.String(diffuse_videolibrary))">$INFO[Skin.String(diffuse_videolibrary)]</value>
         <value condition="[Window.IsActive(musiclibrary) | Window.IsActive(musicosd) | Window.IsActive(musicfiles) | Window.IsActive(visualisation)] + !IsEmpty(Skin.String(diffuse_music))">$INFO[Skin.String(diffuse_music)]</value>
         <value condition="[Window.IsActive(programs) | Window.IsActive(script-Rom_Collection_Browser-main.xml)] + !IsEmpty(Skin.String(diffuse_programs))">$INFO[Skin.String(diffuse_programs)]</value>
         <value condition="Window.IsActive(pictures) + !IsEmpty(Skin.String(diffuse_pictures))">$INFO[Skin.String(diffuse_pictures)]</value>
@@ -42,7 +42,7 @@
         <value>diffuse_white</value>
     </variable>
     <variable name="WhiteAreaColorVar">
-        <value condition="[Window.IsActive(fullscreeninfo) | Window.IsActive(fullscreenvideo) | Window.IsActive(videoosd) | Window.IsActive(videos) | Window.IsActive(script-videoextras-main.xml) | Window.IsActive(script-NextAired-TVGuide.xml) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings)| Window.IsActive(videobookmarks)] + !IsEmpty(Skin.String(diffuse_white_videolibrary))">$INFO[Skin.String(diffuse_white_videolibrary)]</value>
+        <value condition="[Window.IsActive(fullscreeninfo) | Window.IsActive(fullscreenvideo) | Window.IsActive(videoosd) | Window.IsActive(videos) | Window.IsActive(script-videoextras-main.xml) | Window.IsActive(script-NextAired-TVGuide.xml) | Window.IsActive(script-NextAired-TVGuide2.xml) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings)| Window.IsActive(videobookmarks)] + !IsEmpty(Skin.String(diffuse_white_videolibrary))">$INFO[Skin.String(diffuse_white_videolibrary)]</value>
         <value condition="[Window.IsActive(musiclibrary) | Window.IsActive(musicosd) | Window.IsActive(musicfiles) | Window.IsActive(visualisation)] + !IsEmpty(Skin.String(diffuse_white_music))">$INFO[Skin.String(diffuse_white_music)]</value>
         <value condition="[Window.IsActive(programs) | Window.IsActive(script-Rom_Collection_Browser-main.xml)] + !IsEmpty(Skin.String(diffuse_white_programs))">$INFO[Skin.String(diffuse_white_programs)]</value>
         <value condition="Window.IsActive(pictures) + !IsEmpty(Skin.String(diffuse_white_pictures))">$INFO[Skin.String(diffuse_white_pictures)]</value>
@@ -63,7 +63,7 @@
         <value>$VAR[DefaultAreaColorVar]</value>
     </variable>
     <variable name="DefaultFontColorVar">
-        <value condition="[Window.IsActive(fullscreeninfo) | Window.IsActive(fullscreenvideo) | Window.IsActive(videoosd) | Window.IsActive(videos) | Window.IsActive(script-videoextras-main.xml) | Window.IsActive(script-NextAired-TVGuide.xml) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings)| Window.IsActive(videobookmarks)] + !IsEmpty(Skin.String(font_videolibrary))">$INFO[Skin.String(font_videolibrary)]</value>
+        <value condition="[Window.IsActive(fullscreeninfo) | Window.IsActive(fullscreenvideo) | Window.IsActive(videoosd) | Window.IsActive(videos) | Window.IsActive(script-videoextras-main.xml) | Window.IsActive(script-NextAired-TVGuide.xml) | Window.IsActive(script-NextAired-TVGuide2.xml) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings)| Window.IsActive(videobookmarks)] + !IsEmpty(Skin.String(font_videolibrary))">$INFO[Skin.String(font_videolibrary)]</value>
         <value condition="[Window.IsActive(musiclibrary) | Window.IsActive(musicosd) | Window.IsActive(musicfiles) | Window.IsActive(visualisation)] + !IsEmpty(Skin.String(font_music))">$INFO[Skin.String(font_music)]</value>
         <value condition="[Window.IsActive(programs) | Window.IsActive(script-Rom_Collection_Browser-main.xml)] + !IsEmpty(Skin.String(font_programs))">$INFO[Skin.String(font_programs)]</value>
         <value condition="Window.IsActive(pictures) + !IsEmpty(Skin.String(font_pictures))">$INFO[Skin.String(font_pictures)]</value>
@@ -79,7 +79,7 @@
         <value>white2</value>
     </variable>
     <variable name="WhiteFontColorVar">
-        <value condition="[Window.IsActive(fullscreeninfo) | Window.IsActive(fullscreenvideo) | Window.IsActive(videoosd) | Window.IsActive(videos) | Window.IsActive(script-videoextras-main.xml) | Window.IsActive(script-NextAired-TVGuide.xml) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings)| Window.IsActive(videobookmarks)] + !IsEmpty(Skin.String(white_font_videolibrary))">$INFO[Skin.String(white_font_videolibrary)]</value>
+        <value condition="[Window.IsActive(fullscreeninfo) | Window.IsActive(fullscreenvideo) | Window.IsActive(videoosd) | Window.IsActive(videos) | Window.IsActive(script-videoextras-main.xml) | Window.IsActive(script-NextAired-TVGuide.xml) | Window.IsActive(script-NextAired-TVGuide2.xml) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings)| Window.IsActive(videobookmarks)] + !IsEmpty(Skin.String(white_font_videolibrary))">$INFO[Skin.String(white_font_videolibrary)]</value>
         <value condition="[Window.IsActive(musiclibrary) | Window.IsActive(musicosd) | Window.IsActive(musicfiles) | Window.IsActive(visualisation)] + !IsEmpty(Skin.String(white_font_music))">$INFO[Skin.String(white_font_music)]</value>
         <value condition="[Window.IsActive(programs) | Window.IsActive(script-Rom_Collection_Browser-main.xml)] + !IsEmpty(Skin.String(white_font_programs))">$INFO[Skin.String(white_font_programs)]</value>
         <value condition="Window.IsActive(pictures) + !IsEmpty(Skin.String(white_font_pictures))">$INFO[Skin.String(white_font_pictures)]</value>
@@ -815,6 +815,72 @@
         <value condition="!IntegerGreaterThan(Container(206).NumItems,0)">$LOCALIZE[17]</value>
         <value>$LOCALIZE[17]$INFO[Container(206).NumItems, (,)]</value>
     </variable>
+	
+<variable name="TVDayLabel1">
+        <value condition="!IntegerGreaterThan(Container(200).NumItems,0)">$INFO[Window(Home).Property(NextAired.200.Wday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.200.Wday)]$INFO[Container(200).NumItems, (,)][/B]</value>
+    </variable>
+    <variable name="TVDayLabel2">
+        <value condition="!IntegerGreaterThan(Container(201).NumItems,0)">$INFO[Window(Home).Property(NextAired.201.Wday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.201.Wday)]$INFO[Container(201).NumItems, (,)][/B]</value>
+    </variable>
+    <variable name="TVDayLabel3">
+        <value condition="!IntegerGreaterThan(Container(202).NumItems,0)">$INFO[Window(Home).Property(NextAired.202.Wday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.202.Wday)]$INFO[Container(202).NumItems, (,)][/B]</value>
+    </variable>
+    <variable name="TVDayLabel4">
+        <value condition="!IntegerGreaterThan(Container(203).NumItems,0)">$INFO[Window(Home).Property(NextAired.203.Wday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.203.Wday)]$INFO[Container(203).NumItems, (,)][/B]</value>
+    </variable>
+    <variable name="TVDayLabel5">
+        <value condition="!IntegerGreaterThan(Container(204).NumItems,0)">$INFO[Window(Home).Property(NextAired.204.Wday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.204.Wday)]$INFO[Container(204).NumItems, (,)][/B]</value>
+    </variable>
+    <variable name="TVDayLabel6">
+        <value condition="!IntegerGreaterThan(Container(205).NumItems,0)">$INFO[Window(Home).Property(NextAired.205.Wday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.205.Wday)]$INFO[Container(205).NumItems, (,)][/B]</value>
+    </variable>
+    <variable name="TVDayLabel7">
+        <value condition="!IntegerGreaterThan(Container(206).NumItems,0)">$INFO[Window(Home).Property(NextAired.206.Wday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.206.Wday)]$INFO[Container(206).NumItems, (,)][/B]</value>
+    </variable>	
+    <variable name="TVDayLabel8">
+        <value condition="!IntegerGreaterThan(Container(207).NumItems,0)">$INFO[Window(Home).Property(NextAired.207.Wday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.207.Wday)]$INFO[Container(207).NumItems, (,)][/B]</value>
+    </variable>		
+    <variable name="TVDayLabel9">
+        <value condition="!IntegerGreaterThan(Container(208).NumItems,0)">$INFO[Window(Home).Property(NextAired.208.Wday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.208.Wday)]$INFO[Container(208).NumItems, (,)][/B]</value>
+    </variable>		
+    <variable name="TVDayLabel10">
+        <value condition="!IntegerGreaterThan(Container(209).NumItems,0)">$INFO[Window(Home).Property(NextAired.209.Wday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.209.Wday)]$INFO[Container(209).NumItems, (,)][/B]</value>
+    </variable>	
+    <variable name="TVDayLabel11">
+        <value condition="!IntegerGreaterThan(Container(210).NumItems,0)">$INFO[Window(Home).Property(NextAired.210.Wday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.210.Wday)]$INFO[Container(210).NumItems, (,)][/B]</value>
+    </variable>	
+    <variable name="TVDayLabel12">
+        <value condition="!IntegerGreaterThan(Container(211).NumItems,0)">$INFO[Window(Home).Property(NextAired.211.Wday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.211.Wday)]$INFO[Container(211).NumItems, (,)][/B]</value>
+    </variable>				
+    <variable name="TVDayLabel13">
+        <value condition="!IntegerGreaterThan(Container(212).NumItems,0)">$INFO[Window(Home).Property(NextAired.212.Wday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.212.Wday)]$INFO[Container(212).NumItems, (,)][/B]</value>
+    </variable>		
+    <variable name="TVDayLabel14">
+        <value condition="!IntegerGreaterThan(Container(213).NumItems,0)">$INFO[Window(Home).Property(NextAired.213.Wday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.213.Wday)]$INFO[Container(213).NumItems, (,)][/B]</value>
+    </variable>		
+    <variable name="TVDayLabel15">
+        <value condition="!IntegerGreaterThan(Container(214).NumItems,0)">$INFO[Window(Home).Property(NextAired.214.Wday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.214.Wday)]$INFO[Container(214).NumItems, (,)][/B]</value>
+    </variable>		
+    <variable name="TVDayLabel16">
+        <value condition="!IntegerGreaterThan(Container(215).NumItems,0)">$INFO[Window(Home).Property(NextAired.215.Wday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.215.Wday)]$INFO[Container(215).NumItems, (,)][/B]</value>
+    </variable>		
+	
     <variable name="HomeMenuBackVar">
         <value condition="Skin.HasSetting(glasshome) + ![Player.HasMedia + System.IdleTime(8)]">home/homemenu_back_glass.png</value>
         <value condition="Skin.HasSetting(classichome) + ![Player.HasMedia + System.IdleTime(8)]">home/homemenu_back.png</value>
@@ -1582,6 +1648,7 @@
         <value condition="Window.IsActive(filemanager)">$LOCALIZE[10003]</value>
         <value condition="Window.IsActive(PVR)">$LOCALIZE[31017]$INFO[Control.GetLabel(29), / ]$INFO[Control.GetLabel(30), / ]</value>
         <value condition="Window.IsActive(script-NextAired-TVGuide.xml)">$LOCALIZE[31290]</value>
+		<value condition="Window.IsActive(script-NextAired-TVGuide2.xml)">$LOCALIZE[31290]</value>
         <value condition="Window.IsActive(script-globalsearch-main.xml)">$LOCALIZE[283]</value>
 		<value condition="Window.IsActive(script-videoextras-main.xml)">$LOCALIZE[31020] - $INFO[ListItem.Title]</value>
         <value condition="Window.IsActive(script-Rom_Collection_Browser-main.xml)">Rom Collection Browser $INFO[ListItem.Property(romcollection), / ]</value>
@@ -1589,7 +1656,7 @@
     </variable>
     <variable name="BreadcrumbsIconVar">
 		<value condition="Container.Content(tvshows) | Container.Content(episodes) | Container.Content(movies) | Window.IsActive(script-videoextras-main.xml)">common/tv_icon.png</value>
-        <value condition="Container.Content(seasons) | Container.Content(tvshows) | Container.Content(episodes) | Window.IsActive(script-NextAired-TVGuide.xml)">common/tv_icon.png</value>
+        <value condition="Container.Content(seasons) | Container.Content(tvshows) | Container.Content(episodes) | Window.IsActive(script-NextAired-TVGuide.xml) | Window.IsActive(script-NextAired-TVGuide2.xml) ">common/tv_icon.png</value>
         <value condition="Window.IsActive(videos) | Window.IsActive(videoplaylist)">common/logo_movies.png</value>
         <value condition="Window.IsActive(addonbrowser)">common/puzzle_icon.png</value>
         <value condition="Window.IsActive(musicplaylisteditor) | Window.IsActive(musiclibrary) | Window.IsActive(musicfiles) | Window.IsActive(musicplaylist)">common/logo_music.png</value>
