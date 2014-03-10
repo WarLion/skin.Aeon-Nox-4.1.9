@@ -1480,6 +1480,7 @@
     <include name="ColorConfigDefaultTheme">
         <onload condition="Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_music)])</onload>
         <onload condition="Window.IsActive(videos) | Window.IsActive(script-NextAired-TVGuide.xml)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_videolibrary)])</onload>
+		<onload condition="Window.IsActive(videos) | Window.IsActive(script-NextAired-TVGuide2.xml)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_videolibrary)])</onload>
 		<onload condition="Window.IsActive(videos) | Window.IsActive(script-videoextras-main.xml)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_videolibrary)])</onload>
         <onload condition="Window.IsActive(PVR)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_PVR)])</onload>
         <onload condition="Window.IsActive(pictures)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_pictures)])</onload>
@@ -1493,6 +1494,7 @@
         <onload condition="Window.IsActive(weather)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_weather)])</onload>
         <onload condition="Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)">Skin.SetString(font_color,$INFO[Skin.String(font_music)])</onload>
         <onload condition="Window.IsActive(videos) | Window.IsActive(script-NextAired-TVGuide.xml)">Skin.SetString(font_color,$INFO[Skin.String(font_videolibrary)])</onload>
+		<onload condition="Window.IsActive(videos) | Window.IsActive(script-NextAired-TVGuide2.xml)">Skin.SetString(font_color,$INFO[Skin.String(font_videolibrary)])</onload>
 		<onload condition="Window.IsActive(videos) | Window.IsActive(script-videoextras-main.xml)">Skin.SetString(font_color,$INFO[Skin.String(font_videolibrary)])</onload>
         <onload condition="Window.IsActive(PVR)">Skin.SetString(font_color,$INFO[Skin.String(font_PVR)])</onload>
         <onload condition="Window.IsActive(pictures)">Skin.SetString(font_color,$INFO[Skin.String(font_pictures)])</onload>
@@ -1508,6 +1510,7 @@
     <include name="ColorConfigWhiteTheme">
         <onload condition="Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_white_music)])</onload>
         <onload condition="Window.IsActive(videos) | Window.IsActive(script-NextAired-TVGuide.xml)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_white_videolibrary)])</onload>
+		<onload condition="Window.IsActive(videos) | Window.IsActive(script-NextAired-TVGuide2.xml)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_white_videolibrary)])</onload>
 		<onload condition="Window.IsActive(videos) | Window.IsActivescript-videoextras-main.xml)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_white_videolibrary)])</onload>
         <onload condition="Window.IsActive(PVR)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_white_PVR)])</onload>
         <onload condition="Window.IsActive(pictures)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_white_pictures)])</onload>
@@ -1521,6 +1524,7 @@
         <onload condition="Window.IsActive(weather)">Skin.SetString(diffuse_color,$INFO[Skin.String(diffuse_white_weather)])</onload>
         <onload condition="Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)">Skin.SetString(font_color,$INFO[Skin.String(white_font_music)])</onload>
         <onload condition="Window.IsActive(videos) | Window.IsActive(script-NextAired-TVGuide.xml)">Skin.SetString(font_color,$INFO[Skin.String(white_font_videolibrary)])</onload>
+		<onload condition="Window.IsActive(videos) | Window.IsActive(script-NextAired-TVGuide2.xml)">Skin.SetString(font_color,$INFO[Skin.String(white_font_videolibrary)])</onload>
 		<onload condition="Window.IsActive(videos) | Window.IsActive(script-videoextras-main.xml)">Skin.SetString(font_color,$INFO[Skin.String(white_font_videolibrary)])</onload>
         <onload condition="Window.IsActive(PVR)">Skin.SetString(font_color,$INFO[Skin.String(white_font_PVR)])</onload>
         <onload condition="Window.IsActive(pictures)">Skin.SetString(font_color,$INFO[Skin.String(white_font_pictures)])</onload>

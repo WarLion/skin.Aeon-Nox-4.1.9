@@ -5,7 +5,7 @@
     <include condition="Substring(Skin.CurrentTheme,whit)">ColorConfigWhiteTheme</include>
     <onunload condition="Window.IsActive(home) | Window.IsActive(1115)">ActivateWindow(skinsettings)</onunload>
     <onunload condition="!IsEmpty(Window(1124).Property(ColorPicker)) + [Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)]">Skin.SetString(diffuse_music,$INFO[Skin.String(diffuse_color)])</onunload>
-    <onunload condition="!IsEmpty(Window(1124).Property(ColorPicker)) + [Window.IsActive(videos) | Window.IsActive(script-NextAired-TVGuide.xml)]">Skin.SetString(diffuse_videolibrary,$INFO[Skin.String(diffuse_color)])</onunload>
+    <onunload condition="!IsEmpty(Window(1124).Property(ColorPicker)) + [Window.IsActive(videos) | Window.IsActive(script-NextAired-TVGuide.xml) | Window.IsActive(script-NextAired-TVGuide2.xml)]">Skin.SetString(diffuse_videolibrary,$INFO[Skin.String(diffuse_color)])</onunload>
 	<onunload condition="!IsEmpty(Window(1124).Property(ColorPicker)) + [Window.IsActive(videos) | Window.IsActive(script-videoextras-main.xml)]">Skin.SetString(diffuse_videolibrary,$INFO[Skin.String(diffuse_color)])</onunload>
     <onunload condition="!IsEmpty(Window(1124).Property(ColorPicker)) + Window.IsActive(PVR)">Skin.SetString(diffuse_PVR,$INFO[Skin.String(diffuse_color)])</onunload>
     <onunload condition="!IsEmpty(Window(1124).Property(ColorPicker)) + Window.IsActive(pictures)">Skin.SetString(diffuse_pictures,$INFO[Skin.String(diffuse_color)])</onunload>
