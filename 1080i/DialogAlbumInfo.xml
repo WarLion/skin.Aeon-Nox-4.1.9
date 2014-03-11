@@ -4,7 +4,7 @@
     <onload condition="!Player.HasAudio + System.HasAddon(script.artistslideshow)">SetProperty(CURRENTARTIST,$INFO[ListItem.Artist])</onload>
     <onload condition="!Player.HasAudio + System.HasAddon(script.artistslideshow)">SetProperty(ArtistSlideshow.ExternalCall,True)</onload>
     <onload condition="!Player.HasAudio + System.HasAddon(script.artistslideshow)">RunScript(script.artistslideshow,windowid=12001&amp;artistfield=CURRENTARTIST)</onload>
- <!--	<onload condition="System.HasAddon(script.extendedinfo)">RunScript(script.extendedinfo,info=artistevents,artistname=$INFO[ListItem.Artist])</onload>-->
+ 	<onload condition="System.HasAddon(script.extendedinfo)">RunScript(script.extendedinfo,info=artistevents,artistname=$INFO[ListItem.Artist])</onload>
    <onunload condition="System.HasAddon(script.artistslideshow)">clearProperty(ArtistSlideshow.ExternalCall)</onunload>
     <animation type="WindowOpen" reversible="false">
         <effect type="zoom" start="150" end="100" center="960,540" time="400" tween="cubic" />
@@ -1757,6 +1757,7 @@
                             <focusposition>0</focusposition>
                             <scrolltime tween="cubic" easing="inout">400</scrolltime>
                             <preloaditems>2</preloaditems>
+							<!--<visible>IsEmpty($INFO[Window(Home).Property(ArtistEvents.1.Artists)])</visible>-->
                             <itemlayout height="48" width="800">
                                 <control type="image">
                                     <left>15</left>
