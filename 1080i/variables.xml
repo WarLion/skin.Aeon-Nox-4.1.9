@@ -817,70 +817,74 @@
     </variable>
 	
 <variable name="TVDayLabel1">
-        <value condition="!IntegerGreaterThan(Container(200).NumItems,0)">$INFO[Window(Home).Property(NextAired.200.Wday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.200.Wday)]$INFO[Container(200).NumItems, (,)][/B]</value>
+        <value condition="!IntegerGreaterThan(Container(200).NumItems,0)">$INFO[Window(Home).Property(NextAired.200.Weekday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.200.Weekday)][/B]$INFO[Container(200).NumItems, (,)]</value>
     </variable>
     <variable name="TVDayLabel2">
-        <value condition="!IntegerGreaterThan(Container(201).NumItems,0)">$INFO[Window(Home).Property(NextAired.201.Wday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.201.Wday)]$INFO[Container(201).NumItems, (,)][/B]</value>
+        <value condition="!IntegerGreaterThan(Container(201).NumItems,0)">$INFO[Window(Home).Property(NextAired.201.Weekday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.201.Weekday)][/B]$INFO[Container(201).NumItems, (,)]</value>
     </variable>
     <variable name="TVDayLabel3">
-        <value condition="!IntegerGreaterThan(Container(202).NumItems,0)">$INFO[Window(Home).Property(NextAired.202.Wday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.202.Wday)]$INFO[Container(202).NumItems, (,)][/B]</value>
+        <value condition="!IntegerGreaterThan(Container(202).NumItems,0)">$INFO[Window(Home).Property(NextAired.202.Weekday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.202.Weekday)][/B]$INFO[Container(202).NumItems, (,)]</value>
     </variable>
     <variable name="TVDayLabel4">
-        <value condition="!IntegerGreaterThan(Container(203).NumItems,0)">$INFO[Window(Home).Property(NextAired.203.Wday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.203.Wday)]$INFO[Container(203).NumItems, (,)][/B]</value>
+        <value condition="!IntegerGreaterThan(Container(203).NumItems,0)">$INFO[Window(Home).Property(NextAired.203.Weekday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.203.Weekday)][/B]$INFO[Container(203).NumItems, (,)]</value>
     </variable>
     <variable name="TVDayLabel5">
-        <value condition="!IntegerGreaterThan(Container(204).NumItems,0)">$INFO[Window(Home).Property(NextAired.204.Wday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.204.Wday)]$INFO[Container(204).NumItems, (,)][/B]</value>
+        <value condition="!IntegerGreaterThan(Container(204).NumItems,0)">$INFO[Window(Home).Property(NextAired.204.Weekday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.204.Weekday)][/B]$INFO[Container(204).NumItems, (,)]</value>
     </variable>
     <variable name="TVDayLabel6">
-        <value condition="!IntegerGreaterThan(Container(205).NumItems,0)">$INFO[Window(Home).Property(NextAired.205.Wday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.205.Wday)]$INFO[Container(205).NumItems, (,)][/B]</value>
+        <value condition="!IntegerGreaterThan(Container(205).NumItems,0)">$INFO[Window(Home).Property(NextAired.205.Weekday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.205.Weekday)][/B]$INFO[Container(205).NumItems, (,)]</value>
     </variable>
     <variable name="TVDayLabel7">
-        <value condition="!IntegerGreaterThan(Container(206).NumItems,0)">$INFO[Window(Home).Property(NextAired.206.Wday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.206.Wday)]$INFO[Container(206).NumItems, (,)][/B]</value>
+        <value condition="!IntegerGreaterThan(Container(206).NumItems,0)">$INFO[Window(Home).Property(NextAired.206.Weekday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.206.Weekday)][/B]$INFO[Container(206).NumItems, (,)]</value>
     </variable>	
     <variable name="TVDayLabel8">
-        <value condition="!IntegerGreaterThan(Container(207).NumItems,0)">$INFO[Window(Home).Property(NextAired.207.Wday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.207.Wday)]$INFO[Container(207).NumItems, (,)][/B]</value>
+        <value condition="!IntegerGreaterThan(Container(207).NumItems,0)">$INFO[Window(Home).Property(NextAired.207.Weekday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.207.Weekday)][/B]$INFO[Container(207).NumItems, (,)]</value>
     </variable>		
     <variable name="TVDayLabel9">
-        <value condition="!IntegerGreaterThan(Container(208).NumItems,0)">$INFO[Window(Home).Property(NextAired.208.Wday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.208.Wday)]$INFO[Container(208).NumItems, (,)][/B]</value>
+        <value condition="!IntegerGreaterThan(Container(208).NumItems,0)">$INFO[Window(Home).Property(NextAired.208.Weekday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.208.Weekday)][/B]$INFO[Container(208).NumItems, (,)]</value>
     </variable>		
     <variable name="TVDayLabel10">
-        <value condition="!IntegerGreaterThan(Container(209).NumItems,0)">$INFO[Window(Home).Property(NextAired.209.Wday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.209.Wday)]$INFO[Container(209).NumItems, (,)][/B]</value>
+        <value condition="!IntegerGreaterThan(Container(209).NumItems,0)">$INFO[Window(Home).Property(NextAired.209.Weekday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.209.Weekday)][/B]$INFO[Container(209).NumItems, (,)]</value>
     </variable>	
     <variable name="TVDayLabel11">
-        <value condition="!IntegerGreaterThan(Container(210).NumItems,0)">$INFO[Window(Home).Property(NextAired.210.Wday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.210.Wday)]$INFO[Container(210).NumItems, (,)][/B]</value>
+        <value condition="!IntegerGreaterThan(Container(210).NumItems,0)">$INFO[Window(Home).Property(NextAired.210.Weekday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.210.Weekday)][/B]$INFO[Container(210).NumItems, (,)]</value>
     </variable>	
     <variable name="TVDayLabel12">
-        <value condition="!IntegerGreaterThan(Container(211).NumItems,0)">$INFO[Window(Home).Property(NextAired.211.Wday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.211.Wday)]$INFO[Container(211).NumItems, (,)][/B]</value>
+        <value condition="!IntegerGreaterThan(Container(211).NumItems,0)">$INFO[Window(Home).Property(NextAired.211.Weekday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.211.Weekday)][/B]$INFO[Container(211).NumItems, (,)]</value>
     </variable>				
     <variable name="TVDayLabel13">
-        <value condition="!IntegerGreaterThan(Container(212).NumItems,0)">$INFO[Window(Home).Property(NextAired.212.Wday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.212.Wday)]$INFO[Container(212).NumItems, (,)][/B]</value>
+        <value condition="!IntegerGreaterThan(Container(212).NumItems,0)">$INFO[Window(Home).Property(NextAired.212.Weekday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.212.Weekday)][/B]$INFO[Container(212).NumItems, (,)]</value>
     </variable>		
     <variable name="TVDayLabel14">
-        <value condition="!IntegerGreaterThan(Container(213).NumItems,0)">$INFO[Window(Home).Property(NextAired.213.Wday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.213.Wday)]$INFO[Container(213).NumItems, (,)][/B]</value>
+        <value condition="!IntegerGreaterThan(Container(213).NumItems,0)">$INFO[Window(Home).Property(NextAired.213.Weekday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.213.Weekday)][/B]$INFO[Container(213).NumItems, (,)]</value>
     </variable>		
     <variable name="TVDayLabel15">
-        <value condition="!IntegerGreaterThan(Container(214).NumItems,0)">$INFO[Window(Home).Property(NextAired.214.Wday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.214.Wday)]$INFO[Container(214).NumItems, (,)][/B]</value>
+        <value condition="!IntegerGreaterThan(Container(214).NumItems,0)">$INFO[Window(Home).Property(NextAired.214.Weekday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.214.Weekday)][/B]$INFO[Container(214).NumItems, (,)]</value>
     </variable>		
     <variable name="TVDayLabel16">
-        <value condition="!IntegerGreaterThan(Container(215).NumItems,0)">$INFO[Window(Home).Property(NextAired.215.Wday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.215.Wday)]$INFO[Container(215).NumItems, (,)][/B]</value>
+        <value condition="!IntegerGreaterThan(Container(215).NumItems,0)">$INFO[Window(Home).Property(NextAired.215.Weekday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.215.Weekday)][/B]$INFO[Container(215).NumItems, (,)]</value>
     </variable>		
 	
+	<variable name="NextDateYesterday">
+		<value condition="ControlGroup(9001).HasFocus(200)">$LOCALIZE[31189]: [COLOR white2]S$INFO[ListItem.Property(LatestSeasonNumber)]E$INFO[ListItem.Property(LatestEpisodeNumber)] [/COLOR][CR]$LOCALIZE[31322]: [COLOR white2]Yesterday[/COLOR]</value>
+		<value>$LOCALIZE[31189]: [COLOR white2]S$INFO[ListItem.Property(LatestSeasonNumber)]E$INFO[ListItem.Property(LatestEpisodeNumber)][/COLOR][CR]$LOCALIZE[31322]: [COLOR white2]$INFO[ListItem.Property(LatestDate)][/COLOR]</value>
+	</variable>	
     <variable name="HomeMenuBackVar">
         <value condition="Skin.HasSetting(glasshome) + ![Player.HasMedia + System.IdleTime(8)]">home/homemenu_back_glass.png</value>
         <value condition="Skin.HasSetting(classichome) + ![Player.HasMedia + System.IdleTime(8)]">home/homemenu_back.png</value>
