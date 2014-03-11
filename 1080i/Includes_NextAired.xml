@@ -175,7 +175,7 @@
             </control>
             <control type="label">
 				<top>560</top>
-                <label>$LOCALIZE[551]:[COLOR white2] $INFO[ListItem.Property(LatestTitle)][/COLOR]</label>
+                <label>$VAR[NextDateYesterday2]</label>
                 <left>22</left>
                 <top>618</top>
                 <width>415</width>
@@ -2667,7 +2667,7 @@
                         <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[41])">Conditional</animation>
                         <animation effect="fade" start="100" end="0" time="240" tween="sine" easing="inout" condition="![[ControlGroup(9001).HasFocus + ControlGroup(9001).HasFocus(200)] | [ControlGroup(2000).HasFocus + ControlGroup(2000).HasFocus(2001)]]">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(200).NumItems,0)</enable>
-						<visible>!StringCompare(Window(Home).Property(NextAired.200.Weekday),)</visible>
+						<visible>!StringCompare(Window(Home).Property(NextAired.Yesterday),)</visible>
                     </control>
                     <control type="button">
                         <label>$VAR[TVDayLabel2]</label>
@@ -2802,7 +2802,7 @@
                         <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[41])">Conditional</animation>
                         <animation effect="fade" start="100" end="50" time="240" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(200)">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(200).NumItems,0)</enable>
-						<visible>!StringCompare(Window(Home).Property(NextAired.200.Weekday),)</visible>
+						<visible>!StringCompare(Window(Home).Property(NextAired.Yesterday),)</visible>
                     </control>
                     <control type="button" id="2002">
                         <label>$VAR[TVDayLabel2]</label>

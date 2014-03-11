@@ -817,12 +817,12 @@
     </variable>
 	
 <variable name="TVDayLabel1">
-        <value condition="!IntegerGreaterThan(Container(200).NumItems,0)">$INFO[Window(Home).Property(NextAired.200.Weekday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.200.Weekday)][/B]$INFO[Container(200).NumItems, (,)]</value>
+        <value condition="!IntegerGreaterThan(Container(200).NumItems,0)">$INFO[Window(Home).Property(NextAired.Yesterday)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.Yesterday)][/B]$INFO[Container(200).NumItems, (,)]</value>
     </variable>
     <variable name="TVDayLabel2">
-        <value condition="!IntegerGreaterThan(Container(201).NumItems,0)">$INFO[Window(Home).Property(NextAired.201.Weekday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.201.Weekday)][/B]$INFO[Container(201).NumItems, (,)]</value>
+        <value condition="!IntegerGreaterThan(Container(201).NumItems,0)">$INFO[Window(Home).Property(NextAired.Today)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.Today)][/B]$INFO[Container(201).NumItems, (,)]</value>
     </variable>
     <variable name="TVDayLabel3">
         <value condition="!IntegerGreaterThan(Container(202).NumItems,0)">$INFO[Window(Home).Property(NextAired.202.Weekday)]</value>
@@ -882,9 +882,13 @@
     </variable>		
 	
 	<variable name="NextDateYesterday">
-		<value condition="ControlGroup(9001).HasFocus(200)">$LOCALIZE[31189]: [COLOR white2]S$INFO[ListItem.Property(LatestSeasonNumber)]E$INFO[ListItem.Property(LatestEpisodeNumber)] [/COLOR][CR]$LOCALIZE[31322]: [COLOR white2]Yesterday[/COLOR]</value>
+		<value condition="ControlGroup(9001).HasFocus(200)">$LOCALIZE[143] [COLOR white2]S$INFO[ListItem.Property(NextSeasonNumber)]E$INFO[ListItem.Property(NextEpisodeNumber)] [/COLOR][CR]$LOCALIZE[31322]: [COLOR white2]$INFO[ListItem.Property(NextDate)][/COLOR]</value>
 		<value>$LOCALIZE[31189]: [COLOR white2]S$INFO[ListItem.Property(LatestSeasonNumber)]E$INFO[ListItem.Property(LatestEpisodeNumber)][/COLOR][CR]$LOCALIZE[31322]: [COLOR white2]$INFO[ListItem.Property(LatestDate)][/COLOR]</value>
 	</variable>	
+	<variable name="NextDateYesterday2">
+		<value condition="ControlGroup(9001).HasFocus(200)">$LOCALIZE[551]:[COLOR white2] $INFO[ListItem.Property(NextTitle)][/COLOR]</value>
+		<value>$LOCALIZE[551]:[COLOR white2] $INFO[ListItem.Property(LatestTitle)][/COLOR]</value>
+	</variable>		
     <variable name="HomeMenuBackVar">
         <value condition="Skin.HasSetting(glasshome) + ![Player.HasMedia + System.IdleTime(8)]">home/homemenu_back_glass.png</value>
         <value condition="Skin.HasSetting(classichome) + ![Player.HasMedia + System.IdleTime(8)]">home/homemenu_back.png</value>
