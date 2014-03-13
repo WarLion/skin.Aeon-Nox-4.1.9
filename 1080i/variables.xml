@@ -370,7 +370,7 @@
         <value>$INFO[ListItem.AudioCodec]$INFO[ListItem.AudioChannels]</value>
     </variable>
     <variable name="NextEpisodeVar">
-        <value condition="!IsEmpty(Window(Home).Property(NextAired.Label)) + !IsEmpty(Window(Home).Property(NextAired.NextDate))">$INFO[Window(Home).Property(NextAired.NextDate)]</value>
+        <value condition="!IsEmpty(Window(Home).Property(NextAired.Label)) + !IsEmpty(Window(Home).Property(NextAired.NextDay))">$INFO[Window(Home).Property(NextAired.NextDay)]</value>
         <value>$LOCALIZE[31003]</value>
     </variable>
     <variable name="LastEpisodeVar">
@@ -879,10 +879,40 @@
     <variable name="TVDayLabel16">
         <value condition="!IntegerGreaterThan(Container(215).NumItems,0)">$INFO[Window(Home).Property(NextAired.215.Weekday)]</value>
         <value>[B]$INFO[Window(Home).Property(NextAired.215.Weekday)][/B]$INFO[Container(215).NumItems, (,)]</value>
-    </variable>		
+    </variable>	
+    <variable name="TVDayLabel2_1">
+        <value condition="IntegerGreaterThan(Container(200).NumItems,0)">$INFO[Container(200).NumItems] $LOCALIZE[20360]</value>
+        <value></value>
+    </variable>
+    <variable name="TVDayLabel2_2">
+        <value condition="IntegerGreaterThan(Container(201).NumItems,0)">$INFO[Container(201).NumItems] $LOCALIZE[20360]</value>
+        <value></value>
+    </variable>	
+	<variable name="TVDayLabel2_3">
+        <value condition="IntegerGreaterThan(Container(202).NumItems,0)">$INFO[Container(202).NumItems] $LOCALIZE[20360]</value>
+        <value></value>
+    </variable>	
+	<variable name="TVDayLabel2_4">
+        <value condition="IntegerGreaterThan(Container(203).NumItems,0)">$INFO[Container(203).NumItems] $LOCALIZE[20360]</value>
+        <value></value>
+    </variable>	
+	<variable name="TVDayLabel2_5">
+        <value condition="IntegerGreaterThan(Container(204).NumItems,0)">$INFO[Container(204).NumItems] $LOCALIZE[20360]</value>
+        <value></value>
+    </variable>	
+	<variable name="TVDayLabel2_6">
+        <value condition="IntegerGreaterThan(Container(205).NumItems,0)">$INFO[Container(205).NumItems] $LOCALIZE[20360]</value>
+        <value></value>
+    </variable>	
+	<variable name="TVDayLabel2_7">
+        <value condition="IntegerGreaterThan(Container(206).NumItems,0)">$INFO[Container(206).NumItems] $LOCALIZE[20360]</value>
+        <value></value>
+    </variable>	
+			
+		
 	
 	<variable name="NextDateYesterday">
-		<value condition="ControlGroup(9001).HasFocus(200)">$LOCALIZE[143] [COLOR white2]S$INFO[ListItem.Property(NextSeasonNumber)]E$INFO[ListItem.Property(NextEpisodeNumber)] [/COLOR][CR]$LOCALIZE[31322]: [COLOR white2]$INFO[ListItem.Property(NextDate)][/COLOR]</value>
+		<value condition="ControlGroup(9001).HasFocus(200)">$LOCALIZE[143] [COLOR white2]S$INFO[ListItem.Property(NextSeasonNumber)]E$INFO[ListItem.Property(NextEpisodeNumber)] [/COLOR][CR]$LOCALIZE[31322]: [COLOR white2]$INFO[ListItem.Property(NextDay)][/COLOR]</value>
 		<value>$LOCALIZE[31189]: [COLOR white2]S$INFO[ListItem.Property(LatestSeasonNumber)]E$INFO[ListItem.Property(LatestEpisodeNumber)][/COLOR][CR]$LOCALIZE[31322]: [COLOR white2]$INFO[ListItem.Property(LatestDate)][/COLOR]</value>
 	</variable>	
 	<variable name="NextDateYesterday2">
@@ -1017,7 +1047,7 @@
         <value condition="Container.Content(addons)">$INFO[ListItem.Property(Addon.Version),[COLOR floorlabel]$LOCALIZE[24051] [/COLOR]]</value>
         <value condition="Container.Content(albums)">$INFO[ListItem.Year]</value>
         <value condition="Container.Content(artists) + !IsEmpty(ListItem.Property(Artist_YearsActive))">$INFO[ListItem.Property(Artist_YearsActive),[COLOR floorlabel]$LOCALIZE[21898]: [/COLOR]]</value>
-        <value condition="Container.Content(tvshows) + !IsEmpty(Window(Home).Property(NextAired.NextDate))">[COLOR grey]$LOCALIZE[209]:[/COLOR] $INFO[Window(Home).Property(NextAired.NextSeasonNumber),S]$INFO[Window(Home).Property(NextAired.NextEpisodeNumber),E]$INFO[Window(Home).Property(NextAired.NextTitle),: ]</value>
+        <value condition="Container.Content(tvshows) + !IsEmpty(Window(Home).Property(NextAired.NextDay))">[COLOR grey]$LOCALIZE[209]:[/COLOR] $INFO[Window(Home).Property(NextAired.NextSeasonNumber),S]$INFO[Window(Home).Property(NextAired.NextEpisodeNumber),E]$INFO[Window(Home).Property(NextAired.NextTitle),: ]</value>
         <value condition="Container.Content(tvshows)">[COLOR grey]$LOCALIZE[210]:[/COLOR] $INFO[Window(Home).Property(NextAired.LatestSeasonNumber),S]$INFO[Window(Home).Property(NextAired.LatestEpisodeNumber),E]$INFO[Window(Home).Property(NextAired.LatestTitle),:  ]</value>
         <value condition="Window.IsActive(programs) + [Window.IsActive(programs) + !Container.Content(addons)]">$INFO[ListItem.Genre]</value>
         <value condition="Container.Content(songs)">$INFO[ListItem.Artist]</value>
@@ -1823,8 +1853,8 @@
         <value>$INFO[ListItem.Genre]</value>
     </variable>
     <variable name="TriPanelDetail3Var">
-        <value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !IsEmpty(Window(Home).Property(NextAired.NextDate))">$LOCALIZE[31190]:</value>
-        <value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !IsEmpty(Window(Home).Property(NextAired.LatestDate))">$LOCALIZE[31189]:</value>
+        <value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !IsEmpty(Window(Home).Property(NextAired.NextDay))">$LOCALIZE[31190]:</value>
+        <value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !IsEmpty(Window(Home).Property(NextAired.LatestDay))">$LOCALIZE[31189]:</value>
         <value condition="Container.Content(tvshows)">$LOCALIZE[31005]:</value>
         <value condition="Container.Content(seasons)">$LOCALIZE[16101]:</value>
         <value condition="Window.IsActive(programs)">$LOCALIZE[31364]:</value>
@@ -1833,8 +1863,8 @@
     </variable>
     <variable name="TriPanelValue3Var">
         <value condition="skin.hassetting(backendmode) + SubString(ListItem.Path,videodb://movies/sets/,left)">$INFO[Window(home).Property(Set.Movies.Writer)]</value>
-        <value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !IsEmpty(Window(Home).Property(NextAired.NextDate))">$VAR[NextEpisodeVar]</value>
-        <value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !IsEmpty(Window(Home).Property(NextAired.LatestDate))">$INFO[Window(Home).Property(NextAired.LatestDate)]</value>
+        <value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !IsEmpty(Window(Home).Property(NextAired.NextDay))">$VAR[NextEpisodeVar]</value>
+        <value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !IsEmpty(Window(Home).Property(NextAired.LatestDay))">$INFO[Window(Home).Property(NextAired.LatestDate)]</value>
         <value condition="Container.Content(tvshows)">$INFO[ListItem.Premiered]</value>
         <value condition="Container.Content(seasons)">$INFO[ListItem.Property(UnWatchedEpisodes)]</value>
         <value condition="Window.IsActive(programs)">$INFO[ListItem.Writer]</value>

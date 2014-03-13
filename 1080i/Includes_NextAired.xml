@@ -2620,7 +2620,6 @@
                         <label>$VAR[TVDayLabel1]</label>
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.200.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButtonbackground2</include>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[41])">Conditional</animation>
                         <animation effect="fade" start="100" end="0" time="240" tween="sine" easing="inout" condition="![[ControlGroup(9001).HasFocus + ControlGroup(9001).HasFocus(200)] | [ControlGroup(2000).HasFocus + ControlGroup(2000).HasFocus(2001)]]">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(200).NumItems,0)</enable>
 						<visible>!StringCompare(Window(Home).Property(NextAired.Yesterday),)</visible>
@@ -2630,7 +2629,6 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.201.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButtonbackground2</include>
                         <animation effect="fade" start="100" end="0" time="240" tween="sine" easing="inout" condition="![[ControlGroup(9001).HasFocus + ControlGroup(9001).HasFocus(201)] | [ControlGroup(2000).HasFocus + ControlGroup(2000).HasFocus(2002)]]">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[42])">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(201).NumItems,0)</enable>
                     </control>
                     <control type="button">
@@ -2638,7 +2636,6 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.202.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButtonbackground2</include>
                         <animation effect="fade" start="100" end="0" time="240" tween="sine" easing="inout" condition="![[ControlGroup(9001).HasFocus + ControlGroup(9001).HasFocus(202)] | [ControlGroup(2000).HasFocus + ControlGroup(2000).HasFocus(2003)]]">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[43])">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(202).NumItems,0)</enable>
                     </control>
                     <control type="button">
@@ -2646,7 +2643,6 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.203.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButtonbackground2</include>
                         <animation effect="fade" start="100" end="0" time="240" tween="sine" easing="inout" condition="![[ControlGroup(9001).HasFocus + ControlGroup(9001).HasFocus(203)] | [ControlGroup(2000).HasFocus + ControlGroup(2000).HasFocus(2004)]]">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[44])">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(203).NumItems,0)</enable>
                     </control>
                     <control type="button">
@@ -2654,7 +2650,6 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.204.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButtonbackground2</include>
                         <animation effect="fade" start="100" end="0" time="240" tween="sine" easing="inout" condition="![[ControlGroup(9001).HasFocus + ControlGroup(9001).HasFocus(204)] | [ControlGroup(2000).HasFocus + ControlGroup(2000).HasFocus(2005)]]">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[45])">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(204).NumItems,0)</enable>
                     </control>
                     <control type="button">
@@ -2662,7 +2657,6 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.205.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButtonbackground2</include>
                         <animation effect="fade" start="100" end="0" time="240" tween="sine" easing="inout" condition="![[ControlGroup(9001).HasFocus + ControlGroup(9001).HasFocus(205)] | [ControlGroup(2000).HasFocus + ControlGroup(2000).HasFocus(2006)]]">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[46])">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(205).NumItems,0)</enable>
                     </control>
                     <control type="button">
@@ -2670,7 +2664,6 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.206.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButtonbackground2</include>
                         <animation effect="fade" start="100" end="0" time="240" tween="sine" easing="inout" condition="![[ControlGroup(9001).HasFocus + ControlGroup(9001).HasFocus(206)] | [ControlGroup(2000).HasFocus + ControlGroup(2000).HasFocus(2007)]]">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(206).NumItems,0)</enable>
                     </control>
                     <control type="button">
@@ -2678,7 +2671,6 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.207.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButtonbackground2</include>
                         <animation effect="fade" start="100" end="0" time="240" tween="sine" easing="inout" condition="![[ControlGroup(9001).HasFocus + ControlGroup(9001).HasFocus(207)] | [ControlGroup(2000).HasFocus + ControlGroup(2000).HasFocus(2008)]]">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(207).NumItems,0)</enable>
                     </control>					
                     <control type="button">
@@ -2686,7 +2678,6 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.208.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButtonbackground2</include>
                         <animation effect="fade" start="100" end="0" time="240" tween="sine" easing="inout" condition="![[ControlGroup(9001).HasFocus + ControlGroup(9001).HasFocus(208)] | [ControlGroup(2000).HasFocus + ControlGroup(2000).HasFocus(2009)]]">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(208).NumItems,0)</enable>
                     </control>					
                     <control type="button">
@@ -2694,7 +2685,6 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.209.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButtonbackground2</include>
                         <animation effect="fade" start="100" end="0" time="240" tween="sine" easing="inout" condition="![[ControlGroup(9001).HasFocus + ControlGroup(9001).HasFocus(209)] | [ControlGroup(2000).HasFocus + ControlGroup(2000).HasFocus(20010)]]">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(209).NumItems,0)</enable>
                     </control>					
                     <control type="button">
@@ -2710,7 +2700,6 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.211.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButtonbackground2</include>
                         <animation effect="fade" start="100" end="0" time="240" tween="sine" easing="inout" condition="![[ControlGroup(9001).HasFocus + ControlGroup(9001).HasFocus(211)] | [ControlGroup(2000).HasFocus + ControlGroup(2000).HasFocus(2012)]]">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(211).NumItems,0)</enable>
                     </control>							
                     <control type="button">
@@ -2718,7 +2707,6 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.212.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButtonbackground2</include>
                         <animation effect="fade" start="100" end="0" time="240" tween="sine" easing="inout" condition="![[ControlGroup(9001).HasFocus + ControlGroup(9001).HasFocus(212)] | [ControlGroup(2000).HasFocus + ControlGroup(2000).HasFocus(2013)]]">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(212).NumItems,0)</enable>
                     </control>							
                     <control type="button">
@@ -2726,7 +2714,6 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.213.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButtonbackground2</include>
                         <animation effect="fade" start="100" end="0" time="240" tween="sine" easing="inout" condition="![[ControlGroup(9001).HasFocus + ControlGroup(9001).HasFocus(213)] | [ControlGroup(2000).HasFocus + ControlGroup(2000).HasFocus(2014)]]">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(213).NumItems,0)</enable>
                     </control>					
                     <control type="button">
@@ -2734,7 +2721,6 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.214.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButtonbackground2</include>
                         <animation effect="fade" start="100" end="0" time="240" tween="sine" easing="inout" condition="![[ControlGroup(9001).HasFocus + ControlGroup(9001).HasFocus(214)] | [ControlGroup(2000).HasFocus + ControlGroup(2000).HasFocus(2015)]]">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(214).NumItems,0)</enable>
                     </control>					
                     <control type="button">
@@ -2742,7 +2728,6 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.215.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButtonbackground2</include>
                         <animation effect="fade" start="100" end="0" time="240" tween="sine" easing="inout" condition="![[ControlGroup(9001).HasFocus + ControlGroup(9001).HasFocus(215)] | [ControlGroup(2000).HasFocus + ControlGroup(2000).HasFocus(2016)]]">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(215).NumItems,0)</enable>
                     </control>					
                 </control>
@@ -2755,8 +2740,8 @@
                         <label>$VAR[TVDayLabel1]</label>
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.200.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButton2</include>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[41])">Conditional</animation>
                         <animation effect="fade" start="100" end="50" time="240" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(200)">Conditional</animation>
+						<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(200)">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(200).NumItems,0)</enable>
 						<visible>!StringCompare(Window(Home).Property(NextAired.Yesterday),)</visible>
                     </control>
@@ -2765,7 +2750,6 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.201.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButton2</include>
                         <animation effect="fade" start="100" end="50" time="240" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(201)">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[42])">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(201).NumItems,0)</enable>
                     </control>
                     <control type="button" id="2003">
@@ -2773,7 +2757,7 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.202.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButton2</include>
                         <animation effect="fade" start="100" end="50" time="240" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(202)">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[43])">Conditional</animation>
+						<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(202)">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(202).NumItems,0)</enable>
                     </control>
                     <control type="button" id="2004">
@@ -2781,7 +2765,7 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.203.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButton2</include>
                         <animation effect="fade" start="100" end="50" time="240" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(203)">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[44])">Conditional</animation>
+						<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(203)">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(203).NumItems,0)</enable>
                     </control>
                     <control type="button" id="2005">
@@ -2789,7 +2773,7 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.204.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButton2</include>
                         <animation effect="fade" start="100" end="50" time="240" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(204)">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[45])">Conditional</animation>
+						<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(204)">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(204).NumItems,0)</enable>
                     </control>
                     <control type="button" id="2006">
@@ -2797,7 +2781,7 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.205.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButton2</include>
                         <animation effect="fade" start="100" end="50" time="240" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(205)">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[46])">Conditional</animation>
+						<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(205)">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(205).NumItems,0)</enable>
                     </control>
                     <control type="button" id="2007">
@@ -2805,7 +2789,7 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.206.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButton2</include>
                         <animation effect="fade" start="100" end="50" time="240" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(206)">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
+						<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(206)">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(206).NumItems,0)</enable>
                     </control>
                     <control type="button" id="2008">
@@ -2813,7 +2797,7 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.207.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButton2</include>
                         <animation effect="fade" start="100" end="50" time="240" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(207)">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
+						<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(207)">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(207).NumItems,0)</enable>
                     </control>	
                     <control type="button" id="2009">
@@ -2821,7 +2805,7 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.208.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButton2</include>
                         <animation effect="fade" start="100" end="50" time="240" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(208)">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
+						<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(208)">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(208).NumItems,0)</enable>
                     </control>	
                     <control type="button" id="2010">
@@ -2829,7 +2813,7 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.209.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButton2</include>
                         <animation effect="fade" start="100" end="50" time="240" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(209)">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
+						<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(209)">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(209).NumItems,0)</enable>
                     </control>	
                     <control type="button" id="2011">
@@ -2837,7 +2821,7 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.210.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButton2</include>
                         <animation effect="fade" start="100" end="50" time="240" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(210)">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
+						<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(210)">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(210).NumItems,0)</enable>
                     </control>	
                     <control type="button" id="2012">
@@ -2845,7 +2829,7 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.211.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButton2</include>
                         <animation effect="fade" start="100" end="50" time="240" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(211)">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
+						<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(211)">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(211).NumItems,0)</enable>
                     </control>
                     <control type="button" id="2013">
@@ -2853,7 +2837,7 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.212.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButton2</include>
                         <animation effect="fade" start="100" end="50" time="240" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(212)">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
+						<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(212)">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(212).NumItems,0)</enable>
                     </control>
                     <control type="button" id="2014">
@@ -2861,7 +2845,7 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.213.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButton2</include>
                         <animation effect="fade" start="100" end="50" time="240" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(213)">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
+						<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(213)">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(213).NumItems,0)</enable>
                     </control>	
                     <control type="button" id="2015">
@@ -2869,7 +2853,7 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.214.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButton2</include>
                         <animation effect="fade" start="100" end="50" time="240" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(214)">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
+						<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(214)">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(214).NumItems,0)</enable>
                     </control>	
                     <control type="button" id="2016">
@@ -2877,7 +2861,7 @@
                         <label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.215.Date)][/COLOR]</label2>
                         <include>TVGuideWeekdayButton2</include>
                         <animation effect="fade" start="100" end="50" time="240" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(215)">Conditional</animation>
-                        <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
+						<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(215)">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(215).NumItems,0)</enable>
                     </control>																																													
                 </control>
@@ -2936,8 +2920,8 @@
                     <height>38</height>
                     <font>Font_Reg30_Caps</font>
                     <label>$INFO[Window(Home).Property(NextAired.Yesterday)]</label>
+					<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(200)">Conditional</animation>
                     <align>center</align>
-                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[41])">Conditional</animation>
                 </control>
                 <control type="label">
                     <left>304</left>
@@ -2945,7 +2929,6 @@
                     <width>172</width>
                     <height>38</height>
                     <font>Font_Reg30_Caps</font>
-                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[42])">Conditional</animation>
                     <label>$INFO[Window(Home).Property(NextAired.today)]</label>
                     <align>center</align>
                 </control>
@@ -2953,10 +2936,10 @@
                     <left>477</left>
                     <top>100</top>
                     <width>172</width>
-                    <height>38</height>
+                    <height>38</height>cccc
                     <font>Font_Reg30_Caps</font>
-                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[43])">Conditional</animation>
                     <label>$INFO[Window(Home).Property(NextAired.202.Weekday)]</label>
+					<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(202)">Conditional</animation>
                     <align>center</align>
                 </control>
                 <control type="label">
@@ -2965,8 +2948,8 @@
                     <width>172</width>
                     <height>38</height>
                     <font>Font_Reg30_Caps</font>
-                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[44])">Conditional</animation>
                     <label>$INFO[Window(Home).Property(NextAired.203.Weekday)]</label>
+					<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(203)">Conditional</animation>
                     <align>center</align>
                 </control>
                 <control type="label">
@@ -2975,8 +2958,8 @@
                     <width>172</width>
                     <height>38</height>
                     <font>Font_Reg30_Caps</font>
-                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[45])">Conditional</animation>
                     <label>$INFO[Window(Home).Property(NextAired.204.Weekday)]</label>
+					<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(204)">Conditional</animation>
                     <align>center</align>
                 </control>
                 <control type="label">
@@ -2985,8 +2968,8 @@
                     <width>172</width>
                     <height>38</height>
                     <font>Font_Reg30_Caps</font>
-                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[46])">Conditional</animation>
                     <label>$INFO[Window(Home).Property(NextAired.205.Weekday)]</label>
+					<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(205)">Conditional</animation>
                     <align>center</align>
                 </control>
                 <control type="label">
@@ -2995,8 +2978,8 @@
                     <width>172</width>
                     <height>38</height>
                     <font>Font_Reg30_Caps</font>
-                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
                     <label>$INFO[Window(Home).Property(NextAired.206.Weekday)]</label>
+					<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(206)">Conditional</animation>
                     <align>center</align>
                 </control>
                 <control type="label">
@@ -3005,9 +2988,9 @@
                     <width>172</width>
                     <height>38</height>
                     <font>Font_Reg28</font>
-                    <label>$INFO[Window(Home).Property(NextAired.200.Date)] $INFO[Container(200).NumItems, (,)]</label>
+                    <label>$VAR[TVDayLabel2_1]</label>
+					<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(200)">Conditional</animation>
                     <align>center</align>
-                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[41])">Conditional</animation>
                 </control>
                 <control type="label">
                     <left>304</left>
@@ -3015,8 +2998,7 @@
                     <width>172</width>
                     <height>38</height>
                     <font>Font_Reg28</font>
-                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[42])">Conditional</animation>
-                    <label>$INFO[Window(Home).Property(NextAired.201.Date)] $INFO[Container(201).NumItems, (,)]</label>
+                    <label>$VAR[TVDayLabel2_2]</label>
                     <align>center</align>
                 </control>
                 <control type="label">
@@ -3025,8 +3007,8 @@
                     <width>172</width>
                     <height>38</height>
                     <font>Font_Reg28</font>
-                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[43])">Conditional</animation>
-                    <label>$INFO[Window(Home).Property(NextAired.202.Date)] $INFO[Container(202).NumItems, (,)]</label>
+                    <label>$VAR[TVDayLabel2_3]</label>
+					<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(202)">Conditional</animation>
                     <align>center</align>
                 </control>
                 <control type="label">
@@ -3035,8 +3017,8 @@
                     <width>172</width>
                     <height>38</height>
                     <font>Font_Reg28</font>
-                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[44])">Conditional</animation>
-                    <label>$INFO[Window(Home).Property(NextAired.203.Date)] $INFO[Container(203).NumItems, (,)]</label>
+                    <label>$VAR[TVDayLabel2_4]</label>
+					<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(203)">Conditional</animation>
                     <align>center</align>
                 </control>
                 <control type="label">
@@ -3045,8 +3027,8 @@
                     <width>172</width>
                     <height>38</height>
                     <font>Font_Reg28</font>
-                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[45])">Conditional</animation>
-                    <label>$INFO[Window(Home).Property(NextAired.204.Date)] $INFO[Container(204).NumItems, (,)]</label>
+                    <label>$VAR[TVDayLabel2_5]</label>
+					<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(204)">Conditional</animation>
                     <align>center</align>
                 </control>
                 <control type="label">
@@ -3055,8 +3037,8 @@
                     <width>172</width>
                     <height>38</height>
                     <font>Font_Reg28</font>
-                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[46])">Conditional</animation>
-                    <label>$INFO[Window(Home).Property(NextAired.205.Date)] $INFO[Container(205).NumItems, (,)]</label>
+                    <label>$VAR[TVDayLabel2_6]</label>
+					<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(205)">Conditional</animation>
                     <align>center</align>
                 </control>
                 <control type="label">
@@ -3065,8 +3047,8 @@
                     <width>172</width>
                     <height>38</height>
                     <font>Font_Reg28</font>
-                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
-                    <label>$INFO[Window(Home).Property(NextAired.206.Date)] $INFO[Container(206).NumItems, (,)]</label>
+					<label>$VAR[TVDayLabel2_7]</label>
+                    <animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(206)">Conditional</animation>
                     <align>center</align>
                 </control>
                 <control type="group" id="9001">
@@ -3074,7 +3056,7 @@
                         <left>126</left>
                         <top>136</top>
                         <width>178</width>
-                        <height>825</height>
+                        <height>815</height>
                         <orientation>vertical</orientation>
                         <scrolltime>0</scrolltime>
                         <onup>9000</onup>
@@ -3136,7 +3118,7 @@
                         <left>304</left>
                         <top>136</top>
                         <width>171</width>
-                        <height>818</height>
+                        <height>815</height>
                         <orientation>vertical</orientation>
                         <scrolltime>0</scrolltime>
                         <onup>200</onup>
@@ -3187,7 +3169,7 @@
                         <left>477</left>
                         <top>136</top>
                         <width>171</width>
-                        <height>825</height>
+                        <height>815</height>
                         <orientation>vertical</orientation>
                         <scrolltime>0</scrolltime>
                         <onup>201</onup>
@@ -3238,7 +3220,7 @@
                         <left>650</left>
                         <top>136</top>
                         <width>171</width>
-                        <height>825</height>
+                        <height>815</height>
                         <orientation>vertical</orientation>
                         <scrolltime>0</scrolltime>
                         <onup>202</onup>
@@ -3289,7 +3271,7 @@
                         <left>822</left>
                         <top>136</top>
                         <width>171</width>
-                        <height>825</height>
+                        <height>815</height>
                         <orientation>vertical</orientation>
                         <scrolltime>0</scrolltime>
                         <onup>203</onup>
@@ -3340,7 +3322,7 @@
                         <left>993</left>
                         <top>136</top>
                         <width>171</width>
-                        <height>825</height>
+                        <height>815</height>
                         <orientation>vertical</orientation>
                         <scrolltime>0</scrolltime>
                         <onup>204</onup>
@@ -3391,7 +3373,7 @@
                         <left>1166</left>
                         <top>136</top>
                         <width>171</width>
-                        <height>825</height>
+                        <height>815</height>
                         <orientation>vertical</orientation>
                         <scrolltime>0</scrolltime>
                         <onup>205</onup>
