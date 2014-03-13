@@ -139,7 +139,7 @@
                 </control>
             </control>
             <control type="group">
-                <visible>[Skin.HasSetting(bigfanclearart) | Skin.HasSetting(bigfanlandscape) | Skin.HasSetting(bigfanlogo)] + !Container.Content(genres)</visible>
+              <visible>[Skin.HasSetting(bigfanclearart) | Skin.HasSetting(bigfanlandscape) | Skin.HasSetting(bigfanlogo)] + !Container.Content(genres)</visible>			
                 <control type="image">
                     <left>75</left>
                     <top>915</top>
@@ -152,8 +152,28 @@
                     <bordersize>7</bordersize>
                     <animation effect="fade" start="100" end="0" time="160">Hidden</animation>
                     <animation effect="fade" end="100" time="320">Visible</animation>
+					<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(genres) | Container.Content(sets) | !Container.Content(seasons) + Stringcompare(Window(home).Property(actualViewtype),BigFan)</visible>
                 </control>
+                <control type="image">
+                    <left>110</left>
+                    <top>754</top>
+                    <width>204</width>
+                    <height>303</height>
+                    <aspectratio scalediffuse="false">scale</aspectratio>
+                    <texture background="true" diffuse="thumbs/movieposter_mask.png" fallback="DefaultVideoBigPoster.png">$INFO[ListItem.Art(poster)]</texture>
+                    <fadetime>275</fadetime>
+					<visible>Stringcompare(Window(home).Property(actualViewtype),BigFan) + ![Container.Content(movies) | Container.Content(tvshows) | Container.Content(genres) | Container.Content(sets)] | Container.Content(seasons)</visible>
+                </control>				
             </control>
+            <control type="image">
+                <left>200r</left>
+                <top>0</top>
+                <width>200</width>
+                <height>200</height>
+                <texture>$INFO[ListItem.Overlay,thumbs/]</texture>
+                <visible>[Skin.HasSetting(watchedoverlay) + SubString(ListItem(0).Overlay,OverlayWatched.png)] | [Skin.HasSetting(newstatus) + SubString(ListItem(0).Overlay,OverlayUnWatched.png) + [[Container.Content(movies) + [StringCompare(Window(Home).Property(LatestMovie.1.Title),ListItem(0).Label) | StringCompare(Window(Home).Property(LatestMovie.2.Title),ListItem(0).Label) | StringCompare(Window(Home).Property(LatestMovie.3.Title),ListItem(0).Label) | StringCompare(Window(Home).Property(LatestMovie.4.Title),ListItem(0).Label) | StringCompare(Window(Home).Property(LatestMovie.5.Title),ListItem(0).Label) | StringCompare(Window(Home).Property(LatestMovie.6.Title),ListItem(0).Label) | StringCompare(Window(Home).Property(LatestMovie.7.Title),ListItem(0).Label) | StringCompare(Window(Home).Property(LatestMovie.8.Title),ListItem(0).Label) | StringCompare(Window(Home).Property(LatestMovie.9.Title),ListItem(0).Label) | StringCompare(Window(Home).Property(LatestMovie.10.Title),ListItem(0).Label)]] | [[Container.Content(tvshows) | Container.Content(seasons)] + [StringCompare(Window(Home).Property(LatestEpisode.1.ShowTitle),ListItem(0).TvShowTitle) | StringCompare(Window(Home).Property(LatestEpisode.2.ShowTitle),ListItem(0).TvShowTitle) | StringCompare(Window(Home).Property(LatestEpisode.3.ShowTitle),ListItem(0).TvShowTitle) | StringCompare(Window(Home).Property(LatestEpisode.4.ShowTitle),ListItem(0).TvShowTitle) | StringCompare(Window(Home).Property(LatestEpisode.5.ShowTitle),ListItem(0).TvShowTitle) | StringCompare(Window(Home).Property(LatestEpisode.6.ShowTitle),ListItem(0).TvShowTitle) | StringCompare(Window(Home).Property(LatestEpisode.7.ShowTitle),ListItem(0).TvShowTitle) | StringCompare(Window(Home).Property(LatestEpisode.8.ShowTitle),ListItem(0).TvShowTitle) | StringCompare(Window(Home).Property(LatestEpisode.9.ShowTitle),ListItem(0).TvShowTitle) | StringCompare(Window(Home).Property(LatestEpisode.10.ShowTitle),ListItem(0).TvShowTitle)]] | [Container.Content(episodes) + [StringCompare(Window(Home).Property(LatestEpisode.1.EpisodeTitle),ListItem(0).Title) | StringCompare(Window(Home).Property(LatestEpisode.2.EpisodeTitle),ListItem(0).Title) | StringCompare(Window(Home).Property(LatestEpisode.3.EpisodeTitle),ListItem(0).Title) | StringCompare(Window(Home).Property(LatestEpisode.4.EpisodeTitle),ListItem(0).Title) | StringCompare(Window(Home).Property(LatestEpisode.5.EpisodeTitle),ListItem(0).Title) | StringCompare(Window(Home).Property(LatestEpisode.6.EpisodeTitle),ListItem(0).Title) | StringCompare(Window(Home).Property(LatestEpisode.7.EpisodeTitle),ListItem(0).Title) | StringCompare(Window(Home).Property(LatestEpisode.8.EpisodeTitle),ListItem(0).Title) | StringCompare(Window(Home).Property(LatestEpisode.9.EpisodeTitle),ListItem(0).Title) | StringCompare(Window(Home).Property(LatestEpisode.10.EpisodeTitle),ListItem(0).Title)]]]]</visible>
+                <include>Animation_VisibleChange200</include>
+            </control>			
             <control type="grouplist">
                 <left>352</left>
                 <top>159r</top>

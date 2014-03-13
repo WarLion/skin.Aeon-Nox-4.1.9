@@ -597,13 +597,6 @@
                             <control type="image">
                                 <include>NextAiredLogoVars</include>
                             </control>
-                            <!--<control type="image">
-                <left>10</left>
-                
-                <width>110</width>
-                <height>110</height>
-                <texture>common/black.png</texture>
-              </control>-->
                         </focusedlayout>
                     </control>
                     <control type="list" id="202">
@@ -655,13 +648,6 @@
                             <control type="image">
                                 <include>NextAiredLogoVars</include>
                             </control>
-                            <!--<control type="image">
-                <left>10</left>
-                
-                <width>110</width>
-                <height>110</height>
-                <texture>common/black.png</texture>
-              </control>-->
                         </focusedlayout>
                     </control>
                     <control type="list" id="203">
@@ -713,13 +699,6 @@
                             <control type="image">
                                 <include>NextAiredLogoVars</include>
                             </control>
-                            <!--<control type="image">
-                <left>10</left>
-                
-                <width>110</width>
-                <height>110</height>
-                <texture>common/black.png</texture>
-              </control>-->
                         </focusedlayout>
                     </control>
                     <control type="list" id="204">
@@ -771,13 +750,6 @@
                             <control type="image">
                                 <include>NextAiredLogoVars</include>
                             </control>
-                            <!--<control type="image">
-                <left>10</left>
-                
-                <width>110</width>
-                <height>110</height>
-                <texture>common/black.png</texture>
-              </control>-->
                         </focusedlayout>
                     </control>
                     <control type="list" id="205">
@@ -829,13 +801,6 @@
                             <control type="image">
                                 <include>NextAiredLogoVars</include>
                             </control>
-                            <!--<control type="image">
-                <left>10</left>
-                
-                <width>110</width>
-                <height>110</height>
-                <texture>common/black.png</texture>
-              </control>-->
                         </focusedlayout>
                     </control>
                     <control type="list" id="206">
@@ -887,13 +852,6 @@
                             <control type="image">
                                 <include>NextAiredLogoVars</include>
                             </control>
-                            <!--<control type="image">
-                <left>10</left>
-                
-                <width>110</width>
-                <height>110</height>
-                <texture>common/black.png</texture>
-              </control>-->
                         </focusedlayout>
                     </control>
                 </control>
@@ -2382,10 +2340,8 @@
             </control>
         </control>
     </include>
-	
-	
-	 <include name="NextAired_Layout3">
- <control type="group">
+	<include name="NextAired_Layout3">
+ 		<control type="group">
             <animation type="WindowOpen" reversible="false">
                 <effect type="zoom" start="150" end="100" center="960,540" time="480" tween="cubic" />
                 <effect type="fade" end="100" time="80" />
@@ -2928,4 +2884,1791 @@
             </control>
         </control>		 	
 	 </include>
+<include name="NextAired_Layout4">
+	 <control type="group">
+            <animation type="WindowOpen" reversible="false">
+                <effect type="zoom" start="150" end="100" center="960,540" time="600" tween="cubic" />
+                <effect type="fade" end="100" time="100" />
+            </animation>
+            <animation type="WindowClose" reversible="false">
+                <effect type="fade" start="100" end="0" time="300" />
+                <effect type="zoom" start="100" end="130" center="960,540" time="300" tween="cubic" easing="in" />
+            </animation>
+            <control type="group">
+                <top>-15</top>
+                <control type="image">
+                    <left>112</left>
+                    <top>82</top>
+                    <width>1695</width>
+                    <height>1040</height>
+                    <texture>wall/wall_bg_glow.png</texture>
+                    <include>PanelGlowFade</include>
+                    <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+                    <visible>!Skin.HasSetting(DisableGlowbar)</visible>
+                </control>
+                <control type="image">
+                    <left>112</left>
+                    <top>82</top>
+                    <width>1695</width>
+                    <height>1040</height>
+                    <texture>wall/wall_bg.png</texture>
+                    <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
+                </control>
+                <control type="image">
+                    <left>112</left>
+                    <top>82</top>
+                    <width>1695</width>
+                    <height>1012</height>
+                    <colordiffuse>white</colordiffuse>
+                    <texture>views/grid.png</texture>
+                </control>
+                <control type="image">
+                    <left>112</left>
+                    <top>108</top>
+                    <width>1695</width>
+                    <height>1012</height>
+                    <texture>wall/wall_bg_reflection.png</texture>
+                </control>
+                <control type="label">
+                    <left>132</left>
+                    <top>100</top>
+                    <width>172</width>
+                    <height>38</height>
+                    <font>Font_Reg30_Caps</font>
+                    <label>$INFO[Window(Home).Property(NextAired.Yesterday)]</label>
+                    <align>center</align>
+                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[41])">Conditional</animation>
+                </control>
+                <control type="label">
+                    <left>304</left>
+                    <top>100</top>
+                    <width>172</width>
+                    <height>38</height>
+                    <font>Font_Reg30_Caps</font>
+                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[42])">Conditional</animation>
+                    <label>$INFO[Window(Home).Property(NextAired.today)]</label>
+                    <align>center</align>
+                </control>
+                <control type="label">
+                    <left>477</left>
+                    <top>100</top>
+                    <width>172</width>
+                    <height>38</height>
+                    <font>Font_Reg30_Caps</font>
+                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[43])">Conditional</animation>
+                    <label>$INFO[Window(Home).Property(NextAired.202.Weekday)]</label>
+                    <align>center</align>
+                </control>
+                <control type="label">
+                    <left>650</left>
+                    <top>100</top>
+                    <width>172</width>
+                    <height>38</height>
+                    <font>Font_Reg30_Caps</font>
+                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[44])">Conditional</animation>
+                    <label>$INFO[Window(Home).Property(NextAired.203.Weekday)]</label>
+                    <align>center</align>
+                </control>
+                <control type="label">
+                    <left>822</left>
+                    <top>100</top>
+                    <width>172</width>
+                    <height>38</height>
+                    <font>Font_Reg30_Caps</font>
+                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[45])">Conditional</animation>
+                    <label>$INFO[Window(Home).Property(NextAired.204.Weekday)]</label>
+                    <align>center</align>
+                </control>
+                <control type="label">
+                    <left>994</left>
+                    <top>100</top>
+                    <width>172</width>
+                    <height>38</height>
+                    <font>Font_Reg30_Caps</font>
+                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[46])">Conditional</animation>
+                    <label>$INFO[Window(Home).Property(NextAired.205.Weekday)]</label>
+                    <align>center</align>
+                </control>
+                <control type="label">
+                    <left>1167</left>
+                    <top>100</top>
+                    <width>172</width>
+                    <height>38</height>
+                    <font>Font_Reg30_Caps</font>
+                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
+                    <label>$INFO[Window(Home).Property(NextAired.206.Weekday)]</label>
+                    <align>center</align>
+                </control>
+                <control type="label">
+                    <left>132</left>
+                    <top>952</top>
+                    <width>172</width>
+                    <height>38</height>
+                    <font>Font_Reg28</font>
+                    <label>$INFO[Window(Home).Property(NextAired.200.Date)] $INFO[Container(200).NumItems, (,)]</label>
+                    <align>center</align>
+                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[41])">Conditional</animation>
+                </control>
+                <control type="label">
+                    <left>304</left>
+                    <top>952</top>
+                    <width>172</width>
+                    <height>38</height>
+                    <font>Font_Reg28</font>
+                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[42])">Conditional</animation>
+                    <label>$INFO[Window(Home).Property(NextAired.201.Date)] $INFO[Container(201).NumItems, (,)]</label>
+                    <align>center</align>
+                </control>
+                <control type="label">
+                    <left>477</left>
+                    <top>952</top>
+                    <width>172</width>
+                    <height>38</height>
+                    <font>Font_Reg28</font>
+                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[43])">Conditional</animation>
+                    <label>$INFO[Window(Home).Property(NextAired.202.Date)] $INFO[Container(202).NumItems, (,)]</label>
+                    <align>center</align>
+                </control>
+                <control type="label">
+                    <left>650</left>
+                    <top>952</top>
+                    <width>172</width>
+                    <height>38</height>
+                    <font>Font_Reg28</font>
+                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[44])">Conditional</animation>
+                    <label>$INFO[Window(Home).Property(NextAired.203.Date)] $INFO[Container(203).NumItems, (,)]</label>
+                    <align>center</align>
+                </control>
+                <control type="label">
+                    <left>822</left>
+                    <top>952</top>
+                    <width>172</width>
+                    <height>38</height>
+                    <font>Font_Reg28</font>
+                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[45])">Conditional</animation>
+                    <label>$INFO[Window(Home).Property(NextAired.204.Date)] $INFO[Container(204).NumItems, (,)]</label>
+                    <align>center</align>
+                </control>
+                <control type="label">
+                    <left>994</left>
+                    <top>952</top>
+                    <width>172</width>
+                    <height>38</height>
+                    <font>Font_Reg28</font>
+                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[46])">Conditional</animation>
+                    <label>$INFO[Window(Home).Property(NextAired.205.Date)] $INFO[Container(205).NumItems, (,)]</label>
+                    <align>center</align>
+                </control>
+                <control type="label">
+                    <left>1167</left>
+                    <top>952</top>
+                    <width>172</width>
+                    <height>38</height>
+                    <font>Font_Reg28</font>
+                    <animation effect="fade" start="100" end="65" time="0" condition="!StringCompare(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
+                    <label>$INFO[Window(Home).Property(NextAired.206.Date)] $INFO[Container(206).NumItems, (,)]</label>
+                    <align>center</align>
+                </control>
+                <control type="group" id="9001">
+                    <control type="list" id="200">
+                        <left>126</left>
+                        <top>136</top>
+                        <width>178</width>
+                        <height>825</height>
+                        <orientation>vertical</orientation>
+                        <scrolltime>0</scrolltime>
+                        <onup>9000</onup>
+                        <ondown>201</ondown>
+                        <onleft>9000</onleft>
+                        <onright>201</onright>
+                        <itemgap>5</itemgap>
+                        <itemlayout height="162" width="172">
+                            <control type="group">
+                                <left>6</left>
+                                <control type="label">
+                                    <include>NextAiredLabelVars</include>
+									<visible>!StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                                </control>
+                                <control type="image">
+                                    <include>NextAiredThumbVars</include>
+                                </control>
+                                <control type="image">
+                                    <include>NextAiredBannerVars</include>
+                                </control>
+                                <control type="image">
+                                    <include>NextAiredLogoVars</include>
+                                </control>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout height="162" width="172">
+                            <control type="group">
+                                <left>6</left>
+                                <control type="image">
+                                    <left>-6</left>
+                                    <width>178</width>
+                                    <include>NextAiredListpanel</include>
+                                    <visible>Control.HasFocus(200)</visible>
+                                </control>
+                                <control type="image">
+                                    <include>NextAiredThumbVars</include>
+                                </control>
+                                <control type="image">
+                                    <include>NextAiredBannerVars</include>
+                                </control>
+                                <control type="label">
+                                    <include>NextAiredLabelVars</include>
+                                    <visible>!Control.HasFocus(200)</visible>
+									<visible>!StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                                </control>
+                                <control type="label">
+                                    <textcolor>$VAR[SubTitleColorVar]</textcolor>
+                                    <include>NextAiredLabelVars</include>
+                                    <visible>Control.HasFocus(200)</visible>
+									<visible>!StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                                </control>
+                                <control type="image">
+                                    <include>NextAiredLogoVars</include>
+                                </control>
+                            </control>
+                        </focusedlayout>
+                    </control>
+                    <control type="list" id="201">
+                        <left>304</left>
+                        <top>136</top>
+                        <width>171</width>
+                        <height>818</height>
+                        <orientation>vertical</orientation>
+                        <scrolltime>0</scrolltime>
+                        <onup>200</onup>
+                        <ondown>202</ondown>
+                        <onleft>200</onleft>
+                        <onright>202</onright>
+                        <itemgap>5</itemgap>
+                        <itemlayout height="162" width="172">
+                            <control type="label">
+                                <include>NextAiredLabelVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredThumbVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredBannerVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredLogoVars</include>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout height="162" width="172">
+                            <control type="image">
+                                <include>NextAiredListpanel</include>
+                                <visible>Control.HasFocus(201)</visible>
+                            </control>
+                            <control type="label">
+                                <include>NextAiredLabelVars</include>
+                                <visible>!Control.HasFocus(201)</visible>
+                            </control>
+                            <control type="label">
+                                <textcolor>$VAR[SubTitleColorVar]</textcolor>
+                                <include>NextAiredLabelVars</include>
+                                <visible>Control.HasFocus(201)</visible>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredThumbVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredBannerVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredLogoVars</include>
+                            </control>
+                        </focusedlayout>
+                    </control>
+                    <control type="list" id="202">
+                        <left>477</left>
+                        <top>136</top>
+                        <width>171</width>
+                        <height>825</height>
+                        <orientation>vertical</orientation>
+                        <scrolltime>0</scrolltime>
+                        <onup>201</onup>
+                        <ondown>203</ondown>
+                        <onleft>201</onleft>
+                        <onright>203</onright>
+                        <itemgap>5</itemgap>
+                        <itemlayout height="162" width="180">
+                            <control type="label">
+                                <include>NextAiredLabelVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredThumbVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredBannerVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredLogoVars</include>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout height="162" width="180">
+                            <control type="image">
+                                <include>NextAiredListpanel</include>
+                                <visible>Control.HasFocus(202)</visible>
+                            </control>
+                            <control type="label">
+                                <include>NextAiredLabelVars</include>
+                                <visible>!Control.HasFocus(202)</visible>
+                            </control>
+                            <control type="label">
+                                <textcolor>$VAR[SubTitleColorVar]</textcolor>
+                                <include>NextAiredLabelVars</include>
+                                <visible>Control.HasFocus(202)</visible>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredThumbVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredBannerVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredLogoVars</include>
+                            </control>
+                        </focusedlayout>
+                    </control>
+                    <control type="list" id="203">
+                        <left>650</left>
+                        <top>136</top>
+                        <width>171</width>
+                        <height>825</height>
+                        <orientation>vertical</orientation>
+                        <scrolltime>0</scrolltime>
+                        <onup>202</onup>
+                        <ondown>204</ondown>
+                        <onleft>202</onleft>
+                        <onright>204</onright>
+                        <itemgap>5</itemgap>
+                        <itemlayout height="162" width="180">
+                            <control type="label">
+                                <include>NextAiredLabelVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredThumbVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredBannerVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredLogoVars</include>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout height="162" width="180">
+                            <control type="image">
+                                <include>NextAiredListpanel</include>
+                                <visible>Control.HasFocus(203)</visible>
+                            </control>
+                            <control type="label">
+                                <include>NextAiredLabelVars</include>
+                                <visible>!Control.HasFocus(203)</visible>
+                            </control>
+                            <control type="label">
+                                <textcolor>$VAR[SubTitleColorVar]</textcolor>
+                                <include>NextAiredLabelVars</include>
+                                <visible>Control.HasFocus(203)</visible>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredThumbVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredBannerVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredLogoVars</include>
+                            </control>
+                        </focusedlayout>
+                    </control>
+                    <control type="list" id="204">
+                        <left>822</left>
+                        <top>136</top>
+                        <width>171</width>
+                        <height>825</height>
+                        <orientation>vertical</orientation>
+                        <scrolltime>0</scrolltime>
+                        <onup>203</onup>
+                        <ondown>205</ondown>
+                        <onleft>203</onleft>
+                        <onright>205</onright>
+                        <itemgap>5</itemgap>
+                        <itemlayout height="162" width="180">
+                            <control type="label">
+                                <include>NextAiredLabelVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredThumbVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredBannerVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredLogoVars</include>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout height="162" width="180">
+                            <control type="image">
+                                <include>NextAiredListpanel</include>
+                                <visible>Control.HasFocus(204)</visible>
+                            </control>
+                            <control type="label">
+                                <include>NextAiredLabelVars</include>
+                                <visible>!Control.HasFocus(204)</visible>
+                            </control>
+                            <control type="label">
+                                <textcolor>$VAR[SubTitleColorVar]</textcolor>
+                                <include>NextAiredLabelVars</include>
+                                <visible>Control.HasFocus(204)</visible>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredThumbVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredBannerVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredLogoVars</include>
+                            </control>
+                        </focusedlayout>
+                    </control>
+                    <control type="list" id="205">
+                        <left>993</left>
+                        <top>136</top>
+                        <width>171</width>
+                        <height>825</height>
+                        <orientation>vertical</orientation>
+                        <scrolltime>0</scrolltime>
+                        <onup>204</onup>
+                        <ondown>206</ondown>
+                        <onleft>204</onleft>
+                        <onright>206</onright>
+                        <itemgap>5</itemgap>
+                        <itemlayout height="162" width="180">
+                            <control type="label">
+                                <include>NextAiredLabelVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredThumbVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredBannerVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredLogoVars</include>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout height="162" width="180">
+                            <control type="image">
+                                <include>NextAiredListpanel</include>
+                                <visible>Control.HasFocus(205)</visible>
+                            </control>
+                            <control type="label">
+                                <include>NextAiredLabelVars</include>
+                                <visible>!Control.HasFocus(205)</visible>
+                            </control>
+                            <control type="label">
+                                <textcolor>$VAR[SubTitleColorVar]</textcolor>
+                                <include>NextAiredLabelVars</include>
+                                <visible>Control.HasFocus(205)</visible>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredThumbVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredBannerVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredLogoVars</include>
+                            </control>
+                        </focusedlayout>
+                    </control>
+                    <control type="list" id="206">
+                        <left>1166</left>
+                        <top>136</top>
+                        <width>171</width>
+                        <height>825</height>
+                        <orientation>vertical</orientation>
+                        <scrolltime>0</scrolltime>
+                        <onup>205</onup>
+                        <ondown>200</ondown>
+                        <onleft>205</onleft>
+                        <onright>200</onright>
+                        <itemgap>5</itemgap>
+                        <itemlayout height="162" width="180">
+                            <control type="label">
+                                <include>NextAiredLabelVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredThumbVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredBannerVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredLogoVars</include>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout height="162" width="180">
+                            <control type="image">
+                                <include>NextAiredListpanel</include>
+                                <visible>Control.HasFocus(206)</visible>
+                            </control>
+                            <control type="label">
+                                <include>NextAiredLabelVars</include>
+                                <visible>!Control.HasFocus(206)</visible>
+                            </control>
+                            <control type="label">
+                                <textcolor>$VAR[SubTitleColorVar]</textcolor>
+                                <include>NextAiredLabelVars</include>
+                                <visible>Control.HasFocus(206)</visible>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredThumbVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredBannerVars</include>
+                            </control>
+                            <control type="image">
+                                <include>NextAiredLogoVars</include>
+                            </control>
+                        </focusedlayout>
+                    </control>
+                </control>
+            </control>
+            <control type="group">
+                <left>1239</left>
+                <control type="group">
+                    <visible>Control.HasFocus(200)</visible>
+                    <control type="label">
+                        <left>546</left>
+                        <top>987</top>
+                        <width>1200</width>
+                        <height>90</height>
+                        <label>$INFO[Container(200).ListItem.Label]</label>
+                        <align>right</align>
+                        <textcolor>floor</textcolor>
+                        <font>Font_Bold37_Caps</font>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="image">
+                        <left>123</left>
+                        <top>126</top>
+                        <width>405</width>
+                        <height>237</height>
+                        <aspectratio align="center">keep</aspectratio>
+                        <texture background="true">$INFO[Container(200).ListItem.Property(Art(fanart))]</texture>
+                        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
+                        <bordersize>7</bordersize>
+                        <visible>!Control.IsVisible(2001) | IsEmpty(Container(200).ListItem.Property(Art(landscape)))</visible>
+                    </control>
+                    <control type="image" id="2001">
+                        <left>123</left>
+                        <top>126</top>
+                        <width>405</width>
+                        <height>237</height>
+                        <aspectratio align="center">keep</aspectratio>
+                        <texture background="true">$INFO[Container(200).ListItem.Property(Art(landscape))]</texture>
+                        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
+                        <bordersize>7</bordersize>
+                        <visible>!IsEmpty(Window(Home).property(TVGuide.PreviewThumbs))</visible>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>375</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$INFO[Container(200).ListItem.Property(NextTitle)]</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>412</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>[COLOR white2]S$INFO[Container(200).ListItem.Property(NextSeasonNumber)]E$INFO[Container(200).ListItem.Property(NextEpisodeNumber)] [/COLOR]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>458</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31189]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>495</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>[COLOR white2]S$INFO[Container(200).ListItem.Property(LatestSeasonNumber)]E$INFO[Container(200).ListItem.Property(LatestEpisodeNumber)][/COLOR]: $INFO[Container(200).ListItem.Property(LatestTitle)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>537</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31322]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>574</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(200).ListItem.Property(LatestDate)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>618</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31188]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>656</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(200).ListItem.Property(Status)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>698</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[515]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>735</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(200).ListItem.Property(Genre)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>780</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31453]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>818</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(200).ListItem.Property(AirTime)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>862</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[2050]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+
+                        <left>117</left>
+                        <top>900</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(200).ListItem.Property(Runtime),, $LOCALIZE[12391]]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>350</left>
+                        <top>862</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31005]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>350</left>
+                        <top>900</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(200).ListItem.Property(Premiered)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="image">
+                        <left>-1119</left>
+                        <top>987</top>
+                        <width>135</width>
+                        <height>90</height>
+                        <aspectratio>keep</aspectratio>
+                        <colordiffuse>floor</colordiffuse>
+                        <fadetime>IconCrossfadeTime2</fadetime>
+                        <animation effect="fade" time="250">VisibleChange</animation>
+                        <texture fallback="flags/studios/default-studio.png">$INFO[Container(200).ListItem.Property(Network),flags/studios/,.png]</texture>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>Control.HasFocus(201)</visible>
+                    <control type="label">
+                        <left>546</left>
+                        <top>987</top>
+                        <width>1200</width>
+                        <height>90</height>
+                        <label>$INFO[Container(201).ListItem.Label]</label>
+                        <align>right</align>
+                        <textcolor>floor</textcolor>
+                        <font>Font_Bold37_Caps</font>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="image">
+                        <left>123</left>
+                        <top>126</top>
+                        <width>405</width>
+                        <height>237</height>
+                        <aspectratio align="center">keep</aspectratio>
+                        <texture background="true">$INFO[Container(201).ListItem.Property(Art(fanart))]</texture>
+                        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
+                        <bordersize>7</bordersize>
+                        <visible>!Control.IsVisible(2001) | IsEmpty(Container(201).ListItem.Property(Art(landscape)))</visible>
+                    </control>
+                    <control type="image" id="2001">
+                        <left>123</left>
+                        <top>126</top>
+                        <width>405</width>
+                        <height>237</height>
+                        <aspectratio align="center">keep</aspectratio>
+                        <texture background="true">$INFO[Container(201).ListItem.Property(Art(landscape))]</texture>
+                        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
+                        <bordersize>7</bordersize>
+                        <visible>!IsEmpty(Window(Home).property(TVGuide.PreviewThumbs))</visible>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>375</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31190]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>412</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(201).ListItem.Property(NextNumber)]: $INFO[Container(201).ListItem.Property(NextTitle)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>458</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31189]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>495</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(201).ListItem.Property(LatestNumber)]: $INFO[Container(201).ListItem.Property(LatestTitle)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>537</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31322]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>574</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(201).ListItem.Property(LatestDate)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>618</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31188]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>656</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(201).ListItem.Property(Status)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>698</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[515]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>735</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(201).ListItem.Property(Genre)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>780</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31453]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>818</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(201).ListItem.Property(AirTime)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>862</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[2050]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>900</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(201).ListItem.Property(Runtime),, $LOCALIZE[12391]]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>350</left>
+                        <top>862</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31005]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>350</left>
+                        <top>900</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(201).ListItem.Property(Premiered)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="image">
+                        <left>-1119</left>
+                        <top>987</top>
+                        <width>135</width>
+                        <height>90</height>
+                        <aspectratio>keep</aspectratio>
+                        <colordiffuse>floor</colordiffuse>
+                        <fadetime>IconCrossfadeTime2</fadetime>
+                        <animation effect="fade" time="250">VisibleChange</animation>
+                        <texture fallback="flags/studios/default-studio.png">$INFO[Container(201).ListItem.Property(Network),flags/studios/,.png]</texture>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>Control.HasFocus(202)</visible>
+                    <control type="label">
+                        <left>546</left>
+                        <top>987</top>
+                        <width>1200</width>
+                        <height>90</height>
+                        <label>$INFO[Container(202).ListItem.Label]</label>
+                        <align>right</align>
+                        <textcolor>floor</textcolor>
+                        <font>Font_Bold37_Caps</font>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="image">
+                        <left>123</left>
+                        <top>126</top>
+                        <width>405</width>
+                        <height>237</height>
+                        <aspectratio align="center">keep</aspectratio>
+                        <texture background="true">$INFO[Container(202).ListItem.Property(Art(fanart))]</texture>
+                        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
+                        <bordersize>7</bordersize>
+                        <visible>!Control.IsVisible(2001) | IsEmpty(Container(202).ListItem.Property(Art(landscape)))</visible>
+                    </control>
+                    <control type="image" id="2001">
+                        <left>123</left>
+                        <top>126</top>
+                        <width>405</width>
+                        <height>237</height>
+                        <aspectratio align="center">keep</aspectratio>
+                        <texture background="true">$INFO[Container(202).ListItem.Property(Art(landscape))]</texture>
+                        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
+                        <bordersize>7</bordersize>
+                        <visible>!IsEmpty(Window(Home).property(TVGuide.PreviewThumbs))</visible>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>375</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31190]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>412</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(202).ListItem.Property(NextNumber)]: $INFO[Container(202).ListItem.Property(NextTitle)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>458</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31189]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>495</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(202).ListItem.Property(LatestNumber)]: $INFO[Container(202).ListItem.Property(LatestTitle)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>537</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31322]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>574</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(202).ListItem.Property(LatestDate)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>618</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31188]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>656</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(202).ListItem.Property(Status)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>698</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[515]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>735</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(202).ListItem.Property(Genre)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>780</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31453]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>818</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(202).ListItem.Property(AirTime)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>862</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[2050]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>900</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(202).ListItem.Property(Runtime),, $LOCALIZE[12391]]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>350</left>
+                        <top>862</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31005]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>350</left>
+                        <top>900</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(202).ListItem.Property(Premiered)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="image">
+                        <left>-1119</left>
+                        <top>987</top>
+                        <width>135</width>
+                        <height>90</height>
+                        <aspectratio>keep</aspectratio>
+                        <colordiffuse>floor</colordiffuse>
+                        <fadetime>IconCrossfadeTime2</fadetime>
+                        <animation effect="fade" time="250">VisibleChange</animation>
+                        <texture fallback="flags/studios/default-studio.png">$INFO[Container(202).ListItem.Property(Network),flags/studios/,.png]</texture>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>Control.HasFocus(203)</visible>
+                    <control type="label">
+                        <left>546</left>
+                        <top>987</top>
+                        <width>1200</width>
+                        <height>90</height>
+                        <label>$INFO[Container(203).ListItem.Label]</label>
+                        <align>right</align>
+                        <textcolor>floor</textcolor>
+                        <font>Font_Bold37_Caps</font>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="image">
+                        <left>123</left>
+                        <top>126</top>
+                        <width>405</width>
+                        <height>237</height>
+                        <aspectratio align="center">keep</aspectratio>
+                        <texture background="true">$INFO[Container(203).ListItem.Property(Art(fanart))]</texture>
+                        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
+                        <bordersize>7</bordersize>
+                        <visible>!Control.IsVisible(2001) | IsEmpty(Container(203).ListItem.Property(Art(landscape)))</visible>
+                    </control>
+                    <control type="image" id="2001">
+                        <left>123</left>
+                        <top>126</top>
+                        <width>405</width>
+                        <height>237</height>
+                        <aspectratio align="center">keep</aspectratio>
+                        <texture background="true">$INFO[Container(203).ListItem.Property(Art(landscape))]</texture>
+                        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
+                        <bordersize>7</bordersize>
+                        <visible>!IsEmpty(Window(Home).property(TVGuide.PreviewThumbs))</visible>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>375</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31190]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>412</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(203).ListItem.Property(NextNumber)]: $INFO[Container(203).ListItem.Property(NextTitle)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>458</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31189]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>495</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(203).ListItem.Property(LatestNumber)]: $INFO[Container(203).ListItem.Property(LatestTitle)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>537</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31322]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>574</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(203).ListItem.Property(LatestDate)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>618</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31188]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>656</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(203).ListItem.Property(Status)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>698</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[515]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>735</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(203).ListItem.Property(Genre)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>780</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31453]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>818</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(203).ListItem.Property(AirTime)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>862</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[2050]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>900</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(203).ListItem.Property(Runtime),, $LOCALIZE[12391]]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>350</left>
+                        <top>862</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31005]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>350</left>
+                        <top>900</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(203).ListItem.Property(Premiered)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="image">
+                        <left>-1119</left>
+                        <top>987</top>
+                        <width>135</width>
+                        <height>90</height>
+                        <aspectratio>keep</aspectratio>
+                        <colordiffuse>floor</colordiffuse>
+                        <fadetime>IconCrossfadeTime2</fadetime>
+                        <animation effect="fade" time="250">VisibleChange</animation>
+                        <texture fallback="flags/studios/default-studio.png">$INFO[Container(203).ListItem.Property(Network),flags/studios/,.png]</texture>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>Control.HasFocus(204)</visible>
+                    <control type="label">
+                        <left>546</left>
+                        <top>987</top>
+                        <width>1200</width>
+                        <height>90</height>
+                        <label>$INFO[Container(204).ListItem.Label]</label>
+                        <align>right</align>
+                        <textcolor>floor</textcolor>
+                        <font>Font_Bold37_Caps</font>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="image">
+                        <left>123</left>
+                        <top>126</top>
+                        <width>405</width>
+                        <height>237</height>
+                        <aspectratio align="center">keep</aspectratio>
+                        <texture background="true">$INFO[Container(204).ListItem.Property(Art(fanart))]</texture>
+                        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
+                        <bordersize>7</bordersize>
+                        <visible>!Control.IsVisible(2001) | IsEmpty(Container(204).ListItem.Property(Art(landscape)))</visible>
+                    </control>
+                    <control type="image" id="2001">
+                        <left>123</left>
+                        <top>126</top>
+                        <width>405</width>
+                        <height>237</height>
+                        <aspectratio align="center">keep</aspectratio>
+                        <texture background="true">$INFO[Container(204).ListItem.Property(Art(landscape))]</texture>
+                        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
+                        <bordersize>7</bordersize>
+                        <visible>!IsEmpty(Window(Home).property(TVGuide.PreviewThumbs))</visible>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>375</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31190]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>412</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(204).ListItem.Property(NextNumber)]: $INFO[Container(204).ListItem.Property(NextTitle)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>458</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31189]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>495</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(204).ListItem.Property(LatestNumber)]: $INFO[Container(204).ListItem.Property(LatestTitle)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>537</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31322]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>574</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(204).ListItem.Property(LatestDate)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>618</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31188]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>656</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(204).ListItem.Property(Status)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>698</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[515]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>735</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(204).ListItem.Property(Genre)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>780</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31453]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>818</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(204).ListItem.Property(AirTime)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>862</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[2050]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>900</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(204).ListItem.Property(Runtime),, $LOCALIZE[12391]]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>350</left>
+                        <top>862</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31005]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>350</left>
+                        <top>900</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(204).ListItem.Property(Premiered)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="image">
+                        <left>-1119</left>
+                        <top>987</top>
+                        <width>135</width>
+                        <height>90</height>
+                        <aspectratio>keep</aspectratio>
+                        <colordiffuse>floor</colordiffuse>
+                        <fadetime>IconCrossfadeTime2</fadetime>
+                        <animation effect="fade" time="250">VisibleChange</animation>
+                        <texture fallback="flags/studios/default-studio.png">$INFO[Container(204).ListItem.Property(Network),flags/studios/,.png]</texture>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>Control.HasFocus(205)</visible>
+                    <control type="label">
+                        <left>546</left>
+                        <top>987</top>
+                        <width>1200</width>
+                        <height>90</height>
+                        <label>$INFO[Container(205).ListItem.Label]</label>
+                        <align>right</align>
+                        <textcolor>floor</textcolor>
+                        <font>Font_Bold37_Caps</font>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="image">
+                        <left>123</left>
+                        <top>126</top>
+                        <width>405</width>
+                        <height>237</height>
+                        <aspectratio align="center">keep</aspectratio>
+                        <texture background="true">$INFO[Container(205).ListItem.Property(Art(fanart))]</texture>
+                        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
+                        <bordersize>7</bordersize>
+                        <visible>!Control.IsVisible(2001) | IsEmpty(Container(205).ListItem.Property(Art(landscape)))</visible>
+                    </control>
+                    <control type="image" id="2001">
+                        <left>123</left>
+                        <top>126</top>
+                        <width>405</width>
+                        <height>237</height>
+                        <aspectratio align="center">keep</aspectratio>
+                        <texture background="true">$INFO[Container(205).ListItem.Property(Art(landscape))]</texture>
+                        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
+                        <bordersize>7</bordersize>
+                        <visible>!IsEmpty(Window(Home).property(TVGuide.PreviewThumbs))</visible>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>375</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31190]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>412</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(205).ListItem.Property(NextNumber)]: $INFO[Container(205).ListItem.Property(NextTitle)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>458</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31189]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>495</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(205).ListItem.Property(LatestNumber)]: $INFO[Container(205).ListItem.Property(LatestTitle)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>537</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31322]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>574</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(205).ListItem.Property(LatestDate)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>618</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31188]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>656</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(205).ListItem.Property(Status)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>698</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[515]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>735</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(205).ListItem.Property(Genre)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>780</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31453]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>818</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(205).ListItem.Property(AirTime)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>862</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[2050]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>900</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(205).ListItem.Property(Runtime),, $LOCALIZE[12391]]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>350</left>
+                        <top>862</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31005]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>350</left>
+                        <top>900</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(205).ListItem.Property(Premiered)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="image">
+                        <left>-1119</left>
+                        <top>987</top>
+                        <width>135</width>
+                        <height>90</height>
+                        <aspectratio>keep</aspectratio>
+                        <colordiffuse>floor</colordiffuse>
+                        <fadetime>IconCrossfadeTime2</fadetime>
+                        <animation effect="fade" time="250">VisibleChange</animation>
+                        <texture fallback="flags/studios/default-studio.png">$INFO[Container(205).ListItem.Property(Network),flags/studios/,.png]</texture>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>Control.HasFocus(206)</visible>
+                    <control type="label">
+                        <left>546</left>
+                        <top>987</top>
+                        <width>1200</width>
+                        <height>90</height>
+                        <label>$INFO[Container(206).ListItem.Label]</label>
+                        <align>right</align>
+                        <textcolor>floor</textcolor>
+                        <font>Font_Bold37_Caps</font>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="image">
+                        <left>123</left>
+                        <top>126</top>
+                        <width>405</width>
+                        <height>237</height>
+                        <aspectratio align="center">keep</aspectratio>
+                        <texture background="true">$INFO[Container(206).ListItem.Property(Art(fanart))]</texture>
+                        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
+                        <bordersize>7</bordersize>
+                        <visible>!Control.IsVisible(2001) | IsEmpty(Container(206).ListItem.Property(Art(landscape)))</visible>
+                    </control>
+                    <control type="image" id="2001">
+                        <left>123</left>
+                        <top>126</top>
+                        <width>405</width>
+                        <height>237</height>
+                        <aspectratio align="center">keep</aspectratio>
+                        <texture background="true">$INFO[Container(206).ListItem.Property(Art(landscape))]</texture>
+                        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
+                        <bordersize>7</bordersize>
+                        <visible>!IsEmpty(Window(Home).property(TVGuide.PreviewThumbs))</visible>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>375</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31190]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>412</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(206).ListItem.Property(NextNumber)]: $INFO[Container(206).ListItem.Property(NextTitle)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>458</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31189]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>495</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(206).ListItem.Property(LatestNumber)]: $INFO[Container(206).ListItem.Property(LatestTitle)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>537</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31322]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>574</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(206).ListItem.Property(LatestDate)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>618</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31188]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>656</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(206).ListItem.Property(Status)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>698</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[515]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>735</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(206).ListItem.Property(Genre)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>780</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31453]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>818</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(206).ListItem.Property(AirTime)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>862</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[2050]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>117</left>
+                        <top>900</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(206).ListItem.Property(Runtime),, $LOCALIZE[12391]]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>350</left>
+                        <top>862</top>
+                        <width>450</width>
+                        <height>30</height>
+                        <label>$LOCALIZE[31005]:</label>
+                        <textcolor>$VAR[TitleColorVar]</textcolor>
+                    </control>
+                    <control type="label">
+                        <left>350</left>
+                        <top>900</top>
+                        <width>435</width>
+                        <height>30</height>
+                        <label>$INFO[Container(206).ListItem.Property(Premiered)]</label>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="image">
+                        <left>-1119</left>
+                        <top>987</top>
+                        <width>135</width>
+                        <height>90</height>
+                        <aspectratio>keep</aspectratio>
+                        <colordiffuse>floor</colordiffuse>
+                        <fadetime>IconCrossfadeTime2</fadetime>
+                        <animation effect="fade" time="250">VisibleChange</animation>
+                        <texture fallback="flags/studios/default-studio.png">$INFO[Container(206).ListItem.Property(Network),flags/studios/,.png]</texture>
+                    </control>
+                </control>
+            </control>
+        </control>
+</include>	 
 </includes>

@@ -1835,13 +1835,13 @@
                                 </control>
                             </focusedlayout>
                             <content>
-                                <item id="1">
+								<item id="1">
                                     <label>$INFO[Window(Home).Property(ArtistEvents.1.Artists)]</label>
                                     <label2>$INFO[Window(Home).Property(ArtistEvents.1.Date)]</label2>
                                     <property name="City">$INFO[Window(Home).Property(ArtistEvents.1.City)]</property>
                                     <property name="Name">$INFO[Window(Home).Property(ArtistEvents.1.Name)]</property>
                                     <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[Window(Home).Property(ArtistEvents.1.Artists)],return)</onclick>
-                                    <onclick>Dialog.Close(1139)</onclick>
+                                    <onclick>Dialog.Close(musicinformation)</onclick>
                                     <visible>IntegerGreaterThan(Window(Home).Property(ArtistEvents.Count),0)</visible>
                                 </item>
                                 <item id="2">
@@ -1850,7 +1850,7 @@
                                     <property name="City">$INFO[Window(Home).Property(ArtistEvents.2.City)]</property>
                                     <property name="Name">$INFO[Window(Home).Property(ArtistEvents.2.Name)]</property>
                                     <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[Window(Home).Property(ArtistEvents.2.Artists)],return)</onclick>
-                                    <onclick>Dialog.Close(1139)</onclick>
+                                    <onclick>Dialog.Close(musicinformation)</onclick>
                                     <visible>IntegerGreaterThan(Window(Home).Property(ArtistEvents.Count),1)</visible>
                                 </item>
                                 <item id="3">
@@ -1859,7 +1859,7 @@
                                     <property name="City">$INFO[Window(Home).Property(ArtistEvents.3.City)]</property>
                                     <property name="Name">$INFO[Window(Home).Property(ArtistEvents.3.Name)]</property>
                                     <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[Window(Home).Property(ArtistEvents.3.Artists)],return)</onclick>
-                                    <onclick>Dialog.Close(1139)</onclick>
+                                    <onclick>Dialog.Close(musicinformation)</onclick>
                                     <visible>IntegerGreaterThan(Window(Home).Property(ArtistEvents.Count),2)</visible>
                                 </item>
                                 <item id="4">
@@ -1868,7 +1868,7 @@
                                     <property name="City">$INFO[Window(Home).Property(ArtistEvents.4.City)]</property>
                                     <property name="Name">$INFO[Window(Home).Property(ArtistEvents.4.Name)]</property>
                                     <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[Window(Home).Property(ArtistEvents.4.Artists)],return)</onclick>
-                                    <onclick>Dialog.Close(1139)</onclick>
+                                    <onclick>Dialog.Close(musicinformation)</onclick>
                                     <visible>IntegerGreaterThan(Window(Home).Property(ArtistEvents.Count),3)</visible>
                                 </item>
                                 <item id="5">
@@ -1877,7 +1877,7 @@
                                     <property name="City">$INFO[Window(Home).Property(ArtistEvents.5.City)]</property>
                                     <property name="Name">$INFO[Window(Home).Property(ArtistEvents.5.Name)]</property>
                                     <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[Window(Home).Property(ArtistEvents.5.Artists)],return)</onclick>
-                                    <onclick>Dialog.Close(1139)</onclick>
+                                    <onclick>Dialog.Close(musicinformation)</onclick>
                                     <visible>IntegerGreaterThan(Window(Home).Property(ArtistEvents.Count),4)</visible>
                                 </item>
                                 <item id="6">
@@ -1886,7 +1886,7 @@
                                     <property name="City">$INFO[Window(Home).Property(ArtistEvents.6.City)]</property>
                                     <property name="Name">$INFO[Window(Home).Property(ArtistEvents.6.Name)]</property>
                                     <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[Window(Home).Property(ArtistEvents.6.Artists)],return)</onclick>
-                                    <onclick>Dialog.Close(1139)</onclick>
+                                    <onclick>Dialog.Close(musicinformation)</onclick>
                                     <visible>IntegerGreaterThan(Window(Home).Property(ArtistEvents.Count),5)</visible>
                                 </item>
                                 <item id="7">
@@ -1895,7 +1895,7 @@
                                     <property name="City">$INFO[Window(Home).Property(ArtistEvents.7.City)]</property>
                                     <property name="Name">$INFO[Window(Home).Property(ArtistEvents.7.Name)]</property>
                                     <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[Window(Home).Property(ArtistEvents.7.Artists)],return)</onclick>
-                                    <onclick>Dialog.Close(1139)</onclick>
+                                    <onclick>Dialog.Close(musicinformation)</onclick>
                                     <visible>IntegerGreaterThan(Window(Home).Property(ArtistEvents.Count),6)</visible>
                                 </item>
                                 <item id="8">
@@ -1904,7 +1904,7 @@
                                     <property name="City">$INFO[Window(Home).Property(ArtistEvents.8.City)]</property>
                                     <property name="Name">$INFO[Window(Home).Property(ArtistEvents.8.Name)]</property>
                                     <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[Window(Home).Property(ArtistEvents.8.Artists)],return)</onclick>
-                                    <onclick>Dialog.Close(1139)</onclick>
+                                    <onclick>Dialog.Close(musicinformation)</onclick>
                                     <visible>IntegerGreaterThan(Window(Home).Property(ArtistEvents.Count),7)</visible>
                                 </item>
                                 <item id="9">
@@ -1913,7 +1913,7 @@
                                     <property name="City">$INFO[Window(Home).Property(ArtistEvents.9.City)]</property>
                                     <property name="Name">$INFO[Window(Home).Property(ArtistEvents.9.Name)]</property>
                                     <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[Window(Home).Property(ArtistEvents.9.Artists)],return)</onclick>
-                                    <onclick>Dialog.Close(1139)</onclick>
+                                    <onclick>Dialog.Close(musicinformation)</onclick>
                                     <visible>IntegerGreaterThan(Window(Home).Property(ArtistEvents.Count),8)</visible>
                                 </item>
                                 <item id="10">
@@ -1922,7 +1922,7 @@
                                     <property name="City">$INFO[Window(Home).Property(ArtistEvents.10.City)]</property>
                                     <property name="Name">$INFO[Window(Home).Property(ArtistEvents.10.Name)]</property>
                                     <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[Window(Home).Property(ArtistEvents.10.Artists)],return)</onclick>
-                                    <onclick>Dialog.Close(1139)</onclick>
+                                    <onclick>Dialog.Close(musicinformation)</onclick>
                                     <visible>IntegerGreaterThan(Window(Home).Property(ArtistEvents.Count),9)</visible>
                                 </item>
                                 <item id="11">
@@ -1931,7 +1931,7 @@
                                     <property name="City">$INFO[Window(Home).Property(ArtistEvents.11.City)]</property>
                                     <property name="Name">$INFO[Window(Home).Property(ArtistEvents.11.Name)]</property>
                                     <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[Window(Home).Property(ArtistEvents.11.Artists)],return)</onclick>
-                                    <onclick>Dialog.Close(1139)</onclick>
+                                    <onclick>Dialog.Close(musicinformation)</onclick>
                                     <visible>IntegerGreaterThan(Window(Home).Property(ArtistEvents.Count),10)</visible>
                                 </item>
                                 <item id="12">
@@ -1940,7 +1940,7 @@
                                     <property name="City">$INFO[Window(Home).Property(ArtistEvents.12.City)]</property>
                                     <property name="Name">$INFO[Window(Home).Property(ArtistEvents.12.Name)]</property>
                                     <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[Window(Home).Property(ArtistEvents.12.Artists)],return)</onclick>
-                                    <onclick>Dialog.Close(1139)</onclick>
+                                    <onclick>Dialog.Close(musicinformation)</onclick>
                                     <visible>IntegerGreaterThan(Window(Home).Property(ArtistEvents.Count),11)</visible>
                                 </item>
                             </content>

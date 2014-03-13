@@ -195,7 +195,7 @@
 					<colordiffuse>white2</colordiffuse>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<texture fallback="">$INFO[VideoPlayer.SubtitlesLanguage,flags/language/,.png]</texture>
-                </control>				
+                </control>										
         </control>
         <include>AlaskaPausedLabel</include>
         <control type="group" id="9004">

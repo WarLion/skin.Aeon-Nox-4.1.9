@@ -25,7 +25,6 @@
                 <animation effect="zoom" start="100" end="90" center="147,345" time="240" reversible="false" tween="cubic" condition="Skin.HasSetting(usecases) + [container.content(movies) | Container.Content(musicvideos)]">Conditional</animation>
                 <animation effect="fade" time="0" delay="640">Visible</animation>
                 <include>MovieShowCaseGlow</include>
-                <include>MovieShowCaseGlow</include>
                 <control type="image">
                     <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem0Var]</texture>
                     <include>MovieShowcaseThumb</include>

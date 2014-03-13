@@ -2061,7 +2061,7 @@
         <value condition="Container.Content(seasons) + !IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
         <value condition="Skin.HasSetting(bigfanclearart) + !IsEmpty(ListItem.Art(clearart))">$INFO[ListItem.Art(clearart)]</value>
         <value condition="[Skin.HasSetting(bigfanlogo) | IsEmpty(ListItem.Art(clearart))] + !IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Skin.HasSetting(bigfanlandscape) + !IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
+        <value condition="Skin.HasSetting(bigfanlandscape) + !IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>>
         <value>$INFO[ListItem.Art(fanart)]</value>
     </variable>
     <variable name="BigFanIconLabelVar">
@@ -2685,6 +2685,10 @@
         <value condition="Skin.HasSetting(ClassicNextAired)">1</value>
         <value>2</value>
     </variable>
+    <variable name="NextAiredLayoutVar2">
+        <value condition="Skin.HasSetting(ClassicNextAired2)">1</value>
+        <value>2</value>
+    </variable>	
     <variable name="VideoExtraLayoutVar">
         <value condition="Skin.HasSetting(ClassicVideoExtra)">1</value>
         <value>2</value>

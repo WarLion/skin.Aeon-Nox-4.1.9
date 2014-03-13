@@ -85,6 +85,7 @@
                     <label>$LOCALIZE[31185]</label>
                     <include>Objects_MediaMenuLabelAlt2</include>
                     <enable>no</enable>
+					<visible>!Container.Content(seasons) + Stringcompare(Window(home).Property(actualViewtype),BigFan)</visible>
                 </control>
                 <!--Showcase/DVDCase options-->
                 <control type="radiobutton" id="1626">
@@ -185,7 +186,7 @@
                     <onclick condition="Skin.HasSetting(bigfanlogo)">Skin.SetBool(bigfanlandscape)</onclick>
                     <onclick condition="Skin.HasSetting(bigfanlogo)">Skin.Reset(bigfanlogo)</onclick>
                     <onclick condition="!Skin.HasSetting(bigfanclearart) + !Skin.HasSetting(bigfanlogo) + Skin.HasSetting(bigfanlandscape)">Skin.Reset(bigfanlandscape)</onclick>
-                    <visible>Window.IsActive(videolibrary) + Stringcompare(Window(home).Property(actualViewtype),BigFan) + !Container.Content(genres)</visible>
+                    <visible>Window.IsActive(videolibrary) + Stringcompare(Window(home).Property(actualViewtype),BigFan) + !Container.Content(genres)   + !Container.Content(seasons)</visible>
                 </control>
                 <!--Landscape Options-->
                 <control type="button" id="1639">
@@ -652,7 +653,7 @@
                     <include>Objects_MediaMenuButtonAlt2</include>
                     <onclick>Skin.ToggleSetting(tripanelbiglist)</onclick>
                     <selected>Skin.HasSetting(tripanelbiglist)</selected>
-                    <visible>Stringcompare(Window(home).Property(actualViewtype),TriPanel)</visible>
+                    <visible>Stringcompare(Window(home).Property(actualViewtype),TriPanel)  + !Skin.HasSetting(tripanelbannertv)</visible>
                 </control>
                 <control type="radiobutton" id="1647">
                     <label>$LOCALIZE[31175]</label>

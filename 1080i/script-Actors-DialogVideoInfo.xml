@@ -102,7 +102,7 @@
                     <onclick condition="!IsEmpty(ListItem.FilenameAndPath)">PlayMedia($ESCINFO[ListItem.FilenameAndPath])</onclick>
                     <onclick condition="!IsEmpty(ListItem.FilenameAndPath)">PreviousMenu</onclick>
                     <!-- cancel all parent dir of add-on -->
-                    <onclick condition="!IsEmpty(ListItem.FilenameAndPath)">Dialog.Close(all,true)</onclick>
+                
                     <include>DialogVideoInfoButton</include>
                 </control>
                 <control type="button" id="6">
@@ -144,7 +144,7 @@
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 </control>
                 <control type="label">
-                    <top>16</top>
+                    <top>-800</top>
                     <width>1050</width>
                     <label>$INFO[ListItem.Title]</label>
                     <font>Font_Reg57_Caps</font>
@@ -152,7 +152,7 @@
                     <animation effect="slide" start="0,-38" end="0,-38" time="0" condition="!IsEmpty(ListItem.Tagline)">Conditional</animation>
                 </control>
                 <control type="label">
-                    <top>40</top>
+                    <top>-760</top>
                     <width>1050</width>
                     <label>$INFO[ListItem.Tagline]</label>
                     <font>Font_Reg38</font>
@@ -166,7 +166,7 @@
                     <width>249</width>
                     <height>57</height>
                     <aspectratio>keep</aspectratio>
-                    <texture fallback="flags/rating/info/MPAA_NR_Certificate_US.png">$VAR[RatingFlagVar,flags/rating/info/,.png]</texture>
+                    <texture fallback="flags/rating/info/MPAA_NR_Certificate_US.png">$VAR[RatingFlagVar,flags/rating/,.png]</texture>
                     <animation effect="fade" time="200">VisibleChange</animation>
                     <colordiffuse>grey</colordiffuse>
                 </control>
@@ -269,7 +269,7 @@
                         <top>-4</top>
                         <visible>!IsEmpty(ListItem.Rating)</visible>
                         <control type="label">
-                            <left>562</left>
+                            <left>402</left>
                             <top>255</top>
                             <width>165</width>
                             <height>44</height>
@@ -301,7 +301,7 @@
                             <textcolor>grey</textcolor>
                         </control>
                         <control type="label">
-                            <left>585</left>
+                            <left>785</left>
                             <top>255</top>
                             <width>750</width>
                             <height>44</height>
