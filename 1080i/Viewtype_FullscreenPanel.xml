@@ -402,7 +402,7 @@
                                 <label>$VAR[GlobalPlotVar]</label>
                                 <font>Font_Reg35</font>
                                 <textcolor>white6</textcolor>
-                                <autoscroll>false</autoscroll>
+                                 <autoscroll delay="8000" time="AutoScrollTime" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
                             </control>
                         </control>
                         <control type="group">
