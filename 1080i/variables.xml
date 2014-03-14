@@ -409,6 +409,7 @@
     </variable>
     <variable name="NextEpisodeVar">
         <value condition="!IsEmpty(Window(Home).Property(NextAired.Label)) + !IsEmpty(Window(Home).Property(NextAired.NextDay))">$INFO[Window(Home).Property(NextAired.NextDay)]</value>
+		<value condition="substring(Window(Home).Property(NextAired.StatusID),1)">$LOCALIZE[32977]</value>
         <value>$LOCALIZE[31003]</value>
     </variable>
     <variable name="LastEpisodeVar">
@@ -617,7 +618,7 @@
     </variable>
     <variable name="FanartPanelValue4Var">
         <value condition="Container.Content(episodes) | IsEmpty(ListItem.TvShowTitle)">$INFO[ListItem.RatingAndVotes]</value>
-		<value condition="substring(Window(Home).Property(NextAired.StatusID),1)">$LOCALIZE[31003]</value>
+		<value condition="substring(Window(Home).Property(NextAired.StatusID),1)">$LOCALIZE[32987]</value>
 		<value>$INFO[Window(Home).Property(NextAired.AirTime)]</value>
     </variable>
     <variable name="FanartPanelDetail5Var">
