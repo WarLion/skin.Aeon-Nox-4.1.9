@@ -47,15 +47,15 @@
                     </control>
                 </focusedlayout>
             </control>
-        </control>
-                    <control type="multiimage" id="4001">
+			         <control type="multiimage" id="4001">
                         <imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
                         <fadetime>350</fadetime>
                         <include>FullscreenDimensions</include>
-                        <randomize>no</randomize>
+                        <randomize>true</randomize>
                         <include>Animation_VisibleChange400</include>
                         <visible>Skin.HasSetting(bigfanextrafanart) + [Container.Content(tvshows) | Container.Content(movies)]</visible>
-                    </control>		
+                    </control>	
+        </control>	
     </include>
     <include name="BigFanFurniture">
         <control type="group">
