@@ -446,7 +446,7 @@
                                 <label>$VAR[GlobalPlotVar]</label>
                                 <font>Font_Reg35</font>
                                 <textcolor>white6</textcolor>
-                                <autoscroll>false</autoscroll>
+                                 <autoscroll delay="5000" time="AutoScrollTime" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
                             </control>
                         </control>
                     </focusedlayout>
@@ -856,7 +856,7 @@
                 <label>$VAR[GlobalPlotVar]</label>
                 <font>Font_Reg32</font>
                 <textcolor>white6</textcolor>
-                <autoscroll>false</autoscroll>
+                 <autoscroll delay="5000" time="AutoScrollTime" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
             </control>
         </control>
     </include>
