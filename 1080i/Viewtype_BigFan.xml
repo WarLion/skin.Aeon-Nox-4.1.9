@@ -22,29 +22,33 @@
                     <control type="image">
                         <texture background="true" fallback="special://skin/backgrounds/fallback_movies.jpg">$INFO[ListItem.Art(fanart)]</texture>
                         <include>FullscreenDimensions</include>
+						<visible>!Skin.HasSetting(bigfanextrafanart)</visible>
                     </control>
                     <control type="image">
                         <texture background="true">$INFO[ListItem.Label,special://skin/extras/genre/video/fanart/,.jpg]</texture>
                         <include>FullscreenDimensions</include>
                         <visible>Container.Content(genres)</visible>
                         <include>Animation_VisibleChange400</include>
+						<visible>!Skin.HasSetting(bigfanextrafanart)</visible>
                     </control>
                 </itemlayout>
                 <focusedlayout height="1080" width="1920">
                     <control type="image">
                         <texture background="true" fallback="special://skin/backgrounds/fallback_movies.jpg">$INFO[ListItem.Art(fanart)]</texture>
                         <include>FullscreenDimensions</include>
+						<visible>!Skin.HasSetting(bigfanextrafanart)</visible>
                     </control>
                     <control type="image">
                         <texture background="true">$INFO[ListItem.Label,special://skin/extras/genre/video/fanart/,.jpg]</texture>
                         <include>FullscreenDimensions</include>
                         <visible>Container.Content(genres)</visible>
                         <include>Animation_VisibleChange400</include>
+						<visible>!Skin.HasSetting(bigfanextrafanart)</visible>
                     </control>
                 </focusedlayout>
             </control>
         </control>
-                    <control type="multiimage">
+                    <control type="multiimage" id="4001">
                         <imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
                         <fadetime>350</fadetime>
                         <include>FullscreenDimensions</include>
