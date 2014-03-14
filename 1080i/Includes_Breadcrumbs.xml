@@ -203,8 +203,8 @@
             </control>
             <!--right widget -->
             <control type="image">
-                <left>674r</left>
-                <width>794</width>
+                <left>760r</left>
+                <width>804</width>
                 <height>87</height>
                 <texture flipy="true">home/timepanel_mid.png</texture>
                 <animation effect="slide" end="145" time="320" condition="!Skin.HasSetting(breadcrumbsweather)">Conditional</animation>
@@ -274,33 +274,47 @@
                 </control>
             </control>
             <control type="group">
-                <control type="grouplist">
-                    <width>1900</width>
-                    <align>right</align>
-                    <aligny>center</aligny>
-                    <orientation>horizontal</orientation>
-                    <control type="label">
-                        <width min="15" max="1920">auto</width>
-                        <height>38</height>
-                        <label>[COLOR $VAR[BreadCrumbsContentColorVar]]$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]  •[/COLOR]</label>
-                        <font>Font_Reg30_Caps</font>
-                        <shadowcolor>bcshadow</shadowcolor>
-                        <textcolor>$VAR[BreadCrumbsContentColorVar]</textcolor>
-                        <scroll>false</scroll>
-                        <visible>Skin.HasSetting(breadcrumbsweather)</visible>
-                        <visible>Weather.IsFetched</visible>
-                        <include>Animation_VisibleChange400</include>
-                    </control>
-                    <control type="label">
-                        <width min="15" max="1920">auto</width>
-                        <height>38</height>
-                        <label>[COLOR $VAR[BreadCrumbsContentColorVar]] $INFO[System.Date(DDD)], $INFO[System.Date(d)] $INFO[System.Date(mmm)] $INFO[System.Date(yyyy)]  •  [/COLOR][COLOR=$VAR[TitleColorVar]]$INFO[System.Time][/COLOR]</label>
-                        <font>Font_Reg30_Caps</font>
-                        <shadowcolor>bcshadow</shadowcolor>
-                        <textcolor>$VAR[BreadCrumbsContentColorVar]</textcolor>
-                        <scroll>false</scroll>
-                    </control>
+				<left>780r</left>
+                 <control type="label">
+				 	<left>100</left>
+                    <width>500</width>
+                    <height>36</height>
+                    <label>$INFO[Window(weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits] [COLOR grey]• [/COLOR]</label>
+                    <font>Font_Reg28_Caps</font>
+                    <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
                 </control>
+                <control type="image">
+					<left>180</left>
+                    <left>-10</left>
+                    <top>-8</top>
+                    <width>55</width>
+                    <height>55</height>
+                    <colordiffuse>white2</colordiffuse>
+                    <texture>weather/small/$INFO[Weather.FanartCode].png</texture>
+					<visible>!Skin.HasSetting(W_condition_image)</visible>
+                </control>
+				<control type="label">
+					<left>190</left>
+					<top>-3</top>
+					<width>226</width>
+					<height>40</height>
+					<aligny>top</aligny>
+					<label>$INFO[Window(Weather).Property(Current.Condition)]</label>
+					<font>Font_Reg33_Caps</font>
+					<textcolor>grey</textcolor>
+					<scroll>true</scroll>
+					<visible>Skin.HasSetting(W_condition_image)</visible>
+				</control>
+            <control type="label">
+                <left>170</left>
+                <width>600</width>
+                <height>36</height>
+                <align>right</align>
+                <label>[COLOR grey]$INFO[System.Date]  •[/COLOR]  $INFO[System.Time]</label>
+                <font>Font_Reg28_Caps</font>
+                <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
+            </control>
+
             </control>
         </control>
     </include>

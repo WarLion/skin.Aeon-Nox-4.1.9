@@ -15,7 +15,7 @@
                 <left>356</left>
                 <top>200</top>
                 <width>1210</width>
-                <height>620</height>
+                <height>720</height>
                 <texture border="50">osd/osd_settings_back_glow.png</texture>
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 <visible>!Skin.HasSetting(DisableGlowbar)</visible>
@@ -29,7 +29,7 @@
                 <left>356</left>
                 <top>200</top>
                 <width>1210</width>
-                <height>620</height>
+                <height>720</height>
                 <texture border="50">osd/osd_settings_back.png</texture>
                 <animation type="Conditional" condition="!Stringcompare(Window.Property(actualItem),MainMenu)">
                     <effect type="zoom" end="100,66" time="320" easing="in" tween="cubic" />
@@ -108,6 +108,14 @@
                     <selected>Skin.HasSetting(shorterhomebars)</selected>
                     <visible>Stringcompare(Window.Property(actualItem),TimePanel) | Stringcompare(Window.Property(actualItem),LibraryStats)</visible>
                 </control>
+                <control type="radiobutton" id="474">
+                    <label>$LOCALIZE[32990]</label>
+                    <include>Objects_CommonSettingsButton</include>
+                    <enable>!Skin.HasSetting(AlternateTimeStats) + [[!Skin.HasSetting(DisableTimePanel) + Stringcompare(Window.Property(actualItem),TimePanel)] | [!Skin.HasSetting(DisableLibraryStats) + Stringcompare(Window.Property(actualItem),LibraryStats)]]</enable>
+                    <onclick>Skin.ToggleSetting(W_condition_image)</onclick>
+                    <selected>Skin.HasSetting(W_condition_image)</selected>
+                    <visible>Stringcompare(Window.Property(actualItem),TimePanel) | Stringcompare(Window.Property(actualItem),LibraryStats)</visible>
+                </control>				
                 <control type="button" id="465">
                     <label>$LOCALIZE[31691]</label>
                     <label2>[COLOR $VAR[FontColorVar]] $LOCALIZE[31628]: $VAR[FurniturePositionVar][/COLOR]</label2>

@@ -114,7 +114,7 @@
     </include>
     <include name="TimePanel">
         <control type="group">
-            <left>748r</left>
+            <left>760r</left>
             <visible>!Skin.HasSetting(DisableTimePanel) + !Skin.HasSetting(AlternateTimeStats)</visible>
             <animation effect="slide" end="750,0" time="240">WindowClose</animation>
             <animation effect="slide" start="750,0" end="0,0" delay="WidgetSlideDelay" time="240" condition="!Window.Previous(startup)">WindowOpen</animation>
@@ -125,7 +125,7 @@
             <control type="image">
                 <left>-45</left>
                 <top>-46</top>
-                <width>794</width>
+                <width>804</width>
                 <height>87</height>
                 <texture>$VAR[TimePanelImageVar]</texture>
                 <colordiffuse>$VAR[ExtendedColorVar]</colordiffuse>
@@ -133,7 +133,7 @@
                 <animation effect="rotatex" end="180" time="320" center="20" tween="cubic" easing="inout" condition="Skin.HasSetting(timehomehigh)">Conditional</animation>
             </control>
             <control type="label">
-                <left>110</left>
+                <left>150</left>
                 <width>600</width>
                 <height>36</height>
                 <align>right</align>
@@ -161,7 +161,19 @@
                     <height>55</height>
                     <colordiffuse>white2</colordiffuse>
                     <texture>weather/small/$INFO[Weather.FanartCode].png</texture>
+					<visible>!Skin.HasSetting(W_condition_image)</visible>
                 </control>
+				<control type="label">
+					<top>-3</top>
+					<width>275</width>
+					<height>40</height>
+					<aligny>top</aligny>
+					<label>$INFO[Window(Weather).Property(Current.Condition)]</label>
+					<font>Font_Reg33_Caps</font>
+					<textcolor>grey</textcolor>
+					<scroll>true</scroll>
+					<visible>Skin.HasSetting(W_condition_image)</visible>
+				</control>				
             </control>
         </control>
     </include>

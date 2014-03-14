@@ -2185,3 +2185,7 @@ msgstr ""
 msgctxt "#32989"
 msgid "Unknown"
 msgstr ""
+
+msgctxt "#32990"
+msgid "Weather Condition instead of Image"
+msgstr ""

@@ -99,21 +99,21 @@
         </control>
         <control type="group">
             <visible>Skin.HasSetting(showtimeonviz) + !Window.IsVisible(script-XBMC_Lyrics-main.xml) + !Window.IsVisible(MusicOSD)</visible>
-            <animation effect="slide" end="735,0" time="240">Hidden</animation>
-            <animation effect="slide" start="735,0" end="0,0" time="240">Visible</animation>
-            <animation effect="slide" end="735,0" time="240">WindowClose</animation>
+            <animation effect="slide" end="800,0" time="240">Hidden</animation>
+            <animation effect="slide" start="800,0" end="0,0" time="240">Visible</animation>
+            <animation effect="slide" end="800,0" time="240">WindowClose</animation>
             <control type="group">
-                <left>748r</left>
+                <left>800r</left>
                 <top>0</top>
                 <control type="image">
                     <left>-45</left>
-                    <width>794</width>
+                    <width>850</width>
                     <height>87</height>
                     <texture flipy="true">home/timepanel_mid.png</texture>
                     <colordiffuse>$VAR[ExtendedColorVar]</colordiffuse>
                 </control>
                 <control type="label">
-                    <left>120</left>
+                    <left>190</left>
                     <top>-2</top>
                     <width>600</width>
                     <height>40</height>
@@ -148,13 +148,13 @@
                         <textcolor>grey</textcolor>
                     </control>
                     <control type="label">
-                        <width min="15" max="294">auto</width>
+                        <width min="15" max="300">auto</width>
                         <height>40</height>
                         <aligny>top</aligny>
                         <label>$INFO[Window(Weather).Property(Current.Condition)]</label>
                         <font>Font_Reg33_Caps</font>
                         <textcolor>grey</textcolor>
-                        <scroll>false</scroll>
+                        <scroll>true</scroll>
                     </control>
                 </control>
             </control>
