@@ -586,11 +586,11 @@
                 <control type="textbox">
                     <top>209</top>
                     <width>652</width>
-                    <height>249</height>
+                    <height>220</height>
                     <label>$VAR[FanartPanelPlotVar]</label>
                     <textcolor>white6</textcolor>
                     <autoscroll delay="8000" time="AutoScrollTime" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-                </control>
+                </control>							
             </control>
             <control type="group">
                 <visible>StringCompare(Control.GetLabel(4420),poster) | StringCompare(Control.GetLabel(4420),extrathumbs)</visible>

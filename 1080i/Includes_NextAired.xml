@@ -954,7 +954,8 @@
                         <top>656</top>
                         <width>435</width>
                         <height>30</height>
-                        <label>$INFO[Container(200).ListItem.Property(Status)]</label>
+                        <label>$VAR[TvGuideVarTxtScript200]</label>
+						<!--original $INFO[Container(200).ListItem.Property(StatusID)]-->
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
@@ -1129,7 +1130,7 @@
                         <top>656</top>
                         <width>435</width>
                         <height>30</height>
-                        <label>$INFO[Container(201).ListItem.Property(Status)]</label>
+                        <label>$VAR[TvGuideVarTxtScript201]</label>
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
@@ -1304,7 +1305,7 @@
                         <top>656</top>
                         <width>435</width>
                         <height>30</height>
-                        <label>$INFO[Container(202).ListItem.Property(Status)]</label>
+                        <label>$VAR[TvGuideVarTxtScript202]</label>
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
@@ -1479,7 +1480,7 @@
                         <top>656</top>
                         <width>435</width>
                         <height>30</height>
-                        <label>$INFO[Container(203).ListItem.Property(Status)]</label>
+                        <label>$VAR[TvGuideVarTxtScript203]</label>
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
@@ -1654,7 +1655,7 @@
                         <top>656</top>
                         <width>435</width>
                         <height>30</height>
-                        <label>$INFO[Container(204).ListItem.Property(Status)]</label>
+                        <label>$VAR[TvGuideVarTxtScript204]</label>
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
@@ -1829,7 +1830,7 @@
                         <top>656</top>
                         <width>435</width>
                         <height>30</height>
-                        <label>$INFO[Container(205).ListItem.Property(Status)]</label>
+                        <label>$VAR[TvGuideVarTxtScript205]</label>
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
@@ -2004,7 +2005,7 @@
                         <top>656</top>
                         <width>435</width>
                         <height>30</height>
-                        <label>$INFO[Container(206).ListItem.Property(Status)]</label>
+                        <label>$VAR[TvGuideVarTxtScript206]</label>
                         <scroll>true</scroll>
                     </control>
                     <control type="label">

@@ -801,8 +801,19 @@
                 <label>$VAR[GlobalPlotOutlineVar]</label>
                 <font>Font_Reg32</font>
                 <textcolor>white6</textcolor>
-                <autoscroll>false</autoscroll>
+                <autoscroll delay="5000" time="AutoScrollTime" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
             </control>
+            <control type="textbox">
+                <left>408</left>
+                <top>122</top>
+                <width>520</width>
+                <height>180</height>
+                <aligny>top</aligny>
+                <label>$VAR[GlobalPlotOutlineVar]</label>
+                <font>Font_Reg32</font>
+                <textcolor>white6</textcolor>
+                <autoscroll delay="5000" time="AutoScrollTime" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+            </control>			
         </control>
         <control type="group">
             <top>-9</top>

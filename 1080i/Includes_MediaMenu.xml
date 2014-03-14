@@ -16,7 +16,7 @@
         </control>
     </include>
     <include name="MusicPlaylistButtons">
-        <control type="radiobutton" id="20">
+        <control type="radiobutton" id="10102">
             <label>191</label>
             <include>Objects_MediaMenuButtonIcons</include>
             <visible>Window.IsActive(musicplaylist)</visible>
@@ -100,7 +100,7 @@
             <label>589</label>
             <include>Objects_MediaMenuButtonIcons</include>
         </control>
-		<control type="togglebutton" id="20">
+		<control type="togglebutton" id="10102">
 			<description>Update library</description>
 			<include>Objects_MediaMenuButtonIcons</include>
 			<label>653</label>
@@ -500,9 +500,9 @@
                 </control>
                 <control type="image">
                     <texture>special://skin/extras/BigIcons/ButtonReload.png</texture>
-                    <animation effect="fade" start="100" end="55" time="0" condition="![Control.HasFocus(20)]">Conditional</animation>
+                    <animation effect="fade" start="100" end="55" time="0" condition="![Control.HasFocus(10102)]">Conditional</animation>
                     <include>MediaMenuIcons</include>
-                    <visible>Control.IsVisible(20)</visible>
+                    <visible>Control.IsVisible(10102)</visible>
                 </control>			
                 <control type="image">
                     <texture>special://skin/extras/BigIcons/book2.png</texture>

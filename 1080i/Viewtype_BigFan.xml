@@ -23,14 +23,6 @@
                         <texture background="true" fallback="special://skin/backgrounds/fallback_movies.jpg">$INFO[ListItem.Art(fanart)]</texture>
                         <include>FullscreenDimensions</include>
                     </control>
-                    <control type="multiimage">
-                        <imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
-                        <fadetime>350</fadetime>
-                        <include>FullscreenDimensions</include>
-                        <randomize>no</randomize>
-                        <visible>Skin.HasSetting(bigfanextrafanart) + [Container.Content(tvshows) | Container.Content(movies)]</visible>
-                        <include>Animation_VisibleChange400</include>
-                    </control>
                     <control type="image">
                         <texture background="true">$INFO[ListItem.Label,special://skin/extras/genre/video/fanart/,.jpg]</texture>
                         <include>FullscreenDimensions</include>
@@ -43,14 +35,6 @@
                         <texture background="true" fallback="special://skin/backgrounds/fallback_movies.jpg">$INFO[ListItem.Art(fanart)]</texture>
                         <include>FullscreenDimensions</include>
                     </control>
-                    <control type="multiimage">
-                        <imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
-                        <fadetime>350</fadetime>
-                        <include>FullscreenDimensions</include>
-                        <randomize>no</randomize>
-                        <include>Animation_VisibleChange400</include>
-                        <visible>Skin.HasSetting(bigfanextrafanart) + [Container.Content(tvshows) | Container.Content(movies)]</visible>
-                    </control>
                     <control type="image">
                         <texture background="true">$INFO[ListItem.Label,special://skin/extras/genre/video/fanart/,.jpg]</texture>
                         <include>FullscreenDimensions</include>
@@ -60,6 +44,14 @@
                 </focusedlayout>
             </control>
         </control>
+                    <control type="multiimage">
+                        <imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
+                        <fadetime>350</fadetime>
+                        <include>FullscreenDimensions</include>
+                        <randomize>no</randomize>
+                        <include>Animation_VisibleChange400</include>
+                        <visible>Skin.HasSetting(bigfanextrafanart) + [Container.Content(tvshows) | Container.Content(movies)]</visible>
+                    </control>		
     </include>
     <include name="BigFanFurniture">
         <control type="group">
