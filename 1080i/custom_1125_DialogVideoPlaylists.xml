@@ -112,8 +112,8 @@
                     <label>$LOCALIZE[231] $LOCALIZE[24040]</label>
                     <onclick>ClearProperty(Playlist.Path,home)</onclick>
                     <onclick>ClearProperty(Playlist.Label,home)</onclick>
-					<onclick>SetProperty(Type,,home)</onclick>
-					<onclick>SetProperty(Method,,home)</onclick>
+					<onclick>ClearProperty(Type,home)</onclick>
+					<onclick>ClearProperty(Method,home)</onclick>
                     <onclick>Dialog.Close(1125)</onclick>
                     <onclick>SetFocus(9000)</onclick>
                 </item>
