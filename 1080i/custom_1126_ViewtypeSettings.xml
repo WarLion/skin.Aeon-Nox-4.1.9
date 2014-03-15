@@ -296,7 +296,14 @@
                     <onclick>Skin.ToggleSetting(addonwallmusicCase2)</onclick>
                     <selected>Skin.HasSetting(addonwallmusicCase2)</selected>
                     <visible>Stringcompare(Window(home).Property(actualViewtype),AddonWall) + Container.Content(songs)</visible>
-                </control>								
+                </control>	
+                <control type="radiobutton" id="1704">
+                    <label>$LOCALIZE[21821]/$LOCALIZE[182]</label>
+                    <include>Objects_MediaMenuButtonAlt2</include>
+                    <onclick>Skin.ToggleSetting(Tracklist)</onclick>
+                    <selected>Skin.HasSetting(Tracklist)</selected>
+                    <visible>Stringcompare(Window(home).Property(actualViewtype),AddonWall) + Container.Content(Albums)</visible>
+                </control>												
                 <!--Floor Label Options-->
                 <control type="button" id="1649">
                     <label>$LOCALIZE[31388]:</label>
