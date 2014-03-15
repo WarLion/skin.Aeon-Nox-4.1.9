@@ -137,10 +137,21 @@
                 <width>600</width>
                 <height>36</height>
                 <align>right</align>
-                <label>[COLOR grey]$INFO[System.Date]  •[/COLOR]  $INFO[System.Time]</label>
+                <label>[COLOR grey]$INFO[System.Date(ddd)] • $INFO[System.Date(D)] $INFO[System.Date(mmm)] $INFO[System.Date(yyyy)]  •[/COLOR]  $INFO[System.Time]</label>
                 <font>Font_Reg28_Caps</font>
                 <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
+				<visible>!Skin.HasSetting(shorterhomebars)</visible>
             </control>
+            <control type="label">
+                <left>150</left>
+                <width>600</width>
+                <height>36</height>
+                <align>right</align>
+                <label>[COLOR grey]$INFO[System.Date(DDD)] • $INFO[System.Date(D)] $INFO[System.Date(mmm)] $INFO[System.Date(yyyy)]  •[/COLOR]  $INFO[System.Time]</label>
+                <font>Font_Reg28_Caps</font>
+                <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
+				<visible>Skin.HasSetting(shorterhomebars)</visible>
+            </control>			
             <control type="grouplist">
                 <left>30</left>
                 <visible>Weather.IsFetched + !Skin.HasSetting(shorterhomebars)</visible>

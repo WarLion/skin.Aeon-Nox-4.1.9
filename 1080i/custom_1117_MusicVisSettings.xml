@@ -56,7 +56,7 @@
                 <onleft>60</onleft>
                 <onright>60</onright>
                 <onup>450</onup>
-                <ondown>450</ondown>
+                <ondown>450</ondown>				
                 <control type="button" id="458">
                     <label>$LOCALIZE[31102] [LOWERCASE]$LOCALIZE[31115][/LOWERCASE]</label>
                     <label2>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(MusicViz.MultiFanart)][/COLOR]</label2>
@@ -68,8 +68,6 @@
                     <label>31800</label>
                     <include>Objects_CommonSettingsButton</include>
                     <onclick>Skin.ToggleSetting(FadeVizBG)</onclick>
-                    <!--                     <visible>[StringCompare(Visualisation.Name,milkdrop) | StringCompare(Visualisation.Name,projectm)]</visible>
- -->
                     <selected>Skin.HasSetting(FadeVizBG)</selected>
                 </control>
                 <control type="radiobutton" id="449">
@@ -143,6 +141,26 @@
                     <include>Objects_CommonSettingsButton</include>
                     <onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
                 </control>
+				<control type="label" id="430">
+					<width>600</width>
+					<height>60</height>
+					<label>     $LOCALIZE[12006] $LOCALIZE[31046]</label>
+					<font>Font_Bold33</font>
+					<textcolor>$VAR[TitleColorVar]</textcolor>
+				</control>				
+                <control type="radiobutton" id="431">
+                    <label>$LOCALIZE[32991]</label>
+                    <include>Objects_CommonSettingsButton</include>
+                    <onclick>Skin.ToggleSetting(WeatherBreadcrumVis)</onclick>
+                    <selected>Skin.HasSetting(WeatherBreadcrumVis)</selected>
+                </control>	
+                <control type="radiobutton" id="432">
+                    <label>$LOCALIZE[32990]</label>
+                    <include>Objects_CommonSettingsButton</include>
+                    <onclick>Skin.ToggleSetting(WeatherConditionVis)</onclick>
+                    <selected>Skin.HasSetting(WeatherConditionVis)</selected>
+					<enable>!Skin.HasSetting(WeatherBreadcrumVis)</enable>
+                </control>								
             </control>
             <control type="scrollbar" id="60">
                 <include>Objects_CommonSettingsScrollbar</include>

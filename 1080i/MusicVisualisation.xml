@@ -105,57 +105,78 @@
             <control type="group">
                 <left>800r</left>
                 <top>0</top>
-                <control type="image">
-                    <left>-45</left>
-                    <width>850</width>
-                    <height>87</height>
-                    <texture flipy="true">home/timepanel_mid.png</texture>
-                    <colordiffuse>$VAR[ExtendedColorVar]</colordiffuse>
-                </control>
+				<control type="group">
+					<animation effect="slide" end="-180" time="320" condition="Skin.HasSetting(WeatherBreadcrumVis) + !Skin.HasSetting(WeatherConditionVis)">Conditional</animation>
+					<animation effect="slide" end="280" time="320" condition="Skin.HasSetting(WeatherBreadcrumVis)">Conditional</animation>
+					<animation effect="slide" end="180" time="320" condition="!Skin.HasSetting(WeatherConditionVis)">Conditional</animation>
+					<control type="image">
+						<left>-45</left>
+						<width>850</width>
+						<height>87</height>
+						<texture flipy="true">home/timepanel_mid.png</texture>
+						<colordiffuse>$VAR[ExtendedColorVar]</colordiffuse>
+					</control>
+				</control>								
                 <control type="label">
-                    <left>190</left>
+                    <left>180</left>
                     <top>-2</top>
                     <width>600</width>
                     <height>40</height>
                     <align>right</align>
-                    <label>[COLOR grey]$INFO[System.Date(ddd)], $INFO[System.Date(d)] $INFO[System.Date(mmm)] $INFO[System.Date(yyyy)]  •[/COLOR]  $INFO[System.Time]</label>
+                    <label>[COLOR grey]$INFO[System.Date(ddd)] • $INFO[System.Date(d)] $INFO[System.Date(mmm)] $INFO[System.Date(yyyy)]  •[/COLOR]  $INFO[System.Time]</label>
                     <font>Font_Reg33_Caps</font>
                     <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
+					<visible>Skin.HasSetting(WeatherConditionVis)</visible>
                 </control>
-                <control type="grouplist">
-                    <left>30</left>
+                <control type="label">
+                    <left>180</left>
+                    <top>-2</top>
+                    <width>600</width>
+                    <height>40</height>
+                    <align>right</align>
+                    <label>[COLOR grey]$INFO[System.Date(DDD)] • $INFO[System.Date(D)] $INFO[System.Date(mmm)] $INFO[System.Date(yyyy)]  •[/COLOR]  $INFO[System.Time]</label>
+                    <font>Font_Reg33_Caps</font>
+                    <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
+					<visible>!Skin.HasSetting(WeatherConditionVis)</visible>
+                </control>								
+                <control type="group">
+                    <left>40</left>
                     <top>-2</top>
                     <width>500</width>
                     <aligny>center</aligny>
                     <orientation>horizontal</orientation>
-                    <visible>Weather.IsFetched</visible>
+                    <visible>Weather.IsFetched + !Skin.HasSetting(WeatherBreadcrumVis)</visible>
                     <include>Animation_VisibleChange400</include>
+					<animation effect="slide" end="200" time="320" condition="!Skin.HasSetting(WeatherConditionVis)">Conditional</animation>
                     <itemgap>10</itemgap>
                     <control type="label">
-                        <width min="15" max="1920">auto</width>
+                        <width>100</width>
                         <height>40</height>
                         <aligny>top</aligny>
-                        <label>$INFO[Window(weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits]</label>
+                        <label>$INFO[Window(weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits] [COLOR grey]•[/COLOR] </label>
                         <font>Font_Reg33_Caps</font>
                         <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
                     </control>
                     <control type="label">
-                        <width min="1" max="1920">auto</width>
-                        <height>40</height>
-                        <aligny>top</aligny>
-                        <label>•</label>
-                        <font>Font_Reg33_Caps</font>
-                        <textcolor>grey</textcolor>
-                    </control>
-                    <control type="label">
-                        <width min="15" max="300">auto</width>
+						<left>90</left>
+                        <width>284</width>
                         <height>40</height>
                         <aligny>top</aligny>
                         <label>$INFO[Window(Weather).Property(Current.Condition)]</label>
                         <font>Font_Reg33_Caps</font>
                         <textcolor>grey</textcolor>
                         <scroll>true</scroll>
+						<visible>Skin.HasSetting(WeatherConditionVis)</visible>
                     </control>
+					<control type="image">
+						<left>70</left>
+						<top>-13</top>
+						<width>70</width>
+						<height>70</height>
+						<colordiffuse>white2</colordiffuse>
+						<texture>weather/small/$INFO[Weather.FanartCode].png</texture>
+						<visible>!Skin.HasSetting(WeatherConditionVis)</visible>
+					</control>				
                 </control>
             </control>
         </control>
