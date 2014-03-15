@@ -108,7 +108,7 @@
 				<control type="group">
 					<animation effect="slide" end="-180" time="320" condition="Skin.HasSetting(WeatherBreadcrumVis) + !Skin.HasSetting(WeatherConditionVis)">Conditional</animation>
 					<animation effect="slide" end="280" time="320" condition="Skin.HasSetting(WeatherBreadcrumVis)">Conditional</animation>
-					<animation effect="slide" end="180" time="320" condition="!Skin.HasSetting(WeatherConditionVis)">Conditional</animation>
+					<animation effect="slide" end="140" time="320" condition="!Skin.HasSetting(WeatherConditionVis)">Conditional</animation>
 					<control type="image">
 						<left>-45</left>
 						<width>850</width>
@@ -147,7 +147,7 @@
                     <orientation>horizontal</orientation>
                     <visible>Weather.IsFetched + !Skin.HasSetting(WeatherBreadcrumVis)</visible>
                     <include>Animation_VisibleChange400</include>
-					<animation effect="slide" end="200" time="320" condition="!Skin.HasSetting(WeatherConditionVis)">Conditional</animation>
+					<animation effect="slide" end="140" time="320" condition="!Skin.HasSetting(WeatherConditionVis)">Conditional</animation>
                     <itemgap>10</itemgap>
                     <control type="label">
                         <width>100</width>
