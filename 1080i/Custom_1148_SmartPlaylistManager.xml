@@ -54,7 +54,6 @@
                 <width>272</width>
                 <height>900</height>
                 <aligny>center</aligny>
-                <onright>20</onright>
                 <scrolltime>0</scrolltime>
                 <orientation>vertical</orientation>
                 <control type="button" id="7">
@@ -141,6 +140,7 @@
                 <height>900</height>
                 <aligny>center</aligny>
                 <onleft>4</onleft>
+				<onright>220</onright>
                 <scrolltime>0</scrolltime>
                 <orientation>vertical</orientation>
                 <control type="button" id="21">
@@ -238,7 +238,8 @@
                 <width>1172</width>
                 <height>900</height>
                 <aligny>center</aligny>
-                <onleft>4</onleft>
+                <onleft>20</onleft>
+				<onright>720</onright>
                 <scrolltime>0</scrolltime>
                 <orientation>vertical</orientation>
                 <control type="button" id="41">
@@ -247,7 +248,7 @@
                     <include>Default_PlaylistDialogButton</include>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                     <onclick>SetProperty(Playlist,SmartPlaylist1,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist1.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist1.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                 </control>
                 <control type="button" id="42">
@@ -255,7 +256,7 @@
                     <label2>[COLOR white]$INFO[Skin.String(SmartPlaylist2.Type)][/COLOR]</label2>
                     <include>Default_PlaylistDialogButton</include>
                     <onclick>SetProperty(Playlist,SmartPlaylist2,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist2.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist2.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 </control>
@@ -264,7 +265,7 @@
                     <label2>[COLOR white]$INFO[Skin.String(SmartPlaylist3.Type)][/COLOR]</label2>
                     <include>Default_PlaylistDialogButton</include>
                     <onclick>SetProperty(Playlist,SmartPlaylist3,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist3.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist3.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 </control>
@@ -274,7 +275,7 @@
                     <include>Default_PlaylistDialogButton</include>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                     <onclick>SetProperty(Playlist,SmartPlaylist4,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist4.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist4.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                 </control>
                 <control type="button" id="45">
@@ -282,7 +283,7 @@
                     <label2>[COLOR white]$INFO[Skin.String(SmartPlaylist5.Type)][/COLOR]</label2>
                     <include>Default_PlaylistDialogButton</include>
                     <onclick>SetProperty(Playlist,SmartPlaylist5,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist5.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist5.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 </control>
@@ -290,7 +291,7 @@
                     <label>$LOCALIZE[31008]:</label>
                     <label2>[COLOR white]$INFO[Skin.String(SmartPlaylist6.Type)][/COLOR]</label2>
                     <include>Default_PlaylistDialogButton</include>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist6.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist6.Path)],1124)</onclick>
                     <onclick>SetProperty(Playlist,SmartPlaylist6,1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
@@ -305,7 +306,7 @@
                     <include>Default_PlaylistDialogButton</include>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                     <onclick>SetProperty(Playlist,SmartPlaylist7,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist7.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist7.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                 </control>
                 <control type="button" id="52">
@@ -313,7 +314,7 @@
                     <label2>[COLOR white]$INFO[Skin.String(SmartPlaylist8.Type)][/COLOR]</label2>
                     <include>Default_PlaylistDialogButton</include>
                     <onclick>SetProperty(Playlist,SmartPlaylist8,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist8.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist8.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 </control>
@@ -322,7 +323,7 @@
                     <label2>[COLOR white]$INFO[Skin.String(SmartPlaylist9.Type)][/COLOR]</label2>
                     <include>Default_PlaylistDialogButton</include>
                     <onclick>SetProperty(Playlist,SmartPlaylist9,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist9.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist9.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 </control>
@@ -332,7 +333,7 @@
                     <include>Default_PlaylistDialogButton</include>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                     <onclick>SetProperty(Playlist,SmartPlaylist10,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist10.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist10.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                 </control>
                 <control type="button" id="55">
@@ -340,7 +341,7 @@
                     <label2>[COLOR white]$INFO[Skin.String(SmartPlaylist11.Type)][/COLOR]</label2>
                     <include>Default_PlaylistDialogButton</include>
                     <onclick>SetProperty(Playlist,SmartPlaylist11,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist11.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist11.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 </control>
@@ -348,7 +349,7 @@
                     <label>$LOCALIZE[31008]:</label>
                     <label2>[COLOR white]$INFO[Skin.String(SmartPlaylist12.Type)][/COLOR]</label2>
                     <include>Default_PlaylistDialogButton</include>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist12.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist12.Path)],1124)</onclick>
                     <onclick>SetProperty(Playlist,SmartPlaylist12,1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
@@ -360,7 +361,8 @@
                 <width>1172</width>
                 <height>900</height>
                 <aligny>center</aligny>
-                <onleft>4</onleft>
+                <onleft>220</onleft>
+				<onright>4</onright>
                 <scrolltime>0</scrolltime>
                 <orientation>vertical</orientation>
                 <control type="button" id="721">
@@ -369,7 +371,7 @@
                     <include>Objects_CustomizerInfoButton</include>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                     <onclick>SetProperty(Playlist,SmartPlaylist1,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist1.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist1.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                 </control>
                 <control type="button" id="722">
@@ -377,7 +379,7 @@
                     <label2>[COLOR white]$INFO[Skin.String(SmartPlaylist2.Path)][/COLOR]</label2>
                     <include>Objects_CustomizerInfoButton</include>
                     <onclick>SetProperty(Playlist,SmartPlaylist2,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist2.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist2.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 </control>
@@ -386,7 +388,7 @@
                     <label2>[COLOR white]$INFO[Skin.String(SmartPlaylist3.Path)][/COLOR]</label2>
                     <include>Objects_CustomizerInfoButton</include>
                     <onclick>SetProperty(Playlist,SmartPlaylist3,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist3.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist3.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 </control>
@@ -396,7 +398,7 @@
                     <include>Objects_CustomizerInfoButton</include>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                     <onclick>SetProperty(Playlist,SmartPlaylist4,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist4.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist4.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                 </control>
                 <control type="button" id="725">
@@ -404,7 +406,7 @@
                     <label2>[COLOR white]$INFO[Skin.String(SmartPlaylist5.Path)][/COLOR]</label2>
                     <include>Objects_CustomizerInfoButton</include>
                     <onclick>SetProperty(Playlist,SmartPlaylist5,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist5.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist5.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 </control>
@@ -412,7 +414,7 @@
                     <label>15311</label>
                     <label2>[COLOR white]$INFO[Skin.String(SmartPlaylist6.Path)][/COLOR]</label2>
                     <include>Objects_CustomizerInfoButton</include>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist6.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist6.Path)],1124)</onclick>
                     <onclick>SetProperty(Playlist,SmartPlaylist6,1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
@@ -427,7 +429,7 @@
                     <include>Objects_CustomizerInfoButton</include>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                     <onclick>SetProperty(Playlist,SmartPlaylist7,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist7.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist7.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                 </control>
                 <control type="button" id="732">
@@ -435,7 +437,7 @@
                     <label2>[COLOR white]$INFO[Skin.String(SmartPlaylist8.Path)][/COLOR]</label2>
                     <include>Objects_CustomizerInfoButton</include>
                     <onclick>SetProperty(Playlist,SmartPlaylist8,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist8.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist8.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 </control>
@@ -444,7 +446,7 @@
                     <label2>[COLOR white]$INFO[Skin.String(SmartPlaylist9.Path)][/COLOR]</label2>
                     <include>Objects_CustomizerInfoButton</include>
                     <onclick>SetProperty(Playlist,SmartPlaylist9,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist9.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist9.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 </control>
@@ -454,7 +456,7 @@
                     <include>Objects_CustomizerInfoButton</include>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                     <onclick>SetProperty(Playlist,SmartPlaylist10,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist10.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist10.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                 </control>
                 <control type="button" id="735">
@@ -462,7 +464,7 @@
                     <label2>[COLOR white]$INFO[Skin.String(SmartPlaylist11.Path)][/COLOR]</label2>
                     <include>Objects_CustomizerInfoButton</include>
                     <onclick>SetProperty(Playlist,SmartPlaylist11,1124)</onclick>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist11.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist11.Path)],1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 </control>
@@ -470,7 +472,7 @@
                     <label>15311</label>
                     <label2>[COLOR white]$INFO[Skin.String(SmartPlaylist12.Path)][/COLOR]</label2>
                     <include>Objects_CustomizerInfoButton</include>
-                    <onclick>SetProperty(PlaylistPath,$ESCINFO[Skin.String(SmartPlaylist12.Path)],1124)</onclick>
+                    <onclick>SetProperty(PlaylistPath,$INFO[Skin.String(SmartPlaylist12.Path)],1124)</onclick>
                     <onclick>SetProperty(Playlist,SmartPlaylist12,1124)</onclick>
                     <onclick>ActivateWindow(1149)</onclick>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
