@@ -177,10 +177,10 @@
                     <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
                 </control>
                 <control type="image">
-                    <left>-33</left>
-                    <top>-30</top>
-                    <width>100</width>
-                    <height>100</height>
+                    <left>-25</left>
+                    <top>-20</top>
+                    <width>80</width>
+                    <height>80</height>
                     <colordiffuse>white2</colordiffuse>
                     <texture>weather/small/$INFO[Weather.FanartCode].png</texture>
 					<visible>!Skin.HasSetting(W_condition_image)</visible>
