@@ -920,32 +920,40 @@
         <value>[B]$INFO[Window(Home).Property(NextAired.215.Weekday)][/B]$INFO[Container(215).NumItems, (,)]</value>
     </variable>	
     <variable name="TVDayLabel2_1">
-        <value condition="IntegerGreaterThan(Container(200).NumItems,0)">$INFO[Container(200).NumItems] $LOCALIZE[20360]</value>
-        <value></value>
+		<value condition="!IntegerGreaterThan(Container(200).NumItems,0)">$INFO[Container(200).NumItems] $LOCALIZE[20360]</value>
+		<value condition="!IntegerGreaterThan(Container(200).NumItems,1)">$INFO[Container(200).NumItems] $LOCALIZE[20359]</value>
+		<value>$INFO[Container(200).NumItems] $LOCALIZE[20360]</value>
     </variable>
     <variable name="TVDayLabel2_2">
-        <value condition="IntegerGreaterThan(Container(201).NumItems,0)">$INFO[Container(201).NumItems] $LOCALIZE[20360]</value>
+		<value condition="!IntegerGreaterThan(Container(201).NumItems,0)">$INFO[Container(201).NumItems] $LOCALIZE[20360]</value>
+        <value condition="!IntegerGreaterThan(Container(201).NumItems,1)">$INFO[Container(201).NumItems] $LOCALIZE[20359]</value>
+		<value>$INFO[Container(201).NumItems] $LOCALIZE[20360]</value>
         <value></value>
     </variable>	
 	<variable name="TVDayLabel2_3">
-        <value condition="IntegerGreaterThan(Container(202).NumItems,0)">$INFO[Container(202).NumItems] $LOCALIZE[20360]</value>
-        <value></value>
+	<value condition="!IntegerGreaterThan(Container(202).NumItems,0)">$INFO[Container(202).NumItems] $LOCALIZE[20360]</value>
+        <value condition="!IntegerGreaterThan(Container(202).NumItems,1)">$INFO[Container(202).NumItems] $LOCALIZE[20359]</value>
+		<value>$INFO[Container(202).NumItems] $LOCALIZE[20360]</value>
     </variable>	
 	<variable name="TVDayLabel2_4">
-        <value condition="IntegerGreaterThan(Container(203).NumItems,0)">$INFO[Container(203).NumItems] $LOCALIZE[20360]</value>
-        <value></value>
+		<value condition="!IntegerGreaterThan(Container(203).NumItems,0)">$INFO[Container(203).NumItems] $LOCALIZE[20360]</value>
+        <value condition="!IntegerGreaterThan(Container(203).NumItems,1)">$INFO[Container(203).NumItems] $LOCALIZE[20359]</value>
+		<value>$INFO[Container(203).NumItems] $LOCALIZE[20360]</value>
     </variable>	
 	<variable name="TVDayLabel2_5">
-        <value condition="IntegerGreaterThan(Container(204).NumItems,0)">$INFO[Container(204).NumItems] $LOCALIZE[20360]</value>
-        <value></value>
+		<value condition="!IntegerGreaterThan(Container(204).NumItems,0)">$INFO[Container(204).NumItems] $LOCALIZE[20360]</value>
+        <value condition="!IntegerGreaterThan(Container(204).NumItems,1)">$INFO[Container(204).NumItems] $LOCALIZE[20359]</value>
+		<value>$INFO[Container(204).NumItems] $LOCALIZE[20360]</value>
     </variable>	
 	<variable name="TVDayLabel2_6">
-        <value condition="IntegerGreaterThan(Container(205).NumItems,0)">$INFO[Container(205).NumItems] $LOCALIZE[20360]</value>
-        <value></value>
+		<value condition="!IntegerGreaterThan(Container(205).NumItems,0)">$INFO[Container(205).NumItems] $LOCALIZE[20360]</value>
+        <value condition="!IntegerGreaterThan(Container(205).NumItems,1)">$INFO[Container(205).NumItems] $LOCALIZE[20359]</value>
+		<value>$INFO[Container(205).NumItems] $LOCALIZE[20360]</value>
     </variable>	
 	<variable name="TVDayLabel2_7">
-        <value condition="IntegerGreaterThan(Container(206).NumItems,0)">$INFO[Container(206).NumItems] $LOCALIZE[20360]</value>
-        <value></value>
+		<value condition="!IntegerGreaterThan(Container(206).NumItems,0)">$INFO[Container(206).NumItems] $LOCALIZE[20360]</value>
+        <value condition="!IntegerGreaterThan(Container(206).NumItems,1)">$INFO[Container(206).NumItems] $LOCALIZE[20359]</value>
+		<value>$INFO[Container(206).NumItems] $LOCALIZE[20360]</value>
     </variable>	
 			
 		
@@ -2937,5 +2945,5 @@
         <value condition="Stringcompare(Skin.String(LiveBGCase),movies)">$LOCALIZE[31282]   </value>
         <value condition="Stringcompare(Skin.String(LiveBGCase),tvshows)">$LOCALIZE[31248]   </value>
         <value>$LOCALIZE[106]   </value>
-    </variable>
+    </variable>	
 </includes>

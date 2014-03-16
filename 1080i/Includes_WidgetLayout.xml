@@ -140,7 +140,7 @@
                 <label>[COLOR grey]$INFO[System.Date(ddd)] • $INFO[System.Date(D)] $INFO[System.Date(mmm)] $INFO[System.Date(yyyy)]  •[/COLOR]  $INFO[System.Time]</label>
                 <font>Font_Reg28_Caps</font>
                 <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
-				<visible>!Skin.HasSetting(shorterhomebars)</visible>
+				<visible>!Skin.HasSetting(shorterhomebars) + Skin.HasSetting(W_condition_image)</visible>
             </control>
             <control type="label">
                 <left>150</left>
@@ -151,13 +151,24 @@
                 <font>Font_Reg28_Caps</font>
                 <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
 				<visible>Skin.HasSetting(shorterhomebars)</visible>
-            </control>			
+            </control>		
+            <control type="label">
+                <left>150</left>
+                <width>600</width>
+                <height>36</height>
+                <align>right</align>
+                <label>[COLOR grey]$INFO[System.Date(DDD)] • $INFO[System.Date(D)] $INFO[System.Date(mmm)] $INFO[System.Date(yyyy)]  •[/COLOR]  $INFO[System.Time]</label>
+                <font>Font_Reg28_Caps</font>
+                <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
+				<visible>!Skin.HasSetting(W_condition_image)</visible>
+            </control>					
             <control type="grouplist">
                 <left>30</left>
                 <visible>Weather.IsFetched + !Skin.HasSetting(shorterhomebars)</visible>
                 <include>Animation_VisibleChange400</include>
                 <orientation>horizontal</orientation>
                 <usecontrolcoords>true</usecontrolcoords>
+				<animation effect="slide" end="130" time="240" condition="!Skin.HasSetting(W_condition_image)">Conditional</animation>
                 <control type="label">
                     <width min="0" max="700">auto</width>
                     <height>36</height>
@@ -166,10 +177,10 @@
                     <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
                 </control>
                 <control type="image">
-                    <left>-10</left>
-                    <top>-8</top>
-                    <width>55</width>
-                    <height>55</height>
+                    <left>-33</left>
+                    <top>-30</top>
+                    <width>100</width>
+                    <height>100</height>
                     <colordiffuse>white2</colordiffuse>
                     <texture>weather/small/$INFO[Weather.FanartCode].png</texture>
 					<visible>!Skin.HasSetting(W_condition_image)</visible>

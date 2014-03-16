@@ -286,16 +286,18 @@
                     <font>Font_Reg28_Caps</font>
                     <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
 					<visible>!Skin.HasSetting(shorterhomebars)</visible>
+					<animation effect="slide" end="70" time="240" condition="!Skin.HasSetting(W_condition_image)">Conditional</animation>
                 </control>
                 <control type="image">
-					<left>180</left>
-                    <top>-8</top>
-                    <width>55</width>
-                    <height>55</height>
+					<left>160</left>
+                    <top>-30</top>
+                    <width>100</width>
+                    <height>100</height>
                     <colordiffuse>white2</colordiffuse>
                     <texture>weather/small/$INFO[Weather.FanartCode].png</texture>
 					<visible>!Skin.HasSetting(W_condition_image)</visible>
 					<visible>!Skin.HasSetting(shorterhomebars)</visible>
+					<animation effect="slide" end="70" time="240" condition="!Skin.HasSetting(W_condition_image)">Conditional</animation>
                 </control>
 				<control type="label">
 					<left>190</left>
@@ -318,7 +320,7 @@
                 <label>[COLOR grey]$INFO[System.Date(ddd)] • $INFO[System.Date(D)] $INFO[System.Date(mmm)] $INFO[System.Date(yyyy)]  •[/COLOR]  $INFO[System.Time]</label>
                 <font>Font_Reg28_Caps</font>
                 <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
-				<visible>!Skin.HasSetting(shorterhomebars)</visible>
+				<visible>!Skin.HasSetting(shorterhomebars) + Skin.HasSetting(W_condition_image)</visible>
             </control>
             <control type="label">
                 <left>170</left>
@@ -330,6 +332,16 @@
                 <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
 				<visible>Skin.HasSetting(shorterhomebars)</visible>
             </control>
+            <control type="label">
+                <left>170</left>
+                <width>600</width>
+                <height>36</height>
+                <align>right</align>
+                <label>[COLOR grey]$INFO[System.Date(DDD)] • $INFO[System.Date(D)] $INFO[System.Date(mmm)] $INFO[System.Date(yyyy)]  •[/COLOR]  $INFO[System.Time]</label>
+                <font>Font_Reg28_Caps</font>
+                <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
+				<visible>!Skin.HasSetting(W_condition_image)</visible>
+            </control>			
             </control>
         </control>
     </include>
