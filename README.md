@@ -1,5 +1,37 @@
 skin.Aeon-Nox-4.1.9
 ===================
+4.1.9.6
+
+Russian translation Buzzzzer
+
+media filter fix
+
+Season Landscape and missing img
+
+fix bugs
+
+new layout for tv next aired next version
+
+italian translation Hangy
+
+Amazon and NHK studio logos
+
+Autoscroll on infoPanel
+
+weather condition on breadcrumbs
+
+remove few strings unused
+
+multiimage for bigfan
+
+infowall tracklist setting
+
+clear type on Playlist chooser
+
+audio subtitle flag setting on videoosd
+
+
+
 
 Aeon Nox 4 for gotham
 
