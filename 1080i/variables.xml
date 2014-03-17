@@ -258,6 +258,78 @@
 		<value condition="substring(ListItem.Property(StatusID),6)">$LOCALIZE[32982]</value>
 		<value condition="substring(ListItem.Property(StatusID),-1)">$LOCALIZE[32989]</value>
 	</variable>	
+	<variable name="TvGuideVarTxtScript215">
+		<value condition="substring(Container(215).ListItem.Property(StatusID),0)">$LOCALIZE[32976]</value>
+		<value condition="substring(Container(215).ListItem.Property(StatusID),1)">$LOCALIZE[32977]</value>
+		<value condition="substring(Container(215).ListItem.Property(StatusID),2)">$LOCALIZE[32978]</value>
+		<value condition="substring(Container(215).ListItem.Property(StatusID),4)">$LOCALIZE[32980]</value>
+		<value condition="substring(Container(215).ListItem.Property(StatusID),6)">$LOCALIZE[32982]</value>
+		<value condition="substring(Container(215).ListItem.Property(StatusID),-1)">$LOCALIZE[32989]</value>
+	</variable>		
+	<variable name="TvGuideVarTxtScript214">
+		<value condition="substring(Container(214).ListItem.Property(StatusID),0)">$LOCALIZE[32976]</value>
+		<value condition="substring(Container(214).ListItem.Property(StatusID),1)">$LOCALIZE[32977]</value>
+		<value condition="substring(Container(214).ListItem.Property(StatusID),2)">$LOCALIZE[32978]</value>
+		<value condition="substring(Container(214).ListItem.Property(StatusID),4)">$LOCALIZE[32980]</value>
+		<value condition="substring(Container(214).ListItem.Property(StatusID),6)">$LOCALIZE[32982]</value>
+		<value condition="substring(Container(214).ListItem.Property(StatusID),-1)">$LOCALIZE[32989]</value>
+	</variable>		
+	<variable name="TvGuideVarTxtScript213">
+		<value condition="substring(Container(213).ListItem.Property(StatusID),0)">$LOCALIZE[32976]</value>
+		<value condition="substring(Container(213).ListItem.Property(StatusID),1)">$LOCALIZE[32977]</value>
+		<value condition="substring(Container(213).ListItem.Property(StatusID),2)">$LOCALIZE[32978]</value>
+		<value condition="substring(Container(213).ListItem.Property(StatusID),4)">$LOCALIZE[32980]</value>
+		<value condition="substring(Container(213).ListItem.Property(StatusID),6)">$LOCALIZE[32982]</value>
+		<value condition="substring(Container(213).ListItem.Property(StatusID),-1)">$LOCALIZE[32989]</value>
+	</variable>		
+	<variable name="TvGuideVarTxtScript212">
+		<value condition="substring(Container(212).ListItem.Property(StatusID),0)">$LOCALIZE[32976]</value>
+		<value condition="substring(Container(212).ListItem.Property(StatusID),1)">$LOCALIZE[32977]</value>
+		<value condition="substring(Container(212).ListItem.Property(StatusID),2)">$LOCALIZE[32978]</value>
+		<value condition="substring(Container(212).ListItem.Property(StatusID),4)">$LOCALIZE[32980]</value>
+		<value condition="substring(Container(212).ListItem.Property(StatusID),6)">$LOCALIZE[32982]</value>
+		<value condition="substring(Container(212).ListItem.Property(StatusID),-1)">$LOCALIZE[32989]</value>
+	</variable>		
+	<variable name="TvGuideVarTxtScript211">
+		<value condition="substring(Container(211).ListItem.Property(StatusID),0)">$LOCALIZE[32976]</value>
+		<value condition="substring(Container(211).ListItem.Property(StatusID),1)">$LOCALIZE[32977]</value>
+		<value condition="substring(Container(211).ListItem.Property(StatusID),2)">$LOCALIZE[32978]</value>
+		<value condition="substring(Container(211).ListItem.Property(StatusID),4)">$LOCALIZE[32980]</value>
+		<value condition="substring(Container(211).ListItem.Property(StatusID),6)">$LOCALIZE[32982]</value>
+		<value condition="substring(Container(211).ListItem.Property(StatusID),-1)">$LOCALIZE[32989]</value>
+	</variable>		
+	<variable name="TvGuideVarTxtScript210">
+		<value condition="substring(Container(210).ListItem.Property(StatusID),0)">$LOCALIZE[32976]</value>
+		<value condition="substring(Container(210).ListItem.Property(StatusID),1)">$LOCALIZE[32977]</value>
+		<value condition="substring(Container(210).ListItem.Property(StatusID),2)">$LOCALIZE[32978]</value>
+		<value condition="substring(Container(210).ListItem.Property(StatusID),4)">$LOCALIZE[32980]</value>
+		<value condition="substring(Container(210).ListItem.Property(StatusID),6)">$LOCALIZE[32982]</value>
+		<value condition="substring(Container(210).ListItem.Property(StatusID),-1)">$LOCALIZE[32989]</value>
+	</variable>	
+	<variable name="TvGuideVarTxtScript209">
+		<value condition="substring(Container(209).ListItem.Property(StatusID),0)">$LOCALIZE[32976]</value>
+		<value condition="substring(Container(209).ListItem.Property(StatusID),1)">$LOCALIZE[32977]</value>
+		<value condition="substring(Container(209).ListItem.Property(StatusID),2)">$LOCALIZE[32978]</value>
+		<value condition="substring(Container(209).ListItem.Property(StatusID),4)">$LOCALIZE[32980]</value>
+		<value condition="substring(Container(209).ListItem.Property(StatusID),6)">$LOCALIZE[32982]</value>
+		<value condition="substring(Container(209).ListItem.Property(StatusID),-1)">$LOCALIZE[32989]</value>
+	</variable>	
+	<variable name="TvGuideVarTxtScript208">
+		<value condition="substring(Container(208).ListItem.Property(StatusID),0)">$LOCALIZE[32976]</value>
+		<value condition="substring(Container(208).ListItem.Property(StatusID),1)">$LOCALIZE[32977]</value>
+		<value condition="substring(Container(208).ListItem.Property(StatusID),2)">$LOCALIZE[32978]</value>
+		<value condition="substring(Container(208).ListItem.Property(StatusID),4)">$LOCALIZE[32980]</value>
+		<value condition="substring(Container(208).ListItem.Property(StatusID),6)">$LOCALIZE[32982]</value>
+		<value condition="substring(Container(208).ListItem.Property(StatusID),-1)">$LOCALIZE[32989]</value>
+	</variable>		
+	<variable name="TvGuideVarTxtScript207">
+		<value condition="substring(Container(207).ListItem.Property(StatusID),0)">$LOCALIZE[32976]</value>
+		<value condition="substring(Container(207).ListItem.Property(StatusID),1)">$LOCALIZE[32977]</value>
+		<value condition="substring(Container(207).ListItem.Property(StatusID),2)">$LOCALIZE[32978]</value>
+		<value condition="substring(Container(207).ListItem.Property(StatusID),4)">$LOCALIZE[32980]</value>
+		<value condition="substring(Container(207).ListItem.Property(StatusID),6)">$LOCALIZE[32982]</value>
+		<value condition="substring(Container(207).ListItem.Property(StatusID),-1)">$LOCALIZE[32989]</value>
+	</variable>		
 	<variable name="TvGuideVarTxtScript206">
 		<value condition="substring(Container(206).ListItem.Property(StatusID),0)">$LOCALIZE[32976]</value>
 		<value condition="substring(Container(206).ListItem.Property(StatusID),1)">$LOCALIZE[32977]</value>
@@ -954,6 +1026,51 @@
 		<value condition="!IntegerGreaterThan(Container(206).NumItems,0)">$INFO[Container(206).NumItems] $LOCALIZE[20360]</value>
         <value condition="!IntegerGreaterThan(Container(206).NumItems,1)">$INFO[Container(206).NumItems] $LOCALIZE[20359]</value>
 		<value>$INFO[Container(206).NumItems] $LOCALIZE[20360]</value>
+    </variable>	
+	<variable name="TVDayLabel2_8">
+		<value condition="!IntegerGreaterThan(Container(207).NumItems,0)">$INFO[Container(207).NumItems] $LOCALIZE[20360]</value>
+        <value condition="!IntegerGreaterThan(Container(207).NumItems,1)">$INFO[Container(207).NumItems] $LOCALIZE[20359]</value>
+		<value>$INFO[Container(207).NumItems] $LOCALIZE[20360]</value>
+    </variable>	
+	<variable name="TVDayLabel2_9">
+		<value condition="!IntegerGreaterThan(Container(208).NumItems,0)">$INFO[Container(208).NumItems] $LOCALIZE[20360]</value>
+        <value condition="!IntegerGreaterThan(Container(208).NumItems,1)">$INFO[Container(208).NumItems] $LOCALIZE[20359]</value>
+		<value>$INFO[Container(208).NumItems] $LOCALIZE[20360]</value>
+    </variable>	
+	<variable name="TVDayLabel2_10">
+		<value condition="!IntegerGreaterThan(Container(209).NumItems,0)">$INFO[Container(209).NumItems] $LOCALIZE[20360]</value>
+        <value condition="!IntegerGreaterThan(Container(209).NumItems,1)">$INFO[Container(209).NumItems] $LOCALIZE[20359]</value>
+		<value>$INFO[Container(209).NumItems] $LOCALIZE[20360]</value>
+    </variable>	
+	<variable name="TVDayLabel2_11">
+		<value condition="!IntegerGreaterThan(Container(210).NumItems,0)">$INFO[Container(210).NumItems] $LOCALIZE[20360]</value>
+        <value condition="!IntegerGreaterThan(Container(210).NumItems,1)">$INFO[Container(210).NumItems] $LOCALIZE[20359]</value>
+		<value>$INFO[Container(210).NumItems] $LOCALIZE[20360]</value>
+    </variable>	
+	<variable name="TVDayLabel2_12">
+		<value condition="!IntegerGreaterThan(Container(211).NumItems,0)">$INFO[Container(211).NumItems] $LOCALIZE[20360]</value>
+        <value condition="!IntegerGreaterThan(Container(211).NumItems,1)">$INFO[Container(211).NumItems] $LOCALIZE[20359]</value>
+		<value>$INFO[Container(211).NumItems] $LOCALIZE[20360]</value>
+    </variable>	
+	<variable name="TVDayLabel2_13">
+		<value condition="!IntegerGreaterThan(Container(212).NumItems,0)">$INFO[Container(212).NumItems] $LOCALIZE[20360]</value>
+        <value condition="!IntegerGreaterThan(Container(212).NumItems,1)">$INFO[Container(212).NumItems] $LOCALIZE[20359]</value>
+		<value>$INFO[Container(212).NumItems] $LOCALIZE[20360]</value>
+    </variable>	
+	<variable name="TVDayLabel2_14">
+		<value condition="!IntegerGreaterThan(Container(213).NumItems,0)">$INFO[Container(213).NumItems] $LOCALIZE[20360]</value>
+        <value condition="!IntegerGreaterThan(Container(213).NumItems,1)">$INFO[Container(213).NumItems] $LOCALIZE[20359]</value>
+		<value>$INFO[Container(213).NumItems] $LOCALIZE[20360]</value>
+    </variable>	
+	<variable name="TVDayLabel2_15">
+		<value condition="!IntegerGreaterThan(Container(214).NumItems,0)">$INFO[Container(214).NumItems] $LOCALIZE[20360]</value>
+        <value condition="!IntegerGreaterThan(Container(214).NumItems,1)">$INFO[Container(214).NumItems] $LOCALIZE[20359]</value>
+		<value>$INFO[Container(214).NumItems] $LOCALIZE[20360]</value>
+    </variable>	
+	<variable name="TVDayLabel2_16">
+		<value condition="!IntegerGreaterThan(Container(215).NumItems,0)">$INFO[Container(215).NumItems] $LOCALIZE[20360]</value>
+        <value condition="!IntegerGreaterThan(Container(215).NumItems,1)">$INFO[Container(215).NumItems] $LOCALIZE[20359]</value>
+		<value>$INFO[Container(215).NumItems] $LOCALIZE[20360]</value>
     </variable>	
 			
 		
