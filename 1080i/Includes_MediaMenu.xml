@@ -149,7 +149,7 @@
             <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
         </control>			
         <control type="radiobutton" id="7">
-            <label>-</label>
+            <label>$LOCALIZE[14000]</label>
             <include>Objects_MediaMenuButtonIcons</include>
             <visible>!SubString(Container.FolderPath,videodb://,left) + Container.Content()</visible>
         </control>
