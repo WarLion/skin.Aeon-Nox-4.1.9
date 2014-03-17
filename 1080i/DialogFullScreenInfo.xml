@@ -153,7 +153,10 @@
             </animation>
             <include condition="VideoPlayer.Content(livetv)">FullScreenInfoBarLiveTV</include>
             <include condition="!VideoPlayer.Content(livetv)">FullScreenInfoBar</include>
-                <control type="image">
+            <control type="group">
+				<animation effect="slide" end="-1800,0" condition="VideoPlayer.Content(files)">Conditional</animation>
+				<visible>Skin.HasSetting(AudioSubFlag)</visible>
+			    <control type="image">
                     <left>1820</left>
                     <top>1000</top>
 					<width>30</width>
@@ -174,6 +177,7 @@
 					<colordiffuse>white2</colordiffuse>
 					<texture fallback="">special://skin/extras/BigIcons/Speaker.png</texture>
 					<visible>!IsEmpty(VideoPlayer.AudioLanguage)</visible>
+					<visible>!Substring(VideoPlayer.AudioLanguage,und)</visible>
                 </control>				
                 <control type="image">
                     <left>1860</left>
@@ -195,7 +199,8 @@
 					<colordiffuse>white2</colordiffuse>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<texture fallback="">$INFO[VideoPlayer.SubtitlesLanguage,flags/language/,.png]</texture>
-                </control>										
+                </control>	
+			</control>									
         </control>
         <include>AlaskaPausedLabel</include>
         <control type="group" id="9004">

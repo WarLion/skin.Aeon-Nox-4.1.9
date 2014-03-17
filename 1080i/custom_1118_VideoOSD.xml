@@ -90,6 +90,12 @@
                 <onclick>Skin.ToggleSetting(ClassicOSD)</onclick>
                 <selected>Skin.HasSetting(ClassicOSD)</selected>
             </control>
+            <control type="radiobutton" id="458">
+                <label>$LOCALIZE[462]/$LOCALIZE[31952]</label>
+                <include>Objects_CommonSettingsButton</include>
+                <onclick>Skin.ToggleSetting(AudioSubFlag)</onclick>
+                <selected>Skin.HasSetting(AudioSubFlag)</selected>
+            </control>			
         </control>
         <control type="scrollbar" id="60">
             <include>Objects_CommonSettingsScrollbar</include>
