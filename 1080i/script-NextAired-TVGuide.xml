@@ -138,6 +138,19 @@
                         <selected>Skin.HasSetting(darkinfopane)</selected>
                         <visible>!Skin.HasSetting(hideoptions) + Skin.HasSetting(DisableGlowbar)</visible>
                     </control>
+                    <control type="radiobutton" id="1764">
+                        <label>$LOCALIZE[31086]</label>
+                        <include>Objects_MediaMenuButtonAlt</include>
+                        <onclick>Skin.ToggleSetting(NextAiredclearart)</onclick>
+                        <selected>Skin.HasSetting(NextAiredclearart)</selected>
+						<enable>IsEmpty(Window(Home).property(TVGuide.PreviewThumbs))</enable>
+                    </control>		
+                    <control type="radiobutton" id="1765">
+                        <label>$LOCALIZE[31059]</label>
+                        <include>Objects_MediaMenuButtonAlt</include>
+                        <onclick>Skin.ToggleSetting(NextAiredLogo)</onclick>
+                        <selected>Skin.HasSetting(NextAiredLogo)</selected>
+                    </control>					
                     <control type="button" id="1604">
                         <label>$LOCALIZE[31185]</label>
                         <font>Font_Bold26_Caps</font>

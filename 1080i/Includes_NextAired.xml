@@ -70,6 +70,9 @@
     </include>	
     <include name="NextAiredItemLayout">
         <control type="group">
+            <animation type="Conditional" condition="!Skin.HasSetting(NextAiredLogo)">
+                <effect type="slide" end="0,-150" time="0" />
+            </animation>		
             <control type="image">
                 <left>13</left>
                 <top>20</top>
@@ -77,6 +80,7 @@
                 <height>237</height>
                 <aspectratio aligny="top">keep</aspectratio>
                 <texture background="true">$INFO[ListItem.Property(Art(clearlogo))]</texture>
+				<visible>Skin.HasSetting(NextAiredLogo)</visible>
             </control>
             <control type="group">
                 <top>-30</top>
@@ -89,7 +93,18 @@
                     <texture background="true">$INFO[ListItem.Property(Art(fanart))]</texture>
                     <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
                     <bordersize>7</bordersize>
+					<visible>!Skin.HasSetting(NextAiredclearart) + IsEmpty(Window(Home).property(TVGuide.PreviewThumbs))</visible>
                 </control>
+                <control type="image">
+                    <left>10</left>
+                    <top>290</top>
+                    <width>411</width>
+                    <height>247</height>
+                    <aspectratio align="center">keep</aspectratio>
+                    <texture background="true">$INFO[ListItem.Property(Art(ClearArt))]</texture>
+                    <bordersize>7</bordersize>
+					<visible>Skin.HasSetting(NextAiredclearart) + IsEmpty(Window(Home).property(TVGuide.PreviewThumbs))</visible>
+                </control>				
                 <control type="image">
                     <left>10</left>
                     <top>290</top>
@@ -108,7 +123,14 @@
                     <height>34</height>
                     <texture>common/bgcolor.png</texture>
                     <colordiffuse>99FFFFFF</colordiffuse>
-                </control>					
+					<animation type="Conditional" condition="!IsEmpty(Window(Home).property(TVGuide.PreviewThumbs))  + !Skin.HasSetting(NextAiredLogo)">
+						<effect type="slide" end="0,25" time="0" />
+					</animation>					
+                </control>		
+			<control type="group">
+					<animation type="Conditional" condition="!Skin.HasSetting(NextAiredLogo)">
+						<effect type="slide" end="-120,50" time="0" />
+					</animation>							
 				<control type="label">
                     <left>191</left>
                     <top>850</top>				
@@ -128,6 +150,7 @@
                     <texture>tvguide/$INFO[ListItem.Property(StatusID)].png</texture>
                     <colordiffuse>floor</colordiffuse>
                 </control>
+			</control>	
                 <control type="image">
                     <left>20</left>
                     <top>491</top>
@@ -135,6 +158,9 @@
                     <height>35</height>
                     <texture>tvguide/clock.png</texture>
                     <colordiffuse>floor</colordiffuse>
+					<animation type="Conditional" condition="!IsEmpty(Window(Home).property(TVGuide.PreviewThumbs))  + !Skin.HasSetting(NextAiredLogo)">
+						<effect type="slide" end="0,25" time="0" />
+					</animation>					
                 </control>
                 <control type="label">
                     <left>215</left>
@@ -145,6 +171,9 @@
                     <label>[COLOR white2]$INFO[ListItem.Property(ShortTime)][/COLOR][COLOR grey] ($INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]])[/COLOR]</label>
                     <font>Font_Reg28</font>
                     <textcolor>$VAR[TitleColorVar]</textcolor>
+					<animation type="Conditional" condition="!IsEmpty(Window(Home).property(TVGuide.PreviewThumbs)) + !Skin.HasSetting(NextAiredLogo)">
+						<effect type="slide" end="0,25" time="0" />
+					</animation>					
                 </control>
             </control>
             <control type="label">
@@ -215,6 +244,9 @@
                 <aspectratio>keep</aspectratio>
                 <texture fallback="flags/studios/default-studio.png">$INFO[ListItem.Property(Network),flags/studios/,.png]</texture>
                 <colordiffuse>floor</colordiffuse>
+					<animation type="Conditional" condition="!Skin.HasSetting(NextAiredLogo)">
+						<effect type="slide" end="0,150" time="0" />
+					</animation>					
             </control>
             <control type="image">
                 <left>240</left>
@@ -225,6 +257,13 @@
                 <texture>$INFO[ListItem.Property(Art(characterart))]</texture>
                 <fadetime>IconCrossfadeTime2</fadetime>
                 <animation effect="fade" time="200">VisibleChange</animation>
+					<animation type="Conditional" condition="!Skin.HasSetting(NextAiredLogo)">
+						<effect type="slide" end="0,150" time="0" />
+					</animation>	
+					<animation type="Conditional" condition="!Skin.HasSetting(NextAiredLogo)">
+						<effect type="slide" end="-120,-150" time="0" />
+						<effect type="zoom" end="170" time="0" />
+					</animation>										
             </control>
             <control type="image">
                 <left>435</left>
@@ -2937,7 +2976,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
 				</control>
 				 <control type="label">
                     <left>0</left>
@@ -2948,7 +2987,7 @@
 					<aligny>center</aligny>
                     <font>font13_title</font>
                     <label>$VAR[TVDayLabel2_1]</label>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
                 </control>					
 				<control type="panel" id="200">
 					<left>0</left>
@@ -3091,7 +3130,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
 				</control>
 				 <control type="label">
                     <left>0</left>
@@ -3102,7 +3141,7 @@
 					<aligny>center</aligny>
                     <font>font13_title</font>
                     <label>$VAR[TVDayLabel2_3]</label>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
                 </control>				
 				<control type="panel" id="202">
 					<left>0</left>
@@ -3168,7 +3207,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
 				</control>
 				 <control type="label">
                     <left>0</left>
@@ -3179,7 +3218,7 @@
 					<aligny>center</aligny>
                     <font>font13_title</font>
                     <label>$VAR[TVDayLabel2_4]</label>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
                 </control>				
 				<control type="panel" id="203">
 					<left>0</left>
@@ -3245,7 +3284,7 @@
 					<aligny>center</aligny>
                     <font>font13_title</font>
                     <label>$VAR[TVDayLabel2_5]</label>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
                 </control>				
 				<control type="label">
 					<left>0</left>
@@ -3256,7 +3295,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
 				</control>
 				<control type="panel" id="204">
 					<left>0</left>
@@ -3322,7 +3361,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
 				</control>
 				 <control type="label">
                     <left>0</left>
@@ -3333,7 +3372,7 @@
 					<aligny>center</aligny>
                     <font>font13_title</font>
                     <label>$VAR[TVDayLabel2_6]</label>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
                 </control>				
 				<control type="panel" id="205">
 					<left>0</left>
@@ -3399,7 +3438,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
 				</control>
 				<control type="label">
                     <left>0</left>
@@ -3410,7 +3449,7 @@
 					<aligny>center</aligny>
                     <font>font13_title</font>
                     <label>$VAR[TVDayLabel2_7]</label>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
                 </control>	
 				<control type="panel" id="206">
 					<left>0</left>
@@ -3476,7 +3515,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
 				</control>
 				<control type="label">
                     <left>0</left>
@@ -3487,7 +3526,7 @@
 					<aligny>center</aligny>
                     <font>font13_title</font>
                     <label>$VAR[TVDayLabel2_8]</label>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
                 </control>
 				<control type="panel" id="207">
 					<left>0</left>
@@ -3541,7 +3580,7 @@
 			</control>
 			<control type="group">
 				<description>Today+7</description>
-				<visible>!StringCompare(Window(Home).Property(NextAired.208.Weekday),)</visible>
+				<visible>!StringCompare(Window(Home).Property(NextAired.208.Wday),)</visible>
 				<width>170</width>
 				<height>655</height>
 				<control type="label">
@@ -3553,7 +3592,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
 				</control>
 				<control type="label">
                     <left>0</left>
@@ -3564,7 +3603,7 @@
 					<aligny>center</aligny>
                     <font>font13_title</font>
                     <label>$VAR[TVDayLabel2_9]</label>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
                 </control>
 				<control type="panel" id="208">
 					<left>0</left>
@@ -3618,7 +3657,7 @@
 			</control>
 			<control type="group">
 				<description>Today+8</description>
-				<visible>!StringCompare(Window(Home).Property(NextAired.209.Weekday),)</visible>
+				<visible>!StringCompare(Window(Home).Property(NextAired.209.Wday),)</visible>
 				<width>170</width>
 				<height>655</height>
 				<control type="label">
@@ -3630,7 +3669,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
 				</control>
 				<control type="label">
                     <left>0</left>
@@ -3641,7 +3680,7 @@
 					<aligny>center</aligny>
                     <font>font13_title</font>
                     <label>$VAR[TVDayLabel2_10]</label>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
                 </control>
 				<control type="panel" id="209">
 					<left>0</left>
@@ -3695,7 +3734,7 @@
 			</control>
 			<control type="group">
 				<description>Today+9</description>
-				<visible>!StringCompare(Window(Home).Property(NextAired.210.Weekday),)</visible>
+				<visible>!StringCompare(Window(Home).Property(NextAired.210.Wday),)</visible>
 				<width>170</width>
 				<height>655</height>
 				<control type="label">
@@ -3707,7 +3746,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
 				</control>
 				<control type="label">
                     <left>0</left>
@@ -3718,7 +3757,7 @@
 					<aligny>center</aligny>
                     <font>font13_title</font>
                     <label>$VAR[TVDayLabel2_11]</label>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
                 </control>
 				<control type="panel" id="210">
 					<left>0</left>
@@ -3772,7 +3811,7 @@
 			</control>
 			<control type="group">
 				<description>Today+10</description>
-				<visible>!StringCompare(Window(Home).Property(NextAired.211.Weekday),)</visible>
+				<visible>!StringCompare(Window(Home).Property(NextAired.211.Wday),)</visible>
 				<width>170</width>
 				<height>655</height>
 				<control type="label">
@@ -3784,7 +3823,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
 				</control>
 				<control type="label">
                     <left>0</left>
@@ -3795,7 +3834,7 @@
 					<aligny>center</aligny>
                     <font>font13_title</font>
                     <label>$VAR[TVDayLabel2_12]</label>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
                 </control>
 				<control type="panel" id="211">
 					<left>0</left>
@@ -3849,7 +3888,7 @@
 			</control>
 			<control type="group">
 				<description>Today+11</description>
-				<visible>!StringCompare(Window(Home).Property(NextAired.212.Weekday),)</visible>
+				<visible>!StringCompare(Window(Home).Property(NextAired.212.Wday),)</visible>
 				<width>170</width>
 				<height>655</height>
 				<control type="label">
@@ -3861,7 +3900,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
 				</control>
 				<control type="label">
                     <left>0</left>
@@ -3872,7 +3911,7 @@
 					<aligny>center</aligny>
                     <font>font13_title</font>
                     <label>$VAR[TVDayLabel2_13]</label>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
                 </control>
 				<control type="panel" id="212">
 					<left>0</left>
@@ -3926,7 +3965,7 @@
 			</control>
 			<control type="group">
 				<description>Today+12</description>
-				<visible>!StringCompare(Window(Home).Property(NextAired.213.Weekday),)</visible>
+				<visible>!StringCompare(Window(Home).Property(NextAired.213.Wday),)</visible>
 				<width>170</width>
 				<height>655</height>
 				<control type="label">
@@ -3938,7 +3977,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
 				</control>
 				<control type="label">
                     <left>0</left>
@@ -3949,7 +3988,7 @@
 					<aligny>center</aligny>
                     <font>font13_title</font>
                     <label>$VAR[TVDayLabel2_14]</label>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
                 </control>
 				<control type="panel" id="213">
 					<left>0</left>
@@ -4003,7 +4042,7 @@
 			</control>
 			<control type="group">
 				<description>Today+13</description>
-				<visible>!StringCompare(Window(Home).Property(NextAired.214.Weekday),)</visible>
+				<visible>!StringCompare(Window(Home).Property(NextAired.214.Wday),)</visible>
 				<width>170</width>
 				<height>655</height>
 				<control type="label">
@@ -4015,7 +4054,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
 				</control>
 				<control type="label">
                     <left>0</left>
@@ -4026,7 +4065,7 @@
 					<aligny>center</aligny>
                     <font>font13_title</font>
                     <label>$VAR[TVDayLabel2_15]</label>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
                 </control>
 				<control type="panel" id="214">
 					<left>0</left>
@@ -4080,7 +4119,7 @@
 			</control>
 			<control type="group">
 				<description>Today+14</description>
-				<visible>!StringCompare(Window(Home).Property(NextAired.215.Weekday),)</visible>
+				<visible>!StringCompare(Window(Home).Property(NextAired.215.Wday),)</visible>
 				<width>170</width>
 				<height>655</height>
 				<control type="label">
@@ -4092,7 +4131,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
 				</control>
 				<control type="label">
                     <left>0</left>
@@ -4103,7 +4142,7 @@
 					<aligny>center</aligny>
                     <font>font13_title</font>
                     <label>$VAR[TVDayLabel2_16]</label>
-					<textcolor>white</textcolor>
+					<textcolor>gray</textcolor>
                 </control>
 				<control type="panel" id="215">
 					<left>0</left>

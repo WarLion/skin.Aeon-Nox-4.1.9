@@ -674,14 +674,16 @@
         <value condition="IsEmpty(ListItem.TvShowTitle) + [Skin.HasSetting(wallgenre) | Skin.HasSetting(FloorLabelTagline)]">$LOCALIZE[345]:</value>
         <value condition="IsEmpty(ListItem.TvShowTitle)">$LOCALIZE[515]:</value>
         <value condition="Container.Content(episodes)">$LOCALIZE[20416]:</value>
-        <value>$LOCALIZE[515]:</value>
+		<value>$LOCALIZE[515]:</value>
+       <!-- <value>$LOCALIZE[31008]:</value>-->
     </variable>
     <variable name="FanartPanelValue3Var">
         <value condition="IsEmpty(ListItem.TvShowTitle) + [Skin.HasSetting(wallgenre) | Skin.HasSetting(FloorLabelTagline)]">$INFO[ListItem.Year]</value>
         <value condition="skin.hassetting(backendmode) + SubString(ListItem.Path,videodb://movies/sets/,left)">$INFO[Window(home).Property(Set.Movies.Genre)]</value>
         <value condition="IsEmpty(ListItem.TvShowTitle)">$INFO[ListItem.Genre]</value>
         <value condition="Container.Content(episodes)">$INFO[ListItem.Premiered]</value>
-        <value>$INFO[Window(home).Property(NextAired.Genre)]</value>
+		<value>$INFO[Window(home).Property(NextAired.Genre)]</value>
+       <!-- <value>$INFO[Window(home).Property(NextAired.Classification)]</value>-->
     </variable>
     <variable name="FanartPanelDetail4Var">
         <value condition="IsEmpty(ListItem.TvShowTitle)">$LOCALIZE[31095]:</value>
@@ -897,6 +899,15 @@
         <value condition="Control.HasFocus(204)">$INFO[Container(204).ListItem.Property(Art(fanart))]</value>
         <value condition="Control.HasFocus(205)">$INFO[Container(205).ListItem.Property(Art(fanart))]</value>
         <value condition="Control.HasFocus(206)">$INFO[Container(206).ListItem.Property(Art(fanart))]</value>
+		<value condition="Control.HasFocus(207)">$INFO[Container(207).ListItem.Property(Art(fanart))]</value>
+		<value condition="Control.HasFocus(208)">$INFO[Container(208).ListItem.Property(Art(fanart))]</value>
+		<value condition="Control.HasFocus(209)">$INFO[Container(209).ListItem.Property(Art(fanart))]</value>
+		<value condition="Control.HasFocus(210)">$INFO[Container(210).ListItem.Property(Art(fanart))]</value>
+		<value condition="Control.HasFocus(211)">$INFO[Container(211).ListItem.Property(Art(fanart))]</value>
+		<value condition="Control.HasFocus(212)">$INFO[Container(212).ListItem.Property(Art(fanart))]</value>
+		<value condition="Control.HasFocus(213)">$INFO[Container(213).ListItem.Property(Art(fanart))]</value>
+		<value condition="Control.HasFocus(214)">$INFO[Container(214).ListItem.Property(Art(fanart))]</value>
+		<value condition="Control.HasFocus(215)">$INFO[Container(215).ListItem.Property(Art(fanart))]</value>
     </variable>
     <variable name="TVDayLabelMon">
         <value condition="!IntegerGreaterThan(Container(200).NumItems,0)">$LOCALIZE[11]</value>
