@@ -4761,8 +4761,8 @@
                 <itemlayout width="532" height="340" condition="Substring(Control.GetLabel(4321),landscape)">
                     <include condition="Substring(Skin.String(widgetlist),landscape) | Window.IsActive(1124)">WidgetLandscapeLayout</include>
                 </itemlayout>
-                <focusedlayout width="532" height="340" condition="Substring(Control.GetLabel(4321),keepar)">
-                    <include condition="Substring(Skin.String(widgetlist),keepar) | Window.IsActive(1124)">WidgetRCBLayout</include>
+                <focusedlayout width="532" height="340" condition="Substring(Control.GetLabel(4321),roms)">
+                    <include condition="Substring(Skin.String(widgetlist),panel) | Window.IsActive(1124)">WidgetRCBLayout</include>
                     <control type="image">
                         <width>532</width>
                         <height>350</height>
@@ -4771,8 +4771,8 @@
                         <visible>Control.HasFocus(5010)</visible>
                     </control>
                 </focusedlayout>
-                <itemlayout width="532" height="340" condition="Substring(Control.GetLabel(4321),keepar)">
-                    <include condition="Substring(Skin.String(widgetlist),keepar) | Window.IsActive(1124)">WidgetRCBLayout</include>
+                <itemlayout width="532" height="340" condition="Substring(Control.GetLabel(4321),roms)">
+                    <include condition="Substring(Skin.String(widgetlist),panel) | Window.IsActive(1124)">WidgetRCBLayout</include>
                 </itemlayout>
 				<itemlayout width="228" height="340" condition="Substring(Control.GetLabel(4321),panelcoverposter)">
                     <control type="image">
@@ -5204,8 +5204,9 @@
                 <itemlayout width="532" height="340" condition="Substring(Control.GetLabel(4325),landscape)">
                     <include condition="Substring(Skin.String(widget2list),landscape) | Window.IsActive(1124)">WidgetLandscapeLayout</include>
                 </itemlayout>
-                <focusedlayout width="532" height="340" condition="Substring(Control.GetLabel(4325),keepar)">
-                    <include condition="Substring(Skin.String(widget2list),keepar) | Window.IsActive(1124)">WidgetRCBLayout</include>
+				<!-- RCB WIdgets -->   
+                <focusedlayout width="532" height="340" condition="Substring(Control.GetLabel(4325),roms)">
+                    <include condition="Substring(Skin.String(widgetlist),panel) | Window.IsActive(1124)">WidgetRCBLayout</include>
                     <control type="image">
                         <width>532</width>
                         <height>350</height>
@@ -5214,9 +5215,10 @@
                         <visible>Control.HasFocus(6010)</visible>
                     </control>
                 </focusedlayout>
-                <itemlayout width="532" height="340" condition="Substring(Control.GetLabel(4325),keepar)">
-                    <include condition="Substring(Skin.String(widget2list),keepar) | Window.IsActive(1124)">WidgetRCBLayout</include>
-                </itemlayout>
+                <itemlayout width="532" height="340" condition="Substring(Control.GetLabel(4325),roms)">
+                    <include condition="Substring(Skin.String(widgetlist),panel) | Window.IsActive(1124)">WidgetRCBLayout</include>
+                </itemlayout>  
+				<!-- RCB WIdgets --> 
                 <focusedlayout width="798" height="170" condition="Substring(Control.GetLabel(4325),bannerlayout)">
                     <include condition="Substring(Skin.String(widget2list),banner) | Window.IsActive(1124)">WidgetBannerLayout</include>
                     <control type="image">
@@ -6586,7 +6588,16 @@
             <height>340</height>
             <aspectratio align="center">keep</aspectratio>
             <texture background="true">$INFO[ListItem.Icon]</texture>
+			<visible>IsEmpty(ListItem.Property(Fanart))</visible>
         </control>
+        <control type="image">
+            <left>10</left>
+            <top>5</top>
+            <width>512</width>
+            <height>340</height>
+            <aspectratio align="center">keep</aspectratio>
+            <texture background="true">$INFO[ListItem.Property(Fanart)]</texture>
+        </control>		
         <control type="image">
             <left>0</left>
             <top>285</top>

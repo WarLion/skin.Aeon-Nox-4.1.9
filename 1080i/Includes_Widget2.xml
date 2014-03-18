@@ -6589,6 +6589,160 @@
             <onclick>SetFocus(6014)</onclick>
             <visible>Substring(Control.GetLabel(4325),nextaired) + !IsEmpty(Window(Home).Property(NextAired.8.Label))</visible>
         </item>
+        <item>
+            <label>$INFO[Window(Home).Property(NextAired.9.Label)]</label>
+            <label2>$INFO[Window(Home).Property(NextAired.9.NextDate),, @ ]$INFO[Window(Home).Property(NextAired.9.ShortTime)]</label2>
+            <property name="Path">ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.9.Library)],return)</property>
+            <property name="Landscape">$INFO[Window(Home).Property(NextAired.9.Art(landscape))]</property>
+            <property name="Clearart">$INFO[Window(Home).Property(NextAired.9.Art(clearart))]</property>
+            <property name="Logo">$INFO[Window(Home).Property(NextAired.9.Art(clearlogo))]</property>
+            <property name="Banner">$INFO[Window(Home).Property(NextAired.9.Art(banner))]</property>
+            <property name="Poster">$INFO[Window(Home).Property(NextAired.9.Art(poster))]</property>
+            <property name="RunningTime">$INFO[Window(Home).Property(NextAired.9.Runtime)]</property>
+            <property name="LatestTitle">$INFO[Window(Home).Property(NextAired.9.LatestTitle)]</property>
+            <property name="LatestDate">$INFO[Window(Home).Property(NextAired.9.LatestDate)]</property>
+            <property name="Network">$INFO[Window(Home).Property(NextAired.9.Network)]</property>
+            <property name="EpisodeNumber">$INFO[Window(Home).Property(NextAired.9.NextNumber)]</property>
+            <property name="Fanart">$INFO[Window(Home).Property(NextAired.9.Art(fanart))]</property>
+            <property name="NextTitle">$INFO[Window(Home).Property(NextAired.9.NextTitle)]</property>
+            <property name="Status">$INFO[Window(Home).Property(NextAired.9.Status)]</property>
+            <property name="StatusID">$INFO[Window(Home).Property(NextAired.9.StatusID)]</property>
+            <thumb>$INFO[Window(Home).Property(NextAired.9.Art(landscape))]</thumb>
+            <onclick>SetFocus(6014)</onclick>
+            <visible>Substring(Control.GetLabel(4325),nextaired) + !IsEmpty(Window(Home).Property(NextAired.9.Label))</visible>
+        </item>
+        <item>
+            <label>$INFO[Window(Home).Property(NextAired.10.Label)]</label>
+            <label2>$INFO[Window(Home).Property(NextAired.10.NextDate),, @ ]$INFO[Window(Home).Property(NextAired.10.ShortTime)]</label2>
+            <property name="Path">ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.10.Library)],return)</property>
+            <property name="Landscape">$INFO[Window(Home).Property(NextAired.10.Art(landscape))]</property>
+            <property name="Clearart">$INFO[Window(Home).Property(NextAired.10.Art(clearart))]</property>
+            <property name="Logo">$INFO[Window(Home).Property(NextAired.10.Art(clearlogo))]</property>
+            <property name="Banner">$INFO[Window(Home).Property(NextAired.10.Art(banner))]</property>
+            <property name="Poster">$INFO[Window(Home).Property(NextAired.10.Art(poster))]</property>
+            <property name="RunningTime">$INFO[Window(Home).Property(NextAired.10.Runtime)]</property>
+            <property name="LatestTitle">$INFO[Window(Home).Property(NextAired.10.LatestTitle)]</property>
+            <property name="LatestDate">$INFO[Window(Home).Property(NextAired.10.LatestDate)]</property>
+            <property name="Network">$INFO[Window(Home).Property(NextAired.10.Network)]</property>
+            <property name="EpisodeNumber">$INFO[Window(Home).Property(NextAired.10.NextNumber)]</property>
+            <property name="Fanart">$INFO[Window(Home).Property(NextAired.10.Art(fanart))]</property>
+            <property name="NextTitle">$INFO[Window(Home).Property(NextAired.10.NextTitle)]</property>
+            <property name="Status">$INFO[Window(Home).Property(NextAired.10.Status)]</property>
+            <property name="StatusID">$INFO[Window(Home).Property(NextAired.10.StatusID)]</property>
+            <thumb>$INFO[Window(Home).Property(NextAired.10.Art(landscape))]</thumb>
+            <onclick>SetFocus(6014)</onclick>
+            <visible>Substring(Control.GetLabel(4325),nextaired) + !IsEmpty(Window(Home).Property(NextAired.10.Label))</visible>
+        </item>
+        <item>
+            <label>$INFO[Window(Home).Property(NextAired.11.Label)]</label>
+            <label2>$INFO[Window(Home).Property(NextAired.11.NextDate),, @ ]$INFO[Window(Home).Property(NextAired.11.ShortTime)]</label2>
+            <property name="Path">ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.11.Library)],return)</property>
+            <property name="Landscape">$INFO[Window(Home).Property(NextAired.11.Art(landscape))]</property>
+            <property name="Clearart">$INFO[Window(Home).Property(NextAired.11.Art(clearart))]</property>
+            <property name="Logo">$INFO[Window(Home).Property(NextAired.11.Art(clearlogo))]</property>
+            <property name="Banner">$INFO[Window(Home).Property(NextAired.11.Art(banner))]</property>
+            <property name="Poster">$INFO[Window(Home).Property(NextAired.11.Art(poster))]</property>
+            <property name="RunningTime">$INFO[Window(Home).Property(NextAired.11.Runtime)]</property>
+            <property name="LatestTitle">$INFO[Window(Home).Property(NextAired.11.LatestTitle)]</property>
+            <property name="LatestDate">$INFO[Window(Home).Property(NextAired.11.LatestDate)]</property>
+            <property name="Network">$INFO[Window(Home).Property(NextAired.11.Network)]</property>
+            <property name="EpisodeNumber">$INFO[Window(Home).Property(NextAired.11.NextNumber)]</property>
+            <property name="Fanart">$INFO[Window(Home).Property(NextAired.11.Art(fanart))]</property>
+            <property name="NextTitle">$INFO[Window(Home).Property(NextAired.11.NextTitle)]</property>
+            <property name="Status">$INFO[Window(Home).Property(NextAired.11.Status)]</property>
+            <property name="StatusID">$INFO[Window(Home).Property(NextAired.11.StatusID)]</property>
+            <thumb>$INFO[Window(Home).Property(NextAired.11.Art(landscape))]</thumb>
+            <onclick>SetFocus(6014)</onclick>
+            <visible>Substring(Control.GetLabel(4325),nextaired) + !IsEmpty(Window(Home).Property(NextAired.11.Label))</visible>
+        </item>
+        <item>
+            <label>$INFO[Window(Home).Property(NextAired.12.Label)]</label>
+            <label2>$INFO[Window(Home).Property(NextAired.12.NextDate),, @ ]$INFO[Window(Home).Property(NextAired.12.ShortTime)]</label2>
+            <property name="Path">ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.12.Library)],return)</property>
+            <property name="Landscape">$INFO[Window(Home).Property(NextAired.12.Art(landscape))]</property>
+            <property name="Clearart">$INFO[Window(Home).Property(NextAired.12.Art(clearart))]</property>
+            <property name="Logo">$INFO[Window(Home).Property(NextAired.12.Art(clearlogo))]</property>
+            <property name="Banner">$INFO[Window(Home).Property(NextAired.12.Art(banner))]</property>
+            <property name="Poster">$INFO[Window(Home).Property(NextAired.12.Art(poster))]</property>
+            <property name="RunningTime">$INFO[Window(Home).Property(NextAired.12.Runtime)]</property>
+            <property name="LatestTitle">$INFO[Window(Home).Property(NextAired.12.LatestTitle)]</property>
+            <property name="LatestDate">$INFO[Window(Home).Property(NextAired.12.LatestDate)]</property>
+            <property name="Network">$INFO[Window(Home).Property(NextAired.12.Network)]</property>
+            <property name="EpisodeNumber">$INFO[Window(Home).Property(NextAired.12.NextNumber)]</property>
+            <property name="Fanart">$INFO[Window(Home).Property(NextAired.12.Art(fanart))]</property>
+            <property name="NextTitle">$INFO[Window(Home).Property(NextAired.12.NextTitle)]</property>
+            <property name="Status">$INFO[Window(Home).Property(NextAired.12.Status)]</property>
+            <property name="StatusID">$INFO[Window(Home).Property(NextAired.12.StatusID)]</property>
+            <thumb>$INFO[Window(Home).Property(NextAired.12.Art(landscape))]</thumb>
+            <onclick>SetFocus(6014)</onclick>
+            <visible>Substring(Control.GetLabel(4325),nextaired) + !IsEmpty(Window(Home).Property(NextAired.12.Label))</visible>
+        </item>		
+        <item>
+            <label>$INFO[Window(Home).Property(NextAired.13.Label)]</label>
+            <label2>$INFO[Window(Home).Property(NextAired.13.NextDate),, @ ]$INFO[Window(Home).Property(NextAired.13.ShortTime)]</label2>
+            <property name="Path">ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.13.Library)],return)</property>
+            <property name="Landscape">$INFO[Window(Home).Property(NextAired.13.Art(landscape))]</property>
+            <property name="Clearart">$INFO[Window(Home).Property(NextAired.13.Art(clearart))]</property>
+            <property name="Logo">$INFO[Window(Home).Property(NextAired.13.Art(clearlogo))]</property>
+            <property name="Banner">$INFO[Window(Home).Property(NextAired.13.Art(banner))]</property>
+            <property name="Poster">$INFO[Window(Home).Property(NextAired.13.Art(poster))]</property>
+            <property name="RunningTime">$INFO[Window(Home).Property(NextAired.13.Runtime)]</property>
+            <property name="LatestTitle">$INFO[Window(Home).Property(NextAired.13.LatestTitle)]</property>
+            <property name="LatestDate">$INFO[Window(Home).Property(NextAired.13.LatestDate)]</property>
+            <property name="Network">$INFO[Window(Home).Property(NextAired.13.Network)]</property>
+            <property name="EpisodeNumber">$INFO[Window(Home).Property(NextAired.13.NextNumber)]</property>
+            <property name="Fanart">$INFO[Window(Home).Property(NextAired.13.Art(fanart))]</property>
+            <property name="NextTitle">$INFO[Window(Home).Property(NextAired.13.NextTitle)]</property>
+            <property name="Status">$INFO[Window(Home).Property(NextAired.13.Status)]</property>
+            <property name="StatusID">$INFO[Window(Home).Property(NextAired.13.StatusID)]</property>
+            <thumb>$INFO[Window(Home).Property(NextAired.13.Art(landscape))]</thumb>
+            <onclick>SetFocus(6014)</onclick>
+            <visible>Substring(Control.GetLabel(4325),nextaired) + !IsEmpty(Window(Home).Property(NextAired.13.Label))</visible>
+        </item>
+        <item>
+            <label>$INFO[Window(Home).Property(NextAired.14.Label)]</label>
+            <label2>$INFO[Window(Home).Property(NextAired.14.NextDate),, @ ]$INFO[Window(Home).Property(NextAired.14.ShortTime)]</label2>
+            <property name="Path">ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.14.Library)],return)</property>
+            <property name="Landscape">$INFO[Window(Home).Property(NextAired.14.Art(landscape))]</property>
+            <property name="Clearart">$INFO[Window(Home).Property(NextAired.14.Art(clearart))]</property>
+            <property name="Logo">$INFO[Window(Home).Property(NextAired.14.Art(clearlogo))]</property>
+            <property name="Banner">$INFO[Window(Home).Property(NextAired.14.Art(banner))]</property>
+            <property name="Poster">$INFO[Window(Home).Property(NextAired.14.Art(poster))]</property>
+            <property name="RunningTime">$INFO[Window(Home).Property(NextAired.14.Runtime)]</property>
+            <property name="LatestTitle">$INFO[Window(Home).Property(NextAired.14.LatestTitle)]</property>
+            <property name="LatestDate">$INFO[Window(Home).Property(NextAired.14.LatestDate)]</property>
+            <property name="Network">$INFO[Window(Home).Property(NextAired.14.Network)]</property>
+            <property name="EpisodeNumber">$INFO[Window(Home).Property(NextAired.14.NextNumber)]</property>
+            <property name="Fanart">$INFO[Window(Home).Property(NextAired.14.Art(fanart))]</property>
+            <property name="NextTitle">$INFO[Window(Home).Property(NextAired.14.NextTitle)]</property>
+            <property name="Status">$INFO[Window(Home).Property(NextAired.14.Status)]</property>
+            <property name="StatusID">$INFO[Window(Home).Property(NextAired.14.StatusID)]</property>
+            <thumb>$INFO[Window(Home).Property(NextAired.14.Art(landscape))]</thumb>
+            <onclick>SetFocus(6014)</onclick>
+            <visible>Substring(Control.GetLabel(4325),nextaired) + !IsEmpty(Window(Home).Property(NextAired.14.Label))</visible>
+        </item>	
+        <item>
+            <label>$INFO[Window(Home).Property(NextAired.15.Label)]</label>
+            <label2>$INFO[Window(Home).Property(NextAired.15.NextDate),, @ ]$INFO[Window(Home).Property(NextAired.15.ShortTime)]</label2>
+            <property name="Path">ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.15.Library)],return)</property>
+            <property name="Landscape">$INFO[Window(Home).Property(NextAired.15.Art(landscape))]</property>
+            <property name="Clearart">$INFO[Window(Home).Property(NextAired.15.Art(clearart))]</property>
+            <property name="Logo">$INFO[Window(Home).Property(NextAired.15.Art(clearlogo))]</property>
+            <property name="Banner">$INFO[Window(Home).Property(NextAired.15.Art(banner))]</property>
+            <property name="Poster">$INFO[Window(Home).Property(NextAired.15.Art(poster))]</property>
+            <property name="RunningTime">$INFO[Window(Home).Property(NextAired.15.Runtime)]</property>
+            <property name="LatestTitle">$INFO[Window(Home).Property(NextAired.15.LatestTitle)]</property>
+            <property name="LatestDate">$INFO[Window(Home).Property(NextAired.15.LatestDate)]</property>
+            <property name="Network">$INFO[Window(Home).Property(NextAired.15.Network)]</property>
+            <property name="EpisodeNumber">$INFO[Window(Home).Property(NextAired.15.NextNumber)]</property>
+            <property name="Fanart">$INFO[Window(Home).Property(NextAired.15.Art(fanart))]</property>
+            <property name="NextTitle">$INFO[Window(Home).Property(NextAired.15.NextTitle)]</property>
+            <property name="Status">$INFO[Window(Home).Property(NextAired.15.Status)]</property>
+            <property name="StatusID">$INFO[Window(Home).Property(NextAired.15.StatusID)]</property>
+            <thumb>$INFO[Window(Home).Property(NextAired.15.Art(landscape))]</thumb>
+            <onclick>SetFocus(6014)</onclick>
+            <visible>Substring(Control.GetLabel(4325),nextaired) + !IsEmpty(Window(Home).Property(NextAired.15.Label))</visible>
+        </item>											
     </include>
     <include name="DailyBabesContent2">
 <item>
