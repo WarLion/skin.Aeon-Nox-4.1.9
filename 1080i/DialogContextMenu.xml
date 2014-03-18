@@ -51,6 +51,22 @@
                 <visible>System.HasAddon(script.libraryeditor) + !IsEmpty(ListItem.DBID) + !SubString(ListItem.Path,videodb://movies/sets)</visible>
                 <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs)</visible>
             </control>
+            <control type="button" id="2035">
+                <width>462</width>
+                <height>58</height>
+                <textoffsety>12</textoffsety>
+                <align>center</align>
+                <texturefocus>dialogs/context_highlight.png</texturefocus>
+                <texturenofocus>dialogs/context_nofocus.png</texturenofocus>
+                <label>$LOCALIZE[24069] $LOCALIZE[4]</label>
+                <font>Font_Reg30_2</font>
+                <textcolor>context</textcolor>
+                <focusedcolor>white2</focusedcolor>
+                <colordiffuse>$VAR[SpotColorVar2]</colordiffuse>
+                <onclick>RunScript(script.tv.show.next.aired,updateshow=$INFO[ListItem.Label])</onclick>
+				<visible>System.HasAddon(script.tv.show.next.aired) + Container.Content(tvshows)</visible>
+				<autoscroll>true</autoscroll>
+            </control>			
             <!--            <control type="button" id="2067">
                 <width>462</width>
                 <height>58</height>
@@ -80,7 +96,7 @@
                 <focusedcolor>white2</focusedcolor>
                 <colordiffuse>$VAR[SpotColorVar2]</colordiffuse>
                 <visible>Container.Content(artists) | Container.Content(actors) | Container.Content(directors)</visible>
-                <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$ESCINFO[ListItem.Label],return)</onclick>
+                <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[ListItem.Label],return)</onclick>
             </control>
             <control type="button" id="2009">
                 <width>462</width>
@@ -95,7 +111,7 @@
                 <focusedcolor>white2</focusedcolor>
                 <colordiffuse>$VAR[SpotColorVar2]</colordiffuse>
                 <visible>Container.Content(albums) | Container.Content(songs)</visible>
-                <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$ESCINFO[ListItem.Artist] $INFO[ListItem.Label],return)</onclick>
+                <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[ListItem.Artist] $INFO[ListItem.Label],return)</onclick>
             </control>
             <control type="button" id="2011">
                 <width>462</width>
@@ -170,7 +186,7 @@
                 <visible>Window.IsActive(addonbrowser) + [Substring(ListItem.Property(Addon.ID),script.,left) | Substring(ListItem.Property(Addon.ID),plugin.,left)]</visible>
                 <onclick condition="Substring(ListItem.Property(Addon.ID),script.,left)">Runscript($INFO[ListItem.Property(Addon.ID)])</onclick>
                 <onclick condition="Substring(ListItem.Property(Addon.ID),plugin.,left)">RunAddon($INFO[ListItem.Property(Addon.ID)])</onclick>
-            </control>
+            </control>			
         </control>
         <control type="image" id="997">
             <top>-39</top>

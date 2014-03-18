@@ -1626,6 +1626,12 @@ ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=
                         <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[ListItem.Label] Trailer,return)</onclick>
                         <visible>Container.Content(movies) + ![substring(Container.FolderPath,plugin://) + substring(Container.FolderPath,trailer)]</visible>
                     </control>
+                    <control type="button" id="550">
+                        <label>$LOCALIZE[24069] $LOCALIZE[4]</label>
+                        <include>DialogVideoInfoButton</include>
+                        <onclick>RunScript(script.tv.show.next.aired,updateshow=$INFO[ListItem.Label])</onclick>
+                        <visible>Container.Content(tvshows)</visible>
+                    </control>					
                     <control type="grouplist" id="6100">
                         <width>254.5</width>
                         <orientation>vertical</orientation>
