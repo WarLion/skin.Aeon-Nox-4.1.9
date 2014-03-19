@@ -103,7 +103,7 @@
 				<width>1220</width>
 				<height>800</height>
 				<onright>60</onright>
-<!--				<onleft>9000</onleft>-->
+				<onleft>9000</onleft>
 				<onup>51</onup>
 				<ondown>51</ondown>
 				<viewtype label="537">list</viewtype>
