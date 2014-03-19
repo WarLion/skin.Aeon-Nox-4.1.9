@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-	<defaultcontrol always="true">51</defaultcontrol>
+	<defaultcontrol>51</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <controls>
         <control type="group">
