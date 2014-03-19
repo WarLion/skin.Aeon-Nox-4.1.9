@@ -132,7 +132,7 @@
 					<control type="label">
 						<left>1160</left>
 						<top>20</top>
-						<width>100</width>
+						<width>200</width>
 						<height>40</height>
 						<font>font15</font>
 						<textcolor>grey2</textcolor>
@@ -190,7 +190,7 @@
 					<control type="label">
 						<left>1160</left>
 						<top>20</top>
-						<width>100</width>
+						<width>200</width>
 						<height>40</height>
 						<font>font15</font>
 						<textcolor>white</textcolor>
