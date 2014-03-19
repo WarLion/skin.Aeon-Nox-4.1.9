@@ -264,21 +264,6 @@
                     <texture>wall/wall_bg.png</texture>
                     <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
                 </control>
-         <!--       <control type="image">
-                    <left>112</left>
-                    <top>82</top>
-                    <width>1695</width>
-                    <height>1012</height>
-                    <colordiffuse>white</colordiffuse>
-                    <texture>views/grid-ve.png</texture>
-                </control>
-                <control type="image">
-                    <left>112</left>
-                    <top>108</top>
-                    <width>1695</width>
-                    <height>1012</height>
-                    <texture>wall/wall_bg_reflection.png</texture>
-                </control>			-->
              <control type="list" id="51">
 				<left>122</left>
 				<top>138</top>
