@@ -102,8 +102,8 @@
             <visible>[Control.IsVisible(8822) + !Container.OnNext + !Container.OnPrevious + Stringcompare(Control.GetLabel(8822),empty.png)] | !Control.IsVisible(8822) | Container.Content(seasons) | Container.Content(albums)</visible>
             <left>410</left>
             <control type="label">
-                <top>1050</top>
-                <width>1100</width>
+                <top>1010</top>
+                <width>1090</width>
                 <align>center</align>
                 <label>$VAR[SecondLabelVar]</label>
                 <font>Font_Reg28_Caps</font>
@@ -111,9 +111,11 @@
                 <textcolor>white</textcolor>
                 <visible>![Control.HasFocus(61) | Control.IsVisible(4050)]</visible>
                 <include>Animation_VisibleChange400</include>
+                <scroll>true</scroll>
+                <scrollspeed>30</scrollspeed>				
             </control>
             <control type="label">
-                <top>952</top>
+                <top>932</top>
                 <width>1100</width>
                 <align>center</align>
                 <label>$VAR[FirstLabelVar]</label>
