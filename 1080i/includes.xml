@@ -1803,13 +1803,13 @@
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus>special://skin/extras/BigIcons/Speaker.png</texturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                 </control>
                 <control type="button">
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus>special://skin/extras/BigIcons/Camcorder.png</texturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                 </control>
             </control>
             <control type="grouplist">
@@ -1829,21 +1829,21 @@
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus>special://skin/extras/BigIcons/Arrowup.png</texturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                     <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
                 </control>
                 <control type="button">
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus>special://skin/extras/BigIcons/Arrowdown.png</texturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                     <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
                 </control>
                 <control type="button">
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus>special://skin/extras/BigIcons/ButtonFRW.png</texturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                     <enable>Player.SeekEnabled</enable>
                     <animation effect="fade" start="100" end="50" time="80" condition="!Player.SeekEnabled">Conditional</animation>
                 </control>
@@ -1852,20 +1852,20 @@
                     <height>100</height>
                     <texturenofocus>special://skin/extras/BigIcons/ButtonPause.png</texturenofocus>
                     <alttexturenofocus>special://skin/extras/BigIcons/ButtonPlay.png</alttexturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                     <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
                 </control>
                 <control type="button">
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus>special://skin/extras/BigIcons/ButtonStop.png</texturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                 </control>
                 <control type="button">
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus>special://skin/extras/BigIcons/ButtonFFW.png</texturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                     <enable>Player.SeekEnabled</enable>
                     <animation effect="fade" start="100" end="50" time="80" condition="!Player.SeekEnabled">Conditional</animation>
                 </control>
@@ -1874,7 +1874,7 @@
                     <height>100</height>
                     <texturenofocus>special://skin/extras/BigIcons/ButtonRecord.png</texturenofocus>
                     <alttexturenofocus>special://skin/extras/BigIcons/ButtonRecord.png</alttexturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                     <usealttexture>Player.Recording</usealttexture>
                     <enable>Player.CanRecord</enable>
                     <animation effect="fade" start="100" end="50" time="80" condition="!Player.CanRecord">Conditional</animation>
@@ -1883,7 +1883,7 @@
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus>special://skin/extras/BigIcons/ButtonEPG.png</texturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                 </control>
             </control>
             <control type="grouplist">
@@ -1904,19 +1904,19 @@
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus>special://skin/extras/BigIcons/ButtonTxt.png</texturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                 </control>
                 <control type="button">
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus>special://skin/extras/BigIcons/ButtonPlaylist.png</texturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                 </control>
                 <control type="button">
                     <width>100</width>
                     <height>100</height>
                     <texturenofocus>special://skin/extras/BigIcons/Gears.png</texturenofocus>
-                    <colordiffuse>white</colordiffuse>
+                    <colordiffuse>gray</colordiffuse>
                 </control>
             </control>
             <control type="group" id="703">
@@ -1939,7 +1939,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>13396</label>
                         <font>-</font>
-                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+                        <colordiffuse>white</colordiffuse>
                         <onclick>ActivateWindow(OSDAudioSettings)</onclick>
                     </control>
                     <control type="button" id="70016">
@@ -1949,7 +1949,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>13395</label>
                         <font>-</font>
-                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+                        <colordiffuse>white</colordiffuse>
                         <onclick>ActivateWindow(OSDVideoSettings)</onclick>
                     </control>
                 </control>
@@ -1973,7 +1973,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>31105</label>
                         <font>-</font>
-                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+                        <colordiffuse>white</colordiffuse>
                         <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
                         <onclick>PlayerControl(Next)</onclick>
                     </control>
@@ -1984,7 +1984,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>31106</label>
                         <font>-</font>
-                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+                        <colordiffuse>white</colordiffuse>
                         <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
                         <onclick>PlayerControl(Previous)</onclick>
                     </control>
@@ -1995,7 +1995,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>31352</label>
                         <font>-</font>
-                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+                        <colordiffuse>white</colordiffuse>
                         <enable>Player.SeekEnabled</enable>
                         <onclick>PlayerControl(Rewind)</onclick>
                     </control>
@@ -2009,7 +2009,7 @@
                         <label>31351</label>
                         <altlabel>208</altlabel>
                         <font>-</font>
-                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+                        <colordiffuse>white</colordiffuse>
                         <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
                         <onclick>PlayerControl(Play)</onclick>
                     </control>
@@ -2020,7 +2020,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>31352</label>
                         <font>-</font>
-                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+                        <colordiffuse>white</colordiffuse>
                         <onclick>PlayerControl(Stop)</onclick>
                     </control>
                     <control type="button" id="70023">
@@ -2030,7 +2030,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>31352</label>
                         <font>-</font>
-                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+                        <colordiffuse>white</colordiffuse>
                         <enable>Player.SeekEnabled</enable>
                         <onclick>PlayerControl(Forward)</onclick>
                     </control>
@@ -2044,7 +2044,7 @@
                         <label>31110</label>
                         <altlabel>31111</altlabel>
                         <font>-</font>
-                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+                        <colordiffuse>white</colordiffuse>
                         <usealttexture>Player.Recording</usealttexture>
                         <onclick>PlayerControl(Record)</onclick>
                         <enable>Player.CanRecord</enable>
@@ -2056,7 +2056,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>31108</label>
                         <font>-</font>
-                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+                        <colordiffuse>white</colordiffuse>
                         <onclick>ActivateWindow(PVROSDGuide)</onclick>
                         <onclick>Dialog.Close(VideoOSD)</onclick>
                     </control>
@@ -2082,7 +2082,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>31109</label>
                         <font>-</font>
-                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+                        <colordiffuse>white</colordiffuse>
                         <onclick>ActivateWindow(Teletext)</onclick>
                         <onclick>Dialog.Close(VideoOSD)</onclick>
                     </control>
@@ -2093,7 +2093,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>31107</label>
                         <font>-</font>
-                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+                        <colordiffuse>white</colordiffuse>
                         <onclick>ActivateWindow(PVROSDChannels)</onclick>
                         <onclick>Dialog.Close(VideoOSD)</onclick>
                     </control>
@@ -2104,7 +2104,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>31026</label>
                         <font>-</font>
-                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+                        <colordiffuse>white</colordiffuse>
                         <onclick>ActivateWindow(1118)</onclick>
                     </control>
                 </control>
@@ -2802,5 +2802,13 @@
 	<include name="autoratote_extendedinfo_Playlist">
 		<onunfocus>CancelAlarm(MusicInfo5PanelsPlaylist,true)</onunfocus>
  		<onfocus>AlarmClock(MusicInfo5PanelsArtists,SetFocus(5012),00:10,silent)</onfocus>
-	</include>		
+	</include>	
+	<include name="BigFontPlot">
+		<top>209</top>
+		<width>652</width>
+		<height>220</height>
+		<label>$VAR[FanartPanelPlotVar]</label>
+		<textcolor>white6</textcolor>
+		<autoscroll delay="8000" time="AutoScrollTime" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>	
+	</include>			
 </includes>
