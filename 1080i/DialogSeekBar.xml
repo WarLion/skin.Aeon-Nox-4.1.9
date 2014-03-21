@@ -127,7 +127,7 @@
                     <visible>!Skin.HasSetting(PreferRemaining)</visible>
                 </control>
                 <control type="label">
-                    <left>1290</left>
+                    <left>1275</left>
                     <top>45</top>
                     <width>300</width>
                     <height>42</height>
@@ -268,7 +268,7 @@
                         <visible>!Skin.HasSetting(PreferRemaining)</visible>
                     </control>
                     <control type="label">
-                        <left>1290</left>
+                        <left>1275</left>
                         <top>45</top>
                         <width>300</width>
                         <height>42</height>
