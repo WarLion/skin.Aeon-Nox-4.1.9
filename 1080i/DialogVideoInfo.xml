@@ -1583,7 +1583,7 @@ ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=
 								<onright>11</onright>
 								<onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
 								<animation effect="zoom" start="100,0" end="100,100" time="300" easing="out" tween="cubic">VisibleChange</animation>
-								<visible>System.HasAddon(script.videoextras) + !IsEmpty(Window.Property(flag)) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(TVShows)]</visible>
+								<visible>System.HasAddon(script.videoextras) + !IsEmpty(Window.Property(flag)) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(TVShows) | Container.Content(musicvideos)]</visible>
 								<visible>ControlGroup(20).HasFocus</visible>
 							</control>
 							<control type="button" id="70023">
@@ -1609,7 +1609,7 @@ ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=
 						<include>DialogVideoInfoButton</include>
 						<label>Video $LOCALIZE[31020]</label>
 						<onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
-						<visible>System.HasAddon(script.videoextras) + !IsEmpty(Window.Property(flag)) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(TVShows)]</visible>
+						<visible>System.HasAddon(script.videoextras) + !IsEmpty(Window.Property(flag)) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(TVShows) | Container.Content(musicvideos)]</visible>
 						<visible>!Skin.HasSetting(Extra.Disable)</visible>
 					</control>						
                     <control type="button" id="11">
