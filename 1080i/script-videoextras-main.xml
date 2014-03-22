@@ -105,24 +105,12 @@
                         <visible>!Skin.HasSetting(hideoptions) + Skin.HasSetting(DisableGlowbar)</visible>
                     </control>
                     <control type="radiobutton" id="1685">
-                        <label>Enable Overlay on fanart</label>
+                        <label>Overlay on fanart</label>
                         <include>Objects_MediaMenuButtonAlt</include>
                         <onclick>Skin.ToggleSetting(OverlaySetting)</onclick>
                         <selected>Skin.HasSetting(OverlaySetting)</selected>
                         <visible>!Skin.HasSetting(hideoptions)</visible>
                     </control>					
-                    <control type="button" id="1604">
-                        <label>$LOCALIZE[31185]</label>
-                        <font>Font_Bold26_Caps</font>
-                        <disabledcolor>$VAR[FontColorVar]</disabledcolor>
-                        <include>Objects_MediaMenuButtonAlt</include>
-                        <enable>no</enable>
-                    </control>
-                    <control type="button" id="1603">
-                        <label>$LOCALIZE[31176]</label>
-                        <include>Objects_MediaMenuButtonAlt</include>
-                        <enable>no</enable>
-                    </control>
                     <control type="button" id="1664">
                         <label>31298</label>
                         <include>Objects_MediaMenuButtonAlt</include>
