@@ -714,7 +714,7 @@
                         <texture background="true" fallback="empty.png">$INFO[ListItem.Art(clearlogo)]</texture>
                         <animation effect="fade" delay="240" time="240" reversible="false">Hidden</animation>
                         <animation effect="fade" delay="80" end="100" time="240" condition="!Stringcompare(Control.GetLabel(8827),empty.png)">Conditional</animation>
-                        <visible>[Skin.HasSetting(movielogosfloor) + Container.Content(movies)] | [Skin.HasSetting(tvshowlogosfloor) + Container.Content(tvshows)]</visible>
+                        <visible>[Skin.HasSetting(movielogosfloor) + Container.Content(movies) | Container.Content(sets)] | [Skin.HasSetting(tvshowlogosfloor) + Container.Content(tvshows)]</visible>
                     </control>
                     <control type="image" id="8827">
                         <left>1290</left>
