@@ -53,7 +53,6 @@
             <include>Neon_Floor</include>
         </control>
        <include>VideoExtras_Layout1</include>
-     <!--  <include condition="!Skin.HasSetting(ClassicVideoExtra)">VideoExtras_Layout2</include>-->
         <control type="image">
             <top>1012</top>
             <width>1920</width>
@@ -119,15 +118,6 @@
                         <include>Objects_MediaMenuButtonAlt</include>
                         <enable>no</enable>
                     </control>
-             <!--      <control type="button" id="1637">
-                        <label>$LOCALIZE[31272]:</label>
-                        <label2>[COLOR $VAR[FontColorVar]]$VAR[VideoExtraLayoutVar][/COLOR]</label2>
-                        <include>Objects_MediaMenuButtonAlt</include>
-                        <onclick>Skin.ToggleSetting(ClassicVideoExtra)</onclick>
-                        <onclick>SetProperty(activewindow,vextra,home)</onclick>
-                        <onclick>ActivateWindow(1141)</onclick>
-                        <onclick>RunAddon(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
-                    </control>-->
                     <control type="button" id="1603">
                         <label>$LOCALIZE[31176]</label>
                         <include>Objects_MediaMenuButtonAlt</include>

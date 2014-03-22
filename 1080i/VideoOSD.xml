@@ -26,11 +26,12 @@
                 <font>Font_Reg32</font>
                 <textcolor>grey</textcolor>
                 <animation effect="slide" end="-40,-4" time="0" tween="quadratic" condition="ControlGroup(201).HasFocus | VideoPlayer.Content(LiveTV)">Conditional</animation>
+				<animation effect="slide" end="-90,-4" time="0" tween="quadratic" condition="ControlGroup(703).HasFocus | VideoPlayer.Content(LiveTV)">Conditional</animation>
                 <wrapmultiline>true</wrapmultiline>
-                <visible>ControlGroup(650).HasFocus | ControlGroup(201).HasFocus</visible>
+                <visible>ControlGroup(650).HasFocus | ControlGroup(201).HasFocus | ControlGroup(703).HasFocus</visible>
             </control>
             <control type="label">
-                <left>670r</left>
+                <left>690r</left>
                 <width>200</width>
                 <height>125</height>
                 <align>right</align>

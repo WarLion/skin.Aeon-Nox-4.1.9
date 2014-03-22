@@ -1786,7 +1786,6 @@
     <include name="LiveTVVideoOSD">
         <control type="group">
             <visible>!Skin.HasSetting(ClassicOSD)</visible>
-            <animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
             <control type="grouplist">
                 <left>50</left>
                 <top>11</top>
@@ -1799,6 +1798,7 @@
                 <onright>70004</onright>
                 <onup>-</onup>
                 <ondown>-</ondown>
+          		<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>				
                 <control type="button">
                     <width>100</width>
                     <height>100</height>
@@ -1825,6 +1825,7 @@
                 <onright>70011</onright>
                 <onup>-</onup>
                 <ondown>-</ondown>
+				<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
                 <control type="button">
                     <width>100</width>
                     <height>100</height>
@@ -1899,6 +1900,7 @@
                 <onright>70001</onright>
                 <onup>-</onup>
                 <ondown>-</ondown>
+				<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
                 <animation effect="slide" end="412" time="160" condition="Skin.HasSetting(RemoveVideoPlayerControls)">Conditional</animation>
                 <control type="button">
                     <width>100</width>
@@ -1939,7 +1941,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>13396</label>
                         <font>-</font>
-                        <colordiffuse>white</colordiffuse>
+                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         <onclick>ActivateWindow(OSDAudioSettings)</onclick>
                     </control>
                     <control type="button" id="70016">
@@ -1949,7 +1951,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>13395</label>
                         <font>-</font>
-                        <colordiffuse>white</colordiffuse>
+                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         <onclick>ActivateWindow(OSDVideoSettings)</onclick>
                     </control>
                 </control>
@@ -1973,7 +1975,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>31105</label>
                         <font>-</font>
-                        <colordiffuse>white</colordiffuse>
+                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
                         <onclick>PlayerControl(Next)</onclick>
                     </control>
@@ -1984,7 +1986,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>31106</label>
                         <font>-</font>
-                        <colordiffuse>white</colordiffuse>
+                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
                         <onclick>PlayerControl(Previous)</onclick>
                     </control>
@@ -1995,7 +1997,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>31352</label>
                         <font>-</font>
-                        <colordiffuse>white</colordiffuse>
+                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         <enable>Player.SeekEnabled</enable>
                         <onclick>PlayerControl(Rewind)</onclick>
                     </control>
@@ -2009,7 +2011,7 @@
                         <label>31351</label>
                         <altlabel>208</altlabel>
                         <font>-</font>
-                        <colordiffuse>white</colordiffuse>
+                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
                         <onclick>PlayerControl(Play)</onclick>
                     </control>
@@ -2020,7 +2022,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>31352</label>
                         <font>-</font>
-                        <colordiffuse>white</colordiffuse>
+                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         <onclick>PlayerControl(Stop)</onclick>
                     </control>
                     <control type="button" id="70023">
@@ -2030,7 +2032,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>31352</label>
                         <font>-</font>
-                        <colordiffuse>white</colordiffuse>
+                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         <enable>Player.SeekEnabled</enable>
                         <onclick>PlayerControl(Forward)</onclick>
                     </control>
@@ -2044,7 +2046,7 @@
                         <label>31110</label>
                         <altlabel>31111</altlabel>
                         <font>-</font>
-                        <colordiffuse>white</colordiffuse>
+                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         <usealttexture>Player.Recording</usealttexture>
                         <onclick>PlayerControl(Record)</onclick>
                         <enable>Player.CanRecord</enable>
@@ -2056,7 +2058,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>31108</label>
                         <font>-</font>
-                        <colordiffuse>white</colordiffuse>
+                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         <onclick>ActivateWindow(PVROSDGuide)</onclick>
                         <onclick>Dialog.Close(VideoOSD)</onclick>
                     </control>
@@ -2082,7 +2084,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>31109</label>
                         <font>-</font>
-                        <colordiffuse>white</colordiffuse>
+                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         <onclick>ActivateWindow(Teletext)</onclick>
                         <onclick>Dialog.Close(VideoOSD)</onclick>
                     </control>
@@ -2093,7 +2095,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>31107</label>
                         <font>-</font>
-                        <colordiffuse>white</colordiffuse>
+                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         <onclick>ActivateWindow(PVROSDChannels)</onclick>
                         <onclick>Dialog.Close(VideoOSD)</onclick>
                     </control>
@@ -2104,7 +2106,7 @@
                         <texturenofocus>-</texturenofocus>
                         <label>31026</label>
                         <font>-</font>
-                        <colordiffuse>white</colordiffuse>
+                        <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         <onclick>ActivateWindow(1118)</onclick>
                     </control>
                 </control>
@@ -2309,11 +2311,12 @@
                 </control>
             </control>
             <control type="grouplist">
-                <left>480</left>
+                <left>450</left>
                 <top>11</top>
                 <width>960</width>
                 <height>135</height>
                 <align>center</align>
+				<itemgap>-7</itemgap>
                 <visible>!Skin.HasSetting(RemoveVideoPlayerControls)</visible>
                 <scrolltime tween="sine">200</scrolltime>
                 <orientation>horizontal</orientation>
@@ -2443,11 +2446,12 @@
                 </control>
             </control>
             <control type="grouplist" id="651">
-                <left>480</left>
+                <left>450</left>
                 <top>11</top>
                 <width>960</width>
                 <height>135</height>
                 <align>center</align>
+				<itemgap>-7</itemgap>
                 <visible>!Skin.HasSetting(RemoveVideoPlayerControls)</visible>
                 <scrolltime tween="sine">200</scrolltime>
                 <orientation>horizontal</orientation>

@@ -1549,7 +1549,7 @@ ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=
 						<include>DialogVideoInfoButton</include>
 						<label>$LOCALIZE[208] $LOCALIZE[15111]</label>
 						<onclick>PlayMedia($INFO[ListItem.FileNameAndPath]\theme.mp3)</onclick>
-						<visible>Container.Content(tvshows)</visible>
+						<visible>Container.Content(tvshows) + System.HasAddon(script.tvtunes)</visible>
 					</control>						
                     <control type="button" id="9">
                         <label>$LOCALIZE[13404]</label>
@@ -1697,7 +1697,7 @@ ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=
 						<control type="button" id="23">
 							<label>$LOCALIZE[31365]</label>
 							<include>DialogVideoInfoButtonSolid</include>
-							<onclick>RunScript(script.tvtunes,mode=solo&amp;tvpath=$ESCINFO[ListItem.FilenameAndPath]&amp;t vname=$INFO[ListItem.TVShowTitle])</onclick>
+							<onclick>RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;t vname=$INFO[ListItem.TVShowTitle])</onclick>
 							<visible>ControlGroup(6000).HasFocus</visible>
 							<visible>Container.Content(tvshows) + system.hasaddon(script.tvtunes)</visible>	
 						</control>								
@@ -1712,7 +1712,7 @@ ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=
 						<control type="button" id="25">
 							<label>$LOCALIZE[31365]</label>
 							<include>DialogVideoInfoButtonSolid</include>
-							<onclick>RunScript(script.tvtunes,mode=solo&amp;tvpath=$ESCINFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
+							<onclick>RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
 							<animation effect="zoom" start="100,0" end="100,100" time="300" easing="out" tween="cubic">VisibleChange</animation>
 							<visible>ControlGroup(6000).HasFocus</visible>
 							<visible>Container.Content(tvshows) + system.hasaddon(script.tvtunes) + Skin.HasSetting(TVTunes.Enabled) + !Skin.HasSetting(Extra.Disable)</visible>
