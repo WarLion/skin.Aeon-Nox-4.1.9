@@ -1995,7 +1995,7 @@
                         <height>100</height>
                         <texturefocus>special://skin/extras/BigIcons/ButtonFRW.png</texturefocus>
                         <texturenofocus>-</texturenofocus>
-                        <label>31352</label>
+                        <label>31354</label>
                         <font>-</font>
                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         <enable>Player.SeekEnabled</enable>
@@ -2030,7 +2030,7 @@
                         <height>100</height>
                         <texturefocus>special://skin/extras/BigIcons/ButtonFFW.png</texturefocus>
                         <texturenofocus>-</texturenofocus>
-                        <label>31352</label>
+                        <label>31353</label>
                         <font>-</font>
                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         <enable>Player.SeekEnabled</enable>
