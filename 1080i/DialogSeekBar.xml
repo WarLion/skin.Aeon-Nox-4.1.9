@@ -84,7 +84,7 @@
                     <height>87</height>
                     <texture>osd/osd_progress_bar_back.png</texture>
                 </control>
-                <control type="progress" id="20">
+                <control type="progress">
                     <left>645</left>
                     <top>57</top>
                     <width>630</width>
@@ -95,7 +95,7 @@
                     <righttexture>osd/seek/progresscache_right.png</righttexture>
                     <info>Player.ProgressCache</info>
                 </control>
-                <control type="progress" id="20">
+                <control type="progress" id="23">
                     <left>645</left>
                     <top>57</top>
                     <width>630</width>
@@ -105,7 +105,7 @@
                     <midtexture>osd/seek/progress_mid.png</midtexture>
                     <righttexture>osd/seek/progress_right.png</righttexture>
                     <info>Player.Progress</info>
-                </control>
+                </control>			
                 <control type="label">
                     <left>340</left>
                     <top>45</top>
@@ -225,7 +225,7 @@
                         <height>87</height>
                         <texture>osd/osd_progress_bar_back.png</texture>
                     </control>
-                    <control type="progress" id="20">
+                    <control type="progress">
                         <left>645</left>
                         <top>57</top>
                         <width>630</width>
@@ -236,7 +236,7 @@
                         <righttexture>osd/seek/progresscache_right.png</righttexture>
                         <info>Player.ProgressCache</info>
                     </control>
-                    <control type="progress" id="20">
+                    <control type="progress" id="23">
                         <left>645</left>
                         <top>57</top>
                         <width>630</width>
@@ -535,7 +535,10 @@
                     <effect type="slide" time="400" end="0,135" easing="in" tween="cubic" />
                 </animation>
                 <include>FullScreenInfoBar</include>
-                <control type="image">
+				<control type="group">
+				<animation effect="slide" end="-1800,0" condition="VideoPlayer.Content(files)">Conditional</animation>
+				<visible>Skin.HasSetting(AudioSubFlag)</visible>
+			    <control type="image">
                     <left>1820</left>
                     <top>1000</top>
 					<width>30</width>
@@ -556,6 +559,7 @@
 					<colordiffuse>white2</colordiffuse>
 					<texture fallback="">special://skin/extras/BigIcons/Speaker.png</texture>
 					<visible>!IsEmpty(VideoPlayer.AudioLanguage)</visible>
+					<visible>!Substring(VideoPlayer.AudioLanguage,und)</visible>
                 </control>				
                 <control type="image">
                     <left>1860</left>
@@ -577,7 +581,8 @@
 					<colordiffuse>white2</colordiffuse>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<texture fallback="">$INFO[VideoPlayer.SubtitlesLanguage,flags/language/,.png]</texture>
-                </control>									
+                </control>	
+			</control>	
             </control>		
         </control>
         <include>AlaskaPausedLabel</include>
