@@ -71,7 +71,7 @@
                             <fadetime>400</fadetime>
                             <visible>Skin.HasSetting(lowlistclearart)</visible>
                             <include>Animation_VisibleChange400</include>
-                            <visible>Container.Content(movies) | Container.Content(tvshows)</visible>
+                            <visible>Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows)</visible>
                         </control>
                         <include>Neon_LowList</include>
                         <control type="image">
@@ -83,7 +83,7 @@
                             <texture background="true">$VAR[LogoVar]</texture>
                             <fadetime>400</fadetime>
                             <include>Animation_VisibleChange400</include>
-                            <visible>!Skin.HasSetting(lowlistclearart) + [Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies)]</visible>
+                            <visible>!Skin.HasSetting(lowlistclearart) + [Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(movies) | Container.Content(sets)]</visible>
                         </control>
                     </control>
                     <control type="image">

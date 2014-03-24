@@ -52,10 +52,7 @@
             <!-- no info-->
             <include>HiddenObject</include>
             <visible>!Container.Content()</visible>
-            <!--             <visible>!SubString(ListItem.Path,videodb://movies/sets/,left)</visible>
- -->
             <visible>!SubString(ListItem.Path,videodb://movies/sets/,left) | skin.hassetting(backendmode)</visible>
-            <!--             <visible>!SubString(Container.FolderPath,library://,left)</visible> -->
             <visible>!Stringcompare(ListItem.Label,..)</visible>
             <visible>!Container.Content(years)</visible>
             <visible>!Container.Content(genres)</visible>
@@ -282,7 +279,7 @@
                     <fadetime>200</fadetime>
                     <animation effect="fade" delay="240" time="240" reversible="false">Hidden</animation>
                     <visible>Control.IsVisible(57) | Control.IsVisible(508) | [Control.IsVisible(500) + !StringCompare(Container.FolderName,youtube)] | Control.IsVisible(501)</visible>
-                    <visible>[[Skin.HasSetting(movielogosfloor) + Container.Content(movies)] | [Skin.HasSetting(tvshowlogosfloor) + Container.Content(tvshows)]]</visible>
+                    <visible>[[Skin.HasSetting(movielogosfloor) + Container.Content(movies)] | [Skin.HasSetting(tvshowlogosfloor) + Container.Content(tvshows)] | [Skin.HasSetting(movielogosfloor) + Container.Content(sets)]]</visible>
                 </control>
             </control>
             <include>Furniture_DarkGradient</include>

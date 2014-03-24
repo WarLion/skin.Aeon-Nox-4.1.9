@@ -135,7 +135,7 @@
                     <include>Objects_MediaMenuButtonAlt2</include>
                     <onclick>Skin.ToggleSetting(lowlistclearart)</onclick>
                     <selected>Skin.HasSetting(lowlistclearart)</selected>
-                    <visible>Container.Content(movies) | Container.Content(tvshows)</visible>
+                    <visible>Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows)</visible>
                     <visible>Stringcompare(Window(home).Property(actualViewtype),LowList)</visible>
                 </control>
                 <control type="radiobutton" id="1632">
@@ -321,7 +321,7 @@
                     <include>Objects_MediaMenuButtonAlt2</include>
                     <onclick>Skin.ToggleSetting(movielogosfloor)</onclick>
                     <selected>Skin.HasSetting(movielogosfloor)</selected>
-                    <visible>[[Stringcompare(Window(home).Property(actualViewtype),Shift) | Substring(Window(home).Property(actualViewtype),Wall) | Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies) | Stringcompare(Window(home).Property(actualViewtype),Banners)] + Container.Content(movies)]</visible>
+                    <visible>[[Stringcompare(Window(home).Property(actualViewtype),Shift) | Substring(Window(home).Property(actualViewtype),Wall) | Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies) | Stringcompare(Window(home).Property(actualViewtype),Banners)] + [Container.Content(movies) | Container.Content(sets)]]</visible>
                 </control>
                 <control type="radiobutton" id="16441">
                     <label>$LOCALIZE[31631]</label>
