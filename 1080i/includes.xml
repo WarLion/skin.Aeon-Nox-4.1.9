@@ -614,7 +614,7 @@
                 <label>$INFO[Player.CacheLevel, ,%]</label>
                 <font>Font_BigPause</font>
 				<textcolor>99ffffff</textcolor>
-				<visible>!Substring(Player.CacheLevel,100)</visible>
+				<visible>!Substring(Player.CacheLevel,100) + Skin.HasSetting(AlaskaPausedLabel)</visible>
             </control>			
         </control>
     </include>
