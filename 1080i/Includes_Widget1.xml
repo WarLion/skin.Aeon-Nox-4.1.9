@@ -4605,7 +4605,7 @@
             <property name="Rating">$INFO[Window(Home).Property(RecentEpisode.1.Rating)]</property>
             <property name="Plot">$INFO[Window(Home).Property(RecentEpisode.1.Plot)]</property>
             <property name="DBID">$INFO[Window(Home).Property(RecentEpisode.1.DBID)]</property>
-            <property name="NavItem">item8.png</property>
+            <property name="NavItem">item1.png</property>
             <onclick>SetFocus(5014)</onclick>
             <thumb>$INFO[Window(Home).Property(RecentEpisode.1.Art(thumb))]</thumb>
             <visible>Substring(Control.GetLabel(4321),recenttv) + !IsEmpty(Window(Home).Property(RecentEpisode.1.Title))</visible>
@@ -4632,7 +4632,7 @@
             <property name="Rating">$INFO[Window(Home).Property(RecentEpisode.2.Rating)]</property>
             <property name="Plot">$INFO[Window(Home).Property(RecentEpisode.2.Plot)]</property>
             <property name="DBID">$INFO[Window(Home).Property(RecentEpisode.2.DBID)]</property>
-            <property name="NavItem">item1.png</property>
+            <property name="NavItem">item2.png</property>
             <onclick>SetFocus(5014)</onclick>
             <thumb>$INFO[Window(Home).Property(RecentEpisode.2.Art(thumb))]</thumb>
             <visible>Substring(Control.GetLabel(4321),recenttv) + !IsEmpty(Window(Home).Property(RecentEpisode.2.Title))</visible>
@@ -4659,7 +4659,7 @@
             <property name="Rating">$INFO[Window(Home).Property(RecentEpisode.3.Rating)]</property>
             <property name="Plot">$INFO[Window(Home).Property(RecentEpisode.3.Plot)]</property>
             <property name="DBID">$INFO[Window(Home).Property(RecentEpisode.3.DBID)]</property>
-            <property name="NavItem">item2.png</property>
+            <property name="NavItem">item3.png</property>
             <onclick>SetFocus(5014)</onclick>
             <thumb>$INFO[Window(Home).Property(RecentEpisode.3.Art(thumb))]</thumb>
             <visible>Substring(Control.GetLabel(4321),recenttv) + !IsEmpty(Window(Home).Property(RecentEpisode.3.Title))</visible>
@@ -4686,7 +4686,7 @@
             <property name="Rating">$INFO[Window(Home).Property(RecentEpisode.4.Rating)]</property>
             <property name="Plot">$INFO[Window(Home).Property(RecentEpisode.4.Plot)]</property>
             <property name="DBID">$INFO[Window(Home).Property(RecentEpisode.4.DBID)]</property>
-            <property name="NavItem">item3.png</property>
+            <property name="NavItem">item4.png</property>
             <onclick>SetFocus(5014)</onclick>
             <thumb>$INFO[Window(Home).Property(RecentEpisode.4.Art(thumb))]</thumb>
             <visible>Substring(Control.GetLabel(4321),recenttv) + !IsEmpty(Window(Home).Property(RecentEpisode.4.Title))</visible>

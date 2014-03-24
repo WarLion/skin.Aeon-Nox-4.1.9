@@ -4545,8 +4545,8 @@
             <property name="Fanart">$INFO[Window(Home).Property(RecentEpisode.4.Art(tvshow.fanart))]</property>
             <property name="EpisodeNumber">$INFO[Window(Home).Property(RecentEpisode.4.EpisodeNo)]</property>
             <property name="Rating">$INFO[Window(Home).Property(RecentEpisode.4.Rating)]</property>
-            <property name="Plot">$INFO[Window(Home).Property(RecentEpisode.3.Plot)]</property>
-            <property name="DBID">$INFO[Window(Home).Property(RecentEpisode.3.DBID)]</property>
+            <property name="Plot">$INFO[Window(Home).Property(RecentEpisode.4.Plot)]</property>
+            <property name="DBID">$INFO[Window(Home).Property(RecentEpisode.4.DBID)]</property>
             <onclick>SetFocus(6014)</onclick>
             <thumb>$INFO[Window(Home).Property(RecentEpisode.4.Art(thumb))]</thumb>
             <visible>Substring(Control.GetLabel(4325),recenttv) + !IsEmpty(Window(Home).Property(RecentEpisode.4.Title))</visible>
