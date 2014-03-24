@@ -597,7 +597,6 @@
     </include>
     <include name="AlaskaPausedLabel">
         <control type="group">
-            <visible>Player.Paused + Skin.HasSetting(AlaskaPausedLabel)</visible>
             <include>Animation_CommonFade</include>
             <control type="label">
                 <top>-150</top>
@@ -605,8 +604,18 @@
                 <align>center</align>
                 <label>$LOCALIZE[112]</label>
                 <font>Font_BigPause</font>
-                <textcolor>33ffffff</textcolor>
+                <textcolor>55ffffff</textcolor>
+				<visible>Player.Paused + Skin.HasSetting(AlaskaPausedLabel) + Substring(Player.CacheLevel,100)</visible>
             </control>
+            <control type="label">
+                <top>-150</top>
+                <width>1920</width>
+                <align>center</align>
+                <label>$INFO[Player.CacheLevel, ,%]</label>
+                <font>Font_BigPause</font>
+				<textcolor>99ffffff</textcolor>
+				<visible>!Substring(Player.CacheLevel,100)</visible>
+            </control>			
         </control>
     </include>
     <include name="AutoConfig">
