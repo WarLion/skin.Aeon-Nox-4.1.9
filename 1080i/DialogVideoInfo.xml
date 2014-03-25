@@ -873,7 +873,7 @@
                     <onup>5000</onup>
                     <onleft>60</onleft>
                     <onright>60</onright>
-                    <ondown>5055</ondown>
+                    <ondown>150</ondown>
                     <visible>!ControlGroup(6000).HasFocus</visible>
                 </control>
                 <control type="image">
@@ -894,7 +894,7 @@
                         <effect type="slide" start="0,0" end="4600" time="700" tween="quadratic" easing="out" />
                         <effect type="rotate" start="0" center="1760,810" end="-720" time="700" tween="quadratic" easing="out" />
                     </animation>
-                </control>
+                </control>			
                 <control type="list" id="50">
                     <left>875</left>
                     <top>326</top>
@@ -1798,5 +1798,17 @@ ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=
                 <visible>!Skin.HasSetting(DisableGlowbar) + IsEmpty(Window(movieinformation).Property(FanartZoom))</visible>
             </control>
         </control>
+		        <control type="button" id="150">
+                    <left>40r</left>
+                    <top>40r</top>
+                    <width>40</width>
+                    <height>40</height>
+					<onup>60</onup>
+                    <ondown>5000</ondown>
+                    <texturefocus>defaulticons/DefaultScript2.png</texturefocus>
+					<texturenofocus>defaulticons/DefaultScript.png</texturenofocus>
+					<onclick>ActivateWindow(1165)</onclick>
+                    <include>Animation_VisibleChange200</include>
+                </control>	
     </controls>
 </window>
