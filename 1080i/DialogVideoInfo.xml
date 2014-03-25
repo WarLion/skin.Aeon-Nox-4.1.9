@@ -5,8 +5,8 @@
     <onload>AlarmClock(ActorFade,SetProperty(ActorFade,true),00:02,silent)</onload>
     <onload condition="Skin.HasSetting(TVTunes.Enabled) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True)
 </onload>	
-    <onload condition="System.HasAddon(script.videolanguage) + [Container.Content(movies) | Container.Content(episodes)]">XBMC.RunScript(script.videolanguage,movieid=$INFO[ListItem.DBID])</onload>
-	<onload condition="System.HasAddon(script.videoextras) + !Skin.HasSetting(Enable.videoextras)">XBMC.RunScript(script.videoextras,hasExtras,flag,"$INFO[ListItem.FilenameAndPath]")</onload>
+	<onload condition="System.HasAddon(script.videolanguage) + [Container.Content(movies) | Container.Content(episodes)]">XBMC.RunScript(script.videolanguage,movieid=$INFO[ListItem.DBID])</onload>   
+	<onload condition="System.HasAddon(script.videoextras) + !Skin.HasSetting(Enable.videoextras)">XBMC.RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
     <onunload>ClearProperty(FanartZoom,movieinformation)</onunload>
     <allowoverlay>no</allowoverlay>
     <controls>
@@ -1583,8 +1583,8 @@ ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=
 								<onright>11</onright>
 								<onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
 								<animation effect="zoom" start="100,0" end="100,100" time="300" easing="out" tween="cubic">VisibleChange</animation>
-								<visible>System.HasAddon(script.videoextras) + !IsEmpty(Window.Property(flag)) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(TVShows) | Container.Content(musicvideos)]</visible>
 								<visible>ControlGroup(20).HasFocus</visible>
+								<visible>System.HasAddon(script.videoextras) + !Skin.HasSetting(Enable.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows)] + IsEmpty(Window(movieinformation).Property("HideVideoExtrasButton"))</visible>
 							</control>
 							<control type="button" id="70023">
 								<label>$LOCALIZE[31365]</label>
@@ -1609,8 +1609,8 @@ ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=
 						<include>DialogVideoInfoButton</include>
 						<label>Video $LOCALIZE[31020]</label>
 						<onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
-						<visible>System.HasAddon(script.videoextras) + !IsEmpty(Window.Property(flag)) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(TVShows) | Container.Content(musicvideos)]</visible>
 						<visible>!Skin.HasSetting(Extra.Disable)</visible>
+						<visible>System.HasAddon(script.videoextras) + !Skin.HasSetting(Enable.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows)] + IsEmpty(Window(movieinformation).Property("HideVideoExtrasButton"))</visible>
 					</control>						
                     <control type="button" id="11">
                         <label>$LOCALIZE[20410]</label>
