@@ -3091,8 +3091,8 @@
         <value>$INFO[ListItem.Art(fanart)]</value>
     </variable>	
     <variable name="VideoextrasOverlay">
-       <value condition="Container.Content(Movies)">$INFO[ListItem.DBID,special://profile/addon_data/script.videoextras/movies/,.png]</value>
-       <value condition="Container.Content(TVShows)">$INFO[ListItem.DBID,special://profile/addon_data/script.videoextras/TVShows/,.png]</value>
-       <value condition="Container.Content(MusicVideos)">$INFO[ListItem.DBID,special://profile/addon_data/script.videoextras/MusicVideos/,.png]</value>
+       <value condition="Container.Content(Movies) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem.DBID,special://profile/addon_data/script.videoextras/movies/,.png]</value>
+       <value condition="Container.Content(TVShows) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem.DBID,special://profile/addon_data/script.videoextras/TVShows/,.png]</value>
+       <value condition="Container.Content(MusicVideos) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem.DBID,special://profile/addon_data/script.videoextras/MusicVideos/,.png]</value>
     </variable>	
 </includes>
