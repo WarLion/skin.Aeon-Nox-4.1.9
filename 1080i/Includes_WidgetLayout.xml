@@ -168,7 +168,7 @@
                 <include>Animation_VisibleChange400</include>
                 <orientation>horizontal</orientation>
                 <usecontrolcoords>true</usecontrolcoords>
-				<animation effect="slide" end="130" time="240" condition="!Skin.HasSetting(W_condition_image)">Conditional</animation>
+				<animation effect="slide" end="50" time="240" condition="!Skin.HasSetting(W_condition_image)">Conditional</animation>
                 <control type="label">
                     <width min="0" max="700">auto</width>
                     <height>36</height>
@@ -1632,31 +1632,7 @@
                     <visible>Substring(Control.GetLabel(4321),movie)</visible>
                     <orientation>horizontal</orientation>
                     <itemgap>40</itemgap>
-                    <control type="image">
-                        <texture>$INFO[Container(8000).ListItem.Property(AudioCodec),flags/audio/]$INFO[Container(8000).ListItem.Property(AudioChannels),,.png]</texture>
-                        <include>OSDFlagVars</include>
-                    </control>
-                    <control type="image">
-                        <texture>$INFO[Container(8000).ListItem.Property(VideoResolution),flags/resolution/,.png]</texture>
-                        <include>OSDFlagVars</include>
-                    </control>
-                    <control type="image">
-                        <texture>$INFO[Container(8000).ListItem.Property(VideoCodec),flags/source/,.png]</texture>
-                        <include>OSDFlagVars</include>
-                    </control>
-                    <control type="image">
-                        <texture>$INFO[Container(8000).ListItem.Property(VideoAspect),flags/aspectratio/,.png]</texture>
-                        <include>OSDFlagVars</include>
-                    </control>
-                    <!--                     <control type="image">
-                        <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[WidgetRatingFlagVar,flags/rating/,.png]</texture>
-                        <include>OSDFlagVars</include>
-                        <visible>!IsEmpty(Window(home).Property(mpaa))</visible>
-                    </control> -->
-                    <control type="image">
-                        <texture fallback="flags/studios/default-studio.png">$INFO[Container(8000).ListItem.Property(Studio),flags/studios/,.png]</texture>
-                        <include>OSDFlagVars</include>
-                    </control>
+                   
                 </control>
             </control>
             <!--Focused Random/Latest Episodes-->
@@ -3169,6 +3145,7 @@
                         <texture>$INFO[Window(home).Property(VideoAspect),flags/aspectratio/,.png]</texture>
                         <include>WidgetFlagVars</include>
                     </control>
+					<!---- flag aqui --->			
                     <control type="group">
                         <width>160</width>
                         <height>64</height>
@@ -3185,7 +3162,7 @@
                             <label fallback="?">$INFO[Window(home).Property(RunningTime)]</label>
                             <font>Font_Bold34</font>
                             <textcolor>floor</textcolor>
-                        </control>
+                        </control>						
                     </control>
                     <control type="image">
                         <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[WidgetRatingFlagVar,flags/rating/,.png]</texture>
