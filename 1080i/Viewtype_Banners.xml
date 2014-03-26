@@ -106,6 +106,14 @@
                         <height>90</height>
                         <include>OverlayVisibility0</include>
                     </control>
+							<control type="image">
+								<left>515</left>
+								<top>80</top>
+								<width>35</width>
+								<height>30</height>
+								<texture>$VAR[VideoextrasOverlay]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>					
                     <control type="image">
                         <left>6</left>
                         <top>8</top>
@@ -158,6 +166,14 @@
                             <height>90</height>
                             <include>OverlayVisibility0</include>
                         </control>
+							<control type="image">
+								<left>515</left>
+								<top>80</top>
+								<width>35</width>
+								<height>30</height>
+								<texture>$VAR[VideoextrasOverlay]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>						
                         <control type="image">
                             <left>-6</left>
                             <top>-4</top>
@@ -202,6 +218,14 @@
                         <height>90</height>
                         <include>OverlayVisibility0</include>
                     </control>
+							<control type="image">
+								<left>515</left>
+								<top>70</top>
+								<width>35</width>
+								<height>30</height>
+								<texture>$VAR[VideoextrasOverlay]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>					
                     <control type="group">
                         <include>UnwatchedIcon</include>
                     </control>
@@ -219,7 +243,7 @@
                 </itemlayout>
                 <focusedlayout width="562" height="104" condition="Skin.HasSetting(AltBannerPlex)">
                     <control type="group">
-                        <animation effect="zoom" center="auto" start="99" end="100" time="240" tween="back" easing="in" reversible="false">Focus</animation>
+                        <animation effect="zoom" center="auto" start="100" end="115" time="160" tween="quadratic" reversible="false">Focus</animation>
                         <control type="image">
                             <left>-7</left>
                             <top>-7</top>
@@ -259,6 +283,14 @@
                             <height>90</height>
                             <include>OverlayVisibility0</include>
                         </control>
+							<control type="image">
+								<left>515</left>
+								<top>70</top>
+								<width>35</width>
+								<height>30</height>
+								<texture>$VAR[VideoextrasOverlay]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>						
                         <control type="image">
                             <width>562</width>
                             <height>104</height>

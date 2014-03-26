@@ -282,15 +282,15 @@
                             <textcolor>grey</textcolor>
                             <wrapmultiline>true</wrapmultiline>
                             <visible>IsEmpty(Control.GetLabel(76))</visible>
-                        </control>
+                        </control>													
                     </control>
                     <control type="image">
                         <!--Rating logo-->
-                        <left>295</left>
+                        <left>285</left>
                         <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[RatingFlagVar,flags/rating/,.png]</texture>
                         <include>AudioFlagsVars</include>
                         <animation effect="slide" end="138" condition="Control.IsVisible(512) | Control.IsVisible(550)">Conditional</animation>
-                    </control>
+                    </control>				
                 </control>
                 <control type="group">
                     <!--right part -->
@@ -443,7 +443,7 @@
                             <textcolor>floor</textcolor>
                         </control>
                     </control>
-                </control>
+				</control>
                 <control type="group">
                     <visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
                     <animation effect="slide" end="-975" condition="Control.IsVisible(512) | Control.IsVisible(550)">Conditional</animation>

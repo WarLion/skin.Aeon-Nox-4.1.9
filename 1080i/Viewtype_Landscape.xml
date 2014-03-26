@@ -67,7 +67,16 @@
             <height>90</height>
             <include>OverlayVisibility0</include>
             <visible>![[Skin.HasSetting(landscapelogo) | Skin.HasSetting(landscapeonelogo)] + [Container.Content(tvshows) | Container.Content(movies)]]</visible>
-        </control>
+        </control>		
+			<control type="image">
+            <left>440</left>
+            <top>300</top>
+				<width>40</width>
+				<height>40</height>
+				<texture>$VAR[VideoextrasOverlay]</texture>
+				<visible>System.HasAddon(script.videoextras)</visible>
+				<visible>![[Skin.HasSetting(landscapelogo) | Skin.HasSetting(landscapeonelogo)] + [Container.Content(tvshows) | Container.Content(movies)]]</visible>
+			</control>								
         <control type="group">
             <left>-20</left>
             <top>50</top>
@@ -281,6 +290,14 @@
                 <scrollspeed>30</scrollspeed>
             </control>
         </control>
+			<control type="image">
+            <left>440</left>
+            <top>300</top>
+				<width>40</width>
+				<height>40</height>
+				<texture>$VAR[VideoextrasOverlay]</texture>
+				<visible>System.HasAddon(script.videoextras)</visible>
+			</control>			
     </include>
     <include name="LandscapeClearArtLayout">
         <control type="image">
@@ -300,6 +317,15 @@
             <texture background="true" flipy="true">$VAR[TVShowClearArtVar]</texture>
             <animation effect="fade" start="10" end="10" time="160" tween="cubic" easing="inout" condition="true">Conditional</animation>
         </control>
+			<control type="image">
+            <left>440</left>
+            <top>300</top>
+				<width>40</width>
+				<height>40</height>
+				<texture>$VAR[VideoextrasOverlay]</texture>
+				<visible>System.HasAddon(script.videoextras)</visible>
+				<visible>![[Skin.HasSetting(landscapelogo) | Skin.HasSetting(landscapeonelogo)] + [Container.Content(tvshows) | Container.Content(movies)]]</visible>
+			</control>			
         <control type="group">
             <visible>IsEmpty(ListItem.Art(clearlogo)) + IsEmpty(ListItem.Art(clearart))</visible>
             <control type="label">

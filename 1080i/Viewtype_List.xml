@@ -50,13 +50,9 @@
                 <texture background="true">$VAR[cdArtVar]</texture>
                 <visible>Skin.HasSetting(listcdart) + Container.Content(movies) + !SubString(ListItem.Path,videodb://movies/sets/) + !Control.HasFocus(5001)</visible>
                 <animation effect="slide" end="0,0" start="210,0" time="240" tween="cubic" easing="inout">VisibleChange</animation>
-                <!--                             <animation effect="rotate" end="-360" center="auto" time="8000" delay="1000" loop="true" reversible="false" tween="cubic" easing="inout" condition="true">Conditional</animation>
- -->
-                <animation effect="rotate" end="-360" center="auto" time="6400" delay="1600" reversible="false" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
+                 <animation effect="rotate" end="-360" center="auto" time="6400" delay="1600" reversible="false" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
                 <bordersize>7</bordersize>
-                <!--                             <visible>!Skin.HasSetting(infopanelcdart)</visible>
- -->
-            </control>
+                </control>
             <control type="group">
                 <visible>skin.hassetting(backendmode)</visible>
                     <visible>Skin.HasSetting(listcdart) + [Container.Content(sets) | SubString(ListItem.Path,videodb://movies/sets/)] + !Control.HasFocus(5001)</visible>
@@ -92,8 +88,6 @@
                     <bordersize>7</bordersize>
                 </control>
             </control>
-            
- 
             <control type="image">
                 <left>-39</left>
                 <top>-53</top>
@@ -127,6 +121,14 @@
                 <bordertexture border="19.5">thumbs/poster_shadow.png</bordertexture>
                 <bordersize>19</bordersize>
             </control>
+			<control type="image">
+				<left>430</left>
+				<top>700</top>
+				<width>70</width>
+				<height>70</height>
+				<texture>$VAR[VideoextrasOverlay]</texture>
+				<visible>System.HasAddon(script.videoextras)</visible>
+			</control>				
             <control type="image">
                 <top>766</top>
                 <width>510</width>
@@ -285,6 +287,14 @@
                     <texture diffuse="thumbs/diffuse_mirror3.png" flipy="true" background="true">$INFO[ListItem.Icon]</texture>
                     <fadetime>IconCrossfadeTime2</fadetime>
                 </control>
+				<control type="image">
+					<left>430</left>
+					<top>700</top>
+					<width>70</width>
+					<height>70</height>
+					<texture>$VAR[VideoextrasOverlay]</texture>
+					<visible>System.HasAddon(script.videoextras)</visible>
+				</control>					
             </control>
             <control type="group">
                 <left>1296</left>

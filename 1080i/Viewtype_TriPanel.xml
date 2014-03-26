@@ -169,7 +169,7 @@
                     <fadetime>400</fadetime>
                 </control>
                 <control type="image">
-                    <left>55</left>
+                    <left>67</left>
                     <top>31</top>
                     <width>530</width>
                     <height>795</height>
@@ -196,7 +196,7 @@
                 <visible>[Stringcompare(Skin.String(TriPanelPosition),2) | Stringcompare(Skin.String(TriPanelPosition),3)] + !Container.Content(years) + !Container.Content(countries)</visible>
                 <animation effect="slide" end="-500,0" time="640" easing="inout" tween="circle" condition="IsEmpty(Container.FolderPath) + Stringcompare(Skin.String(TriPanelPosition),2)">Conditional</animation>
                 <control type="image">
-                    <left>15</left>
+                    <left>25</left>
                     <top>-44</top>
                     <width>560</width>
                     <height>995</height>
@@ -215,7 +215,7 @@
                     <fadetime>400</fadetime>
                 </control>
                 <control type="image">
-                    <left>52</left>
+                    <left>62</left>
                     <top>29</top>
                     <width>487</width>
                     <height>732</height>
@@ -231,6 +231,7 @@
                     <visible>!Stringcompare(Skin.String(TriPanelPosition),3)</visible>
                 </control>
                 <control type="image">
+					<left>22</left>
                     <width>590</width>
                     <height>903</height>
                     <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -462,6 +463,14 @@
                                 <height>90</height>
                                 <include>OverlayVisibility0</include>
                             </control>
+							<control type="image">
+								<left>750</left>
+								<top>110</top>
+								<width>40</width>
+								<height>40</height>
+								<texture>$VAR[VideoextrasOverlay]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                             <include>UnwatchedIcon</include>
                             <control type="image">
                                 <width>796</width>
@@ -522,6 +531,14 @@
                                 <height>90</height>
                                 <include>OverlayVisibility0</include>
                             </control>
+							<control type="image">
+								<left>750</left>
+								<top>110</top>
+								<width>40</width>
+								<height>40</height>
+								<texture>$VAR[VideoextrasOverlay]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>									
                             <control type="image">
                                 <left>5</left>
                                 <top>5</top>

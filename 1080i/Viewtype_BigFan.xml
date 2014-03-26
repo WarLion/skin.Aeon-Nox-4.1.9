@@ -55,6 +55,11 @@
                         <include>Animation_VisibleChange400</include>
                         <visible>Skin.HasSetting(bigfanextrafanart) + [Container.Content(tvshows) | Container.Content(movies)]</visible>
                     </control>	
+                    <control type="image">
+                        <texture background="true" fallback="special://skin/backgrounds/fallback_movies.jpg">$INFO[ListItem.Art(fanart)]</texture>
+                        <include>FullscreenDimensions</include>
+						<visible>Container.Content(sets)</visible>
+                    </control>					
         </control>	
     </include>
     <include name="BigFanFurniture">
@@ -133,6 +138,14 @@
                     <height>60</height>
                     <include>OverlayVisibility0</include>
                 </control>
+				<control type="image">
+					<left>400</left>
+					<top>378</top>
+					<width>35</width>
+					<height>30</height>
+					<texture>$VAR[VideoextrasOverlay]</texture>
+					<visible>System.HasAddon(script.videoextras)</visible>
+				</control>					
             </control>
             <control type="group">
               <visible>[Skin.HasSetting(bigfanclearart) | Skin.HasSetting(bigfanlandscape) | Skin.HasSetting(bigfanlogo)] + !Container.Content(genres)</visible>			
