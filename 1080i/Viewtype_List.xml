@@ -122,11 +122,11 @@
                 <bordersize>19</bordersize>
             </control>
 			<control type="image">
-				<left>430</left>
-				<top>700</top>
-				<width>70</width>
-				<height>70</height>
-				<texture>$VAR[VideoextrasOverlay]</texture>
+				<left>310</left>
+				<top>-2</top>
+				<width>200</width>
+				<height>202</height>
+				<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
 				<visible>System.HasAddon(script.videoextras)</visible>
 			</control>				
             <control type="image">

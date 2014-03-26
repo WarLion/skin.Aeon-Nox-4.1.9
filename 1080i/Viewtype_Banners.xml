@@ -101,19 +101,19 @@
                     </control>
                     <control type="image">
                         <left>468</left>
-                        <top>7</top>
+                        <top>8</top>
                         <width>90</width>
                         <height>90</height>
                         <include>OverlayVisibility0</include>
                     </control>
-							<control type="image">
-								<left>515</left>
-								<top>80</top>
-								<width>35</width>
-								<height>30</height>
-								<texture>$VAR[VideoextrasOverlay]</texture>
-								<visible>System.HasAddon(script.videoextras)</visible>
-							</control>					
+					<control type="image">
+                        <left>468</left>
+                        <top>8</top>
+                        <width>90</width>
+                        <height>90</height>
+						<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
+						<visible>System.HasAddon(script.videoextras)</visible>
+					</control>					
                     <control type="image">
                         <left>6</left>
                         <top>8</top>
@@ -166,14 +166,14 @@
                             <height>90</height>
                             <include>OverlayVisibility0</include>
                         </control>
-							<control type="image">
-								<left>515</left>
-								<top>80</top>
-								<width>35</width>
-								<height>30</height>
-								<texture>$VAR[VideoextrasOverlay]</texture>
-								<visible>System.HasAddon(script.videoextras)</visible>
-							</control>						
+						<control type="image">
+                            <left>468</left>
+                            <top>7</top>
+                            <width>90</width>
+                            <height>90</height>
+							<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
+							<visible>System.HasAddon(script.videoextras)</visible>
+						</control>						
                         <control type="image">
                             <left>-6</left>
                             <top>-4</top>
@@ -218,14 +218,13 @@
                         <height>90</height>
                         <include>OverlayVisibility0</include>
                     </control>
-							<control type="image">
-								<left>515</left>
-								<top>70</top>
-								<width>35</width>
-								<height>30</height>
-								<texture>$VAR[VideoextrasOverlay]</texture>
-								<visible>System.HasAddon(script.videoextras)</visible>
-							</control>					
+					<control type="image">
+                        <left>472</left>
+                        <width>90</width>
+                        <height>90</height>
+						<texture>$VAR[VideoextrasOverlay]</texture>
+						<visible>System.HasAddon(script.videoextras)</visible>
+					</control>					
                     <control type="group">
                         <include>UnwatchedIcon</include>
                     </control>
@@ -283,14 +282,13 @@
                             <height>90</height>
                             <include>OverlayVisibility0</include>
                         </control>
-							<control type="image">
-								<left>515</left>
-								<top>70</top>
-								<width>35</width>
-								<height>30</height>
-								<texture>$VAR[VideoextrasOverlay]</texture>
-								<visible>System.HasAddon(script.videoextras)</visible>
-							</control>						
+						<control type="image">
+                            <left>472</left>
+                            <width>90</width>
+                            <height>90</height>
+							<texture>$VAR[VideoextrasOverlay]</texture>
+							<visible>System.HasAddon(script.videoextras)</visible>
+						</control>						
                         <control type="image">
                             <width>562</width>
                             <height>104</height>

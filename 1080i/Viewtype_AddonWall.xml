@@ -212,10 +212,10 @@
                                 <include>OverlayVisibility0</include>
                             </control>
 							<control type="image">
-								<left>130</left>
-								<top>230</top>
-								<width>35</width>
-								<height>30</height>
+                                <left>110</left>
+                                <top>10</top>
+                                <width>60</width>
+                                <height>60</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
 								<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
@@ -241,10 +241,10 @@
 								<colordiffuse>FF727171</colordiffuse>
                             </control>
 							<control type="image">
-								<left>140</left>
-								<top>230</top>
-								<width>35</width>
-								<height>35</height>
+                                <left>125</left>
+                                <top>5</top>
+                                <width>60</width>
+                                <height>60</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
 								<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
@@ -286,10 +286,10 @@
                                 <include>OverlayVisibility0</include>
                             </control>
 							<control type="image">
-								<left>130</left>
-								<top>225</top>
-								<width>35</width>
-								<height>30</height>
+                                <left>110</left>
+                                <top>10</top>
+                                <width>60</width>
+                                <height>60</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
 								<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
@@ -315,10 +315,10 @@
 								<colordiffuse>FF727171</colordiffuse>
                             </control>
 							<control type="image">
-								<left>140</left>
-								<top>225</top>
-								<width>35</width>
-								<height>30</height>
+                                <left>125</left>
+                                <top>5</top>
+                                <width>60</width>
+                                <height>60</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
 								<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
@@ -358,10 +358,10 @@
                                 <include>OverlayVisibility0</include>
                             </control>
 							<control type="image">
-								<left>130</left>
-								<top>225</top>
-								<width>35</width>
-								<height>30</height>
+                                <left>110</left>
+                                <top>10</top>
+                                <width>60</width>
+                                <height>60</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
 							</control>						
@@ -395,10 +395,10 @@
                                 <include>OverlayVisibility0</include>
                             </control>
 							<control type="image">
-								<left>140</left>
-								<top>230</top>
-								<width>35</width>
-								<height>30</height>
+                                <left>125</left>
+                                <top>5</top>
+                                <width>60</width>
+                                <height>60</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
 							</control>						
@@ -436,10 +436,10 @@
                                 <include>OverlayVisibility0</include>
                             </control>
 							<control type="image">
-								<left>130</left>
-								<top>225</top>
-								<width>35</width>
-								<height>30</height>
+                                <left>110</left>
+                                <top>10</top>
+                                <width>60</width>
+                                <height>60</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
 							</control>						
@@ -473,10 +473,10 @@
                                 <include>OverlayVisibility0</include>
                             </control>
 							<control type="image">
-								<left>140</left>
-								<top>230</top>
-								<width>35</width>
-								<height>30</height>
+                                <left>125</left>
+                                <top>5</top>
+                                <width>60</width>
+                                <height>60</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
 							</control>							
@@ -514,10 +514,10 @@
 <colordiffuse>FF727171</colordiffuse>
                         </control>
 							<control type="image">
-								<left>120</left>
-								<top>220</top>
-								<width>35</width>
-								<height>30</height>
+                            <left>106</left>
+                            <top>31</top>
+                            <width>52</width>
+                            <height>52</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
 								<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
@@ -550,10 +550,10 @@
                                 <include>OverlayVisibility0</include>
                             </control>
 							<control type="image">
-								<left>120</left>
-								<top>220</top>
-								<width>35</width>
-								<height>30</height>
+                                <left>106</left>
+                                <top>31</top>
+                                <width>52</width>
+                                <height>52</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
 							</control>						
@@ -613,10 +613,10 @@
 								<colordiffuse>FF727171</colordiffuse>
                             </control>
 							<control type="image">
-								<left>240</left>
-								<top>125</top>
-								<width>35</width>
-								<height>30</height>
+                                <left>205</left>
+                                <top>5</top>
+                                <width>75</width>
+                                <height>75</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
 								<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
@@ -685,10 +685,10 @@
                                 <include>OverlayVisibility0</include>
                             </control>
 							<control type="image">
-								<left>240</left>
-								<top>125</top>
-								<width>35</width>
-								<height>30</height>
+                                <left>205</left>
+                                <top>5</top>
+                                <width>75</width>
+                                <height>75</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
 							</control>								
@@ -727,10 +727,10 @@
 <colordiffuse>FF727171</colordiffuse>
                         </control>
 							<control type="image">
-								<left>515</left>
-								<top>80</top>
-								<width>35</width>
-								<height>30</height>
+                            <left>465</left>
+                            <top>8</top>
+                            <width>90</width>
+                            <height>90</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
 								<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
@@ -776,10 +776,10 @@
                                 <include>OverlayVisibility0</include>
                             </control>
 							<control type="image">
-								<left>515</left>
-								<top>80</top>
-								<width>35</width>
-								<height>30</height>
+                                <left>465</left>
+                                <top>8</top>
+                                <width>90</width>
+                                <height>90</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
 							</control>						
@@ -805,10 +805,10 @@
                             <colordiffuse>FF727171</colordiffuse>
                         </control>
 							<control type="image">
-								<left>240</left>
-								<top>120</top>
-								<width>35</width>
-								<height>30</height>
+                                <left>180</left>
+                                <top>8</top>
+                                <width>90</width>
+                                <height>90</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
 								<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
@@ -835,10 +835,10 @@
                             <animation effect="zoom" center="auto" start="100" end="140" time="160" tween="quadratic" reversible="false">Focus</animation>
                         </control>
 							<control type="image">
-								<left>240</left>
-								<top>120</top>
-								<width>35</width>
-								<height>30</height>
+                                <left>180</left>
+                                <top>8</top>
+                                <width>90</width>
+                                <height>90</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
                                <animation effect="zoom" center="auto" start="100" end="140" time="160" tween="quadratic" reversible="false">Focus</animation>

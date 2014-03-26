@@ -697,10 +697,10 @@
                         <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                     </control>
 						<control type="image">
-							<left>-5</left>
-							<top>20</top>
-							<width>27</width>
-							<height>27</height>
+                        <left>750</left>
+                        <top>8</top>
+                        <width>52</width>
+                        <height>52</height>
 							<texture>$VAR[VideoextrasOverlay]</texture>
 							<visible>System.HasAddon(script.videoextras)</visible>
 						</control>					
@@ -762,10 +762,10 @@
                         <colordiffuse>white</colordiffuse>
                     </control>
 						<control type="image">
-							<left>-5</left>
-							<top>20</top>
-							<width>27</width>
-							<height>27</height>
+                        <left>750</left>
+                        <top>8</top>
+                        <width>52</width>
+                        <height>52</height>
 							<texture>$VAR[VideoextrasOverlay]</texture>
 							<visible>System.HasAddon(script.videoextras)</visible>
 						</control>					
@@ -825,7 +825,7 @@
                 <focusedlayout height="155" width="825" condition="Skin.HasSetting(lowlistbanner) + Container.Content(tvshows)">
                     <control type="group">
                         <left>3</left>
-						<animation effect="zoom" center="auto" start="100" end="110" time="160" tween="quadratic" reversible="false">Focus</animation>
+						<animation effect="zoom" center="auto" start="100" end="105" time="160" tween="quadratic" reversible="false">Focus</animation>
                         <control type="image">
                             <width>798</width>
                             <height>155</height>

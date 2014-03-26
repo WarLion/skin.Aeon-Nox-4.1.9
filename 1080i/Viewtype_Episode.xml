@@ -245,6 +245,14 @@
                 <font>Font_Reg28</font>
                 <textcolor>grey</textcolor>
             </control>
+			<control type="image">
+                <left>1285</left>
+                <top>26</top>
+                <width>42</width>
+                <height>42</height>
+				<texture>$VAR[VideoextrasOverlay]</texture>
+				<visible>System.HasAddon(script.videoextras)</visible>
+			</control>				
             <control type="image">
                 <left>1285</left>
                 <top>26</top>
@@ -256,15 +264,7 @@
                 </animation>
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 <animation effect="slide" end="0,-20" time="240" tween="cubic" easing="inout" condition="Container.Content(seasons)">Conditional</animation>
-            </control>
-			<control type="image">
-				<left>1040</left>
-				<top>54</top>
-				<width>30</width>
-				<height>30</height>
-				<texture>$VAR[VideoextrasOverlay]</texture>
-				<visible>System.HasAddon(script.videoextras)</visible>
-			</control>				
+            </control>			
             <control type="label">
                 <left>1312</left>
                 <top>25</top>
@@ -320,6 +320,15 @@
                     <texture diffuse="thumbs/banner_mask.png">common/bgcolor.png</texture>
                     <animation effect="fade" start="100" end="50" time="40" condition="true">Conditional</animation>
                 </control>
+				<control type="image">
+                    <left>1156</left>
+                    <top>8</top>
+                    <width>100</width>
+                    <height>100</height>
+					<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
+					<visible>System.HasAddon(script.videoextras)</visible>
+					<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>				
+				</control>					
                 <control type="image">
                     <left>1255</left>
                     <top>40</top>
@@ -327,16 +336,7 @@
                     <height>42</height>
                     <texture>$VAR[WatchedIconVar]</texture>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                </control>
-			<control type="image">
-				<left>1220</left>
-				<top>80</top>
-				<width>30</width>
-				<height>30</height>
-				<texture>$VAR[VideoextrasOverlay]</texture>
-				<visible>System.HasAddon(script.videoextras)</visible>
-				<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>				
-			</control>					
+                </control>				
                 <control type="group">
                     <left>684</left>
                     <top>-10</top>
@@ -420,11 +420,11 @@
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
             </control>
 			<control type="image">
-				<left>1285</left>
+				<left>1218</left>
 				<top>10</top>
-				<width>30</width>
-				<height>30</height>
-				<texture>$VAR[VideoextrasOverlay]</texture>
+				<width>60</width>
+				<height>60</height>
+				<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
 				<visible>System.HasAddon(script.videoextras)</visible>
 			</control>			
             <control type="group">

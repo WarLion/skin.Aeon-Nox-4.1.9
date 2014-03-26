@@ -209,7 +209,7 @@
                             <height>335</height>
                             <aspectratio scalediffuse="false">stretch</aspectratio>
                             <texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="DefaultVideoBigPoster.png">$VAR[ListPosterVar]</texture>
-                        </control>
+                        </control>				
                         <control type="image">
                             <left>1.5</left>
                             <top>-8.5</top>
@@ -220,6 +220,21 @@
                             <bordertexture border="19.5">thumbs/poster_shadow.png</bordertexture>
                             <bordersize>19.5</bordersize>
                         </control>
+						<control type="image">
+							<left>185</left>
+							<top>11</top>
+							<width>60</width>
+							<height>60</height>
+							<include>OverlayVisibility0</include>
+						</control>
+						<control type="image">
+							<left>185</left>
+							<top>11</top>
+							<width>60</width>
+							<height>60</height>
+							<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
+							<visible>System.HasAddon(script.videoextras)</visible>
+						</control>								
                         <control type="group">
                             <top>-9</top>
                             <visible>Skin.HasSetting(infopanelcdart)</visible>
@@ -360,6 +375,21 @@
                                 <bordertexture border="19.5">thumbs/poster_shadow.png</bordertexture>
                                 <bordersize>19.5</bordersize>
                             </control>
+						<control type="image">
+							<left>185</left>
+							<top>20</top>
+							<width>60</width>
+							<height>60</height>
+							<include>OverlayVisibility0</include>
+						</control>
+						<control type="image">
+							<left>185</left>
+							<top>20</top>
+							<width>60</width>
+							<height>60</height>
+							<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
+							<visible>System.HasAddon(script.videoextras)</visible>
+						</control>							
                         </control>
                         <control type="group">
                             <top>-9</top>
@@ -748,6 +778,21 @@
                 <bordertexture border="19.5">thumbs/poster_shadow.png</bordertexture>
                 <bordersize>19.5</bordersize>
             </control>
+			<control type="image">
+				<left>185</left>
+				<top>20</top>
+				<width>60</width>
+				<height>60</height>
+				<include>OverlayVisibility0</include>
+			</control>
+			<control type="image">
+				<left>185</left>
+				<top>20</top>
+				<width>60</width>
+				<height>60</height>
+				<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
+				<visible>System.HasAddon(script.videoextras)</visible>
+			</control>			
         </control>
         <control type="group">
             <top>-9</top>
@@ -899,6 +944,21 @@
             <bordertexture border="19.5">thumbs/poster_shadow.png</bordertexture>
             <bordersize>19.5</bordersize>
         </control>
+		<control type="image">
+			<left>185</left>
+			<top>11</top>
+			<width>60</width>
+			<height>60</height>
+			<include>OverlayVisibility0</include>
+		</control>
+		<control type="image">
+			<left>185</left>
+			<top>11</top>
+			<width>60</width>
+			<height>60</height>
+			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
+			<visible>System.HasAddon(script.videoextras)</visible>
+		</control>		
         <control type="group">
             <top>-9</top>
             <visible>Skin.HasSetting(infopanelcdart)</visible>

@@ -44,11 +44,8 @@
                     <include>OverlayVisibility0</include>
                 </control>
 				<control type="image">
-					<left>30</left>
-					<top>20</top>
-					<width>35</width>
-					<height>35</height>
-					<texture>$VAR[VideoextrasOverlay]</texture>
+					<include>WatchedOverlayShowCase</include>
+					<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
 					<visible>System.HasAddon(script.videoextras)</visible>
 				</control>					
             </control>
@@ -79,11 +76,8 @@
                     <include>OverlayVisibility0</include>
                 </control>
 				<control type="image">
-					<left>30</left>
-					<top>20</top>
-					<width>35</width>
-					<height>35</height>
-					<texture>$VAR[VideoextrasOverlay]</texture>
+                    <include>WatchedOverlayShowCase</include>
+					<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
 					<visible>System.HasAddon(script.videoextras)</visible>
 				</control>					
             </control>
@@ -503,11 +497,8 @@
                                 <include>OverlayVisibility0</include>
                             </control>
 							<control type="image">
-								<left>30</left>
-								<top>20</top>
-								<width>35</width>
-								<height>35</height>
-								<texture>$VAR[VideoextrasOverlay]</texture>
+                                <include>WatchedOverlayShowCase</include>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
 							</control>	
                         </control>
@@ -781,11 +772,8 @@
             <include>OverlayVisibility0</include>
         </control>
 		<control type="image">
-			<left>30</left>
-			<top>20</top>
-			<width>35</width>
-			<height>35</height>
-			<texture>$VAR[VideoextrasOverlay]</texture>
+            <include>WatchedOverlayShowCase</include>
+			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
 			<visible>System.HasAddon(script.videoextras)</visible>
         </control>	
     </include>

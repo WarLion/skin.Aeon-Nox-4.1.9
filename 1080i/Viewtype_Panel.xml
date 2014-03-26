@@ -73,10 +73,10 @@
                         <include>Animation_VisibleChange200</include>
                     </control>
 					<control type="image">
-						<left>1190</left>
-						<top>610</top>
-						<width>60</width>
-						<height>60</height>
+                        <left>1141</left>
+                        <top>1</top>
+                        <width>120</width>
+                        <height>120</height>
 						<texture>$VAR[VideoextrasOverlay]</texture>
 						<visible>System.HasAddon(script.videoextras)</visible>
 					</control>						
@@ -329,16 +329,24 @@
                     </control>
                 </control>
                 <control type="image">
-                    <left>1215</left>
+                    <left>1350</left>
                     <top>80</top>
-                    <width>550</width>
-                    <height>610</height>
+					<width>417</width>
+					<height>610</height>
                     <aspectratio aligny="top" align="right">keep</aspectratio>
-                    <texture>$VAR[ListPosterVar]</texture>
+                    <texture background="true" diffuse="thumbs/movieposter_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ListPosterVar]</texture>
                     <fadetime>200</fadetime>
-                    <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
-                    <bordersize>7</bordersize>
+                    <bordertexture border="19.5">thumbs/poster_shadow.png</bordertexture>
+                	<bordersize>19</bordersize>
                 </control>
+				<control type="image">
+					<left>1599</left>
+					<top>98</top>
+					<width>150</width>
+					<height>150</height>
+					<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
+					<visible>System.HasAddon(script.videoextras)</visible>
+				</control>				
                 <control type="textbox">
                     <left>540</left>
                     <top>700</top>
@@ -378,6 +386,14 @@
                         <label>$VAR[SecondLabelVar]</label>
                         <font>Font_Reg22</font>
                     </control>
+					<control type="image">
+                        <left>380</left>
+                        <top>18</top>
+                        <width>52</width>
+                        <height>52</height>
+						<texture>$VAR[VideoextrasOverlay]</texture>
+						<visible>System.HasAddon(script.videoextras)</visible>
+					</control>						
                     <control type="image">
                         <left>386</left>
                         <top>18</top>
@@ -385,15 +401,7 @@
                         <height>42</height>
                         <texture>$VAR[WatchedIconVar]</texture>
                         <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                    </control>
-					<control type="image">
-						<left>390</left>
-						<top>60</top>
-						<width>27</width>
-						<height>27</height>
-						<texture>$VAR[VideoextrasOverlay]</texture>
-						<visible>System.HasAddon(script.videoextras)</visible>
-					</control>					
+                    </control>				
                 </itemlayout>
                 <focusedlayout height="103" width="570" condition="![Skin.HasSetting(panellogo) + [Container.Content(movies) | Container.Content(tvshows)]]">
                     <control type="image">
@@ -419,6 +427,14 @@
                         <label>$VAR[SecondLabelVar]</label>
                         <font>Font_Reg22</font>
                     </control>
+					<control type="image">
+                        <left>380</left>
+                        <top>18</top>
+                        <width>52</width>
+                        <height>52</height>
+						<texture>$VAR[VideoextrasOverlay]</texture>
+						<visible>System.HasAddon(script.videoextras)</visible>
+					</control>					
                     <control type="image">
                         <left>386</left>
                         <top>18</top>
@@ -426,15 +442,7 @@
                         <height>42</height>
                         <texture>$VAR[WatchedIconVar]</texture>
                         <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                    </control>
-					<control type="image">
-						<left>390</left>
-						<top>60</top>
-						<width>27</width>
-						<height>27</height>
-						<texture>$VAR[VideoextrasOverlay]</texture>
-						<visible>System.HasAddon(script.videoextras)</visible>
-					</control>					
+                    </control>				
                 </focusedlayout>
                 <itemlayout height="174" width="570" condition="Skin.HasSetting(panellogo) + [Container.Content(movies) | Container.Content(tvshows)]">
                     <include>PanelLogoLayout</include>

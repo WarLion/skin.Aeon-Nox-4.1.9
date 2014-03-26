@@ -96,11 +96,11 @@
             <include>OverlayVisibility0</include>
         </control>
 		<control type="image">
-			<left>250</left>
-			<top>550</top>
-			<width>50</width>
-			<height>50</height>
-			<texture>$VAR[VideoextrasOverlay]</texture>
+            <left>218</left>
+            <top>150</top>
+            <width>90</width>
+            <height>90</height>
+			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
 			<visible>System.HasAddon(script.videoextras)</visible>
 		</control>			
         <control type="group">
@@ -145,11 +145,11 @@
             <include>OverlayVisibility0</include>
         </control>
 		<control type="image">
-			<left>125</left>
-			<top>345</top>
-			<width>30</width>
-			<height>30</height>
-			<texture>$VAR[VideoextrasOverlay]</texture>
+            <left>103.5</left>
+            <top>150</top>
+            <width>55</width>
+            <height>55</height>
+			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
 			<visible>System.HasAddon(script.videoextras)</visible>
 		</control>			
         <control type="group">

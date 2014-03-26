@@ -505,13 +505,13 @@
                                 <include>OverlayVisibility0</include>
                             </control>
 							<control type="image">
-								<left>435</left>
-								<top>630</top>
-								<width>60</width>
-								<height>60</height>
-								<texture>$VAR[VideoextrasOverlay]</texture>
+                                <left>408</left>
+                                <top>62</top>
+                                <width>90</width>
+                                <height>90</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
-							</control>									
+							</control>	
                         </control>
                     </control>
                 </control>
@@ -908,7 +908,7 @@
                                 <width>82</width>
                                 <height>82</height>
                                 <include>OverlayVisibility0</include>
-                            </control>							
+                            </control>	
                         </control>
                     </control>
                     <!-- Move Panel 2 to 1-->
@@ -1531,13 +1531,13 @@
                                 <include>OverlayVisibility0</include>
                             </control>
 							<control type="image">
-								<left>435</left>
-								<top>630</top>
-								<width>60</width>
-								<height>60</height>
-								<texture>$VAR[VideoextrasOverlay]</texture>
+                                <left>408</left>
+                                <top>62</top>
+                                <width>90</width>
+                                <height>90</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
-							</control>								
+							</control>	
                         </control>
                     </control>
                 </control>

@@ -177,6 +177,14 @@
                     <texture background="true" diffuse="views/tripanel/poster_diffuse.png" fallback="DefaultVideoBigPoster.png">$VAR[ListPosterVar]</texture>
                     <fadetime>400</fadetime>
                 </control>
+			<control type="image">
+				<left>397</left>
+				<top>30</top>
+				<width>200</width>
+				<height>202</height>
+				<texture background="true" diffuse="thumbs/ExtraOverlayWatchedtripanel.png">$VAR[VideoextrasOverlay]</texture>
+				<visible>System.HasAddon(script.videoextras)</visible>
+			</control>					
                 <control type="image">
                     <width>640</width>
                     <height>980</height>
@@ -223,6 +231,14 @@
                     <texture background="true" diffuse="views/tripanel/poster_diffuse.png" fallback="DefaultVideoBigPoster.png">$VAR[ListPosterVar]</texture>
                     <fadetime>400</fadetime>
                 </control>
+			<control type="image">
+				<left>350</left>
+				<top>28</top>
+				<width>200</width>
+				<height>202</height>
+				<texture background="true" diffuse="thumbs/ExtraOverlayWatchedtripanel.png">$VAR[VideoextrasOverlay]</texture>
+				<visible>System.HasAddon(script.videoextras)</visible>
+			</control>				
                 <control type="image">
                     <width>590</width>
                     <height>903</height>
@@ -464,10 +480,10 @@
                                 <include>OverlayVisibility0</include>
                             </control>
 							<control type="image">
-								<left>750</left>
-								<top>110</top>
-								<width>40</width>
-								<height>40</height>
+                                <left>701</left>
+                                <top>5</top>
+                                <width>90</width>
+                                <height>90</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
 							</control>								
@@ -532,10 +548,10 @@
                                 <include>OverlayVisibility0</include>
                             </control>
 							<control type="image">
-								<left>750</left>
-								<top>110</top>
-								<width>40</width>
-								<height>40</height>
+                                <left>701</left>
+                                <top>12</top>
+                                <width>90</width>
+                                <height>90</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
 							</control>									
