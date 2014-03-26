@@ -3090,9 +3090,59 @@
         <value condition="Substring(ListItem.Path),BDMV">$INFO[ListItem.Art(fanart),../,]</value>
         <value>$INFO[ListItem.Art(fanart)]</value>
     </variable>	
+    <variable name="VideoextrasOverlay-1">
+       <value condition="Container.Content(Movies) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(-1).DBID,special://profile/addon_data/script.videoextras/movies/,.png]</value>
+       <value condition="Container.Content(TVShows) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(-1).DBID,special://profile/addon_data/script.videoextras/TVShows/,.png]</value>
+       <value condition="Container.Content(MusicVideos) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(-1).DBID,special://profile/addon_data/script.videoextras/MusicVideos/,.png]</value>
+    </variable>
     <variable name="VideoextrasOverlay">
        <value condition="Container.Content(Movies) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem.DBID,special://profile/addon_data/script.videoextras/movies/,.png]</value>
        <value condition="Container.Content(TVShows) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem.DBID,special://profile/addon_data/script.videoextras/TVShows/,.png]</value>
        <value condition="Container.Content(MusicVideos) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem.DBID,special://profile/addon_data/script.videoextras/MusicVideos/,.png]</value>
+    </variable>
+    <variable name="VideoextrasOverlay1">
+       <value condition="Container.Content(Movies) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(1).DBID,special://profile/addon_data/script.videoextras/movies/,.png]</value>
+       <value condition="Container.Content(TVShows) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(1).DBID,special://profile/addon_data/script.videoextras/TVShows/,.png]</value>
+       <value condition="Container.Content(MusicVideos) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(1).DBID,special://profile/addon_data/script.videoextras/MusicVideos/,.png]</value>
+    </variable>
+	<variable name="VideoextrasOverlay2">
+       <value condition="Container.Content(Movies) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(2).DBID,special://profile/addon_data/script.videoextras/movies/,.png]</value>
+       <value condition="Container.Content(TVShows) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(2).DBID,special://profile/addon_data/script.videoextras/TVShows/,.png]</value>
+       <value condition="Container.Content(MusicVideos) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(2).DBID,special://profile/addon_data/script.videoextras/MusicVideos/,.png]</value>
+    </variable>
+	<variable name="VideoextrasOverlay3">
+       <value condition="Container.Content(Movies) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(3).DBID,special://profile/addon_data/script.videoextras/movies/,.png]</value>
+       <value condition="Container.Content(TVShows) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(3).DBID,special://profile/addon_data/script.videoextras/TVShows/,.png]</value>
+       <value condition="Container.Content(MusicVideos) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(3).DBID,special://profile/addon_data/script.videoextras/MusicVideos/,.png]</value>
+    </variable>
+	<variable name="VideoextrasOverlay4">
+       <value condition="Container.Content(Movies) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(4).DBID,special://profile/addon_data/script.videoextras/movies/,.png]</value>
+       <value condition="Container.Content(TVShows) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(4).DBID,special://profile/addon_data/script.videoextras/TVShows/,.png]</value>
+       <value condition="Container.Content(MusicVideos) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(4).DBID,special://profile/addon_data/script.videoextras/MusicVideos/,.png]</value>
+    </variable>
+	    <variable name="VideoextrasOverlay5">
+       <value condition="Container.Content(Movies) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(5).DBID,special://profile/addon_data/script.videoextras/movies/,.png]</value>
+       <value condition="Container.Content(TVShows) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(5).DBID,special://profile/addon_data/script.videoextras/TVShows/,.png]</value>
+       <value condition="Container.Content(MusicVideos) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(5).DBID,special://profile/addon_data/script.videoextras/MusicVideos/,.png]</value>
+    </variable>
+	<variable name="VideoextrasOverlay6">
+       <value condition="Container.Content(Movies) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(6).DBID,special://profile/addon_data/script.videoextras/movies/,.png]</value>
+       <value condition="Container.Content(TVShows) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(6).DBID,special://profile/addon_data/script.videoextras/TVShows/,.png]</value>
+       <value condition="Container.Content(MusicVideos) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(6).DBID,special://profile/addon_data/script.videoextras/MusicVideos/,.png]</value>
+    </variable>
+	<variable name="VideoextrasOverlay7">
+       <value condition="Container.Content(Movies) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(7).DBID,special://profile/addon_data/script.videoextras/movies/,.png]</value>
+       <value condition="Container.Content(TVShows) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(7).DBID,special://profile/addon_data/script.videoextras/TVShows/,.png]</value>
+       <value condition="Container.Content(MusicVideos) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(7).DBID,special://profile/addon_data/script.videoextras/MusicVideos/,.png]</value>
+    </variable>
+	<variable name="VideoextrasOverlay8">
+       <value condition="Container.Content(Movies) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(8).DBID,special://profile/addon_data/script.videoextras/movies/,.png]</value>
+       <value condition="Container.Content(TVShows) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(8).DBID,special://profile/addon_data/script.videoextras/TVShows/,.png]</value>
+       <value condition="Container.Content(MusicVideos) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(8).DBID,special://profile/addon_data/script.videoextras/MusicVideos/,.png]</value>
     </variable>	
+	<variable name="VideoextrasOverlay9">
+       <value condition="Container.Content(Movies) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(9).DBID,special://profile/addon_data/script.videoextras/movies/,.png]</value>
+       <value condition="Container.Content(TVShows) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(9).DBID,special://profile/addon_data/script.videoextras/TVShows/,.png]</value>
+       <value condition="Container.Content(MusicVideos) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(9).DBID,special://profile/addon_data/script.videoextras/MusicVideos/,.png]</value>
+    </variable>		
 </includes>

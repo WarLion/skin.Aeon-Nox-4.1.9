@@ -623,7 +623,7 @@
         <control type="image">
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility-7</include>
-        </control>
+        </control>		
     </include>
     <include name="MovieShowCaseItem-6">
         <include>MovieShowCaseGlow</include>
@@ -644,7 +644,7 @@
         <control type="image">
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility-6</include>
-        </control>
+        </control>		
     </include>
     <include name="MovieShowCaseItem-5">
         <include>MovieShowCaseGlow</include>
@@ -797,6 +797,11 @@
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility1</include>
         </control>
+		<control type="image">
+			<include>WatchedOverlayShowCase</include>
+			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay1]</texture>
+			<visible>System.HasAddon(script.videoextras)</visible>
+		</control>			
     </include>
     <include name="MovieShowCaseItem2">
         <include>MovieShowCaseGlow</include>
@@ -818,6 +823,11 @@
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility2</include>
         </control>
+		<control type="image">
+			<include>WatchedOverlayShowCase</include>
+			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay2]</texture>
+			<visible>System.HasAddon(script.videoextras)</visible>
+		</control>		
     </include>
     <include name="MovieShowCaseItem3">
         <include>MovieShowCaseGlow</include>
@@ -839,6 +849,11 @@
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility3</include>
         </control>
+		<control type="image">
+			<include>WatchedOverlayShowCase</include>
+			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay3]</texture>
+			<visible>System.HasAddon(script.videoextras)</visible>
+		</control>		
     </include>
     <include name="MovieShowCaseItem4">
         <include>MovieShowCaseGlow</include>
@@ -860,6 +875,11 @@
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility4</include>
         </control>
+		<control type="image">
+			<include>WatchedOverlayShowCase</include>
+			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay4]</texture>
+			<visible>System.HasAddon(script.videoextras)</visible>
+		</control>		
     </include>
     <include name="MovieShowCaseItem5">
         <include>MovieShowCaseGlow</include>
@@ -881,6 +901,11 @@
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility5</include>
         </control>
+		<control type="image">
+			<include>WatchedOverlayShowCase</include>
+			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay5]</texture>
+			<visible>System.HasAddon(script.videoextras)</visible>
+		</control>		
     </include>
     <include name="MovieShowCaseItem6">
         <include>MovieShowCaseGlow</include>
@@ -902,6 +927,11 @@
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility6</include>
         </control>
+		<control type="image">
+			<include>WatchedOverlayShowCase</include>
+			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay6]</texture>
+			<visible>System.HasAddon(script.videoextras)</visible>
+		</control>		
     </include>
     <include name="MovieShowCaseItem7">
         <include>MovieShowCaseGlow</include>
@@ -923,5 +953,10 @@
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility7</include>
         </control>
+		<control type="image">
+			<include>WatchedOverlayShowCase</include>
+			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay7]</texture>
+			<visible>System.HasAddon(script.videoextras)</visible>
+		</control>		
     </include>
 </includes>

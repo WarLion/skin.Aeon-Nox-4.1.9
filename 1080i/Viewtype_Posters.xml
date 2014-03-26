@@ -56,7 +56,15 @@
                                 <width>30</width>
                                 <height>30</height>
                                 <include>OverlayVisibility9</include>
-                            </control>
+                            </control>	
+							<control type="image">
+                                <left>153</left>
+                                <top>24</top>
+                                <width>30</width>
+                                <height>30</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay9]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>													
                         </control>
                     </control>
                     <!-- Move Panel 8 to 9-->
@@ -101,6 +109,14 @@
                                 <height>38</height>
                                 <include>OverlayVisibility8</include>
                             </control>
+							<control type="image">
+                                <left>188</left>
+                                <top>28</top>
+                                <width>38</width>
+                                <height>38</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay8]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Move Panel 7 to 8-->
@@ -145,6 +161,14 @@
                                 <height>45</height>
                                 <include>OverlayVisibility7</include>
                             </control>
+							<control type="image">
+                                <left>219</left>
+                                <top>33</top>
+                                <width>45</width>
+                                <height>45</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay7]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Move Panel 6 to 7-->
@@ -189,6 +213,14 @@
                                 <height>52</height>
                                 <include>OverlayVisibility6</include>
                             </control>
+							<control type="image">
+                                <left>250</left>
+                                <top>39</top>
+                                <width>52</width>
+                                <height>52</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay6]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Move Panel 5 to 6-->
@@ -233,6 +265,14 @@
                                 <height>60</height>
                                 <include>OverlayVisibility5</include>
                             </control>
+							<control type="image">
+                                <left>280</left>
+                                <top>44</top>
+                                <width>60</width>
+                                <height>60</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay5]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Move Panel 4 to 5-->
@@ -277,6 +317,14 @@
                                 <height>68</height>
                                 <include>OverlayVisibility4</include>
                             </control>
+							<control type="image">
+                                <left>312</left>
+                                <top>50</top>
+                                <width>68</width>
+                                <height>68</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay4]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Move Panel 3 to 4-->
@@ -321,6 +369,14 @@
                                 <height>75</height>
                                 <include>OverlayVisibility3</include>
                             </control>
+							<control type="image">
+                                <left>344</left>
+                                <top>54</top>
+                                <width>75</width>
+                                <height>75</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay3]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Move Panel 2 to 3-->
@@ -365,6 +421,14 @@
                                 <height>82</height>
                                 <include>OverlayVisibility2</include>
                             </control>
+							<control type="image">
+                                <left>375</left>
+                                <top>57</top>
+                                <width>82</width>
+                                <height>82</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay2]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Move Panel 1 to 2-->
@@ -409,6 +473,14 @@
                                 <height>90</height>
                                 <include>OverlayVisibility1</include>
                             </control>
+							<control type="image">
+                                <left>408</left>
+                                <top>62</top>
+                                <width>90</width>
+                                <height>90</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay1]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Move Panel 1 to 2 -->
@@ -564,6 +636,14 @@
                                 <height>30</height>
                                 <include>OverlayVisibility8</include>
                             </control>
+							<control type="image">
+                                <left>153</left>
+                                <top>24</top>
+                                <width>30</width>
+                                <height>30</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay8]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Move Panel 9 to 8-->
@@ -608,6 +688,14 @@
                                 <height>30</height>
                                 <include>OverlayVisibility7</include>
                             </control>
+							<control type="image">
+                                <left>153</left>
+                                <top>24</top>
+                                <width>30</width>
+                                <height>30</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay7]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Move Panel 8 to 7-->
@@ -652,6 +740,14 @@
                                 <height>38</height>
                                 <include>OverlayVisibility6</include>
                             </control>
+							<control type="image">
+                                <left>188</left>
+                                <top>28</top>
+                                <width>38</width>
+                                <height>38</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay6]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Move Panel 7 to 6-->
@@ -696,6 +792,14 @@
                                 <height>45</height>
                                 <include>OverlayVisibility5</include>
                             </control>
+							<control type="image">
+                                <left>219</left>
+                                <top>33</top>
+                                <width>45</width>
+                                <height>45</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay5]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Move Panel 6 to 5-->
@@ -740,6 +844,14 @@
                                 <height>52</height>
                                 <include>OverlayVisibility4</include>
                             </control>
+							<control type="image">
+                                <left>250</left>
+                                <top>39</top>
+                                <width>52</width>
+                                <height>52</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay4]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Move Panel 5 to 4-->
@@ -784,6 +896,14 @@
                                 <height>60</height>
                                 <include>OverlayVisibility3</include>
                             </control>
+							<control type="image">
+                                <left>280</left>
+                                <top>44</top>
+                                <width>60</width>
+                                <height>60</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay3]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Move Panel 4 to 3-->
@@ -828,6 +948,14 @@
                                 <height>68</height>
                                 <include>OverlayVisibility2</include>
                             </control>
+							<control type="image">
+                                <left>312</left>
+                                <top>50</top>
+                                <width>68</width>
+                                <height>68</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay2]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Move Panel 3 to 2-->
@@ -872,6 +1000,14 @@
                                 <height>75</height>
                                 <include>OverlayVisibility1</include>
                             </control>
+							<control type="image">
+                                <left>344</left>
+                                <top>54</top>
+                                <width>75</width>
+                                <height>75</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay1]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Move Panel 2 to 1-->
@@ -909,6 +1045,14 @@
                                 <height>82</height>
                                 <include>OverlayVisibility0</include>
                             </control>	
+							<control type="image">
+                                <left>375</left>
+                                <top>57</top>
+                                <width>82</width>
+                                <height>82</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Move Panel 2 to 1-->
@@ -1002,6 +1146,13 @@
                                 <height>90</height>
                                 <include>OverlayVisibility-1</include>
                             </control>
+							<control type="image">
+                                <left>364</left>
+                                <width>90</width>
+                                <height>90</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay-1]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                 </control>
@@ -1070,6 +1221,14 @@
                                 <height>30</height>
                                 <include>OverlayVisibility8</include>
                             </control>
+							<control type="image">
+                                <left>153</left>
+                                <top>24</top>
+                                <width>30</width>
+                                <height>30</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay8]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Panel 8 -->
@@ -1126,6 +1285,14 @@
                                 <height>38</height>
                                 <include>OverlayVisibility7</include>
                             </control>
+							<control type="image">
+                                <left>188</left>
+                                <top>28</top>
+                                <width>38</width>
+                                <height>38</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay7]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Panel 7 -->
@@ -1182,6 +1349,14 @@
                                 <height>45</height>
                                 <include>OverlayVisibility6</include>
                             </control>
+							<control type="image">
+                                <left>219</left>
+                                <top>33</top>
+                                <width>45</width>
+                                <height>45</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay6]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Panel 6 -->
@@ -1238,6 +1413,14 @@
                                 <height>52</height>
                                 <include>OverlayVisibility5</include>
                             </control>
+							<control type="image">
+                                <left>250</left>
+                                <top>39</top>
+                                <width>52</width>
+                                <height>52</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay5]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Panel 5 -->
@@ -1294,6 +1477,14 @@
                                 <height>60</height>
                                 <include>OverlayVisibility4</include>
                             </control>
+							<control type="image">
+                                <left>280</left>
+                                <top>44</top>
+                                <width>60</width>
+                                <height>60</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay4]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Panel 4 -->
@@ -1350,6 +1541,14 @@
                                 <height>68</height>
                                 <include>OverlayVisibility3</include>
                             </control>
+							<control type="image">
+                                <left>312</left>
+                                <top>50</top>
+                                <width>68</width>
+                                <height>68</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay3]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Panel 3 -->
@@ -1406,6 +1605,14 @@
                                 <height>75</height>
                                 <include>OverlayVisibility2</include>
                             </control>
+							<control type="image">
+                                <left>344</left>
+                                <top>54</top>
+                                <width>75</width>
+                                <height>75</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay2]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Panel 2 -->
@@ -1462,6 +1669,14 @@
                                 <height>82</height>
                                 <include>OverlayVisibility1</include>
                             </control>
+							<control type="image">
+                                <left>375</left>
+                                <top>57</top>
+                                <width>82</width>
+                                <height>82</height>
+								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay1]</texture>
+								<visible>System.HasAddon(script.videoextras)</visible>
+							</control>								
                         </control>
                     </control>
                     <!-- Panel 1 -->
