@@ -82,6 +82,13 @@
                 <onclick>Skin.ToggleSetting(bottomindicator)</onclick>
                 <selected>Skin.HasSetting(bottomindicator)</selected>
             </control>
+            <control type="radiobutton" id="417">
+                <label>32992</label>
+                <include>Objects_CommonSettingsButton</include>
+                <onclick>Skin.ToggleSetting(bottomMenu)</onclick>
+                <selected>Skin.HasSetting(bottomMenu)</selected>
+				<visible>Skin.HasSetting(bottomindicator)</visible>
+            </control>				
             <control type="button" id="314">
                 <label>$LOCALIZE[31613]</label>
                 <label2>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(CustomFocusOffset)][/COLOR]</label2>
@@ -89,7 +96,7 @@
                 <!--                 <onclick>ActivateWindow(1129)</onclick>-->
                 <onclick>SetProperty(StartupFocus,1,home)</onclick>
                 <onclick>ActivateWindow(1151)</onclick>
-            </control>
+            </control>		
             <control type="button" id="315">
                 <label>31644</label>
                 <include>Objects_CommonSettingsButton</include>

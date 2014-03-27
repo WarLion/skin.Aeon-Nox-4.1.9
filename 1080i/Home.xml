@@ -281,6 +281,7 @@
             <include>HiddenObject</include>
             <onfocus>SetFocus(9000)</onfocus>
             <onfocus>ActivateWindow(1159)</onfocus>
+			<visible>Skin.HasSetting(bottomindicator)</visible>
         </control>
         <include>MainMenuCommonContent</include>
         <!-- Fanart -->

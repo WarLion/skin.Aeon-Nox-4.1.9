@@ -7,6 +7,7 @@
     <animation effect="slide" start="0,0" end="0,100" time="320" tween="quadratic">WindowClose</animation>
     <controls>
         <control type="group">
+			<visible>Skin.HasSetting(bottomindicator)</visible>
             <control type="image">
                 <top>978</top>
                 <width>1920</width>

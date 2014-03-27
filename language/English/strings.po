@@ -2202,3 +2202,7 @@ msgstr "Weather Condition instead of Image"
 msgctxt "#32991"
 msgid "Disable Weather on Visualisation"
 msgstr "Disable Weather on Visualisation"
+
+msgctxt "#32992"
+msgid "Enable Bottom Menu Tab"
+msgstr "Enable Bottom Menu Tab"
