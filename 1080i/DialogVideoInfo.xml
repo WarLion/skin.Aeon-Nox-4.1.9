@@ -122,14 +122,14 @@
                             </control>						
                             <control type="label">
                                 <left>-20</left>
-                                <top>-13</top>
+                                <top>-11</top>
                                 <width>120</width>
                                 <height>120</height>
                                 <label>$INFO[ListItem.Top250]</label>
                                 <textcolor>black</textcolor>
                                 <align>center</align>
                                 <font>Font_Bold28</font>
-								<visible>IntegerGreaterThan(ListItem.Top250,4)</visible>
+								<visible>IntegerGreaterThan(ListItem.Top250,3)</visible>
                             </control>
                         </control>
                         <control type="grouplist">
