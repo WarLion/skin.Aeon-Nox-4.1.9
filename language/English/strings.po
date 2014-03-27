@@ -2184,8 +2184,8 @@ msgid "TBD"
 msgstr "TBD"
 
 msgctxt "#32980"
-msgid "New Serie"
-msgstr "New Serie"
+msgid "New Series"
+msgstr "New Series"
 
 msgctxt "#32982"
 msgid "Final Season"
