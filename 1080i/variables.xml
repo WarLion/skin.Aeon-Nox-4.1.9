@@ -198,6 +198,7 @@
         <value condition="Player.Forwarding32x | Player.Rewinding32x">32x</value>
     </variable>
     <variable name="WidgetRatingFlagVar">
+		<value condition="substring(Window(home).Property(mpaa),X)">MPAA_X_Certificate_US</value> 
         <value condition="substring(Window(home).Property(mpaa),TV-G)">TV-G_Certificate_US</value>
         <value condition="substring(Window(home).Property(mpaa),TV-PG)">TV-PG_Certificate_US</value>
         <value condition="substring(Window(home).Property(mpaa),TV-14)">TV-14_Certificate_US</value>
@@ -241,6 +242,7 @@
         <value condition="substring(Window(home).Property(mpaa),Brazil:14) | substring(Window(home).Property(mpaa),14 anos)">MPAA_Brazil_14</value>
         <value condition="substring(Window(home).Property(mpaa),Brazil:16) | substring(Window(home).Property(mpaa),16 anos)">MPAA_Brazil_16</value>
         <value condition="substring(Window(home).Property(mpaa),Brazil:18) | substring(Window(home).Property(mpaa),18 anos)">MPAA_Brazil_18</value>
+		<value condition="substring(ListItem.mpaa,X)">MPAA_X_Certificate_US</value> 
     </variable>
 	<variable name="TvGuideVarTxt">
 		<value condition="substring(Window(Home).Property(NextAired.StatusID),0)">$LOCALIZE[32976]</value>
@@ -432,6 +434,7 @@
         <value condition="substring(ListItem.mpaa,Brazil:18) | substring(ListItem.mpaa,18 anos)">MPAA_Brazil_18</value>
     </variable>
     <variable name="VideoRatingFlagVar">
+		<value condition="substring(VideoPlayer.mpaa,X)">MPAA_X_Certificate_US</value>
         <value condition="substring(VideoPlayer.mpaa,TV-G)">TV-G_Certificate_US</value>
         <value condition="substring(VideoPlayer.mpaa,TV-PG)">TV-PG_Certificate_US</value>
         <value condition="substring(VideoPlayer.mpaa,TV-14)">TV-14_Certificate_US</value>
