@@ -497,10 +497,15 @@
                                 <include>OverlayVisibility0</include>
                             </control>
 							<control type="image">
-                                <include>WatchedOverlayShowCase</include>
+								<include>WatchedOverlayShowCase</include>
 								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
-								<visible>System.HasAddon(script.videoextras)</visible>
+								<visible>System.HasAddon(script.videoextras) + Skin.HasSetting(clearcases) | !Skin.HasSetting(usecases)</visible>
 							</control>	
+							<control type="image">
+								<include>WatchedOverlayShowCase</include>
+								<texture background="true">$VAR[VideoextrasOverlay]</texture>
+								<visible>System.HasAddon(script.videoextras) + Skin.HasSetting(usecases)  + !Skin.HasSetting(clearcases)</visible>
+							</control>
                         </control>
                     </control>
                 </control>
@@ -587,13 +592,13 @@
         <animation effect="fade" start="70" end="70" time="0" condition="true">Conditional</animation>
     </include>
     <include name="WatchedOverlayShowCase">
-        <left>188</left>
-        <top>10</top>
+        <left>189</left>
+        <top>9</top>
         <width>90</width>
         <height>90</height>
         <fadetime>0</fadetime>
         <animation effect="slide" start="0,0" end="6,-3" time="0" condition="Skin.HasSetting(usecases) + [container.content(movies) | Container.Content(musicvideos)]">Conditional</animation>
-        <animation effect="slide" start="0,0" end="0,-29" time="0" condition="[container.content(movies) | Container.Content(musicvideos)] + Skin.HasSetting(usecases) + !Skin.HasSetting(clearcases)">Conditional</animation>
+        <animation effect="slide" start="0,0" end="-10,11" time="0" condition="[container.content(movies) | Container.Content(musicvideos)] + Skin.HasSetting(usecases) + !Skin.HasSetting(clearcases)">Conditional</animation>
     </include>
     <!-- Movie Showcase Variables: Thumb glass overlays -->
     <include name="MovieShowcaseGlassOverlay">
@@ -750,6 +755,11 @@
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility-1</include>
         </control>
+		<control type="image">
+            <include>WatchedOverlayShowCase</include>
+			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay-1]</texture>
+			<visible>System.HasAddon(script.videoextras)</visible>
+        </control>		
     </include>
     <include name="MovieShowCaseItem0">
         <include>MovieShowCaseGlow</include>

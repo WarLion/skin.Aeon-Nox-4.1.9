@@ -417,17 +417,30 @@
                     <effect type="zoom" start="100" end="83" time="0" tween="cubic" easing="inout" center="auto" />
                 </animation>
                 <include>Animation_VisibleChange400</include>
-            </control>		
-            <control type="image">
-                <left>1747</left>
-                <top>15</top>
-                <width>45</width>
-                <height>45</height>
-                <texture>$VAR[WatchedIconVar]</texture>
-                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-				<visible>!Skin.HasSetting(no_infopane_panel)</visible>
-				<include>Animation_VisibleChange400</include>
-            </control>
+            </control>	
+			<control type="group">	
+					<visible>!Skin.HasSetting(no_infopane_panel) + Skin.HasSetting(enable_Watchedicontop)</visible>
+					<include>Animation_VisibleChange400</include>			
+				<control type="image">
+					<left>1747</left>
+					<top>15</top>
+					<width>45</width>
+					<height>45</height>
+					<texture>$VAR[WatchedIconVar]</texture>
+					<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+				</control>
+				<control type="label">
+					<left>1745</left>
+					<top>8</top>
+					<width>50</width>
+					<height>50</height>
+					<label>$INFO[ListItem.Top250]</label>
+					<textcolor>white6</textcolor>
+					<align>center</align>
+					<font>Font_Bold15_Caps</font>
+					<visible>IntegerGreaterThan(ListItem.Top250,3)</visible>
+				</control>
+			</control>			
             <control type="image">
                 <left>136</left>
                 <top>20</top>

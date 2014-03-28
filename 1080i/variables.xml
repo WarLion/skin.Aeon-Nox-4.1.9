@@ -1618,7 +1618,8 @@
         <value>$INFO[ListItem(9).Icon]</value>
     </variable>
     <variable name="ShowcaseCasePathVar">
-        <value condition="!Skin.HasSetting(clearcases)">tvshows</value>
+        <value condition="!Skin.HasSetting(clearcases) + !Skin.HasSetting(Colorcases)">tvshows</value>
+		<value condition="!Skin.HasSetting(clearcases) + Skin.HasSetting(Colorcases)">colorcases</value>
         <value>movies</value>
     </variable>
     <variable name="ShowcaseCaseLabelVar">

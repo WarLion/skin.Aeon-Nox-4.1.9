@@ -2206,3 +2206,7 @@ msgstr "Disable Weather on Visualisation"
 msgctxt "#32992"
 msgid "Enable Bottom Menu Tab"
 msgstr "Enable Bottom Menu Tab"
+
+msgctxt "#32993"
+msgid "Enable Status Icon"
+msgstr "Enable Status Icon"

@@ -140,6 +140,12 @@
             <style>bold</style>
         </font>
         <font>
+            <name>Font_Bold10</name>
+            <filename>MC360.ttf</filename>
+            <size>10</size>
+            <style>bold</style>
+        </font>		
+        <font>
             <name>Font_Bold30_Caps</name>
             <filename>MC360.ttf</filename>
             <style>bold uppercase</style>
@@ -164,6 +170,13 @@
             <linespacing>0.8</linespacing>
             <size>22</size>
         </font>
+        <font>
+            <name>Font_Bold15_Caps</name>
+            <filename>MC360.ttf</filename>
+            <style>bold uppercase</style>
+            <linespacing>0.8</linespacing>
+            <size>15</size>
+        </font>		
         <font>
             <name>Font_Reg57</name>
             <filename>MC360.ttf</filename>
@@ -556,6 +569,13 @@
             <size>22</size>
         </font>
         <font>
+            <name>Font_Bold15_Caps</name>
+            <filename>OpenSansCond.ttf</filename>
+            <style>bold uppercase</style>
+            <linespacing>0.8</linespacing>
+            <size>15</size>
+        </font>		
+        <font>
             <name>Font_Reg57</name>
             <filename>OpenSansCond.ttf</filename>
             <size>57</size>
@@ -925,6 +945,13 @@
             <linespacing>0.8</linespacing>
             <size>22</size>
         </font>
+        <font>
+            <name>Font_Bold15_Caps</name>
+            <filename>MC360.ttf</filename>
+            <style>bold uppercase</style>
+            <linespacing>0.8</linespacing>
+            <size>15</size>
+        </font>		
         <font>
             <name>Font_Reg57</name>
             <filename>MC360.ttf</filename>
@@ -1303,6 +1330,13 @@
             <size>22</size>
         </font>
         <font>
+            <name>Font_Bold15_Caps</name>
+            <filename>Ubuntu-C.ttf</filename>
+            <style>bold uppercase</style>
+            <linespacing>0.8</linespacing>
+            <size>15</size>
+        </font>
+        <font>
             <name>Font_Reg57</name>
             <filename>Ubuntu-C.ttf</filename>
             <size>57</size>
@@ -1633,6 +1667,13 @@
             <style>bold uppercase</style>
             <linespacing>0.8</linespacing>
             <size>22</size>
+        </font>
+        <font>
+            <name>Font_Bold15_Caps</name>
+            <filename>Ubuntu-B_KOR.ttf</filename>
+            <style>bold uppercase</style>
+            <linespacing>0.8</linespacing>
+            <size>15</size>
         </font>
         <font>
             <name>Font_Reg57</name>
@@ -1971,6 +2012,13 @@
             <style>bold uppercase</style>
             <linespacing>0.8</linespacing>
             <size>22</size>
+        </font>
+        <font>
+            <name>Font_Bold15_Caps</name>
+            <filename>BebasNeue.ttf</filename>
+            <style>bold uppercase</style>
+            <linespacing>0.8</linespacing>
+            <size>15</size>
         </font>
         <font>
             <name>Font_Reg26_Caps</name>
@@ -2365,6 +2413,13 @@
             <size>22</size>
         </font>
         <font>
+            <name>Font_Bold15_Caps</name>
+            <filename>MC360.ttf</filename>
+            <style>bold uppercase</style>
+            <linespacing>0.8</linespacing>
+            <size>15</size>
+        </font>
+        <font>
             <name>Font_Reg57</name>
             <filename>MC360.ttf</filename>
             <size>61</size>
@@ -2722,6 +2777,13 @@
             <size>22</size>
         </font>
         <font>
+            <name>Font_Bold15_Caps</name>
+            <filename>arial.ttf</filename>
+            <style>bold uppercase</style>
+            <linespacing>0.8</linespacing>
+            <size>15</size>
+        </font>
+        <font>
             <name>Font_Reg57</name>
             <filename>arial.ttf</filename>
             <size>57</size>
@@ -3067,6 +3129,13 @@
             <style>bold uppercase</style>
             <linespacing>0.8</linespacing>
             <size>22</size>
+        </font>
+        <font>
+            <name>Font_Bold15_Caps</name>
+            <filename>MC360_Accent.ttf</filename>
+            <style>bold uppercase</style>
+            <linespacing>0.8</linespacing>
+            <size>15</size>
         </font>
         <font>
             <name>Font_Reg57</name>
