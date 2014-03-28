@@ -2922,16 +2922,6 @@
                         <textcolor>white2</textcolor>
                         <visible>Substring(Window(home).Property(WidgetType),tv)</visible>
                     </control>
-                    <!--                         <control type="image">
-                            <top>-3</top>
-                            <width>50</width>
-                            <height>50</height>
-                            <aspectratio align="right">keep</aspectratio>
-                            <colordiffuse>white</colordiffuse>
-                             <animation effect="slide" end="9,0" time="0" condition="true">Conditional</animation>
-                            <texture>dialogs/circle/$INFO[Window(home).Property(PercentPlayed)].png</texture>
-                            <visible>!IsEmpty(Window(home).Property(PercentPlayed)) + !Stringcompare(Window(home).Property(PercentPlayed),0%)</visible>
-                        </control> -->
                     <control type="grouplist">
                         <height>36</height>
                         <left>7</left>
@@ -3041,21 +3031,38 @@
                         <visible>Substring(Window(home).Property(WidgetType),tv)</visible>
                     </control>
                 </control>
-                <control type="image">
-                    <left>1480</left>
-                    <top>245</top>
-                    <texture>tvguide/$INFO[Window(home).Property(StatusID),,.png]</texture>
-                    <width>150</width>
-                    <height>70</height>
-                    <aspectratio>keep</aspectratio>
-                    <fadetime>IconCrossfadeTime2</fadetime>
-                    <colordiffuse>white2</colordiffuse>
-                    <animation effect="fade" time="200">VisibleChange</animation>
-                    <animation type="Conditional" condition="!IsEmpty(Window(home).Property(PanelWidgetInfo)) | !IsEmpty(Window(home).Property(PanelWidget2Info))" reversible="true">
-                        <effect type="fade" start="0" end="100" delay="960" time="960" tween="cubic" />
-                        <effect type="zoom" start="100,0" end="100,100" delay="960" time="960" center="auto" tween="cubic" />
-                    </animation>
-                </control>
+				<control type="group">				
+					<control type="label">
+						<left>1577</left>
+						<top>255</top>				
+						<width>200</width>
+						<height>38</height>
+						<align>center</align>
+						<label>$INFO[Window(Home).Property(Status)]</label>
+						<font>Font_Reg19_Caps</font>
+						<textcolor>floor</textcolor>
+						<animation effect="fade" time="200">VisibleChange</animation>
+						<animation type="Conditional" condition="!IsEmpty(Window(home).Property(PanelWidgetInfo)) | !IsEmpty(Window(home).Property(PanelWidget2Info))" reversible="true">
+							<effect type="fade" start="0" end="100" delay="960" time="960" tween="cubic" />
+							<effect type="zoom" start="100,0" end="100,100" delay="960" time="960" center="auto" tween="cubic" />
+						</animation>					
+					</control>	
+					<control type="image">
+						<left>1605</left>
+						<top>265</top>
+						<texture>tvguide/$INFO[Window(home).Property(StatusID),,.png]</texture>
+						<width>150</width>
+						<height>70</height>
+						<aspectratio>keep</aspectratio>
+						<fadetime>IconCrossfadeTime2</fadetime>
+						<colordiffuse>white2</colordiffuse>
+						<animation effect="fade" time="200">VisibleChange</animation>
+						<animation type="Conditional" condition="!IsEmpty(Window(home).Property(PanelWidgetInfo)) | !IsEmpty(Window(home).Property(PanelWidget2Info))" reversible="true">
+							<effect type="fade" start="0" end="100" delay="960" time="960" tween="cubic" />
+							<effect type="zoom" start="100,0" end="100,100" delay="960" time="960" center="auto" tween="cubic" />
+						</animation>
+					</control>
+				</control>
                 <control type="image">
                     <left>495</left>
                     <top>256</top>
@@ -3078,15 +3085,6 @@
                         <effect type="zoom" start="100,0" end="100,100" delay="960" time="960" center="auto" tween="cubic" />
                     </animation>
                     <itemgap>0</itemgap>
-                    <!--                         <control type="image">
-                            <top>-14</top>
-                            <width>143</width>
-                            <height>95</height>
-                            <aspectratio align="left">keep</aspectratio>
-                            <colordiffuse>white</colordiffuse>
-                            <texture>dialogs/circle/$INFO[Window(home).Property(PercentPlayed)].png</texture>
-                            <visible>!IsEmpty(Window(home).Property(PercentPlayed)) + !Stringcompare(Window(home).Property(PercentPlayed),0%)</visible>
-                        </control> -->
                     <control type="grouplist" id="12100">
                         <animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
                         <width>30</width>
@@ -3186,11 +3184,7 @@
                             <font>Font_Bold34</font>
                             <textcolor>floor</textcolor>
                         </control>
-                    </control>
-                    <!--                     <control type="image">
-                        <texture>$INFO[Window(home).Property(Rating),stars/,.png]</texture>
-                        <include>WidgetFlagVars</include>
-                    </control> -->
+                    </control>									
                     <control type="image" id="13300">
                         <texture>$INFO[Window(home).Property(Studio),flags/studios/,.png]</texture>
                         <width>160</width>
@@ -6756,8 +6750,6 @@
                 <height>340</height>
                 <aspectratio align="center">scale</aspectratio>
                 <texture background="true" fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
-                <!--             <visible>IsEmpty(ListItem.Property(Fanart))</visible>
- -->
             </control>
             <control type="image">
                 <left>30</left>
@@ -6766,8 +6758,6 @@
                 <height>280</height>
                 <aspectratio align="center">keep</aspectratio>
                 <texture background="true">$INFO[ListItem.Property(Logo)]</texture>
-                <!--             <visible>IsEmpty(ListItem.Property(Fanart))</visible>
- -->
             </control>
         </control>
         <control type="image">
