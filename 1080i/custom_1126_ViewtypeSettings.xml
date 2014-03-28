@@ -118,13 +118,6 @@
                     <selected>Skin.HasSetting(nohighlist)</selected>
                     <visible>Window.IsActive(videolibrary) + Stringcompare(Window(home).Property(actualViewtype),LowList)</visible>
                 </control>
-                <control type="radiobutton" id="16307">
-                    <label>$LOCALIZE[31812]</label>
-                    <include>Objects_MediaMenuButtonAlt2</include>
-                    <onclick>Skin.ToggleSetting(lowlistcdart)</onclick>
-                    <selected>Skin.HasSetting(lowlistcdart)</selected>
-                    <visible>Container.Content(movies) + Stringcompare(Window(home).Property(actualViewtype),LowList)</visible>
-                </control>
                 <control type="radiobutton" id="16300">
                     <label>31810</label>
                     <include>Objects_MediaMenuButtonAlt2</include>
@@ -149,12 +142,11 @@
                     <visible>Container.Content(movies)</visible>
                     <visible>Stringcompare(Window(home).Property(actualViewtype),LowList)</visible>
                 </control>
-                <control type="radiobutton" id="1686">
+                <control type="button" id="1686">
                     <label>$LOCALIZE[31248]</label>
                     <include>Objects_MediaMenuButtonAlt2</include>
-                    <onclick>Skin.ToggleSetting(usecaseslowlist)</onclick>
-                    <selected>Skin.HasSetting(usecaseslowlist)</selected>
-                    <visible>Stringcompare(Window(home).Property(actualViewtype),LowList) + Container.Content(movies)</visible>
+                    <onclick>ActivateWindow(1166)</onclick>
+                    <visible>Stringcompare(Window(home).Property(actualViewtype),LowList)</visible>
                 </control>
                 <control type="radiobutton" id="1687">
                     <label>$LOCALIZE[31396]</label>
@@ -243,15 +235,12 @@
                     <visible>Stringcompare(Window(home).Property(actualViewtype),AddonWall) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
                 </control>
                 <control type="button" id="1642">
-                    <label>$LOCALIZE[31482]:</label>
-                    <label2>[COLOR $VAR[FontColorVar]]$VAR[AddonWallCasesLabelVar][/COLOR]</label2>
+                    <label>$LOCALIZE[31248]</label>
                     <include>Objects_MediaMenuButtonAlt2</include>
-                    <onclick condition="!Skin.HasSetting(useclearcasesinfowall2) + !Skin.HasSetting(usecasesinfowall)">Skin.SetBool(usecasesinfowall)</onclick>
-                    <onclick condition="Skin.HasSetting(usecasesinfowall)">Skin.SetBool(useclearcasesinfowall2)</onclick>
-                    <onclick condition="Skin.HasSetting(usecasesinfowall)">Skin.Reset(usecasesinfowall)</onclick>
-                    <onclick condition="Skin.HasSetting(useclearcasesinfowall2)">Skin.Reset(useclearcasesinfowall2)</onclick>
+                    <onclick>ActivateWindow(1166)</onclick>
                     <visible>Stringcompare(Window(home).Property(actualViewtype),AddonWall) + Container.Content(movies)</visible>
-                </control>
+                </control>				
+				<!--new cases button-->				
                 <control type="button" id="1694">
                     <label>$LOCALIZE[31191]:</label>
                     <label2>[COLOR $VAR[FontColorVar]]$VAR[TVShowIconVar][/COLOR]</label2>

@@ -1622,6 +1622,14 @@
 		<value condition="!Skin.HasSetting(clearcases) + Skin.HasSetting(Colorcases)">colorcases</value>
         <value>movies</value>
     </variable>
+    <variable name="addonwallCasePathVar">
+		<value condition="!Skin.HasSetting(useclearcasesinfowall2) + Skin.HasSetting(ColorcasesAddonWall)">colorcases</value>
+        <value>tvshows</value>
+    </variable>	
+    <variable name="lowlistCasePathVar">
+		<value condition="Skin.HasSetting(ColorcasesLowList)">colorcases</value>
+        <value>tvshows</value>
+    </variable>		
     <variable name="ShowcaseCaseLabelVar">
         <value condition="Skin.HasSetting(usecases) + Skin.HasSetting(clearcases)">$LOCALIZE[31282]</value>
         <value condition="Skin.HasSetting(usecases)">$LOCALIZE[31248]</value>

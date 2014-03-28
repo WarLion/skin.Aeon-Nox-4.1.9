@@ -502,7 +502,7 @@
                             <width>189</width>
                             <height>257</height>
                             <aspectratio scalediffuse="false">stretch</aspectratio>
-                            <texture>thumbs/boxes/tvshows/$VAR[GlobalCaseVar]</texture>
+                            <texture>thumbs/boxes/$VAR[addonwallCasePathVar]/$VAR[GlobalCaseVar]</texture>
 <colordiffuse>FF727171</colordiffuse>
                         </control>
                         <control type="image">
@@ -540,7 +540,7 @@
                                 <width>189</width>
                                 <height>257</height>
                                 <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture>thumbs/boxes/tvshows/$VAR[GlobalCaseVar]</texture>
+                                <texture>thumbs/boxes/$VAR[addonwallCasePathVar]/$VAR[GlobalCaseVar]</texture>
                             </control>
                             <control type="image">
                                 <left>106</left>

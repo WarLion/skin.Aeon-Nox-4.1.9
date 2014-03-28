@@ -103,7 +103,8 @@
                         <icon>views/clearcases.png</icon>
                         <thumb>views/clearcases_focus.png</thumb>
 						<onclick>Skin.SetBool(clearcases)</onclick>
-						<onclick>Skin.SetBool(usecases)</onclick>										
+						<onclick>Skin.SetBool(usecases)</onclick>	
+						<visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies) + Container.Content(movies)</visible>									
                     </item>
                     <item id="2">
                         <label>$LOCALIZE[31248]</label>
@@ -112,6 +113,7 @@
                         <onclick>Skin.SetBool(usecases)</onclick>
 						<onclick>Skin.Reset(clearcases)</onclick>
 						<onclick>Skin.Reset(Colorcases)</onclick>
+						<visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies) + Container.Content(movies)</visible>	
                     </item>
                     <item id="3">
                         <label>$LOCALIZE[31182]</label>
@@ -120,6 +122,7 @@
                         <onclick>Skin.SetBool(usecases)</onclick>
 						<onclick>Skin.Reset(clearcases)</onclick>						
 						<onclick>Skin.SetBool(Colorcases)</onclick>
+						<visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies) + Container.Content(movies)</visible>	
                     </item>
                     <item id="4">
                         <label>$LOCALIZE[106]</label>
@@ -127,7 +130,68 @@
                         <thumb>views/nonecases_focus.png</thumb>
                         <onclick>Skin.Reset(clearcases)</onclick>
 						<onclick>Skin.Reset(usecases)</onclick>
+						<visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies) + Container.Content(movies)</visible>	
                     </item>
+                    <item id="5">
+                        <label>$LOCALIZE[31282]</label>
+                        <icon>views/clearcases.png</icon>
+                        <thumb>views/clearcases_focus.png</thumb>
+                        <onclick>Skin.SetBool(useclearcasesinfowall2)</onclick>
+						<onclick>Skin.Reset(usecasesinfowall)</onclick>		
+						<onclick>Skin.Reset(ColorcasesAddonWall)</onclick>				
+						<visible>Stringcompare(Window(home).Property(actualViewtype),AddonWall) + Container.Content(movies)</visible>									
+                    </item>
+                    <item id="6">
+                        <label>$LOCALIZE[31248]</label>
+                        <icon>views/db_dvd.png</icon>
+                        <thumb>views/db_dvd_focus.png</thumb>
+						<onclick>Skin.Reset(useclearcasesinfowall2)</onclick>
+						<onclick>Skin.SetBool(usecasesinfowall)</onclick>	
+						<onclick>Skin.Reset(ColorcasesAddonWall)</onclick>
+						<visible>Stringcompare(Window(home).Property(actualViewtype),AddonWall) + Container.Content(movies)</visible>	
+                    </item>
+                    <item id="7">
+                        <label>$LOCALIZE[31182]</label>
+                        <icon>views/casecolor.png</icon>
+                        <thumb>views/casecolor_focus.png</thumb>
+                        <onclick>Skin.SetBool(usecasesinfowall)</onclick>
+						<onclick>Skin.Reset(useclearcasesinfowall2)</onclick>						
+						<onclick>Skin.SetBool(ColorcasesAddonWall)</onclick>
+						<visible>Stringcompare(Window(home).Property(actualViewtype),AddonWall) + Container.Content(movies)</visible>	
+                    </item>
+                    <item id="8">
+                        <label>$LOCALIZE[106]</label>
+                        <icon>views/nonecases.png</icon>
+                        <thumb>views/nonecases_focus.png</thumb>
+                        <onclick>Skin.Reset(useclearcasesinfowall2)</onclick>
+						<onclick>Skin.Reset(usecasesinfowall)</onclick>
+						<onclick>Skin.Reset(ColorcasesAddonWall)</onclick>
+						<visible>Stringcompare(Window(home).Property(actualViewtype),AddonWall) + Container.Content(movies)</visible>	
+                    </item>	
+                    <item id="9">
+                        <label>$LOCALIZE[31248]</label>
+                        <icon>views/db_dvd.png</icon>
+                        <thumb>views/db_dvd_focus.png</thumb>
+						<onclick>Skin.SetBool(usecaseslowlist)</onclick>	
+						<onclick>Skin.Reset(ColorcasesLowList)</onclick>
+						<visible>Stringcompare(Window(home).Property(actualViewtype),LowList) + Container.Content(movies)</visible>	
+                    </item>
+                    <item id="10">
+                        <label>$LOCALIZE[31182]</label>
+                        <icon>views/casecolor.png</icon>
+                        <thumb>views/casecolor_focus.png</thumb>
+                        <onclick>Skin.SetBool(usecaseslowlist)</onclick>					
+						<onclick>Skin.SetBool(ColorcasesLowList)</onclick>
+						<visible>Stringcompare(Window(home).Property(actualViewtype),LowList) + Container.Content(movies)</visible>	
+                    </item>
+                    <item id="11">
+                        <label>$LOCALIZE[106]</label>
+                        <icon>views/nonecases.png</icon>
+                        <thumb>views/nonecases_focus.png</thumb>
+						<onclick>Skin.Reset(usecaseslowlist)</onclick>
+						<onclick>Skin.Reset(ColorcasesLowList)</onclick>
+						<visible>Stringcompare(Window(home).Property(actualViewtype),LowList) + Container.Content(movies)</visible>	
+                    </item>										
                 </content>
             </control>
             <control type="label">
@@ -175,6 +239,13 @@
                     <selected>Skin.HasSetting(showcasesquarezoom)</selected>
                     <visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseSquare)</visible>
                 </control>
+                <control type="radiobutton" id="1203">
+                    <label>$LOCALIZE[31812]</label>
+                    <include>Objects_MediaMenuButtonAround</include>
+                    <onclick>Skin.ToggleSetting(lowlistcdart)</onclick>
+                    <selected>Skin.HasSetting(lowlistcdart)</selected>
+                    <visible>Container.Content(movies) + Stringcompare(Window(home).Property(actualViewtype),LowList)</visible>
+                </control>				
             </control>			
         </control>
     </controls>
