@@ -48,18 +48,13 @@
                 </focusedlayout>
             </control>
 			         <control type="multiimage" id="4001">
-                        <imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
+                        <imagepath background="true">$VAR[MovieFanartVar]</imagepath>
                         <fadetime>350</fadetime>
                         <include>FullscreenDimensions</include>
                         <randomize>true</randomize>
                         <include>Animation_VisibleChange400</include>
-                        <visible>Skin.HasSetting(bigfanextrafanart) + [Container.Content(tvshows) | Container.Content(movies)]</visible>
-                    </control>	
-                    <control type="image">
-                        <texture background="true" fallback="special://skin/backgrounds/fallback_movies.jpg">$INFO[ListItem.Art(fanart)]</texture>
-                        <include>FullscreenDimensions</include>
-						<visible>Container.Content(sets)</visible>
-                    </control>					
+                        <visible>Skin.HasSetting(bigfanextrafanart) + [Container.Content(tvshows) | Container.Content(movies)] | Container.Content(sets)</visible>
+                    </control>				
         </control>	
     </include>
     <include name="BigFanFurniture">
