@@ -17,7 +17,7 @@
             <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
         </control>
         <control type="group">
-            <animation type="Conditional" condition="Window.IsActive(1128) | Window.IsActive(1127) | Window.IsActive(1112)">
+            <animation type="Conditional" condition="Window.IsActive(1128) | Window.IsActive(1127) | Window.IsActive(1112) | Window.IsActive(1166)">
                 <effect type="slide" end="-600" time="320" easing="in" tween="cubic" />
             </animation>
             <control type="grouplist" id="450">
@@ -104,13 +104,8 @@
                 </control>
                 <control type="button" id="1641">
                     <label>$LOCALIZE[31248]</label>
-                    <label2>[COLOR $VAR[FontColorVar]]$VAR[ShowcaseCaseLabelVar][/COLOR]</label2>
                     <include>Objects_MediaMenuButtonAlt2</include>
-                    <onclick condition="!Skin.HasSetting(clearcases) + Skin.HasSetting(usecases)">Skin.SetBool(clearcases)</onclick>
-                    <onclick condition="!Skin.HasSetting(clearcases) + !Skin.HasSetting(usecases)">Skin.SetBool(usecases)</onclick>
-                    <onclick condition="Skin.HasSetting(clearcases)">Skin.Reset(clearcases)</onclick>
-                    <onclick condition="Skin.HasSetting(clearcases)">Skin.Reset(usecases)</onclick>
-                    <onclick>SetFocus(1641)</onclick>
+                    <onclick>ActivateWindow(1166)</onclick>
                     <visible>[container.content(movies) | Container.Content(musicvideos)] + Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies)</visible>
                 </control>
                 <!--LowList Options-->
@@ -432,28 +427,6 @@
                     <onclick>Skin.ToggleSetting(usecasescd)</onclick>
                     <selected>!Skin.HasSetting(usecasescd)</selected>
                     <visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseSquare) + Container.Content(albums)</visible>
-                </control>
-                <control type="radiobutton" id="1651">
-                    <label>31018</label>
-                    <include>Objects_MediaMenuButtonAlt2</include>
-                    <onclick>Skin.ToggleSetting(showcasezoom)</onclick>
-                    <selected>Skin.HasSetting(showcasezoom)</selected>
-                    <visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies)</visible>
-                </control>
-                <control type="radiobutton" id="16520">
-                    <label>31018</label>
-                    <include>Objects_MediaMenuButtonAlt2</include>
-                    <onclick>Skin.ToggleSetting(showcasesquarezoom)</onclick>
-                    <selected>Skin.HasSetting(showcasesquarezoom)</selected>
-                    <visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseSquare)</visible>
-                </control>
-                <control type="radiobutton" id="16839">
-                    <label>31812</label>
-                    <include>Objects_MediaMenuButtonAlt2</include>
-                    <onclick>Skin.ToggleSetting(showcasecdart)</onclick>
-                    <selected>Skin.HasSetting(showcasecdart)</selected>
-                    <visible>Container.Content(movies)</visible>
-                    <visible>[Substring(Window(home).Property(actualViewtype),Showcase) | [Stringcompare(Window(home).Property(actualViewtype),TriPanel) + !Stringcompare(Skin.String(TriPanelPosition),3)]]</visible>
                 </control>
               <!--  <control type="radiobutton" id="16840">
                     <label>31812</label>
