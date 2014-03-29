@@ -108,6 +108,13 @@
                     <onclick>ActivateWindow(1166)</onclick>
                     <visible>[container.content(movies) | Container.Content(musicvideos)] + Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies)</visible>
                 </control>
+                <control type="radiobutton" id="1741">
+                    <label>$LOCALIZE[31282]</label>
+                    <include>Objects_MediaMenuButtonAlt2</include>
+                    <onclick>Skin.ToggleSetting(ClearCaseTvshow)</onclick>
+                    <selected>Skin.HasSetting(ClearCaseTvshow)</selected>
+                    <visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
+                </control>			
                 <!--LowList Options-->
                 <control type="radiobutton" id="1630">
                     <label>$LOCALIZE[31170]</label>
@@ -287,6 +294,7 @@
                     <onclick>Skin.ToggleSetting(Tracklist)</onclick>
                     <selected>Skin.HasSetting(Tracklist)</selected>
                     <visible>Stringcompare(Window(home).Property(actualViewtype),AddonWall) + Container.Content(Albums)</visible>
+<!--					<visible>Stringcompare(Window(home).Property(actualViewtype),InfoPanel)]</visible>-->
                 </control>												
                 <!--Floor Label Options-->
                 <control type="button" id="1649">

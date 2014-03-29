@@ -185,7 +185,7 @@
                         <thumb>views/poster_focus.png</thumb>
                         <property name="type">poster</property>
                         <onclick>Skin.SetString(InfoPanel$INFO[Window(home).Property(Area)]$INFO[Window(home).Property(actualViewtype)],poster)</onclick>
-						<visible>![Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]</visible>
+						<visible>![Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(episodes) | Container.Content(seasons)]</visible>
                     </item>
                     <item id="4">
                         <label>$LOCALIZE[31287]</label>
@@ -193,7 +193,7 @@
                         <thumb>views/fourthumbs_focus.png</thumb>
                         <property name="type">fourthumbs</property>
                         <onclick>Skin.SetString(InfoPanel$INFO[Window(home).Property(Area)]$INFO[Window(home).Property(actualViewtype)],fourthumbs)</onclick>
-						<visible>![Container.Content(albums) | Container.Content(songs)]</visible>
+						<visible>![Container.Content(albums) | Container.Content(songs) | Container.Content(episodes) | Container.Content(seasons)]</visible>
                     </item>
                 </content>
             </control>

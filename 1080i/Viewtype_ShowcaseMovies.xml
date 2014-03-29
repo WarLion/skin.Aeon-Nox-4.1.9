@@ -29,6 +29,10 @@
                     <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem0Var]</texture>
                     <include>MovieShowcaseThumb</include>
                 </control>
+				<control type="image">
+					<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+					<include>TvShowShowcaseThumb</include>
+				</control>					
                 <include>MovieShowcaseGlassOverlay</include>
                 <control type="image">
                     <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem0Var]</texture>
@@ -61,6 +65,10 @@
                     <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem0Var]</texture>
                     <include>MovieShowcaseThumb</include>
                 </control>
+				<control type="image">
+					<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+					<include>TvShowShowcaseThumb</include>
+				</control>					
                 <include>MovieShowcaseGlassOverlay</include>
                 <control type="image">
                     <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem0Var]</texture>
@@ -482,6 +490,10 @@
                                 <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem0Var]</texture>
                                 <include>MovieShowcaseThumb</include>
                             </control>
+							<control type="image">
+								<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+								<include>TvShowShowcaseThumb</include>
+							</control>							
                             <include>MovieShowcaseGlassOverlay</include>
                             <control type="image">
                                 <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem0Var]</texture>
@@ -499,13 +511,7 @@
 							<control type="image">
 								<include>WatchedOverlayShowCase</include>
 								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
-								<visible>System.HasAddon(script.videoextras) + Skin.HasSetting(clearcases) | !Skin.HasSetting(usecases)</visible>
 							</control>	
-							<control type="image">
-								<include>WatchedOverlayShowCase</include>
-								<texture background="true">$VAR[VideoextrasOverlay]</texture>
-								<visible>System.HasAddon(script.videoextras) + Skin.HasSetting(usecases)  + !Skin.HasSetting(clearcases)</visible>
-							</control>
                         </control>
                     </control>
                 </control>
@@ -514,6 +520,7 @@
             <include condition="Skin.HasSetting(showcasewrap)">scmwrap</include>
         </control>
     </include>
+	
     <include name="MovieShowcaseThumbReflectionDVD">
         <control type="image">
             <left>-27</left>
@@ -578,6 +585,17 @@
         <bordertexture border="18">thumbs/poster_shadow.png</bordertexture>
         <bordersize>18</bordersize>
     </include>
+    <include name="TvShowShowcaseThumb">
+			<left>-12</left>
+			<top>-15</top>
+			<width>320</width>
+			<height>440</height>
+			<align>center</align>
+			<fadetime>0</fadetime>
+			<bordertexture border="18">thumbs/poster_shadow.png</bordertexture>
+			<bordersize>18</bordersize>
+			<visible>Skin.HasSetting(ClearCaseTvshow) + [Container.Content(TvShows) | Container.Content(seasons)]</visible>
+    </include>	
     <include name="MovieShowcaseThumbReflectionMain">
         <aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
         <fadetime>0</fadetime>
@@ -615,6 +633,10 @@
             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-7Var]</texture>
             <include>MovieShowcaseThumb</include>
         </control>
+		<control type="image">
+			<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+			<include>TvShowShowcaseThumb</include>
+		</control>			
         <include>MovieShowcaseGlassOverlay</include>
         <control type="image">
             <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-7Var]</texture>
@@ -636,6 +658,10 @@
             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-6Var]</texture>
             <include>MovieShowcaseThumb</include>
         </control>
+		<control type="image">
+			<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+			<include>TvShowShowcaseThumb</include>
+		</control>			
         <include>MovieShowcaseGlassOverlay</include>
         <control type="image">
             <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-6Var]</texture>
@@ -657,6 +683,10 @@
             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-5Var]</texture>
             <include>MovieShowcaseThumb</include>
         </control>
+		<control type="image">
+			<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+			<include>TvShowShowcaseThumb</include>
+		</control>			
         <include>MovieShowcaseGlassOverlay</include>
         <control type="image">
             <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-5Var]</texture>
@@ -678,6 +708,10 @@
             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-4Var]</texture>
             <include>MovieShowcaseThumb</include>
         </control>
+		<control type="image">
+			<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+			<include>TvShowShowcaseThumb</include>
+		</control>			
         <include>MovieShowcaseGlassOverlay</include>
         <control type="image">
             <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-4Var]</texture>
@@ -699,6 +733,10 @@
             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-3Var]</texture>
             <include>MovieShowcaseThumb</include>
         </control>
+		<control type="image">
+			<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+			<include>TvShowShowcaseThumb</include>
+		</control>			
         <include>MovieShowcaseGlassOverlay</include>
         <control type="image">
             <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-3Var]</texture>
@@ -720,6 +758,10 @@
             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-2Var]</texture>
             <include>MovieShowcaseThumb</include>
         </control>
+		<control type="image">
+			<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+			<include>TvShowShowcaseThumb</include>
+		</control>			
         <include>MovieShowcaseGlassOverlay</include>
         <control type="image">
             <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-2Var]</texture>
@@ -741,6 +783,10 @@
             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-1Var]</texture>
             <include>MovieShowcaseThumb</include>
         </control>
+		<control type="image">
+			<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+			<include>TvShowShowcaseThumb</include>
+		</control>			
         <include>MovieShowcaseGlassOverlay</include>
         <control type="image">
             <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-1Var]</texture>
@@ -767,6 +813,10 @@
             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem0Var]</texture>
             <include>MovieShowcaseThumb</include>
         </control>
+		<control type="image">
+			<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+			<include>TvShowShowcaseThumb</include>
+		</control>			
         <include>MovieShowcaseGlassOverlay</include>
         <control type="image">
             <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem0Var]</texture>
@@ -793,6 +843,10 @@
             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem1Var]</texture>
             <include>MovieShowcaseThumb</include>
         </control>
+		<control type="image">
+			<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+			<include>TvShowShowcaseThumb</include>
+		</control>			
         <include>MovieShowcaseGlassOverlay</include>
         <control type="image">
             <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem1Var]</texture>
@@ -819,6 +873,10 @@
             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem2Var]</texture>
             <include>MovieShowcaseThumb</include>
         </control>
+		<control type="image">
+			<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+			<include>TvShowShowcaseThumb</include>
+		</control>			
         <include>MovieShowcaseGlassOverlay</include>
         <control type="image">
             <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem2Var]</texture>
@@ -845,6 +903,10 @@
             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem3Var]</texture>
             <include>MovieShowcaseThumb</include>
         </control>
+		<control type="image">
+			<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+			<include>TvShowShowcaseThumb</include>
+		</control>			
         <include>MovieShowcaseGlassOverlay</include>
         <control type="image">
             <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem3Var]</texture>
@@ -871,6 +933,10 @@
             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem4Var]</texture>
             <include>MovieShowcaseThumb</include>
         </control>
+		<control type="image">
+			<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+			<include>TvShowShowcaseThumb</include>
+		</control>			
         <include>MovieShowcaseGlassOverlay</include>
         <control type="image">
             <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem4Var]</texture>
@@ -897,6 +963,10 @@
             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem5Var]</texture>
             <include>MovieShowcaseThumb</include>
         </control>
+		<control type="image">
+			<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+			<include>TvShowShowcaseThumb</include>
+		</control>			
         <include>MovieShowcaseGlassOverlay</include>
         <control type="image">
             <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem5Var]</texture>
@@ -923,6 +993,10 @@
             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem6Var]</texture>
             <include>MovieShowcaseThumb</include>
         </control>
+		<control type="image">
+			<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+			<include>TvShowShowcaseThumb</include>
+		</control>			
         <include>MovieShowcaseGlassOverlay</include>
         <control type="image">
             <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem6Var]</texture>
@@ -949,6 +1023,10 @@
             <texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem7Var]</texture>
             <include>MovieShowcaseThumb</include>
         </control>
+		<control type="image">
+			<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+			<include>TvShowShowcaseThumb</include>
+		</control>			
         <include>MovieShowcaseGlassOverlay</include>
         <control type="image">
             <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem7Var]</texture>

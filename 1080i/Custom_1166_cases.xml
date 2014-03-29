@@ -230,14 +230,14 @@
                     <include>Objects_MediaMenuButtonAround</include>
                     <onclick>Skin.ToggleSetting(showcasezoom)</onclick>
                     <selected>Skin.HasSetting(showcasezoom)</selected>
-                    <visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies)</visible>
+                    <visible>Container.Content(movies) + Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies)</visible>
                 </control>
                 <control type="radiobutton" id="1202">
                     <label>31018</label>
                     <include>Objects_MediaMenuButtonAround</include>
                     <onclick>Skin.ToggleSetting(showcasesquarezoom)</onclick>
                     <selected>Skin.HasSetting(showcasesquarezoom)</selected>
-                    <visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseSquare)</visible>
+                    <visible>Container.Content(movies) + Stringcompare(Window(home).Property(actualViewtype),ShowcaseSquare)</visible>
                 </control>
                 <control type="radiobutton" id="1203">
                     <label>$LOCALIZE[31812]</label>
