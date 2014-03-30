@@ -1,3 +1,20 @@
+[B]4.1.9.7[/B]
+NextAired Secon Layout (Based on Today)
+New Update TV-Guide on Context Menu
+MostPlayed Roms Panel Widget Fix
+Video Extras Integration Update
+Duth Language
+InfoWall Art for Sets
+% Cache Label
+More Studio Flags
+Video Extra Flag
+Top250 Movies Gold, Silver Copper medal
+adding Rating X for old movies
+Aditional Color cases for movies
+Clear cases for TvShows and Seasons
+Fix Bugs 
+
+
 [B]4.1.9.6[/B]
 Russian translation Buzzzzer
 media filter fix
