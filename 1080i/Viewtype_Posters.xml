@@ -44,19 +44,20 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>216</width>
-                                <height>352</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture>thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>153</left>
                                 <top>24</top>
                                 <width>30</width>
                                 <height>30</height>
                                 <include>OverlayVisibility9</include>
                             </control>	
+                            <control type="image">
+                                <left>153</left>
+                                <top>24</top>
+                                <width>30</width>
+                                <height>30</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(9).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>												
 							<control type="image">
                                 <left>153</left>
                                 <top>24</top>
@@ -96,19 +97,20 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>260</width>
-                                <height>424</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>188</left>
                                 <top>28</top>
                                 <width>38</width>
                                 <height>38</height>
                                 <include>OverlayVisibility8</include>
                             </control>
+                            <control type="image">
+                                <left>188</left>
+                                <top>28</top>
+                                <width>38</width>
+                                <height>38</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(8).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>												
 							<control type="image">
                                 <left>188</left>
                                 <top>28</top>
@@ -148,19 +150,20 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>304</width>
-                                <height>496</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>219</left>
                                 <top>33</top>
                                 <width>45</width>
                                 <height>45</height>
                                 <include>OverlayVisibility7</include>
                             </control>
+                            <control type="image">
+                                <left>219</left>
+                                <top>33</top>
+                                <width>45</width>
+                                <height>45</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(7).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>												
 							<control type="image">
                                 <left>219</left>
                                 <top>33</top>
@@ -200,19 +203,20 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>348</width>
-                                <height>568</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>250</left>
                                 <top>39</top>
                                 <width>52</width>
                                 <height>52</height>
                                 <include>OverlayVisibility6</include>
                             </control>
+                            <control type="image">
+                                <left>250</left>
+                                <top>39</top>
+                                <width>52</width>
+                                <height>52</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(6).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>												
 							<control type="image">
                                 <left>250</left>
                                 <top>39</top>
@@ -252,19 +256,20 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>393</width>
-                                <height>640</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>280</left>
                                 <top>44</top>
                                 <width>60</width>
                                 <height>60</height>
                                 <include>OverlayVisibility5</include>
                             </control>
+                            <control type="image">
+                                <left>280</left>
+                                <top>44</top>
+                                <width>60</width>
+                                <height>60</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(5).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>								
 							<control type="image">
                                 <left>280</left>
                                 <top>44</top>
@@ -304,19 +309,20 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>436</width>
-                                <height>712</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>312</left>
                                 <top>50</top>
                                 <width>68</width>
                                 <height>68</height>
                                 <include>OverlayVisibility4</include>
                             </control>
+                            <control type="image">
+                                <left>312</left>
+                                <top>50</top>
+                                <width>68</width>
+                                <height>68</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(4).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>									
 							<control type="image">
                                 <left>312</left>
                                 <top>50</top>
@@ -356,19 +362,20 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>482</width>
-                                <height>784</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>344</left>
                                 <top>54</top>
                                 <width>75</width>
                                 <height>75</height>
                                 <include>OverlayVisibility3</include>
                             </control>
+                            <control type="image">
+                                <left>344</left>
+                                <top>54</top>
+                                <width>75</width>
+                                <height>75</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(3).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>										
 							<control type="image">
                                 <left>344</left>
                                 <top>54</top>
@@ -408,19 +415,20 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>525</width>
-                                <height>856</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>375</left>
                                 <top>57</top>
                                 <width>82</width>
                                 <height>82</height>
                                 <include>OverlayVisibility2</include>
                             </control>
+                            <control type="image">
+                                <left>375</left>
+                                <top>57</top>
+                                <width>82</width>
+                                <height>82</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(2).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>								
 							<control type="image">
                                 <left>375</left>
                                 <top>57</top>
@@ -460,19 +468,20 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>570</width>
-                                <height>930</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>408</left>
                                 <top>62</top>
                                 <width>90</width>
                                 <height>90</height>
                                 <include>OverlayVisibility1</include>
                             </control>
+                            <control type="image">
+                                <left>408</left>
+                                <top>62</top>
+                                <width>90</width>
+                                <height>90</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(1).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>									
 							<control type="image">
                                 <left>408</left>
                                 <top>62</top>
@@ -501,31 +510,6 @@
                                 <height>930</height>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
                                 <texture background="false">thumbs/poster_overlay-focus.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                        </control>
-                    </control>
-                    <!-- Move Panel 1 to 2 -->
-                    <control type="group">
-                        <left>-26</left>
-                        <top>246</top>
-                        <width>570</width>
-                        <height>1334</height>
-                        <visible>Container(510).OnPrevious | Container(52).OnPrevious</visible>
-                        <animation type="Hidden" reversible="false">
-                            <effect type="zoom" start="-26,246,570,1334" end="354,278,525,1228" time="200" />
-                            <effect type="fade" end="100" time="200" />
-                        </animation>
-                        <animation type="Visible" reversible="false">
-                            <effect type="fade" end="0" time="0" />
-                        </animation>
-                        <control type="group">
-                            <visible>!IsEmpty(Container.ListItemNoWrap(1).FolderPath) | Skin.HasSetting(posterwrap)</visible>
-                            <control type="image">
-                                <width>570</width>
-                                <height>930</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
                                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                             </control>
                         </control>
@@ -570,19 +554,30 @@
                                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                             </control>
                             <control type="image">
-                                <left>408</left>
+                                <left>409</left>
                                 <top>62</top>
                                 <width>90</width>
                                 <height>90</height>
                                 <include>OverlayVisibility0</include>
                             </control>
-							<control type="image">
-                                <left>408</left>
+                            <control type="image">
+                                <left>409</left>
                                 <top>62</top>
                                 <width>90</width>
                                 <height>90</height>
-								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>							
+							<control type="image">
+                                <left>409</left>
+                                <top>62</top>
+                                <width>90</width>
+                                <height>90</height>
+								<texture diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
+								 <animation type="Hidden" reversible="false">
+									<effect type="fade" end="100" time="100" />
+								</animation>
 							</control>	
                         </control>
                     </control>
@@ -623,19 +618,20 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>216</width>
-                                <height>352</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>153</left>
                                 <top>24</top>
                                 <width>30</width>
                                 <height>30</height>
                                 <include>OverlayVisibility8</include>
                             </control>
+                            <control type="image">
+                                <left>153</left>
+                                <top>24</top>
+                                <width>30</width>
+                                <height>30</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(8).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>												
 							<control type="image">
                                 <left>153</left>
                                 <top>24</top>
@@ -675,19 +671,20 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>216</width>
-                                <height>352</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>153</left>
                                 <top>24</top>
                                 <width>30</width>
                                 <height>30</height>
                                 <include>OverlayVisibility7</include>
                             </control>
+                            <control type="image">
+                                <left>153</left>
+                                <top>24</top>
+                                <width>30</width>
+                                <height>30</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(7).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>												
 							<control type="image">
                                 <left>153</left>
                                 <top>24</top>
@@ -727,19 +724,20 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>260</width>
-                                <height>424</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>188</left>
                                 <top>28</top>
                                 <width>38</width>
                                 <height>38</height>
                                 <include>OverlayVisibility6</include>
                             </control>
+                            <control type="image">
+                                <left>188</left>
+                                <top>28</top>
+                                <width>38</width>
+                                <height>38</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(6).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>												
 							<control type="image">
                                 <left>188</left>
                                 <top>28</top>
@@ -779,19 +777,20 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>304</width>
-                                <height>496</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>219</left>
                                 <top>33</top>
                                 <width>45</width>
                                 <height>45</height>
                                 <include>OverlayVisibility5</include>
                             </control>
+                            <control type="image">
+                                <left>219</left>
+                                <top>33</top>
+                                <width>45</width>
+                                <height>45</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(5).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>								
 							<control type="image">
                                 <left>219</left>
                                 <top>33</top>
@@ -831,19 +830,20 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>348</width>
-                                <height>568</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>250</left>
                                 <top>39</top>
                                 <width>52</width>
                                 <height>52</height>
                                 <include>OverlayVisibility4</include>
                             </control>
+                            <control type="image">
+                                <left>250</left>
+                                <top>39</top>
+                                <width>52</width>
+                                <height>52</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(4).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>									
 							<control type="image">
                                 <left>250</left>
                                 <top>39</top>
@@ -883,19 +883,20 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>393</width>
-                                <height>640</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>280</left>
                                 <top>44</top>
                                 <width>60</width>
                                 <height>60</height>
                                 <include>OverlayVisibility3</include>
                             </control>
+                            <control type="image">
+                                <left>280</left>
+                                <top>44</top>
+                                <width>60</width>
+                                <height>60</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(3).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>									
 							<control type="image">
                                 <left>280</left>
                                 <top>44</top>
@@ -935,19 +936,20 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>436</width>
-                                <height>712</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>312</left>
                                 <top>50</top>
                                 <width>68</width>
                                 <height>68</height>
                                 <include>OverlayVisibility2</include>
                             </control>
+                            <control type="image">
+                                <left>312</left>
+                                <top>50</top>
+                                <width>68</width>
+                                <height>68</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(2).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>										
 							<control type="image">
                                 <left>312</left>
                                 <top>50</top>
@@ -987,19 +989,20 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>482</width>
-                                <height>784</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>344</left>
                                 <top>54</top>
                                 <width>75</width>
                                 <height>75</height>
                                 <include>OverlayVisibility1</include>
                             </control>
+                            <control type="image">
+                                <left>344</left>
+                                <top>54</top>
+                                <width>75</width>
+                                <height>75</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(1).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>								
 							<control type="image">
                                 <left>344</left>
                                 <top>54</top>
@@ -1045,13 +1048,24 @@
                                 <height>82</height>
                                 <include>OverlayVisibility0</include>
                             </control>	
+                            <control type="image">
+                                <left>375</left>
+                                <top>57</top>
+                                <width>82</width>
+                                <height>82</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>									
 							<control type="image">
                                 <left>375</left>
                                 <top>57</top>
                                 <width>82</width>
                                 <height>82</height>
-								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
+								<texture diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
+								 <animation type="Hidden" reversible="false">
+									<effect type="fade" end="100" time="100" />
+								</animation>								
 							</control>								
                         </control>
                     </control>
@@ -1076,28 +1090,6 @@
                                 <height>856</height>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
                                 <texture background="false">thumbs/poster_overlay-focus.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                        </control>
-                    </control>
-                    <!-- Move Panel 2 to 1-->
-                    <control type="group">
-                        <left>354</left>
-                        <top>278</top>
-                        <width>525</width>
-                        <height>1228</height>
-                        <visible>Container(510).OnNext | Container(52).OnNext</visible>
-                        <animation type="Hidden" reversible="false">
-                            <effect type="zoom" start="354,278,525,1228" end="-26,246,570,1334" time="200" />
-                            <effect type="fade" start="100" end="0" time="200" />
-                        </animation>
-                        <control type="group">
-                            <visible>!IsEmpty(Container.ListItemNoWrap(0).FolderPath) | Skin.HasSetting(posterwrap)</visible>
-                            <control type="image">
-                                <width>525</width>
-                                <height>856</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
                                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                             </control>
                         </control>
@@ -1133,19 +1125,18 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <top>624</top>
-                                <width>484</width>
-                                <height>60</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay-focus.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>364</left>
                                 <width>90</width>
                                 <height>90</height>
                                 <include>OverlayVisibility-1</include>
                             </control>
+                            <control type="image">
+                                <left>364</left>
+                                <width>90</width>
+                                <height>90</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(-1).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>												
 							<control type="image">
                                 <left>364</left>
                                 <width>90</width>
@@ -1208,19 +1199,20 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>216</width>
-                                <height>352</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>153</left>
                                 <top>24</top>
                                 <width>30</width>
                                 <height>30</height>
                                 <include>OverlayVisibility8</include>
                             </control>
+                            <control type="image">
+                                <left>153</left>
+                                <top>24</top>
+                                <width>30</width>
+                                <height>30</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(8).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>												
 							<control type="image">
                                 <left>153</left>
                                 <top>24</top>
@@ -1272,21 +1264,22 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>260</width>
-                                <height>424</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
-                                <left>188</left>
+                                <left>189</left>
                                 <top>28</top>
                                 <width>38</width>
                                 <height>38</height>
                                 <include>OverlayVisibility7</include>
                             </control>
+                            <control type="image">
+                                <left>189</left>
+                                <top>28</top>
+                                <width>38</width>
+                                <height>38</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(7).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>												
 							<control type="image">
-                                <left>188</left>
+                                <left>189</left>
                                 <top>28</top>
                                 <width>38</width>
                                 <height>38</height>
@@ -1336,19 +1329,20 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>304</width>
-                                <height>496</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>219</left>
                                 <top>33</top>
                                 <width>45</width>
                                 <height>45</height>
                                 <include>OverlayVisibility6</include>
                             </control>
+                            <control type="image">
+                                <left>219</left>
+                                <top>33</top>
+                                <width>45</width>
+                                <height>45</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(6).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>								
 							<control type="image">
                                 <left>219</left>
                                 <top>33</top>
@@ -1400,21 +1394,22 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>348</width>
-                                <height>568</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
-                                <left>250</left>
+                                <left>251</left>
                                 <top>39</top>
                                 <width>52</width>
                                 <height>52</height>
                                 <include>OverlayVisibility5</include>
                             </control>
+                            <control type="image">
+                                <left>251</left>
+                                <top>39</top>
+                                <width>52</width>
+                                <height>52</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(5).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>									
 							<control type="image">
-                                <left>250</left>
+                                <left>251</left>
                                 <top>39</top>
                                 <width>52</width>
                                 <height>52</height>
@@ -1464,21 +1459,22 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>393</width>
-                                <height>640</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
-                                <left>280</left>
+                                <left>281</left>
                                 <top>44</top>
                                 <width>60</width>
                                 <height>60</height>
                                 <include>OverlayVisibility4</include>
                             </control>
+                            <control type="image">
+                                <left>281</left>
+                                <top>44</top>
+                                <width>60</width>
+                                <height>60</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(4).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>									
 							<control type="image">
-                                <left>280</left>
+                                <left>281</left>
                                 <top>44</top>
                                 <width>60</width>
                                 <height>60</height>
@@ -1528,22 +1524,23 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>436</width>
-                                <height>712</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>312</left>
-                                <top>50</top>
+                                <top>48</top>
                                 <width>68</width>
                                 <height>68</height>
                                 <include>OverlayVisibility3</include>
                             </control>
+                            <control type="image">
+                                <left>312</left>
+                                <top>48</top>
+                                <width>68</width>
+                                <height>68</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(3).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>									
 							<control type="image">
                                 <left>312</left>
-                                <top>50</top>
+                                <top>48</top>
                                 <width>68</width>
                                 <height>68</height>
 								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay3]</texture>
@@ -1592,22 +1589,23 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>482</width>
-                                <height>784</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
                                 <left>344</left>
-                                <top>54</top>
+                                <top>52</top>
                                 <width>75</width>
                                 <height>75</height>
                                 <include>OverlayVisibility2</include>
                             </control>
+                            <control type="image">
+                                <left>344</left>
+                                <top>52</top>
+                                <width>75</width>
+                                <height>75</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(2).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>										
 							<control type="image">
                                 <left>344</left>
-                                <top>54</top>
+                                <top>52</top>
                                 <width>75</width>
                                 <height>75</height>
 								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay2]</texture>
@@ -1656,21 +1654,22 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>525</width>
-                                <height>856</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
-                                <left>375</left>
+                                <left>377</left>
                                 <top>57</top>
                                 <width>82</width>
                                 <height>82</height>
                                 <include>OverlayVisibility1</include>
                             </control>
+                            <control type="image">
+                                <left>377</left>
+                                <top>57</top>
+                                <width>82</width>
+                                <height>82</height>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(1).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>								
 							<control type="image">
-                                <left>375</left>
+                                <left>377</left>
                                 <top>57</top>
                                 <width>82</width>
                                 <height>82</height>
@@ -1722,6 +1721,22 @@
                                 <texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem0Var]</texture>
                                 <fadetime>0</fadetime>
                             </control>
+                           <!--  <control type="image">
+                                <left>-8</left>
+                                <top>-4</top>
+                                <width>539</width>
+                                <height>740</height>
+                                <texture background="true">thumbs/boxes/tvshows/$VAR[GlobalCaseVar]</texture>
+                                <fadetime>0</fadetime>
+                            </control>	
+                           <control type="image">
+                                <left>0</left>
+                                <top>8</top>
+                                <width>527</width>
+                                <height>725</height>
+                                <texture background="true">thumbs/boxes/Movies/$VAR[GlobalCaseVar]</texture>
+                                <fadetime>0</fadetime>
+                            </control>	-->													
                             <control type="image">
                                 <left>74</left>
                                 <top>698</top>
@@ -1732,26 +1747,30 @@
                                 <fadetime>0</fadetime>
                             </control>
                             <control type="image">
-                                <width>570</width>
-                                <height>930</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture background="false">thumbs/poster_overlay-focus.png</texture>
-                                <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-                            </control>
-                            <control type="image">
-                                <left>408</left>
+                                <left>409</left>
                                 <top>62</top>
                                 <width>90</width>
                                 <height>90</height>
                                 <include>OverlayVisibility0</include>
                             </control>
-							<control type="image">
-                                <left>408</left>
+                            <control type="image">
+                                <left>409</left>
                                 <top>62</top>
                                 <width>90</width>
                                 <height>90</height>
-								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>									
+							<control type="image">
+                                <left>409</left>
+                                <top>62</top>
+                                <width>90</width>
+                                <height>90</height>
+								<texture diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
+								 <animation type="Hidden" reversible="false">
+									<effect type="fade" end="100" time="100" />
+								</animation>								
 							</control>	
                         </control>
                     </control>

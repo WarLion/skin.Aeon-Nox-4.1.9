@@ -73,6 +73,16 @@
                         <include>Animation_VisibleChange200</include>
                     </control>
 					<control type="image">
+						<left>1141</left>
+						<top>1</top>
+						<width>120</width>
+						<height>120</height>
+						<fadetime>IconCrossfadeTime2</fadetime>
+						<include>Animation_VisibleChange200</include>		
+						<texture>overlayprogress.png</texture>
+						<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+					</control>						
+					<control type="image">
                         <left>1141</left>
                         <top>1</top>
                         <width>120</width>

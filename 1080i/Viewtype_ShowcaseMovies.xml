@@ -507,7 +507,13 @@
                             <control type="image">
                                 <include>WatchedOverlayShowCase</include>
                                 <include>OverlayVisibility0</include>
+								<visible>!Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
                             </control>
+                            <control type="image">
+                                <include>WatchedOverlayShowCase</include>
+                                <texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+                            </control>							
 							<control type="image">
 								<include>WatchedOverlayShowCase</include>
 								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
@@ -649,7 +655,7 @@
         <include>MovieShowcaseThumbReflectionDVD</include>
         <control type="image">
             <include>WatchedOverlayShowCase</include>
-            <include>OverlayVisibility-7</include>
+            <include>OverlayVisibility-7</include>			
         </control>		
     </include>
     <include name="MovieShowCaseItem-6">
@@ -674,7 +680,7 @@
         <include>MovieShowcaseThumbReflectionDVD</include>
         <control type="image">
             <include>WatchedOverlayShowCase</include>
-            <include>OverlayVisibility-6</include>
+            <include>OverlayVisibility-6</include>			
         </control>		
     </include>
     <include name="MovieShowCaseItem-5">
@@ -725,7 +731,7 @@
         <control type="image">
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility-4</include>
-        </control>
+		</control>
     </include>
     <include name="MovieShowCaseItem-3">
         <include>MovieShowCaseGlow</include>
@@ -750,7 +756,7 @@
         <control type="image">
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility-3</include>
-        </control>
+		</control>
     </include>
     <include name="MovieShowCaseItem-2">
         <include>MovieShowCaseGlow</include>
@@ -775,7 +781,12 @@
         <control type="image">
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility-2</include>
-        </control>
+		</control>
+		<control type="image">
+			<include>WatchedOverlayShowCase</include>
+			<texture>overlayprogress.png</texture>
+			<visible>Container.ListItem(-2).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+		</control>	
     </include>
     <include name="MovieShowCaseItem-1">
         <include>MovieShowCaseGlow</include>
@@ -800,7 +811,12 @@
         <control type="image">
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility-1</include>
-        </control>
+		</control>
+		<control type="image">
+			<include>WatchedOverlayShowCase</include>
+			<texture>overlayprogress.png</texture>
+			<visible>Container.ListItem(-1).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+		</control>	
 		<control type="image">
             <include>WatchedOverlayShowCase</include>
 			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay-1]</texture>
@@ -830,7 +846,12 @@
         <control type="image">
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility0</include>
-        </control>
+		</control>
+		<control type="image">
+			<include>WatchedOverlayShowCase</include>
+			<texture>overlayprogress.png</texture>
+			<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+		</control>	
 		<control type="image">
             <include>WatchedOverlayShowCase</include>
 			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
@@ -860,7 +881,12 @@
         <control type="image">
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility1</include>
-        </control>
+		</control>
+		<control type="image">
+			<include>WatchedOverlayShowCase</include>
+			<texture>overlayprogress.png</texture>
+			<visible>Container.ListItem(1).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+		</control>	
 		<control type="image">
 			<include>WatchedOverlayShowCase</include>
 			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay1]</texture>
@@ -890,7 +916,12 @@
         <control type="image">
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility2</include>
-        </control>
+		</control>
+		<control type="image">
+			<include>WatchedOverlayShowCase</include>
+			<texture>overlayprogress.png</texture>
+			<visible>Container.ListItem(2).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+		</control>	
 		<control type="image">
 			<include>WatchedOverlayShowCase</include>
 			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay2]</texture>
@@ -920,7 +951,12 @@
         <control type="image">
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility3</include>
-        </control>
+		</control>
+		<control type="image">
+			<include>WatchedOverlayShowCase</include>
+			<texture>overlayprogress.png</texture>
+			<visible>Container.ListItem(3).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+		</control>	
 		<control type="image">
 			<include>WatchedOverlayShowCase</include>
 			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay3]</texture>
@@ -950,7 +986,12 @@
         <control type="image">
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility4</include>
-        </control>
+		</control>
+		<control type="image">
+			<include>WatchedOverlayShowCase</include>
+			<texture>overlayprogress.png</texture>
+			<visible>Container.ListItem(4).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+		</control>	
 		<control type="image">
 			<include>WatchedOverlayShowCase</include>
 			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay4]</texture>
@@ -980,7 +1021,12 @@
         <control type="image">
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility5</include>
-        </control>
+		</control>
+		<control type="image">
+			<include>WatchedOverlayShowCase</include>
+			<texture>overlayprogress.png</texture>
+			<visible>Container.ListItem(5).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+		</control>	
 		<control type="image">
 			<include>WatchedOverlayShowCase</include>
 			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay5]</texture>
@@ -1010,7 +1056,12 @@
         <control type="image">
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility6</include>
-        </control>
+		</control>
+		<control type="image">
+			<include>WatchedOverlayShowCase</include>
+			<texture>overlayprogress.png</texture>
+			<visible>Container.ListItem(6).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+		</control>	
 		<control type="image">
 			<include>WatchedOverlayShowCase</include>
 			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay6]</texture>
@@ -1040,7 +1091,12 @@
         <control type="image">
             <include>WatchedOverlayShowCase</include>
             <include>OverlayVisibility7</include>
-        </control>
+		</control>
+		<control type="image">
+			<include>WatchedOverlayShowCase</include>
+			<texture>overlayprogress.png</texture>
+			<visible>Container.ListItem(7).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+		</control>	
 		<control type="image">
 			<include>WatchedOverlayShowCase</include>
 			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay7]</texture>

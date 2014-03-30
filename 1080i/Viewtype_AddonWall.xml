@@ -216,6 +216,23 @@
                                 <top>10</top>
                                 <width>60</width>
                                 <height>60</height>
+								<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>					
+								<texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+							</control>								
+							<control type="image">
+                                <left>110</left>
+                                <top>10</top>
+                                <width>60</width>
+                                <height>60</height>					
+								<texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+							</control>								
+							<control type="image">
+                                <left>110</left>
+                                <top>10</top>
+                                <width>60</width>
+                                <height>60</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
 								<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
@@ -244,6 +261,15 @@
                                 <left>125</left>
                                 <top>5</top>
                                 <width>60</width>
+                                <height>60</height>					
+								<texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+								<colordiffuse>FF727171</colordiffuse>
+							</control>								
+							<control type="image">
+                                <left>125</left>
+                                <top>5</top>
+                                <width>60</width>
                                 <height>60</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
@@ -266,7 +292,7 @@
                                 <height>246</height>
                                 <aspectratio scalediffuse="false">stretch</aspectratio>
                                 <texture background="true" diffuse="wall/wall_movie_mask.png">$VAR[ListPosterVar]</texture>
-<colordiffuse>FF727171</colordiffuse>
+								<colordiffuse>FF727171</colordiffuse>
                             </control>
                             <control type="image">
                                 <left>-3</left>
@@ -275,16 +301,25 @@
                                 <height>262</height>
                                 <aspectratio scalediffuse="false">stretch</aspectratio>
                                 <texture>wall/boxes/wall_movie_overlay.png</texture>
-<colordiffuse>FF727171</colordiffuse>
+								<colordiffuse>FF727171</colordiffuse>
                             </control>
                             <control type="image">
                                 <left>110</left>
                                 <top>10</top>
                                 <width>60</width>
                                 <height>60</height>
-<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
+								<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
                                 <include>OverlayVisibility0</include>
                             </control>
+							<control type="image">
+                                <left>110</left>
+                                <top>10</top>
+                                <width>60</width>
+                                <height>60</height>
+								<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>					
+								<texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+							</control>								
 							<control type="image">
                                 <left>110</left>
                                 <top>10</top>
@@ -314,6 +349,15 @@
                                 <include>OverlayVisibility0</include>
 								<colordiffuse>FF727171</colordiffuse>
                             </control>
+							<control type="image">
+                                <left>125</left>
+                                <top>5</top>
+                                <width>60</width>
+                                <height>60</height>					
+								<texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+								<colordiffuse>FF727171</colordiffuse>
+							</control>								
 							<control type="image">
                                 <left>125</left>
                                 <top>5</top>
@@ -361,6 +405,14 @@
                                 <left>110</left>
                                 <top>10</top>
                                 <width>60</width>
+                                <height>60</height>					
+								<texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+							</control>								
+							<control type="image">
+                                <left>110</left>
+                                <top>10</top>
+                                <width>60</width>
                                 <height>60</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
@@ -372,7 +424,7 @@
                         </control>
                         <control type="group">
                             <visible>!Skin.HasSetting(useclearcasesinfowall)</visible>
-<animation effect="zoom" center="87,133" start="100" end="140" time="160" tween="quadratic" reversible="false">Focus</animation>
+							<animation effect="zoom" center="87,133" start="100" end="140" time="160" tween="quadratic" reversible="false">Focus</animation>
                             <control type="image">
                                 <width>189</width>
                                 <height>268</height>
@@ -394,6 +446,14 @@
                                 <height>60</height>
                                 <include>OverlayVisibility0</include>
                             </control>
+							<control type="image">
+                                <left>125</left>
+                                <top>5</top>
+                                <width>60</width>
+                                <height>60</height>					
+								<texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+							</control>								
 							<control type="image">
                                 <left>125</left>
                                 <top>5</top>
@@ -439,6 +499,14 @@
                                 <left>110</left>
                                 <top>10</top>
                                 <width>60</width>
+                                <height>60</height>					
+								<texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+							</control>								
+							<control type="image">
+                                <left>110</left>
+                                <top>10</top>
+                                <width>60</width>
                                 <height>60</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
@@ -476,6 +544,14 @@
                                 <left>125</left>
                                 <top>5</top>
                                 <width>60</width>
+                                <height>60</height>					
+								<texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+							</control>								
+							<control type="image">
+                                <left>125</left>
+                                <top>5</top>
+                                <width>60</width>
                                 <height>60</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
@@ -494,7 +570,7 @@
                             <height>225</height>
                             <aspectratio scalediffuse="false">stretch</aspectratio>
                             <texture background="true" diffuse="thumbs/boxes/case_mask.png">$VAR[ListPosterVar]</texture>
-<colordiffuse>FF727171</colordiffuse>
+							<colordiffuse>FF727171</colordiffuse>
                         </control>
                         <control type="image">
                             <left>-20</left>
@@ -503,7 +579,7 @@
                             <height>257</height>
                             <aspectratio scalediffuse="false">stretch</aspectratio>
                             <texture>thumbs/boxes/$VAR[addonwallCasePathVar]/$VAR[GlobalCaseVar]</texture>
-<colordiffuse>FF727171</colordiffuse>
+							<colordiffuse>FF727171</colordiffuse>
                         </control>
                         <control type="image">
                             <left>106</left>
@@ -511,8 +587,17 @@
                             <width>52</width>
                             <height>52</height>
                             <include>OverlayVisibility0</include>
-<colordiffuse>FF727171</colordiffuse>
+							<colordiffuse>FF727171</colordiffuse>
                         </control>
+						<control type="image">
+                            <left>106</left>
+                            <top>31</top>
+                            <width>52</width>
+                            <height>52</height>					
+							<texture>overlayprogress.png</texture>
+							<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+							<colordiffuse>FF727171</colordiffuse>
+						</control>							
 							<control type="image">
                             <left>106</left>
                             <top>31</top>
@@ -549,6 +634,14 @@
                                 <height>52</height>
                                 <include>OverlayVisibility0</include>
                             </control>
+							<control type="image">
+                                <left>106</left>
+                                <top>31</top>
+                                <width>52</width>
+                                <height>52</height>					
+								<texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+							</control>								
 							<control type="image">
                                 <left>106</left>
                                 <top>31</top>
@@ -612,6 +705,15 @@
                                 <include>OverlayVisibility0</include>
 								<colordiffuse>FF727171</colordiffuse>
                             </control>
+							<control type="image">
+                                <left>205</left>
+                                <top>5</top>
+                                <width>75</width>
+                                <height>75</height>
+								<colordiffuse>FF727171</colordiffuse>					
+								<texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+							</control>								
 							<control type="image">
                                 <left>205</left>
                                 <top>5</top>
@@ -688,6 +790,14 @@
                                 <left>205</left>
                                 <top>5</top>
                                 <width>75</width>
+                                <height>75</height>					
+								<texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+							</control>								
+							<control type="image">
+                                <left>205</left>
+                                <top>5</top>
+                                <width>75</width>
                                 <height>75</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
@@ -704,7 +814,7 @@
                             <texture background="true">$VAR[BannerVar]</texture>
                             <bordertexture border="5">thumbs/bordershadow4.png</bordertexture>
                             <bordersize>5</bordersize>
-<colordiffuse>FF727171</colordiffuse>
+							<colordiffuse>FF727171</colordiffuse>
                         </control>
                         <control type="label">
                             <left>285</left>
@@ -724,8 +834,17 @@
                             <width>90</width>
                             <height>90</height>
                             <include>OverlayVisibility0</include>
-<colordiffuse>FF727171</colordiffuse>
+							<colordiffuse>FF727171</colordiffuse>
                         </control>
+						<control type="image">
+                            <left>465</left>
+                            <top>8</top>
+                            <width>90</width>
+                            <height>90</height>
+							<colordiffuse>FF727171</colordiffuse>					
+							<texture>overlayprogress.png</texture>
+							<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+						</control>							
 							<control type="image">
                             <left>465</left>
                             <top>8</top>
@@ -779,6 +898,14 @@
                                 <left>465</left>
                                 <top>8</top>
                                 <width>90</width>
+                                <height>90</height>					
+								<texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+							</control>								
+							<control type="image">
+                                <left>465</left>
+                                <top>8</top>
+                                <width>90</width>
                                 <height>90</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
@@ -795,6 +922,15 @@
                                 <include>OverlayVisibility0</include>
 								<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
                             </control>
+							<control type="image">
+                                <left>180</left>
+                                <top>8</top>
+                                <width>90</width>
+                                <height>90</height>
+								<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>					
+								<texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+							</control>								
                         <control type="image">
                             <left>22</left>
                             <top>56</top>
@@ -824,6 +960,15 @@
                                 <include>OverlayVisibility0</include>
 								<animation effect="zoom" center="auto" start="100" end="110" time="160" tween="quadratic" reversible="false">Focus</animation>
                             </control>
+							<control type="image">
+                                <left>180</left>
+                                <top>8</top>
+                                <width>90</width>
+                                <height>90</height>
+								<animation effect="zoom" center="auto" start="100" end="110" time="160" tween="quadratic" reversible="false">Focus</animation>					
+								<texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+							</control>								
                         <control type="image">
                             <left>22</left>
                             <top>56</top>

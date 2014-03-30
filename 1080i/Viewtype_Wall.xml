@@ -13,6 +13,14 @@
             <top>4</top>
             <width>60</width>
             <height>60</height>
+			<texture>overlayprogress.png</texture>
+			<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+		</control>				
+		<control type="image">
+            <left>120</left>
+            <top>4</top>
+            <width>60</width>
+            <height>60</height>
 			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
 			<visible>System.HasAddon(script.videoextras)</visible>
 		</control>			
@@ -49,6 +57,14 @@
             <height>50</height>
             <include>OverlayVisibility0</include>
         </control>
+		<control type="image">
+            <left>148</left>
+            <top>6</top>
+            <width>50</width>
+            <height>50</height>
+			<texture>overlayprogress.png</texture>
+			<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+		</control>			
 		<control type="image">
             <left>148</left>
             <top>6</top>
@@ -231,6 +247,14 @@
                     <include>OverlayVisibility0</include>
                 </control>
 				<control type="image">
+					<left>735</left>
+					<top>6</top>
+					<width>90</width>
+					<height>90</height>
+					<texture>overlayprogress.png</texture>
+					<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+				</control>					
+				<control type="image">
                     <left>735</left>
                     <top>6</top>
                     <width>90</width>
@@ -294,6 +318,14 @@
                     <height>90</height>
                     <include>OverlayVisibility0</include>
                 </control>
+				<control type="image">
+		            <left>735</left>
+                    <top>5</top>
+                    <width>90</width>
+                    <height>90</height>
+					<texture>overlayprogress.png</texture>
+					<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+				</control>					
 				<control type="image">
                     <left>735</left>
                     <top>5</top>

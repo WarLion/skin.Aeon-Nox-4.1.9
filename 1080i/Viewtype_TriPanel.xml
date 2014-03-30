@@ -483,6 +483,14 @@
                                 <left>701</left>
                                 <top>5</top>
                                 <width>90</width>
+                                <height>90</height>				
+								<texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+							</control>								
+							<control type="image">
+                                <left>701</left>
+                                <top>5</top>
+                                <width>90</width>
                                 <height>90</height>
 								<texture>$VAR[VideoextrasOverlay]</texture>
 								<visible>System.HasAddon(script.videoextras)</visible>
@@ -547,6 +555,14 @@
                                 <height>90</height>
                                 <include>OverlayVisibility0</include>
                             </control>
+							<control type="image">
+                                <left>701</left>
+                                <top>12</top>
+                                <width>90</width>
+                                <height>90</height>				
+								<texture>overlayprogress.png</texture>
+								<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+							</control>								
 							<control type="image">
                                 <left>701</left>
                                 <top>12</top>
