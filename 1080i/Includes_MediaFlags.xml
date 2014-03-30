@@ -586,28 +586,28 @@
 					<textcolor>floor</textcolor>
 				</control>	                
 				<control type="image">
-                    <left>1500</left>
+                    <left>1480</left>
                     <include>OSDFlagVars</include>
                     <texture background="true">tvguide/$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
                 </control>
 			</control>	
                 <control type="group">
-                    <left>340r</left>
+                    <left>300r</left>
                     <control type="label">
                         <top>0</top>
                         <width>330</width>
                         <height>90</height>
-                        <align>right</align>
+                        <align>left</align>
                         <font>Font_Reg22</font>
-                        <label>[B]$VAR[LastEpisodeVar][/B] :$LOCALIZE[210]</label>
+                        <label>$LOCALIZE[210]: [B]$VAR[LastEpisodeVar][/B]</label>
                     </control>
                     <control type="label">
                         <top>-27</top>
                         <width>330</width>
                         <height>90</height>
-                        <align>right</align>
+                        <align>left</align>
                         <font>Font_Reg22</font>
-                        <label>[B]$VAR[NextEpisodeVar][/B] :$LOCALIZE[209] </label>
+                        <label>$LOCALIZE[209]: [B]$VAR[NextEpisodeVar][/B]</label>
                     </control>
                 </control>
             </control>
