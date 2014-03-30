@@ -1,6 +1,7 @@
 skin.Aeon-Nox-4.1.9
 ===================
 4.1.9.7
+
 NextAired Secon Layout (Based on Today)
 
 New Update TV-Guide on Context Menu
@@ -29,6 +30,7 @@ Clear cases for TvShows and Seasons
 
 Fix Bugs 
 
+===================
 
 4.1.9.6
 
