@@ -1722,7 +1722,7 @@ ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=
                 </control>
                 <control type="label">
                     <left>825</left>
-                    <top>1056</top>
+                    <top>1046</top>
                     <width>950</width>
                     <label>$INFO[ListItem.FileNameAndPath]</label>
                     <font>Font_Reg22</font>
@@ -1730,7 +1730,18 @@ ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=
                     <scroll>true</scroll>
                     <haspath>true</haspath>
                     <visible>ControlGroup(6100).HasFocus</visible>
-                </control>
+                </control>			
+				<control type="label">
+					<left>825</left>
+					<top>1046</top>
+					<width>950</width>
+					<label fallback="This movie is Unrated">$INFO[ListItem.mpaa]</label>
+					<font>Font_Reg22</font>
+					<textcolor>white5</textcolor>
+					<scroll>true</scroll>
+					<haspath>true</haspath>
+					<visible>!ControlGroup(6100).HasFocus</visible>
+				</control>					
                 <control type="image">
                     <left>709</left>
                     <width>40</width>
