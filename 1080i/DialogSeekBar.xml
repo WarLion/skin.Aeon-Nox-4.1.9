@@ -89,10 +89,6 @@
                     <top>57</top>
                     <width>630</width>
                     <height>20</height>
-                    <texturebg>osd/seek/progress_back.png</texturebg>
-                    <lefttexture>osd/seek/progresscache_left.png</lefttexture>
-                    <midtexture>osd/seek/progresscache_mid.png</midtexture>
-                    <righttexture>osd/seek/progresscache_right.png</righttexture>
                     <info>Player.ProgressCache</info>
                 </control>
                 <control type="progress" id="23">
@@ -100,10 +96,6 @@
                     <top>57</top>
                     <width>630</width>
                     <height>20</height>
-                    <texturebg>osd/seek/progresscache_back.png</texturebg>
-                    <lefttexture>osd/seek/progress_left.png</lefttexture>
-                    <midtexture>osd/seek/progress_mid.png</midtexture>
-                    <righttexture>osd/seek/progress_right.png</righttexture>
                     <info>Player.Progress</info>
                 </control>			
                 <control type="label">
@@ -230,10 +222,6 @@
                         <top>57</top>
                         <width>630</width>
                         <height>20</height>
-                        <texturebg>osd/seek/progress_back.png</texturebg>
-                        <lefttexture>osd/seek/progresscache_left.png</lefttexture>
-                        <midtexture>osd/seek/progresscache_mid.png</midtexture>
-                        <righttexture>osd/seek/progresscache_right.png</righttexture>
                         <info>Player.ProgressCache</info>
                     </control>
                     <control type="progress" id="23">
@@ -241,10 +229,6 @@
                         <top>57</top>
                         <width>630</width>
                         <height>20</height>
-                        <texturebg>osd/seek/progresscache_back.png</texturebg>
-                        <lefttexture>osd/seek/progress_left.png</lefttexture>
-                        <midtexture>osd/seek/progress_mid.png</midtexture>
-                        <righttexture>osd/seek/progress_right.png</righttexture>
                         <info>Player.Progress</info>
                     </control>
                     <control type="label">
