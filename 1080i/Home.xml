@@ -286,8 +286,6 @@
         <include>MainMenuCommonContent</include>
         <!-- Fanart -->
         <control type="group">
-            <!--              <visible>![[Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo)] | [Player.HasAudio + !Skin.HasSetting(ShowBackgroundVis)]]</visible>
- -->
             <control type="multiimage">
                 <aspectratio align="center" aligny="top">scale</aspectratio>
                 <imagepath background="true" fallback="special://skin/backgrounds/videos">$VAR[HomeMainFanartVar]</imagepath>
@@ -298,6 +296,17 @@
                 <animation effect="slide" start="-15,-15" end="15,15" time="6000" pulse="true" delay="480" condition="Skin.HasSetting(animatedbghome)">Conditional</animation>
                 <visible>!Substring(Control.GetLabel(4322),case)</visible>
             </control>
+			<!--here global background-->
+            <control type="multiimage">
+                <aspectratio align="center" aligny="top">scale</aspectratio>
+                <imagepath background="true" fallback="special://skin/backgrounds/videos">f:/wallpaper/320318.jpg</imagepath>
+                <fadetime>600</fadetime>
+                <animation effect="fade" time="480">Visible</animation>
+                <animation effect="fade" time="480">Hidden</animation>
+                <animation effect="zoom" start="110" end="130" center="auto" time="12000" pulse="true" delay="480" condition="Skin.HasSetting(animatedbghome)">Conditional</animation>
+                <animation effect="slide" start="-15,-15" end="15,15" time="6000" pulse="true" delay="480" condition="Skin.HasSetting(animatedbghome)">Conditional</animation>
+                <visible>!Substring(Control.GetLabel(4322),case)</visible>
+            </control>			
             <control type="image">
                 <aspectratio align="center" aligny="top">scale</aspectratio>
                 <texture background="true" fallback="special://skin/backgrounds/speakergrill.jpg">$INFO[Skin.String(LiveBG)]</texture>
@@ -413,8 +422,6 @@
                         <height>15</height>
                         <texture>arrowdown.png</texture>
                         <colordiffuse>white</colordiffuse>
-                        <!--                     <animation effect="slide" end="0,40" time="0" condition="[!Skin.HasSetting(rsshomelow) + !Skin.HasSetting(DisableRSS)]">Conditional</animation>
- -->
                         <visible>Control.HasFocus(9000) + !Skin.HasSetting(showsubmenu) + IntegerGreaterThan(Container(9010).NumItems,0)</visible>
                         <animation effect="zoom" start="100,0" end="100,100" time="400" delay="160" tween="cubic" center="0,613" easing="inout">VisibleChange</animation>
                     </control>
@@ -476,6 +483,20 @@
                         <visible>!Skin.HasSetting(DisableGlowbar) | [Skin.HasSetting(ExtendedGlowMode) + Skin.HasSetting(glasshome)] | Skin.HasSetting(classichome)</visible>
                     </control>
                     <!-- Home OSD -->
+					<control type="progress">
+						<left>0</left>
+						<top>502</top>
+						<width>1920</width>
+						<height>119</height>
+						<info>Player.Progress</info>
+						<texturebg>osd/info/osd_progress_back_cache.png</texturebg>
+						<lefttexture border="1"></lefttexture>
+						<midtexture border="1">osd/info/osd_progress_mid.png</midtexture>
+						<righttexture border="1"></righttexture>	
+						<colordiffuse>30FFFFFF</colordiffuse>					
+                        <visible>Player.HasMedia + System.IdleTime(8)</visible>
+                        <animation effect="fade" end="100" time="840">Visible</animation>				
+					</control>					
                     <control type="label">
                         <top>445</top>
                         <width>1920</width>
@@ -484,6 +505,7 @@
                         <label>$VAR[HomeOSDLabelVar]</label>
                         <font>Font_MainClassic</font>
                         <textcolor>$VAR[HomeMenuTextFocusVar]</textcolor>
+						 <shadowcolor>black</shadowcolor>
                         <visible>Player.HasMedia + System.IdleTime(8)</visible>
                         <animation effect="fade" end="100" time="840">Visible</animation>
                     </control>
