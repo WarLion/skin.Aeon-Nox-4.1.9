@@ -496,7 +496,7 @@
                         <width>1350</width>
                         <height>126</height>
                         <align>left</align>
-                        <label>$INFO[MusicPlayer.BitRate,,[COLOR grey] kbps[/COLOR]][CR]$INFO[MusicPlayer.SampleRate,,[COLOR grey] kHz[/COLOR] ][CR]$INFO[MusicPlayer.BitRate,,[COLOR grey] bit[/COLOR] ]</label>
+                        <label>$INFO[MusicPlayer.BitRate,,[COLOR grey] kbps[/COLOR]][CR]$INFO[MusicPlayer.SampleRate,,[COLOR grey] kHz[/COLOR] ][CR]$INFO[MusicPlayer.BitsPerSample,,[COLOR grey] bit[/COLOR] ]</label>
                         <font>Font_Reg19_Caps</font>
                         <shadowcolor>black</shadowcolor>
                         <textcolor>$VAR[TitleColorVar]</textcolor>
