@@ -20,7 +20,7 @@
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 <visible>!Skin.HasSetting(DisableGlowbar)</visible>
                 <animation type="Conditional" condition="!Stringcompare(Window.Property(actualItem),MainMenu)">
-                    <effect type="zoom" end="100,66" time="320" easing="in" tween="cubic" />
+                <effect type="zoom" end="100,66" time="320" easing="in" tween="cubic" />
                 </animation>
                 <include>Animation_VisibleChange400</include>
                 <include>PanelGlowFade</include>
@@ -140,6 +140,13 @@
                     <onclick>Skin.ToggleSetting(smallermainmenu)</onclick>
                     <visible>Stringcompare(Window.Property(actualItem),MainMenu)</visible>
                 </control>
+                <control type="radiobutton" id="490">
+                    <label>Progress Bar '$LOCALIZE[31040]'</label>
+                    <include>Objects_CommonSettingsButton</include>
+                    <selected>Skin.HasSetting(ProgressMainMenu)</selected>
+                    <onclick>Skin.ToggleSetting(ProgressMainMenu)</onclick>
+                    <visible>Stringcompare(Window.Property(actualItem),MainMenu) + Skin.HasSetting(glasshome)</visible>
+                </control>									
                 <control type="button" id="451">
                     <label>31602</label>
                     <label2>[COLOR $VAR[FontColorVar]]$VAR[StyleLabelVar][/COLOR]</label2>

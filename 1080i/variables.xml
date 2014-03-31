@@ -1099,9 +1099,6 @@
         <value condition="!IntegerGreaterThan(Container(215).NumItems,1)">$INFO[Container(215).NumItems] $LOCALIZE[20359]</value>
 		<value>$INFO[Container(215).NumItems] $LOCALIZE[20360]</value>
     </variable>	
-			
-		
-	
 	<variable name="NextDateYesterday">
 		<value condition="ControlGroup(9001).HasFocus(200)">$LOCALIZE[143] [COLOR white2]S$INFO[ListItem.Property(NextSeasonNumber)]E$INFO[ListItem.Property(NextEpisodeNumber)] [/COLOR][CR]$LOCALIZE[31322]: [COLOR white2]$INFO[ListItem.Property(NextDay)][/COLOR]</value>
 		<value>$LOCALIZE[31189]: [COLOR white2]S$INFO[ListItem.Property(LatestSeasonNumber)]E$INFO[ListItem.Property(LatestEpisodeNumber)][/COLOR][CR]$LOCALIZE[31322]: [COLOR white2]$INFO[ListItem.Property(LatestDate)][/COLOR]</value>
@@ -1113,6 +1110,7 @@
     <variable name="HomeMenuBackVar">
         <value condition="Skin.HasSetting(glasshome) + ![Player.HasMedia + System.IdleTime(8)]">home/homemenu_back_glass.png</value>
         <value condition="Skin.HasSetting(classichome) + ![Player.HasMedia + System.IdleTime(8)]">home/homemenu_back.png</value>
+		<value condition="Skin.HasSetting(ProgressMainMenu) + Skin.HasSetting(glasshome)">home/homemenu_back_glass.png</value>
         <value>home/homemenu_back_nox.png</value>
     </variable>
     <variable name="HomeOSDLabelVar">

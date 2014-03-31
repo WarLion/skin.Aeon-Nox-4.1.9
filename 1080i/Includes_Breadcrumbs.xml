@@ -126,7 +126,7 @@
 					<midtexture>osd/info/osd_progress_mid.png</midtexture>
 					<righttexture></righttexture>	
 					<colordiffuse>30FFFFFF</colordiffuse>					
-					<visible>Player.HasMedia</visible>
+					<visible>Player.HasMedia + Skin.HasSetting(ProgressNowPlaying)</visible>
 				</control>				
             <control type="image">
                 <left>12</left>

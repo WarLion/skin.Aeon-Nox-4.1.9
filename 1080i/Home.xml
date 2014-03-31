@@ -447,21 +447,42 @@
                         <top>62</top>
                         <width>1920</width>
                         <height>1080</height>
-                        <visible>Player.HasMedia + System.IdleTime(8)</visible>
+                        <visible>Player.HasMedia + System.IdleTime(8) | </visible>
                         <animation effect="zoom" end="125,100" center="960,500" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(smallermainmenu)">Conditional</animation>
                         <animation effect="fade" end="100" time="600" condition="Player.HasAudio + System.IdleTime(8)">Conditional</animation>
-                        <control type="progress">
-                            <top>452</top>
-                            <width>1920</width>
-                            <height>96</height>
-                            <info>Player.Progress</info>
-                            <texturebg>osd/osd_progress_clear.png</texturebg>
-                            <lefttexture>-</lefttexture>
-                            <midtexture>osd/osd_progressmid.png</midtexture>
-                            <righttexture>-</righttexture>
-                        </control>
                     </control>
                     <!-- Home Menu Bar -->
+					<control type="group">
+						<visible>Skin.HasSetting(glasshome)</visible>
+						<control type="progress">
+							<left>0</left>
+							<top>502</top>
+							<width>1920</width>
+							<height>119</height>
+							<info>Player.Progress</info>
+							<texturebg>osd/info/osd_progress_back_cache.png</texturebg>
+							<lefttexture border="1"></lefttexture>
+							<midtexture border="1">osd/info/osd_progress_mid.png</midtexture>
+							<righttexture border="1"></righttexture>	
+							<colordiffuse>$VAR[HomeMenuTextFocusVar]</colordiffuse>					
+							<visible>[Skin.HasSetting(ProgressMainMenu) + !Skin.HasSetting(smallermainmenu)]</visible>
+							<animation effect="fade" end="100" time="840">Visible</animation>				
+						</control>
+						<control type="progress">
+							<left>-240</left>
+							<top>502</top>
+							<width>2420</width>
+							<height>119</height>
+							<info>Player.Progress</info>
+							<texturebg>osd/info/osd_progress_back_cache.png</texturebg>
+							<lefttexture border="1"></lefttexture>
+							<midtexture border="1">osd/info/osd_progress_mid.png</midtexture>
+							<righttexture border="1"></righttexture>	
+							<colordiffuse>$VAR[HomeMenuTextFocusVar]</colordiffuse>					
+							<visible>[Skin.HasSetting(ProgressMainMenu) + Skin.HasSetting(smallermainmenu)]</visible>
+							<animation effect="fade" end="100" time="840">Visible</animation>				
+						</control>
+					</control>						
                     <control type="image">
                         <top>453</top>
                         <width>1920</width>
@@ -470,7 +491,7 @@
                         <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
                         <animation effect="zoom" end="125,100" center="960,500" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(smallermainmenu)">Conditional</animation>
                         <animation effect="fade" start="100" end="90" time="40" condition="Skin.HasSetting(glasshome) + ![Player.HasMedia + System.IdleTime(8)]">Conditional</animation>
-                    </control>
+                    </control>					
                     <control type="image">
                         <top>453</top>
                         <width>1920</width>
@@ -482,21 +503,7 @@
                         <include>Animation_VisibleChange400</include>
                         <visible>!Skin.HasSetting(DisableGlowbar) | [Skin.HasSetting(ExtendedGlowMode) + Skin.HasSetting(glasshome)] | Skin.HasSetting(classichome)</visible>
                     </control>
-                    <!-- Home OSD -->
-					<control type="progress">
-						<left>0</left>
-						<top>502</top>
-						<width>1920</width>
-						<height>119</height>
-						<info>Player.Progress</info>
-						<texturebg>osd/info/osd_progress_back_cache.png</texturebg>
-						<lefttexture border="1"></lefttexture>
-						<midtexture border="1">osd/info/osd_progress_mid.png</midtexture>
-						<righttexture border="1"></righttexture>	
-						<colordiffuse>30FFFFFF</colordiffuse>					
-                        <visible>Player.HasMedia + System.IdleTime(8)</visible>
-                        <animation effect="fade" end="100" time="840">Visible</animation>				
-					</control>					
+                    <!-- Home OSD -->									
                     <control type="label">
                         <top>445</top>
                         <width>1920</width>
@@ -505,7 +512,6 @@
                         <label>$VAR[HomeOSDLabelVar]</label>
                         <font>Font_MainClassic</font>
                         <textcolor>$VAR[HomeMenuTextFocusVar]</textcolor>
-						 <shadowcolor>black</shadowcolor>
                         <visible>Player.HasMedia + System.IdleTime(8)</visible>
                         <animation effect="fade" end="100" time="840">Visible</animation>
                     </control>
