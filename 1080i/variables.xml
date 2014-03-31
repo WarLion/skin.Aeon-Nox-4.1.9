@@ -955,12 +955,12 @@
     </variable>
 	
 <variable name="TVDayLabel1">
-        <value condition="!IntegerGreaterThan(Container(200).NumItems,0)">$INFO[Window(Home).Property(NextAired.Yesterday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.Yesterday)][/B]$INFO[Container(200).NumItems, (,)]</value>
+        <value condition="!IntegerGreaterThan(Container(200).NumItems,0)">$INFO[Window(Home).Property(NextAired.YesterdayText)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.YesterdayText)][/B]$INFO[Container(200).NumItems, (,)]</value>
     </variable>
     <variable name="TVDayLabel2">
-        <value condition="!IntegerGreaterThan(Container(201).NumItems,0)">$INFO[Window(Home).Property(NextAired.Today)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.Today)][/B]$INFO[Container(201).NumItems, (,)]</value>
+        <value condition="!IntegerGreaterThan(Container(201).NumItems,0)">$INFO[Window(Home).Property(NextAired.TodayText)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.TodayText)][/B]$INFO[Container(201).NumItems, (,)]</value>
     </variable>
     <variable name="TVDayLabel3">
         <value condition="!IntegerGreaterThan(Container(202).NumItems,0)">$INFO[Window(Home).Property(NextAired.202.Weekday)]</value>

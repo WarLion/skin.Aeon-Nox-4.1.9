@@ -2662,7 +2662,7 @@
                         <include>TVGuideWeekdayButtonbackground2</include>
                         <animation effect="fade" start="100" end="0" time="240" tween="sine" easing="inout" condition="![[ControlGroup(9001).HasFocus + ControlGroup(9001).HasFocus(200)] | [ControlGroup(2000).HasFocus + ControlGroup(2000).HasFocus(2001)]]">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(200).NumItems,0)</enable>
-						<visible>!StringCompare(Window(Home).Property(NextAired.Yesterday),)</visible>
+						<visible>!StringCompare(Window(Home).Property(NextAired.YesterdayText),)</visible>
                     </control>
                     <control type="button">
                         <label>$VAR[TVDayLabel2]</label>
@@ -2783,7 +2783,7 @@
                         <animation effect="fade" start="100" end="50" time="240" tween="sine" easing="inout" condition="!ControlGroup(9001).HasFocus(200)">Conditional</animation>
 						<animation effect="fade" start="100" end="65" time="0" condition="!ControlGroup(9001).HasFocus(200)">Conditional</animation>
                         <enable>IntegerGreaterThan(Container(200).NumItems,0)</enable>
-						<visible>!StringCompare(Window(Home).Property(NextAired.Yesterday),)</visible>
+						<visible>!StringCompare(Window(Home).Property(NextAired.YesterdayText),)</visible>
                     </control>
                     <control type="button" id="2002">
                         <label>$VAR[TVDayLabel2]</label>
@@ -2972,7 +2972,7 @@
 					<top>13</top>
 					<width>170</width>
 					<height>20</height>
-					<label>$INFO[Window(Home).Property(NextAired.Yesterday)]</label>
+					<label>$INFO[Window(Home).Property(NextAired.YesterdayText)]</label>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
@@ -3049,7 +3049,7 @@
 					<top>13</top>
 					<width>170</width>
 					<height>20</height>
-					<label>$INFO[Window(Home).Property(NextAired.Today)]</label>
+					<label>$INFO[Window(Home).Property(NextAired.TodayText)]</label>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
