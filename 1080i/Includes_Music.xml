@@ -718,10 +718,11 @@
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label">
-                    <width min="50" max="610">auto</width>
+                    <width min="50" max="400">auto</width>
                     <height>26</height>
                     <label>$INFO[MusicPlayer.Offset(1).Title]</label>
                     <font>Font_Reg26_Caps</font>
+					<scroll>true</scroll>
                 </control>
             </control>
             <control type="grouplist">
@@ -746,10 +747,11 @@
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label">
-                    <width min="50" max="610">auto</width>
+                    <width min="50" max="400">auto</width>
                     <height>26</height>
                     <label>$INFO[MusicPlayer.Offset(2).Title]</label>
                     <font>Font_Reg26_Caps</font>
+					<scroll>true</scroll>
                 </control>
             </control>
             <control type="grouplist">
@@ -774,10 +776,11 @@
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label">
-                    <width min="50" max="610">auto</width>
+                    <width min="50" max="400">auto</width>
                     <height>26</height>
                     <label>$INFO[MusicPlayer.Offset(3).Title]</label>
                     <font>Font_Reg26_Caps</font>
+					<scroll>true</scroll>
                 </control>
             </control>
             <control type="grouplist">
@@ -802,10 +805,11 @@
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label">
-                    <width min="50" max="610">auto</width>
+                    <width min="50" max="400">auto</width>
                     <height>26</height>
                     <label>$INFO[MusicPlayer.Offset(4).Title]</label>
                     <font>Font_Reg26_Caps</font>
+					<scroll>true</scroll>
                 </control>
             </control>
             <control type="grouplist">
@@ -830,10 +834,11 @@
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label">
-                    <width min="50" max="610">auto</width>
+                    <width min="50" max="400">auto</width>
                     <height>26</height>
                     <label>$INFO[MusicPlayer.Offset(5).Title]</label>
                     <font>Font_Reg26_Caps</font>
+					<scroll>true</scroll>
                 </control>
             </control>
             <control type="grouplist">
@@ -859,10 +864,11 @@
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label">
-                    <width min="50" max="610">auto</width>
+                    <width min="50" max="400">auto</width>
                     <height>26</height>
                     <label>$INFO[MusicPlayer.Offset(6).Title]</label>
                     <font>Font_Reg26_Caps</font>
+					<scroll>true</scroll>
                 </control>
             </control>
             <control type="grouplist">
@@ -888,10 +894,11 @@
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label">
-                    <width min="50" max="610">auto</width>
+                    <width min="50" max="400">auto</width>
                     <height>26</height>
                     <label>$INFO[MusicPlayer.Offset(7).Title]</label>
                     <font>Font_Reg26_Caps</font>
+					<scroll>true</scroll>
                 </control>
             </control>
             <control type="grouplist">
@@ -917,10 +924,11 @@
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label">
-                    <width min="50" max="610">auto</width>
+                    <width min="50" max="400">auto</width>
                     <height>26</height>
                     <label>$INFO[MusicPlayer.Offset(8).Title]</label>
                     <font>Font_Reg26_Caps</font>
+					<scroll>true</scroll>
                 </control>
             </control>
             <control type="grouplist">
@@ -946,10 +954,11 @@
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label">
-                    <width min="50" max="610">auto</width>
+                    <width min="50" max="400">auto</width>
                     <height>26</height>
                     <label>$INFO[MusicPlayer.Offset(9).Title]</label>
                     <font>Font_Reg26_Caps</font>
+					<scroll>true</scroll>
                 </control>
             </control>
             <control type="grouplist">
@@ -975,10 +984,11 @@
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label">
-                    <width min="50" max="610">auto</width>
+                    <width min="50" max="400">auto</width>
                     <height>26</height>
                     <label>$INFO[MusicPlayer.Offset(10).Title]</label>
                     <font>Font_Reg26_Caps</font>
+					<scroll>true</scroll>
                 </control>
             </control>
             <control type="grouplist">
@@ -1004,10 +1014,11 @@
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label">
-                    <width min="50" max="610">auto</width>
+                    <width min="50" max="400">auto</width>
                     <height>26</height>
                     <label>$INFO[MusicPlayer.Offset(11).Title]</label>
                     <font>Font_Reg26_Caps</font>
+					<scroll>true</scroll>
                 </control>
             </control>
             <control type="grouplist">
@@ -1033,10 +1044,11 @@
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label">
-                    <width min="50" max="610">auto</width>
+                    <width min="50" max="400">auto</width>
                     <height>26</height>
                     <label>$INFO[MusicPlayer.Offset(12).Title]</label>
                     <font>Font_Reg26_Caps</font>
+					<scroll>true</scroll>
                 </control>
             </control>
             <control type="grouplist">
@@ -1062,10 +1074,11 @@
                     <textcolor>white3</textcolor>
                 </control>
                 <control type="label">
-                    <width min="50" max="610">auto</width>
+                    <width min="50" max="400">auto</width>
                     <height>26</height>
                     <label>$INFO[MusicPlayer.Offset(13).Title]</label>
                     <font>Font_Reg26_Caps</font>
+					<scroll>true</scroll>
                 </control>
             </control>
         </control>
