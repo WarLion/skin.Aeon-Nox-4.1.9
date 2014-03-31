@@ -496,7 +496,7 @@
                         <width>1350</width>
                         <height>126</height>
                         <align>left</align>
-                        <label>$INFO[MusicPlayer.BitRate,,[COLOR grey] kbps[/COLOR]][CR]$INFO[MusicPlayer.SampleRate,,[COLOR grey] kHz[/COLOR] ][CR]$INFO[MusicPlayer.bitspersample,,[COLOR grey] bit[/COLOR] ]</label>
+                        <label>$INFO[MusicPlayer.BitRate,,[COLOR grey] kbps[/COLOR]][CR]$INFO[MusicPlayer.SampleRate,,[COLOR grey] kHz[/COLOR] ][CR]$INFO[MusicPlayer.BitRate,,[COLOR grey] bit[/COLOR] ]</label>
                         <font>Font_Reg19_Caps</font>
                         <shadowcolor>black</shadowcolor>
                         <textcolor>$VAR[TitleColorVar]</textcolor>
@@ -607,18 +607,13 @@
                         <textcolor>white3</textcolor>
                     </control>
                 </control>
-                <control type="progress" id="23">
+                <control type="progress">
                     <left>1498</left>
                     <top>188</top>
                     <width>320</width>
                     <height>15</height>
                     <info>Player.Progress</info>
                     <colordiffuse>FFFFFFFF</colordiffuse>
-                    <texturebg border="12,0,12,0">dialogs/progress/progress_back.png</texturebg>
-                    <lefttexture border="12,0,0,0">dialogs/progress/progress_left.png</lefttexture>
-                    <midtexture border="0,0,0,0">dialogs/progress/progress_mid.png</midtexture>
-                    <righttexture border="0,0,12,0">dialogs/progress/progress_right.png</righttexture>
-                    <overlaytexture>-</overlaytexture>
                 </control>
             </control>
         </control>
