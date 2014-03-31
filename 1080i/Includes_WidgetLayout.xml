@@ -2862,7 +2862,7 @@
                             <width>35</width>
                             <height>37</height>
                             <aspectratio align="right">keep</aspectratio>
-                            <texture background="true">$INFO[Window(home).Property(Country),flags/language/,.png]</texture>
+                            <texture background="true">$VAR[ColorFlagsLanguage]/language/$INFO[Window(home).Property(Country),,.png]</texture>
                             <fadetime>200</fadetime>
                             <colordiffuse>AAFFFFFF</colordiffuse>
                             <visible>!IsEmpty(Control.GetLabel(12020))</visible>
@@ -3050,7 +3050,7 @@
 					<control type="image">
 						<left>1605</left>
 						<top>265</top>
-						<texture>tvguide/$INFO[Window(home).Property(StatusID),,.png]</texture>
+						<texture>$VAR[ColortvguideFlags]/$INFO[Window(home).Property(StatusID),,.png]</texture>
 						<width>150</width>
 						<height>70</height>
 						<aspectratio>keep</aspectratio>
@@ -3094,7 +3094,7 @@
                             <width>26</width>
                             <height>22</height>
                             <aspectratio>scale</aspectratio>
-                            <texture>$INFO[Window(movieinformation).Property(AudioLanguage.1),flags/language/,.png]</texture>
+                            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(AudioLanguage.1),,.png]</texture>
                             <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.1))</visible>
                             <include>Animation_VisibleChange200</include>
                             <fadetime>400</fadetime>
@@ -3103,7 +3103,7 @@
                             <width>26</width>
                             <height>22</height>
                             <aspectratio>scale</aspectratio>
-                            <texture>$INFO[Window(movieinformation).Property(AudioLanguage.2),flags/language/,.png]</texture>
+                            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(AudioLanguage.2),,.png]</texture>
                             <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.2))</visible>
                             <visible>!Stringcompare(Window(movieinformation).Property(AudioLanguage.1),Window(movieinformation).Property(AudioLanguage.2))</visible>
                             <include>Animation_VisibleChange200</include>
@@ -3113,7 +3113,7 @@
                             <width>26</width>
                             <height>22</height>
                             <aspectratio>scale</aspectratio>
-                            <texture>$INFO[Window(movieinformation).Property(AudioLanguage.3),flags/language/,.png]</texture>
+                            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(AudioLanguage.3),,.png]</texture>
                             <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.3))</visible>
                             <visible>!Stringcompare(Window(movieinformation).Property(AudioLanguage.1),Window(movieinformation).Property(AudioLanguage.3))</visible>
                             <visible>!Stringcompare(Window(movieinformation).Property(AudioLanguage.2),Window(movieinformation).Property(AudioLanguage.3))</visible>
@@ -3122,7 +3122,7 @@
                         </control>
                     </control>
                     <control type="image">
-                        <texture>$INFO[Window(home).Property(AudioCodec),flags/audio/]$INFO[Window(home).Property(AudioChannels),,.png]</texture>
+                        <texture>$VAR[ColorFlagsAudio]/audio/$INFO[Window(home).Property(AudioCodec)]$INFO[Window(home).Property(AudioChannels),,.png]</texture>
                         <height>64</height>
                         <width>160</width>
                         <aspectratio align="left">keep</aspectratio>
@@ -3131,16 +3131,16 @@
                         <animation effect="fade" time="200">VisibleChange</animation>
                     </control>
                     <control type="image">
-                        <texture>$INFO[Window(home).Property(VideoResolution),flags/resolution/,.png]</texture>
+                        <texture>$VAR[ColorFlagsResolution]/resolution/$INFO[Window(home).Property(VideoResolution),,.png]</texture>
                         <include>WidgetFlagVars</include>
                         <visible>!IsEmpty(Window(home).Property(VideoAspect))</visible>
                     </control>
                     <control type="image">
-                        <texture>$INFO[Window(home).Property(VideoCodec),flags/source/,.png]</texture>
+                        <texture>$VAR[ColorFlagsSource]/Source/$INFO[Window(home).Property(VideoCodec),,.png]</texture>
                         <include>WidgetFlagVars</include>
                     </control>
                     <control type="image">
-                        <texture>$INFO[Window(home).Property(VideoAspect),flags/aspectratio/,.png]</texture>
+                        <texture>$VAR[ColorFlagsAspectRatio]/aspectratio/$INFO[Window(home).Property(VideoAspect),,.png]</texture>
                         <include>WidgetFlagVars</include>
                     </control>
 					<!---- flag aqui --->			
@@ -3149,7 +3149,7 @@
                         <height>64</height>
                         <visible>IsEmpty(Window(home).Property(NextTitle))</visible>
                         <control type="image">
-                            <texture>flags/time.png</texture>
+                            <texture>$VAR[ColorFlags]/time.png</texture>
                             <include>WidgetFlagVars</include>
                         </control>
                         <control type="label">
@@ -3163,7 +3163,7 @@
                         </control>						
                     </control>
                     <control type="image">
-                        <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[WidgetRatingFlagVar,flags/rating/,.png]</texture>
+                        <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRating]/rating/$VAR[WidgetRatingFlagVar,,.png]</texture>
                         <include>WidgetFlagVars</include>
                         <visible>!IsEmpty(Window(home).Property(mpaa))</visible>
                     </control>
@@ -3172,7 +3172,7 @@
                         <height>64</height>
                         <visible>IsEmpty(Window(home).Property(NextTitle))</visible>
                         <control type="image">
-                            <texture>flags/IMDB.png</texture>
+                            <texture>$VAR[ColorFlags]/IMDB.png</texture>
                             <include>WidgetFlagVars</include>
                         </control>
                         <control type="label">
@@ -3186,7 +3186,7 @@
                         </control>
                     </control>									
                     <control type="image" id="13300">
-                        <texture>$INFO[Window(home).Property(Studio),flags/studios/,.png]</texture>
+                        <texture>$VAR[ColorFlagsStudio]/Studios/$INFO[Window(home).Property(Studio),,.png]</texture>
                         <width>160</width>
                         <height>90</height>
                         <top>-11</top>
@@ -3362,7 +3362,7 @@
                         <width>160</width>
                         <height>70</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Window(home).Property(RecordLabel),flags/music/recordlabel/,.png]</texture>
+                        <texture>flags/music/recordlabel/$INFO[Window(home).Property(RecordLabel),,.png]</texture>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <colordiffuse>white2</colordiffuse>
                         <animation effect="fade" time="200">VisibleChange</animation>
@@ -3734,19 +3734,19 @@
                     <orientation>horizontal</orientation>
                     <itemgap>40</itemgap>
                     <control type="image">
-                        <texture>$INFO[Container(7000).ListItem.Property(AudioCodec),flags/audio/]$INFO[Container(7000).ListItem.Property(AudioChannels),,.png]</texture>
+                        <texture>$VAR[ColorFlagsAudio]/audio/$INFO[Container(7000).ListItem.Property(AudioCodec)]$INFO[Container(7000).ListItem.Property(AudioChannels),,.png]</texture>
                         <include>OSDFlagVars</include>
                     </control>
                     <control type="image">
-                        <texture>$INFO[Container(7000).ListItem.Property(VideoResolution),flags/resolution/,.png]</texture>
+                        <texture>$VAR[ColorFlagsResolution]/resolution/$INFO[Container(7000).ListItem.Property(VideoResolution),,.png]</texture>
                         <include>OSDFlagVars</include>
                     </control>
                     <control type="image">
-                        <texture>$INFO[Container(7000).ListItem.Property(VideoCodec),flags/source/,.png]</texture>
+                        <texture>$VAR[ColorFlagsSource]/Source/$INFO[Container(7000).ListItem.Property(VideoCodec),,.png]</texture>
                         <include>OSDFlagVars</include>
                     </control>
                     <control type="image">
-                        <texture>$INFO[Container(7000).ListItem.Property(VideoAspect),flags/aspectratio/,.png]</texture>
+                        <texture>$VAR[ColorFlagsAspectRatio]/aspectratio/$INFO[Container(7000).ListItem.Property(VideoAspect),,.png]</texture>
                         <include>OSDFlagVars</include>
                     </control>
                     <!--                     <control type="image">
@@ -3755,7 +3755,7 @@
                         <visible>!IsEmpty(Window(home).Property(mpaa))</visible>
                     </control> -->
                     <control type="image">
-                        <texture fallback="flags/studios/default-studio.png">$INFO[Container(7000).ListItem.Property(Studio),flags/studios/,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(7000).ListItem.Property(Studio),,.png]</texture>
                         <include>OSDFlagVars</include>
                     </control>
                 </control>
@@ -6216,7 +6216,7 @@
                 <width>200</width>
                 <height>200</height>
                 <aspectratio>keep</aspectratio>
-                <texture background="true">$INFO[ListItem.Property(RecordLabel),flags/music/recordlabel/,.png]</texture>
+                <texture background="true">flags/music/recordlabel/$INFO[ListItem.Property(RecordLabel),,.png]</texture>
                 <visible>IsEmpty(ListItem.Property(Description))</visible>
             </control>
         </control>
@@ -6303,7 +6303,7 @@
                     <width>150</width>
                     <height>150</height>
                     <aspectratio>keep</aspectratio>
-                    <texture background="true">$INFO[ListItem.Property(Network),flags/studios/,.png]</texture>
+                    <texture background="true">$VAR[ColorFlagsStudio]/Studios/$INFO[ListItem.Property(Network),,.png]</texture>
                 </control>
                 <control type="image">
                     <left>605</left>
@@ -6311,7 +6311,7 @@
                     <width>150</width>
                     <height>70</height>
                     <aspectratio>keep</aspectratio>
-                    <texture>tvguide/$INFO[ListItem.Property(StatusID)].png</texture>
+                    <texture>$VAR[ColortvguideFlags]/$INFO[ListItem.Property(StatusID)].png</texture>
                 </control>
             </control>
             <control type="image">

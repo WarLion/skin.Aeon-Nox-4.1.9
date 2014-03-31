@@ -99,7 +99,7 @@
                     <onleft>9000</onleft>
                     <onright>60</onright>
                     <onup>9001</onup>
-                    <ondown>9001</ondown>
+                    <ondown>9001</ondown>					
                     <control type="radiobutton" id="101">
                         <label>20189</label>
                         <include>Default_SettingRadioButton</include>
@@ -219,6 +219,12 @@
                         <include>Default_SettingButton</include>
                         <onclick>ActivateWindow(1116)</onclick>
                     </control>
+                    <control type="button" id="520">
+                        <label>Customize Icons</label>
+                        <include>Default_SettingButton</include>
+                        <onclick>ActivateWindow(1168)</onclick>
+						<visible>IsEmpty(special://skin/extras/colortheme/flags/cc.png)</visible>
+                    </control>					
                     <control type="button" id="517">
                         <label>$LOCALIZE[31809]</label>
                         <include>Default_SettingButton</include>

@@ -464,7 +464,7 @@
                         <width>45</width>
                         <height>42</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.DiscNumber,flags/discnumber/,.png]</texture>
+                        <texture>flags/discnumber/$INFO[ListItem.DiscNumber,,.png]</texture>
                         <colordiffuse>white</colordiffuse>
                         <visible>Container.Content(songs)</visible>
                     </control>
@@ -568,7 +568,7 @@
                         <width>45</width>
                         <height>42</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.DiscNumber,flags/discnumber/,.png]</texture>
+                        <texture>flags/discnumber/$INFO[ListItem.DiscNumber,,.png]</texture>
                         <colordiffuse>white</colordiffuse>
                         <visible>Container.Content(songs)</visible>
                     </control>
@@ -684,7 +684,7 @@
                         <top>5</top>
                         <width>90</width>
                         <height>90</height>
-                        <texture>$VAR[SmallListIconVar,defaulticons/]</texture>
+                        <texture>$VAR[Colortdefaulticons]/$VAR[SmallListIconVar]</texture>
                         <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                     </control>
                 </itemlayout>
@@ -743,7 +743,7 @@
                         <top>5</top>
                         <width>90</width>
                         <height>90</height>
-                        <texture>$VAR[SmallListIconVar,defaulticons/]</texture>
+                        <texture>$VAR[Colortdefaulticons]/$VAR[SmallListIconVar]</texture>
                         <colordiffuse>white2</colordiffuse>
                     </control>
                 </focusedlayout>
@@ -796,7 +796,7 @@
                         <top>3</top>
                         <width>55</width>
                         <height>55</height>
-                        <texture>$VAR[SmallListIconVar,defaulticons/]</texture>
+                        <texture>$VAR[Colortdefaulticons]/$VAR[SmallListIconVar]</texture>
                         <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                         <visible>![Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)] | Stringcompare(ListItem.Label,..)</visible>
                     </control>
@@ -856,7 +856,7 @@
                         <top>3</top>
                         <width>55</width>
                         <height>55</height>
-                        <texture>$VAR[SmallListIconVar,defaulticons/]</texture>
+                        <texture>$VAR[Colortdefaulticons]/$VAR[SmallListIconVar]</texture>
                         <colordiffuse>white2</colordiffuse>
                         <visible>![Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)] | Stringcompare(ListItem.Label,..)</visible>
                     </control>

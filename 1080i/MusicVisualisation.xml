@@ -476,7 +476,7 @@
                         <top>66</top>
                         <width>150</width>
                         <height>99</height>
-                        <texture fallback="empty.png">$INFO[MusicPlayer.Codec,flags/audio/]$INFO[MusicPlayer.Channels,,.png]</texture>
+                        <texture fallback="empty.png">$VAR[ColorFlagsAudio]/audio/$INFO[MusicPlayer.Codec]$INFO[MusicPlayer.Channels,,.png]</texture>
                         <colordiffuse>white3</colordiffuse>
                         <aspectratio>keep</aspectratio>
                     </control>
@@ -485,7 +485,7 @@
                         <top>66</top>
                         <width>150</width>
                         <height>99</height>
-                        <texture fallback="empty.png">$INFO[MusicPlayer.Codec,flags/audio/,.png]</texture>
+                        <texture fallback="empty.png">$VAR[ColorFlagsAudio]/audio/$INFO[MusicPlayer.Codec,,.png]</texture>
                         <colordiffuse>white3</colordiffuse>
                         <aspectratio>keep</aspectratio>
                         <visible>StringCompare(Control.GetLabel(8310),empty.png)</visible>
@@ -549,7 +549,7 @@
                         <width>150</width>
                         <height>90</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[MusicPlayer.Property(Album_Label),flags/music/recordlabel/,.png]</texture>
+                        <texture>flags/music/recordlabel/$INFO[MusicPlayer.Property(Album_Label),,.png]</texture>
                         <colordiffuse>white3</colordiffuse>
                     </control>
                     <control type="label">
@@ -573,7 +573,7 @@
                             <width>80</width>
                             <height>80</height>
                             <aspectratio>keep</aspectratio>
-                            <texture>defaulticons/DefaultAddonMusic.png</texture>
+                            <texture>$VAR[Colortdefaulticons]/DefaultAddonMusic.png</texture>
                             <colordiffuse>$VAR[TitleColorVar]</colordiffuse>
                         </control>
                         <control type="label">

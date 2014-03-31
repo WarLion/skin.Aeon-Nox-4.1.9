@@ -458,19 +458,19 @@
                     <control type="image">
                         <left>1520</left>
                         <top>195</top>
-                        <texture>flags/audio/$INFO[Container(8001).ListItem.Property(AudioCodec)]$INFO[Container(8001).ListItem.Property(AudioChannels)].png</texture>
+                        <texture>$VAR[ColorFlagsAudio]/audio/$INFO[Container(8001).ListItem.Property(AudioCodec)]$INFO[Container(8001).ListItem.Property(AudioChannels)].png</texture>
                         <include>AudioFlagsVars</include>
                     </control>
                     <control type="image">
                         <left>1520</left>
                         <top>125</top>
-                        <texture>flags/source/$INFO[Container(8001).ListItem.Property(VideoCodec)].png</texture>
+                        <texture>$VAR[ColorFlagsSource]/Source/$INFO[Container(8001).ListItem.Property(VideoCodec)].png</texture>
                         <include>AudioFlagsVars</include>
                     </control>
                     <control type="image">
                         <left>1520</left>
                         <top>255</top>
-                        <texture>flags/resolution/$INFO[Container(8001).ListItem.Property(VideoResolution)].png</texture>
+                        <texture>$VAR[ColorFlagsResolution]/resolution/$INFO[Container(8001).ListItem.Property(VideoResolution)].png</texture>
 						<height>64</height>
 						<aspectratio>keep</aspectratio>
 						<fadetime>IconCrossfadeTime2</fadetime>

@@ -71,13 +71,8 @@
                         <onclick>Skin.ToggleSetting(Extra.Disable)</onclick>
                         <selected>Skin.HasSetting(Extra.Disable)</selected>
 						<visible>system.hasaddon(script.cinema.experience) | System.HasAddon(script.videoextras) | system.hasaddon(script.tvtunes)</visible>
-                    </control>	
-                <!--    <control type="button" id="112">
-                        <label>dialog kai</label>
-                        <include>Objects_CommonSettingsButton</include>
-                        <onclick>ActivateWindow(infodialog)</onclick>
-                    </control>	
-                    <control type="button" id="113">
+                    </control>		
+                   <!--   <control type="button" id="113">
                         <label>dialog yes no</label>
                         <include>Objects_CommonSettingsButton</include>
                         <onclick>ActivateWindow(yesnodialog)</onclick>
