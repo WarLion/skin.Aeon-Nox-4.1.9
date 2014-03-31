@@ -1855,7 +1855,9 @@
     </variable>
     <variable name="BreadcrumbsLabel2Var">
         <value condition="Stringcompare(Container.Folderpath,special://skin/extras/playlists/MoviesInProgress.xsp)"> / $LOCALIZE[31335]</value>
-        <value>$INFO[Container.FolderName, / ]</value>
+        <value condition="Container.Content(seasons)">$INFO[Container.FolderName, / ]</value>
+		<value condition="Container.Content(tvshows)">$INFO[ListItem.Label, / ]</value>
+		<value>$INFO[Container.FolderName, / ]</value>
     </variable>
     <variable name="BreadcrumbsFilterVar">
         <value condition="Container.Filtered">($LOCALIZE[587])</value>

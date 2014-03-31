@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
     <include name="FeaturedTopLabel">
-        <width min="15" max="1920">auto</width>
+        <width min="15" max="980">auto</width>
         <height>38</height>
         <font>Font_Reg37_Caps</font>
         <shadowcolor>bcshadow</shadowcolor>
         <textcolor>white2</textcolor>
-        <scroll>false</scroll>
+        <scroll>true</scroll>
         <include condition="![Window.IsActive(skinsettings) | Window.IsActive(SettingsCategory.xml) | Window.IsActive(systeminfo) | Window.IsActive(settings)]">Animation_WindowFade200</include>
     </include>
     <include name="BreadcrumbsLabel">
-        <width min="15" max="1920">auto</width>
+		<left>10</left>
+        <width min="15" max="530">auto</width>
         <height>38</height>
         <font>Font_Reg30_Caps</font>
         <shadowcolor>bcshadow</shadowcolor>
         <textcolor>$VAR[BreadCrumbsContentColorVar]</textcolor>
-        <scroll>false</scroll>
+        <scroll>true</scroll>
         <include condition="![Window.IsActive(skinsettings) | Window.IsActive(SettingsCategory.xml) | Window.IsActive(systeminfo) | Window.IsActive(settings)]">Animation_WindowFade200</include>
     </include>
     <include name="Breadcrumbs_BackBar">
@@ -114,6 +115,19 @@
                 <visible>Player.HasAudio + Player.Playing</visible>
                 <colordiffuse>$VAR[TitleColorVar]</colordiffuse>
             </control>
+			<control type="progress">
+					<left>0</left>
+					<top>0</top>
+					<width>660</width>
+					<height>45</height>
+					<info>Player.Progress</info>
+					<texturebg>osd/info/osd_progress_back_cache.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture>osd/info/osd_progress_mid.png</midtexture>
+					<righttexture></righttexture>	
+					<colordiffuse>30FFFFFF</colordiffuse>					
+					<visible>Player.HasMedia</visible>
+				</control>				
             <control type="image">
                 <left>12</left>
                 <top>9</top>
@@ -138,7 +152,7 @@
                 <width>600</width>
                 <height>118</height>
                 <orientation>horizontal</orientation>
-                <itemgap>22</itemgap>
+                <itemgap>22</itemgap>								
                 <control type="label">
                     <width min="15" max="200">auto</width>
                     <height>38</height>
