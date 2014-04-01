@@ -440,14 +440,14 @@
                     <control type="image">
                         <width>135</width>
                         <height>88</height>
-                        <texture>$INFO[ListItem.FileExtension,flags/audio/,.png]</texture>
+                        <texture>$VAR[ColorFlagsAudio]/audio/$INFO[ListItem.FileExtension,,.png]</texture>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <colordiffuse>white2</colordiffuse>
                     </control>
                     <control type="image">
                         <width>135</width>
                         <height>88</height>
-                        <texture fallback="flags/source/defaultsource.png">$INFO[ListItem.Property(Album_Label),flags/music/recordlabel/,.png]</texture>
+                        <texture fallback="flags/source/defaultsource.png">flags/music/recordlabel/$INFO[ListItem.Property(Album_Label),,.png]</texture>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <colordiffuse>white2</colordiffuse>
                         <visible>!IsEmpty(ListItem.Album) + Container.Content(albums)</visible>

@@ -665,7 +665,7 @@
             <width>135</width>
             <height>88</height>
             <aspectratio>keep</aspectratio>
-            <texture>$INFO[ListItem.Property(Album_Label),flags/music/recordlabel/,.png]</texture>
+            <texture>flags/music/recordlabel/$INFO[ListItem.Property(Album_Label),,.png]</texture>
             <colordiffuse>white3</colordiffuse>
             <visible>!ControlGroup(1500).HasFocus(25)</visible>
             <include>Animation_VisibleChange200</include>
@@ -2115,7 +2115,7 @@
                         <height>30</height>
                         <animation effect="rotate" end="-90" center="auto" time="0" condition="true">Conditional</animation>
                         <aspectratio>keep</aspectratio>
-                        <texture>defaulticons/DefaultFolderBack.png</texture>
+                        <texture>$VAR[Colortdefaulticons]/DefaultFolderBack.png</texture>
                         <colordiffuse>$VAR[BreadCrumbsContentColorVar]</colordiffuse>
                     </control>
                 </control>

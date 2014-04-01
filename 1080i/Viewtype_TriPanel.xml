@@ -648,7 +648,7 @@
                             <top>2</top>
                             <width>47</width>
                             <height>47</height>
-                            <texture>$VAR[SmallListIconVar,defaulticons/]</texture>
+                            <texture>$VAR[Colortdefaulticons]/$VAR[SmallListIconVar]</texture>
                             <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                             <visible>IsEmpty(ListItem.Year) + !Container.Content(episodes) + ![Window.IsActive(programs) + !IsEmpty(ListItem.Premiered)]</visible>
                         </control>
@@ -724,7 +724,7 @@
                             <top>2</top>
                             <width>47</width>
                             <height>47</height>
-                            <texture>$VAR[SmallListIconVar,defaulticons/]</texture>
+                            <texture>$VAR[Colortdefaulticons]/$VAR[SmallListIconVar]</texture>
                             <colordiffuse>white2</colordiffuse>
                             <visible>IsEmpty(ListItem.Year) + !Container.Content(episodes) + ![Window.IsActive(programs) + !IsEmpty(ListItem.Premiered)]</visible>
                         </control>
@@ -805,7 +805,7 @@
                             <top>12</top>
                             <width>70</width>
                             <height>70</height>
-                            <texture>$VAR[SmallListIconVar,defaulticons/]</texture>
+                            <texture>$VAR[Colortdefaulticons]/$VAR[SmallListIconVar]</texture>
                             <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                             <visible>IsEmpty(ListItem.Year)</visible>
                         </control>
@@ -890,7 +890,7 @@
                             <top>12</top>
                             <width>70</width>
                             <height>70</height>
-                            <texture>$VAR[SmallListIconVar,defaulticons/]</texture>
+                            <texture>$VAR[Colortdefaulticons]/$VAR[SmallListIconVar]</texture>
                             <colordiffuse>white2</colordiffuse>
                             <visible>IsEmpty(ListItem.Year)</visible>
                         </control>

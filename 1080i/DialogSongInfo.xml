@@ -279,14 +279,14 @@
                             <control type="image">
                                 <width>135</width>
                                 <height>88</height>
-                                <texture>$INFO[ListItem.StarRating,flags/music/rating/]</texture>
+                                <texture>flags/music/rating/$INFO[ListItem.StarRating]</texture>
                                 <fadetime>IconCrossfadeTime2</fadetime>
                                 <colordiffuse>grey2</colordiffuse>
                             </control>
                             <control type="image">
                                 <width>135</width>
                                 <height>88</height>
-                                <texture>$INFO[ListItem.FileExtension,flags/audio/,.png]</texture>
+                                <texture>$VAR[ColorFlagsAudio]/audio/$INFO[ListItem.FileExtension,,.png]</texture>
                                 <fadetime>IconCrossfadeTime2</fadetime>
                                 <colordiffuse>grey2</colordiffuse>
                             </control>
@@ -313,7 +313,7 @@
                 <height>88</height>
                 <colordiffuse>grey2</colordiffuse>
                 <fadetime>IconCrossfadeTime2</fadetime>
-                <texture>$INFO[ListItem.Property(Album_Label),flags/music/recordlabel/,.png]</texture>
+                <texture>flags/music/recordlabel/$INFO[ListItem.Property(Album_Label),,.png]</texture>
                 <animation effect="slide" end="-145" time="0" condition="!IsEmpty(ListItem.Year)">Conditional</animation>
               </control>
                         </control>

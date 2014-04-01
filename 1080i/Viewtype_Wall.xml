@@ -120,7 +120,7 @@
                     <width>200</width>
 					<aspectratio>keep</aspectratio>
                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-                <texture fallback="flags/music/rating/rating0.png">$INFO[ListItem.StarRating,flags/music/rating/]</texture>
+                <texture fallback="flags/music/rating/rating0.png">flags/music/rating/$INFO[ListItem.StarRating]</texture>
 				<visible>Container.Content(songs)</visible>
             </control>	
                 <control type="label">
@@ -186,7 +186,7 @@
                     <width>200</width>
 					<aspectratio>keep</aspectratio>
                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-                <texture fallback="flags/music/rating/rating0.png">$INFO[ListItem.StarRating,flags/music/rating/]</texture>
+                <texture fallback="flags/music/rating/rating0.png">flags/music/rating/$INFO[ListItem.StarRating]</texture>
 				<visible>Container.Content(songs)</visible>
             </control>				
                 <control type="label">

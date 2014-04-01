@@ -1117,7 +1117,7 @@
 				<top>50</top>					
 				<width>1900</width>
 				<height>47</height>
-				<label fallback="31006">$INFO[Window.Property(current.actor.name)]</label>
+				<label fallback="31006">$INFO[Window(Home).Property(NextAired(-3).AirsToday)]-$INFO[Window(Home).Property(NextAired(-2).AirsToday)]-$INFO[Window(Home).Property(NextAired(-1).AirsToday)]-($INFO[Window(Home).Property(NextAired.AirsToday)])-$INFO[Window(Home).Property(NextAired(1).AirsToday)]-$INFO[Window(Home).Property(NextAired(2).AirsToday)]-$INFO[Window(Home).Property(NextAired(3).AirsToday)]-$INFO[Window(Home).Property(NextAired(4).AirsToday)]-$INFO[Window(Home).Property(NextAired(5).AirsToday)]-$INFO[Window(Home).Property(NextAired(6).AirsToday)]-$INFO[Window(Home).Property(NextAired(7).AirsToday)]-$INFO[Window(Home).Property(NextAired(8).AirsToday)]</label>
 				<scroll>true</scroll>
             </control>
 

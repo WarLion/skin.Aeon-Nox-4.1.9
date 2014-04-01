@@ -824,9 +824,9 @@
     <variable name="WatchedIconVar">
         <value condition="Container.Content(movies) + ListItem.IsFolder + !Stringcompare(ListItem.Label,..) + !StringCompare(ListItem.Overlay,OverlayWatched.png)">common/set.png</value>
         <value condition="Container.Content(movies) + ListItem.IsFolder + !Stringcompare(ListItem.Label,..)">common/setwatched.png</value>
-        <value condition="!Container.Content(songs) + !IsEmpty(ListItem.Property(Album_Description))">defaulticons/DefaultAddonAlbumInfo.png</value>
-        <value condition="!Container.Content(songs) + !IsEmpty(ListItem.Property(Artist_Description))">defaulticons/DefaultAddonArtistInfo.png</value>
-        <value condition="Container.Content(songs)">$INFO[ListItem.DiscNumber,flags/discnumber/,.png]</value>
+        <value condition="!Container.Content(songs) + !IsEmpty(ListItem.Property(Album_Description))">$VAR[Colortdefaulticons]/DefaultAddonAlbumInfo.png</value>
+        <value condition="!Container.Content(songs) + !IsEmpty(ListItem.Property(Artist_Description))">$VAR[Colortdefaulticons]/DefaultAddonArtistInfo.png</value>
+        <value condition="Container.Content(songs)">flags/discnumber/$INFO[ListItem.DiscNumber,,.png]</value>
 		<value condition="Container.ListItem.IsResumable + !IsEmpty(ListItem.Top250) + StringCompare(ListItem.Top250,1)">dialogs/circletop250-1/$INFO[ListItem.PercentPlayed].png</value>
         <value condition="Container.ListItem.IsResumable + !IsEmpty(ListItem.Top250) + !StringCompare(ListItem.Top250,1)">dialogs/circletop250/$INFO[ListItem.PercentPlayed].png</value>
         <value condition="Container.ListItem.IsResumable + !StringCompare(ListItem.Overlay,OverlayWatched.png)">dialogs/circle/$INFO[ListItem.PercentPlayed].png</value>
@@ -852,8 +852,8 @@
         <value>common/imdb.png</value>
     </variable>	
     <variable name="CountryFlagVar">
-        <value condition="!IsEmpty(ListItem.Country)">$INFO[ListItem.Country,flags/language/,.png]</value>
-        <value condition="Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)">$INFO[Window(home).Property(NextAired.Country),flags/language/,.png]</value>
+        <value condition="!IsEmpty(ListItem.Country)">$VAR[ColorFlagsLanguage]/language/$INFO[ListItem.Country,,.png]</value>
+        <value condition="Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)">$VAR[ColorFlagsLanguage]/language/$INFO[Window(home).Property(NextAired.Country),,.png]</value>
     </variable>
     <variable name="VolumeColorVar">
         <value condition="Stringcompare(Control.GetLabel(20),100)">FFFF2409</value>
@@ -955,12 +955,12 @@
     </variable>
 	
 <variable name="TVDayLabel1">
-        <value condition="!IntegerGreaterThan(Container(200).NumItems,0)">$INFO[Window(Home).Property(NextAired.Yesterday)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.Yesterday)][/B]$INFO[Container(200).NumItems, (,)]</value>
+        <value condition="!IntegerGreaterThan(Container(200).NumItems,0)">$INFO[Window(Home).Property(NextAired.YesterdayText)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.YesterdayText)][/B]$INFO[Container(200).NumItems, (,)]</value>
     </variable>
     <variable name="TVDayLabel2">
-        <value condition="!IntegerGreaterThan(Container(201).NumItems,0)">$INFO[Window(Home).Property(NextAired.Today)]</value>
-        <value>[B]$INFO[Window(Home).Property(NextAired.Today)][/B]$INFO[Container(201).NumItems, (,)]</value>
+        <value condition="!IntegerGreaterThan(Container(201).NumItems,0)">$INFO[Window(Home).Property(NextAired.TodayText)]</value>
+        <value>[B]$INFO[Window(Home).Property(NextAired.TodayText)][/B]$INFO[Container(201).NumItems, (,)]</value>
     </variable>
     <variable name="TVDayLabel3">
         <value condition="!IntegerGreaterThan(Container(202).NumItems,0)">$INFO[Window(Home).Property(NextAired.202.Weekday)]</value>
@@ -1829,8 +1829,8 @@
         <value>$INFO[ListItem.Path,,extrathumbs/thumb4.jpg]</value>
     </variable>
     <variable name="ShiftStudioImageVar">
-        <value condition="Container.Content(albums)">$INFO[ListItem.Property(Album_Label),flags/music/recordlabel/,.png]</value>
-        <value>$INFO[ListItem.Studio,flags/studios/,.png]</value>
+        <value condition="Container.Content(albums)">flags/music/recordlabel/$INFO[ListItem.Property(Album_Label),,.png]</value>
+        <value>$VAR[ColorFlagsStudio]/Studios/$INFO[ListItem.Studio,,.png]</value>
     </variable>
     <variable name="ListLabel3Var">
         <value condition="Container.Content(albums) | Container.Content(movies)">$INFO[ListItem.Year]</value>
@@ -1843,8 +1843,8 @@
         <value condition="Container.Content(episodes)">$INFO[ListItem.Episode]</value>
     </variable>
     <variable name="ListImage1Var">
-        <value condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | [Window.IsActive(programs) + !Container.Content(addons)]">$INFO[ListItem.Studio,flags/studios/,.png]</value>
-        <value condition="Container.Content(albums)">$INFO[ListItem.Property(Album_Label),flags/music/recordlabel/,.png]</value>
+        <value condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | [Window.IsActive(programs) + !Container.Content(addons)]">$VAR[ColorFlagsStudio]/Studios/$INFO[ListItem.Studio,,.png]</value>
+        <value condition="Container.Content(albums)">flags/music/recordlabel/$INFO[ListItem.Property(Album_Label),,.png]</value>
     </variable>
     <variable name="ListImage2Var">
         <value condition="Container.Content(albums) | Container.Content(songs) + IsEmpty(ListItem.Starrating) + !Stringcompare(Listitem.Label,..)">stars/0.0.png</value>
@@ -1940,13 +1940,13 @@
         <value>common/bgcolor.png</value>
     </variable>
     <variable name="ListAlbumVar">
-        <value condition="Container.Content(countries)">$INFO[ListItem.Label,flags/language/,.png]</value>
+        <value condition="Container.Content(countries)">$VAR[ColorFlagsLanguage]/language/$INFO[ListItem.Label,,.png]</value>
         <value condition="Container.Content(genres)">$INFO[ListItem.Label,special://skin/extras/genre/music/icons/,.jpg]</value>
         <value condition="Container.Content(years)">$INFO[ListItem.Label,special://skin/extras/year/music/icons/,.jpg]</value>
         <value>$INFO[ListItem.Icon]</value>
     </variable>
     <variable name="ThumbnailVar">
-        <value condition="Container.Content(countries)">$INFO[ListItem.Label,flags/language/,.png]</value>
+        <value condition="Container.Content(countries)">$VAR[ColorFlagsLanguage]/language/$INFO[ListItem.Label,,.png]</value>
         <value condition="Window.IsActive(musiclibrary) + Container.Content(genres)">$INFO[ListItem.Label,special://skin/extras/genre/music/icons/,.jpg]</value>
         <value condition="Window.IsActive(musiclibrary) + Container.Content(years)">$INFO[ListItem.Label,special://skin/extras/year/music/icons/,.jpg]</value>
         <value condition="Window.IsActive(videos) + Container.Content(genres)">$INFO[ListItem.Label,special://skin/extras/genre/video/icons/,.jpg]</value>
@@ -3169,5 +3169,67 @@
        <value condition="Container.Content(Movies) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(9).DBID,special://profile/addon_data/script.videoextras/movies/,.png]</value>
        <value condition="Container.Content(TVShows) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(9).DBID,special://profile/addon_data/script.videoextras/TVShows/,.png]</value>
        <value condition="Container.Content(MusicVideos) + Skin.HasSetting(VideoExtrasFlag)">$INFO[ListItem(9).DBID,special://profile/addon_data/script.videoextras/MusicVideos/,.png]</value>
+    </variable>	
+	<variable name="ColorFlags">
+       <value condition="Skin.HasSetting(ColorFlags)">special://skin/extras/colortheme/flags</value>
+       <value>flags</value>
+    </variable>	
+	<variable name="ColorFlagsAspectRatio">
+       <value condition="Skin.HasSetting(AspectRatioColorFlag)">special://skin/extras/colortheme/flags</value>
+	   <value condition="Skin.HasSetting(AspectRatioColorFlagreloaded)">special://skin/extras/reloadedtheme/flags</value>
+       <value>flags</value>
     </variable>		
+	<variable name="ColorFlagsAudio">
+       <value condition="Skin.HasSetting(AudioColorFlag)">special://skin/extras/colortheme/flags</value>
+       <value condition="Skin.HasSetting(AudioColorFlagreloaded)">special://skin/extras/reloadedtheme/flags</value>	   
+       <value>flags</value>
+    </variable>		
+	<variable name="ColorFlagsLanguage">
+       <value condition="Skin.HasSetting(LanguageColorFlag)">special://skin/extras/colortheme/flags</value>
+       <value condition="Skin.HasSetting(LanguageColorFlagreloaded)">special://skin/extras/reloadedtheme/flags</value>	   
+       <value>flags</value>
+    </variable>		
+	<variable name="ColorFlagsRating">
+       <value condition="Skin.HasSetting(RatingColorFlag)">special://skin/extras/colortheme/flags</value>
+       <value condition="Skin.HasSetting(RatingColorFlagreloaded)">special://skin/extras/reloadedtheme/flags</value>	   
+       <value>flags</value>
+    </variable>		
+	<variable name="ColorFlagsRatingextended">
+       <value condition="Skin.HasSetting(RatingColorFlag) + Skin.HasSetting(ExtendedRatingVideoinfo)">special://skin/extras/colortheme/flags/rating/info/</value>
+       <value condition="Skin.HasSetting(RatingColorFlagreloaded) + Skin.HasSetting(ExtendedRatingVideoinfo)">special://skin/extras/reloadedtheme/flags/rating/info/</value>	
+       <value condition="Skin.HasSetting(RatingColorFlag) + !Skin.HasSetting(ExtendedRatingVideoinfo)">special://skin/extras/colortheme/flags/rating/</value>
+       <value condition="Skin.HasSetting(RatingColorFlagreloaded) + !Skin.HasSetting(ExtendedRatingVideoinfo)">special://skin/extras/reloadedtheme/flags/rating/</value>		      
+       <value>flags/rating/</value>
+    </variable>		
+	<variable name="ColorFlagsResolution">
+       <value condition="Skin.HasSetting(ResolutionColorFlag)">special://skin/extras/colortheme/flags</value>
+       <value condition="Skin.HasSetting(ResolutionColorFlagreloaded)">special://skin/extras/reloadedtheme/flags</value>	   
+       <value>flags</value>
+    </variable>		
+	<variable name="ColorFlagsSource">
+       <value condition="Skin.HasSetting(SourceColorFlag)">special://skin/extras/colortheme/flags</value>
+       <value condition="Skin.HasSetting(SourceColorFlagreloaded)">special://skin/extras/reloadedtheme/flags</value>	   
+       <value>flags</value>
+    </variable>	
+	<variable name="ColorFlagsStudio">
+       <value condition="Skin.HasSetting(StudiosColorFlag)">special://skin/extras/colortheme/flags</value>   
+       <value>flags</value>
+    </variable>					
+	<variable name="ColortvguideFlags">
+       <value condition="Skin.HasSetting(ColortvguideFlags)">special://skin/extras/colortheme/tvguide</value>
+       <value>tvguide</value>
+    </variable>	
+	<variable name="Colortdefaulticons">
+       <value condition="Skin.HasSetting(Colortdefaulticons)">special://skin/extras/colortheme/defaulticons</value>
+       <value>defaulticons</value>
+    </variable>	
+	<variable name="RatingLabelVar">
+       <value condition="Skin.HasSetting(RatingColorFlag) + Skin.HasSetting(RatingColorFlagreloaded)">Color</value>
+	   <value condition="Skin.HasSetting(RatingColorFlagreloaded)">Reloaded</value>
+       <value>Original</value>	   
+    </variable>	
+	<variable name="RatingLabelVarTvshows">
+	   <value condition="Skin.HasSetting(RatingColorFlagreloaded)">Reloaded</value>
+       <value>Original</value>	   
+    </variable>						
 </includes>

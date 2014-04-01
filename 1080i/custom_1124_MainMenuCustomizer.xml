@@ -182,7 +182,7 @@
                     <top>2</top>
                     <width>35</width>
                     <height>35</height>
-                    <texture>defaulticons/DefaultFolderBack.png</texture>
+                    <texture>$VAR[Colortdefaulticons]/DefaultFolderBack.png</texture>
                     <animation effect="rotate" end="-90" center="auto" time="0" condition="true">Conditional</animation>
                     <colordiffuse>$VAR[HomeMenuWidgetTextVar]</colordiffuse>
                 </control>
