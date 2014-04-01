@@ -11,10 +11,11 @@
     <allowoverlay>no</allowoverlay>
     <controls>
         <control type="group">
-            <animation effect="slide" start="1242,0" end="0,0" time="320" tween="quadratic">WindowOpen</animation>
-            <animation effect="slide" end="1242,0" time="320" tween="quadratic">WindowClose</animation>
+            <animation effect="slide" start="2242,0" end="0,0" time="320" tween="quadratic">WindowOpen</animation>
+            <animation effect="slide" end="2242,0" time="320" tween="quadratic">WindowClose</animation>
             <animation effect="slide" start="1242,0" end="0,0" time="320" tween="quadratic" condition="!Window.IsVisible(script-Actors-DialogVideoInfo.xml)|!Window.IsVisible(script-Actors-DialogInfo.xml)">Conditional</animation>
             <animation effect="slide" end="1242,0" time="320" tween="quadratic" condition="Window.IsVisible(script-Actors-DialogVideoInfo.xml)|Window.IsVisible(script-Actors-DialogInfo.xml)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-729,0" time="320" tween="quadratic" condition="Skin.HasSetting(VideoInfoInverse)">Conditional</animation>
             <control type="image">
                 <left>729</left>
                 <width>1192</width>
@@ -274,13 +275,31 @@
                             </control>
                             <control type="image">
                                 <top>5</top>
+                                <width>285</width>
+                                <height>67</height>
+                                <aspectratio align="center">keep</aspectratio>
+                                <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRatingextended]$VAR[RatingFlagVar,,.png]</texture>
+                                <colordiffuse>white2</colordiffuse>
+                                <visible>[Container.Content(movies) | Container.Content(MusicVideos)] + Skin.HasSetting(ExtendedRatingVideoinfo)</visible>
+                            </control>
+                            <control type="image">
+                                <top>5</top>
                                 <width>135</width>
                                 <height>67</height>
                                 <aspectratio align="center">keep</aspectratio>
-                                <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRating]/rating/$VAR[RatingFlagVar,,.png]</texture>
+                                <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRatingextended]$VAR[RatingFlagVar,,.png]</texture>
                                 <colordiffuse>white2</colordiffuse>
-                                <visible>Container.Content(movies) | Container.Content(MusicVideos) | Container.Content(tvshows) | Container.Content(episodes)</visible>
-                            </control>
+                                <visible>[Container.Content(movies) | Container.Content(MusicVideos)] + !Skin.HasSetting(ExtendedRatingVideoinfo)</visible>
+                            </control>	
+                            <control type="image">
+                                <top>5</top>
+                                <width>135</width>
+                                <height>67</height>
+                                <aspectratio align="center">keep</aspectratio>
+                                <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRatingextended]$VAR[RatingFlagVar,,.png]</texture>
+                                <colordiffuse>white2</colordiffuse>
+                                <visible>[Container.Content(tvshows) | Container.Content(episodes)]</visible>
+                            </control>							
                             <control type="image">
                                 <height>79</height>
                                 <include>Furniture_FlagUpright</include>
@@ -1776,10 +1795,11 @@ ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=
             </control>
         </control>
         <control type="group">
-            <animation effect="slide" start="-729,0" end="0,0" time="320" tween="quadratic">WindowOpen</animation>
-            <animation effect="slide" end="-729,0" time="320" tween="quadratic">WindowClose</animation>
+            <animation effect="slide" start="-1429,0" end="0,0" time="320" tween="quadratic">WindowOpen</animation>
+            <animation effect="slide" end="-2729,0" time="320" tween="quadratic">WindowClose</animation>
             <animation effect="slide" start="-729,0" end="0,0" time="320" tween="quadratic" condition="!Window.IsVisible(script-Actors-DialogVideoInfo.xml)|!Window.IsVisible(script-Actors-DialogInfo.xml)">Conditional</animation>
             <animation effect="slide" end="-729,0" time="320" tween="quadratic" condition="Window.IsVisible(script-Actors-DialogVideoInfo.xml)|Window.IsVisible(script-Actors-DialogInfo.xml)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="1189,0" time="320" tween="quadratic" condition="Skin.HasSetting(VideoInfoInverse)">Conditional</animation>
             <control type="image">
                 <width>729</width>
                 <height>1080</height>
@@ -1812,7 +1832,8 @@ ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=
         </control>
 			<control type="group">
 				<animation effect="slide" start="729,0" end="0,0" time="320" tween="quadratic">WindowOpen</animation>
-				<animation effect="slide" end="729,0" time="320" tween="quadratic">WindowClose</animation>				
+				<animation effect="slide" end="0,1100" time="320" tween="quadratic">WindowClose</animation>	
+				<animation effect="slide" start="0,0" end="-729,0" time="320" tween="quadratic" condition="Skin.HasSetting(VideoInfoInverse)">Conditional</animation>			
 		        <control type="button" id="150">
                     <left>40r</left>
                     <top>40r</top>

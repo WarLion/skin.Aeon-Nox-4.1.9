@@ -72,12 +72,13 @@
                         <selected>Skin.HasSetting(Extra.Disable)</selected>
 						<visible>system.hasaddon(script.cinema.experience) | System.HasAddon(script.videoextras) | system.hasaddon(script.tvtunes)</visible>
                     </control>		
-                   <!--   <control type="button" id="113">
-                        <label>dialog yes no</label>
+                     <control type="button" id="113">
+                        <label>Customize</label>
                         <include>Objects_CommonSettingsButton</include>
-                        <onclick>ActivateWindow(yesnodialog)</onclick>
+						<onclick>Dialog.Close(1165)</onclick>
+                        <onclick>ActivateWindow(1169)</onclick>
                     </control>											
-                    <control type="button" id="114">
+                   <!--  <control type="button" id="114">
                         <label>dialog progress</label>
                         <include>Objects_CommonSettingsButton</include>
                         <onclick>ActivateWindow(progressdialog)</onclick>

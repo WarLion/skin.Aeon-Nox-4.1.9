@@ -24,3 +24,5 @@ extras/colortheme/defaulticons/Thumbs.db
 extras/reloadedtheme/flags/audio/Thumbs.db
 extras/colortheme/defaulticons/Thumbs.db
 extras/colortheme/defaulticons/Thumbs.db
+media/weather/Thumbs.db
+*.db

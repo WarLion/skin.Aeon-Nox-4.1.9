@@ -3194,6 +3194,13 @@
        <value condition="Skin.HasSetting(RatingColorFlagreloaded)">special://skin/extras/reloadedtheme/flags</value>	   
        <value>flags</value>
     </variable>		
+	<variable name="ColorFlagsRatingextended">
+       <value condition="Skin.HasSetting(RatingColorFlag) + Skin.HasSetting(ExtendedRatingVideoinfo)">special://skin/extras/colortheme/flags/rating/info/</value>
+       <value condition="Skin.HasSetting(RatingColorFlagreloaded) + Skin.HasSetting(ExtendedRatingVideoinfo)">special://skin/extras/reloadedtheme/flags/rating/info/</value>	
+       <value condition="Skin.HasSetting(RatingColorFlag) + !Skin.HasSetting(ExtendedRatingVideoinfo)">special://skin/extras/colortheme/flags/rating/</value>
+       <value condition="Skin.HasSetting(RatingColorFlagreloaded) + !Skin.HasSetting(ExtendedRatingVideoinfo)">special://skin/extras/reloadedtheme/flags/rating/</value>		      
+       <value>flags/rating/</value>
+    </variable>		
 	<variable name="ColorFlagsResolution">
        <value condition="Skin.HasSetting(ResolutionColorFlag)">special://skin/extras/colortheme/flags</value>
        <value condition="Skin.HasSetting(ResolutionColorFlagreloaded)">special://skin/extras/reloadedtheme/flags</value>	   
@@ -3215,5 +3222,14 @@
 	<variable name="Colortdefaulticons">
        <value condition="Skin.HasSetting(Colortdefaulticons)">special://skin/extras/colortheme/defaulticons</value>
        <value>defaulticons</value>
-    </variable>				
+    </variable>	
+	<variable name="RatingLabelVar">
+       <value condition="Skin.HasSetting(RatingColorFlag) + Skin.HasSetting(RatingColorFlagreloaded)">Color</value>
+	   <value condition="Skin.HasSetting(RatingColorFlagreloaded)">Reloaded</value>
+       <value>Original</value>	   
+    </variable>	
+	<variable name="RatingLabelVarTvshows">
+	   <value condition="Skin.HasSetting(RatingColorFlagreloaded)">Reloaded</value>
+       <value>Original</value>	   
+    </variable>						
 </includes>
