@@ -455,7 +455,7 @@
 					<control type="group">
 						<visible>Skin.HasSetting(glasshome)</visible>
 						<control type="progress">
-							<left>0</left>
+							<left>-5</left>
 							<top>502</top>
 							<width>1920</width>
 							<height>119</height>
@@ -469,7 +469,7 @@
 							<animation effect="fade" end="100" time="840">Visible</animation>				
 						</control>
 						<control type="progress">
-							<left>-240</left>
+							<left>-245</left>
 							<top>502</top>
 							<width>2420</width>
 							<height>119</height>

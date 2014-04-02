@@ -617,47 +617,6 @@
                 </control>
             </control>
         </control>
-        <control type="group" id="0">
-            <visible>Player.ShowCodec + ![Window.IsVisible(script-XBMC_Lyrics-main.xml) | Window.IsVisible(VisualisationSettings) | Window.IsVisible(VisualisationPresetList)]</visible>
-            <animation effect="slide" start="0,-255" end="0,0" time="400" tween="cubic">VisibleChange</animation>
-            <control type="image">
-                <top>-455</top>
-                <width>1920</width>
-                <height>631</height>
-                <texture flipy="true">views/lowlist_panelback.png</texture>
-                <animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
-            </control>
-            <control type="label">
-                <left>75</left>
-                <top>20</top>
-                <label>$INFO[musicplayer.Codec,$LOCALIZE[21446]: ,]$INFO[musicplayer.Bitrate, • $LOCALIZE[623]: ,kbps]$INFO[musicplayer.bitspersample, • $LOCALIZE[612]: ,bit]$INFO[musicplayer.Samplerate, • $LOCALIZE[613]: ,kHz]$INFO[musicplayer.Channels, • $LOCALIZE[21444]: ]</label>
-                <label>-</label>
-                <font>Font_Reg30_2</font>
-            </control>
-            <control type="label">
-                <left>75</left>
-                <top>55</top>
-                <label>$INFO[Visualisation.Name] [I][COLOR=$VAR[ColorDiffuseVar]]($LOCALIZE[20166])[/COLOR][/I] • fps: $INFO[System.FPS]</label>
-                <label>-</label>
-                <font>Font_Reg30_2</font>
-                <visible>Visualisation.Locked</visible>
-            </control>
-            <control type="label">
-                <left>75</left>
-                <top>55</top>
-                <label>$INFO[Visualisation.Name] • fps: $INFO[System.FPS]</label>
-                <label>-</label>
-                <font>Font_Reg30_2</font>
-                <visible>!Visualisation.Locked</visible>
-            </control>
-            <control type="label">
-                <left>75</left>
-                <top>90</top>
-                <label>$LOCALIZE[13388]: $INFO[Visualisation.Preset]</label>
-                <label>-</label>
-                <font>Font_Reg30_2</font>
-            </control>
-        </control>
         <control type="group">
             <visible>Player.ShowInfo</visible>
             <include>Animation_Widgets</include>
@@ -985,6 +944,49 @@
                     </content>
                 </control>
             </control>
+ <control type="group" id="0">
+	 <top>0</top>
+	 <left>0</left>
+            <visible>Player.ShowCodec + ![Window.IsVisible(script-XBMC_Lyrics-main.xml) | Window.IsVisible(VisualisationSettings) | Window.IsVisible(VisualisationPresetList)]</visible>
+            <animation effect="slide" start="0,-205" end="0,0" time="400" tween="cubic">VisibleChange</animation>
+            <control type="image">
+                <top>0</top>
+                <width>1920</width>
+                <height>200</height>
+                <texture flipy="true">views/lowlist_panelback.png</texture>
+                <animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
+            </control>
+            <control type="label">
+                <left>75</left>
+                <top>-1000</top>
+                <label>$INFO[musicplayer.Codec,$LOCALIZE[21446]: ,]$INFO[musicplayer.Bitrate, • $LOCALIZE[623]: ,kbps]$INFO[musicplayer.bitspersample, • $LOCALIZE[612]: ,bit]$INFO[musicplayer.Samplerate, • $LOCALIZE[613]: ,kHz]$INFO[musicplayer.Channels, • $LOCALIZE[21444]: ]</label>
+                <label>-</label>
+                <font>Font_Reg30_2</font>
+            </control>
+            <control type="label">
+                <left>75</left>
+                <top>-920</top>
+                <label>$INFO[Visualisation.Name] [I][COLOR=$VAR[ColorDiffuseVar]]($LOCALIZE[20166])[/COLOR][/I] • fps: $INFO[System.FPS]</label>
+                <label>-</label>
+                <font>Font_Reg30_2</font>
+                <visible>Visualisation.Locked</visible>
+            </control>
+            <control type="label">
+                <left>75</left>
+                <top>-920</top>
+                <label>$INFO[Visualisation.Name] • fps: $INFO[System.FPS]</label>
+                <label>-</label>
+                <font>Font_Reg30_2</font>
+                <visible>!Visualisation.Locked</visible>
+            </control>
+            <control type="label">
+                <left>75</left>
+                <top>-840</top>
+                <label>$LOCALIZE[13388]: $INFO[Visualisation.Preset]</label>
+                <label>-</label>
+                <font>Font_Reg30_2</font>
+            </control>
+        </control>			
         </control>
     </controls>
 </window>
