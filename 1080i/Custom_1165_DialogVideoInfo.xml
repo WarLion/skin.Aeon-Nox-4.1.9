@@ -53,37 +53,31 @@
             <onright>60</onright>
             <onup>450</onup>
             <ondown>450</ondown>
-					<control type="radiobutton" id="109">
-                        <label>$LOCALIZE[32966]</label>
-                        <include>Objects_CommonSettingsButton</include>
-                        <onclick>Skin.ToggleSetting(TVTunes.Enabled)</onclick>
-                        <selected>Skin.HasSetting(TVTunes.Enabled)</selected>
-                    </control>
-                    <control type="radiobutton" id="125">
-                        <label>$LOCALIZE[32973]</label>
-                        <include>Objects_CommonSettingsButton</include>
-                        <onclick>Skin.ToggleSetting(Enable.videoextras)</onclick>
-                        <selected>Skin.HasSetting(Enable.videoextras)</selected>
-                    </control>						
-                    <control type="radiobutton" id="111">
-                        <label>$LOCALIZE[32968]</label>
-                        <include>Objects_CommonSettingsButton</include>
-                        <onclick>Skin.ToggleSetting(Extra.Disable)</onclick>
-                        <selected>Skin.HasSetting(Extra.Disable)</selected>
-						<visible>system.hasaddon(script.cinema.experience) | System.HasAddon(script.videoextras) | system.hasaddon(script.tvtunes)</visible>
-                    </control>		
-                     <control type="button" id="113">
-                        <label>Customize</label>
-                        <include>Objects_CommonSettingsButton</include>
-						<onclick>Dialog.Close(1165)</onclick>
-                        <onclick>ActivateWindow(1169)</onclick>
-                    </control>											
-                   <!--  <control type="button" id="114">
-                        <label>dialog progress</label>
-                        <include>Objects_CommonSettingsButton</include>
-                        <onclick>ActivateWindow(progressdialog)</onclick>
-                    </control>	-->				
-												
+			<control type="radiobutton" id="109">
+				<label>$LOCALIZE[32966]</label>
+				<include>Objects_CommonSettingsButton</include>
+				<onclick>Skin.ToggleSetting(TVTunes.Enabled)</onclick>
+				<selected>Skin.HasSetting(TVTunes.Enabled)</selected>
+			</control>
+			<control type="radiobutton" id="125">
+				<label>$LOCALIZE[32973]</label>
+				<include>Objects_CommonSettingsButton</include>
+				<onclick>Skin.ToggleSetting(Enable.videoextras)</onclick>
+				<selected>Skin.HasSetting(Enable.videoextras)</selected>
+			</control>						
+			<control type="radiobutton" id="111">
+				<label>$LOCALIZE[32968]</label>
+				<include>Objects_CommonSettingsButton</include>
+				<onclick>Skin.ToggleSetting(Extra.Disable)</onclick>
+				<selected>Skin.HasSetting(Extra.Disable)</selected>
+				<visible>system.hasaddon(script.cinema.experience) | System.HasAddon(script.videoextras) | system.hasaddon(script.tvtunes)</visible>
+			</control>		
+			 <control type="button" id="113">
+				<label>Customize</label>
+				<include>Objects_CommonSettingsButton</include>
+				<onclick>Dialog.Close(1165)</onclick>
+				<onclick>ActivateWindow(1169)</onclick>
+			</control>																			
         </control>
         <control type="scrollbar" id="60">
             <include>Objects_CommonSettingsScrollbar</include>

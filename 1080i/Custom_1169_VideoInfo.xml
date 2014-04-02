@@ -172,8 +172,23 @@
 					<onclick condition="!Skin.HasSetting(RatingColorFlag) + Skin.HasSetting(RatingColorFlagreloaded)">Skin.SetBool(RatingColorFlag)</onclick>
                     <onclick condition="!Skin.HasSetting(RatingColorFlag) + !Skin.HasSetting(RatingColorFlagreloaded)">Skin.SetBool(RatingColorFlagreloaded)</onclick>
 					<onclick>SetFocus(1200)</onclick>	
-					<visible>Container.Content(movies)</visible>			
+					<visible>Container.Content(movies)</visible>
+					<visible>!IsEmpty(Skin.String(ColorFlagsPath)) + !IsEmpty(Skin.String(ReloadedFlagsPath))</visible>			
 				</control>  
+                <control type="radiobutton" id="1301">
+                    <label>Color Mpaa Flags</label>
+                    <include>Objects_MediaMenuButtonAround</include>
+                    <onclick>Skin.ToggleSetting(RatingColorFlag)</onclick>
+                    <selected>Skin.HasSetting(RatingColorFlag)</selected>
+					<visible>Container.Content(movies) + [!IsEmpty(Skin.String(ColorFlagsPath)) + IsEmpty(Skin.String(ReloadedFlagsPath))]</visible>				
+				</control> 	
+                <control type="radiobutton" id="1302">
+                    <label>Reloaded Mpaa Flags</label>
+                    <include>Objects_MediaMenuButtonAround</include>
+                    <onclick>Skin.ToggleSetting(RatingColorFlagreloaded)</onclick>
+                    <selected>Skin.HasSetting(RatingColorFlagreloaded)</selected>
+					<visible>Container.Content(movies) + [IsEmpty(Skin.String(ColorFlagsPath)) + !IsEmpty(Skin.String(ReloadedFlagsPath))]</visible>				
+				</control> 								
                 <control type="radiobutton" id="1201">
                     <label>TvGuide Icons</label>
                     <include>Objects_MediaMenuButtonAround</include>
@@ -190,15 +205,30 @@
 					<onclick condition="Skin.HasSetting(ExtendedRatingVideoinfo)">Skin.Reset(ExtendedRatingVideoinfo)</onclick>	                    
                     <onclick condition="!Skin.HasSetting(RatingColorFlagreloaded)">Skin.SetBool(RatingColorFlagreloaded)</onclick>
 					<onclick>SetFocus(1202)</onclick>
-					<visible>Container.Content(tvshows)</visible>				
-				</control>  						
+					<visible>Container.Content(tvshows)</visible>
+					<visible>!IsEmpty(Skin.String(ColorFlagsPath)) + !IsEmpty(Skin.String(ReloadedFlagsPath))</visible>				
+				</control> 
+                <control type="radiobutton" id="1305">
+                    <label>COlor Mpaa Flags</label>
+                    <include>Objects_MediaMenuButtonAround</include>
+                    <onclick>Skin.ToggleSetting(RatingColorFlag)</onclick>
+                    <selected>Skin.HasSetting(RatingColorFlag)</selected>
+					<visible>Container.Content(tvshows) + [!IsEmpty(Skin.String(ColorFlagsPath)) + IsEmpty(Skin.String(ReloadedFlagsPath))]</visible>				
+				</control> 	
+                <control type="radiobutton" id="1306">
+                    <label>Reloaded Mpaa Flags</label>
+                    <include>Objects_MediaMenuButtonAround</include>
+                    <onclick>Skin.ToggleSetting(RatingColorFlagreloaded)</onclick>
+                    <selected>Skin.HasSetting(RatingColorFlagreloaded)</selected>
+					<visible>Container.Content(tvshows) + [IsEmpty(Skin.String(ColorFlagsPath)) + !IsEmpty(Skin.String(ReloadedFlagsPath))]</visible>				
+				</control> 					 						
                 <control type="radiobutton" id="1203">
                     <label>Extended Raiting</label>
                     <include>Objects_MediaMenuButtonAround</include>
                     <onclick>Skin.ToggleSetting(ExtendedRatingVideoinfo)</onclick>
                     <selected>Skin.HasSetting(ExtendedRatingVideoinfo)</selected>
 					<enable>Skin.HasSetting(RatingColorFlag) | Skin.HasSetting(RatingColorFlagreloaded)</enable>
-					<visible>Container.Content(Movies)</visible>	
+					<visible>Container.Content(Movies)</visible>
                 </control>	
 				<control type="button" id="1204">
 					<label>Customize Icons</label>
