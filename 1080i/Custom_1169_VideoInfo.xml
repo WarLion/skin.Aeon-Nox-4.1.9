@@ -165,8 +165,8 @@
 					<label>Mpaa Flags</label>
 					<label2>[COLOR $VAR[FontColorVar]]$VAR[RatingLabelVar][/COLOR]</label2>
 					<include>Objects_MediaMenuButtonAround</include>
-                    <onclick condition="Skin.HasSetting(RatingColorFlag)">Skin.Reset(RatingColorFlagreloaded)</onclick>
-                    <onclick condition="Skin.HasSetting(RatingColorFlagreloaded)">Skin.Reset(RatingColorFlag)</onclick>	
+                    <onclick condition="Skin.HasSetting(RatingColorFlag)">Skin.Reset(RatingColorFlag)</onclick>
+                    <onclick condition="Skin.HasSetting(RatingColorFlagreloaded)">Skin.Reset(RatingColorFlagreloaded)</onclick>	
                     <onclick condition="Skin.HasSetting(RatingColorFlag)">Skin.Reset(ExtendedRatingVideoinfo)</onclick>
                     <onclick condition="Skin.HasSetting(RatingColorFlagreloaded)">Skin.Reset(ExtendedRatingVideoinfo)</onclick>						                    
 					<onclick condition="!Skin.HasSetting(RatingColorFlag) + Skin.HasSetting(RatingColorFlagreloaded)">Skin.SetBool(RatingColorFlag)</onclick>
@@ -203,7 +203,6 @@
 				<control type="button" id="1204">
 					<label>Customize Icons</label>
 					<include>Objects_MediaMenuButtonAround</include>
-					<onclick>Dialog.Close(1169)</onclick>
 					<onclick>ActivateWindow(1168)</onclick>						
 				</control>											
             </control>
