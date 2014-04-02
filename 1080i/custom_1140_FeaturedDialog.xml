@@ -468,7 +468,7 @@
                         <include>AudioFlagsVars</include>
                     </control>
                     <control type="image">
-                        <left>1520</left>
+                        <left>1480</left>
                         <top>255</top>
                         <texture>$VAR[ColorFlagsResolution]/resolution/$INFO[Container(8001).ListItem.Property(VideoResolution)].png</texture>
 						<height>64</height>
