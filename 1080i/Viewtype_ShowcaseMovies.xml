@@ -51,12 +51,7 @@
 					<include>WatchedOverlayShowCase</include>
 					<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
 					<visible>System.HasAddon(script.videoextras)</visible>
-				</control>	
-		<control type="image">
-            <include>WatchedOverlayShowCase</include>
-			<texture>nextairedtoday.png</texture>
-			<visible>substring(Window(Home).Property(NextAired.AirsToday),True)</visible>
-        </control>												
+				</control>												
             </control>
         </itemlayout>
         <focusedlayout height="525" width="294" condition="Control.IsVisible(961) + !Control.IsVisible(6000)">
@@ -92,12 +87,7 @@
                     <include>WatchedOverlayShowCase</include>
 					<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
 					<visible>System.HasAddon(script.videoextras)</visible>
-				</control>	
-		<control type="image">
-            <include>WatchedOverlayShowCase</include>
-			<texture>nextairedtoday.png</texture>
-			<visible>substring(Window(Home).Property(NextAired.AirsToday),True)</visible>
-        </control>													
+				</control>													
             </control>
         </focusedlayout>
         <itemlayout height="600" width="100" condition="![Control.IsVisible(961) + !Control.IsVisible(6000)] + !Skin.HasSetting(showcasezoom)"></itemlayout>
@@ -527,12 +517,7 @@
 							<control type="image">
 								<include>WatchedOverlayShowCase</include>
 								<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
-							</control>	
-		<control type="image">
-            <include>WatchedOverlayShowCase</include>
-			<texture>nextairedtoday.png</texture>
-			<visible>substring(Window(Home).Property(NextAired.AirsToday),True)</visible>
-        </control>								
+							</control>								
                         </control>
                     </control>
                 </control>
@@ -836,12 +821,7 @@
             <include>WatchedOverlayShowCase</include>
 			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay-1]</texture>
 			<visible>System.HasAddon(script.videoextras)</visible>
-        </control>	
-		<control type="image">
-            <include>WatchedOverlayShowCase</include>
-			<texture>nextairedtoday.png</texture>
-			<visible>substring(Window(Home).Property(NextAired(-1).AirsToday),True)</visible>
-        </control>				
+        </control>					
     </include>
     <include name="MovieShowCaseItem0">
         <include>MovieShowCaseGlow</include>
@@ -876,12 +856,7 @@
             <include>WatchedOverlayShowCase</include>
 			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay]</texture>
 			<visible>System.HasAddon(script.videoextras)</visible>
-        </control>	
-		<control type="image">
-            <include>WatchedOverlayShowCase</include>
-			<texture>nextairedtoday.png</texture>
-			<visible>substring(Window(Home).Property(NextAired.AirsToday),True)</visible>
-        </control>		
+        </control>			
     </include>
     <include name="MovieShowCaseItem1">
         <include>MovieShowCaseGlow</include>
@@ -916,12 +891,7 @@
 			<include>WatchedOverlayShowCase</include>
 			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay1]</texture>
 			<visible>System.HasAddon(script.videoextras)</visible>
-		</control>			
-		<control type="image">
-            <include>WatchedOverlayShowCase</include>
-			<texture>nextairedtoday.png</texture>
-			<visible>substring(Window(Home).Property(NextAired(1).AirsToday),True)</visible>
-        </control>		
+		</control>				
     </include>
     <include name="MovieShowCaseItem2">
         <include>MovieShowCaseGlow</include>
@@ -956,12 +926,7 @@
 			<include>WatchedOverlayShowCase</include>
 			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay2]</texture>
 			<visible>System.HasAddon(script.videoextras)</visible>
-		</control>	
-		<control type="image">
-            <include>WatchedOverlayShowCase</include>
-			<texture>nextairedtoday.png</texture>
-			<visible>substring(Window(Home).Property(NextAired(2).AirsToday),True)</visible>
-        </control>			
+		</control>			
     </include>
     <include name="MovieShowCaseItem3">
         <include>MovieShowCaseGlow</include>
@@ -996,12 +961,7 @@
 			<include>WatchedOverlayShowCase</include>
 			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay3]</texture>
 			<visible>System.HasAddon(script.videoextras)</visible>
-		</control>		
-		<control type="image">
-            <include>WatchedOverlayShowCase</include>
-			<texture>nextairedtoday.png</texture>
-			<visible>substring(Window(Home).Property(NextAired(3).AirsToday),True)</visible>
-        </control>		
+		</control>				
     </include>
     <include name="MovieShowCaseItem4">
         <include>MovieShowCaseGlow</include>
@@ -1036,12 +996,7 @@
 			<include>WatchedOverlayShowCase</include>
 			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay4]</texture>
 			<visible>System.HasAddon(script.videoextras)</visible>
-		</control>		
-		<control type="image">
-            <include>WatchedOverlayShowCase</include>
-			<texture>nextairedtoday.png</texture>
-			<visible>substring(Window(Home).Property(NextAired(4).AirsToday),True)</visible>
-        </control>		
+		</control>			
     </include>
     <include name="MovieShowCaseItem5">
         <include>MovieShowCaseGlow</include>
@@ -1076,12 +1031,7 @@
 			<include>WatchedOverlayShowCase</include>
 			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay5]</texture>
 			<visible>System.HasAddon(script.videoextras)</visible>
-		</control>		
-		<control type="image">
-            <include>WatchedOverlayShowCase</include>
-			<texture>nextairedtoday.png</texture>
-			<visible>substring(Window(Home).Property(NextAired(5).AirsToday),True)</visible>
-        </control>		
+		</control>				
     </include>
     <include name="MovieShowCaseItem6">
         <include>MovieShowCaseGlow</include>
@@ -1116,12 +1066,7 @@
 			<include>WatchedOverlayShowCase</include>
 			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay6]</texture>
 			<visible>System.HasAddon(script.videoextras)</visible>
-		</control>		
-		<control type="image">
-            <include>WatchedOverlayShowCase</include>
-			<texture>nextairedtoday.png</texture>
-			<visible>substring(Window(Home).Property(NextAired(6).AirsToday),True)</visible>
-        </control>		
+		</control>			
     </include>
     <include name="MovieShowCaseItem7">
         <include>MovieShowCaseGlow</include>
@@ -1156,11 +1101,6 @@
 			<include>WatchedOverlayShowCase</include>
 			<texture background="true" diffuse="thumbs/ExtraOverlayWatched.png">$VAR[VideoextrasOverlay7]</texture>
 			<visible>System.HasAddon(script.videoextras)</visible>
-		</control>		
-		<control type="image">
-            <include>WatchedOverlayShowCase</include>
-			<texture>nextairedtoday.png</texture>
-			<visible>substring(Window(Home).Property(NextAired(7).AirsToday),True)</visible>
-        </control>		
+		</control>			
     </include>
 </includes>
