@@ -147,7 +147,7 @@
                     <width>120</width>
                     <height>62</height>
                     <aspectratio>keep</aspectratio>
-                    <texture>tvguide/$INFO[ListItem.Property(StatusID)].png</texture>
+                    <texture>$VAR[ColortvguideFlags]$INFO[ListItem.Property(StatusID)].png</texture>
                     <colordiffuse>floor</colordiffuse>
                 </control>
 			</control>	

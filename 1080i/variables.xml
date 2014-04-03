@@ -3215,11 +3215,11 @@
        <value>flags/studios/</value>
     </variable>					
 	<variable name="ColortvguideFlags">
-       <value condition="Skin.HasSetting(ColortvguideFlags)">$INFO[Skin.String(NextAiredFlagsPath)]</value>
+       <value condition="Skin.HasSetting(ColortvguideFlags)">special://skin/extras/AltIcons/color tvguide icon/tvguide/</value>
        <value>tvguide/</value>
     </variable>	
 	<variable name="Colortdefaulticons">
-       <value condition="Skin.HasSetting(Colortdefaulticons)">$INFO[Skin.String(DefaultIconPath)]</value>
+	   <value condition="Skin.HasSetting(Colortdefaulticons)">special://skin/extras/AltIcons/color defaulticons/defaulticons/</value>
        <value>defaulticons/</value>
     </variable>	
 	<variable name="RatingLabelVar">

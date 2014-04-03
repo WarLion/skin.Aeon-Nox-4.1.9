@@ -112,12 +112,10 @@
                     <item id="3">
                         <label>Default Icons</label>
                         <onclick>noop</onclick>
-						<visible>!IsEmpty(Skin.String(DefaultIconPath))</visible>
                     </item>
                     <item id="4">
                         <label>Tvguide</label>
                         <onclick>noop</onclick>
-						<visible>!IsEmpty(Skin.String(NextAiredFlagsPath))</visible>
                     </item>
                     <item id="5">
                         <label>Others</label>
@@ -287,12 +285,12 @@
 				<onup>600</onup>
 				<ondown>600</ondown>				
 				<visible>Container(500).Hasfocus(3)</visible>
-                    <control type="radiobutton" id="601">
-						<label>Default Icons</label>
+                    <control type="radiobutton" id="602">
+						<label>Default Color Icons</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(Colortdefaulticons)</onclick>
 						<selected>Skin.HasSetting(Colortdefaulticons)</selected>
-                    </control>
+                    </control>																									
             </control>	
 			<control type="grouplist" id="600">
                 <orientation>vertical</orientation>
@@ -408,41 +406,7 @@
                         <include>Objects_MediaMenuButtonAlt3</include>
 						<scroll>true</scroll>
 						<visible>IsEmpty(Skin.String(languageFlagsPath)) + Control.HasFocus(813)</visible>
-                    </control>																		
-                    <control type="button" id="610">
-                        <label>Set Path for NextAired Flags</label>
-                        <include>Objects_MediaMenuButtonAlt3</include>
-                        <onclick>Skin.SetPath(NextAiredFlagsPath)</onclick>
-                    </control>
-                    <control type="label" id="611">
-                        <label>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(NextAiredFlagsPath)][/COLOR]</label>
-                        <include>Objects_MediaMenuButtonAlt3</include>
-						<scroll>true</scroll>
-						<visible>!IsEmpty(Skin.String(NextAiredFlagsPath)) + Control.HasFocus(610)</visible>
-                    </control>		
-                    <control type="label" id="612">
-                        <label>[COLOR $VAR[FontColorVar]]Set to the [B]tvguide[/B] Folder[/COLOR]</label>
-                        <include>Objects_MediaMenuButtonAlt3</include>
-						<scroll>true</scroll>
-						<visible>IsEmpty(Skin.String(NextAiredFlagsPath)) + Control.HasFocus(610)</visible>
-                    </control>																
-                    <control type="button" id="607">
-                        <label>Set Path for Default Icons</label>
-                        <include>Objects_MediaMenuButtonAlt3</include>
-                        <onclick>Skin.SetPath(DefaultIconPath)</onclick>
-                    </control>				
-                    <control type="label" id="608">
-                        <label>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(DefaultIconPath)][/COLOR]</label>
-                        <include>Objects_MediaMenuButtonAlt3</include>
-						<scroll>true</scroll>
-						<visible>!IsEmpty(Skin.String(DefaultIconPath)) + Control.HasFocus(607)</visible>
-                    </control>		
-                    <control type="label" id="609">
-                        <label>[COLOR $VAR[FontColorVar]]Set to the [B]DefaultIcon[/B] Folder[/COLOR]</label>
-                        <include>Objects_MediaMenuButtonAlt3</include>
-						<scroll>true</scroll>
-						<visible>IsEmpty(Skin.String(DefaultIconPath)) + Control.HasFocus(607)</visible>
-                    </control>																								
+                    </control>																																																							
                     <control type="button" id="630">
                         <label>Clear Paths</label>
                         <include>Objects_MediaMenuButtonAlt3</include>
@@ -450,7 +414,6 @@
 						<onclick>Skin.Reset(languageFlagsPath)</onclick>
                         <onclick>Skin.Reset(ReloadedFlagsPath)</onclick>
 						<onclick>Skin.Reset(ColorFlagsPath)</onclick>
-						<onclick>Skin.Reset(DefaultIconPath)</onclick>
 						<onclick>Skin.Reset(NextAiredFlagsPath)</onclick>
 						<onclick>Skin.Reset(AspectRatioColorFlagreloaded)</onclick>
 						<onclick>Skin.Reset(AudioColorFlagreloaded)</onclick>
@@ -467,7 +430,6 @@
 						<onclick>Skin.Reset(StudiosColorFlag)</onclick>	
 						<onclick>Skin.Reset(AllColorFlags)</onclick>
 						<onclick>Skin.Reset(Colortdefaulticons)</onclick>
-						<onclick>Skin.Reset(ColortvguideFlags)</onclick>	
 						<onclick>Skin.Reset(ColorFlags)</onclick>	
                     </control>																				
             </control>	

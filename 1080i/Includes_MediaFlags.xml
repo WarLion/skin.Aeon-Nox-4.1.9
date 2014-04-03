@@ -267,7 +267,7 @@
                             <animation effect="fade" time="200">VisibleChange</animation>
                         </control>
                         <control type="image">
-                            <texture>$VAR[ColorFlagsStudio]default-studio.png</texture>
+                            <texture>flags/studios/default-studio.png</texture>
                             <include>AudioFlagsVars</include>
                             <visible>IsEmpty(ListItem.Studio)</visible>
                         </control>
@@ -532,7 +532,7 @@
             <control type="image">
                 <left>1255</left>
                 <top>-9</top>
-                <texture>$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
+                <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
                 <width>150</width>
                 <height>84</height>
                 <aspectratio>keep</aspectratio>
@@ -773,7 +773,7 @@
                         <include>AudioFlagsVars</include>
                     </control>
                     <control type="image">
-                        <texture>$VAR[ColorFlagsStudio]default-studio.png</texture>
+                        <texture>flags/studios/default-studio.png</texture>
                         <include>AudioFlagsVars</include>
                         <visible>IsEmpty(ListItem.Property(Album_Label))</visible>
                     </control>
