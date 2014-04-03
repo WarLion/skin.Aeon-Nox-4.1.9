@@ -3220,7 +3220,6 @@
     </variable>	
 	<variable name="Colortdefaulticons">
        <value condition="Skin.HasSetting(Colortdefaulticons)">$INFO[Skin.String(DefaultIconPath)]</value>
-	   <value condition="IsEmpty(Skin.String(DefaultIconPath))">defaulticons/</value>
        <value>defaulticons/</value>
     </variable>	
 	<variable name="RatingLabelVar">
