@@ -147,7 +147,7 @@
                     <width>120</width>
                     <height>62</height>
                     <aspectratio>keep</aspectratio>
-                    <texture>$VAR[ColortvguideFlags]/$INFO[ListItem.Property(StatusID)].png</texture>
+                    <texture>$VAR[ColortvguideFlags]$INFO[ListItem.Property(StatusID)].png</texture>
                     <colordiffuse>floor</colordiffuse>
                 </control>
 			</control>	
@@ -156,7 +156,7 @@
                     <top>491</top>
                     <width>35</width>
                     <height>35</height>
-                    <texture>$VAR[ColortvguideFlags]/clock.png</texture>
+                    <texture>$VAR[ColortvguideFlags]clock.png</texture>
                     <colordiffuse>floor</colordiffuse>
 					<animation type="Conditional" condition="!IsEmpty(Window(Home).property(TVGuide.PreviewThumbs))  + !Skin.HasSetting(NextAiredLogo)">
 						<effect type="slide" end="0,25" time="0" />
@@ -242,7 +242,7 @@
                 <width>135</width>
                 <height>90</height>
                 <aspectratio>keep</aspectratio>
-                <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[ListItem.Property(Network),,.png]</texture>
+                <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[ListItem.Property(Network),,.png]</texture>
                 <colordiffuse>floor</colordiffuse>
 					<animation type="Conditional" condition="!Skin.HasSetting(NextAiredLogo)">
 						<effect type="slide" end="0,90" time="0" />
@@ -1070,7 +1070,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(200).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(200).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -1245,7 +1245,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(201).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(201).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -1420,7 +1420,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(202).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(202).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -1595,7 +1595,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(203).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(203).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -1770,7 +1770,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(204).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(204).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -1945,7 +1945,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(205).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(205).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -2120,7 +2120,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(206).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(206).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
             </control>
@@ -4390,7 +4390,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(200).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(200).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -4565,7 +4565,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(201).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(201).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -4740,7 +4740,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(202).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(202).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -4915,7 +4915,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(203).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(203).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -5090,7 +5090,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(204).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(204).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -5265,7 +5265,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(205).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(205).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -5440,7 +5440,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(206).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(206).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
  <control type="group">
@@ -5615,7 +5615,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(207).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(207).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
  <control type="group">
@@ -5790,7 +5790,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(208).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(208).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
  <control type="group">
@@ -5965,7 +5965,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(209).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(209).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
  <control type="group">
@@ -6140,7 +6140,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(210).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(210).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
  <control type="group">
@@ -6315,7 +6315,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(211).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(211).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
  <control type="group">
@@ -6490,7 +6490,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(212).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(212).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
  <control type="group">
@@ -6665,7 +6665,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(213).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(213).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
  <control type="group">
@@ -6840,7 +6840,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(214).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(214).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>
  <control type="group">
@@ -7015,7 +7015,7 @@
                         <colordiffuse>floor</colordiffuse>
                         <fadetime>IconCrossfadeTime2</fadetime>
                         <animation effect="fade" time="250">VisibleChange</animation>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[Container(215).ListItem.Property(Network),,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[Container(215).ListItem.Property(Network),,.png]</texture>
                     </control>
                 </control>																																				
 				

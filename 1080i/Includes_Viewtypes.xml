@@ -617,7 +617,7 @@
                 <control type="textbox">
                     <top>209</top>
                     <width>652</width>
-                    <height>220</height>
+                    <height>190</height>
                     <label>$VAR[FanartPanelPlotVar]</label>
                     <textcolor>white6</textcolor>
                     <autoscroll delay="8000" time="AutoScrollTime" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
@@ -1117,11 +1117,11 @@
 				<top>50</top>					
 				<width>1900</width>
 				<height>47</height>
-				<label fallback="31006">$INFO[Window(Home).Property(NextAired(-3).AirsToday)]-$INFO[Window(Home).Property(NextAired(-2).AirsToday)]-$INFO[Window(Home).Property(NextAired(-1).AirsToday)]-($INFO[Window(Home).Property(NextAired.AirsToday)])-$INFO[Window(Home).Property(NextAired(1).AirsToday)]-$INFO[Window(Home).Property(NextAired(2).AirsToday)]-$INFO[Window(Home).Property(NextAired(3).AirsToday)]-$INFO[Window(Home).Property(NextAired(4).AirsToday)]-$INFO[Window(Home).Property(NextAired(5).AirsToday)]-$INFO[Window(Home).Property(NextAired(6).AirsToday)]-$INFO[Window(Home).Property(NextAired(7).AirsToday)]-$INFO[Window(Home).Property(NextAired(8).AirsToday)]</label>
+				<label>$INFO[ListItem.VideoResolution]</label>
 				<scroll>true</scroll>
             </control>
 
- 	test label -->					
+	test label --> 					
 <!-- end test label -->	
 <!-- end test label -->	 		
     </include>

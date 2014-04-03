@@ -64,7 +64,7 @@
                 <width>36</width>
                 <height>36</height>
                 <top>-2</top>
-                <texture>$VAR[Colortdefaulticons]/DefaultFolderBack.png</texture>
+                <texture>$VAR[Colortdefaulticons]DefaultFolderBack.png</texture>
                 <animation effect="slide" end="-9,4" center="auto" time="0" condition="true">Conditional</animation>
                 <animation effect="rotate" end="-90" center="auto" delay="240" time="640" condition="Window.IsActive(musicinformation) | Control.HasFocus(7000) | Control.IsVisible(508) | Control.IsVisible(501) | Control.IsVisible(503) | Control.IsVisible(510) | Control.IsVisible(57) | Control.IsVisible(516) | Control.IsVisible(509) | [Control.IsVisible(500) + !Skin.HasSetting(WallVertical)]">Conditional</animation>
                 <animation effect="rotate" end="-180" center="auto" delay="240" time="640" condition="ControlGroup(9000).HasFocus">Conditional</animation>

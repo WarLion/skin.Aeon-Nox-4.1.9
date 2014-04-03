@@ -286,7 +286,7 @@
                             <control type="image">
                                 <width>135</width>
                                 <height>88</height>
-                                <texture>$VAR[ColorFlagsAudio]/audio/$INFO[ListItem.FileExtension,,.png]</texture>
+                                <texture>$VAR[ColorFlagsAudio]audio/$INFO[ListItem.FileExtension,,.png]</texture>
                                 <fadetime>IconCrossfadeTime2</fadetime>
                                 <colordiffuse>grey2</colordiffuse>
                             </control>

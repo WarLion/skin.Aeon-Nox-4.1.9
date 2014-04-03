@@ -79,7 +79,7 @@
             <ondown>3</ondown>
         </control>
         <control type="label">
-            <left>1514</left>
+            <left>1214</left>
             <top>842</top>
             <width>315</width>
             <height>60</height>
@@ -91,7 +91,7 @@
             <visible>Control.IsVisible(3)</visible>
         </control>
         <control type="label">
-            <left>1514</left>
+            <left>1214</left>
             <top>842</top>
             <width>315</width>
             <height>60</height>

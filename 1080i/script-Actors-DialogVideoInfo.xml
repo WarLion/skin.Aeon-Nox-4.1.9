@@ -166,7 +166,7 @@
                     <width>249</width>
                     <height>57</height>
                     <aspectratio>keep</aspectratio>
-                    <texture fallback="flags/rating/info/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRating]/rating/$VAR[RatingFlagVar,,.png]</texture>
+                    <texture fallback="flags/rating/info/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
                     <animation effect="fade" time="200">VisibleChange</animation>
                     <colordiffuse>grey</colordiffuse>
                 </control>
@@ -342,7 +342,7 @@
                         <width>140</width>
                         <height>70</height>
                         <aspectratio aligny="center" align="center">keep</aspectratio>
-                        <texture>$VAR[ColorFlagsSource]/Source/$VAR[SourceFlagVar,,.png]</texture>
+                        <texture>$VAR[ColorFlagsSource]Source/$VAR[SourceFlagVar,,.png]</texture>
                         <colordiffuse>FF7c7c7c</colordiffuse>
                         <visible>!IsEmpty(Control.GetLabel(900011))</visible>
                     </control>
@@ -350,7 +350,7 @@
                         <width>132</width>
                         <height>90</height>
                         <aspectratio aligny="center" align="center">keep</aspectratio>
-                        <texture>$VAR[ColorFlagsSource]/Source/$INFO[ListItem.VideoCodec,,.png]</texture>
+                        <texture>$VAR[ColorFlagsSource]Source/$INFO[ListItem.VideoCodec,,.png]</texture>
                         <colordiffuse>FF7c7c7c</colordiffuse>
                         <visible>IsEmpty(Control.GetLabel(900011))</visible>
                         <animation effect="slide" end="0,-10" condition="true">Conditional</animation>
@@ -364,7 +364,7 @@
                         <width>161</width>
                         <height>109</height>
                         <aspectratio aligny="center" align="center">keep</aspectratio>
-                        <texture>$VAR[ColorFlagsAudio]/audio/$INFO[ListItem.AudioCodec]$INFO[ListItem.AudioChannels,,.png]</texture>
+                        <texture>$VAR[ColorFlagsAudio]audio/$INFO[ListItem.AudioCodec]$INFO[ListItem.AudioChannels,,.png]</texture>
                         <colordiffuse>FF7c7c7c</colordiffuse>
                         <animation effect="slide" end="0,-18" condition="true">Conditional</animation>
                         <visible>!IsEmpty(Control.GetLabel(900013))</visible>
@@ -377,7 +377,7 @@
                         <width>100</width>
                         <height>70</height>
                         <aspectratio aligny="center" align="center">keep</aspectratio>
-                        <texture>$VAR[ColorFlagsResolution]/resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
+                        <texture>$VAR[ColorFlagsResolution]resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
                         <colordiffuse>FF7c7c7c</colordiffuse>
                         <visible>!IsEmpty(Control.GetLabel(900014))</visible>
                     </control>
@@ -389,7 +389,7 @@
                         <width>132</width>
                         <height>90</height>
                         <aspectratio aligny="center" align="center">keep</aspectratio>
-                        <texture>$VAR[ColorFlagsAspectRatio]/aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
+                        <texture>$VAR[ColorFlagsAspectRatio]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
                         <colordiffuse>FF7c7c7c</colordiffuse>
                         <animation effect="slide" end="0,-10" condition="true">Conditional</animation>
                         <visible>!IsEmpty(Control.GetLabel(900015))</visible>
@@ -402,7 +402,7 @@
                         <width>132</width>
                         <height>82</height>
                         <aspectratio aligny="center" align="center">keep</aspectratio>
-                        <texture>$VAR[ColorFlagsStudio]/Studios/$INFO[ListItem.Studio,,.png]</texture>
+                        <texture>$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
                         <colordiffuse>FF7c7c7c</colordiffuse>
                         <animation effect="slide" end="0,-4" condition="true">Conditional</animation>
                         <visible>!IsEmpty(Control.GetLabel(900016))</visible>
@@ -415,7 +415,7 @@
                         <width>58</width>
                         <height>70</height>
                         <aspectratio aligny="center" align="center">keep</aspectratio>
-                        <texture>$VAR[ColorFlags]/cc.png</texture>
+                        <texture>$VAR[ColorFlags]cc.png</texture>
                         <colordiffuse>FF7c7c7c</colordiffuse>
                         <visible>!IsEmpty(ListItem.SubtitleLanguage)</visible>
                     </control>

@@ -5,14 +5,14 @@
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(AudioLanguage.1),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(AudioLanguage.1),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.1))</visible>
         </control>
         <control type="image">
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(AudioLanguage.2),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(AudioLanguage.2),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.2))</visible>
             <visible>!Stringcompare(Window(movieinformation).Property(AudioLanguage.1),Window(movieinformation).Property(AudioLanguage.2))</visible>
         </control>
@@ -20,7 +20,7 @@
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(AudioLanguage.3),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(AudioLanguage.3),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.3))</visible>
             <visible>!Stringcompare(Window(movieinformation).Property(AudioLanguage.1),Window(movieinformation).Property(AudioLanguage.3))</visible>
             <visible>!Stringcompare(Window(movieinformation).Property(AudioLanguage.2),Window(movieinformation).Property(AudioLanguage.3))</visible>
@@ -29,7 +29,7 @@
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(AudioLanguage.4),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(AudioLanguage.4),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.4))</visible>
             <visible>!Stringcompare(Window(movieinformation).Property(AudioLanguage.1),Window(movieinformation).Property(AudioLanguage.4))</visible>
             <visible>!Stringcompare(Window(movieinformation).Property(AudioLanguage.2),Window(movieinformation).Property(AudioLanguage.4))</visible>
@@ -39,7 +39,7 @@
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(AudioLanguage.5),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(AudioLanguage.5),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.5))</visible>
             <visible>!Stringcompare(Window(movieinformation).Property(AudioLanguage.1),Window(movieinformation).Property(AudioLanguage.5))</visible>
             <visible>!Stringcompare(Window(movieinformation).Property(AudioLanguage.2),Window(movieinformation).Property(AudioLanguage.5))</visible>
@@ -50,7 +50,7 @@
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(AudioLanguage.6),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(AudioLanguage.6),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.6))</visible>
             <visible>!Stringcompare(Window(movieinformation).Property(AudioLanguage.1),Window(movieinformation).Property(AudioLanguage.6))</visible>
             <visible>!Stringcompare(Window(movieinformation).Property(AudioLanguage.2),Window(movieinformation).Property(AudioLanguage.6))</visible>
@@ -62,42 +62,42 @@
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(AudioLanguage.7),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(AudioLanguage.7),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.7))</visible>
         </control>
         <control type="image">
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(AudioLanguage.8),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(AudioLanguage.8),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.8))</visible>
         </control>
         <control type="image">
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(AudioLanguage.9),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(AudioLanguage.9),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.9))</visible>
         </control>
         <control type="image">
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(AudioLanguage.10),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(AudioLanguage.10),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.10))</visible>
         </control>
         <control type="image">
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(AudioLanguage.11),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(AudioLanguage.11),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.11))</visible>
         </control>
         <control type="image">
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(AudioLanguage.12),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(AudioLanguage.12),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.12))</visible>
         </control>
     </include>
@@ -106,14 +106,14 @@
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(SubtitleLanguage.1),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(SubtitleLanguage.1),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(SubtitleLanguage.1))</visible>
         </control>
         <control type="image">
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(SubtitleLanguage.2),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(SubtitleLanguage.2),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(SubtitleLanguage.2))</visible>
             <visible>!Stringcompare(Window(movieinformation).Property(SubtitleLanguage.1),Window(movieinformation).Property(SubtitleLanguage.2))</visible>
         </control>
@@ -121,7 +121,7 @@
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(SubtitleLanguage.3),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(SubtitleLanguage.3),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(SubtitleLanguage.3))</visible>
             <visible>!Stringcompare(Window(movieinformation).Property(SubtitleLanguage.1),Window(movieinformation).Property(SubtitleLanguage.3))</visible>
             <visible>!Stringcompare(Window(movieinformation).Property(SubtitleLanguage.2),Window(movieinformation).Property(SubtitleLanguage.3))</visible>
@@ -130,7 +130,7 @@
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(SubtitleLanguage.4),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(SubtitleLanguage.4),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(SubtitleLanguage.4))</visible>
             <visible>!Stringcompare(Window(movieinformation).Property(SubtitleLanguage.1),Window(movieinformation).Property(SubtitleLanguage.4))</visible>
             <visible>!Stringcompare(Window(movieinformation).Property(SubtitleLanguage.2),Window(movieinformation).Property(SubtitleLanguage.4))</visible>
@@ -140,7 +140,7 @@
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(SubtitleLanguage.5),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(SubtitleLanguage.5),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(SubtitleLanguage.5))</visible>
             <visible>!Stringcompare(Window(movieinformation).Property(SubtitleLanguage.1),Window(movieinformation).Property(SubtitleLanguage.5))</visible>
             <visible>!Stringcompare(Window(movieinformation).Property(SubtitleLanguage.2),Window(movieinformation).Property(SubtitleLanguage.5))</visible>
@@ -151,7 +151,7 @@
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(SubtitleLanguage.6),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(SubtitleLanguage.6),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(SubtitleLanguage.6))</visible>
             <visible>!Stringcompare(Window(movieinformation).Property(SubtitleLanguage.1),Window(movieinformation).Property(SubtitleLanguage.6))</visible>
             <visible>!Stringcompare(Window(movieinformation).Property(SubtitleLanguage.2),Window(movieinformation).Property(SubtitleLanguage.6))</visible>
@@ -162,7 +162,7 @@
         <control type="image">
             <width>28</width>
             <height>28</height>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(SubtitleLanguage.7),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(SubtitleLanguage.7),,.png]</texture>
             <aspectratio>keep</aspectratio>
             <visible>!IsEmpty(Window(movieinformation).Property(SubtitleLanguage.7))</visible>
         </control>
@@ -170,35 +170,35 @@
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(SubtitleLanguage.8),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(SubtitleLanguage.8),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(SubtitleLanguage.8))</visible>
         </control>
         <control type="image">
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(SubtitleLanguage.9),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(SubtitleLanguage.9),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(SubtitleLanguage.9))</visible>
         </control>
         <control type="image">
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(SubtitleLanguage.10),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(SubtitleLanguage.10),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(SubtitleLanguage.10))</visible>
         </control>
         <control type="image">
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(SubtitleLanguage.11),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(SubtitleLanguage.11),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(SubtitleLanguage.11))</visible>
         </control>
         <control type="image">
             <width>28</width>
             <height>28</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(SubtitleLanguage.12),,.png]</texture>
+            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(SubtitleLanguage.12),,.png]</texture>
             <visible>!IsEmpty(Window(movieinformation).Property(SubtitleLanguage.12))</visible>
         </control>
     </include>
@@ -248,7 +248,7 @@
                     <control type="image">
                         <!--Source logo-->
                         <left>15</left>
-                        <texture>$VAR[ColorFlagsSource]/Source/$VAR[SourceFlagVar,,.png]</texture>
+                        <texture>$VAR[ColorFlagsSource]Source/$VAR[SourceFlagVar,,.png]</texture>
                         <include>AudioFlagsVars</include>
                         <animation effect="slide" end="64" condition="Control.IsVisible(512) | Control.IsVisible(550)">Conditional</animation>
                     </control>
@@ -258,7 +258,7 @@
                         <animation effect="slide" end="109" condition="Control.IsVisible(512) | Control.IsVisible(550)">Conditional</animation>
                         <control type="image" id="76">
                             <top>-7</top>
-                            <texture>$VAR[ColorFlagsStudio]/Studios/$INFO[ListItem.Studio,,.png]</texture>
+                            <texture>$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
                             <width>135</width>
                             <height>82</height>
                             <aspectratio>keep</aspectratio>
@@ -267,7 +267,7 @@
                             <animation effect="fade" time="200">VisibleChange</animation>
                         </control>
                         <control type="image">
-                            <texture>$VAR[ColorFlagsStudio]/Studios/default-studio.png</texture>
+                            <texture>$VAR[ColorFlagsStudio]default-studio.png</texture>
                             <include>AudioFlagsVars</include>
                             <visible>IsEmpty(ListItem.Studio)</visible>
                         </control>
@@ -287,7 +287,7 @@
                     <control type="image">
                         <!--Rating logo-->
                         <left>285</left>
-                        <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRating]/rating/$VAR[RatingFlagVar,,.png]</texture>
+                        <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
                         <include>AudioFlagsVars</include>
                         <animation effect="slide" end="138" condition="Control.IsVisible(512) | Control.IsVisible(550)">Conditional</animation>
                     </control>				
@@ -300,18 +300,18 @@
                         <control type="image">
                             <!--AspectRatio logo-->
                             <left>1498</left>
-                            <texture>$VAR[ColorFlagsAspectRatio]/aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
+                            <texture>$VAR[ColorFlagsAspectRatio]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
                             <include>AudioFlagsVars</include>
                         </control>
                         <control type="image">
                             <!--Resolution logo-->
                             <left>1621</left>
-                            <texture>$VAR[ColorFlagsResolution]/resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
+                            <texture>$VAR[ColorFlagsResolution]resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
                             <include>AudioFlagsVars</include>
                         </control>
                         <control type="image">
                             <left>1770</left>
-                            <texture>$VAR[ColorFlagsAudio]/audio/$VAR[AudioFlagVar,,.png]</texture>
+                            <texture>$VAR[ColorFlagsAudio]audio/$VAR[AudioFlagVar,,.png]</texture>
                             <!--Audio logo-->
                             <include>AudioFlagsVars</include>
                             <animation effect="slide" end="-5" condition="Control.IsVisible(12100)">Conditional</animation>
@@ -326,7 +326,7 @@
                             <width>26</width>
                             <height>22</height>
                             <aspectratio>scale</aspectratio>
-                            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(AudioLanguage.1),,.png]</texture>
+                            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(AudioLanguage.1),,.png]</texture>
                             <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.1))</visible>
                             <include>Animation_VisibleChange200</include>
                             <fadetime>400</fadetime>
@@ -335,7 +335,7 @@
                             <width>26</width>
                             <height>22</height>
                             <aspectratio>scale</aspectratio>
-                            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(AudioLanguage.2),,.png]</texture>
+                            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(AudioLanguage.2),,.png]</texture>
                             <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.2))</visible>
                             <visible>!Stringcompare(Window(movieinformation).Property(AudioLanguage.1),Window(movieinformation).Property(AudioLanguage.2))</visible>
                             <include>Animation_VisibleChange200</include>
@@ -345,7 +345,7 @@
                             <width>26</width>
                             <height>22</height>
                             <aspectratio>scale</aspectratio>
-                            <texture>$VAR[ColorFlagsLanguage]/language/$INFO[Window(movieinformation).Property(AudioLanguage.3),,.png]</texture>
+                            <texture>$VAR[ColorFlagsLanguage]$INFO[Window(movieinformation).Property(AudioLanguage.3),,.png]</texture>
                             <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.3))</visible>
                             <visible>!Stringcompare(Window(movieinformation).Property(AudioLanguage.1),Window(movieinformation).Property(AudioLanguage.3))</visible>
                             <visible>!Stringcompare(Window(movieinformation).Property(AudioLanguage.2),Window(movieinformation).Property(AudioLanguage.3))</visible>
@@ -363,7 +363,7 @@
                     <animation effect="slide" end="980" condition="Control.IsVisible(516)">Conditional</animation>
                     <control type="image">
                         <left>60</left>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[ListItem.Studio,,.png]</texture>
+                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
                         <width>150</width>
                         <height>84</height>
                         <top>-8</top>
@@ -449,7 +449,7 @@
                     <animation effect="slide" end="-975" condition="Control.IsVisible(512) | Control.IsVisible(550)">Conditional</animation>
                     <control type="image">
                         <left>1600</left>
-                        <texture>$VAR[ColorFlags]/IMDB.png</texture>
+                        <texture>$VAR[ColorFlags]IMDB.png</texture>
                         <include>AudioFlagsVars</include>
 						<visible>!Container.Content(seasons)</visible>
                     </control>
@@ -479,13 +479,13 @@
                     <control type="image">
                         <left>1450</left>
                         <include>AudioFlagsVars</include>
-                       <texture>$VAR[ColortvguideFlags]/$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
+                       <texture>$VAR[ColortvguideFlags]$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
                         <colordiffuse>floor</colordiffuse>
                     </control>
 					</control>
                     <control type="image">
                         <left>1745</left>
-                        <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRating]/rating/$VAR[RatingFlagVar,,.png]</texture>
+                        <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
                         <include>AudioFlagsVars</include>
                         <animation effect="slide" time="560" start="0,300" end="0,0" tween="cubic">Visible</animation>
                         <animation effect="slide" time="250" end="0,400" tween="cubic" easing="in">Hidden</animation>
@@ -532,7 +532,7 @@
             <control type="image">
                 <left>1255</left>
                 <top>-9</top>
-                <texture>$VAR[ColorFlagsStudio]/Studios/$INFO[ListItem.Studio,,.png]</texture>
+                <texture>$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
                 <width>150</width>
                 <height>84</height>
                 <aspectratio>keep</aspectratio>
@@ -545,25 +545,25 @@
             </control>
             <control type="image">
                 <left>1425</left>
-                <texture>$VAR[ColorFlagsSource]/Source/$VAR[SourceFlagVar,,.png]</texture>
+                <texture>$VAR[ColorFlagsSource]Source/$VAR[SourceFlagVar,,.png]</texture>
                 <include>OSDFlagVars</include>
                 <visible>!ListItem.IsFolder</visible>
             </control>
             <control type="image">
                 <left>1275</left>
-                <texture>$VAR[ColorFlagsAspectRatio]/aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
+                <texture>$VAR[ColorFlagsAspectRatio]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
                 <include>OSDFlagVars</include>
                 <visible>!ListItem.IsFolder</visible>
             </control>
             <control type="image">
                 <left>1575</left>
-                <texture>$VAR[ColorFlagsResolution]/resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
+                <texture>$VAR[ColorFlagsResolution]resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
                 <include>OSDFlagVars</include>
                 <visible>!ListItem.IsFolder</visible>
             </control>
             <control type="image">
                 <left>1740</left>
-                <texture>$VAR[ColorFlagsAudio]/audio/$VAR[AudioFlagVar,,.png]</texture>
+                <texture>$VAR[ColorFlagsAudio]audio/$VAR[AudioFlagVar,,.png]</texture>
                 <include>OSDFlagVars</include>
                 <visible>!ListItem.IsFolder</visible>
             </control>
@@ -571,7 +571,7 @@
                 <visible>Container.Content(tvshows) | [Container.Content(seasons) + !IsEmpty(ListItem.TVShowTitle)]</visible>
                 <control type="image">
                     <left>1375</left>
-                    <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRating]/rating/$VAR[RatingFlagVar,,.png]</texture>
+                    <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
                     <include>OSDFlagVars</include>
                 </control>
 			<control type="group">	
@@ -588,7 +588,7 @@
 				<control type="image">
                     <left>1480</left>
                     <include>OSDFlagVars</include>
-                    <texture background="true">$VAR[ColortvguideFlags]/$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
+                    <texture background="true">$VAR[ColortvguideFlags]$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
                 </control>
 			</control>	
                 <control type="group">
@@ -735,7 +735,7 @@
                 <control type="image">
                     <left>130</left>
                     <top>12</top>
-                    <texture>$VAR[ColorFlagsAudio]/audio/$INFO[Window(home).Property(Album.Song.1.FileExtension),,.png]</texture>
+                    <texture>$VAR[ColorFlagsAudio]audio/$INFO[Window(home).Property(Album.Song.1.FileExtension),,.png]</texture>
                     <include>AudioFlagsVars</include>
                 </control>
                 <control type="group">
@@ -773,7 +773,7 @@
                         <include>AudioFlagsVars</include>
                     </control>
                     <control type="image">
-                        <texture>$VAR[ColorFlagsStudio]/Studios/default-studio.png</texture>
+                        <texture>$VAR[ColorFlagsStudio]default-studio.png</texture>
                         <include>AudioFlagsVars</include>
                         <visible>IsEmpty(ListItem.Property(Album_Label))</visible>
                     </control>
@@ -897,7 +897,7 @@
                 <control type="image">
                     <left>1500</left>
                     <top>10</top>
-                    <texture>$VAR[ColorFlagsAudio]/audio/$INFO[ListItem.FileExtension,,.png]</texture>
+                    <texture>$VAR[ColorFlagsAudio]audio/$INFO[ListItem.FileExtension,,.png]</texture>
                     <include>AudioFlagsVars</include>
                     <visible>Container.Content(Songs)</visible>
 					<animation effect="slide" end="-1000,0" time="0" condition="Control.IsVisible(514)">Conditional</animation>
@@ -974,7 +974,7 @@
                     <visible>!IsEmpty(ListItem.Rating)</visible>
                     <left>1400</left>
                     <control type="image">
-                        <texture>$VAR[ColorFlags]/IMDB.png</texture>
+                        <texture>$VAR[ColorFlags]IMDB.png</texture>
                         <include>AudioFlagsVars</include>
                     </control>
                     <control type="label">
@@ -990,17 +990,17 @@
                 </control>				
                 <control type="image">
                     <left>1535</left>
-                    <texture>$VAR[ColorFlagsAudio]/audio/$VAR[AudioFlagVar,,.png]</texture>
+                    <texture>$VAR[ColorFlagsAudio]audio/$VAR[AudioFlagVar,,.png]</texture>
                     <include>AudioFlagsVars</include>
                 </control>
                 <control type="image">
                     <left>1670</left>
-                    <texture>$VAR[ColorFlagsSource]/Source/$VAR[SourceFlagVar,,.png]</texture>
+                    <texture>$VAR[ColorFlagsSource]Source/$VAR[SourceFlagVar,,.png]</texture>
                     <include>AudioFlagsVars</include>
                 </control>
                 <control type="image">
                     <left>1770</left>
-                    <texture>$VAR[ColorFlagsResolution]/resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
+                    <texture>$VAR[ColorFlagsResolution]resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
                     <include>AudioFlagsVars</include>
                 </control>
             </control>
@@ -1025,14 +1025,14 @@
                 <control type="image">
 					<left>-146</left>
                     <include>AudioFlagsVars</include>
-                    <texture>$VAR[ColortvguideFlags]/$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
+                    <texture>$VAR[ColortvguideFlags]$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
                 </control>
 			</control>				
                 <control type="group">
                     <width>120</width>
                     <left>-20</left>
                     <control type="image">
-                        <texture>$VAR[ColorFlags]/IMDB.png</texture>
+                        <texture>$VAR[ColorFlags]IMDB.png</texture>
                         <include>AudioFlagsVars</include>
                     </control>
                     <control type="label">
@@ -1046,12 +1046,12 @@
                     </control>
                 </control>
                 <control type="image">
-                    <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRating]/rating/$VAR[RatingFlagVar,,.png]</texture>
+                    <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
                     <include>AudioFlagsVars</include>
                 </control>
                 <control type="image">
                     <top>-10</top>
-                    <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]/Studios/$INFO[ListItem.Studio,,.png]</texture>
+                    <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
                     <width>125</width>
                     <height>90</height>
                     <aspectratio>keep</aspectratio>

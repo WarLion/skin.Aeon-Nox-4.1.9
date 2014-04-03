@@ -56,30 +56,32 @@
                 <onup>500</onup>
                 <ondown>500</ondown>				
                  <scrolltime tween="sine">300</scrolltime>
-                <itemlayout height="74" width="600">
+				 <itemlayout height="60" width="600">
                     <control type="label">
-                        <left>30</left>
-                        <width>306</width>
-                        <height>74</height>
+						<width>400</width>
+						<height>60</height>
+						<textoffsetx>45</textoffsetx>
+						<textoffsety>2</textoffsety>
                         <label>$INFO[ListItem.Label]</label>
-                        <font>Font_Reg30_2</font>
-                        <textcolor>grey2</textcolor>
+						<font>Font_Reg30_2</font>
+						<textcolor>grey2</textcolor>
                     </control>
                 </itemlayout>
-                <focusedlayout height="74" width="600">
+                <focusedlayout height="60" width="600">
                     <control type="image">
                         <width>324</width>
-                        <height>74</height>
+                        <height>60</height>
                         <texture border="8">views/tripanel/listselect_fo.png</texture>
                         <animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(500)">Conditional</animation>
                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                     </control>
                     <control type="label">
-                        <left>30</left>
-                        <width>306</width>
-                        <height>74</height>
+						<width>400</width>
+						<height>60</height>
+						<textoffsetx>45</textoffsetx>
+						<textoffsety>2</textoffsety>
                         <label>$INFO[ListItem.Label]</label>
-                        <font>Font_Reg30_2</font>
+						<font>Font_Reg30_2</font>
                     </control>
                 </focusedlayout>
                 <content>
@@ -97,21 +99,31 @@
                         <onclick>noop</onclick>
 						<visible>!IsEmpty(Skin.String(ReloadedFlagsPath))</visible>
                     </item>					
+                    <item id="7">
+                        <label>Studio Flags</label>
+                        <onclick>noop</onclick>
+						<visible>!IsEmpty(Skin.String(StudioFlagsPath))</visible>
+                    </item>
+                    <item id="8">
+                        <label>Language Flags</label>
+                        <onclick>noop</onclick>
+						<visible>!IsEmpty(Skin.String(languageFlagsPath))</visible>
+                    </item>						
                     <item id="3">
                         <label>Default Icons</label>
                         <onclick>noop</onclick>
-						<visible>!IsEmpty(Skin.String(ColorFlagsPath))</visible>
+						<visible>!IsEmpty(Skin.String(DefaultIconPath))</visible>
                     </item>
                     <item id="4">
                         <label>Tvguide</label>
                         <onclick>noop</onclick>
-						<visible>!IsEmpty(Skin.String(ColorFlagsPath))</visible>
+						<visible>!IsEmpty(Skin.String(NextAiredFlagsPath))</visible>
                     </item>
                     <item id="5">
                         <label>Others</label>
                         <onclick>noop</onclick>
 						<visible>!IsEmpty(Skin.String(ColorFlagsPath))</visible>
-                    </item>	
+                    </item>						
                 </content>
             </control>	
 			
@@ -132,14 +144,11 @@
 						<onclick>Skin.ToggleSetting(AllColorFlags)</onclick>
 						<onclick>Skin.SetBool(AspectRatioColorFlag)</onclick>
 						<onclick>Skin.SetBool(AudioColorFlag)</onclick>
-						<onclick>Skin.SetBool(LanguageColorFlag)</onclick>
 						<onclick>Skin.SetBool(RatingColorFlag)</onclick>
 						<onclick>Skin.SetBool(ResolutionColorFlag)</onclick>
 						<onclick>Skin.SetBool(SourceColorFlag)</onclick>
-						<onclick>Skin.SetBool(StudiosColorFlag)</onclick>
 						<onclick>Skin.Reset(AspectRatioColorFlagreloaded)</onclick>
 						<onclick>Skin.Reset(AudioColorFlagreloaded)</onclick>
-						<onclick>Skin.Reset(LanguageColorFlagreloaded)</onclick>
 						<onclick>Skin.Reset(RatingColorFlagreloaded)</onclick>
 						<onclick>Skin.Reset(ResolutionColorFlagreloaded)</onclick>
 						<onclick>Skin.Reset(SourceColorFlagreloaded)</onclick>	
@@ -163,16 +172,7 @@
 						<onclick>Skin.Reset(AllColorFlagsreloaded)</onclick>
 						<selected>Skin.HasSetting(AudioColorFlag)</selected>
 						<enable>!Skin.HasSetting(AllColorFlags)</enable>						
-                    </control>
-                    <control type="radiobutton" id="603">
-						<label>Language Flags</label>
-						<include>Objects_SubMediaMenuButtonAround</include>
-						<onclick>Skin.ToggleSetting(LanguageColorFlag)</onclick>
-						<onclick>Skin.Reset(LanguageColorFlagreloaded)</onclick>
-						<onclick>Skin.Reset(AllColorFlagsreloaded)</onclick>
-						<selected>Skin.HasSetting(LanguageColorFlag)</selected>
-						<enable>!Skin.HasSetting(AllColorFlags)</enable>						
-                    </control>               			         
+                    </control>             			         
                      <control type="radiobutton" id="604">
 						<label>Mpaa Flags</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
@@ -199,17 +199,8 @@
 						<onclick>Skin.Reset(AllColorFlagsreloaded)</onclick>
 						<selected>Skin.HasSetting(SourceColorFlag)</selected>
 						<enable>!Skin.HasSetting(AllColorFlags)</enable>						
-                    </control>       
-                    <control type="radiobutton" id="607">
-						<label>Studios Flags</label>
-						<include>Objects_SubMediaMenuButtonAround</include>
-						<onclick>Skin.ToggleSetting(StudiosColorFlag)</onclick>
-						<onclick>Skin.Reset(AllColorFlagsreloaded)</onclick>
-						<selected>Skin.HasSetting(StudiosColorFlag)</selected>
-						<enable>!Skin.HasSetting(AllColorFlags)</enable>						
-                    </control> 																	
+                    </control>       															
             </control>	
-
 			<control type="grouplist" id="600">
                 <orientation>vertical</orientation>
                 <left>650</left>
@@ -227,18 +218,15 @@
 						<onclick>Skin.ToggleSetting(AllColorFlagsreloaded)</onclick>
 						<onclick>Skin.SetBool(AspectRatioColorFlagreloaded)</onclick>
 						<onclick>Skin.SetBool(AudioColorFlagreloaded)</onclick>
-						<onclick>Skin.SetBool(LanguageColorFlagreloaded)</onclick>
 						<onclick>Skin.SetBool(RatingColorFlagreloaded)</onclick>
 						<onclick>Skin.SetBool(ResolutionColorFlagreloaded)</onclick>
 						<onclick>Skin.SetBool(SourceColorFlagreloaded)</onclick>
 						<onclick>Skin.SetBool(StudiosColorFlagreloaded)</onclick>
 						<onclick>Skin.Reset(AspectRatioColorFlag)</onclick>
 						<onclick>Skin.Reset(AudioColorFlag)</onclick>
-						<onclick>Skin.Reset(LanguageColorFlag)</onclick>
 						<onclick>Skin.Reset(RatingColorFlag)</onclick>
 						<onclick>Skin.Reset(ResolutionColorFlag)</onclick>
 						<onclick>Skin.Reset(SourceColorFlag)</onclick>
-						<onclick>Skin.Reset(StudiosColorFlag)</onclick>	
 						<onclick>Skin.Reset(AllColorFlags)</onclick>					
 						<selected>Skin.HasSetting(AllColorFlagsreloaded)</selected>
                     </control>
@@ -259,16 +247,7 @@
 						<onclick>Skin.Reset(AllColorFlags)</onclick>
 						<selected>Skin.HasSetting(AudioColorFlagreloaded)</selected>
 						<enable>!Skin.HasSetting(AllColorFlagsreloaded)</enable>						
-                    </control>
-                    <control type="radiobutton" id="603">
-						<label>Language Flags</label>
-						<include>Objects_SubMediaMenuButtonAround</include>
-						<onclick>Skin.ToggleSetting(LanguageColorFlagreloaded)</onclick>
-						<onclick>Skin.Reset(LanguageColorFlag)</onclick>
-						<onclick>Skin.Reset(AllColorFlags)</onclick>
-						<selected>Skin.HasSetting(LanguageColorFlagreloaded)</selected>
-						<enable>!Skin.HasSetting(AllColorFlagsreloaded)</enable>						
-                    </control>               			         
+                    </control>          			         
                      <control type="radiobutton" id="604">
 						<label>Mpaa Flags</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
@@ -297,7 +276,6 @@
 						<enable>!Skin.HasSetting(AllColorFlagsreloaded)</enable>						
                     </control>       																	
             </control>				
-
 			<control type="grouplist" id="600">
                 <orientation>vertical</orientation>
                 <left>650</left>
@@ -316,7 +294,6 @@
 						<selected>Skin.HasSetting(Colortdefaulticons)</selected>
                     </control>
             </control>	
-			
 			<control type="grouplist" id="600">
                 <orientation>vertical</orientation>
                 <left>650</left>
@@ -362,38 +339,121 @@
 				<itemgap>-1</itemgap>
 				<pagecontrol>60</pagecontrol>
 				<onup>600</onup>
-				<ondown>600</ondown>				
-				<visible>Container(500).Hasfocus(6)</visible>
-                    <control type="button" id="521">
-                        <label>Set Path for Color Icons</label>
+				<ondown>600</ondown>
+				<visible>Container(500).Hasfocus(6)</visible>	
+                    <control type="button" id="601">
+                        <label>Set Path for Color Flags</label>
                         <include>Objects_MediaMenuButtonAlt3</include>
                         <onclick>Skin.SetPath(ColorFlagsPath)</onclick>
                     </control>	
-                    <control type="label" id="530">
+                    <control type="label" id="602">
                         <label>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(ColorFlagsPath)][/COLOR]</label>
                         <include>Objects_MediaMenuButtonAlt3</include>
 						<scroll>true</scroll>
-						<visible>!IsEmpty(Skin.String(ColorFlagsPath))</visible>
-                    </control>						
-                    <control type="button" id="525">
-                        <label>Set Path for Reloaded Icons</label>
+						<visible>!IsEmpty(Skin.String(ColorFlagsPath)) + Control.HasFocus(601)</visible>
+                    </control>	
+                    <control type="label" id="603">
+                        <label>[COLOR $VAR[FontColorVar]]Set to the [B]Flag[/B] Folder[/COLOR]</label>
+                        <include>Objects_MediaMenuButtonAlt3</include>
+						<scroll>true</scroll>
+						<visible>IsEmpty(Skin.String(ColorFlagsPath)) + Control.HasFocus(601)</visible>
+                    </control>										
+                    <control type="button" id="604">
+                        <label>Set Path for Reloaded Flags</label>
                         <include>Objects_MediaMenuButtonAlt3</include>
                         <onclick>Skin.SetPath(ReloadedFlagsPath)</onclick>
                     </control>
-                    <control type="label" id="526">
+                    <control type="label" id="800">
                         <label>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(ReloadedFlagsPath)][/COLOR]</label>
                         <include>Objects_MediaMenuButtonAlt3</include>
 						<scroll>true</scroll>
-						<visible>!IsEmpty(Skin.String(ReloadedFlagsPath))</visible>
+						<visible>!IsEmpty(Skin.String(ReloadedFlagsPath)) + Control.HasFocus(604)</visible>
+                    </control>	
+                    <control type="label" id="801">
+                        <label>[COLOR $VAR[FontColorVar]]Set to the [B]Flag[/B] Folder[/COLOR]</label>
+                        <include>Objects_MediaMenuButtonAlt3</include>
+						<scroll>true</scroll>
+						<visible>IsEmpty(Skin.String(ReloadedFlagsPath)) + Control.HasFocus(604)</visible>
                     </control>		
-                    <control type="button" id="531">
+                    <control type="button" id="613">
+                        <label>Set Path for Studio icons</label>
+                        <include>Objects_MediaMenuButtonAlt3</include>
+                        <onclick>Skin.SetPath(StudioFlagsPath)</onclick>
+                    </control>
+                    <control type="label" id="614">
+                        <label>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(StudioFlagsPath)][/COLOR]</label>
+                        <include>Objects_MediaMenuButtonAlt3</include>
+						<scroll>true</scroll>
+						<visible>!IsEmpty(Skin.String(StudioFlagsPath)) + Control.HasFocus(613)</visible>
+                    </control>		
+                    <control type="label" id="615">
+                        <label>[COLOR $VAR[FontColorVar]]Set to the [B]Studio icon[/B] Folder[/COLOR]</label>
+                        <include>Objects_MediaMenuButtonAlt3</include>
+						<scroll>true</scroll>
+						<visible>IsEmpty(Skin.String(StudioFlagsPath)) + Control.HasFocus(613)</visible>
+                    </control>
+                    <control type="button" id="813">
+                        <label>Set Path for Language Flags</label>
+                        <include>Objects_MediaMenuButtonAlt3</include>
+                        <onclick>Skin.SetPath(languageFlagsPath)</onclick>
+                    </control>
+                    <control type="label" id="814">
+                        <label>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(languageFlagsPath)][/COLOR]</label>
+                        <include>Objects_MediaMenuButtonAlt3</include>
+						<scroll>true</scroll>
+						<visible>!IsEmpty(Skin.String(languageFlagsPath)) + Control.HasFocus(813)</visible>
+                    </control>		
+                    <control type="label" id="815">
+                        <label>[COLOR $VAR[FontColorVar]]Set to the [B]Language[/B] Folder[/COLOR]</label>
+                        <include>Objects_MediaMenuButtonAlt3</include>
+						<scroll>true</scroll>
+						<visible>IsEmpty(Skin.String(languageFlagsPath)) + Control.HasFocus(813)</visible>
+                    </control>																		
+                    <control type="button" id="610">
+                        <label>Set Path for NextAired Flags</label>
+                        <include>Objects_MediaMenuButtonAlt3</include>
+                        <onclick>Skin.SetPath(NextAiredFlagsPath)</onclick>
+                    </control>
+                    <control type="label" id="611">
+                        <label>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(NextAiredFlagsPath)][/COLOR]</label>
+                        <include>Objects_MediaMenuButtonAlt3</include>
+						<scroll>true</scroll>
+						<visible>!IsEmpty(Skin.String(NextAiredFlagsPath)) + Control.HasFocus(610)</visible>
+                    </control>		
+                    <control type="label" id="612">
+                        <label>[COLOR $VAR[FontColorVar]]Set to the [B]tvguide[/B] Folder[/COLOR]</label>
+                        <include>Objects_MediaMenuButtonAlt3</include>
+						<scroll>true</scroll>
+						<visible>IsEmpty(Skin.String(NextAiredFlagsPath)) + Control.HasFocus(610)</visible>
+                    </control>																
+                    <control type="button" id="607">
+                        <label>Set Path for Default Icons</label>
+                        <include>Objects_MediaMenuButtonAlt3</include>
+                        <onclick>Skin.SetPath(DefaultIconPath)</onclick>
+                    </control>				
+                    <control type="label" id="608">
+                        <label>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(DefaultIconPath)][/COLOR]</label>
+                        <include>Objects_MediaMenuButtonAlt3</include>
+						<scroll>true</scroll>
+						<visible>!IsEmpty(Skin.String(DefaultIconPath)) + Control.HasFocus(607)</visible>
+                    </control>		
+                    <control type="label" id="609">
+                        <label>[COLOR $VAR[FontColorVar]]Set to the [B]DefaultIcon[/B] Folder[/COLOR]</label>
+                        <include>Objects_MediaMenuButtonAlt3</include>
+						<scroll>true</scroll>
+						<visible>IsEmpty(Skin.String(DefaultIconPath)) + Control.HasFocus(607)</visible>
+                    </control>																								
+                    <control type="button" id="630">
                         <label>Clear Paths</label>
                         <include>Objects_MediaMenuButtonAlt3</include>
+                        <onclick>Skin.Reset(StudioFlagsPath)</onclick>
+						<onclick>Skin.Reset(languageFlagsPath)</onclick>
                         <onclick>Skin.Reset(ReloadedFlagsPath)</onclick>
 						<onclick>Skin.Reset(ColorFlagsPath)</onclick>
+						<onclick>Skin.Reset(DefaultIconPath)</onclick>
+						<onclick>Skin.Reset(NextAiredFlagsPath)</onclick>
 						<onclick>Skin.Reset(AspectRatioColorFlagreloaded)</onclick>
 						<onclick>Skin.Reset(AudioColorFlagreloaded)</onclick>
-						<onclick>Skin.Reset(LanguageColorFlagreloaded)</onclick>
 						<onclick>Skin.Reset(RatingColorFlagreloaded)</onclick>
 						<onclick>Skin.Reset(ResolutionColorFlagreloaded)</onclick>
 						<onclick>Skin.Reset(SourceColorFlagreloaded)</onclick>	
@@ -408,10 +468,45 @@
 						<onclick>Skin.Reset(AllColorFlags)</onclick>
 						<onclick>Skin.Reset(Colortdefaulticons)</onclick>
 						<onclick>Skin.Reset(ColortvguideFlags)</onclick>	
-						<onclick>Skin.Reset(ColorFlags)</onclick>																			
-                    </control>															
-            </control>							
-			
+						<onclick>Skin.Reset(ColorFlags)</onclick>	
+                    </control>																				
+            </control>	
+			<control type="grouplist" id="600">
+                <orientation>vertical</orientation>
+                <left>650</left>
+                <top>660</top>
+                <onleft>500</onleft>
+                <height>480</height>
+				<itemgap>-1</itemgap>
+				<pagecontrol>60</pagecontrol>
+				<onup>600</onup>
+				<ondown>600</ondown>				
+				<visible>Container(500).Hasfocus(7)</visible>
+                    <control type="radiobutton" id="601">
+						<label>Studios Icons</label>
+						<include>Objects_SubMediaMenuButtonAround</include>
+						<onclick>Skin.ToggleSetting(StudiosColorFlag)</onclick>
+						<selected>Skin.HasSetting(StudiosColorFlag)</selected>
+                    </control>
+            </control>	
+			<control type="grouplist" id="600">
+                <orientation>vertical</orientation>
+                <left>650</left>
+                <top>660</top>
+                <onleft>500</onleft>
+                <height>480</height>
+				<itemgap>-1</itemgap>
+				<pagecontrol>60</pagecontrol>
+				<onup>600</onup>
+				<ondown>600</ondown>				
+				<visible>Container(500).Hasfocus(8)</visible>
+                    <control type="radiobutton" id="601">
+						<label>Language Icons</label>
+						<include>Objects_SubMediaMenuButtonAround</include>
+						<onclick>Skin.ToggleSetting(LanguageColorFlag)</onclick>
+						<selected>Skin.HasSetting(LanguageColorFlag)</selected>
+                    </control>
+            </control>				
 			<control type="grouplist" id="700">
                 <orientation>vertical</orientation>
                 <left>1130</left>
@@ -425,7 +520,7 @@
 						<width>96</width>
 						<height>47</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColorFlagsAspectRatio]/aspectratio/2.55.png</texture>
+						<texture>$VAR[ColorFlagsAspectRatio]aspectratio/2.55.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control> 
 					<control type="image">
@@ -433,7 +528,7 @@
 						<width>96</width>
 						<height>55</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColorFlagsAudio]/audio/ac33.png</texture>
+						<texture>$VAR[ColorFlagsAudio]audio/ac33.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control>	
 					<control type="image">
@@ -441,15 +536,7 @@
 						<width>96</width>
 						<height>55</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColorFlagsLanguage]/language/eng.png</texture>
-						<colordiffuse>white2</colordiffuse>
-					</control>	
-					<control type="image">
-						<top>5</top>
-						<width>96</width>
-						<height>55</height>
-						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColorFlagsRating]/rating/MPAA_NC-17_Certificate_US.png</texture>
+						<texture>$VAR[ColorFlagsRating]rating/MPAA_NC-17_Certificate_US.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control>		
 					<control type="image">
@@ -457,7 +544,7 @@
 						<width>96</width>
 						<height>55</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColorFlagsResolution]/resolution/1080.png</texture>
+						<texture>$VAR[ColorFlagsResolution]resolution/1080.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control>								
 					<control type="image">
@@ -465,18 +552,68 @@
 						<width>96</width>
 						<height>55</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColorFlagsSource]/Source/bluray.png</texture>
+						<texture>$VAR[ColorFlagsSource]Source/bluray.png</texture>
 						<colordiffuse>white2</colordiffuse>
-					</control>				
+					</control>																										  									
+            </control>	
+			<control type="grouplist" id="700">
+                <orientation>vertical</orientation>
+                <left>1120</left>
+                <top>660</top>
+                <onleft>500</onleft>
+                <height>580</height>
+				<itemgap>3</itemgap>
+				<visible>Container(500).Hasfocus(7)</visible>
+					<control type="image">
+						<top>5</top>
+						<width>167</width>
+						<height>109</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$VAR[ColorFlagsStudio]Warner Brothers.png</texture>
+						<colordiffuse>white2</colordiffuse>
+					</control>	
+					<control type="image">
+						<top>5</top>
+						<width>167</width>
+						<height>109</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$VAR[ColorFlagsStudio]Walt Disney Pictures.png</texture>
+						<colordiffuse>white2</colordiffuse>
+					</control>	
+					<control type="image">
+						<top>5</top>
+						<width>167</width>
+						<height>109</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$VAR[ColorFlagsStudio]Fox 2000 Pictures.png</texture>
+						<colordiffuse>white2</colordiffuse>
+					</control>																																	  									
+            </control>	
+			<control type="grouplist" id="700">
+                <orientation>vertical</orientation>
+                <left>1120</left>
+                <top>660</top>
+                <onleft>500</onleft>
+                <height>580</height>
+				<itemgap>3</itemgap>
+				<visible>Container(500).Hasfocus(8)</visible>
 					<control type="image">
 						<top>5</top>
 						<width>96</width>
 						<height>55</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColorFlagsStudio]/Studios/Warner Brothers.png</texture>
+						<texture>$VAR[ColorFlagsLanguage]eng.png</texture>
 						<colordiffuse>white2</colordiffuse>
-					</control>																							  									
-            </control>		
+					</control>	
+					<control type="image">
+						<top>5</top>
+						<width>96</width>
+						<height>55</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$VAR[ColorFlagsLanguage]USA.png</texture>
+						<colordiffuse>white2</colordiffuse>
+					</control>																																						  									
+            </control>							
 			<control type="grouplist" id="700">
                 <orientation>vertical</orientation>
                 <left>1130</left>
@@ -490,7 +627,7 @@
 						<width>96</width>
 						<height>47</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColorFlagsAspectRatio]/aspectratio/2.55.png</texture>
+						<texture>$VAR[ColorFlagsAspectRatio]aspectratio/2.55.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control> 
 					<control type="image">
@@ -498,7 +635,7 @@
 						<width>96</width>
 						<height>55</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColorFlagsAudio]/audio/ac33.png</texture>
+						<texture>$VAR[ColorFlagsAudio]audio/ac33.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control>	
 					<control type="image">
@@ -506,15 +643,7 @@
 						<width>96</width>
 						<height>55</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColorFlagsLanguage]/language/eng.png</texture>
-						<colordiffuse>white2</colordiffuse>
-					</control>	
-					<control type="image">
-						<top>5</top>
-						<width>96</width>
-						<height>55</height>
-						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColorFlagsRating]/rating/MPAA_NC-17_Certificate_US.png</texture>
+						<texture>$VAR[ColorFlagsRating]rating/MPAA_NC-17_Certificate_US.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control>		
 					<control type="image">
@@ -522,7 +651,7 @@
 						<width>96</width>
 						<height>55</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColorFlagsResolution]/resolution/1080.png</texture>
+						<texture>$VAR[ColorFlagsResolution]resolution/1080.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control>								
 					<control type="image">
@@ -530,7 +659,7 @@
 						<width>96</width>
 						<height>55</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColorFlagsSource]/Source/bluray.png</texture>
+						<texture>$VAR[ColorFlagsSource]Source/bluray.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control>																										  									
             </control>							
@@ -548,7 +677,7 @@
 						<width>122</width>
 						<height>60</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[Colortdefaulticons]/DefaultFolderBackList.png</texture>
+						<texture>$VAR[Colortdefaulticons]DefaultFolderBackList.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control> 	
 					<control type="image">
@@ -556,7 +685,7 @@
 						<width>122</width>
 						<height>60</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[Colortdefaulticons]/DefaultRecentlyAddedMusicVideos.png</texture>
+						<texture>$VAR[Colortdefaulticons]DefaultRecentlyAddedMusicVideos.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control> 	
 					<control type="image">
@@ -564,7 +693,7 @@
 						<width>122</width>
 						<height>60</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[Colortdefaulticons]/DefaultAddonVideo.png</texture>
+						<texture>$VAR[Colortdefaulticons]DefaultAddonVideo.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control>
 					<control type="image">
@@ -572,7 +701,7 @@
 						<width>122</width>
 						<height>60</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[Colortdefaulticons]/DefaultActor.png</texture>
+						<texture>$VAR[Colortdefaulticons]DefaultActor.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control>
 					<control type="image">
@@ -580,7 +709,7 @@
 						<width>122</width>
 						<height>60</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[Colortdefaulticons]/DefaultAddonMusicVideoInfo.png</texture>
+						<texture>$VAR[Colortdefaulticons]DefaultAddonMusicVideoInfo.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control>
 					<control type="image">
@@ -588,7 +717,7 @@
 						<width>122</width>
 						<height>60</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[Colortdefaulticons]/DefaultMoviesRecentlyPlayed.png</texture>
+						<texture>$VAR[Colortdefaulticons]DefaultMoviesRecentlyPlayed.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control>
             </control>
@@ -617,7 +746,7 @@
 									<width>122</width>
 									<height>60</height>
 									<aspectratio>keep</aspectratio>
-									<texture>$VAR[ColortvguideFlags]/0.png</texture>
+									<texture>$VAR[ColortvguideFlags]0.png</texture>
 									<colordiffuse>white2</colordiffuse>
 								</control>
 							</control>	
@@ -639,7 +768,7 @@
 									<width>122</width>
 									<height>60</height>
 									<aspectratio>keep</aspectratio>
-									<texture>$VAR[ColortvguideFlags]/1.png</texture>
+									<texture>$VAR[ColortvguideFlags]1.png</texture>
 									<colordiffuse>white2</colordiffuse>
 								</control> 	
 							</control>
@@ -661,7 +790,7 @@
 									<width>122</width>
 									<height>60</height>
 									<aspectratio>keep</aspectratio>
-									<texture>$VAR[ColortvguideFlags]/2.png</texture>
+									<texture>$VAR[ColortvguideFlags]2.png</texture>
 									<colordiffuse>white2</colordiffuse>
 								</control> 	
 							</control>	
@@ -683,7 +812,7 @@
 									<width>122</width>
 									<height>60</height>
 									<aspectratio>keep</aspectratio>
-									<texture>$VAR[ColortvguideFlags]/4.png</texture>
+									<texture>$VAR[ColortvguideFlags]4.png</texture>
 									<colordiffuse>white2</colordiffuse>
 								</control> 	
 							</control>																										
@@ -705,7 +834,7 @@
 									<width>122</width>
 									<height>60</height>
 									<aspectratio>keep</aspectratio>
-									<texture>$VAR[ColortvguideFlags]/6.png</texture>
+									<texture>$VAR[ColortvguideFlags]6.png</texture>
 									<colordiffuse>white2</colordiffuse>
 								</control> 	
 							</control> 																																					  									
@@ -723,7 +852,7 @@
 						<width>122</width>
 						<height>60</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColorFlags]/posters/imdb.png</texture>
+						<texture>$VAR[ColorFlags]posters/imdb.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control> 	
 					<control type="image">
@@ -731,7 +860,7 @@
 						<width>122</width>
 						<height>60</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColorFlags]/cc.png</texture>
+						<texture>$VAR[ColorFlags]cc.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control>
 					<control type="image">
@@ -739,14 +868,14 @@
 						<width>122</width>
 						<height>60</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColorFlags]/time.png</texture>
+						<texture>$VAR[ColorFlags]time.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control>					 	 																																					 					<control type="image">
 						<top>5</top>
 						<width>122</width>
 						<height>60</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColorFlags]/IMDB.png</texture>
+						<texture>$VAR[ColorFlags]IMDB.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control> 	
  					<control type="image">
@@ -754,7 +883,7 @@
 						<width>122</width>
 						<height>60</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColorFlags]/year.png</texture>
+						<texture>$VAR[ColorFlags]year.png</texture>
 						<colordiffuse>white2</colordiffuse>
 					</control> 														
             </control>								

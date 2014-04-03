@@ -2454,7 +2454,7 @@
                         <height>30</height>
                         <animation effect="rotate" end="-90" center="auto" time="0" condition="true">Conditional</animation>
                         <aspectratio>keep</aspectratio>
-                        <texture>$VAR[Colortdefaulticons]/DefaultFolderBack.png</texture>
+                        <texture>$VAR[Colortdefaulticons]DefaultFolderBack.png</texture>
                         <colordiffuse>$VAR[BreadCrumbsContentColorVar]</colordiffuse>
                     </control>
                 </control>

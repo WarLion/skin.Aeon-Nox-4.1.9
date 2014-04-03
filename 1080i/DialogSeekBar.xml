@@ -444,18 +444,18 @@
                     <left>15</left>
                     <top>30</top>
                     <include>OSDFlagVars</include>
-                    <texture fallback="flags/source/defaultsource.png">$VAR[ColorFlagsSource]/Source/$VAR[VideoSourceFlagVar,,.png]</texture>
+                    <texture fallback="flags/source/defaultsource.png">$VAR[ColorFlagsSource]Source/$VAR[VideoSourceFlagVar,,.png]</texture>
                 </control>
                 <control type="group">
                     <left>165</left>
 					<top>30</top>
                     <visible>!VideoPlayer.Content(files)</visible>
                     <control type="image" id="76">
-                        <texture>$VAR[ColorFlagsStudio]/Studios/$INFO[VideoPlayer.Studio,,.png]</texture>
+                        <texture>$VAR[ColorFlagsStudio]$INFO[VideoPlayer.Studio,,.png]</texture>
                         <include>OSDFlagVars</include>
                     </control>
                     <control type="image">
-                        <texture>$VAR[ColorFlagsStudio]/Studios/default-studio.png</texture>
+                        <texture>$VAR[ColorFlagsStudio]default-studio.png</texture>
                         <include>OSDFlagVars</include>
                         <visible>IsEmpty(VideoPlayer.Studio)</visible>
                     </control>
@@ -476,27 +476,27 @@
                     <left>315</left>
                     <top>30</top>
                     <include>OSDFlagVars</include>
-                    <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRating]/rating/$VAR[VideoRatingFlagVar,,.png]</texture>
+                    <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRating]rating/$VAR[VideoRatingFlagVar,,.png]</texture>
                     <visible>!VideoPlayer.Content(files)</visible>
                 </control>
                 <control type="image">
                     <left>1480</left>
                     <top>30</top>
                     <include>OSDFlagVars</include>
-                    <texture>$VAR[ColorFlagsAspectRatio]/aspectratio/$INFO[VideoPlayer.VideoAspect,,.png]</texture>
+                    <texture>$VAR[ColorFlagsAspectRatio]aspectratio/$INFO[VideoPlayer.VideoAspect,,.png]</texture>
                     <animation effect="slide" end="-1305" condition="VideoPlayer.Content(files)">Conditional</animation>
                 </control>
                 <control type="image">
                     <left>1600</left>
                     <top>30</top>
                     <include>OSDFlagVars</include>
-                    <texture fallback="flags/resolution/defaultscreen.png">$VAR[ColorFlagsResolution]/resolution/$INFO[VideoPlayer.VideoResolution,,.png]</texture>
+                    <texture fallback="flags/resolution/defaultscreen.png">$VAR[ColorFlagsResolution]resolution/$INFO[VideoPlayer.VideoResolution,,.png]</texture>
                 </control>
                 <control type="image">
                     <left>1745</left>
                     <top>30</top>
                     <include>OSDFlagVars</include>
-					<texture fallback="flags/audio/defaultsound.png">$VAR[ColorFlagsAudio]/audio/$INFO[VideoPlayer.AudioCodec]$INFO[VideoPlayer.AudioChannels,,.png]</texture>
+					<texture fallback="flags/audio/defaultsound.png">$VAR[ColorFlagsAudio]audio/$INFO[VideoPlayer.AudioCodec]$INFO[VideoPlayer.AudioChannels,,.png]</texture>
                 </control>										
             </control>
             <control type="group" id="4004">
@@ -553,7 +553,7 @@
 					<aspectratio>keep</aspectratio>
 					<fadetime>IconCrossfadeTime2</fadetime>
 					<colordiffuse>white2</colordiffuse>
-					<texture fallback="">$VAR[ColorFlagsLanguage]/language/$INFO[VideoPlayer.AudioLanguage,,.png]</texture>
+					<texture fallback="">$VAR[ColorFlagsLanguage]$INFO[VideoPlayer.AudioLanguage,,.png]</texture>
                 </control>
                 <control type="image">
                     <left>1860</left>
@@ -564,7 +564,7 @@
 					<fadetime>IconCrossfadeTime2</fadetime>
 					<colordiffuse>white2</colordiffuse>
 					<animation effect="fade" time="200">VisibleChange</animation>
-					<texture fallback="">$VAR[ColorFlagsLanguage]/language/$INFO[VideoPlayer.SubtitlesLanguage,,.png]</texture>
+					<texture fallback="">$VAR[ColorFlagsLanguage]$INFO[VideoPlayer.SubtitlesLanguage,,.png]</texture>
                 </control>	
 			</control>	
             </control>		
