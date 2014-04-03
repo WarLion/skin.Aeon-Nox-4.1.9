@@ -11,7 +11,7 @@
                 <left>380</left>
                 <top>200</top>
                 <width>740</width>
-                <height>400</height>
+                <height>440</height>
                 <texture border="20">osd/osd_settings_back_glow.png</texture>
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 <visible>!Skin.HasSetting(DisableGlowbar)</visible>
@@ -21,7 +21,7 @@
                 <left>380</left>
                 <top>200</top>
                 <width>740</width>
-                <height>400</height>
+                <height>440</height>
                 <texture border="20">osd/osd_settings_back.png</texture>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
@@ -133,6 +133,14 @@
                         <label2>$INFO[Skin.String(MovieWall_Folder_Path_5)]</label2>
                         <onclick>Skin.SetPath(MovieWall_Folder_Path_5)</onclick>
                     </item>
+                    <item>
+                        <label>$LOCALIZE[192]</label>
+                        <onclick>Skin.Reset(MovieWall_Folder_Path_1)</onclick>
+						<onclick>Skin.Reset(MovieWall_Folder_Path_2)</onclick>
+						<onclick>Skin.Reset(MovieWall_Folder_Path_3)</onclick>
+						<onclick>Skin.Reset(MovieWall_Folder_Path_4)</onclick>
+						<onclick>Skin.Reset(MovieWall_Folder_Path_5)</onclick>
+                    </item>					
                 </content>
             </control>
         </control>

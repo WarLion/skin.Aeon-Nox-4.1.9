@@ -531,19 +531,25 @@
                     <pagecontrol>60</pagecontrol>
                     <onleft>9000</onleft>
                     <onright>60</onright>
-                    <onup>9001</onup>
-                    <ondown>9001</ondown>
+                    <onup>9009</onup>
+                    <ondown>9009</ondown>
                     <control type="button" id="459">
                         <label>$LOCALIZE[31456]</label>
-                        <label2>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(CDWall_Folder_Path)][/COLOR]</label2>
                         <include>Default_SettingButton</include>
                         <onclick>Skin.SetPath(CDWall_Folder_Path)</onclick>
-                    </control>
+                    </control>				
+                    <control type="button" id="462">
+                        <label>$LOCALIZE[192] $LOCALIZE[31456]</label>
+						<label2>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(CDWall_Folder_Path)][/COLOR]</label2>
+                        <include>Default_SettingButton</include>
+                        <onclick>Skin.Reset(CDWall_Folder_Path)</onclick>
+						<visible>!IsEmpty(Skin.String(CDWall_Folder_Path))</visible>
+                    </control>						
                     <control type="button" id="460">
                         <label>$LOCALIZE[31455]</label>
                         <include>Default_SettingButton</include>
                         <onclick>ActivateWindow(1164)</onclick>
-                    </control>
+                    </control>				
                     <control type="button" id="303">
                         <label>$LOCALIZE[31678]</label>
                         <label2>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(WeatherFanartDir)][/COLOR]</label2>

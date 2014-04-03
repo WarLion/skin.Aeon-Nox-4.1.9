@@ -3196,13 +3196,13 @@
 	<variable name="ColorFlagsRatingextended">
        <value condition="Skin.HasSetting(RatingColorFlag) + Skin.HasSetting(ExtendedRatingVideoinfo)">$INFO[Skin.String(ColorFlagsPath)]rating/info/</value>
        <value condition="Skin.HasSetting(RatingColorFlagreloaded) + Skin.HasSetting(ExtendedRatingVideoinfo)">$INFO[Skin.String(ReloadedFlagsPath)]rating/info/</value>	
-       <value condition="Skin.HasSetting(RatingColorFlag) + !Skin.HasSetting(ExtendedRatingVideoinfo)">$INFO[Skin.String(ColorFlagsPath)]rating/</value>
-       <value condition="Skin.HasSetting(RatingColorFlagreloaded) + !Skin.HasSetting(ExtendedRatingVideoinfo)">$INFO[Skin.String(ReloadedFlagsPath)]rating/</value>		      
+       <value condition="Skin.HasSetting(RatingColorFlag)">$INFO[Skin.String(ColorFlagsPath)]rating/</value>
+       <value condition="Skin.HasSetting(RatingColorFlagreloaded)">$INFO[Skin.String(ReloadedFlagsPath)]rating/</value>		      
        <value>flags/rating/</value>
     </variable>		
 	<variable name="ColorFlagsResolution">
        <value condition="Skin.HasSetting(ResolutionColorFlag)">$INFO[Skin.String(ColorFlagsPath)]</value>
-       <value condition="Skin.HasSetting(ResolutionColorFlagreloaded)">$INFO[Skin.String(ReloadedFlagsPath)]</value>	   
+       <value condition="Skin.HasSetting(ResolutionColorFlagreloaded)">$INFO[Skin.String(ReloadedFlagsPath)]</value>
        <value>flags/</value>
     </variable>		
 	<variable name="ColorFlagsSource">
@@ -3220,6 +3220,7 @@
     </variable>	
 	<variable name="Colortdefaulticons">
        <value condition="Skin.HasSetting(Colortdefaulticons)">$INFO[Skin.String(DefaultIconPath)]</value>
+	   <value condition="IsEmpty(Skin.String(DefaultIconPath))">defaulticons/</value>
        <value>defaulticons/</value>
     </variable>	
 	<variable name="RatingLabelVar">

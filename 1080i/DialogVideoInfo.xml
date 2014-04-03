@@ -22,6 +22,7 @@
                 <height>1080</height>
                 <texture>info/info_rightpanelbottom.png</texture>
                 <visible>IsEmpty(ListItem.Art(fanart))</visible>
+				<animation effect="rotatey" center="1324" end="180"  time="0" condition="Skin.HasSetting(VideoInfoInverse)">Conditional</animation>
             </control>
             <control type="image">
                 <left>729</left>
@@ -29,6 +30,7 @@
                 <height>1080</height>
                 <aspectratio align="center">scale</aspectratio>
                 <texture background="true">$VAR[DialogVideoInfoFanartVar]</texture>
+				<animation effect="rotatey" center="1324" end="180"  time="0" condition="Skin.HasSetting(VideoInfoInverse)">Conditional</animation>
             </control>
             <control type="image">
                 <left>729</left>
@@ -37,7 +39,6 @@
                 <texture>info/info_rightpaneltop.png</texture>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
 				<animation effect="rotatey" center="1324" end="180"  time="0" condition="Skin.HasSetting(VideoInfoInverse)">Conditional</animation>
-			
             </control>
             <!-- Buttons -->
             <control type="group">
