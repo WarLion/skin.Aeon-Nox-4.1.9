@@ -281,7 +281,7 @@
                             <font>Font_Reg22_Caps</font>
                             <textcolor>grey</textcolor>
                             <wrapmultiline>true</wrapmultiline>
-                            <visible>IsEmpty(Control.GetLabel(76))</visible>
+                            <visible>IsEmpty(Control.GetLabel(76)) + !Skin.HasSetting(DisableStudiosColorFlag)</visible>
                         </control>													
                     </control>
                     <control type="image" id="1110">

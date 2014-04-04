@@ -52,7 +52,7 @@
                 <left>325</left>
                 <top>660</top>
                 <onright>600</onright>
-                <height>600</height>
+                <height>500</height>
                 <onup>500</onup>
                 <ondown>500</ondown>				
                  <scrolltime tween="sine">300</scrolltime>
@@ -84,11 +84,7 @@
 						<font>Font_Reg30_2</font>
                     </control>
                 </focusedlayout>
-                <content>
-                    <item id="6">
-                        <label>Flag Path</label>
-                        <onclick>noop</onclick>
-                    </item>					
+                <content>				
                     <item id="1">
                         <label>Flags Color</label>
                         <onclick>noop</onclick>
@@ -121,7 +117,15 @@
                         <label>Others</label>
                         <onclick>noop</onclick>
 						<visible>!IsEmpty(Skin.String(ColorFlagsPath))</visible>
-                    </item>						
+                    </item>	
+                    <item id="9">
+                        <label>Disable Flags</label>
+                        <onclick>noop</onclick>
+                    </item>	
+                    <item id="6">
+                        <label>Flag Path</label>
+                        <onclick>noop</onclick>
+                    </item>																
                 </content>
             </control>	
 			
@@ -199,6 +203,55 @@
 						<enable>!Skin.HasSetting(AllColorFlags)</enable>						
                     </control>       															
             </control>	
+			
+			<control type="grouplist" id="600">
+                <orientation>vertical</orientation>
+                <left>650</left>
+                <top>660</top>
+                <onleft>500</onleft>
+                <height>480</height>
+				<itemgap>-1</itemgap>
+				<pagecontrol>60</pagecontrol>
+				<onup>600</onup>
+				<ondown>600</ondown>				
+				<visible>Container(500).Hasfocus(9)</visible>
+                    <control type="radiobutton" id="601">
+						<label>Aspect Ratio Flags</label>
+						<include>Objects_SubMediaMenuButtonAround</include>
+						<onclick>Skin.ToggleSetting(DisableAspectRatioColorFlag)</onclick>					
+						<selected>Skin.HasSetting(DisableAspectRatioColorFlag)</selected>
+                    </control>
+                    <control type="radiobutton" id="602">
+						<label>Audio Flags</label>
+						<include>Objects_SubMediaMenuButtonAround</include>
+						<onclick>Skin.ToggleSetting(DisableAudioColorFlag)</onclick>
+						<selected>Skin.HasSetting(DisableAudioColorFlag)</selected>						
+                    </control>             			         
+                     <control type="radiobutton" id="604">
+						<label>Mpaa Flags</label>
+						<include>Objects_SubMediaMenuButtonAround</include>
+						<onclick>Skin.ToggleSetting(DisableRatingColorFlag)</onclick>
+						<selected>Skin.HasSetting(DisableRatingColorFlag)</selected>					
+                    </control>       
+                     <control type="radiobutton" id="605">
+						<label>Resolution Flags</label>
+						<include>Objects_SubMediaMenuButtonAround</include>
+						<onclick>Skin.ToggleSetting(DisableResolutionColorFlag)</onclick>
+						<selected>Skin.HasSetting(DisableResolutionColorFlag)</selected>					
+                    </control>       
+                     <control type="radiobutton" id="606">
+						<label>Source Flags</label>
+						<include>Objects_SubMediaMenuButtonAround</include>
+						<onclick>Skin.ToggleSetting(DisableSourceColorFlag)</onclick>
+						<selected>Skin.HasSetting(DisableSourceColorFlag)</selected>						
+                    </control> 
+                     <control type="radiobutton" id="607">
+						<label>Studio Flags</label>
+						<include>Objects_SubMediaMenuButtonAround</include>
+						<onclick>Skin.ToggleSetting(DisableStudiosColorFlag)</onclick>
+						<selected>Skin.HasSetting(DisableStudiosColorFlag)</selected>						
+                    </control> 					      															
+            </control>				
 			<control type="grouplist" id="600">
                 <orientation>vertical</orientation>
                 <left>650</left>
@@ -518,6 +571,63 @@
 						<colordiffuse>white2</colordiffuse>
 					</control>																										  									
             </control>	
+<control type="grouplist" id="700">
+                <orientation>vertical</orientation>
+                <left>1130</left>
+                <top>665</top>
+                <onleft>500</onleft>
+                <height>580</height>
+				<itemgap>3</itemgap>
+				<visible>Container(500).Hasfocus(9)</visible>
+					<control type="image">
+						<top>5</top>
+						<width>96</width>
+						<height>47</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$VAR[ColorFlagsAspectRatio]aspectratio/2.55.png</texture>
+						<colordiffuse>white2</colordiffuse>
+					</control> 
+					<control type="image">
+						<top>5</top>
+						<width>96</width>
+						<height>55</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$VAR[ColorFlagsAudio]audio/ac33.png</texture>
+						<colordiffuse>white2</colordiffuse>
+					</control>	
+					<control type="image">
+						<top>5</top>
+						<width>96</width>
+						<height>55</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$VAR[ColorFlagsRating]rating/MPAA_NC-17_Certificate_US.png</texture>
+						<colordiffuse>white2</colordiffuse>
+					</control>		
+					<control type="image">
+						<top>5</top>
+						<width>96</width>
+						<height>55</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$VAR[ColorFlagsResolution]resolution/1080.png</texture>
+						<colordiffuse>white2</colordiffuse>
+					</control>								
+					<control type="image">
+						<top>5</top>
+						<width>96</width>
+						<height>55</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$VAR[ColorFlagsSource]Source/bluray.png</texture>
+						<colordiffuse>white2</colordiffuse>
+					</control>
+					<control type="image">
+						<top>5</top>
+						<width>96</width>
+						<height>55</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$VAR[ColorFlagsStudio]Warner Brothers.png</texture>
+						<colordiffuse>white2</colordiffuse>
+					</control>																															  									
+            </control>				
 			<control type="grouplist" id="700">
                 <orientation>vertical</orientation>
                 <left>1120</left>
