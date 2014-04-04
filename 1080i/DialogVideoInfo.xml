@@ -994,80 +994,6 @@
                         <visible>Control.HasFocus(601)</visible>
                         <include>Animation_VisibleChange200</include>
                     </control>
-                    <control type="panel" id="601">
-                        <left>876</left>
-                        <top>370</top>
-                        <width>820</width>
-                        <height>177</height>
-                        <onleft>5000</onleft>
-                        <visible allowhiddenfocus="true">Control.HasFocus(601)</visible>
-                        <include>Animation_VisibleChange200</include>
-                        <animation effect="slide" start="0,0" end="2000,0" time="0" condition="!Control.HasFocus(601)">Conditional</animation>
-                        <onright>5000</onright>
-                        <onup>131</onup>
-                        <ondown>600</ondown>
-                        <scrolltime>200</scrolltime>
-                        <orientation>vertical</orientation>
-                        <itemlayout height="35" width="555">
-                            <control type="label">
-                                <width>555</width>
-                                <height>30</height>
-                                <textoffsetx>15</textoffsetx>
-                                <font>Font_Reg28_2</font>
-                                <info>ListItem.Label</info>
-                            </control>
-                        </itemlayout>
-                        <focusedlayout height="35" width="555">
-                            <control type="image">
-                                <width>555</width>
-                                <height>37</height>
-                                <texture border="8">views/tripanel/listselect_fo.png</texture>
-                                <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-                                <visible>Control.HasFocus(601)</visible>
-                            </control>
-                            <control type="label">
-                                <width>555</width>
-                                <height>30</height>
-                                <textoffsetx>15</textoffsetx>
-                                <font>Font_Reg28_2</font>
-                                <info>ListItem.Label</info>
-                            </control>
-                        </focusedlayout>
-                        <content>
-                            <item>
-                                <label>31197</label>
-                                <onclick condition="Stringcompare(Window(home).Property(ListType),Actors)">Control.Move(50,$INFO[Window.Property(Position)])</onclick>
-                                <onclick condition="Stringcompare(Window(home).Property(ListType),Actors)">SetFocus(50)</onclick>
-                                <onclick condition="Stringcompare(Window(home).Property(ListType),Actors)">Action(Select)</onclick>
-                                <onclick condition="Stringcompare(Window(home).Property(ListType),Actors)">Control.Move(50,-$INFO[Window.Property(Position)])</onclick>
-                                <onclick condition="Stringcompare(Window(home).Property(ListType),Director)">SetFocus(13)</onclick>
-                                <onclick condition="Stringcompare(Window(home).Property(ListType),Director)">Action(Select)</onclick>
-                                <onclick>SetFocus(600)</onclick>
-                                <visible>!Stringcompare(Window(home).Property(ListType),Writer)</visible>
-                            </item>
-                            <item>
-                                <label>31172</label>
-                                <onclick condition="Stringcompare(Window(home).Property(ListType),Actors)">RunScript(script.metadata.actors,$ESCINFO[Container(600).Listitem.Label])</onclick>
-                                <onclick condition="Stringcompare(Window(home).Property(ListType),Director)">RunScript(script.metadata.actors,$ESCINFO[ListItem.Director])</onclick>
-                                <onclick condition="Stringcompare(Window(home).Property(ListType),Writer)">RunScript(script.metadata.actors,$ESCINFO[ListItem.Writer])</onclick>
-                                <visible>System.HasAddon(script.metadata.actors)</visible>
-                                <onclick>SetFocus(600)</onclick>
-                            </item>
-                            <item>
-                                <label>31096</label>
-                                <onclick condition="Stringcompare(Window(home).Property(ListType),Actors)">							
-ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[Container(600).Listitem.Label]),return)</onclick>
-                                <onclick condition="Stringcompare(Window(home).Property(ListType),Writer)">ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[ListItem.Writer],return)</onclick>
-                                <onclick condition="Stringcompare(Window(home).Property(ListType),Director)">ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[ListItem.Director],return)</onclick>
-                                <onclick>Action(Close)</onclick>
-                            </item>
-                            <item>
-                                <label>31066</label>
-                                <onclick>SetFocus(600)</onclick>
-                            </item>
-                        </content>
-                    </control>
-                </control>
                 <control type="panel" id="600">
                     <left>875</left>
                     <top>326</top>
@@ -1577,6 +1503,80 @@ ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=
                         </item>
                     </content>
                 </control>
+ <control type="panel" id="601">
+                        <left>876</left>
+                        <top>370</top>
+                        <width>820</width>
+                        <height>177</height>
+                        <onleft>5000</onleft>
+                        <visible allowhiddenfocus="true">Control.HasFocus(601)</visible>
+                        <include>Animation_VisibleChange200</include>
+                        <animation effect="slide" start="0,0" end="2000,0" time="0" condition="!Control.HasFocus(601)">Conditional</animation>
+                        <onright>5000</onright>
+                        <onup>131</onup>
+                        <ondown>600</ondown>
+                        <scrolltime>200</scrolltime>
+                        <orientation>vertical</orientation>
+                        <itemlayout height="35" width="555">
+                            <control type="label">
+                                <width>555</width>
+                                <height>30</height>
+                                <textoffsetx>15</textoffsetx>
+                                <font>Font_Reg28_2</font>
+                                <info>ListItem.Label</info>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout height="35" width="555">
+                            <control type="image">
+                                <width>555</width>
+                                <height>37</height>
+                                <texture border="8">views/tripanel/listselect_fo.png</texture>
+                                <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+                                <visible>Control.HasFocus(601)</visible>
+                            </control>
+                            <control type="label">
+                                <width>555</width>
+                                <height>30</height>
+                                <textoffsetx>15</textoffsetx>
+                                <font>Font_Reg28_2</font>
+                                <info>ListItem.Label</info>
+                            </control>
+                        </focusedlayout>
+                        <content>
+                            <item>
+                                <label>31197</label>
+                                <onclick condition="Stringcompare(Window(home).Property(ListType),Actors)">Control.Move(50,$INFO[Window.Property(Position)])</onclick>
+                                <onclick condition="Stringcompare(Window(home).Property(ListType),Actors)">SetFocus(50)</onclick>
+                                <onclick condition="Stringcompare(Window(home).Property(ListType),Actors)">Action(Select)</onclick>
+                                <onclick condition="Stringcompare(Window(home).Property(ListType),Actors)">Control.Move(50,-$INFO[Window.Property(Position)])</onclick>
+                                <onclick condition="Stringcompare(Window(home).Property(ListType),Director)">SetFocus(13)</onclick>
+                                <onclick condition="Stringcompare(Window(home).Property(ListType),Director)">Action(Select)</onclick>
+                                <onclick>SetFocus(600)</onclick>
+                                <visible>!Stringcompare(Window(home).Property(ListType),Writer)</visible>
+                            </item>
+                            <item>
+                                <label>31172</label>
+                                <onclick condition="Stringcompare(Window(home).Property(ListType),Actors)">RunScript(script.metadata.actors,$ESCINFO[Container(600).Listitem.Label])</onclick>
+                                <onclick condition="Stringcompare(Window(home).Property(ListType),Director)">RunScript(script.metadata.actors,$ESCINFO[ListItem.Director])</onclick>
+                                <onclick condition="Stringcompare(Window(home).Property(ListType),Writer)">RunScript(script.metadata.actors,$ESCINFO[ListItem.Writer])</onclick>
+                                <visible>System.HasAddon(script.metadata.actors)</visible>
+                                <onclick>SetFocus(600)</onclick>
+                            </item>
+                            <item>
+                                <label>31096</label>
+                                <onclick condition="Stringcompare(Window(home).Property(ListType),Actors)">							
+ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[Container(600).Listitem.Label]),return)</onclick>
+                                <onclick condition="Stringcompare(Window(home).Property(ListType),Writer)">ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[ListItem.Writer],return)</onclick>
+                                <onclick condition="Stringcompare(Window(home).Property(ListType),Director)">ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[ListItem.Director],return)</onclick>
+                                <onclick>Action(Close)</onclick>
+                            </item>
+                            <item>
+                                <label>31066</label>
+                                <onclick>SetFocus(600)</onclick>
+                            </item>
+                        </content>
+                    </control>
+                </control>				
                 <control type="grouplist" id="5000">
                     <left>827</left>
                     <top>560</top>
