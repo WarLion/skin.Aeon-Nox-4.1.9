@@ -97,8 +97,8 @@
                         <visible>IsEmpty(VideoPlayer.Studio)</visible>
                     </control>
                     <control type="label">
-                        <left>-5</left>
-                        <top>8</top>
+                        <left>5</left>
+                        <top>-5</top>
                         <width>155</width>
                         <height>70</height>
                         <align>center</align>
@@ -109,12 +109,18 @@
                         <visible>IsEmpty(Control.GetLabel(76))</visible>
                     </control>
                 </control>
-                <control type="image">
+                <control type="image" id="2117">
                     <left>325</left>
-                    <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRating]rating/$VAR[VideoRatingFlagVar,,.png]</texture>
+                    <texture>$VAR[ColorFlagsRating]rating/$VAR[VideoRatingFlagVar,,.png]</texture>
                     <include>OSDFlagVars</include>
                     <visible>!VideoPlayer.Content(files)</visible>
                 </control>
+                <control type="image">
+                    <left>325</left>
+                    <texture>$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
+                    <include>OSDFlagVars</include>
+                    <visible>!VideoPlayer.Content(files) + IsEmpty(Control.GetLabel(2117))</visible>
+                </control>				
                 <control type="image">
                     <left>1480</left>
                     <texture>$VAR[ColorFlagsAspectRatio]aspectratio/$INFO[VideoPlayer.VideoAspect,,.png]</texture>
@@ -322,17 +328,28 @@
                     </control>
                 </control>
                 <!-- First Row -->
+                <control type="image" id="11465">
+                    <left>10</left>
+                    <top>102</top>
+                    <width>249</width>
+                    <height>57</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$VAR[ColorFlagsRating]rating/info/$VAR[RatingFlagVar,,.png]</texture>
+                    <animation effect="fade" time="200">VisibleChange</animation>
+                    <colordiffuse>grey</colordiffuse>
+                    <visible>VideoPlayer.Content(movies) | VideoPlayer.Content(MusicVideos)</visible>
+                </control>
                 <control type="image">
                     <left>10</left>
                     <top>102</top>
                     <width>249</width>
                     <height>57</height>
                     <aspectratio>keep</aspectratio>
-                    <texture fallback="flags/rating/info/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRating]rating/info/$VAR[RatingFlagVar,,.png]</texture>
+                    <texture>$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
                     <animation effect="fade" time="200">VisibleChange</animation>
                     <colordiffuse>grey</colordiffuse>
-                    <visible>VideoPlayer.Content(movies) | VideoPlayer.Content(MusicVideos)</visible>
-                </control>
+                    <visible>VideoPlayer.Content(movies) | VideoPlayer.Content(MusicVideos) + IsEmpty(Control.GetLabel(11465))</visible>
+                </control>				
                 <control type="group">
                     <visible>!VideoPlayer.Content(episodes)</visible>
                     <control type="label">
@@ -368,16 +385,27 @@
                         <font>Font_Bold46</font>
                         <textcolor>grey</textcolor>
                     </control>
-                    <control type="image">
-                        <left>285</left>
-                        <top>87</top>
-                        <width>135</width>
-                        <height>90</height>
-                        <aspectratio align="center">keep</aspectratio>
-                        <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
-                        <animation effect="fade" time="200">VisibleChange</animation>
-                        <colordiffuse>grey</colordiffuse>
-                    </control>
+					<control type="group">
+						<width>135</width>
+						<height>90</height>						
+						<control type="image" id="1156">
+							<left>285</left>
+							<top>87</top>
+							<aspectratio align="center">keep</aspectratio>
+							<texture>$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
+							<animation effect="fade" time="200">VisibleChange</animation>
+							<colordiffuse>grey</colordiffuse>
+						</control>
+						<control type="image">
+							<left>285</left>
+							<top>87</top>
+							<aspectratio align="center">keep</aspectratio>
+							<texture>$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
+							<animation effect="fade" time="200">VisibleChange</animation>
+							<colordiffuse>grey</colordiffuse>
+							<visible>IsEmpty(Control.GetLabel(1156))</visible>
+						</control>
+					</control>						
                 </control>
                 <control type="group">
                     <left>435</left>
@@ -457,8 +485,8 @@
                         <visible>!IsEmpty(Control.GetLabel(800011))</visible>
                     </control>
                     <control type="label">
-                        <left>291</left>
-                        <top></top>
+                        <left>310</left>
+                        <top>-8</top>
                         <width>155</width>
                         <height>74</height>
                         <align>center</align>

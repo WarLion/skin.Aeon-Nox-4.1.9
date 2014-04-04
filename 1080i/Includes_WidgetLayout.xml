@@ -3162,11 +3162,25 @@
                             <textcolor>floor</textcolor>
                         </control>						
                     </control>
-                    <control type="image">
-                        <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRating]rating/$VAR[WidgetRatingFlagVar,,.png]</texture>
-                        <include>WidgetFlagVars</include>
-                        <visible>!IsEmpty(Window(home).Property(mpaa))</visible>
-                    </control>
+					<control type="group">
+                        <width>160</width>
+                        <height>64</height>
+						<control type="image" id="2115">
+							<texture>$VAR[ColorFlagsRating]rating/$VAR[WidgetRatingFlagVar].png</texture>
+							<aspectratio>keep</aspectratio>
+							<fadetime>IconCrossfadeTime2</fadetime>
+							<colordiffuse>white2</colordiffuse>
+							<animation effect="fade" time="200">VisibleChange</animation>
+						</control>
+						<control type="image">
+							<texture>$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
+							<aspectratio>keep</aspectratio>
+							<fadetime>IconCrossfadeTime2</fadetime>
+							<colordiffuse>white2</colordiffuse>
+							<animation effect="fade" time="200">VisibleChange</animation>
+							<visible>IsEmpty(Control.GetLabel(2115))</visible>
+						</control>				
+					</control>	
                     <control type="group">
                         <width>160</width>
                         <height>64</height>

@@ -460,8 +460,8 @@
                         <visible>IsEmpty(VideoPlayer.Studio)</visible>
                     </control>
                     <control type="label">
-                        <left>-5</left>
-                        <top>8</top>
+                        <left>0</left>
+                        <top>-5</top>
                         <width>155</width>
                         <height>70</height>
                         <align>center</align>
@@ -472,13 +472,20 @@
                         <visible>IsEmpty(Control.GetLabel(76))</visible>
                     </control>
                 </control>
-                <control type="image">
-                    <left>315</left>
-                    <top>30</top>
+                <control type="image" id="2117">
+                    <left>325</left>
+					<top>30</top>
+                    <texture>$VAR[ColorFlagsRating]rating/$VAR[VideoRatingFlagVar,,.png]</texture>
                     <include>OSDFlagVars</include>
-                    <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRating]rating/$VAR[VideoRatingFlagVar,,.png]</texture>
-                    <visible>!VideoPlayer.Content(files)</visible>
+                    <visible>!VideoPlayer.Content(files) + !IsEmpty(VideoPlayer.mpaa)</visible>
                 </control>
+                <control type="image">
+                    <left>325</left>
+					<top>30</top>
+                    <texture>$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
+                    <include>OSDFlagVars</include>
+                    <visible>!VideoPlayer.Content(files) + IsEmpty(Control.GetLabel(2117))</visible>
+                </control>					
                 <control type="image">
                     <left>1480</left>
                     <top>30</top>

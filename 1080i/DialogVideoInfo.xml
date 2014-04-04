@@ -276,33 +276,58 @@
                                 <include>Furniture_FlagUpright</include>
                                 <visible>Container.Content(episodes)</visible>
                             </control>
-                            <control type="image">
-                                <top>5</top>
-                                <width>285</width>
-                                <height>67</height>
-                                <aspectratio align="center">keep</aspectratio>
-                                <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRatingextended]$VAR[RatingFlagVar,,.png]</texture>
-                                <colordiffuse>white2</colordiffuse>
-                                <visible>[Container.Content(movies) | Container.Content(MusicVideos)] + Skin.HasSetting(ExtendedRatingVideoinfo)</visible>
-                            </control>
-                            <control type="image">
-                                <top>5</top>
+							<control type="group"> 
+									<top>5</top>							
+									<width>285</width>
+									<height>67</height>	
+									<visible>[Container.Content(movies) | Container.Content(MusicVideos)] + Skin.HasSetting(ExtendedRatingVideoinfo)</visible>						
+								<control type="image" id="9108">
+									<aspectratio align="center">keep</aspectratio>
+									<texture>$VAR[ColorFlagsRatingextended]$VAR[RatingFlagVar,,.png]</texture>
+									<colordiffuse>white2</colordiffuse>
+								</control>
+								<control type="image">							
+									<aspectratio align="center">keep</aspectratio>
+									<texture>$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
+									<colordiffuse>white2</colordiffuse>
+									<visible>IsEmpty(Control.GetLabel(9108))</visible>
+								</control>									
+							</control>
+							<control type="group"> 
+									<top>5</top>
+									<width>135</width>
+									<height>67</height>	
+									<visible>[Container.Content(movies) | Container.Content(MusicVideos)] + !Skin.HasSetting(ExtendedRatingVideoinfo)</visible>								
+								<control type="image" id="9109">
+									<aspectratio align="center">keep</aspectratio>
+									<texture>$VAR[ColorFlagsRatingextended]$VAR[RatingFlagVar,,.png]</texture>
+									<colordiffuse>white2</colordiffuse>
+								</control>	
+								<control type="image">							
+									<aspectratio align="center">keep</aspectratio>
+									<texture>$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
+									<colordiffuse>white2</colordiffuse>
+									<visible>IsEmpty(Control.GetLabel(9109))</visible>
+								</control>									
+							</control>						
+							<control type="group">
                                 <width>135</width>
-                                <height>67</height>
-                                <aspectratio align="center">keep</aspectratio>
-                                <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRatingextended]$VAR[RatingFlagVar,,.png]</texture>
-                                <colordiffuse>white2</colordiffuse>
-                                <visible>[Container.Content(movies) | Container.Content(MusicVideos)] + !Skin.HasSetting(ExtendedRatingVideoinfo)</visible>
-                            </control>	
-                            <control type="image">
-                                <top>5</top>
-                                <width>135</width>
-                                <height>67</height>
-                                <aspectratio align="center">keep</aspectratio>
-                                <texture fallback="flags/rating/MPAA_NR_Certificate_US.png">$VAR[ColorFlagsRatingextended]$VAR[RatingFlagVar,,.png]</texture>
-                                <colordiffuse>white2</colordiffuse>
-                                <visible>[Container.Content(tvshows) | Container.Content(episodes)]</visible>
-                            </control>							
+                                <height>67</height>	
+								<visible>[Container.Content(tvshows) | Container.Content(episodes)]</visible>							
+								<control type="image" id="9110">
+									<top>5</top>
+									<aspectratio align="center">keep</aspectratio>
+									<texture>$VAR[ColorFlagsRatingextended]$VAR[RatingFlagVar,,.png]</texture>
+									<colordiffuse>white2</colordiffuse>
+								</control>	
+								<control type="image">
+									<top>5</top>
+									<aspectratio align="center">keep</aspectratio>
+									<texture>$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
+									<colordiffuse>white2</colordiffuse>
+									<visible>IsEmpty(Control.GetLabel(9110))</visible>
+								</control>
+							</control>															
                             <control type="image">
                                 <height>79</height>
                                 <include>Furniture_FlagUpright</include>
