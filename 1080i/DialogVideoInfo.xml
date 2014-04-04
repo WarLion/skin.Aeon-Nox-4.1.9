@@ -280,7 +280,7 @@
 									<top>5</top>							
 									<width>285</width>
 									<height>67</height>	
-									<visible>[Container.Content(movies) | Container.Content(MusicVideos)] + Skin.HasSetting(ExtendedRatingVideoinfo)</visible>						
+									<visible>[Container.Content(movies) | Container.Content(MusicVideos)] + Skin.HasSetting(ExtendedRatingVideoinfo) + !Skin.HasSetting(DisableRatingColorFlag)</visible>						
 								<control type="image" id="9108">
 									<aspectratio align="center">keep</aspectratio>
 									<texture>$VAR[ColorFlagsRatingextended]$VAR[RatingFlagVar,,.png]</texture>
@@ -297,7 +297,7 @@
 									<top>5</top>
 									<width>135</width>
 									<height>67</height>	
-									<visible>[Container.Content(movies) | Container.Content(MusicVideos)] + !Skin.HasSetting(ExtendedRatingVideoinfo)</visible>								
+									<visible>[Container.Content(movies) | Container.Content(MusicVideos)] + !Skin.HasSetting(ExtendedRatingVideoinfo) + !Skin.HasSetting(DisableRatingColorFlag)</visible>								
 								<control type="image" id="9109">
 									<aspectratio align="center">keep</aspectratio>
 									<texture>$VAR[ColorFlagsRatingextended]$VAR[RatingFlagVar,,.png]</texture>
@@ -313,7 +313,7 @@
 							<control type="group">
                                 <width>135</width>
                                 <height>67</height>	
-								<visible>[Container.Content(tvshows) | Container.Content(episodes)]</visible>							
+								<visible>[Container.Content(tvshows) | Container.Content(episodes)] + !Skin.HasSetting(DisableRatingColorFlag)</visible>							
 								<control type="image" id="9110">
 									<top>5</top>
 									<aspectratio align="center">keep</aspectratio>
@@ -331,7 +331,7 @@
                             <control type="image">
                                 <height>79</height>
                                 <include>Furniture_FlagUpright</include>
-                                <visible>Container.Content(movies) | Container.Content(MusicVideos) | Container.Content(tvshows) | Container.Content(episodes)</visible>
+                                <visible>[Container.Content(movies) | Container.Content(MusicVideos) | Container.Content(tvshows) | Container.Content(episodes)] + !Skin.HasSetting(DisableRatingColorFlag)</visible>
                             </control>
                             <control type="group">
                                 <width>155</width>
