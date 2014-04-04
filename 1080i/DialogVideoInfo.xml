@@ -1501,9 +1501,12 @@
                             <onclick>SetProperty(Position,59)</onclick>
                             <onclick>SetFocus(599)</onclick>
                         </item>
+						<!-- Start ShadowTek 150 actors code -->
+						<include contitional="Skin.HasSetting(ExtraActorList)">ShadowTek_ActorsMod</include>
+						<!-- End ShadowTek 150 actors code -->
                     </content>
                 </control>
- <control type="panel" id="601">
+ 				<control type="panel" id="601">
                         <left>876</left>
                         <top>370</top>
                         <width>820</width>
