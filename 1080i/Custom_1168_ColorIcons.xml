@@ -52,11 +52,12 @@
                 <left>325</left>
                 <top>660</top>
                 <onright>600</onright>
+				<width>324</width>
                 <height>500</height>
                 <onup>500</onup>
                 <ondown>500</ondown>				
                  <scrolltime tween="sine">300</scrolltime>
-				 <itemlayout height="60" width="600">
+				 <itemlayout height="60" width="324">
                     <control type="label">
 						<width>400</width>
 						<height>60</height>
@@ -67,7 +68,7 @@
 						<textcolor>grey2</textcolor>
                     </control>
                 </itemlayout>
-                <focusedlayout height="60" width="600">
+                <focusedlayout height="60" width="324">
                     <control type="image">
                         <width>324</width>
                         <height>60</height>
@@ -553,7 +554,7 @@
 						<aspectratio>keep</aspectratio>
 						<texture>$VAR[ColorFlagsRating]rating/MPAA_NC-17_Certificate_US.png</texture>
 						<colordiffuse>white2</colordiffuse>
-					</control>		
+					</control>								
 					<control type="image">
 						<top>5</top>
 						<width>96</width>
