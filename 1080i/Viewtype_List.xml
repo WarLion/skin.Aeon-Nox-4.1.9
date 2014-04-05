@@ -5,7 +5,7 @@
             <left>1304</left>
             <top>195</top>
             <visible>!IsEmpty(ListItem.Artist)</visible>
-            <visible>[Container.Content(songs) + !Skin.HasSetting(cdartfliplist)] | [Container.Content(albums) + !Skin.HasSetting(albumcdartfliplist)]</visible>
+            <visible>[Container.Content(songs) + !Skin.HasSetting(cdartfliplist)]</visible>
             <animation effect="slide" time="560" start="0,225" end="0,0" tween="cubic">VisibleChange</animation>
             <animation effect="slide" time="560" start="0,225" end="0,0" tween="cubic">WindowOpen</animation>
             <animation effect="slide" time="240" end="0,225" tween="cubic">WindowClose</animation>

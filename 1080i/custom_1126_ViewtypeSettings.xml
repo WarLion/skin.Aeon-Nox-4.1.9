@@ -402,14 +402,7 @@
                     <include>Objects_MediaMenuButtonAlt2</include>
                     <onclick>Skin.ToggleSetting(cdartfliplist)</onclick>
                     <selected>!Skin.HasSetting(cdartfliplist)</selected>
-                    <visible>[[Window.IsActive(musiclibrary) + Container.Content(songs)] | Window.IsActive(musicplaylist)] + [Stringcompare(Window(home).Property(actualViewtype),List) | Stringcompare(Window(home).Property(actualViewtype),TriPanelSquare)]</visible>
-                </control>
-                <control type="radiobutton" id="1684">
-                    <label>$LOCALIZE[31377]</label>
-                    <include>Objects_MediaMenuButtonAlt2</include>
-                    <onclick>Skin.ToggleSetting(albumcdartfliplist)</onclick>
-                    <selected>!Skin.HasSetting(albumcdartfliplist)</selected>
-                    <visible>[Stringcompare(Window(home).Property(actualViewtype),List) | Stringcompare(Window(home).Property(actualViewtype),TriPanelSquare)] + Container.Content(albums)</visible>
+                    <visible>[[Window.IsActive(musiclibrary) + Container.Content(songs)] | Window.IsActive(musicplaylist)] + [[Stringcompare(Window(home).Property(actualViewtype),List) | Stringcompare(Window(home).Property(actualViewtype),TriPanelSquare)]</visible>
                 </control>
                 <control type="radiobutton" id="1658">
                     <label>$LOCALIZE[31168]</label>

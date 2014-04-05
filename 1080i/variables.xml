@@ -524,7 +524,8 @@
         <value>$INFO[ListItem.Label]</value>
     </variable>
     <variable name="DialogVideoInfoFanartVar">
-        <value condition="!IsEmpty(ListItem.Art(season.fanart))">$INFO[ListItem.Art(season.fanart)]</value>
+        <value condition="!IsEmpty(ListItem.Art(season.fanart)) + Container.Content(seasons)">$INFO[ListItem.Art(season.fanart)]</value>
+		<value condition="Container.Content(tvshows)">$INFO[ListItem.Art(fanart)]</value>
         <value>$INFO[ListItem.Art(fanart)]</value>
     </variable>
     <variable name="DialogVideoInfoButtonLabelVar">
@@ -2017,14 +2018,14 @@
     </variable>
     <!-- Global Search -->
     <variable name="GlobalSearchFanartVar">
-        <value condition="Control.HasFocus(111)">$INFO[Container(111).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(121)">$INFO[Container(121).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(131)">$INFO[Container(131).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(141)">$INFO[Container(141).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(151)">$INFO[Container(151).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(161)">$INFO[Container(161).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(171)">$INFO[Container(171).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(181)">$INFO[Container(181).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(111)">$INFO[Container(111).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(121)">$INFO[Container(121).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(131)">$INFO[Container(131).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(141)">$INFO[Container(141).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(151)">$INFO[Container(151).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(161)">$INFO[Container(161).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(171)">$INFO[Container(171).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(181)">$INFO[Container(181).ListItem.Property(Fanart)]</value>
     </variable>
     <!-- TriPanel -->
     <variable name="TriPanelDetail1Var">

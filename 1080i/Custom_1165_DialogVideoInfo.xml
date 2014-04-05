@@ -72,12 +72,12 @@
 				<selected>Skin.HasSetting(Extra.Disable)</selected>
 				<visible>system.hasaddon(script.cinema.experience) | System.HasAddon(script.videoextras) | system.hasaddon(script.tvtunes)</visible>
 			</control>	
-			<control type="radiobutton" id="112">
+<!--			<control type="radiobutton" id="112">
 				<label>Add up to 150 Actors</label>
 				<include>Objects_CommonSettingsButton</include>
 				<onclick>Skin.ToggleSetting(ExtraActorList)</onclick>
 				<selected>Skin.HasSetting(ExtraActorList)</selected>
-			</control>					
+			</control>-->					
 			 <control type="button" id="113">
 				<label>Customize</label>
 				<include>Objects_CommonSettingsButton</include>

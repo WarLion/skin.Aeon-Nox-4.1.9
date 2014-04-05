@@ -30,7 +30,6 @@
                 <height>1080</height>
                 <aspectratio align="center">scale</aspectratio>
                 <texture background="true">$VAR[DialogVideoInfoFanartVar]</texture>
-				<animation effect="rotatey" center="1324" end="180"  time="0" condition="Skin.HasSetting(VideoInfoInverse)">Conditional</animation>
             </control>
             <control type="image">
                 <left>729</left>
@@ -590,8 +589,6 @@
                         <texture>$VAR[Colortdefaulticons]DefaultActor.png</texture>
                     </control>
                     <control type="group">
-                        <!--                         <visible>!ControlGroup(6000).HasFocus</visible>
- -->
                         <control type="grouplist">
                             <orientation>vertical</orientation>
                             <left>4</left>
@@ -1501,9 +1498,9 @@
                             <onclick>SetProperty(Position,59)</onclick>
                             <onclick>SetFocus(599)</onclick>
                         </item>
-						<!-- Start ShadowTek 150 actors code -->
+						<!-- Start ShadowTek 150 actors code
 						<include contitional="Skin.HasSetting(ExtraActorList)">ShadowTek_ActorsMod</include>
-						<!-- End ShadowTek 150 actors code -->
+					 End ShadowTek 150 actors code -->
                     </content>
                 </control>
  				<control type="panel" id="601">

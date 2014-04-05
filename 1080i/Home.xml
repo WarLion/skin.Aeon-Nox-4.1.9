@@ -466,7 +466,7 @@
 							<righttexture border="1"></righttexture>	
 							<colordiffuse>$VAR[HomeMenuTextFocusVar]</colordiffuse>					
 							<visible>[Skin.HasSetting(ProgressMainMenu) + !Skin.HasSetting(smallermainmenu)]</visible>
-							<animation effect="fade" end="100" time="840">Visible</animation>				
+							<animation effect="fade" end="50" time="600" condition="Player.HasMedia | Player.HasAudio">Conditional</animation>				
 						</control>
 						<control type="progress">
 							<left>-245</left>
@@ -480,7 +480,7 @@
 							<righttexture border="1"></righttexture>	
 							<colordiffuse>$VAR[HomeMenuTextFocusVar]</colordiffuse>					
 							<visible>[Skin.HasSetting(ProgressMainMenu) + Skin.HasSetting(smallermainmenu)]</visible>
-							<animation effect="fade" end="100" time="840">Visible</animation>				
+							<animation effect="fade" end="50" time="600" condition="Player.HasMedia | Player.HasAudio">Conditional</animation>				
 						</control>
 					</control>						
                     <control type="image">

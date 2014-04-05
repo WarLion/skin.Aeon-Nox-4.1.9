@@ -182,7 +182,7 @@
                             </item>
                         </content>
                     </control>
-                    <control type="group" id="200">
+                    <control type="group">
                         <control type="group" id="119">
                             <left>498</left>
                             <top>100</top>
