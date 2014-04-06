@@ -98,14 +98,14 @@
                 </focusedlayout>
                 <content>
                     <item id="1">
-                        <label>Original</label>
+                        <label>$LOCALIZE[32995]</label>
                         <icon>views/original.png</icon>
                         <thumb>views/original_focus.png</thumb>
 						<onclick>Skin.Reset(VideoInfoInverse)</onclick>									
 						<visible>Container.Content(movies) | Container.Content(MusicVideos)</visible>
                     </item>
                     <item id="2">
-                        <label>Invert</label>
+                        <label>$LOCALIZE[32996]</label>
                         <icon>views/invert.png</icon>
                         <thumb>views/invert_focus.png</thumb>
                         <onclick>Skin.SetBool(VideoInfoInverse)</onclick>
@@ -114,14 +114,14 @@
 						<visible>Container.Content(movies) | Container.Content(MusicVideos)</visible>
                     </item>	
                     <item id="1">
-                        <label>Original</label>
+                        <label>$LOCALIZE[32995]</label>
                         <icon>views/originalTV.png</icon>
                         <thumb>views/originalTV_focus.png</thumb>
 						<onclick>Skin.Reset(VideoInfoInverse)</onclick>	
 						<visible>Container.Content(tvshows) | Container.Content(episodes)</visible>								
                     </item>
                     <item id="2">
-                        <label>Invert</label>
+                        <label>$LOCALIZE[32996]</label>
                         <icon>views/invertTV.png</icon>
                         <thumb>views/invertTV_focus.png</thumb>
                         <onclick>Skin.SetBool(VideoInfoInverse)</onclick>
@@ -155,14 +155,14 @@
                 <onright>450</onright>
                 <height>1080</height>
 				<control type="radiobutton" id="1199">
-					<label>Default Icons</label>
+					<label>$LOCALIZE[32998]</label>
 					<include>Objects_MediaMenuButtonAround</include>
 					<onclick>Skin.ToggleSetting(Colortdefaulticons)</onclick>
 					<selected>Skin.HasSetting(Colortdefaulticons)</selected>
-					<visible>Container.Content(tvshows)</visible>
+					<visible>Container.Content(tvshows) | Container.Content(movies)</visible>
 				</control> 					
 				 <control type="button" id="1200">
-					<label>Mpaa Flags</label>
+					<label>$LOCALIZE[32999]</label>
 					<label2>[COLOR $VAR[FontColorVar]]$VAR[RatingLabelVar][/COLOR]</label2>
 					<include>Objects_MediaMenuButtonAround</include>
                     <onclick condition="Skin.HasSetting(RatingColorFlag)">Skin.Reset(RatingColorFlag)</onclick>
@@ -176,28 +176,28 @@
 					<visible>!IsEmpty(Skin.String(ColorFlagsPath)) + !IsEmpty(Skin.String(ReloadedFlagsPath))</visible>			
 				</control>  
                 <control type="radiobutton" id="1301">
-                    <label>Color Mpaa Flags</label>
+                    <label>$LOCALIZE[33000]</label>
                     <include>Objects_MediaMenuButtonAround</include>
                     <onclick>Skin.ToggleSetting(RatingColorFlag)</onclick>
                     <selected>Skin.HasSetting(RatingColorFlag)</selected>
 					<visible>Container.Content(movies) + [!IsEmpty(Skin.String(ColorFlagsPath)) + IsEmpty(Skin.String(ReloadedFlagsPath))]</visible>				
 				</control> 	
                 <control type="radiobutton" id="1302">
-                    <label>Reloaded Mpaa Flags</label>
+                    <label>$LOCALIZE[33001]</label>
                     <include>Objects_MediaMenuButtonAround</include>
                     <onclick>Skin.ToggleSetting(RatingColorFlagreloaded)</onclick>
                     <selected>Skin.HasSetting(RatingColorFlagreloaded)</selected>
 					<visible>Container.Content(movies) + [IsEmpty(Skin.String(ColorFlagsPath)) + !IsEmpty(Skin.String(ReloadedFlagsPath))]</visible>				
 				</control> 								
                 <control type="radiobutton" id="1201">
-                    <label>TvGuide Icons</label>
+                    <label>$LOCALIZE[33002]</label>
                     <include>Objects_MediaMenuButtonAround</include>
                     <onclick>Skin.ToggleSetting(ColortvguideFlags)</onclick>
                     <selected>Skin.HasSetting(ColortvguideFlags)</selected>
 					<visible>Container.Content(tvshows)</visible>				
 				</control>  
 				 <control type="button" id="1202">
-					<label>Mpaa Flags</label>
+					<label>$LOCALIZE[32999]</label>
 					<label2>[COLOR $VAR[FontColorVar]]$VAR[RatingLabelVarTvshows][/COLOR]</label2>
 					<include>Objects_MediaMenuButtonAround</include>
                     <onclick condition="Skin.HasSetting(RatingColorFlagreloaded)">Skin.Reset(RatingColorFlagreloaded)</onclick>	
@@ -209,21 +209,21 @@
 					<visible>!IsEmpty(Skin.String(ColorFlagsPath)) + !IsEmpty(Skin.String(ReloadedFlagsPath))</visible>				
 				</control> 
                 <control type="radiobutton" id="1305">
-                    <label>COlor Mpaa Flags</label>
+                    <label>$LOCALIZE[33000]</label>
                     <include>Objects_MediaMenuButtonAround</include>
                     <onclick>Skin.ToggleSetting(RatingColorFlag)</onclick>
                     <selected>Skin.HasSetting(RatingColorFlag)</selected>
 					<visible>Container.Content(tvshows) + [!IsEmpty(Skin.String(ColorFlagsPath)) + IsEmpty(Skin.String(ReloadedFlagsPath))]</visible>				
 				</control> 	
                 <control type="radiobutton" id="1306">
-                    <label>Reloaded Mpaa Flags</label>
+                    <label>$LOCALIZE[33001]</label>
                     <include>Objects_MediaMenuButtonAround</include>
                     <onclick>Skin.ToggleSetting(RatingColorFlagreloaded)</onclick>
                     <selected>Skin.HasSetting(RatingColorFlagreloaded)</selected>
 					<visible>Container.Content(tvshows) + [IsEmpty(Skin.String(ColorFlagsPath)) + !IsEmpty(Skin.String(ReloadedFlagsPath))]</visible>				
 				</control> 					 						
                 <control type="radiobutton" id="1203">
-                    <label>Extended Rating</label>
+                    <label>$LOCALIZE[33003]</label>
                     <include>Objects_MediaMenuButtonAround</include>
                     <onclick>Skin.ToggleSetting(ExtendedRatingVideoinfo)</onclick>
                     <selected>Skin.HasSetting(ExtendedRatingVideoinfo)</selected>
@@ -231,7 +231,7 @@
 					<visible>Container.Content(Movies)</visible>
                 </control>	
 				<control type="button" id="1204">
-					<label>Customize Icons</label>
+					<label>$LOCALIZE[32997]</label>
 					<include>Objects_MediaMenuButtonAround</include>
 					<onclick>ActivateWindow(1168)</onclick>						
 				</control>											

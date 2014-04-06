@@ -2160,8 +2160,8 @@ msgid "Enabled"
 msgstr "Enabled"
 
 msgctxt "#32973"
-msgid "Disable VideoExtras"
-msgstr "Disable VideoExtras"
+msgid "Disable Video Extras"
+msgstr "Disable Video Extras"
 
 msgctxt "#32974"
 msgid "Video Info Options"
@@ -2210,3 +2210,131 @@ msgstr "Enable Bottom Menu Tab"
 msgctxt "#32993"
 msgid "Enable Status Icon"
 msgstr "Enable Status Icon"
+
+msgctxt "#32994"
+msgid "Video Extras Flag"
+msgstr "Video Extras Flag"
+
+msgctxt "#32995"
+msgid "Original"
+msgstr "Original"
+
+msgctxt "#32996"
+msgid "Inverted"
+msgstr "Inverted"
+
+msgctxt "#32997"
+msgid "Customize Icons"
+msgstr "Customize Icons"
+
+msgctxt "#32998"
+msgid "Default Icons"
+msgstr "Default Icons"
+
+msgctxt "#32999"
+msgid "Mpaa Flags"
+msgstr "Mpaa Flags"
+
+msgctxt "#33000"
+msgid "Colored Mpaa Flags"
+msgstr "Colored Mpaa Flags"
+
+msgctxt "#33001"
+msgid "Reloaded Mpaa Flags"
+msgstr "Reloaded Mpaa Flags"
+
+msgctxt "#33002"
+msgid "TvGuide Icons"
+msgstr "TvGuide Icons"
+
+msgctxt "#33003"
+msgid "Extended Rating"
+msgstr "Extended Rating"
+
+msgctxt "#33004"
+msgid "Reloaded"
+msgstr "Reloaded"
+
+msgctxt "#33005"
+msgid "Others"
+msgstr "Others"
+
+msgctxt "#33006"
+msgid "Disable Flags"
+msgstr "Disable Flags"
+
+msgctxt "#33007"
+msgid "Flags Paths"
+msgstr "Flags Paths"
+
+msgctxt "#33008"
+msgid "All Flags"
+msgstr "All Flags"
+
+msgctxt "#33009"
+msgid "Aspect Ratio Flags"
+msgstr "Aspect Ratio Flags"
+
+msgctxt "#33010"
+msgid "Audio Flags"
+msgstr "Audio Flags"
+
+msgctxt "#33011"
+msgid "Resolution Flags"
+msgstr "Resolution Flags"
+
+msgctxt "#33012"
+msgid "Source Flags"
+msgstr "Source Flags"
+
+msgctxt "#33013"
+msgid "Colored icons"
+msgstr "Colored icons"
+
+msgctxt "#33014"
+msgid "Colored TvGuide"
+msgstr "Colored TvGuide"
+
+msgctxt "#33015"
+msgid "Colored Others"
+msgstr "Colored Others"
+
+msgctxt "#33016"
+msgid "Set to the [B]Flag[/B] Folder"
+msgstr "Set to the [B]Flag[/B] Folder"
+
+msgctxt "#33018"
+msgid "Set to the [B]Studios[/B] Folder"
+msgstr "Set to the [B]Studios[/B] Folder"
+
+msgctxt "#33019"
+msgid "Set to the [B]Language[/B] Folder"
+msgstr "Set to the [B]Language[/B] Folder"
+
+msgctxt "#33020"
+msgid "Set Path for Colored Flags"
+msgstr "Set Path for Colored Flags"
+
+msgctxt "#33021"
+msgid "Set Path for Reloaded Flags"
+msgstr "Set Path for Reloaded Flags"
+
+msgctxt "#33022"
+msgid "Set Path for Studios Flags"
+msgstr "Set Path for Studios Flags"
+
+msgctxt "#33023"
+msgid "Set Path for Language Flags"
+msgstr "Set Path for Language Flags"
+
+msgctxt "#33024"
+msgid "Clear Paths"
+msgstr "Clear Paths"
+
+msgctxt "#33025"
+msgid "Colored Studios"
+msgstr "Colored Studios"
+
+msgctxt "#33026"
+msgid "Round Language"
+msgstr "Round Language"

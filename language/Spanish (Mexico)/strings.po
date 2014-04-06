@@ -3,13 +3,14 @@
 # Addon id: skin.aeon.nox
 # Addon Provider: Big_Noid|phil65
 # Translators:
+# Translators:
 # WarLion <warlion1@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Aeon Nox 4.1.9 for Gotham\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2014-02-21 09:13+0000\n"
+"PO-Revision-Date: 2014-04-06 18:23+0000\n"
 "Last-Translator: WarLion <warlion1@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/aeon-nox-419-for-gotham/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -1767,7 +1768,6 @@ msgctxt "#31837"
 msgid "Music Party Mode"
 msgstr "Música Modo Fiesta"
 
-
 msgctxt "#31838"
 msgid "Video Party Mode"
 msgstr "Video Modo Fiesta"
@@ -2161,8 +2161,8 @@ msgid "Enabled"
 msgstr "Habilitar"
 
 msgctxt "#32973"
-msgid "Disable VideoExtras, it will Enable VideoLanguage"
-msgstr "Deshabilitar VideoExtras, Habilitara VideoLanguage"
+msgid "Disable Video Extras"
+msgstr "Deshabilitar Extras de Video"
 
 msgctxt "#32974"
 msgid "Video Info Options"
@@ -2184,46 +2184,158 @@ msgctxt "#32978"
 msgid "TBD"
 msgstr "TBD"
 
-msgctxt "#32979"
-msgid "In Development"
-msgstr "En desarrollo"
-
 msgctxt "#32980"
-msgid "New Serie"
-msgstr "Nueva Serie"
-
-msgctxt "#32981"
-msgid "Never Aired"
-msgstr "No televisada"
+msgid "New Series"
+msgstr "Serie Nueva"
 
 msgctxt "#32982"
 msgid "Final Season"
 msgstr "Final de Temporada"
 
-msgctxt "#32983"
-msgid "On Hiatus"
-msgstr "En Hiatus"
-
-msgctxt "#32984"
-msgid "Pilot Ordered"
-msgstr "Piloto ordenado"
-
-msgctxt "#32985"
-msgid "Pilot Rejected"
-msgstr "Piloto rechazado"
-
-msgctxt "#32986"
-msgid "Cancelled"
-msgstr "Cancelado"
-
-msgctxt "#32987"
-msgid "Ended"
-msgstr "Finalizado"
-
-msgctxt "#32988"
-msgid "Airing"
-msgstr "En el Aire"
-
 msgctxt "#32989"
 msgid "Unknown"
 msgstr "Desconocido"
+
+msgctxt "#32990"
+msgid "Weather Condition instead of Image"
+msgstr "Condicion de clima en lugar de imagen"
+
+msgctxt "#32991"
+msgid "Disable Weather on Visualisation"
+msgstr "Deshabilitar Clima en visualizacion"
+
+msgctxt "#32992"
+msgid "Enable Bottom Menu Tab"
+msgstr "Habilitar Tabulador del Menu inferior"
+
+msgctxt "#32993"
+msgid "Enable Status Icon"
+msgstr "Habilitar Icono de Estado"
+
+msgctxt "#32994"
+msgid "Video Extras Flag"
+msgstr "Bandera para Extras de Video"
+
+msgctxt "#32995"
+msgid "Original"
+msgstr "Original"
+
+msgctxt "#32996"
+msgid "Inverted"
+msgstr "Invertido"
+
+msgctxt "#32997"
+msgid "Customize Icons"
+msgstr "Personalizar Iconos"
+
+msgctxt "#32998"
+msgid "Default Icons"
+msgstr "Iconos"
+
+msgctxt "#32999"
+msgid "Mpaa Flags"
+msgstr "Banderas de Mpaa"
+
+msgctxt "#33000"
+msgid "Colored Mpaa Flags"
+msgstr "Banderas de Color para Mpaa"
+
+msgctxt "#33001"
+msgid "Reloaded Mpaa Flags"
+msgstr "Banderas Reloaded de Mpaa"
+
+msgctxt "#33002"
+msgid "TvGuide Icons"
+msgstr "Iconos de Guia de Tv"
+
+msgctxt "#33003"
+msgid "Extended Rating"
+msgstr "Clasificacion Extendida"
+
+msgctxt "#33004"
+msgid "Reloaded"
+msgstr "Reloaded"
+
+msgctxt "#33005"
+msgid "Others"
+msgstr "Otros"
+
+msgctxt "#33006"
+msgid "Disable Flags"
+msgstr "Deshabilitar Banderas"
+
+msgctxt "#33007"
+msgid "Flags Paths"
+msgstr "Rutas de Banderas"
+
+msgctxt "#33008"
+msgid "All Flags"
+msgstr "Todas las Banderas"
+
+msgctxt "#33009"
+msgid "Aspect Ratio Flags"
+msgstr "Banderas de Relación de aspecto"
+
+msgctxt "#33010"
+msgid "Audio Flags"
+msgstr "Banderas de Audio"
+
+msgctxt "#33011"
+msgid "Resolution Flags"
+msgstr "Banderas de Resolución"
+
+msgctxt "#33012"
+msgid "Source Flags"
+msgstr "Banderas de Tipo"
+
+msgctxt "#33013"
+msgid "Colored icons"
+msgstr "Iconos de Color"
+
+msgctxt "#33014"
+msgid "Colored TvGuide"
+msgstr "Color Guia de Tv"
+
+msgctxt "#33015"
+msgid "Colored Others"
+msgstr "Color Otros"
+
+msgctxt "#33016"
+msgid "Set to the [B]Flag[/B] Folder"
+msgstr "Apunta a la carpeta [B]Flags[/B]"
+
+msgctxt "#33018"
+msgid "Set to the [B]Studios[/B] Folder"
+msgstr "Apunta a la carpeta [B]Studios[/B]"
+
+msgctxt "#33019"
+msgid "Set to the [B]Language[/B] Folder"
+msgstr "Apunta a la carpeta [B]Language[/B]"
+
+msgctxt "#33020"
+msgid "Set Path for Colored Flags"
+msgstr "Ruta para Banderas de Color"
+
+msgctxt "#33021"
+msgid "Set Path for Reloaded Flags"
+msgstr "Ruta para Banderas Reloaded"
+
+msgctxt "#33022"
+msgid "Set Path for Studios Flags"
+msgstr "Ruta para Banderas de Estudios"
+
+msgctxt "#33023"
+msgid "Set Path for Language Flags"
+msgstr "Rata para Banderas de Idiomas"
+
+msgctxt "#33024"
+msgid "Clear Paths"
+msgstr "Limpiar Rutas"
+
+msgctxt "#33025"
+msgid "Colored Studios"
+msgstr "Estudios de Color"
+
+msgctxt "#33026"
+msgid "Round Language"
+msgstr "Lenguaje Redondo"

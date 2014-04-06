@@ -3,13 +3,14 @@
 # Addon id: skin.aeon.nox
 # Addon Provider: Big_Noid|phil65
 # Translators:
+# Translators:
 # WarLion <warlion1@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Aeon Nox 4.1.9 for Gotham\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2014-02-21 09:13+0000\n"
+"PO-Revision-Date: 2014-04-06 18:23+0000\n"
 "Last-Translator: WarLion <warlion1@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/aeon-nox-419-for-gotham/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -71,7 +72,9 @@ msgid "Timer"
 msgstr "Temporizador"
 
 msgctxt "#31016"
-msgid "[B]CONFIGURE TV SETTINGS[/B][CR][CR]Tune new channels · Configure the electronic guide · Record your favourite programs"
+msgid ""
+"[B]CONFIGURE TV SETTINGS[/B][CR][CR]Tune new channels · Configure the "
+"electronic guide · Record your favourite programs"
 msgstr "[B]CONFIGURAR TV[/B][CR][CR]Sintoniza nuevos canales · Configurar la guía electrónica · Grabe sus programas favoritos"
 
 msgctxt "#31017"
@@ -1011,43 +1014,66 @@ msgid "Ended"
 msgstr "Fin"
 
 msgctxt "#31400"
-msgid "[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin · Set language "and region · Change file listing options[CR]Set up a screensaver · Activate different themes and fontsets for the current skin"
+msgid ""
+"[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin · Set language "
+"and region · Change file listing options[CR]Set up a screensaver · Activate "
+"different themes and fontsets for the current skin"
 msgstr "[B]CONFIGURAR APARIENCIA[/B][CR][CR]Modificar el skin · Definir idioma y región · Cambiar opciones de listado de archivos[CR]Configurar un salvapantallas · Activar diferentas temas y fuentes para el skin actual"
 
 msgctxt "#31401"
-msgid "[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR]Manage your video library · Set video playback options · Change video listing options[CR]Set subtitle fonts"
+msgid ""
+"[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR]Manage your video library · Set video"
+" playback options · Change video listing options[CR]Set subtitle fonts"
 msgstr "[B]CONFIGURAR VIDEO[/B][CR][CR]Gestionar su biblioteca de video · Definir opciones de reproducción · Cambiar opciones de listado de Video[CR]Definir la fuente para Subtítulos"
 
 msgctxt "#31402"
-msgid "[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR]Manage your music library · Set music playback options · Change music listing options[CR]Setup song submission · Set karaoke options"
+msgid ""
+"[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR]Manage your music library · Set music"
+" playback options · Change music listing options[CR]Setup song submission · "
+"Set karaoke options"
 msgstr "[B]CONFIGURAR MUSICA[/B][CR][CR]Gestionar su biblioteca de Música · Definir opciones de reproducción · Cambiar opciones de listado de Música[CR]Configurar agregado de Canciones · Opciones de karaoke"
 
 msgctxt "#31403"
-msgid "[B]CONFIGURE PICTURE SETTINGS[/B][CR][CR]Set picture listing options · Configure slideshows"
+msgid ""
+"[B]CONFIGURE PICTURE SETTINGS[/B][CR][CR]Set picture listing options · "
+"Configure slideshows"
 msgstr "[B]CONFIGURAR IMÁGENES[/B][CR][CR]Definir opciones de listado de imágenes · Configurar presentaciones"
 
 msgctxt "#31404"
-msgid "[B]CONFIGURE WEATHER SETTINGS[/B][CR][CR]Choose a weather add-on · Set three cities to collect weather information"
+msgid ""
+"[B]CONFIGURE WEATHER SETTINGS[/B][CR][CR]Choose a weather add-on · Set three"
+" cities to collect weather information"
 msgstr "[B]CONFIGURAR EL CLIMA[/B][CR][CR]Elija un complemento de clima · Defina 3 ciudades para obtener información sobre el clima"
 
 msgctxt "#31405"
-msgid "[B]CONFIGURE SERVICE SETTINGS[/B][CR][CR]Setup control of XBMC via UPnP and HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
+msgid ""
+"[B]CONFIGURE SERVICE SETTINGS[/B][CR][CR]Setup control of XBMC via UPnP and "
+"HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
 msgstr "[B]CONFIGURAR LA RED[/B][CR][CR]Configurar el control de XBMC via UPnP y HTTP · Compartir archivos[CR]Definir opciones de acceso a internet"
 
 msgctxt "#31406"
-msgid "[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR]Setup and calibrate displays · Configure audio output · Setup remote controls[CR]Set power saving options · Enable debugging · Setup master lock"
+msgid ""
+"[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR]Setup and calibrate displays · "
+"Configure audio output · Setup remote controls[CR]Set power saving options ·"
+" Enable debugging · Setup master lock"
 msgstr "[B]CONFIGURAR SISTEMA[/B][CR][CR]Definir y calibrar pantallas · Configurar salida de audio · Configurar controles remotos[CR]Configurar opciones de ahorro de energía · Activar depuración · Configurar Bloqueo Maestro"
 
 msgctxt "#31407"
-msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Aeon Nox skin · Customize the home menu · Adjust the skin colors[CR]Change skin backgrounds"
+msgid ""
+"[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Aeon Nox skin · Customize "
+"the home menu · Adjust the skin colors[CR]Change skin backgrounds"
 msgstr "[B]CONFIGURAR PIEL[/B][CR][CR]Ajustes de piel Aeon Nox · Añada o elimine elementos del menú[CR]Cambiar fondos de piel"
 
 msgctxt "#31408"
-msgid "[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed Add-ons · Browse for and install Add-ons from xbmc.org[CR]Modify Add-on settings"
+msgid ""
+"[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed Add-ons · Browse for "
+"and install Add-ons from xbmc.org[CR]Modify Add-on settings"
 msgstr "[B]CONFIGURAR ADD-ONS[/B][CR][CR]Gestionar los Add-ons instalados · Explorar e instalar Add-ons de xbmc.org[CR]Modificar la configuración de los Add-ons"
 
 msgctxt "#31409"
-msgid "[B]MONITOR YOUR SYSTEM[/B][CR][CR]Check out your hardware · Monitor CPU "usage[CR]Check XBMC revision number"
+msgid ""
+"[B]MONITOR YOUR SYSTEM[/B][CR][CR]Check out your hardware · Monitor CPU "
+"usage[CR]Check XBMC revision number"
 msgstr "[B]CONTROLAR EL SISTEMA[/B][CR][CR]Comprobar su hardware · Comprobar consumo de CPU[CR]Compruebe la versión de XBMC"
 
 msgctxt "#31411"
@@ -1327,7 +1353,8 @@ msgid "Background Setup"
 msgstr "Configuración de Background"
 
 msgctxt "#31646"
-msgid "Do you want to download all available [CR]artwork without user interaction?"
+msgid ""
+"Do you want to download all available [CR]artwork without user interaction?"
 msgstr "¿Quieres descargar todos los artwork [CR]disponibles sin la intervención del usuario?"
 
 msgctxt "#31673"
@@ -1459,7 +1486,12 @@ msgid "First run help...."
 msgstr "Ayuda para la primera vez..."
 
 msgctxt "#31707"
-msgid "This tab signifies that there is a menu off to the side of this window that contains extra options for this section.  To access the menu, navigate to the arrow direction with your remote control or keyboard or place your mouse pointer over the tab. [CR][CR]Click \"Ok\" to close this dialog. It will "not appear again."
+msgid ""
+"This tab signifies that there is a menu off to the side of this window that "
+"contains extra options for this section.  To access the menu, navigate to "
+"the arrow direction with your remote control or keyboard or place your mouse"
+" pointer over the tab. [CR][CR]Click \"Ok\" to close this dialog. It will "
+"not appear again."
 msgstr "Esta pestaña significa que hay un menú de apagado al lado de esta ventana que contiene opciones adicionales para esta sección. Para acceder al menú, desplácese a la dirección de la flecha con el control remoto o con el teclado o coloque el puntero del ratón sobre la pestaña.[CR][CR]haga clic en \"Aceptar\" para cerrar este cuadro de diálogo. No volverá a aparecer."
 
 msgctxt "#31708"
@@ -1579,19 +1611,29 @@ msgid "[B]Fional88[/B] for creating the tutorial videos"
 msgstr "[B]Fional88[/B] por crear los videos tutoriales"
 
 msgctxt "#31738"
-msgid "[B]www.webdesignerdepot.com[/B] for permission to include the iconpack \"Reflection\""
+msgid ""
+"[B]www.webdesignerdepot.com[/B] for permission to include the iconpack "
+"\"Reflection\""
 msgstr "[B]www.webdesignerdepot.com[/B] por darme permiso para incluir el iconPack \"Reflection\""
 
 msgctxt "#31739"
-msgid "[B]DJH_ [/B]for creating Aeon, [B]Jezz_X [/B]for creating Confluence, [B]black[/B] for creating Xperience1080"
+msgid ""
+"[B]DJH_ [/B]for creating Aeon, [B]Jezz_X [/B]for creating Confluence, "
+"[B]black[/B] for creating Xperience1080"
 msgstr "[B]DJH_[/B] por la creación de Aeon, [B]Jezz_X[/B] por la creación de Confluence, [B]black[/B] por crear Xperience1080"
 
 msgctxt "#31740"
-msgid "Translators: [B]CutSickAss[/B], [B]epoke[/B], [B]frodo19[/B], "[B]mindweaver[/B], [B]Passer[/B], [B]PatOso[/B], [B]peppe_sr[/B], [B]Rififi77[/B][CR][B]Roman_V_M[/B], [B]lijack[/B]"
+msgid ""
+"Translators: [B]CutSickAss[/B], [B]epoke[/B], [B]frodo19[/B], "
+"[B]mindweaver[/B], [B]Passer[/B], [B]PatOso[/B], [B]peppe_sr[/B], "
+"[B]Rififi77[/B][CR][B]Roman_V_M[/B], [B]lijack[/B]"
 msgstr "Traductores: [B]CutSickAss[/B], [B]epoke[/B], [B]frodo19[/B], [B]mindweaver[/B], [B]Passer[/B], [B]PatOso[/B], [B]peppe_sr[/B], [B]Rififi77[/B][CR][B]Roman_V_M[/B], [B]lijack[/B]"
 
 msgctxt "#31741"
-msgid "[CR]Also to: [B]Martijn[/B], [B]Deano316[/B], [B]defluo[/B], [B]fmronan[/B], [B]thrak76[/B], [B]xhaggi[/B] and [CR]all other people who contributed to this project"
+msgid ""
+"[CR]Also to: [B]Martijn[/B], [B]Deano316[/B], [B]defluo[/B], [B]fmronan[/B],"
+" [B]thrak76[/B], [B]xhaggi[/B] and [CR]all other people who contributed to "
+"this project"
 msgstr "[CR]También a: [B]Martijn[/B], [B]Deano316[/B], [B]defluo[/B], [B]fmronan[/B], [B]thrak76[/B], [B]xhaggi[/B] y [CR]todas las demás personas que han contribuido a este proyecto"
 
 msgctxt "#31800"
@@ -1725,7 +1767,6 @@ msgstr "Abrir Bandeja"
 msgctxt "#31837"
 msgid "Music Party Mode"
 msgstr "Música Modo Fiesta"
-
 
 msgctxt "#31838"
 msgid "Video Party Mode"
@@ -2120,8 +2161,8 @@ msgid "Enabled"
 msgstr "Habilitar"
 
 msgctxt "#32973"
-msgid "Disable VideoExtras, it will Enable VideoLanguage"
-msgstr "Deshabilitar VideoExtras, Habilitara VideoLanguage"
+msgid "Disable Video Extras"
+msgstr "Deshabilitar Extras de Video"
 
 msgctxt "#32974"
 msgid "Video Info Options"
@@ -2143,46 +2184,158 @@ msgctxt "#32978"
 msgid "TBD"
 msgstr "TBD"
 
-msgctxt "#32979"
-msgid "In Development"
-msgstr "En desarrollo"
-
 msgctxt "#32980"
-msgid "New Serie"
-msgstr "Nueva Serie"
-
-msgctxt "#32981"
-msgid "Never Aired"
-msgstr "No televisada"
+msgid "New Series"
+msgstr "Serie Nueva"
 
 msgctxt "#32982"
 msgid "Final Season"
 msgstr "Final de Temporada"
 
-msgctxt "#32983"
-msgid "On Hiatus"
-msgstr "En Hiatus"
-
-msgctxt "#32984"
-msgid "Pilot Ordered"
-msgstr "Piloto ordenado"
-
-msgctxt "#32985"
-msgid "Pilot Rejected"
-msgstr "Piloto rechazado"
-
-msgctxt "#32986"
-msgid "Cancelled"
-msgstr "Cancelado"
-
-msgctxt "#32987"
-msgid "Ended"
-msgstr "Finalizado"
-
-msgctxt "#32988"
-msgid "Airing"
-msgstr "En el Aire"
-
 msgctxt "#32989"
 msgid "Unknown"
 msgstr "Desconocido"
+
+msgctxt "#32990"
+msgid "Weather Condition instead of Image"
+msgstr "Condicion de clima en lugar de imagen"
+
+msgctxt "#32991"
+msgid "Disable Weather on Visualisation"
+msgstr "Deshabilitar Clima en visualizacion"
+
+msgctxt "#32992"
+msgid "Enable Bottom Menu Tab"
+msgstr "Habilitar Tabulador del Menu inferior"
+
+msgctxt "#32993"
+msgid "Enable Status Icon"
+msgstr "Habilitar Icono de Estado"
+
+msgctxt "#32994"
+msgid "Video Extras Flag"
+msgstr "Bandera para Extras de Video"
+
+msgctxt "#32995"
+msgid "Original"
+msgstr "Original"
+
+msgctxt "#32996"
+msgid "Inverted"
+msgstr "Invertido"
+
+msgctxt "#32997"
+msgid "Customize Icons"
+msgstr "Personalizar Iconos"
+
+msgctxt "#32998"
+msgid "Default Icons"
+msgstr "Iconos"
+
+msgctxt "#32999"
+msgid "Mpaa Flags"
+msgstr "Banderas de Mpaa"
+
+msgctxt "#33000"
+msgid "Colored Mpaa Flags"
+msgstr "Banderas de Color para Mpaa"
+
+msgctxt "#33001"
+msgid "Reloaded Mpaa Flags"
+msgstr "Banderas Reloaded de Mpaa"
+
+msgctxt "#33002"
+msgid "TvGuide Icons"
+msgstr "Iconos de Guia de Tv"
+
+msgctxt "#33003"
+msgid "Extended Rating"
+msgstr "Clasificacion Extendida"
+
+msgctxt "#33004"
+msgid "Reloaded"
+msgstr "Reloaded"
+
+msgctxt "#33005"
+msgid "Others"
+msgstr "Otros"
+
+msgctxt "#33006"
+msgid "Disable Flags"
+msgstr "Deshabilitar Banderas"
+
+msgctxt "#33007"
+msgid "Flags Paths"
+msgstr "Rutas de Banderas"
+
+msgctxt "#33008"
+msgid "All Flags"
+msgstr "Todas las Banderas"
+
+msgctxt "#33009"
+msgid "Aspect Ratio Flags"
+msgstr "Banderas de Relación de aspecto"
+
+msgctxt "#33010"
+msgid "Audio Flags"
+msgstr "Banderas de Audio"
+
+msgctxt "#33011"
+msgid "Resolution Flags"
+msgstr "Banderas de Resolución"
+
+msgctxt "#33012"
+msgid "Source Flags"
+msgstr "Banderas de Tipo"
+
+msgctxt "#33013"
+msgid "Colored icons"
+msgstr "Iconos de Color"
+
+msgctxt "#33014"
+msgid "Colored TvGuide"
+msgstr "Color Guia de Tv"
+
+msgctxt "#33015"
+msgid "Colored Others"
+msgstr "Color Otros"
+
+msgctxt "#33016"
+msgid "Set to the [B]Flag[/B] Folder"
+msgstr "Apunta a la carpeta [B]Flags[/B]"
+
+msgctxt "#33018"
+msgid "Set to the [B]Studios[/B] Folder"
+msgstr "Apunta a la carpeta [B]Studios[/B]"
+
+msgctxt "#33019"
+msgid "Set to the [B]Language[/B] Folder"
+msgstr "Apunta a la carpeta [B]Language[/B]"
+
+msgctxt "#33020"
+msgid "Set Path for Colored Flags"
+msgstr "Ruta para Banderas de Color"
+
+msgctxt "#33021"
+msgid "Set Path for Reloaded Flags"
+msgstr "Ruta para Banderas Reloaded"
+
+msgctxt "#33022"
+msgid "Set Path for Studios Flags"
+msgstr "Ruta para Banderas de Estudios"
+
+msgctxt "#33023"
+msgid "Set Path for Language Flags"
+msgstr "Rata para Banderas de Idiomas"
+
+msgctxt "#33024"
+msgid "Clear Paths"
+msgstr "Limpiar Rutas"
+
+msgctxt "#33025"
+msgid "Colored Studios"
+msgstr "Estudios de Color"
+
+msgctxt "#33026"
+msgid "Round Language"
+msgstr "Lenguaje Redondo"

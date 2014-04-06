@@ -79,7 +79,7 @@
 				<selected>Skin.HasSetting(ExtraActorList)</selected>
 			</control>-->					
 			 <control type="button" id="113">
-				<label>Customize</label>
+				<label>$LOCALIZE[31115]</label>
 				<include>Objects_CommonSettingsButton</include>
 				<onclick>Dialog.Close(1165)</onclick>
 				<onclick>ActivateWindow(1169)</onclick>
