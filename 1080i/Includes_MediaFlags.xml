@@ -267,7 +267,7 @@
                             <animation effect="fade" time="200">VisibleChange</animation>
                         </control>
                         <control type="image">
-                            <texture>flags/studios/default-studio.png</texture>
+                            <texture>$VAR[ColorFlagsStudio]default-studio.png</texture>
                             <include>AudioFlagsVars</include>
                             <visible>IsEmpty(ListItem.Studio)</visible>
                         </control>
@@ -369,7 +369,7 @@
                     <animation effect="slide" end="980" condition="Control.IsVisible(516)">Conditional</animation>
                     <control type="image">
                         <left>60</left>
-                        <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
+                        <texture>$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
                         <width>150</width>
                         <height>84</height>
                         <top>-8</top>
@@ -378,6 +378,18 @@
                         <colordiffuse>white2</colordiffuse>
                         <animation effect="fade" time="200">VisibleChange</animation>
                     </control>
+					<control type="image">
+                        <top>-8</top>					
+                        <left>60</left>
+                        <width>150</width>
+                        <height>84</height>
+                        <aspectratio>keep</aspectratio>
+                        <fadetime>IconCrossfadeTime2</fadetime>
+                        <colordiffuse>white2</colordiffuse>
+                        <animation effect="fade" time="200">VisibleChange</animation>					
+						<texture>$VAR[ColorFlagsStudio]default-studio.png</texture>
+						<visible>IsEmpty(ListItem.Studio)</visible>
+					</control>					
                     <control type="group">
                         <top>-5</top>
                         <left>200</left>
@@ -547,7 +559,7 @@
             <control type="image">
                 <left>1255</left>
                 <top>-9</top>
-                <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
+                <texture>$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
                 <width>150</width>
                 <height>84</height>
                 <aspectratio>keep</aspectratio>
@@ -558,6 +570,21 @@
                 <visible>![Control.IsVisible(50) + !Skin.HasSetting(slimlist)]</visible>
                 <visible>Container.Content(tvshows) | [Container.Content(seasons) + ListItem.IsFolder]</visible>
             </control>
+            <control type="image">
+                <left>1255</left>
+                <top>-9</top>
+                <texture>$VAR[ColorFlagsStudio]default-studio.png</texture>
+                <width>150</width>
+                <height>84</height>
+                <aspectratio>keep</aspectratio>
+                <fadetime>IconCrossfadeTime2</fadetime>
+                <colordiffuse>white2</colordiffuse>
+                <animation effect="fade" time="200">VisibleChange</animation>
+                <visible>!IsEmpty(ListItem.Thumb)</visible>
+                <visible>![Control.IsVisible(50) + !Skin.HasSetting(slimlist)]</visible>
+                <visible>Container.Content(tvshows) | [Container.Content(seasons) + ListItem.IsFolder]</visible>
+				<visible>IsEmpty(ListItem.Studio)</visible>
+            </control>			
             <control type="image">
                 <left>1425</left>
                 <texture>$VAR[ColorFlagsSource]Source/$VAR[SourceFlagVar,,.png]</texture>
@@ -794,7 +821,7 @@
                         <include>AudioFlagsVars</include>
                     </control>
                     <control type="image">
-                        <texture>flags/studios/default-studio.png</texture>
+                        <texture>$VAR[ColorFlagsStudio]default-studio.png</texture>
                         <include>AudioFlagsVars</include>
                         <visible>IsEmpty(ListItem.Property(Album_Label))</visible>
                     </control>
@@ -1077,7 +1104,7 @@
                 </control>				
                 <control type="image">
                     <top>-10</top>
-                    <texture fallback="flags/studios/default-studio.png">$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
+                    <texture>$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
                     <width>125</width>
                     <height>90</height>
                     <aspectratio>keep</aspectratio>
@@ -1087,6 +1114,19 @@
                     <visible>!Control.IsVisible(57)</visible>
                     <visible>Container.Content(tvshows) | SubString(Container.FolderPath,plugin.video.the.trailers)</visible>
                 </control>
+                <control type="image">
+                    <top>-10</top>
+                    <texture>$VAR[ColorFlagsStudio]default-studio.png</texture>
+                    <width>125</width>
+                    <height>90</height>
+                    <aspectratio>keep</aspectratio>
+                    <fadetime>IconCrossfadeTime2</fadetime>
+                    <colordiffuse>floor</colordiffuse>
+                    <animation effect="fade" time="200">VisibleChange</animation>
+                    <visible>!Control.IsVisible(57)</visible>
+                    <visible>Container.Content(tvshows) | SubString(Container.FolderPath,plugin.video.the.trailers)</visible>
+					<visible>IsEmpty(ListItem.Studio)</visible>
+                </control>				
             </control>
             <control type="label">
                 <left>1890</left>

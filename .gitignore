@@ -19,3 +19,9 @@ media/breadcrumbs/Thumbs.db
 *.db
 media/calibration - Kopie/Thumbs.db
 *.db
+*.db
+*.db
+media/flags/Thumbs.db
+media/flags/aspectratio/Thumbs.db
+media/flags/studios/Thumbs.db
+media/flags/language/Thumbs.db
