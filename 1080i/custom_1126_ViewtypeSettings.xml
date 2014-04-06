@@ -404,6 +404,13 @@
                     <selected>!Skin.HasSetting(cdartfliplist)</selected>
                     <visible>[[Window.IsActive(musiclibrary) + Container.Content(songs)] | Window.IsActive(musicplaylist)] + [[Stringcompare(Window(home).Property(actualViewtype),List) | Stringcompare(Window(home).Property(actualViewtype),TriPanelSquare)]</visible>
                 </control>
+				<!--<control type="radiobutton" id="1684">
+					<label>$LOCALIZE[31377]</label>
+					<include>Objects_MediaMenuButtonAlt2</include>
+					<onclick>Skin.ToggleSetting(albumcdartfliplist)</onclick>
+					<selected>!Skin.HasSetting(albumcdartfliplist)</selected>
+					<visible>[Stringcompare(Window(home).Property(actualViewtype),List) | Stringcompare(Window(home).Property(actualViewtype),TriPanelSquare)] + Container.Content(songs)</visible>
+                </control>	-->			
                 <control type="radiobutton" id="1658">
                     <label>$LOCALIZE[31168]</label>
                     <include>Objects_MediaMenuButtonAlt2</include>
@@ -416,15 +423,15 @@
                     <include>Objects_MediaMenuButtonAlt2</include>
                     <onclick>Skin.ToggleSetting(usecasescd)</onclick>
                     <selected>!Skin.HasSetting(usecasescd)</selected>
-                    <visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseSquare) + Container.Content(albums)</visible>
+                    <visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseSquare) + [Container.Content(albums) | Container.Content(songs)]</visible>
                 </control>
-              <!--  <control type="radiobutton" id="16840">
+                <control type="radiobutton" id="16840">
                     <label>31812</label>
                     <include>Objects_MediaMenuButtonAlt2</include>
                     <onclick>Skin.ToggleSetting(showcasecdartmusic)</onclick>
                     <selected>Skin.HasSetting(showcasecdartmusic)</selected>
-                    <visible>Substring(Window(home).Property(actualViewtype),Showcase) + Container.Content(albums)</visible>
-                </control>-->
+                    <visible>Substring(Window(home).Property(actualViewtype),Showcase) + Container.Content(songs)</visible>
+                </control>
                 <control type="radiobutton" id="1683">
                     <label>$LOCALIZE[31169]</label>
                     <include>Objects_MediaMenuButtonAlt2</include>
