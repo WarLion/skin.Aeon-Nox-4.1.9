@@ -515,7 +515,7 @@
                                 <height>50</height>
                                 <aspectratio align="right">keep</aspectratio>
                                 <colordiffuse>white</colordiffuse>
-                                <texture>common/director-icon.png</texture>
+                                <texture>$VAR[Colortdefaulticons]director-icon.png</texture>
                             </control>
                             <control type="label">
                                 <left>180</left>
@@ -568,7 +568,7 @@
                                 <height>50</height>
                                 <aspectratio align="right">keep</aspectratio>
                                 <colordiffuse>white</colordiffuse>
-                                <texture>common/writer-icon.png</texture>
+                                <texture>$VAR[Colortdefaulticons]writer-icon.png</texture>
                             </control>
                             <control type="label">
                                 <left>180</left>
