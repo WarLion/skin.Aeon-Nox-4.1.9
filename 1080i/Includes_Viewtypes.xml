@@ -428,7 +428,7 @@
                 <fadetime>300</fadetime>
                 <animation effect="fade" start="100" end="17" time="40" condition="true">Conditional</animation>
                 <visible>![[Container.Content(tvshows) | Container.Content(movies) | Container.Content(artists)] + Control.IsVisible(503) + [Skin.HasSetting(landscapelogo) | Skin.HasSetting(landscapeonelogo)]]</visible>
-                <visible>!Control.isVisible(8822)</visible>
+                <visible>!Control.isVisible(8822) + !Skin.HasSetting(LogoBehindPlot)</visible>
                 <animation type="Conditional" condition="Stringcompare(Control.GetLabel(4420),fanart) | Container.Content(seasons) | Container.Content(episodes)">
                     <effect type="slide" end="-480,160" time="0" />
                     <effect type="zoom" start="100" end="83" time="0" tween="cubic" easing="inout" center="auto" />
@@ -1103,8 +1103,8 @@
             </control>           
         </control>		
 		
-<!-- test label 
 
+<!-- test label
             <control type="image">
                 <left>0</left>
                 <top>50</top>
@@ -1121,7 +1121,7 @@
 				<scroll>true</scroll>
             </control>
 
-	test label --> 					
+	 test label --> 					
 <!-- end test label -->	
 <!-- end test label -->	 		
     </include>

@@ -502,6 +502,13 @@
                     <visible>Container.Content(movies)</visible>
                     <visible>Stringcompare(Window(home).Property(actualViewtype),InfoPanel)</visible>
                 </control>
+                <control type="radiobutton" id="16574">
+                    <label>$LOCALIZE[31989]</label>
+                    <include>Objects_MediaMenuButtonAlt2</include>
+                    <onclick>Skin.ToggleSetting(LogoBehindPlot)</onclick>
+                    <selected>Skin.HasSetting(LogoBehindPlot)</selected>
+                    <visible>Stringcompare(Window(home).Property(actualViewtype),InfoPanel)</visible>
+                </control>				
                 <control type="radiobutton" id="1662">
                     <label>$LOCALIZE[31165]</label>
                     <include>Objects_MediaMenuButtonAlt2</include>

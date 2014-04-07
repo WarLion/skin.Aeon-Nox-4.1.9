@@ -90,7 +90,14 @@
                     <onclick>Skin.ToggleSetting(enable_Watchedicontop)</onclick>
                     <selected>Skin.HasSetting(enable_Watchedicontop)</selected>
 					<visible>![Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]</visible>
-                </control>				
+                </control>
+                <control type="radiobutton" id="1826">
+                    <label>$LOCALIZE[31989]</label>
+                    <include>Objects_MediaMenuButtonAround</include>
+                    <onclick>Skin.ToggleSetting(LogoBehindPlot)</onclick>
+                    <selected>Skin.HasSetting(LogoBehindPlot)</selected>
+					<visible>![Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]</visible>
+                </control>								
             </control>
             <control type="panel" id="451">
                 <left>305</left>

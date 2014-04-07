@@ -189,6 +189,7 @@
                             <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
                             <animation effect="fade" end="15" time="0" condition="true">Conditional</animation>
                             <animation effect="slide" end="-60" time="0" condition="!Skin.HasSetting(infopanelcdart)">Conditional</animation>
+							<visible>!Skin.HasSetting(LogoBehindPlot)</visible>
                         </control>
                         <control type="image">
                             <left>100</left>
@@ -955,6 +956,7 @@
             <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
             <animation effect="fade" end="15" time="0" condition="true">Conditional</animation>
             <animation effect="slide" end="-60" time="0" condition="!Skin.HasSetting(infopanelcdart)">Conditional</animation>
+			<visible>!Skin.HasSetting(LogoBehindPlot)</visible>
         </control>
         <control type="image">
             <left>100</left>
