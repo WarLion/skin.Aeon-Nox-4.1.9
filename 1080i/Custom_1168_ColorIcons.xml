@@ -92,7 +92,7 @@
 						<visible>!IsEmpty(Skin.String(ColorFlagsPath))</visible>
                     </item>
                     <item id="2">
-                        <label>$LOCALIZE[33004]</label>
+                        <label>$LOCALIZE[31988]</label>
                         <onclick>noop</onclick>
 						<visible>!IsEmpty(Skin.String(ReloadedFlagsPath))</visible>
                     </item>					

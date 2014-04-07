@@ -36,9 +36,7 @@
     <include file="Includes_CustomizerWindow.xml" />
     <include file="Viewtype_FullscreenPanel.xml" />
     <include file="Includes_NextAired.xml" />
-	<include file="Includes_NextAired2.xml" />
 	<include file="Includes_VideoExtras.xml" />
-	<include file="Includes_Videoinfo.xml" /> 
     <constant name="AutoScrollTime">2000</constant>
     <include name="Dialogs_Group">
         <left>579</left>
