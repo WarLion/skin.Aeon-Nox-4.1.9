@@ -2128,7 +2128,7 @@ msgctxt "#31965"
 msgid "Playlist widget"
 msgstr "Widget de lista de reproducción"
 
-msgctxt "#32966"
+msgctxt "#31966"
 msgid "Enable TvTunes"
 msgstr "Habilitar TvTunes"
 
@@ -2256,86 +2256,86 @@ msgctxt "#33004"
 msgid "Reloaded"
 msgstr "Reloaded"
 
-msgctxt "#33005"
+msgctxt "#31967"
 msgid "Others"
 msgstr "Otros"
 
-msgctxt "#33006"
+msgctxt "#31968"
 msgid "Disable Flags"
 msgstr "Deshabilitar Banderas"
 
-msgctxt "#33007"
+msgctxt "#31969"
 msgid "Flags Paths"
 msgstr "Rutas de Banderas"
 
-msgctxt "#33008"
+msgctxt "#31970"
 msgid "All Flags"
 msgstr "Todas las Banderas"
 
-msgctxt "#33009"
+msgctxt "#31971"
 msgid "Aspect Ratio Flags"
 msgstr "Banderas de Relación de aspecto"
 
-msgctxt "#33010"
+msgctxt "#31972"
 msgid "Audio Flags"
 msgstr "Banderas de Audio"
 
-msgctxt "#33011"
+msgctxt "#31973"
 msgid "Resolution Flags"
 msgstr "Banderas de Resolución"
 
-msgctxt "#33012"
+msgctxt "#31974"
 msgid "Source Flags"
 msgstr "Banderas de Tipo"
 
-msgctxt "#33013"
+msgctxt "#31975"
 msgid "Colored icons"
 msgstr "Iconos de Color"
 
-msgctxt "#33014"
+msgctxt "#31976"
 msgid "Colored TvGuide"
 msgstr "Color Guia de Tv"
 
-msgctxt "#33015"
+msgctxt "#31977"
 msgid "Colored Others"
 msgstr "Color Otros"
 
-msgctxt "#33016"
+msgctxt "#31978"
 msgid "Set to the [B]Flag[/B] Folder"
 msgstr "Apunta a la carpeta [B]Flags[/B]"
 
-msgctxt "#33018"
+msgctxt "#31979"
 msgid "Set to the [B]Studios[/B] Folder"
 msgstr "Apunta a la carpeta [B]Studios[/B]"
 
-msgctxt "#33019"
+msgctxt "#31980"
 msgid "Set to the [B]Language[/B] Folder"
 msgstr "Apunta a la carpeta [B]Language[/B]"
 
-msgctxt "#33020"
+msgctxt "#31981"
 msgid "Set Path for Colored Flags"
 msgstr "Ruta para Banderas de Color"
 
-msgctxt "#33021"
+msgctxt "#31982"
 msgid "Set Path for Reloaded Flags"
 msgstr "Ruta para Banderas Reloaded"
 
-msgctxt "#33022"
+msgctxt "#31983"
 msgid "Set Path for Studios Flags"
 msgstr "Ruta para Banderas de Estudios"
 
-msgctxt "#33023"
+msgctxt "#31984"
 msgid "Set Path for Language Flags"
 msgstr "Rata para Banderas de Idiomas"
 
-msgctxt "#33024"
+msgctxt "#31985"
 msgid "Clear Paths"
 msgstr "Limpiar Rutas"
 
-msgctxt "#33025"
+msgctxt "#31986"
 msgid "Colored Studios"
 msgstr "Estudios de Color"
 
-msgctxt "#33026"
+msgctxt "#31987"
 msgid "Round Language"
 msgstr "Lenguaje Redondo"

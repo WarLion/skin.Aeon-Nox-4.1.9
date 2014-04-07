@@ -115,16 +115,16 @@
                         <onclick>noop</onclick>
                     </item>
                     <item id="5">
-                        <label>$LOCALIZE[33005]</label>
+                        <label>$LOCALIZE[31967]</label>
                         <onclick>noop</onclick>
 						<visible>!IsEmpty(Skin.String(ColorFlagsPath))</visible>
                     </item>	
                     <item id="9">
-                        <label>$LOCALIZE[33006]</label>
+                        <label>$LOCALIZE[31968]</label>
                         <onclick>noop</onclick>
                     </item>	
                     <item id="6">
-                        <label>$LOCALIZE[33007]</label>
+                        <label>$LOCALIZE[31969]</label>
                         <onclick>noop</onclick>
                     </item>																
                 </content>
@@ -142,7 +142,7 @@
 				<ondown>600</ondown>				
 				<visible>Container(500).Hasfocus(1)</visible>
                     <control type="radiobutton" id="599">
-						<label>$LOCALIZE[33008]</label>
+						<label>$LOCALIZE[31970]</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(AllColorFlags)</onclick>
 						<onclick>Skin.SetBool(AspectRatioColorFlag)</onclick>
@@ -159,7 +159,7 @@
 						<selected>Skin.HasSetting(AllColorFlags)</selected>
                     </control>
                     <control type="radiobutton" id="601">
-						<label>$LOCALIZE[33009]</label>
+						<label>$LOCALIZE[31971]</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(AspectRatioColorFlag)</onclick>
 						<onclick>Skin.Reset(AspectRatioColorFlagreloaded)</onclick>
@@ -168,7 +168,7 @@
 						<enable>!Skin.HasSetting(AllColorFlags)</enable>
                     </control>
                     <control type="radiobutton" id="602">
-						<label>$LOCALIZE[33010]</label>
+						<label>$LOCALIZE[31972]</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(AudioColorFlag)</onclick>
 						<onclick>Skin.Reset(AudioColorFlagreloaded)</onclick>
@@ -186,7 +186,7 @@
 						<enable>!Skin.HasSetting(AllColorFlags)</enable>						
                     </control>       
                      <control type="radiobutton" id="605">
-						<label>$LOCALIZE[33011]</label>
+						<label>$LOCALIZE[31973]</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(ResolutionColorFlag)</onclick>
 						<onclick>Skin.Reset(ResolutionColorFlagreloaded)</onclick>
@@ -195,7 +195,7 @@
 						<enable>!Skin.HasSetting(AllColorFlags)</enable>						
                     </control>       
                      <control type="radiobutton" id="606">
-						<label>$LOCALIZE[33012]</label>
+						<label>$LOCALIZE[31974]</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(SourceColorFlag)</onclick>
 						<onclick>Skin.Reset(SourceColorFlagreloaded)</onclick>
@@ -217,13 +217,13 @@
 				<ondown>600</ondown>				
 				<visible>Container(500).Hasfocus(9)</visible>
                     <control type="radiobutton" id="601">
-						<label>$LOCALIZE[33009]</label>
+						<label>$LOCALIZE[31971]</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(DisableAspectRatioColorFlag)</onclick>					
 						<selected>Skin.HasSetting(DisableAspectRatioColorFlag)</selected>
                     </control>
                     <control type="radiobutton" id="602">
-						<label>$LOCALIZE[33010]</label>
+						<label>$LOCALIZE[31972]</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(DisableAudioColorFlag)</onclick>
 						<selected>Skin.HasSetting(DisableAudioColorFlag)</selected>						
@@ -235,13 +235,13 @@
 						<selected>Skin.HasSetting(DisableRatingColorFlag)</selected>					
                     </control>       
                      <control type="radiobutton" id="605">
-						<label>$LOCALIZE[33011]</label>
+						<label>$LOCALIZE[31973]</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(DisableResolutionColorFlag)</onclick>
 						<selected>Skin.HasSetting(DisableResolutionColorFlag)</selected>					
                     </control>       
                      <control type="radiobutton" id="606">
-						<label>$LOCALIZE[33012]</label>
+						<label>$LOCALIZE[31974]</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(DisableSourceColorFlag)</onclick>
 						<selected>Skin.HasSetting(DisableSourceColorFlag)</selected>						
@@ -265,7 +265,7 @@
 				<ondown>600</ondown>				
 				<visible>Container(500).Hasfocus(2)</visible>
                     <control type="radiobutton" id="599">
-						<label>$LOCALIZE[33008]</label>
+						<label>$LOCALIZE[31970]</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(AllColorFlagsreloaded)</onclick>
 						<onclick>Skin.SetBool(AspectRatioColorFlagreloaded)</onclick>
@@ -283,7 +283,7 @@
 						<selected>Skin.HasSetting(AllColorFlagsreloaded)</selected>
                     </control>
                     <control type="radiobutton" id="601">
-						<label>$LOCALIZE[33009]</label>
+						<label>$LOCALIZE[31971]</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(AspectRatioColorFlagreloaded)</onclick>
 						<onclick>Skin.Reset(AspectRatioColorFlag)</onclick>
@@ -292,7 +292,7 @@
 						<enable>!Skin.HasSetting(AllColorFlagsreloaded)</enable>
                     </control>
                     <control type="radiobutton" id="602">
-						<label>$LOCALIZE[33010]</label>
+						<label>$LOCALIZE[31972]</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(AudioColorFlagreloaded)</onclick>
 						<onclick>Skin.Reset(AudioColorFlag)</onclick>
@@ -310,7 +310,7 @@
 						<enable>!Skin.HasSetting(AllColorFlagsreloaded)</enable>						
                     </control>       
                      <control type="radiobutton" id="605">
-						<label>$LOCALIZE[33011]</label>
+						<label>$LOCALIZE[31973]</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(ResolutionColorFlagreloaded)</onclick>
 						<onclick>Skin.Reset(ResolutionColorFlag)</onclick>
@@ -319,7 +319,7 @@
 						<enable>!Skin.HasSetting(AllColorFlagsreloaded)</enable>						
                     </control>       
                      <control type="radiobutton" id="606">
-						<label>$LOCALIZE[33012]</label>
+						<label>$LOCALIZE[31974]</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(SourceColorFlagreloaded)</onclick>
 						<onclick>Skin.Reset(SourceColorFlag)</onclick>
@@ -340,7 +340,7 @@
 				<ondown>600</ondown>				
 				<visible>Container(500).Hasfocus(3)</visible>
                     <control type="radiobutton" id="602">
-						<label>$LOCALIZE[33013]</label>
+						<label>$LOCALIZE[31975]</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(Colortdefaulticons)</onclick>
 						<selected>Skin.HasSetting(Colortdefaulticons)</selected>
@@ -358,7 +358,7 @@
 				<ondown>600</ondown>				
 				<visible>Container(500).Hasfocus(4)</visible>
                     <control type="radiobutton" id="601">
-						<label>$LOCALIZE[33014]</label>
+						<label>$LOCALIZE[31976]</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(ColortvguideFlags)</onclick>
 						<selected>Skin.HasSetting(ColortvguideFlags)</selected>
@@ -376,7 +376,7 @@
 				<ondown>600</ondown>				
 				<visible>Container(500).Hasfocus(5)</visible>
                     <control type="radiobutton" id="601">
-						<label>$LOCALIZE[33015]</label>
+						<label>$LOCALIZE[31977]</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(ColorFlags)</onclick>
 						<selected>Skin.HasSetting(ColorFlags)</selected>
@@ -394,7 +394,7 @@
 				<ondown>600</ondown>
 				<visible>Container(500).Hasfocus(6)</visible>	
                     <control type="button" id="601">
-                        <label>$LOCALIZE[33020]</label>
+                        <label>$LOCALIZE[31981]</label>
                         <include>Objects_MediaMenuButtonAlt3</include>
                         <onclick>Skin.SetPath(ColorFlagsPath)</onclick>
                     </control>	
@@ -405,13 +405,13 @@
 						<visible>!IsEmpty(Skin.String(ColorFlagsPath)) + Control.HasFocus(601)</visible>
                     </control>	
                     <control type="label" id="603">
-                        <label>[COLOR $VAR[FontColorVar]]$LOZALIZE[33016][/COLOR]</label>
+                        <label>[COLOR $VAR[FontColorVar]]$LOZALIZE[31978][/COLOR]</label>
                         <include>Objects_MediaMenuButtonAlt3</include>
 						<scroll>true</scroll>
 						<visible>IsEmpty(Skin.String(ColorFlagsPath)) + Control.HasFocus(601)</visible>
                     </control>										
                     <control type="button" id="604">
-                        <label>$LOCALIZE[33021]</label>
+                        <label>$LOCALIZE[31982]</label>
                         <include>Objects_MediaMenuButtonAlt3</include>
                         <onclick>Skin.SetPath(ReloadedFlagsPath)</onclick>
                     </control>
@@ -422,13 +422,13 @@
 						<visible>!IsEmpty(Skin.String(ReloadedFlagsPath)) + Control.HasFocus(604)</visible>
                     </control>	
                     <control type="label" id="801">
-                        <label>[COLOR $VAR[FontColorVar]]$LOZALIZE[33016][/COLOR]</label>
+                        <label>[COLOR $VAR[FontColorVar]]$LOZALIZE[31978][/COLOR]</label>
                         <include>Objects_MediaMenuButtonAlt3</include>
 						<scroll>true</scroll>
 						<visible>IsEmpty(Skin.String(ReloadedFlagsPath)) + Control.HasFocus(604)</visible>
                     </control>		
                     <control type="button" id="613">
-                        <label>$LOCALIZE[33022]</label>
+                        <label>$LOCALIZE[31983]</label>
                         <include>Objects_MediaMenuButtonAlt3</include>
                         <onclick>Skin.SetPath(StudioFlagsPath)</onclick>
                     </control>
@@ -439,13 +439,13 @@
 						<visible>!IsEmpty(Skin.String(StudioFlagsPath)) + Control.HasFocus(613)</visible>
                     </control>		
                     <control type="label" id="615">
-                        <label>[COLOR $VAR[FontColorVar]]$LOZALIZE[33018][/COLOR]</label>
+                        <label>[COLOR $VAR[FontColorVar]]$LOZALIZE[31979][/COLOR]</label>
                         <include>Objects_MediaMenuButtonAlt3</include>
 						<scroll>true</scroll>
 						<visible>IsEmpty(Skin.String(StudioFlagsPath)) + Control.HasFocus(613)</visible>
                     </control>
                     <control type="button" id="813">
-                        <label>$LOCALIZE[33023]</label>
+                        <label>$LOCALIZE[31984]</label>
                         <include>Objects_MediaMenuButtonAlt3</include>
                         <onclick>Skin.SetPath(languageFlagsPath)</onclick>
                     </control>
@@ -456,13 +456,13 @@
 						<visible>!IsEmpty(Skin.String(languageFlagsPath)) + Control.HasFocus(813)</visible>
                     </control>		
                     <control type="label" id="815">
-                        <label>[COLOR $VAR[FontColorVar]]$LOZALIZE[33019][/COLOR]</label>
+                        <label>[COLOR $VAR[FontColorVar]]$LOZALIZE[31980][/COLOR]</label>
                         <include>Objects_MediaMenuButtonAlt3</include>
 						<scroll>true</scroll>
 						<visible>IsEmpty(Skin.String(languageFlagsPath)) + Control.HasFocus(813)</visible>
                     </control>																																																							
                     <control type="button" id="630">
-                        <label>$LOCALIZE[33024]</label>
+                        <label>$LOCALIZE[31985]</label>
                         <include>Objects_MediaMenuButtonAlt3</include>
                         <onclick>Skin.Reset(StudioFlagsPath)</onclick>
 						<onclick>Skin.Reset(languageFlagsPath)</onclick>
@@ -499,7 +499,7 @@
 				<ondown>600</ondown>				
 				<visible>Container(500).Hasfocus(7)</visible>
                     <control type="radiobutton" id="601">
-						<label>$LOCALIZE[33025]</label>
+						<label>$LOCALIZE[31986]</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(StudiosColorFlag)</onclick>
 						<selected>Skin.HasSetting(StudiosColorFlag)</selected>
@@ -517,7 +517,7 @@
 				<ondown>600</ondown>				
 				<visible>Container(500).Hasfocus(8)</visible>
                     <control type="radiobutton" id="601">
-						<label>$LOCALIZE[33026]</label>
+						<label>$LOCALIZE[31987]</label>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(LanguageColorFlag)</onclick>
 						<selected>Skin.HasSetting(LanguageColorFlag)</selected>

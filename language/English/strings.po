@@ -2255,86 +2255,86 @@ msgctxt "#33004"
 msgid "Reloaded"
 msgstr "Reloaded"
 
-msgctxt "#33005"
+msgctxt "#31967"
 msgid "Others"
 msgstr "Others"
 
-msgctxt "#33006"
+msgctxt "#31968"
 msgid "Disable Flags"
 msgstr "Disable Flags"
 
-msgctxt "#33007"
+msgctxt "#31969"
 msgid "Flags Paths"
 msgstr "Flags Paths"
 
-msgctxt "#33008"
+msgctxt "#31970"
 msgid "All Flags"
 msgstr "All Flags"
 
-msgctxt "#33009"
+msgctxt "#31971"
 msgid "Aspect Ratio Flags"
 msgstr "Aspect Ratio Flags"
 
-msgctxt "#33010"
+msgctxt "#31972"
 msgid "Audio Flags"
 msgstr "Audio Flags"
 
-msgctxt "#33011"
+msgctxt "#31973"
 msgid "Resolution Flags"
 msgstr "Resolution Flags"
 
-msgctxt "#33012"
+msgctxt "#31974"
 msgid "Source Flags"
 msgstr "Source Flags"
 
-msgctxt "#33013"
+msgctxt "#31975"
 msgid "Colored icons"
 msgstr "Colored icons"
 
-msgctxt "#33014"
+msgctxt "#31976"
 msgid "Colored TvGuide"
 msgstr "Colored TvGuide"
 
-msgctxt "#33015"
+msgctxt "#31977"
 msgid "Colored Others"
 msgstr "Colored Others"
 
-msgctxt "#33016"
+msgctxt "#31978"
 msgid "Set to the [B]Flag[/B] Folder"
 msgstr "Set to the [B]Flag[/B] Folder"
 
-msgctxt "#33018"
+msgctxt "#31979"
 msgid "Set to the [B]Studios[/B] Folder"
 msgstr "Set to the [B]Studios[/B] Folder"
 
-msgctxt "#33019"
+msgctxt "#31980"
 msgid "Set to the [B]Language[/B] Folder"
 msgstr "Set to the [B]Language[/B] Folder"
 
-msgctxt "#33020"
+msgctxt "#31981"
 msgid "Set Path for Colored Flags"
 msgstr "Set Path for Colored Flags"
 
-msgctxt "#33021"
+msgctxt "#31982"
 msgid "Set Path for Reloaded Flags"
 msgstr "Set Path for Reloaded Flags"
 
-msgctxt "#33022"
+msgctxt "#31983"
 msgid "Set Path for Studios Flags"
 msgstr "Set Path for Studios Flags"
 
-msgctxt "#33023"
+msgctxt "#31984"
 msgid "Set Path for Language Flags"
 msgstr "Set Path for Language Flags"
 
-msgctxt "#33024"
+msgctxt "#31985"
 msgid "Clear Paths"
 msgstr "Clear Paths"
 
-msgctxt "#33025"
+msgctxt "#31986"
 msgid "Colored Studios"
 msgstr "Colored Studios"
 
-msgctxt "#33026"
+msgctxt "#31987"
 msgid "Round Language"
 msgstr "Round Language"

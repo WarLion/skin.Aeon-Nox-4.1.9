@@ -220,7 +220,7 @@
                         <onclick>ActivateWindow(1116)</onclick>
                     </control>
                     <control type="button" id="520">
-                        <label>Customize Icons</label>
+                        <label>$LOCALIZE[32997]</label>
                         <include>Default_SettingButton</include>
                         <onclick>ActivateWindow(1168)</onclick>
                     </control>					
