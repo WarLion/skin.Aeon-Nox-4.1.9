@@ -125,8 +125,9 @@
 					<lefttexture></lefttexture>
 					<midtexture>osd/info/osd_progress_mid.png</midtexture>
 					<righttexture></righttexture>	
-					<colordiffuse>30FFFFFF</colordiffuse>					
+					<colordiffuse>$VAR[HomeMenuTextFocusVar]</colordiffuse>						
 					<visible>Player.HasMedia + Skin.HasSetting(ProgressNowPlaying)</visible>
+					<animation effect="fade" end="35" time="600" condition="Player.HasMedia">Conditional</animation>
 				</control>				
             <control type="image">
                 <left>12</left>

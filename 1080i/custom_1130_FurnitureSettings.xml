@@ -145,7 +145,7 @@
                     <include>Objects_CommonSettingsButton</include>
                     <selected>Skin.HasSetting(ProgressMainMenu)</selected>
                     <onclick>Skin.ToggleSetting(ProgressMainMenu)</onclick>
-                    <visible>Stringcompare(Window.Property(actualItem),MainMenu) + Skin.HasSetting(glasshome)</visible>
+                    <visible>Stringcompare(Window.Property(actualItem),MainMenu)</visible>
                 </control>									
                 <control type="button" id="451">
                     <label>31602</label>
