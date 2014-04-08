@@ -2765,18 +2765,18 @@
 					<left>-55</left>
 					<visible>[Substring(Window(home).Property(WidgetType),movies) + Skin.HasSetting(CasesonWidgets)] + !Skin.HasSetting(clearcases)</visible>				
 					<control type="image">
-						<left>55</left>
-						<top>-332</top>
+						<left>59</left>
+						<top>-327</top>
 						<width>450</width>
 						<height>623</height>
 						<aspectratio>stretch</aspectratio>
 						<texture background="true">$INFO[Window(home).Property(Poster)]</texture>
 					</control>				
 					<control type="image">
-						<left>-23</left>
-						<top>-400</top>
-						<width>565</width>
-						<height>735</height>
+						<left>-25</left>
+						<top>-390</top>
+						<width>568</width>
+						<height>718</height>
 						<texture background="true">thumbs/boxes/$VAR[ShowcaseCasePathVar]/$INFO[Window(home).Property(VideoResolution)]p.png</texture>
 						<visible></visible>
 					</control>			
