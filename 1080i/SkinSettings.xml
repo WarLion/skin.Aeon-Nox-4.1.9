@@ -468,7 +468,7 @@
                     <width>1469</width>
                     <height>900</height>
                     <visible>Container(9000).Hasfocus(9)</visible>
-                    <itemgap>-1</itemgap>
+                    <itemgap>5</itemgap>
                     <pagecontrol>60</pagecontrol>
                     <onleft>9000</onleft>
                     <onright>60</onright>
@@ -484,24 +484,16 @@
                         <textcolor>grey2</textcolor>
                     </control>
                     <control type="label">
-                        <width>500</width>
+                        <width>700</width>
                         <height>54</height>
                         <textoffsetx>70</textoffsetx>
                         <aligny>bottom</aligny>
-                        <label>by BigNoid &amp; Phil65</label>
+                        <label>by BigNoid &amp; Phil65 Merge to Gotham by WarLion</label>
                         <font>Font_Reg26</font>
                         <textcolor>grey2</textcolor>
                     </control>				
                     <control type="label">
-                        <label>31735</label>
-                        <include>Default_SettingRadioButton</include>
-                    </control>
-                    <control type="label">
-                        <label>31736</label>
-                        <include>Default_SettingRadioButton</include>
-                    </control>
-                    <control type="label">
-                        <label>31737</label>
+                        <label>$LOCALIZE[31735][CR]$LOCALIZE[31736][CR]$LOCALIZE[31737][CR]</label>
                         <include>Default_SettingRadioButton</include>
                     </control>
                     <control type="label">
@@ -509,17 +501,17 @@
                         <include>Default_SettingRadioButton</include>
                     </control>
                     <control type="label">
-                        <label>31739</label>
+                        <label>$LOCALIZE[31739]][CR]$LOCALIZE[31740]][CR]$LOCALIZE[31741][CR]</label>
                         <include>Default_SettingRadioButton</include>
                     </control>
                     <control type="label">
-                        <label>31740</label>
+                        <label>[CR][B]mikebzh44[/B] for the [B]Showcase Mode and More[/B][CR][B]neurosis13[/B] for the [B]Colored Movie and TV-Show Icons and Mediaflags[/B]</label>
                         <include>Default_SettingRadioButton</include>
                     </control>
                     <control type="label">
-                        <label>31741</label>
+                        <label></label>
                         <include>Default_SettingRadioButton</include>
-                    </control>				
+                    </control>														
                 </control>
                 <control type="grouplist" id="9009">
                     <left>387</left>
