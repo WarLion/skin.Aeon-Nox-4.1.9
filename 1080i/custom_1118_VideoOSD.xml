@@ -12,7 +12,7 @@
             <left>357</left>
             <top>180</top>
             <width>1212</width>
-            <height>630</height>
+            <height>670</height>
             <texture>osd/osd_settings_back_glow.png</texture>
             <visible>!Skin.HasSetting(DisableGlowbar)</visible>
             <include>PanelGlowFade</include>
@@ -22,7 +22,7 @@
             <left>357</left>
             <top>180</top>
             <width>1212</width>
-            <height>630</height>
+            <height>670</height>
             <texture>osd/osd_settings_back.png</texture>
             <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
         </control>
@@ -78,6 +78,20 @@
                 <onclick>Skin.ToggleSetting(DisableVideoThumb)</onclick>
                 <selected>Skin.HasSetting(DisableVideoThumb)</selected>
             </control>
+            <control type="radiobutton" id="459">
+                <label>   -Case on info screen</label>
+                <include>Objects_CommonSettingsButton</include>
+                <onclick>Skin.ToggleSetting(CaseVideoThumb)</onclick>
+                <selected>Skin.HasSetting(CaseVideoThumb)</selected>
+				<visible>!Skin.HasSetting(DisableVideoThumb)</visible>
+            </control>	
+            <control type="radiobutton" id="460">
+                <label>   -DiscArt on info screen</label>
+                <include>Objects_CommonSettingsButton</include>
+                <onclick>Skin.ToggleSetting(Discinfoscreen)</onclick>
+                <selected>Skin.HasSetting(Discinfoscreen)</selected>
+				<visible>!Skin.HasSetting(DisableVideoThumb)</visible>
+            </control>						
             <control type="radiobutton" id="456">
                 <label>31640</label>
                 <include>Objects_CommonSettingsButton</include>
