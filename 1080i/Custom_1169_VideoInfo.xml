@@ -223,7 +223,7 @@
 					<visible>Container.Content(tvshows) + [IsEmpty(Skin.String(ColorFlagsPath)) + !IsEmpty(Skin.String(ReloadedFlagsPath))]</visible>				
 				</control> 					 						
                 <control type="radiobutton" id="1203">
-                    <label>$LOCALIZE[33003]</label>
+                    <label>Extended Rating</label>
                     <include>Objects_MediaMenuButtonAround</include>
                     <onclick>Skin.ToggleSetting(ExtendedRatingVideoinfo)</onclick>
                     <selected>Skin.HasSetting(ExtendedRatingVideoinfo)</selected>
