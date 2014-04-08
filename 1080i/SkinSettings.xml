@@ -504,12 +504,13 @@
                         <label>$LOCALIZE[31739]][CR]$LOCALIZE[31740]][CR]$LOCALIZE[31741][CR]</label>
                         <include>Default_SettingRadioButton</include>
                     </control>
+					
                     <control type="label">
                         <label>[CR][B]mikebzh44[/B] for the [B]Showcase Mode and More[/B][CR][B]neurosis13[/B] for the [B]Colored Movie and TV-Show Icons and Mediaflags[/B]</label>
                         <include>Default_SettingRadioButton</include>
                     </control>
                     <control type="label">
-                        <label></label>
+                        <label>[B]rob_webset[/B] for [B]Video Extras Script[/B][CR][B]WayneD[/B] for the new [B]TV Show Next Aired Script[/B]</label>
                         <include>Default_SettingRadioButton</include>
                     </control>														
                 </control>
