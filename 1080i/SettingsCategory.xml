@@ -110,11 +110,12 @@
         </control>
         <include>Furniture_NowPlayingWidget</include>
 		<control type="label">
-			<left>194</left>
+			<left>160</left>
 			<top>700</top>
 			<width>300</width>
-			<font>Font_Bold22_Caps</font>	
-			<label>$LOCALIZE[32967]</label>		
+			<align>left</align>
+			<font>Font_Bold22_Caps</font>    
+			<label>$LOCALIZE[32967]</label>        
 		</control>
 		<control type="button" id="20">
 			<left>144</left>
@@ -127,18 +128,17 @@
 			<onback>3</onback>
 			<height>74</height>
 			<textoffsetx>20</textoffsetx>
-			<textoffsety>35</textoffsety>	
-			<align>right</align>
-			<aligny>top</aligny>				
+			<textoffsety>35</textoffsety>    
+			<align>left</align>
+			<aligny>top</aligny>                
 			<texturefocus>views/tripanel/listselect_fo.png</texturefocus>
 			<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
 			<texturenofocus>-</texturenofocus>
 			<font>Font_Bold34_Caps</font>
 			<textcolor>grey</textcolor>
 			<focusedcolor>white2</focusedcolor>
-			<align>right</align>
 			<onclick>SettingsLevelChange</onclick>
-		</control>	
+		</control>
         <control type="textbox" id="6">
 				<description>description area</description>
 				<left>467</left>

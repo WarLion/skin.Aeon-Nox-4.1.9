@@ -160,7 +160,13 @@
 						<onclick>Skin.ToggleSetting(UpdateArt.Enabled)</onclick>
 						<label>$LOCALIZE[32965]</label>
 						<visible>System.HasAddon(script.artwork.downloader)</visible>
-					</control>														
+					</control>		
+					<control type="radiobutton" id="120">
+						<include>Default_SettingRadioButton</include>
+						<selected>Skin.HasSetting(CasesonWidgets)</selected>
+						<onclick>Skin.ToggleSetting(CasesonWidgets)</onclick>
+						<label>Cases on Widgets</label>
+					</control>																		
                 </control>
                 <control type="grouplist" id="9002">
                     <left>387</left>

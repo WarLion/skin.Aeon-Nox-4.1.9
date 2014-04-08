@@ -1585,17 +1585,25 @@
                         <font>Font_Reg40_Caps</font>
                         <scroll>true</scroll>
                     </control>
+					<control type="image">
+						<left>20</left>
+						<top>101</top>
+						<width>1000</width>
+						<height>280</height>
+						<texture>views/plotclassicbg.png</texture>
+						<include>PanelGlowFade</include>
+					</control>					
                     <control type="textbox">
                         <left>38</left>
                         <top>101</top>
                         <width>915</width>
-                        <height>190</height>
+                        <height>263</height>
                         <aligny>top</aligny>
                         <label>$INFO[Container(8000).ListItem.Property(Plot)]</label>
                         <font>Font_Reg32</font>
                         <textcolor>white6</textcolor>
                         <autoscroll delay="5000" time="AutoScrollTime" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-                    </control>
+					</control>					
                 </control>
                 <control type="image">
                     <left>-13</left>
@@ -1610,22 +1618,10 @@
                 <control type="image">
                     <width>260</width>
                     <height>390</height>
-                    <aspectratio scalediffuse="false">scale</aspectratio>
-                    <texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="DefaultVideoBigPoster.png">$INFO[Container(8000).ListItem.Property(Poster)]</texture>
-                    <fadetime>IconCrossfadeTime</fadetime>
-					<!-- MikeBZH44 Start -->
-                    <visible>![Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)]</visible>
-                    <!-- MikeBZH44 End -->
-                </control>
-                <!-- MikeBZH44 Start : Use different diffuse template -->
-                <control type="image">
-                    <width>260</width>
-                    <height>390</height>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture diffuse="thumbs/thumb_mask.png" background="true" fallback="DefaultVideoBigPoster.png">$INFO[Container(8000).ListItem.Property(Poster)]</texture>
                     <aspectratio scalediffuse="false">stretch</aspectratio>
-                    <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>	
-				<!-- MikeBZH44 End --> 					
+                    <visible>Substring(Control.GetLabel(4321),movie)</visible>									
                 </control>
                 <control type="image">
                     <left>-19.5</left>
@@ -1635,22 +1631,17 @@
                     <aspectratio scalediffuse="false">stretch</aspectratio>
                     <texture diffuse="thumbs/movieposter_mask.png">thumbs/thumb_glass_noreflect.png</texture>
                     <bordersize>19.5</bordersize>
-                    <bordertexture border="19.5">thumbs/poster_shadow.png</bordertexture>
-                    <!-- MikeBZH44 Start -->
-                    <visible>![Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)]</visible>
-                    <!-- MikeBZH44 End -->					
+                    <bordertexture border="19.5">thumbs/poster_shadow.png</bordertexture>				
                 </control>
-                <!-- MikeBZH44 Start : Add resolution case -->
                 <control type="image">
                     <posx>-47</posx>
                     <posy>-33</posy>
                     <width>325</width>
                     <height>440</height>
-                    <texture>thumbs/boxes/$INFO[Skin.String(LiveBGCase)]/$INFO[Container(8000).ListItem.Property(VideoResolution)]p.png</texture>
+                    <texture>thumbs/boxes/$VAR[ShowcaseCasePathVar]/$INFO[Container(8000).ListItem.Property(VideoResolution)]p.png</texture>
                     <aspectratio scalediffuse="false">stretch</aspectratio>
-                    <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
-                </control>
-                <!-- MikeBZH44 End -->				
+                    <visible>Substring(Control.GetLabel(4321),movie) + Skin.HasSetting(CasesonWidgets)</visible>
+                </control>			
                 <control type="grouplist">
                     <left>205</left>
                     <top>310</top>
@@ -2766,8 +2757,72 @@
                     <width>460</width>
                     <height>690</height>
                     <aspectratio>scale</aspectratio>
-                    <texture background="true">$INFO[Window(home).Property(Poster)]</texture>
+                 <texture background="true">$INFO[Window(home).Property(Poster)]</texture>
+				 <visible>!Skin.HasSetting(CasesonWidgets)</visible>
                 </control>
+			    <control type="group">
+					<top>40</top>
+					<left>-55</left>
+					<visible>[Substring(Window(home).Property(WidgetType),movies) + Skin.HasSetting(CasesonWidgets)] + !Skin.HasSetting(clearcases)</visible>				
+					<control type="image">
+						<left>55</left>
+						<top>-332</top>
+						<width>450</width>
+						<height>623</height>
+						<aspectratio>stretch</aspectratio>
+						<texture background="true">$INFO[Window(home).Property(Poster)]</texture>
+					</control>				
+					<control type="image">
+						<left>-23</left>
+						<top>-400</top>
+						<width>565</width>
+						<height>735</height>
+						<texture background="true">thumbs/boxes/$VAR[ShowcaseCasePathVar]/$INFO[Window(home).Property(VideoResolution)]p.png</texture>
+						<visible></visible>
+					</control>			
+				</control> 
+			    <control type="group">
+					<top>40</top>
+					<left>-55</left>
+					<visible>[Substring(Window(home).Property(WidgetType),movies) + Skin.HasSetting(CasesonWidgets)] + Skin.HasSetting(clearcases)</visible>				
+					<control type="image">
+						<left>58</left>
+						<top>-380</top>
+						<width>455</width>
+						<height>680</height>
+						<aspectratio>stretch</aspectratio>
+						<texture background="true" diffuse="thumbs/movieposter_mask.png">$INFO[Window(home).Property(Poster)]</texture>
+					</control>				
+					<control type="image">
+						<left>-23</left>
+						<top>-443</top>
+						<width>565</width>
+						<height>780</height>
+						<texture background="true">thumbs/boxes/$VAR[ShowcaseCasePathVar]/$INFO[Window(home).Property(VideoResolution)]p.png</texture>
+						<visible></visible>
+					</control>			
+				</control> 				
+			    <control type="group">
+					<top>55</top>
+					<left>-30</left>
+					<visible>Substring(Window(home).Property(WidgetType),tv) + Skin.HasSetting(CasesonWidgets)</visible>					
+					<control type="image">
+						<left>30</left>
+						<top>-405</top>
+						<width>463</width>
+						<height>690</height>
+						<aspectratio>stretch</aspectratio>
+						<texture background="true" diffuse="thumbs/movieposter_mask.png">$INFO[Window(home).Property(Poster)]</texture>
+					</control>				
+					<control type="image">
+						<left>5</left>
+						<top>-420</top>
+						<width>510</width>
+						<height>740</height>
+						<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+						<visible></visible>
+					</control>			
+				</control> 							
                 <control type="grouplist" id="5020">
                     <left>465</left>
                     <top>-130</top>
