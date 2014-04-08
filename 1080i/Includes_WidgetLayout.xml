@@ -430,13 +430,13 @@
                 <control type="label">
                     <left>720</left>
                     <top>988</top>
-                    <width>800</width>
+                    <width>850</width>
                     <height>50</height>
                     <aligny>top</aligny>
                     <label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.ChannelName,, - ]$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,)]</label>
                     <font>Font_Reg37_Caps</font>
                     <textcolor>white3</textcolor>
-					<wrapmultiline>true</wrapmultiline>
+					<scroll>true</scroll>
                 </control>	
             </control>
         </control>
