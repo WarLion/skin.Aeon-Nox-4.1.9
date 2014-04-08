@@ -1,3 +1,13 @@
+[B]4.1.9.8[/B]
+progress flag
+progress bar on home and breadcrumbs
+Color icon mod (neurosis13)
+bugs fix
+showcase mod (mikebzh44)
+cases for widgets
+add up to 10cdart for movies set 
+
+
 [B]4.1.9.7[/B]
 NextAired Secon Layout (Based on Today)
 New Update TV-Guide on Context Menu

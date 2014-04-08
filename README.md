@@ -1,5 +1,23 @@
 skin.Aeon-Nox-4.1.9
 ===================
+
+4.1.9.8
+
+progress flag
+
+progress bar on home and breadcrumbs
+
+Color icon mod (neurosis13)
+
+bugs fix
+
+showcase mod (mikebzh44)
+
+cases for widgets
+
+add up to 10cdart for movies set 
+
+
 4.1.9.7
 
 NextAired Secon Layout (Based on Today)
