@@ -1273,6 +1273,76 @@
                     <bordertexture border="19.5">thumbs/poster_shadow.png</bordertexture>
                     <bordersize>19</bordersize>
                 </control>
+                <!-- MikeBZH44 Start : Default view for MusicVideos and Episodes, ddd Discart and resolution case for Movies -->
+                <control type="image">
+                    <posx>12</posx>
+                    <posy>581</posy>
+                    <width>335</width>
+                    <height>504</height>
+                    <texture>thumbs/thumb_glass_shadow.png</texture>
+                    <visible>!Skin.HasSetting(DisableGlowbar)</visible>
+                    <include>PanelGlowFade</include>
+                    <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+                    <include>Animation_VisibleChange400</include>
+                    <visible>VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(episodes)</visible>
+                </control>
+                <control type="image">
+                    <posx>25</posx>
+                    <posy>600</posy>
+                    <width>310</width>
+                    <height>465</height>
+                    <aspectratio aligny="bottom">stretch</aspectratio>
+                    <texture background="true" diffuse="thumbs/movieposter_mask.png">$VAR[PlayerPosterVar]</texture>
+                    <visible>VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(episodes)</visible>
+                </control>
+                <control type="image">
+                    <posx>5</posx>
+                    <posy>580</posy>
+                    <width>349</width>
+                    <height>504</height>
+                    <texture diffuse="thumbs/movieposter_mask.png">thumbs/thumb_glass_noreflect.png</texture>
+                    <bordertexture border="19.5">thumbs/poster_shadow.png</bordertexture>
+                    <bordersize>19</bordersize>
+                    <visible>VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(episodes)</visible>
+                </control>
+                <control type="image">
+                    <posx>73</posx>
+                    <posy>706</posy>
+                    <width>270</width>
+                    <height>270</height>
+                    <texture background="true">$INFO[Player.Art(discart)]</texture>
+                    <animation type="WindowOpen">
+                        <effect type="slide" start="0,0" end="147,0" delay="500" time="1000" tween="cubic" easing="inout"/>
+                    </animation>
+                    <animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+                    <visible>VideoPlayer.Content(movies)</visible>
+                </control>
+                <control type="image">
+                    <posx>73</posx>
+                    <posy>636</posy>
+                    <width>282</width>
+                    <height>420</height>
+                    <aspectratio aligny="bottom">stretch</aspectratio>
+                    <texture background="true" diffuse="thumbs/movieposter_mask.png">$VAR[PlayerPosterVar]</texture>
+                    <visible>VideoPlayer.Content(movies)</visible>
+                </control>
+                <control type="image">
+                    <posx>25</posx>
+                    <posy>600</posy>
+                    <width>348</width>
+                    <height>479</height>
+                    <texture background="true">thumbs/boxes/$VAR[ShowcaseCasePathVar]/$INFO[VideoPlayer.VideoResolution]p.png</texture>
+                    <visible>VideoPlayer.Content(movies) + ![SubString(Player.Filename,.3D.) | SubString(Player.Filename,.3d.)]</visible>
+                </control>
+                <control type="image">
+                    <posx>25</posx>
+                    <posy>600</posy>
+                    <width>348</width>
+                    <height>479</height>
+                    <texture background="true">thumbs/boxes/$VAR[ShowcaseCasePathVar]/3d.png</texture>
+                    <visible>VideoPlayer.Content(movies) + [SubString(Player.Filename,.3D.) | SubString(Player.Filename,.3d.)]</visible>
+                </control>
+                <!-- MikeBZH44 End -->				
             </control>
             <control type="group">
                 <visible>VideoPlayer.Content(files)</visible>

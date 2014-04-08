@@ -451,33 +451,6 @@
                     <label>$INFO[Container(8001).ListItem.Label]</label>
                     <font>Font_Bold40</font>
                 </control>
-                <control type="grouplist">
-                    <left>250</left>
-                    <top>90</top>
-                    <orientation>horizontal</orientation>
-                    <control type="image">
-                        <left>1520</left>
-                        <top>195</top>
-                        <texture>$VAR[ColorFlagsAudio]audio/$INFO[Container(8001).ListItem.Property(AudioCodec)]$INFO[Container(8001).ListItem.Property(AudioChannels)].png</texture>
-                        <include>AudioFlagsVars</include>
-                    </control>
-                    <control type="image">
-                        <left>1520</left>
-                        <top>125</top>
-                        <texture>$VAR[ColorFlagsSource]Source/$INFO[Container(8001).ListItem.Property(VideoCodec)].png</texture>
-                        <include>AudioFlagsVars</include>
-                    </control>
-                    <control type="image">
-                        <left>1480</left>
-                        <top>255</top>
-                        <texture>$VAR[ColorFlagsResolution]resolution/$INFO[Container(8001).ListItem.Property(VideoResolution)].png</texture>
-						<height>64</height>
-						<aspectratio>keep</aspectratio>
-						<fadetime>IconCrossfadeTime2</fadetime>
-						<colordiffuse>floor</colordiffuse>
-						<animation effect="fade" time="200">VisibleChange</animation>
-                    </control>
-                </control>
                 <control type="label">
                     <left>223</left>
                     <top>45</top>
@@ -490,7 +463,30 @@
                     <textcolor>white4</textcolor>
                 </control>
                 <control type="grouplist">
-                    <left>623</left>
+                    <left>250</left>
+                    <top>90</top>
+                    <orientation>horizontal</orientation>				
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <texture>$VAR[ColorFlagsAudio]audio/$INFO[Container(8001).ListItem.Property(AudioCodec)]$INFO[Container(8001).ListItem.Property(AudioChannels)].png</texture>
+                        <include>AudioFlagsVars</include>
+                    </control>
+                    <control type="image">
+                        <left>120</left>
+                        <top>0</top>
+                        <texture>$VAR[ColorFlagsSource]Source/$INFO[Container(8001).ListItem.Property(VideoCodec)].png</texture>
+                        <include>AudioFlagsVars</include>
+                    </control>
+                    <control type="image">
+                        <left>100</left>
+                        <top>0</top>
+                        <texture>$VAR[ColorFlagsResolution]resolution/$INFO[Container(8001).ListItem.Property(VideoResolution)].png</texture>
+                        <include>AudioFlagsVars</include>
+                    </control>
+				</control>				
+                <control type="grouplist">
+                    <left>653</left>
                     <top>88</top>
                     <orientation>vertical</orientation>
                     <itemgap>0</itemgap>

@@ -430,13 +430,13 @@
                 <control type="label">
                     <left>720</left>
                     <top>988</top>
-                    <width>850</width>
+                    <width>800</width>
                     <height>50</height>
                     <aligny>top</aligny>
                     <label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.ChannelName,, - ]$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,)]</label>
                     <font>Font_Reg37_Caps</font>
                     <textcolor>white3</textcolor>
-					<scroll>true</scroll>
+					<wrapmultiline>true</wrapmultiline>
                 </control>	
             </control>
         </control>
@@ -1613,6 +1613,19 @@
                     <aspectratio scalediffuse="false">scale</aspectratio>
                     <texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="DefaultVideoBigPoster.png">$INFO[Container(8000).ListItem.Property(Poster)]</texture>
                     <fadetime>IconCrossfadeTime</fadetime>
+					<!-- MikeBZH44 Start -->
+                    <visible>![Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)]</visible>
+                    <!-- MikeBZH44 End -->
+                </control>
+                <!-- MikeBZH44 Start : Use different diffuse template -->
+                <control type="image">
+                    <width>260</width>
+                    <height>390</height>
+                    <fadetime>IconCrossfadeTime</fadetime>
+                    <texture diffuse="thumbs/thumb_mask.png" background="true" fallback="DefaultVideoBigPoster.png">$INFO[Container(8000).ListItem.Property(Poster)]</texture>
+                    <aspectratio scalediffuse="false">stretch</aspectratio>
+                    <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>	
+				<!-- MikeBZH44 End --> 					
                 </control>
                 <control type="image">
                     <left>-19.5</left>
@@ -1623,7 +1636,21 @@
                     <texture diffuse="thumbs/movieposter_mask.png">thumbs/thumb_glass_noreflect.png</texture>
                     <bordersize>19.5</bordersize>
                     <bordertexture border="19.5">thumbs/poster_shadow.png</bordertexture>
+                    <!-- MikeBZH44 Start -->
+                    <visible>![Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)]</visible>
+                    <!-- MikeBZH44 End -->					
                 </control>
+                <!-- MikeBZH44 Start : Add resolution case -->
+                <control type="image">
+                    <posx>-47</posx>
+                    <posy>-33</posy>
+                    <width>325</width>
+                    <height>440</height>
+                    <texture>thumbs/boxes/$INFO[Skin.String(LiveBGCase)]/$INFO[Container(8000).ListItem.Property(VideoResolution)]p.png</texture>
+                    <aspectratio scalediffuse="false">stretch</aspectratio>
+                    <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
+                </control>
+                <!-- MikeBZH44 End -->				
                 <control type="grouplist">
                     <left>205</left>
                     <top>310</top>
@@ -1632,7 +1659,6 @@
                     <visible>Substring(Control.GetLabel(4321),movie)</visible>
                     <orientation>horizontal</orientation>
                     <itemgap>40</itemgap>
-                   
                 </control>
             </control>
             <!--Focused Random/Latest Episodes-->
@@ -1807,15 +1833,30 @@
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 </control>
                 <control type="image">
-                    <left>22</left>
-                    <top>1</top>
+                    <!-- MikeBZH44 Move left -2, top -1 -->
+                    <left>20</left>
+                    <top>0</top>
                     <width>403</width>
                     <height>403</height>
-                    <aspectratio scalediffuse="false">scale</aspectratio>
-                    <texture background="true" diffuse="thumbs/cdcover_mask.png" fallback="DefaultAlbumCover.png">$INFO[Container(8000).ListItem.Icon]</texture>
+                    <!-- MikeBZH44 Change scale to stretch -->
+                    <aspectratio scalediffuse="false">stretch</aspectratio>
+                    <!-- MikeBZH44 Change diffuse pattern -->
+                    <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAlbumCover.png">$INFO[Container(8000).ListItem.Icon]</texture>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <bordersize>20</bordersize>
+                    <!-- MikeBZH44 Add visible condition -->
+                    <visible>Substring(Control.GetLabel(4321),album)</visible>
                 </control>
+                <!-- MikeBZH44 Add CD Case -->
+                <control type="image">
+                    <aspectratio scalediffuse="false" align="right">scale</aspectratio>
+                    <texture>thumbs/boxes/cd_box_closed.png</texture>
+                    <posx>-18</posx>
+                    <posy>0</posy>
+                    <height>410</height>
+                    <width>446</width>
+                </control>
+                <!-- MikeBZH44 End -->
                 <control type="image">
                     <left>22</left>
                     <top>1</top>
@@ -3728,7 +3769,20 @@
                     <aspectratio scalediffuse="false">scale</aspectratio>
                     <texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="DefaultVideoBigPoster.png">$INFO[Container(7000).ListItem.Property(Poster)]</texture>
                     <fadetime>IconCrossfadeTime</fadetime>
+                    <!-- MikeBZH44 Start -->
+                    <visible>![Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)]</visible>
+                    <!-- MikeBZH44 End -->
                 </control>
+                <!-- MikeBZH44 Start : Use different diffuse template -->
+                <control type="image">
+                    <width>260</width>
+                    <height>390</height>
+                    <fadetime>IconCrossfadeTime</fadetime>
+                    <texture diffuse="thumbs/thumb_mask.png" background="true" fallback="DefaultVideoBigPoster.png">$INFO[Container(8000).ListItem.Property(Poster)]</texture>
+                    <aspectratio scalediffuse="false">stretch</aspectratio>
+                    <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
+                </control>
+                <!-- MikeBZH44 End -->
                 <control type="image">
                     <left>-19.5</left>
                     <top>-19.5</top>
@@ -3738,7 +3792,21 @@
                     <texture diffuse="thumbs/movieposter_mask.png">thumbs/thumb_glass_noreflect.png</texture>
                     <bordersize>19.5</bordersize>
                     <bordertexture border="19.5">thumbs/poster_shadow.png</bordertexture>
+                    <!-- MikeBZH44 Start -->
+                    <visible>![Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)]</visible>
+                    <!-- MikeBZH44 End -->
                 </control>
+                <!-- MikeBZH44 Start : Add resolution case -->
+                <control type="image">
+                    <posx>-47</posx>
+                    <posy>-33</posy>
+                    <width>325</width>
+                    <height>440</height>
+                    <texture>thumbs/boxes/$INFO[Skin.String(LiveBGCase)]/$INFO[Container(8000).ListItem.Property(VideoResolution)]p.png</texture>
+                    <aspectratio scalediffuse="false">stretch</aspectratio>
+                    <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
+                </control>
+                <!-- MikeBZH44 End -->
                 <control type="grouplist">
                     <left>205</left>
                     <top>310</top>
@@ -3939,6 +4007,17 @@
                     <texture>home/nowplaying_info.png</texture>
                     <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 </control>
+                <!-- MikeBZH44 Start -->
+                <!-- Clear back case -->
+                <control type="image">
+                    <aspectratio scalediffuse="false" align="right">scale</aspectratio>
+                    <texture>thumbs/boxes/cd_shadow_light.png</texture>
+                    <posx>-18</posx>
+                    <posy>0</posy>
+                    <height>410</height>
+                    <width>446</width>
+                </control>
+                <!-- MikeBZH44 End -->				
                 <control type="image">
                     <left>22</left>
                     <top>1</top>
@@ -3949,6 +4028,17 @@
                     <fadetime>IconCrossfadeTime</fadetime>
                     <bordersize>20</bordersize>
                 </control>
+                <!-- MikeBZH44 Start -->
+                <!-- Clear Case -->
+                <control type="image">
+                    <aspectratio scalediffuse="false" align="right">scale</aspectratio>
+                    <texture>thumbs/boxes/cd_glass.png</texture>
+                    <posx>-18</posx>
+                    <posy>0</posy>
+                    <height>410</height>
+                    <width>446</width>
+                </control>
+                <!-- MikeBZH44 End -->				
                 <control type="image">
                     <left>22</left>
                     <top>1</top>

@@ -182,7 +182,7 @@
                             </item>
                         </content>
                     </control>
-                    <control type="group">
+                    <control type="group" id="200">
                         <control type="group" id="119">
                             <left>498</left>
                             <top>100</top>
@@ -217,6 +217,7 @@
                                         <width>1358</width>
                                         <height>72</height>
                                         <texture>settings/settings_radiobuttonoff.png</texture>
+
                                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                                     </control>
                                     <control type="group">

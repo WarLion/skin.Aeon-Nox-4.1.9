@@ -921,7 +921,7 @@
                     <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
                 </animation>
                 <animation effect="zoom" start="100" end="195" time="640" easing="inout" tween="circle" center="960,970" condition="Control.IsVisible(501) + Skin.HasSetting(showcasezoom)">Conditional</animation>
-            <visible>Control.IsVisible(501)</visible>
+            <visible>Control.IsVisible(501) + !Skin.HasSetting(OpenCase)</visible>
             <include>Animation_VisibleChange200</include>
             <control type="group">
             <control type="group">
@@ -1123,7 +1123,210 @@
 
 	 test label --> 					
 <!-- end test label -->	
-<!-- end test label -->	 		
+<!-- end test label -->	
+
+	<!--diask art open Noflow---->
+	
+	
+	
+	<include name="NoFlowDiscArt">
+        <control type="group">
+                <animation type="WindowClose" reversible="false">
+                    <effect type="fade" start="100" end="0" time="240" />
+                    <effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
+                </animation>
+                <animation effect="zoom" start="100" end="195" time="640" easing="inout" tween="circle" center="960,970" condition="Control.IsVisible(501) + Skin.HasSetting(showcasezoom)">Conditional</animation>
+            <visible>Control.IsVisible(501) + Skin.HasSetting(OpenCase)</visible>
+            <include>Animation_VisibleChange200</include>
+            <control type="group">
+            <control type="group">
+                <control type="image">
+                    <left>2630</left>
+                    <top>704</top>
+                    <width>280</width>
+                    <height>280</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$INFO[Window(home).Property(Set.Movie.1.Art(discart))]</texture>
+                    <fadetime>4000</fadetime>
+                    <animation type="Conditional" condition="Control.IsVisible(1970) + !IsEmpty(Window(home).Property(Set.Movie.1.Art(discart)))" reversible="true">
+                        <effect type="slide" start="0,0" end="-1600,0" delay="1200" time="1120" tween="quadratic" easing="out" />
+                        <effect type="rotate" start="0" center="2770,844" end="720" delay="1200" time="1120" tween="quadratic" easing="out" />
+                    </animation>
+                </control>
+                <control type="image">
+                    <left>2630</left>
+                    <top>984</top>
+                    <width>280</width>
+                    <height>280</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true" flipy="true">$INFO[Window(home).Property(Set.Movie.1.Art(discart))]</texture>
+                    <fadetime>4000</fadetime>
+                    <colordiffuse>22FFFFFF</colordiffuse>
+                    <animation type="Conditional" condition="Control.IsVisible(1970) + !IsEmpty(Window(home).Property(Set.Movie.1.Art(discart)))" reversible="true">
+                        <effect type="slide" start="0,0" end="-1600,0" delay="1200" time="1120" tween="quadratic" easing="out" />
+                        <effect type="rotate" start="0" center="2770,1124" end="-720" delay="1200" time="1120" tween="quadratic" easing="out" />
+                    </animation>
+                </control>
+            </control>
+            <control type="group">
+                <control type="image">
+                    <left>2880</left>
+                    <top>704</top>
+                    <width>280</width>
+                    <height>280</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$INFO[Window(home).Property(Set.Movie.2.Art(discart))]</texture>
+                    <fadetime>4000</fadetime>
+                    <animation type="Conditional" condition="Control.IsVisible(1970) + !IsEmpty(Window(home).Property(Set.Movie.2.Art(discart)))" reversible="true">
+                        <effect type="slide" start="0,0" end="-1600,0" delay="1300" time="1120" tween="quadratic" easing="out" />
+                        <effect type="rotate" start="0" center="3020,844" end="720" delay="1300" time="1120" tween="quadratic" easing="out" />
+                    </animation>
+                </control>
+                <control type="image">
+                    <left>2880</left>
+                    <top>984</top>
+                    <width>280</width>
+                    <height>280</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true" flipy="true">$INFO[Window(home).Property(Set.Movie.2.Art(discart))]</texture>
+                    <fadetime>4000</fadetime>
+                    <colordiffuse>22FFFFFF</colordiffuse>
+                    <animation type="Conditional" condition="Control.IsVisible(1970) + !IsEmpty(Window(home).Property(Set.Movie.2.Art(discart)))" reversible="true">
+                        <effect type="slide" start="0,0" end="-1600,0" delay="1300" time="1120" tween="quadratic" easing="out" />
+                        <effect type="rotate" start="0" center="3020,1124" end="-720" delay="1300" time="1120" tween="quadratic" easing="out" />
+                    </animation>
+                </control>
+            </control>
+            <control type="group">
+                <control type="image">
+                    <left>3130</left>
+                    <top>704</top>
+                    <width>280</width>
+                    <height>280</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$INFO[Window(home).Property(Set.Movie.3.Art(discart))]</texture>
+                    <fadetime>4000</fadetime>
+                    <animation type="Conditional" condition="Control.IsVisible(1970) + !IsEmpty(Window(home).Property(Set.Movie.3.Art(discart)))" reversible="true">
+                        <effect type="slide" start="0,0" end="-1600,0" delay="1400" time="1120" tween="quadratic" easing="out" />
+                        <effect type="rotate" start="0" center="3270,844" end="720" delay="1400" time="1120" tween="quadratic" easing="out" />
+                    </animation>
+                </control>
+                <control type="image">
+                    <left>3130</left>
+                    <top>984</top>
+                    <width>280</width>
+                    <height>280</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true" flipy="true">$INFO[Window(home).Property(Set.Movie.3.Art(discart))]</texture>
+                    <fadetime>4000</fadetime>
+                    <colordiffuse>22FFFFFF</colordiffuse>
+                    <animation type="Conditional" condition="Control.IsVisible(1970) + !IsEmpty(Window(home).Property(Set.Movie.3.Art(discart)))" reversible="true">
+                        <effect type="slide" start="0,0" end="-1600,0" delay="1400" time="1120" tween="quadratic" easing="out" />
+                        <effect type="rotate" start="0" center="3270,1124" end="-720" delay="1400" time="1120" tween="quadratic" easing="out" />
+                    </animation>
+                </control>
+            </control>
+            </control>
+            <control type="group">
+            <control type="group">
+                <control type="image">
+                    <left>-990</left>
+                    <top>704</top>
+                    <width>280</width>
+                    <height>280</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$INFO[Window(home).Property(Set.Movie.4.Art(discart))]</texture>
+                    <fadetime>4000</fadetime>
+                    <animation type="Conditional" condition="Control.IsVisible(1970) + !IsEmpty(Window(home).Property(Set.Movie.4.Art(discart)))" reversible="true">
+                        <effect type="slide" start="0,0" end="1600,0" delay="1200" time="1120" tween="quadratic" easing="out" />
+                        <effect type="rotate" start="0" center="-850,844" end="-720" delay="1200" time="1120" tween="quadratic" easing="out" />
+                    </animation>
+                </control>
+                <control type="image">
+                    <left>-990</left>
+                    <top>984</top>
+                    <width>280</width>
+                    <height>280</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true" flipy="true">$INFO[Window(home).Property(Set.Movie.4.Art(discart))]</texture>
+                    <fadetime>4000</fadetime>
+                    <colordiffuse>22FFFFFF</colordiffuse>
+                    <animation type="Conditional" condition="Control.IsVisible(1970) + !IsEmpty(Window(home).Property(Set.Movie.4.Art(discart)))" reversible="true">
+                        <effect type="slide" start="0,0" end="1600,0" delay="1200" time="1120" tween="quadratic" easing="out" />
+                        <effect type="rotate" start="0" center="-850,1124" end="720" delay="1200" time="1120" tween="quadratic" easing="out" />
+                    </animation>
+                </control>
+            </control>
+            <control type="group">
+                <control type="image">
+                    <left>-1240</left>
+                    <top>704</top>
+                    <width>280</width>
+                    <height>280</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$INFO[Window(home).Property(Set.Movie.5.Art(discart))]</texture>
+                    <fadetime>4000</fadetime>
+                    <animation type="Conditional" condition="Control.IsVisible(1970) + !IsEmpty(Window(home).Property(Set.Movie.5.Art(discart)))" reversible="true">
+                        <effect type="slide" start="0,0" end="1600,0" delay="1300" time="1120" tween="quadratic" easing="out" />
+                        <effect type="rotate" start="0" center="-1100,844" end="-720" delay="1300" time="1120" tween="quadratic" easing="out" />
+                    </animation>
+                </control>
+                <control type="image">
+                    <left>-1240</left>
+                    <top>984</top>
+                    <width>280</width>
+                    <height>280</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true" flipy="true">$INFO[Window(home).Property(Set.Movie.5.Art(discart))]</texture>
+                    <fadetime>4000</fadetime>
+                    <colordiffuse>22FFFFFF</colordiffuse>
+                    <animation type="Conditional" condition="Control.IsVisible(1970) + !IsEmpty(Window(home).Property(Set.Movie.5.Art(discart)))" reversible="true">
+                        <effect type="slide" start="0,0" end="1600,0" delay="1300" time="1120" tween="quadratic" easing="out" />
+                        <effect type="rotate" start="0" center="-1100,1124" end="720" delay="1300" time="1120" tween="quadratic" easing="out" />
+                    </animation>
+                </control>
+            </control>
+            <control type="group">
+                <control type="image">
+                    <left>-1490</left>
+                    <top>704</top>
+                    <width>280</width>
+                    <height>280</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$INFO[Window(home).Property(Set.Movie.6.Art(discart))]</texture>
+                    <fadetime>4000</fadetime>
+                    <animation type="Conditional" condition="Control.IsVisible(1970) + !IsEmpty(Window(home).Property(Set.Movie.6.Art(discart)))" reversible="true">
+                        <effect type="slide" start="0,0" end="1600,0" delay="1400" time="1120" tween="quadratic" easing="out" />
+                        <effect type="rotate" start="0" center="-1350,844" end="-720" delay="1400" time="1120" tween="quadratic" easing="out" />
+                    </animation>
+                </control>
+                <control type="image">
+                    <left>-1490</left>
+                    <top>984</top>
+                    <width>280</width>
+                    <height>280</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true" flipy="true">$INFO[Window(home).Property(Set.Movie.6.Art(discart))]</texture>
+                    <fadetime>4000</fadetime>
+                    <colordiffuse>22FFFFFF</colordiffuse>
+                    <animation type="Conditional" condition="Control.IsVisible(1970) + !IsEmpty(Window(home).Property(Set.Movie.6.Art(discart)))" reversible="true">
+                        <effect type="slide" start="0,0" end="1600,0" delay="1400" time="1120" tween="quadratic" easing="out" />
+                        <effect type="rotate" start="0" center="-1350,1124" end="720" delay="1400" time="1120" tween="quadratic" easing="out" />
+                    </animation>
+                </control>
+            </control>
+            </control>           
+        </control>		
+	</include>
+	
+	
+	
+	
+	
+	<!--diask art open Noflow---->
+
+
+ 		
     </include>
     <include name="Topbar">
         <width>1920</width>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
-        <include name="NodeFadeLabels">
+    <include name="NodeFadeLabels">
         <control type="fadelabel" id="4324">
             <pauseatend>7500</pauseatend>
             <width>11479</width>
@@ -30,12 +30,10 @@
             <visible>[Container.Content(tags) | Container.Content(directors) | Container.Content(actors) | Container.Content(genres) | Container.Content(studios) | Container.Content(countries) | Container.Content(years) | Container.Content(sets) | SubString(ListItem.Path,videodb://movies/sets/,left)]</visible>
             <visible>!Stringcompare(ListItem.Label,..)</visible>
         </control>
-       
-        </include>
-        <include name="InteractiveNodeCases">
-
-        
-       <control type="group">
+    </include>
+    <!-- Live DVD/BD Cases for Movieset -->
+    <include name="InteractiveNodeCases">
+        <control type="group">
             <animation effect="fade" time="600">VisibleChange</animation>
             <include>Animation_WindowFade250</include>
             <visible>Skin.HasSetting(livenodecovers)</visible>
@@ -48,24 +46,27 @@
                     <visible>!IsEmpty(Window(home).Property(Detail.Movie.2.Art(poster)))</visible>
                     <animation effect="fade" time="320">VisibleChange</animation>
                     <control type="group">
-                    <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
-                    <animation effect="rotate" center="138,190" start="25" end="5" time="0" condition="true">Conditional</animation>
-                    <control type="image">
-                        <left>39</left>
-                        <top>9</top>
-                        <width>223</width>
-                        <height>335</height>
-                        <fadetime>600</fadetime>
-                        <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.2.Art(poster))]</texture>
-                    </control>
-                    <control type="image">
-                        <top>-20</top>
-                        <width>276</width>
-                        <height>380</height>
-                        <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase2Var]p.png</texture>
-                    </control>
+                        <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
+                        <animation effect="rotate" center="138,190" start="25" end="5" time="0" condition="true">Conditional</animation>
+                        <control type="image">
+                            <left>39</left>
+                            <top>9</top>
+                            <width>223</width>
+                            <height>335</height>
+                            <fadetime>600</fadetime>
+                            <align>center</align>
+                            <!-- MikeBZH44 Scale to Stretch for poster -->
+                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.2.Art(poster))]</texture>
+                        </control>
+                        <control type="image">
+                            <top>-20</top>
+                            <width>276</width>
+                            <height>380</height>
+                            <!-- MikeBZH44 Resolution case for movieset -->
+                            <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$INFO[Window(home).Property(Detail.Movie.2.Resolution)]p.png</texture>
+                            <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
+                        </control>
                     </control>
                 </control>
                 <control type="group">
@@ -74,24 +75,27 @@
                     <animation effect="fade" time="320">VisibleChange</animation>
                     <visible>!IsEmpty(Window(home).Property(Detail.Movie.3.Art(poster)))</visible>
                     <control type="group">
-                    <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
-                    <animation effect="rotate" center="138,190" start="10" end="10" time="0" condition="true">Conditional</animation>
-                    <control type="image">
-                        <left>39</left>
-                        <top>9</top>
-                        <width>223</width>
-                        <height>335</height>
-                        <fadetime>600</fadetime>
-                        <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.3.Art(poster))]</texture>
-                    </control>
-                    <control type="image">
-                        <top>-20</top>
-                        <width>276</width>
-                        <height>380</height>
-                        <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase3Var]p.png</texture>
-                    </control>
+                        <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
+                        <animation effect="rotate" center="138,190" start="10" end="10" time="0" condition="true">Conditional</animation>
+                        <control type="image">
+                            <left>39</left>
+                            <top>9</top>
+                            <width>223</width>
+                            <height>335</height>
+                            <fadetime>600</fadetime>
+                            <align>center</align>
+                            <!-- MikeBZH44 Scale to Stretch for poster -->
+                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.3.Art(poster))]</texture>
+                        </control>
+                        <control type="image">
+                            <top>-20</top>
+                            <width>276</width>
+                            <height>380</height>
+                            <!-- MikeBZH44 Resolution case for movieset -->
+                            <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$INFO[Window(home).Property(Detail.Movie.3.Resolution)]p.png</texture>
+                            <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
+                        </control>
                     </control>
                 </control>
                 <control type="group">
@@ -100,24 +104,27 @@
                     <visible>!IsEmpty(Window(home).Property(Detail.Movie.5.Art(poster)))</visible>
                     <animation effect="fade" time="320">VisibleChange</animation>
                     <control type="group">
-                    <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
-                    <animation effect="rotate" center="138,190" start="285" end="285" time="0" condition="true">Conditional</animation>
-                    <control type="image">
-                        <left>39</left>
-                        <top>9</top>
-                        <width>223</width>
-                        <height>335</height>
-                        <fadetime>600</fadetime>
-                        <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.5.Art(poster))]</texture>
-                    </control>
-                    <control type="image">
-                        <top>-20</top>
-                        <width>276</width>
-                        <height>380</height>
-                        <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase5Var]p.png</texture>
-                    </control>
+                        <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
+                        <animation effect="rotate" center="138,190" start="285" end="285" time="0" condition="true">Conditional</animation>
+                        <control type="image">
+                            <left>39</left>
+                            <top>9</top>
+                            <width>223</width>
+                            <height>335</height>
+                            <fadetime>600</fadetime>
+                            <align>center</align>
+                            <!-- MikeBZH44 Scale to Stretch for poster -->
+                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.5.Art(poster))]</texture>
+                        </control>
+                        <control type="image">
+                            <top>-20</top>
+                            <width>276</width>
+                            <height>380</height>
+                            <!-- MikeBZH44 Resolution case for movieset -->
+                            <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$INFO[Window(home).Property(Detail.Movie.5.Resolution)]p.png</texture>
+                            <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
+                        </control>
                     </control>
                 </control>
                 <control type="group">
@@ -126,24 +133,27 @@
                     <visible>!IsEmpty(Window(home).Property(Detail.Movie.6.Art(poster)))</visible>
                     <animation effect="fade" time="320">VisibleChange</animation>
                     <control type="group">
-                    <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
-                    <animation effect="rotate" center="138,190" start="75" end="75" time="0" condition="true">Conditional</animation>
-                    <control type="image">
-                        <left>39</left>
-                        <top>9</top>
-                        <width>223</width>
-                        <height>335</height>
-                        <fadetime>600</fadetime>
-                        <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.6.Art(poster))]</texture>
-                    </control>
-                    <control type="image">
-                        <top>-20</top>
-                        <width>276</width>
-                        <height>380</height>
-                        <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase6Var]p.png</texture>
-                    </control>
+                        <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
+                        <animation effect="rotate" center="138,190" start="75" end="75" time="0" condition="true">Conditional</animation>
+                        <control type="image">
+                            <left>39</left>
+                            <top>9</top>
+                            <width>223</width>
+                            <height>335</height>
+                            <fadetime>600</fadetime>
+                            <align>center</align>
+                            <!-- MikeBZH44 Scale to Stretch for poster -->
+                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.6.Art(poster))]</texture>
+                        </control>
+                        <control type="image">
+                            <top>-20</top>
+                            <width>276</width>
+                            <height>380</height>
+                            <!-- MikeBZH44 Resolution case for movieset -->
+                            <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$INFO[Window(home).Property(Detail.Movie.6.Resolution)]p.png</texture>
+                            <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
+                        </control>
                     </control>
                 </control>
                 <control type="group">
@@ -152,24 +162,27 @@
                     <visible>!IsEmpty(Window(home).Property(Detail.Movie.4.Art(poster)))</visible>
                     <animation effect="fade" time="320">VisibleChange</animation>
                     <control type="group">
-                    <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
-                    <animation effect="rotate" center="138,190" start="-35" end="-35" time="0" condition="true">Conditional</animation>
-                    <control type="image">
-                        <left>39</left>
-                        <top>9</top>
-                        <width>223</width>
-                        <height>335</height>
-                        <fadetime>600</fadetime>
-                        <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.4.Art(poster))]</texture>
-                    </control>
-                    <control type="image">
-                        <top>-20</top>
-                        <width>276</width>
-                        <height>380</height>
-                        <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase4Var]p.png</texture>
-                    </control>
+                        <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
+                        <animation effect="rotate" center="138,190" start="-35" end="-35" time="0" condition="true">Conditional</animation>
+                        <control type="image">
+                            <left>39</left>
+                            <top>9</top>
+                            <width>223</width>
+                            <height>335</height>
+                            <fadetime>600</fadetime>
+                            <align>center</align>
+                            <!-- MikeBZH44 Scale to Stretch for poster -->
+                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.4.Art(poster))]</texture>
+                        </control>
+                        <control type="image">
+                            <top>-20</top>
+                            <width>276</width>
+                            <height>380</height>
+                            <!-- MikeBZH44 Resolution case for movieset -->
+                            <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$INFO[Window(home).Property(Detail.Movie.4.Resolution)]p.png</texture>
+                            <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
+                        </control>
                     </control>
                 </control>
                 <control type="group">
@@ -178,24 +191,27 @@
                     <visible>!IsEmpty(Window(home).Property(Detail.Movie.8.Art(poster)))</visible>
                     <animation effect="fade" time="320">VisibleChange</animation>
                     <control type="group">
-                    <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
-                    <animation effect="rotate" center="138,190" start="-35" end="-35" time="0" condition="true">Conditional</animation>
-                    <control type="image">
-                        <left>39</left>
-                        <top>9</top>
-                        <width>223</width>
-                        <height>335</height>
-                        <fadetime>600</fadetime>
-                        <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.8.Art(poster))]</texture>
-                    </control>
-                    <control type="image">
-                        <top>-20</top>
-                        <width>276</width>
-                        <height>380</height>
-                        <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase8Var]p.png</texture>
-                    </control>
+                        <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
+                        <animation effect="rotate" center="138,190" start="-35" end="-35" time="0" condition="true">Conditional</animation>
+                        <control type="image">
+                            <left>39</left>
+                            <top>9</top>
+                            <width>223</width>
+                            <height>335</height>
+                            <fadetime>600</fadetime>
+                            <align>center</align>
+                            <!-- MikeBZH44 Scale to Stretch for poster -->
+                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.8.Art(poster))]</texture>
+                        </control>
+                        <control type="image">
+                            <top>-20</top>
+                            <width>276</width>
+                            <height>380</height>
+                            <!-- MikeBZH44 Resolution case for movieset -->
+                            <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$INFO[Window(home).Property(Detail.Movie.8.Resolution)]p.png</texture>
+                            <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
+                        </control>
                     </control>
                 </control>
                 <control type="group">
@@ -204,24 +220,27 @@
                     <visible>!IsEmpty(Window(home).Property(Detail.Movie.7.Art(poster)))</visible>
                     <animation effect="fade" time="320">VisibleChange</animation>
                     <control type="group">
-                    <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
-                    <animation effect="rotate" center="138,190" start="65" end="65" time="0" condition="true">Conditional</animation>
-                    <control type="image">
-                        <left>39</left>
-                        <top>9</top>
-                        <width>223</width>
-                        <height>335</height>
-                        <fadetime>600</fadetime>
-                        <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.7.Art(poster))]</texture>
-                    </control>
-                    <control type="image">
-                        <top>-20</top>
-                        <width>276</width>
-                        <height>380</height>
-                        <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase7Var]p.png</texture>
-                    </control>
+                        <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
+                        <animation effect="rotate" center="138,190" start="65" end="65" time="0" condition="true">Conditional</animation>
+                        <control type="image">
+                            <left>39</left>
+                            <top>9</top>
+                            <width>223</width>
+                            <height>335</height>
+                            <fadetime>600</fadetime>
+                            <align>center</align>
+                            <!-- MikeBZH44 Scale to Stretch for poster -->
+                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.7.Art(poster))]</texture>
+                        </control>
+                        <control type="image">
+                            <top>-20</top>
+                            <width>276</width>
+                            <height>380</height>
+                            <!-- MikeBZH44 Resolution case for movieset -->
+                            <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$INFO[Window(home).Property(Detail.Movie.7.Resolution)]p.png</texture>
+                            <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
+                        </control>
                     </control>
                 </control>
                 <control type="group">
@@ -230,24 +249,27 @@
                     <visible>!IsEmpty(Window(home).Property(Detail.Movie.9.Art(poster)))</visible>
                     <animation effect="fade" time="320">VisibleChange</animation>
                     <control type="group">
-                    <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
-                    <animation effect="rotate" center="138,190" start="-10" end="-10" time="0" condition="true">Conditional</animation>
-                    <control type="image">
-                        <left>39</left>
-                        <top>9</top>
-                        <width>223</width>
-                        <height>335</height>
-                        <fadetime>600</fadetime>
-                        <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.9.Art(poster))]</texture>
-                    </control>
-                    <control type="image">
-                        <top>-20</top>
-                        <width>276</width>
-                        <height>380</height>
-                        <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase9Var]p.png</texture>
-                    </control>
+                        <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
+                        <animation effect="rotate" center="138,190" start="-10" end="-10" time="0" condition="true">Conditional</animation>
+                        <control type="image">
+                            <left>39</left>
+                            <top>9</top>
+                            <width>223</width>
+                            <height>335</height>
+                            <fadetime>600</fadetime>
+                            <align>center</align>
+                            <!-- MikeBZH44 Scale to Stretch for poster -->
+                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.9.Art(poster))]</texture>
+                        </control>
+                        <control type="image">
+                            <top>-20</top>
+                            <width>276</width>
+                            <height>380</height>
+                            <!-- MikeBZH44 Resolution case for movieset -->
+                            <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$INFO[Window(home).Property(Detail.Movie.9.Resolution)]p.png</texture>
+                            <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
+                        </control>
                     </control>
                 </control>
                 <control type="group">
@@ -256,24 +278,27 @@
                     <visible>!IsEmpty(Window(home).Property(Detail.Movie.10.Art(poster)))</visible>
                     <animation effect="fade" time="320">VisibleChange</animation>
                     <control type="group">
-                    <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
-                    <animation effect="rotate" center="138,190" start="16" end="16" time="0" condition="true">Conditional</animation>
-                    <control type="image">
-                        <left>39</left>
-                        <top>9</top>
-                        <width>223</width>
-                        <height>335</height>
-                        <fadetime>600</fadetime>
-                        <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.10.Art(poster))]</texture>
-                    </control>
-                    <control type="image">
-                        <top>-20</top>
-                        <width>276</width>
-                        <height>380</height>
-                        <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase10Var]p.png</texture>
-                    </control>
+                        <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
+                        <animation effect="rotate" center="138,190" start="16" end="16" time="0" condition="true">Conditional</animation>
+                        <control type="image">
+                            <left>39</left>
+                            <top>9</top>
+                            <width>223</width>
+                            <height>335</height>
+                            <fadetime>600</fadetime>
+                            <align>center</align>
+                            <!-- MikeBZH44 Scale to Stretch for poster -->
+                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.10.Art(poster))]</texture>
+                        </control>
+                        <control type="image">
+                            <top>-20</top>
+                            <width>276</width>
+                            <height>380</height>
+                            <!-- MikeBZH44 Resolution case for movieset -->
+                            <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$INFO[Window(home).Property(Detail.Movie.10.Resolution)]p.png</texture>
+                            <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
+                        </control>
                     </control>
                 </control>
                 <control type="group">
@@ -282,31 +307,32 @@
                     <visible>!IsEmpty(Window(home).Property(Detail.Movie.1.Art(poster)))</visible>
                     <animation effect="fade" time="320">VisibleChange</animation>
                     <control type="group">
-                    <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
-                    <animation effect="rotate" center="138,190" start="-65" end="-65" time="0" condition="true">Conditional</animation>
-                    <control type="image">
-                        <left>39</left>
-                        <top>9</top>
-                        <width>223</width>
-                        <height>335</height>
-                        <fadetime>600</fadetime>
-                        <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.1.Art(poster))]</texture>
-                    </control>
-                    <control type="image">
-                        <top>-20</top>
-                        <width>276</width>
-                        <height>380</height>
-                        <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase1Var]p.png</texture>
-                    </control>
+                        <animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
+                        <animation effect="rotate" center="138,190" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+                        <control type="image">
+                            <left>39</left>
+                            <top>9</top>
+                            <width>223</width>
+                            <height>335</height>
+                            <fadetime>600</fadetime>
+                            <align>center</align>
+                            <!-- MikeBZH44 Scale to Stretch for poster -->
+                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Detail.Movie.1.Art(poster))]</texture>
+                        </control>
+                        <control type="image">
+                            <top>-20</top>
+                            <width>276</width>
+                            <height>380</height>
+                            <!-- MikeBZH44 Resolution case for movieset -->
+                            <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$INFO[Window(home).Property(Detail.Movie.1.Resolution)]p.png</texture>
+                            <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
+                        </control>
                     </control>
                 </control>
             </control>
         </control>
-        
-        
-        </include>
+    </include>
     <include name="BackgroundFadeLabels">
         <control type="fadelabel" id="4324">
             <pauseatend>7500</pauseatend>
@@ -486,6 +512,7 @@
             <visible>Stringcompare(Control.GetLabel(4322),recentalbums)</visible>
         </control>
         <control type="fadelabel" id="4324">
+
             <pauseatend>7500</pauseatend>
             <width>11479</width>
             <height>118</height>
@@ -712,18 +739,18 @@
             <font>Font_Reg57</font>
             <textcolor>00FFFFFF</textcolor>
             <label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/$INFO[System.Date(yyyy)]/$INFO[System.Date(mm)]/$INFO[System.Date(dd)]/1.jpg</label>
-			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/01/$INFO[System.Date(dd)]/1.jpg</label>
-			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/02/$INFO[System.Date(dd)]/1.jpg</label>
-			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/03/$INFO[System.Date(dd)]/1.jpg</label>
-			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/04/$INFO[System.Date(dd)]/1.jpg</label>
-			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/05/$INFO[System.Date(dd)]/1.jpg</label>
-			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/06/$INFO[System.Date(dd)]/1.jpg</label>
-			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/07/$INFO[System.Date(dd)]/1.jpg</label>
-			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/08/$INFO[System.Date(dd)]/1.jpg</label>
-			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/09/$INFO[System.Date(dd)]/1.jpg</label>
-			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/10/$INFO[System.Date(dd)]/1.jpg</label>
-			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/11/$INFO[System.Date(dd)]/1.jpg</label>
-			<label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/12/$INFO[System.Date(dd)]/1.jpg</label>
+            <label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/01/$INFO[System.Date(dd)]/1.jpg</label>
+            <label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/02/$INFO[System.Date(dd)]/1.jpg</label>
+            <label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/03/$INFO[System.Date(dd)]/1.jpg</label>
+            <label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/04/$INFO[System.Date(dd)]/1.jpg</label>
+            <label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/05/$INFO[System.Date(dd)]/1.jpg</label>
+            <label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/06/$INFO[System.Date(dd)]/1.jpg</label>
+            <label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/07/$INFO[System.Date(dd)]/1.jpg</label>
+            <label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/08/$INFO[System.Date(dd)]/1.jpg</label>
+            <label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/09/$INFO[System.Date(dd)]/1.jpg</label>
+            <label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/10/$INFO[System.Date(dd)]/1.jpg</label>
+            <label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/11/$INFO[System.Date(dd)]/1.jpg</label>
+            <label>http://img1.demo.jsxbabeotd.dellsports.com/static/models/2013/12/$INFO[System.Date(dd)]/1.jpg</label>
             <visible>Stringcompare(Control.GetLabel(4322),dailybabe)</visible>
         </control>
         <control type="fadelabel" id="4324">
@@ -801,6 +828,7 @@
             <visible>Stringcompare(Control.GetLabel(4322),randomflickr)</visible>
         </control>
     </include>
+    <!-- Live DVD/BD Cases -->
     <include name="InteractiveCasesBackground">
         <control type="group">
             <animation effect="fade" time="600">VisibleChange</animation>
@@ -819,7 +847,8 @@
                         <height>335</height>
                         <fadetime>600</fadetime>
                         <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <!-- MikeBZH44 Scale to Stretch for poster -->
+                        <aspectratio scalediffuse="false">stretch</aspectratio>
                         <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$VAR[Case2Var]</texture>
                     </control>
                     <control type="image">
@@ -827,6 +856,7 @@
                         <width>276</width>
                         <height>380</height>
                         <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase2Var]p.png</texture>
+                        <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -841,7 +871,8 @@
                         <height>335</height>
                         <fadetime>600</fadetime>
                         <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <!-- MikeBZH44 Scale to Stretch for poster -->
+                        <aspectratio scalediffuse="false">stretch</aspectratio>
                         <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$VAR[Case3Var]</texture>
                     </control>
                     <control type="image">
@@ -849,6 +880,7 @@
                         <width>276</width>
                         <height>380</height>
                         <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase3Var]p.png</texture>
+                        <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -863,7 +895,8 @@
                         <height>335</height>
                         <fadetime>600</fadetime>
                         <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <!-- MikeBZH44 Scale to Stretch for poster -->
+                        <aspectratio scalediffuse="false">stretch</aspectratio>
                         <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$VAR[Case5Var]</texture>
                     </control>
                     <control type="image">
@@ -871,6 +904,7 @@
                         <width>276</width>
                         <height>380</height>
                         <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase5Var]p.png</texture>
+                        <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -885,7 +919,8 @@
                         <height>335</height>
                         <fadetime>600</fadetime>
                         <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <!-- MikeBZH44 Scale to Stretch for poster -->
+                        <aspectratio scalediffuse="false">stretch</aspectratio>
                         <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$VAR[Case6Var]</texture>
                     </control>
                     <control type="image">
@@ -893,6 +928,7 @@
                         <width>276</width>
                         <height>380</height>
                         <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase6Var]p.png</texture>
+                        <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -907,7 +943,8 @@
                         <height>335</height>
                         <fadetime>600</fadetime>
                         <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <!-- MikeBZH44 Scale to Stretch for poster -->
+                        <aspectratio scalediffuse="false">stretch</aspectratio>
                         <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$VAR[Case4Var]</texture>
                     </control>
                     <control type="image">
@@ -915,6 +952,7 @@
                         <width>276</width>
                         <height>380</height>
                         <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase4Var]p.png</texture>
+                        <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -929,7 +967,8 @@
                         <height>335</height>
                         <fadetime>600</fadetime>
                         <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <!-- MikeBZH44 Scale to Stretch for poster -->
+                        <aspectratio scalediffuse="false">stretch</aspectratio>
                         <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$VAR[Case8Var]</texture>
                     </control>
                     <control type="image">
@@ -937,6 +976,7 @@
                         <width>276</width>
                         <height>380</height>
                         <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase8Var]p.png</texture>
+                        <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -951,7 +991,8 @@
                         <height>335</height>
                         <fadetime>600</fadetime>
                         <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <!-- MikeBZH44 Scale to Stretch for poster -->
+                        <aspectratio scalediffuse="false">stretch</aspectratio>
                         <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$VAR[Case7Var]</texture>
                     </control>
                     <control type="image">
@@ -959,6 +1000,7 @@
                         <width>276</width>
                         <height>380</height>
                         <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase7Var]p.png</texture>
+                        <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -973,7 +1015,8 @@
                         <height>335</height>
                         <fadetime>600</fadetime>
                         <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <!-- MikeBZH44 Scale to Stretch for poster -->
+                        <aspectratio scalediffuse="false">stretch</aspectratio>
                         <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$VAR[Case9Var]</texture>
                     </control>
                     <control type="image">
@@ -981,6 +1024,7 @@
                         <width>276</width>
                         <height>380</height>
                         <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase9Var]p.png</texture>
+                        <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -995,7 +1039,8 @@
                         <height>335</height>
                         <fadetime>600</fadetime>
                         <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <!-- MikeBZH44 Scale to Stretch for poster -->
+                        <aspectratio scalediffuse="false">stretch</aspectratio>
                         <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$VAR[Case10Var]</texture>
                     </control>
                     <control type="image">
@@ -1003,6 +1048,7 @@
                         <width>276</width>
                         <height>380</height>
                         <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase10Var]p.png</texture>
+                        <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -1017,7 +1063,8 @@
                         <height>335</height>
                         <fadetime>600</fadetime>
                         <align>center</align>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <!-- MikeBZH44 Scale to Stretch for poster -->
+                        <aspectratio scalediffuse="false">stretch</aspectratio>
                         <texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$VAR[Case1Var]</texture>
                     </control>
                     <control type="image">
@@ -1025,12 +1072,26 @@
                         <width>276</width>
                         <height>380</height>
                         <texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCase]/$VAR[ResCase1Var]p.png</texture>
+                        <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
                     </control>
                 </control>
             </control>
         </control>
     </include>
     <!-- CD Case -->
+    <!-- MikeBZH44 Add 2 differents dimensions depending on CD Case look -->
+    <include name="LiveCDCasesBGDim1">
+        <left>54</left>
+        <top>17</top>
+        <width>302</width>
+        <height>302</height>
+    </include>
+    <include name="LiveCDCasesBGDim2">
+        <left>50</left>
+        <top>14</top>
+        <width>310</width>
+        <height>305</height>
+    </include>
     <include name="LiveCDCasesbackground">
         <control type="group">
             <animation effect="fade" time="600">VisibleChange</animation>
@@ -1044,13 +1105,18 @@
                     <animation effect="zoom" start="150" end="150" center="auto" time="0" condition="true">Conditional</animation>
                     <animation effect="rotate" center="auto" start="9" end="9" time="0" condition="true">Conditional</animation>
                     <control type="image">
-                        <left>54</left>
-                        <top>17</top>
-                        <width>302</width>
-                        <height>302</height>
+                        <include>LiveCDCasesBGDim1</include>
                         <fadetime>600</fadetime>
                         <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase1Var]</texture>
                         <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>!Skin.HasSetting(LiveBGCDCase)</visible>
+                    </control>
+                    <control type="image">
+                        <include>LiveCDCasesBGDim2</include>
+                        <fadetime>600</fadetime>
+                        <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase1Var]</texture>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>Skin.HasSetting(LiveBGCDCase)</visible>
                     </control>
                     <control type="image">
                         <width>375</width>
@@ -1071,13 +1137,18 @@
                     <animation effect="zoom" start="150" end="150" center="auto" time="0" condition="true">Conditional</animation>
                     <animation effect="rotate" center="auto" start="65" end="65" time="0" condition="true">Conditional</animation>
                     <control type="image">
-                        <left>54</left>
-                        <top>17</top>
-                        <width>302</width>
-                        <height>302</height>
+                        <include>LiveCDCasesBGDim1</include>
                         <fadetime>600</fadetime>
                         <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase2Var]</texture>
                         <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>!Skin.HasSetting(LiveBGCDCase)</visible>
+                    </control>
+                    <control type="image">
+                        <include>LiveCDCasesBGDim2</include>
+                        <fadetime>600</fadetime>
+                        <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase2Var]</texture>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>Skin.HasSetting(LiveBGCDCase)</visible>
                     </control>
                     <control type="image">
                         <width>375</width>
@@ -1099,13 +1170,18 @@
                     <animation effect="zoom" start="150" end="150" center="auto" time="0" condition="true">Conditional</animation>
                     <animation effect="rotate" center="auto" start="10" end="10" time="0" condition="true">Conditional</animation>
                     <control type="image">
-                        <left>54</left>
-                        <top>17</top>
-                        <width>302</width>
-                        <height>302</height>
-                        <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase3Var]</texture>
+                        <include>LiveCDCasesBGDim1</include>
                         <fadetime>600</fadetime>
+                        <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase3Var]</texture>
                         <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>!Skin.HasSetting(LiveBGCDCase)</visible>
+                    </control>
+                    <control type="image">
+                        <include>LiveCDCasesBGDim2</include>
+                        <fadetime>600</fadetime>
+                        <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase3Var]</texture>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>Skin.HasSetting(LiveBGCDCase)</visible>
                     </control>
                     <control type="image">
                         <width>375</width>
@@ -1127,13 +1203,18 @@
                     <animation effect="zoom" start="150" end="150" center="auto" time="0" condition="true">Conditional</animation>
                     <animation effect="rotate" center="auto" start="-20" end="-20" time="0" condition="true">Conditional</animation>
                     <control type="image">
-                        <left>54</left>
-                        <top>17</top>
-                        <width>302</width>
-                        <height>302</height>
+                        <include>LiveCDCasesBGDim1</include>
                         <fadetime>600</fadetime>
                         <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase4Var]</texture>
                         <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>!Skin.HasSetting(LiveBGCDCase)</visible>
+                    </control>
+                    <control type="image">
+                        <include>LiveCDCasesBGDim2</include>
+                        <fadetime>600</fadetime>
+                        <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase4Var]</texture>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>Skin.HasSetting(LiveBGCDCase)</visible>
                     </control>
                     <control type="image">
                         <width>375</width>
@@ -1155,13 +1236,18 @@
                     <animation effect="zoom" start="150" end="150" center="auto" time="0" condition="true">Conditional</animation>
                     <animation effect="rotate" center="auto" start="25" end="25" time="0" condition="true">Conditional</animation>
                     <control type="image">
-                        <left>54</left>
-                        <top>17</top>
-                        <width>302</width>
-                        <height>302</height>
-                        <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase5Var]</texture>
+                        <include>LiveCDCasesBGDim1</include>
                         <fadetime>600</fadetime>
+                        <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase5Var]</texture>
                         <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>!Skin.HasSetting(LiveBGCDCase)</visible>
+                    </control>
+                    <control type="image">
+                        <include>LiveCDCasesBGDim2</include>
+                        <fadetime>600</fadetime>
+                        <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase5Var]</texture>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>Skin.HasSetting(LiveBGCDCase)</visible>
                     </control>
                     <control type="image">
                         <width>375</width>
@@ -1183,13 +1269,18 @@
                     <animation effect="zoom" start="150" end="150" center="auto" time="0" condition="true">Conditional</animation>
                     <animation effect="rotate" center="auto" start="75" end="75" time="0" condition="true">Conditional</animation>
                     <control type="image">
-                        <left>54</left>
-                        <top>17</top>
-                        <width>302</width>
-                        <height>302</height>
+                        <include>LiveCDCasesBGDim1</include>
                         <fadetime>600</fadetime>
                         <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase6Var]</texture>
                         <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>!Skin.HasSetting(LiveBGCDCase)</visible>
+                    </control>
+                    <control type="image">
+                        <include>LiveCDCasesBGDim2</include>
+                        <fadetime>600</fadetime>
+                        <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase6Var]</texture>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>Skin.HasSetting(LiveBGCDCase)</visible>
                     </control>
                     <control type="image">
                         <width>375</width>
@@ -1211,13 +1302,18 @@
                     <animation effect="zoom" start="150" end="150" center="auto" time="0" condition="true">Conditional</animation>
                     <animation effect="rotate" center="auto" start="45" end="45" time="0" condition="true">Conditional</animation>
                     <control type="image">
-                        <left>54</left>
-                        <top>17</top>
-                        <width>302</width>
-                        <height>302</height>
+                        <include>LiveCDCasesBGDim1</include>
                         <fadetime>600</fadetime>
                         <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase7Var]</texture>
                         <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>!Skin.HasSetting(LiveBGCDCase)</visible>
+                    </control>
+                    <control type="image">
+                        <include>LiveCDCasesBGDim2</include>
+                        <fadetime>600</fadetime>
+                        <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase7Var]</texture>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>Skin.HasSetting(LiveBGCDCase)</visible>
                     </control>
                     <control type="image">
                         <width>375</width>
@@ -1239,13 +1335,18 @@
                     <animation effect="zoom" start="150" end="150" center="auto" time="0" condition="true">Conditional</animation>
                     <animation effect="rotate" center="auto" start="-15" end="-15" time="0" condition="true">Conditional</animation>
                     <control type="image">
-                        <left>54</left>
-                        <top>17</top>
-                        <width>302</width>
+                        <include>LiveCDCasesBGDim1</include>
                         <fadetime>600</fadetime>
-                        <height>302</height>
                         <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase8Var]</texture>
                         <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>!Skin.HasSetting(LiveBGCDCase)</visible>
+                    </control>
+                    <control type="image">
+                        <include>LiveCDCasesBGDim2</include>
+                        <fadetime>600</fadetime>
+                        <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase8Var]</texture>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>Skin.HasSetting(LiveBGCDCase)</visible>
                     </control>
                     <control type="image">
                         <width>375</width>
@@ -1267,13 +1368,18 @@
                     <animation effect="zoom" start="150" end="150" center="auto" time="0" condition="true">Conditional</animation>
                     <animation effect="rotate" center="auto" start="-10" end="-10" time="0" condition="true">Conditional</animation>
                     <control type="image">
-                        <left>54</left>
-                        <top>17</top>
-                        <width>302</width>
-                        <height>302</height>
+                        <include>LiveCDCasesBGDim1</include>
                         <fadetime>600</fadetime>
                         <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase9Var]</texture>
                         <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>!Skin.HasSetting(LiveBGCDCase)</visible>
+                    </control>
+                    <control type="image">
+                        <include>LiveCDCasesBGDim2</include>
+                        <fadetime>600</fadetime>
+                        <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase9Var]</texture>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>Skin.HasSetting(LiveBGCDCase)</visible>
                     </control>
                     <control type="image">
                         <width>375</width>
@@ -1295,13 +1401,18 @@
                     <animation effect="zoom" start="150" end="150" center="auto" time="0" condition="true">Conditional</animation>
                     <animation effect="rotate" center="auto" start="3" end="3" time="0" condition="true">Conditional</animation>
                     <control type="image">
-                        <left>54</left>
-                        <top>17</top>
-                        <width>302</width>
-                        <height>302</height>
-                        <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase10Var]</texture>
+                        <include>LiveCDCasesBGDim1</include>
                         <fadetime>600</fadetime>
+                        <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase10Var]</texture>
                         <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>!Skin.HasSetting(LiveBGCDCase)</visible>
+                    </control>
+                    <control type="image">
+                        <include>LiveCDCasesBGDim2</include>
+                        <fadetime>600</fadetime>
+                        <texture background="true" diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAudio.png">$VAR[CDCase10Var]</texture>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <visible>Skin.HasSetting(LiveBGCDCase)</visible>
                     </control>
                     <control type="image">
                         <width>375</width>
@@ -1548,5 +1659,5 @@
             <animation effect="slide" start="-15,-15" end="15,15" time="6000" pulse="true" condition="Skin.HasSetting(animatedbghome)">Conditional</animation>
         </control>
     </include>
-    
+
 </includes>
