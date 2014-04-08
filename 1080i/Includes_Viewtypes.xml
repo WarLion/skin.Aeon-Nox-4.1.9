@@ -617,11 +617,30 @@
                 <control type="textbox">
                     <top>209</top>
                     <width>652</width>
-                    <height>190</height>
+                    <height>247</height>
                     <label>$VAR[FanartPanelPlotVar]</label>
                     <textcolor>white6</textcolor>
                     <autoscroll delay="8000" time="AutoScrollTime" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-                </control>							
+					<visible>StringCompare(Control.GetLabel(4420),fanart)</visible>
+                </control>	
+                <control type="textbox">
+                    <top>209</top>
+                    <width>652</width>
+                    <height>218</height>
+                    <label>$VAR[FanartPanelPlotVar]</label>
+                    <textcolor>white6</textcolor>
+                    <autoscroll delay="8000" time="AutoScrollTime" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>!StringCompare(Control.GetLabel(4420),fanart) + !Skin.HasSetting(NoFlow)</visible>
+                </control>	
+                <control type="textbox">
+                    <top>209</top>
+                    <width>652</width>
+                    <height>188</height>
+                    <label>$VAR[FanartPanelPlotVar]</label>
+                    <textcolor>white6</textcolor>
+                    <autoscroll delay="8000" time="AutoScrollTime" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>!StringCompare(Control.GetLabel(4420),fanart) + Skin.HasSetting(NoFlow)</visible>
+                </control>															
             </control>
             <control type="group">
                 <visible>StringCompare(Control.GetLabel(4420),poster) | StringCompare(Control.GetLabel(4420),extrathumbs)</visible>
@@ -778,7 +797,7 @@
                         <left>486</left>
                         <top>-9</top>
                         <width>657</width>
-                        <height>460</height>
+                        <height>450</height>
                         <label fallback="31006">$VAR[FanartPanelPlotVar]</label>
                         <textcolor>white6</textcolor>
                         <animation effect="fade" start="100" end="0" time="880" condition="Player.HasVideo">Conditional</animation>
