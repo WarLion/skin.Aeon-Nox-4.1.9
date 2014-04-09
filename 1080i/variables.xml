@@ -3234,11 +3234,11 @@
     </variable>	
 	<variable name="RatingLabelVar">
        <value condition="Skin.HasSetting(RatingColorFlag) + !Skin.HasSetting(RatingColorFlagreloaded)">$LOCALIZE[31182]</value>
-	   <value condition="Skin.HasSetting(RatingColorFlagreloaded)">$LOCALIZE[33004]</value>
+	   <value condition="Skin.HasSetting(RatingColorFlagreloaded)">$LOCALIZE[31988]</value>
        <value>$LOCALIZE[32995]</value>	   
     </variable>	
 	<variable name="RatingLabelVarTvshows">
-	   <value condition="Skin.HasSetting(RatingColorFlagreloaded)">$LOCALISE[33004]</value>
+	   <value condition="Skin.HasSetting(RatingColorFlagreloaded)">$LOCALIZE[31988]</value>
        <value>$LOCALIZE[32995]</value>	   
     </variable>		
 </includes>

@@ -288,25 +288,14 @@
         <control type="group">
             <control type="multiimage">
                 <aspectratio align="center" aligny="top">scale</aspectratio>
-                <imagepath background="true" fallback="special://skin/backgrounds/videos">$VAR[HomeMainFanartVar]</imagepath>
+                <imagepath background="true">$VAR[HomeMainFanartVar]</imagepath>
                 <fadetime>600</fadetime>
                 <animation effect="fade" time="480">Visible</animation>
                 <animation effect="fade" time="480">Hidden</animation>
                 <animation effect="zoom" start="110" end="130" center="auto" time="12000" pulse="true" delay="480" condition="Skin.HasSetting(animatedbghome)">Conditional</animation>
                 <animation effect="slide" start="-15,-15" end="15,15" time="6000" pulse="true" delay="480" condition="Skin.HasSetting(animatedbghome)">Conditional</animation>
                 <visible>!Substring(Control.GetLabel(4322),case)</visible>
-            </control>
-			<!--here global background-->
-            <control type="multiimage">
-                <aspectratio align="center" aligny="top">scale</aspectratio>
-                <imagepath background="true" fallback="special://skin/backgrounds/videos">f:/wallpaper/320318.jpg</imagepath>
-                <fadetime>600</fadetime>
-                <animation effect="fade" time="480">Visible</animation>
-                <animation effect="fade" time="480">Hidden</animation>
-                <animation effect="zoom" start="110" end="130" center="auto" time="12000" pulse="true" delay="480" condition="Skin.HasSetting(animatedbghome)">Conditional</animation>
-                <animation effect="slide" start="-15,-15" end="15,15" time="6000" pulse="true" delay="480" condition="Skin.HasSetting(animatedbghome)">Conditional</animation>
-                <visible>!Substring(Control.GetLabel(4322),case)</visible>
-            </control>			
+            </control>		
             <control type="image">
                 <aspectratio align="center" aligny="top">scale</aspectratio>
                 <texture background="true" fallback="special://skin/backgrounds/speakergrill.jpg">$INFO[Skin.String(LiveBG)]</texture>

@@ -2243,11 +2243,11 @@ msgctxt "#33001"
 msgid "Reloaded Mpaa Flags"
 msgstr "Reloaded Mpaa Flags"
 
-msgctxt "#33002"
+msgctxt "#31990"
 msgid "TvGuide Icons"
 msgstr "TvGuide Icons"
 
-msgctxt "#33003"
+msgctxt "#31991"
 msgid "Extended Rating"
 msgstr "Extended Rating"
 

@@ -190,7 +190,7 @@
 					<visible>Container.Content(movies) + [IsEmpty(Skin.String(ColorFlagsPath)) + !IsEmpty(Skin.String(ReloadedFlagsPath))]</visible>				
 				</control> 								
                 <control type="radiobutton" id="1201">
-                    <label>$LOCALIZE[33002]</label>
+                    <label>$LOCALIZE[31990]</label>
                     <include>Objects_MediaMenuButtonAround</include>
                     <onclick>Skin.ToggleSetting(ColortvguideFlags)</onclick>
                     <selected>Skin.HasSetting(ColortvguideFlags)</selected>
