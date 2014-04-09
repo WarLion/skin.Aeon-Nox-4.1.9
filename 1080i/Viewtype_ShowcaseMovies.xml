@@ -34,8 +34,8 @@
                 </control>			
                 <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
                 <control type="image">
-                    <include>MovieShowcaseDVDCoverVars</include>
-                    <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem0Var]</texture>
+                    <include>MovieShowcaseDVDCoverVarsSets</include>
+                    <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem0Var]</texture>
                     <visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(0).Path,videodb://movies/sets)]</visible>
                 </control>
                 <!-- MikeBZH44 end -->						
@@ -127,8 +127,8 @@
                 </control>			
                 <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
                 <control type="image">
-                    <include>MovieShowcaseDVDCoverVars</include>
-                    <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem0Var]</texture>
+                    <include>MovieShowcaseDVDCoverVarsSets</include>
+                    <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem0Var]</texture>
                     <visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem.Path,videodb://movies/sets)]</visible>
                     </control>
                 <!-- MikeBZH44 end -->			
@@ -622,8 +622,8 @@
                             </control>						
                             <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
                             <control type="image">
-                                <include>MovieShowcaseDVDCoverVars</include>
-                                <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem0Var]</texture>
+                                <include>MovieShowcaseDVDCoverVarsSets</include>
+                                <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png" >$VAR[ShowcaseItem0Var]</texture>
                                 <visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem.Path,videodb://movies/sets)]</visible>
                             </control>
                             <!-- MikeBZH44 end -->					
@@ -677,7 +677,7 @@
                                 <include>ShowcaseOpenCaseWatched</include>
                                 <visible>![Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem.Path,videodb://movies/sets)]</visible>
                                 <!-- MikeBZH44 end -->
-								<visible>!Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
+
                             </control>
                             <control type="image">
                                 <include>WatchedOverlayShowCase</include>
@@ -731,6 +731,14 @@
         <fadetime>0</fadetime>
         <visible>Skin.HasSetting(usecases) + [container.content(movies) | Container.Content(musicvideos)]</visible>
     </include>
+    <include name="MovieShowcaseDVDCoverVarsSets">
+        <left>-16</left>
+        <top>-22</top>
+        <width>324</width>
+        <height>437</height>
+        <fadetime>0</fadetime>
+        <visible>Skin.HasSetting(usecases) + [container.content(movies) | Container.Content(musicvideos)]</visible>
+    </include>	
     <!-- Movie Showcase Variables: Main thumbs -->
     <include name="MovieShowcaseThumbDimensions">
         <left>17</left>
@@ -840,8 +848,8 @@
         </control>
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
         <control type="image">
-            <include>MovieShowcaseDVDCoverVars</include>
-            <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-7Var]</texture>
+            <include>MovieShowcaseDVDCoverVarsSets</include>
+            <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem-7Var]</texture>
             <visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(-7).Path,videodb://movies/sets)]</visible>
         </control>
         <!-- MikeBZH44 end -->
@@ -907,8 +915,8 @@
 		</control>		
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
         <control type="image">
-            <include>MovieShowcaseDVDCoverVars</include>
-            <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-6Var]</texture>
+            <include>MovieShowcaseDVDCoverVarsSets</include>
+            <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem-6Var]</texture>
             <visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(-6).Path,videodb://movies/sets)]</visible>
         </control>
         <!-- MikeBZH44 end -->
@@ -970,8 +978,8 @@
 		</control>		
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
         <control type="image">
-            <include>MovieShowcaseDVDCoverVars</include>
-            <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-5Var]</texture>
+            <include>MovieShowcaseDVDCoverVarsSets</include>
+            <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem-5Var]</texture>
             <visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(-5).Path,videodb://movies/sets)]</visible>
         </control>
         <!-- MikeBZH44 end -->
@@ -1033,8 +1041,8 @@
 		</control>		
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
         <control type="image">
-            <include>MovieShowcaseDVDCoverVars</include>
-            <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-4Var]</texture>
+            <include>MovieShowcaseDVDCoverVarsSets</include>
+            <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem-4Var]</texture>
             <visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(-4).Path,videodb://movies/sets)]</visible>
         </control>
         <!-- MikeBZH44 end -->
@@ -1096,8 +1104,8 @@
 		</control>		
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
         <control type="image">
-            <include>MovieShowcaseDVDCoverVars</include>
-            <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-3Var]</texture>
+            <include>MovieShowcaseDVDCoverVarsSets</include>
+            <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem-3Var]</texture>
             <visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(-3).Path,videodb://movies/sets)]</visible>
         </control>
         <!-- MikeBZH44 end -->
@@ -1159,8 +1167,8 @@
 		</control>		
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
         <control type="image">
-            <include>MovieShowcaseDVDCoverVars</include>
-            <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-2Var]</texture>
+            <include>MovieShowcaseDVDCoverVarsSets</include>
+            <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem-2Var]</texture>
             <visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(-2).Path,videodb://movies/sets)]</visible>
         </control>
         <!-- MikeBZH44 end -->
@@ -1227,8 +1235,8 @@
 		</control>		
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
         <control type="image">
-            <include>MovieShowcaseDVDCoverVars</include>
-            <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-1Var]</texture>
+            <include>MovieShowcaseDVDCoverVarsSets</include>
+            <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem-1Var]</texture>
             <visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(-1).Path,videodb://movies/sets)]</visible>
         </control>
         <!-- MikeBZH44 end -->
@@ -1300,8 +1308,8 @@
 		</control>		
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
         <control type="image">
-            <include>MovieShowcaseDVDCoverVars</include>
-            <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem0Var]</texture>
+            <include>MovieShowcaseDVDCoverVarsSets</include>
+            <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem0Var]</texture>
             <visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(0).Path,videodb://movies/sets)]</visible>
         </control>
         <!-- MikeBZH44 end -->
@@ -1373,10 +1381,10 @@
 		</control>		
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
         <control type="image">
-            <include>MovieShowcaseDVDCoverVars</include>
-            <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem1Var]</texture>
+            <include>MovieShowcaseDVDCoverVarsSets</include>
+            <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem1Var]</texture>
             <visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(1).Path,videodb://movies/sets)]</visible>
-        </control>
+        </control>		
         <!-- MikeBZH44 end -->
         <!-- Movie Showcase Variables: Thumb glass overlays -->
         <control type="image">
@@ -1446,8 +1454,8 @@
 		</control>		
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
         <control type="image">
-            <include>MovieShowcaseDVDCoverVars</include>
-            <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem2Var]</texture>
+            <include>MovieShowcaseDVDCoverVarsSets</include>
+            <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem2Var]</texture>
             <visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(2).Path,videodb://movies/sets)]</visible>
         </control>
         <!-- MikeBZH44 end -->
@@ -1519,8 +1527,8 @@
 		</control>		
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
         <control type="image">
-            <include>MovieShowcaseDVDCoverVars</include>
-            <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem3Var]</texture>
+            <include>MovieShowcaseDVDCoverVarsSets</include>
+            <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem3Var]</texture>
             <visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(3).Path,videodb://movies/sets)]</visible>
         </control>
         <!-- MikeBZH44 end -->
@@ -1592,8 +1600,8 @@
 		</control>		
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
         <control type="image">
-            <include>MovieShowcaseDVDCoverVars</include>
-            <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem4Var]</texture>
+            <include>MovieShowcaseDVDCoverVarsSets</include>
+            <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem4Var]</texture>
             <visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(4).Path,videodb://movies/sets)]</visible>
         </control>
         <!-- MikeBZH44 end -->
@@ -1665,8 +1673,8 @@
 		</control>		
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
         <control type="image">
-            <include>MovieShowcaseDVDCoverVars</include>
-            <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem5Var]</texture>
+            <include>MovieShowcaseDVDCoverVarsSets</include>
+            <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem5Var]</texture>
             <visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(5).Path,videodb://movies/sets)]</visible>
         </control>
         <!-- MikeBZH44 end -->
@@ -1738,8 +1746,8 @@
 		</control>		
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
         <control type="image">
-            <include>MovieShowcaseDVDCoverVars</include>
-            <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem6Var]</texture>
+            <include>MovieShowcaseDVDCoverVarsSets</include>
+            <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem6Var]</texture>
             <visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(6).Path,videodb://movies/sets)]</visible>
         </control>
         <!-- MikeBZH44 end -->
@@ -1811,8 +1819,8 @@
 		</control>		
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
         <control type="image">
-            <include>MovieShowcaseDVDCoverVars</include>
-            <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem7Var]</texture>
+            <include>MovieShowcaseDVDCoverVarsSets</include>
+            <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem7Var]</texture>
             <visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(7).Path,videodb://movies/sets)]</visible>
         </control>
         <!-- MikeBZH44 end -->
