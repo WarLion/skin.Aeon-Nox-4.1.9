@@ -96,7 +96,7 @@
                     <include>Objects_MediaMenuButtonAround</include>
                     <onclick>Skin.ToggleSetting(LogoBehindPlot)</onclick>
                     <selected>Skin.HasSetting(LogoBehindPlot)</selected>
-					<visible>![Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]</visible>
+					<visible>![Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + !Skin.HasSetting(movielogosfloor)</visible>
                 </control>								
             </control>
             <control type="panel" id="451">
