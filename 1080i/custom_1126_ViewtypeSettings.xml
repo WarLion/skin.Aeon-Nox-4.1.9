@@ -408,6 +408,7 @@
                     <label>$LOCALIZE[31168]</label>
                     <include>Objects_MediaMenuButtonAlt2</include>
                     <onclick>Skin.ToggleSetting(noflowalbum)</onclick>
+					<onclick>Skin.Reset(Openshowcasemusic)</onclick>
                     <selected>Skin.HasSetting(noflowalbum)</selected>
                     <visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseSquare)</visible>
                 </control>
@@ -423,8 +424,15 @@
                     <include>Objects_MediaMenuButtonAlt2</include>
                     <onclick>Skin.ToggleSetting(showcasecdartmusic)</onclick>
                     <selected>Skin.HasSetting(showcasecdartmusic)</selected>
-                    <visible>Substring(Window(home).Property(actualViewtype),Showcase) + Container.Content(songs)</visible>
+                    <visible>[Substring(Window(home).Property(actualViewtype),Showcase) + Container.Content(albums) | Container.Content(songs)]</visible>
                 </control>
+                <control type="radiobutton" id="16841">
+                    <label>Open Case</label>
+                    <include>Objects_MediaMenuButtonAlt2</include>
+                    <onclick>Skin.ToggleSetting(Openshowcasemusic)</onclick>
+                    <selected>Skin.HasSetting(Openshowcasemusic)</selected>
+                    <visible>[Substring(Window(home).Property(actualViewtype),Showcase) + Container.Content(albums)] + !Skin.HasSetting(noflowalbum)</visible>
+                </control>				
                 <control type="radiobutton" id="1683">
                     <label>$LOCALIZE[31169]</label>
                     <include>Objects_MediaMenuButtonAlt2</include>
