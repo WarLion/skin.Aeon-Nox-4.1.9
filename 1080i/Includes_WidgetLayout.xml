@@ -1634,8 +1634,8 @@
                     <bordertexture border="19.5">thumbs/poster_shadow.png</bordertexture>				
                 </control>
                 <control type="image">
-                    <posx>-47</posx>
-                    <posy>-33</posy>
+                    <left>-47</left>
+                    <top>-33</top>
                     <width>325</width>
                     <height>440</height>
                     <texture>thumbs/boxes/$VAR[ShowcaseCasePathVar]/$INFO[Container(8000).ListItem.Property(VideoResolution)]p.png</texture>
@@ -1842,8 +1842,8 @@
                 <control type="image">
                     <aspectratio scalediffuse="false" align="right">scale</aspectratio>
                     <texture>thumbs/boxes/cd_box_closed.png</texture>
-                    <posx>-18</posx>
-                    <posy>0</posy>
+                    <left>-18</left>
+                    <top>0</top>
                     <height>410</height>
                     <width>446</width>
                 </control>
@@ -3891,8 +3891,8 @@
                 </control>
                 <!-- MikeBZH44 Start : Add resolution case -->
                 <control type="image">
-                    <posx>-47</posx>
-                    <posy>-33</posy>
+                    <left>-47</left>
+                    <top>-33</top>
                     <width>325</width>
                     <height>440</height>
                     <texture>thumbs/boxes/$INFO[Skin.String(LiveBGCase)]/$INFO[Container(8000).ListItem.Property(VideoResolution)]p.png</texture>
@@ -4105,8 +4105,8 @@
                 <control type="image">
                     <aspectratio scalediffuse="false" align="right">scale</aspectratio>
                     <texture>thumbs/boxes/cd_shadow_light.png</texture>
-                    <posx>-18</posx>
-                    <posy>0</posy>
+                    <left>-18</left>
+                    <top>0</top>
                     <height>410</height>
                     <width>446</width>
                 </control>
@@ -4126,8 +4126,8 @@
                 <control type="image">
                     <aspectratio scalediffuse="false" align="right">scale</aspectratio>
                     <texture>thumbs/boxes/cd_glass.png</texture>
-                    <posx>-18</posx>
-                    <posy>0</posy>
+                    <left>-18</left>
+                    <top>0</top>
                     <height>410</height>
                     <width>446</width>
                 </control>

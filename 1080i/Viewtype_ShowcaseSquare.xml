@@ -416,6 +416,27 @@
             <include condition="!Skin.HasSetting(showcasewrap)">scqfixed</include>
             <include condition="Skin.HasSetting(showcasewrap)">scqwrap</include>
         </control>
+			<!-- label for cd art-->
+				<!-- label for cd art-->
+					<!-- label for cd art
+            <control type="image">
+                <left>0</left>
+                <top>50</top>
+                <width>1920</width>
+                <height>47</height>
+                <texture background="true">pvr/border.png</texture>
+            </control>
+            <control type="label">
+				<left>10</left>
+				<top>50</top>					
+				<width>1900</width>
+				<height>47</height>
+				<label>$VAR[cdARTVar]</label>
+				<scroll>true</scroll>
+            </control>
+			<!-- label for cd art-->
+				<!-- label for cd art-->
+						<!-- label for cd art-->
         <control type="button" id="1970">
             <include>HiddenObject</include>
             <visible>Control.IsVisible(509) + !Container.OnNext + !Container.OnPrevious</visible>
@@ -742,8 +763,8 @@
     <!-- MikeBZH44 Start : back case for opening -->
     <include name="MusicShowcaseBack">
         <control type="image">
-            <posx>-30</posx>
-            <posy>12</posy>
+            <left>-30</left>
+            <top>12</top>
             <width>426</width>
             <height>391</height>
             <texture background="true">thumbs/boxes/cd_box_back.png</texture>
@@ -754,8 +775,8 @@
     <!-- MikeBZH44 Start : front case for opening -->
     <include name="MusicShowcaseCaseOpen">
         <control type="image">
-            <posx>-30</posx>
-            <posy>12</posy>
+            <left>-30</left>
+            <top>12</top>
             <width>426</width>
             <height>391</height>
             <texture background="true">thumbs/boxes/cd_box_front.png</texture>
@@ -837,8 +858,8 @@
     <include name="MusicShowcaseDisc">
         <!-- Rolling CDArt -->
         <control type="image" id="159357">
-            <posx>1165</posx>
-            <posy>46</posy>
+            <left>1165</left>
+            <top>46</top>
             <width>310</width>
             <height>310</height>
             <aspectratio align="bottom">keep</aspectratio>

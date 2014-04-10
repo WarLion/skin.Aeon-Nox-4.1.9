@@ -1190,7 +1190,7 @@
 				<top>50</top>					
 				<width>1900</width>
 				<height>47</height>
-				<label>$INFO[ListItem.VideoResolution]</label>
+				<label>$VAR[cdARTVar]</label>
 				<scroll>true</scroll>
             </control>
 
