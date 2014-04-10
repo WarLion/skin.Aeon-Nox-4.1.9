@@ -434,7 +434,7 @@
                 <width>280</width>
                 <height>280</height>
                 <aspectratio>keep</aspectratio>
-			    <texture background="true" fallback="common/cdart/default.png">$VAR[cdARTVar]</texture>
+			    <texture background="true">$VAR[cdARTVar]</texture>
                 <fadetime>3700</fadetime>
                 <animation type="Conditional" condition="Control.IsVisible(1970)" reversible="true">
                     <effect type="slide" start="0,0" end="-1600,0" delay="0" time="1800" tween="cubic" easing="inout" />
@@ -451,7 +451,7 @@
                 <width>280</width>
                 <height>280</height>
                 <aspectratio>keep</aspectratio>
-                <texture background="true" flipy="true" fallback="common/cdart/default.png">$VAR[cdARTVar]</texture>
+                <texture background="true" flipy="true">$VAR[cdARTVar]</texture>
                 <fadetime>3700</fadetime>
                 <colordiffuse>22FFFFFF</colordiffuse>
                 <animation type="Conditional" condition="Control.IsVisible(1970)" reversible="true">
@@ -836,13 +836,13 @@
     <!-- MikeBZH44 start -->
     <include name="MusicShowcaseDisc">
         <!-- Rolling CDArt -->
-        <control type="image">
+        <control type="image" id="159357">
             <posx>1165</posx>
             <posy>46</posy>
             <width>310</width>
             <height>310</height>
             <aspectratio align="bottom">keep</aspectratio>
-            <texture background="true" fallback="common/cdart/default.png">$VAR[cdARTVar]</texture>
+            <texture background="true" fallback="empty.png">$VAR[cdARTVar]</texture>
             <visible>Control.IsVisible(509) + !Stringcompare(Skin.String(CDCase),none)</visible>
             <animation type="Conditional" condition="Control.IsVisible(1970) + Control.IsVisible(7679)" reversible="false">
                 <effect type="slide" start="0,0" end="-1110,0" delay="500" time="1500" tween="cubic" easing="inout"/>
@@ -853,7 +853,7 @@
     </include>
     <!-- Open case when infopanel is displayed -->
     <include name="ShowcaseCDOpenCase">
-        <animation type="Conditional" condition="[Control.IsVisible(1970) + Control.IsVisible(7679) + !Stringcompare(Skin.String(CDCase),none)] + Skin.HasSetting(Openshowcasemusic)  + !Skin.HasSetting(noflowalbum)" reversible="false">
+        <animation type="Conditional" condition="[[Control.IsVisible(1970) + Control.IsVisible(7679) + !Stringcompare(Skin.String(CDCase),none)] + Skin.HasSetting(Openshowcasemusic)  + !Skin.HasSetting(noflowalbum)] + !Substring(Control.GetLabel(159357),empty.png)" reversible="false">
             <effect type="rotatey" delay="0" center="0" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
             <effect type="rotatey" delay="2000" center="0" start="0" end="-75" time="1000" tween="quadratic" easing="out"/>
         </animation>
