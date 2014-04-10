@@ -23,7 +23,7 @@
         <animation effect="fade" start="100" end="0" time="320" condition="Control.HasFocus(110)">Conditional</animation>
         <itemlayout height="525" width="375" condition="Skin.HasSetting(noflowalbum) + !Control.IsVisible(7003)">
             <control type="group">
-                <animation effect="zoom" start="100" end="85" center="200,345" time="240" reversible="false" tween="cubic" condition="Skin.HasSetting(usecasescd) + [Container.Content(albums) | Container.Content(songs)]">Conditional</animation>
+                <animation effect="zoom" start="100" end="85" center="200,345" time="240" reversible="false" tween="cubic" condition="Skin.HasSetting(usecasescd) + [Container.Content(albums) | Container.Content(songs) | Container.Content(artists)]">Conditional</animation>
                 <animation effect="fade" time="0" delay="640">Visible</animation>
                 <include>MusicShowcaseGlow</include>
                 <control type="image">
@@ -43,7 +43,7 @@
         </itemlayout>
         <focusedlayout height="525" width="375" condition="Skin.HasSetting(noflowalbum) + !Control.IsVisible(7003)">
             <control type="group">
-                <animation effect="zoom" start="100" end="85" center="200,345" time="240" reversible="false" tween="cubic" condition="Skin.HasSetting(usecasescd) + [Container.Content(albums) | Container.Content(songs)]">Conditional</animation>
+                <animation effect="zoom" start="100" end="85" center="200,345" time="240" reversible="false" tween="cubic" condition="Skin.HasSetting(usecasescd) + [Container.Content(albums) | Container.Content(songs) | Container.Content(artists)]">Conditional</animation>
                 <visible>Skin.HasSetting(noflowalbum) + !Control.IsVisible(7003)</visible>
                 <animation effect="fade" time="0" delay="640">Visible</animation>
                 <animation effect="zoom" start="100" end="110" center="202,345" time="320" reversible="false" tween="cubic">Focus</animation>
@@ -52,6 +52,7 @@
                 <!-- MikebZH44 Start : Add back case and disc art for opening -->
                 <include>MusicShowcaseBack</include>
                 <include>MusicShowcaseDisc</include>
+				
                 <!-- MikebZH44 End -->
                 <control type="image">
                     <include>MusicShowcaseThumb</include>
@@ -431,9 +432,13 @@
 				<top>50</top>					
 				<width>1900</width>
 				<height>47</height>
-				<label>$VAR[cdARTVar]</label>
+				<label>$INFO[Skin.String(ArtistsLogosPath)]$INFO[ListItem.Artist]/cdart/</label>
 				<scroll>true</scroll>
             </control>
+	<!-- label for cd art-->
+				<!-- label for cd art-->
+						<!-- label for cd art-->			
+			<include>MusicShowcaseDiscAlbums</include>
 			<!-- label for cd art-->
 				<!-- label for cd art-->
 						<!-- label for cd art-->
@@ -757,7 +762,7 @@
             <bordertexture>thumbs/boxes/cd_shadow_light.png</bordertexture>
             <texture background="true">thumbs/boxes/cd_box_closed.png</texture>
             <!-- MikeBZH44 End -->
-            <visible>Skin.HasSetting(usecasescd) + [Container.Content(albums) | Container.Content(songs)]</visible>
+            <visible>Skin.HasSetting(usecasescd) + [Container.Content(albums) | Container.Content(songs) | Container.Content(artists)]</visible>
         </control>
     </include>
     <!-- MikeBZH44 Start : back case for opening -->
@@ -768,7 +773,7 @@
             <width>426</width>
             <height>391</height>
             <texture background="true">thumbs/boxes/cd_box_back.png</texture>
-            <visible>Skin.HasSetting(usecasescd) + [Container.Content(albums) | Container.Content(songs)]</visible>
+            <visible>Skin.HasSetting(usecasescd) + [Container.Content(albums) | Container.Content(songs) | Container.Content(artists)]</visible>
         </control>
     </include>
     <!-- MikeBZH44 End -->
@@ -781,7 +786,7 @@
             <height>391</height>
             <texture background="true">thumbs/boxes/cd_box_front.png</texture>
             <include>ShowcaseCDOpenCase</include>
-            <visible>Skin.HasSetting(usecasescd) + [Container.Content(albums) | Container.Content(songs)]</visible>
+            <visible>Skin.HasSetting(usecasescd) + [Container.Content(albums) | Container.Content(songs) | Container.Content(artists)]</visible>
         </control>
     </include>
     <!-- MikeBZH44 End -->
@@ -820,14 +825,14 @@
         <fadetime>0</fadetime>
         <include>MusicShowcaseThumbReflectionDimensions</include>
         <colordiffuse>d1FFFFFF</colordiffuse>
-        <animation effect="slide" start="0,00" end="0,10" time="0" condition="Skin.HasSetting(usecasescd) + [Container.Content(albums) | Container.Content(songs)]">Conditional</animation>
+        <animation effect="slide" start="0,00" end="0,10" time="0" condition="Skin.HasSetting(usecasescd) + [Container.Content(albums) | Container.Content(songs) | Container.Content(artists)]">Conditional</animation>
         <animation effect="fade" start="70" end="70" time="0" condition="true">Conditional</animation>
     </include>
     <include name="MusicShowcaseThumbReflectionMain">
         <aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
         <fadetime>0</fadetime>
         <include>MusicShowcaseThumbReflectionDimensions</include>
-        <animation effect="slide" start="0,00" end="0,10" time="0" condition="Skin.HasSetting(usecasescd) + [Container.Content(albums) | Container.Content(songs)]">Conditional</animation>
+        <animation effect="slide" start="0,00" end="0,10" time="0" condition="Skin.HasSetting(usecasescd) + [Container.Content(albums) | Container.Content(songs) | Container.Content(artists)]">Conditional</animation>
         <colordiffuse>52FFFFFF</colordiffuse>
     </include>
     <!-- Music Showcase Variables: Thumb glass overlays -->
@@ -855,6 +860,26 @@
         </control>
     </include>
     <!-- MikeBZH44 start -->
+    <include name="MusicShowcaseDiscAlbums">
+        <!-- Rolling CDArt -->
+            <control type="multiimage">
+            <left>1965</left>
+            <top>660</top>			
+				 <width>310</width>
+           		 <height>310</height>
+                <aspectratio align="bottom">keep</aspectratio>
+                <imagepath background="true">$INFO[Skin.String(ArtistsLogosPath)]$INFO[ListItem.Artist]/cdart/</imagepath>
+                <fadetime>300</fadetime>
+                <animation effect="fade" time="100">Visible</animation>
+                <animation effect="fade" time="100">Hidden</animation>
+            <animation type="Conditional" condition="Control.IsVisible(1970) + Control.IsVisible(7679)" reversible="false">
+                <effect type="slide" start="0,0" end="-980,0" delay="500" time="1500" tween="cubic" easing="inout"/>
+                <effect type="rotate" start="0" center="auto" end="720" delay="500" time="1500" tween="cubic" easing="inout"/>
+            </animation>
+			<visible>Skin.HasSetting(showcMultiCdart)</visible>
+            </control>				
+    </include>	
+	
     <include name="MusicShowcaseDisc">
         <!-- Rolling CDArt -->
         <control type="image" id="159357">
@@ -877,7 +902,7 @@
         <animation type="Conditional" condition="[[Control.IsVisible(1970) + Control.IsVisible(7679) + !Stringcompare(Skin.String(CDCase),none)] + Skin.HasSetting(Openshowcasemusic)  + !Skin.HasSetting(noflowalbum)] + !Substring(Control.GetLabel(159357),empty.png)" reversible="false">
             <effect type="rotatey" delay="0" center="0" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
             <effect type="rotatey" delay="2000" center="0" start="0" end="-75" time="1000" tween="quadratic" easing="out"/>
-        </animation>
+        </animation>	
     </include>
     <!-- MikeBZH44 end -->
 </includes>

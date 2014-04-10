@@ -417,8 +417,8 @@
                     <include>Objects_MediaMenuButtonAlt2</include>
                     <onclick>Skin.ToggleSetting(usecasescd)</onclick>
                     <selected>Skin.HasSetting(usecasescd)</selected>
-                    <visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseSquare) + [Container.Content(albums) | Container.Content(songs)]</visible>
-                </control>
+                    <visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseSquare) + [Container.Content(albums) | Container.Content(songs) | Container.Content(artists)]</visible>
+                </control>	
                 <control type="radiobutton" id="16840">
                     <label>31812</label>
                     <include>Objects_MediaMenuButtonAlt2</include>
@@ -426,6 +426,13 @@
                     <selected>Skin.HasSetting(showcasecdartmusic)</selected>
                     <visible>[Substring(Window(home).Property(actualViewtype),Showcase) + Container.Content(albums) | Container.Content(songs)]</visible>
                 </control>
+                <control type="radiobutton" id="1787">
+                    <label>$LOCALIZE[31812]</label>
+                    <include>Objects_MediaMenuButtonAlt2</include>
+                    <onclick>Skin.ToggleSetting(showcMultiCdart)</onclick>
+                    <selected>Skin.HasSetting(showcMultiCdart)</selected>
+                    <visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseSquare) + [Container.Content(artists)]</visible>
+                </control>									
                 <control type="radiobutton" id="16841">
                     <label>Open Case</label>
                     <include>Objects_MediaMenuButtonAlt2</include>
