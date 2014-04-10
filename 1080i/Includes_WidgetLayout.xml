@@ -3354,8 +3354,46 @@
                     <width>690</width>
                     <height>690</height>
                     <aspectratio>scale</aspectratio>
-                    <texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(Icon)]</texture>
+                    <texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(icon)]</texture>
+					<visible>!Skin.HasSetting(CasesonWidgets)</visible>
                 </control>
+				<control type="group">
+				<left>-5</left>
+				<top>20</top>
+					<visible>Skin.HasSetting(CasesonWidgets)</visible>	
+					<control type="image">
+						<left>-100</left>
+						<top>-20</top>
+						<width>825</width>
+						<height>720</height>
+						<texture>thumbs/cd_box_back.png</texture>
+					</control>			
+				<!--	<control type="image">
+						<left>55</left>
+						<top>20</top>
+						<width>620</width>
+						<height>620</height>
+						<aspectratio align="bottom">keep</aspectratio>
+						<texture background="true" fallback="common/cdart/default.png">$VAR[cdARTWidget1Var]</texture>
+						<visible>!Substring(Control.GetLabel(5130),empty.png)</visible>
+					</control>		-->														
+					<control type="image">
+                    <left>5</left>
+                    <top>15</top>
+						<width>680</width>
+						<height>640</height>
+						<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(icon)]</texture>	
+					<!--	<animation effect="rotatey" delay="0" center="0" start="0" end="40" time="8000" condition="Control.HasFocus(5032) + !Substring(Control.GetLabel(5130),empty.png)">Conditional</animation>	-->
+					</control>				
+					<control type="image">
+						<left>-100</left>
+						<top>-20</top>
+						<width>825</width>
+						<height>720</height>
+						<texture>thumbs/cd_box_front.png</texture>
+					<!--	<animation effect="rotatey" delay="0" center="0" start="0" end="40" time="8000" condition="Control.HasFocus(5032) + !Substring(Control.GetLabel(5130),empty.png)">Conditional</animation>	-->
+					</control>									
+				</control>
                 <control type="grouplist">
                     <left>700</left>
                     <top>10</top>

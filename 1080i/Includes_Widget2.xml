@@ -3231,6 +3231,74 @@
             <onclick>SetFocus(6014)</onclick>
             <visible>Substring(Control.GetLabel(4325),recentmovies) + !IsEmpty(Window(Home).Property(RecentMovie.8.Title))</visible>
         </item>
+        <item>
+            <label>$INFO[Window(Home).Property(RecentMovie.9.Title)]</label>
+            <property name="Director">$INFO[Window(Home).Property(RecentMovie.9.Director)]</property>
+            <property name="Country">$INFO[Window(Home).Property(RecentMovie.9.Country)]</property>
+            <property name="Genre">$INFO[Window(Home).Property(RecentMovie.9.Genre)]</property>
+            <property name="Path">$INFO[Window(Home).Property(RecentMovie.9.Play)]</property>
+            <property name="AudioChannels">$INFO[Window(Home).Property(RecentMovie.9.AudioChannels)]</property>
+            <property name="AudioCodec">$INFO[Window(Home).Property(RecentMovie.9.AudioCodec)]</property>
+            <property name="VideoAspect">$INFO[Window(Home).Property(RecentMovie.9.VideoAspect)]</property>
+            <property name="VideoResolution">$INFO[Window(Home).Property(RecentMovie.9.VideoResolution)]</property>
+            <property name="VideoCodec">$INFO[Window(Home).Property(RecentMovie.9.VideoCodec)]</property>
+            <property name="Studio">$INFO[Window(Home).Property(RecentMovie.9.Studio)]</property>
+            <property name="PercentPlayed">$INFO[Window(Home).Property(RecentMovie.9.PercentPlayed)]</property>
+            <property name="Discart">$INFO[Window(Home).Property(RecentMovie.9.Art(discart))]</property>
+            <property name="Banner">$INFO[Window(Home).Property(RecentMovie.9.Art(banner))]</property>
+            <property name="Landscape">$INFO[Window(Home).Property(RecentMovie.9.Art(landscape))]</property>
+            <property name="Clearart">$INFO[Window(Home).Property(RecentMovie.9.Art(clearart))]</property>
+            <property name="Logo">$INFO[Window(Home).Property(RecentMovie.9.Art(clearlogo))]</property>
+            <property name="Fanart">$INFO[Window(Home).Property(RecentMovie.9.Art(fanart))]</property>
+            <property name="Tagline">$INFO[Window(Home).Property(RecentMovie.9.Tagline)]</property>
+            <property name="OriginalTitle">$INFO[Window(Home).Property(RecentMovie.9.OriginalTitle)]</property>
+            <property name="Trailer">$INFO[Window(Home).Property(RecentMovie.9.Trailer)]</property>
+            <property name="RunningTime">$INFO[Window(Home).Property(RecentMovie.9.Runtime)]</property>
+            <property name="Year">$INFO[Window(Home).Property(RecentMovie.9.Year)]</property>
+            <property name="Rating">$INFO[Window(Home).Property(RecentMovie.9.Rating)]</property>
+            <property name="Poster">$INFO[Window(Home).Property(RecentMovie.9.Art(poster))]</property>
+            <property name="Plot">$INFO[Window(Home).Property(RecentMovie.9.Plot)]</property>
+            <property name="PlotOutline">$INFO[Window(Home).Property(RecentMovie.9.PlotOutline)]</property>
+            <property name="mpaa">$INFO[Window(Home).Property(RecentMovie.9.mpaa)]</property>
+            <property name="DBID">$INFO[Window(Home).Property(RecentMovie.9.DBID)]</property>
+            <property name="NavItem">item8.png</property>
+            <onclick>SetFocus(6014)</onclick>
+            <visible>Substring(Control.GetLabel(4325),recentmovies) + !IsEmpty(Window(Home).Property(RecentMovie.9.Title))</visible>
+        </item>
+        <item>
+            <label>$INFO[Window(Home).Property(RecentMovie.10.Title)]</label>
+            <property name="Director">$INFO[Window(Home).Property(RecentMovie.10.Director)]</property>
+            <property name="Country">$INFO[Window(Home).Property(RecentMovie.10.Country)]</property>
+            <property name="Genre">$INFO[Window(Home).Property(RecentMovie.10.Genre)]</property>
+            <property name="Path">$INFO[Window(Home).Property(RecentMovie.10.Play)]</property>
+            <property name="AudioChannels">$INFO[Window(Home).Property(RecentMovie.10.AudioChannels)]</property>
+            <property name="AudioCodec">$INFO[Window(Home).Property(RecentMovie.10.AudioCodec)]</property>
+            <property name="VideoAspect">$INFO[Window(Home).Property(RecentMovie.10.VideoAspect)]</property>
+            <property name="VideoResolution">$INFO[Window(Home).Property(RecentMovie.10.VideoResolution)]</property>
+            <property name="VideoCodec">$INFO[Window(Home).Property(RecentMovie.10.VideoCodec)]</property>
+            <property name="Studio">$INFO[Window(Home).Property(RecentMovie.10.Studio)]</property>
+            <property name="PercentPlayed">$INFO[Window(Home).Property(RecentMovie.10.PercentPlayed)]</property>
+            <property name="Discart">$INFO[Window(Home).Property(RecentMovie.10.Art(discart))]</property>
+            <property name="Banner">$INFO[Window(Home).Property(RecentMovie.10.Art(banner))]</property>
+            <property name="Landscape">$INFO[Window(Home).Property(RecentMovie.10.Art(landscape))]</property>
+            <property name="Clearart">$INFO[Window(Home).Property(RecentMovie.10.Art(clearart))]</property>
+            <property name="Logo">$INFO[Window(Home).Property(RecentMovie.10.Art(clearlogo))]</property>
+            <property name="Fanart">$INFO[Window(Home).Property(RecentMovie.10.Art(fanart))]</property>
+            <property name="Tagline">$INFO[Window(Home).Property(RecentMovie.10.Tagline)]</property>
+            <property name="OriginalTitle">$INFO[Window(Home).Property(RecentMovie.10.OriginalTitle)]</property>
+            <property name="Trailer">$INFO[Window(Home).Property(RecentMovie.10.Trailer)]</property>
+            <property name="RunningTime">$INFO[Window(Home).Property(RecentMovie.10.Runtime)]</property>
+            <property name="Year">$INFO[Window(Home).Property(RecentMovie.10.Year)]</property>
+            <property name="Rating">$INFO[Window(Home).Property(RecentMovie.10.Rating)]</property>
+            <property name="Poster">$INFO[Window(Home).Property(RecentMovie.10.Art(poster))]</property>
+            <property name="Plot">$INFO[Window(Home).Property(RecentMovie.10.Plot)]</property>
+            <property name="PlotOutline">$INFO[Window(Home).Property(RecentMovie.10.PlotOutline)]</property>
+            <property name="mpaa">$INFO[Window(Home).Property(RecentMovie.10.mpaa)]</property>
+            <property name="DBID">$INFO[Window(Home).Property(RecentMovie.10.DBID)]</property>
+            <property name="NavItem">item8.png</property>
+            <onclick>SetFocus(6014)</onclick>
+            <visible>Substring(Control.GetLabel(4325),recentmovies) + !IsEmpty(Window(Home).Property(RecentMovie.10.Title))</visible>
+        </item>				
     </include>
     <include name="BornActorsItems2">
         <item>
@@ -4657,6 +4725,58 @@
             <thumb>$INFO[Window(Home).Property(RecentEpisode.8.Art(thumb))]</thumb>
             <visible>Substring(Control.GetLabel(4325),recenttv) + !IsEmpty(Window(Home).Property(RecentEpisode.8.Title))</visible>
         </item>
+        <item>
+            <label>$INFO[Window(Home).Property(RecentEpisode.9.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecentEpisode.9.TVshowTitle)]</label2>
+            <property name="Premiered">$INFO[Window(Home).Property(RecentEpisode.9.Premiered)]</property>
+            <property name="RunningTime">$INFO[Window(Home).Property(RecentEpisode.9.Runtime)]</property>
+            <property name="Path">$INFO[Window(Home).Property(RecentEpisode.9.Play)]</property>
+            <property name="AudioChannels">$INFO[Window(Home).Property(RecentEpisode.9.AudioChannels)]</property>
+            <property name="AudioCodec">$INFO[Window(Home).Property(RecentEpisode.9.AudioCodec)]</property>
+            <property name="VideoAspect">$INFO[Window(Home).Property(RecentEpisode.9.VideoAspect)]</property>
+            <property name="VideoResolution">$INFO[Window(Home).Property(RecentEpisode.9.VideoResolution)]</property>
+            <property name="VideoCodec">$INFO[Window(Home).Property(RecentEpisode.9.VideoCodec)]</property>
+            <property name="PercentPlayed">$INFO[Window(Home).Property(RecentEpisode.9.PercentPlayed)]</property>
+            <property name="Landscape">$INFO[Window(Home).Property(RecentEpisode.9.Art(tvshow.landscape))]</property>
+            <property name="Clearart">$INFO[Window(Home).Property(RecentEpisode.9.Art(tvshow.clearart))]</property>
+            <property name="Logo">$INFO[Window(Home).Property(RecentEpisode.9.Art(tvshow.clearlogo))]</property>
+            <property name="Banner">$INFO[Window(Home).Property(RecentEpisode.9.Art(tvshow.banner))]</property>
+            <property name="Poster">$INFO[Window(Home).Property(RecentEpisode.9.Art(tvshow.poster))]</property>
+            <property name="Fanart">$INFO[Window(Home).Property(RecentEpisode.9.Art(tvshow.fanart))]</property>
+            <property name="EpisodeNumber">$INFO[Window(Home).Property(RecentEpisode.9.EpisodeNo)]</property>
+            <property name="Rating">$INFO[Window(Home).Property(RecentEpisode.9.Rating)]</property>
+            <property name="Plot">$INFO[Window(Home).Property(RecentEpisode.9.Plot)]</property>
+            <property name="DBID">$INFO[Window(Home).Property(RecentEpisode.9.DBID)]</property>
+            <onclick>SetFocus(6014)</onclick>
+            <thumb>$INFO[Window(Home).Property(RecentEpisode.9.Art(thumb))]</thumb>
+            <visible>Substring(Control.GetLabel(4325),recenttv) + !IsEmpty(Window(Home).Property(RecentEpisode.9.Title))</visible>
+        </item>	
+        <item>
+            <label>$INFO[Window(Home).Property(RecentEpisode.10.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecentEpisode.10.TVshowTitle)]</label2>
+            <property name="Premiered">$INFO[Window(Home).Property(RecentEpisode.10.Premiered)]</property>
+            <property name="RunningTime">$INFO[Window(Home).Property(RecentEpisode.10.Runtime)]</property>
+            <property name="Path">$INFO[Window(Home).Property(RecentEpisode.10.Play)]</property>
+            <property name="AudioChannels">$INFO[Window(Home).Property(RecentEpisode.10.AudioChannels)]</property>
+            <property name="AudioCodec">$INFO[Window(Home).Property(RecentEpisode.10.AudioCodec)]</property>
+            <property name="VideoAspect">$INFO[Window(Home).Property(RecentEpisode.10.VideoAspect)]</property>
+            <property name="VideoResolution">$INFO[Window(Home).Property(RecentEpisode.10.VideoResolution)]</property>
+            <property name="VideoCodec">$INFO[Window(Home).Property(RecentEpisode.10.VideoCodec)]</property>
+            <property name="PercentPlayed">$INFO[Window(Home).Property(RecentEpisode.10.PercentPlayed)]</property>
+            <property name="Landscape">$INFO[Window(Home).Property(RecentEpisode.10.Art(tvshow.landscape))]</property>
+            <property name="Clearart">$INFO[Window(Home).Property(RecentEpisode.10.Art(tvshow.clearart))]</property>
+            <property name="Logo">$INFO[Window(Home).Property(RecentEpisode.10.Art(tvshow.clearlogo))]</property>
+            <property name="Banner">$INFO[Window(Home).Property(RecentEpisode.10.Art(tvshow.banner))]</property>
+            <property name="Poster">$INFO[Window(Home).Property(RecentEpisode.10.Art(tvshow.poster))]</property>
+            <property name="Fanart">$INFO[Window(Home).Property(RecentEpisode.10.Art(tvshow.fanart))]</property>
+            <property name="EpisodeNumber">$INFO[Window(Home).Property(RecentEpisode.10.EpisodeNo)]</property>
+            <property name="Rating">$INFO[Window(Home).Property(RecentEpisode.10.Rating)]</property>
+            <property name="Plot">$INFO[Window(Home).Property(RecentEpisode.10.Plot)]</property>
+            <property name="DBID">$INFO[Window(Home).Property(RecentEpisode.10.DBID)]</property>
+            <onclick>SetFocus(6014)</onclick>
+            <thumb>$INFO[Window(Home).Property(RecentEpisode.10.Art(thumb))]</thumb>
+            <visible>Substring(Control.GetLabel(4325),recenttv) + !IsEmpty(Window(Home).Property(RecentEpisode.10.Title))</visible>
+        </item>			
     </include>
    <include name="MostPlayedRomsItems2">
         <item>

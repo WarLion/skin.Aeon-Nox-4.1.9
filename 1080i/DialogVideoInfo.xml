@@ -1784,7 +1784,7 @@ ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=
 					<width>950</width>
 					<label fallback="This movie is Unrated">$INFO[ListItem.mpaa]</label>
 					<font>Font_Reg22</font>
-					<textcolor>white5</textcolor>
+					<textcolor>$VAR[FontColorVar]</textcolor>
 					<scroll>true</scroll>
 					<haspath>true</haspath>
 					<visible>!ControlGroup(6100).HasFocus</visible>

@@ -562,7 +562,7 @@
                         <include>Default_SettingButton</include>
                         <onclick>Skin.Reset(ArtistsLogosPath)</onclick>
                         <onclick>Skin.SetPath(ArtistsLogosPath)</onclick>
-                    </control>
+                    </control>				
                     <control type="button" id="10">
                         <label>31459</label>
                         <label2>[COLOR $VAR[FontColorVar]]$VAR[LibraryStructureVar][/COLOR]</label2>
