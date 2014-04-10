@@ -21,7 +21,7 @@
                 <control type="image">
                     <width>729</width>
                     <height>1080</height>
-                    <texture background="true">$INFO[Container(50).ListItem.Icon]</texture>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="image">
                     <left>709</left>
@@ -43,14 +43,14 @@
                     <width>1192</width>
                     <height>1080</height>
                     <texture>info/info_rightpanelbottom.png</texture>
-                    <visible>IsEmpty(Container(50).ListItem.Art(fanart))</visible>
+                    <visible>IsEmpty(ListItem.Property(Fanart_Image))</visible>
                 </control>
                 <control type="image">
                     <left>729</left>
                     <width>1192</width>
                     <height>1080</height>
                     <aspectratio align="center">scale</aspectratio>
-                    <texture background="true">$INFO[Container(50).ListItem.Art(fanart)]</texture>
+                    <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
                     <fadetime>500</fadetime>
                 </control>
                 <control type="image">
@@ -356,13 +356,13 @@
                             <width>1000</width>
                             <height>360</height>
                             <aspectratio>keep</aspectratio>
-                            <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+                            <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
                             <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
                             <bordersize>7</bordersize>
-                            <visible>!IsEmpty(ListItem.Art(fanart))</visible>
+                            <visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
                         </control>
                         <control type="group">
-                            <visible>IsEmpty(ListItem.Art(fanart))</visible>
+                            <visible>IsEmpty(ListItem.Property(Fanart_Image))</visible>
                             <control type="label">
                                 <width>1000</width>
                                 <height>360</height>

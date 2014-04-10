@@ -862,22 +862,24 @@
     <!-- MikeBZH44 start -->
     <include name="MusicShowcaseDiscAlbums">
         <!-- Rolling CDArt -->
-            <control type="multiimage">
-            <left>1965</left>
+		<control type="group">
+			<visible>Skin.HasSetting(showcMultiCdart) + Container.Content(artists)</visible>
+            <control type="multiimage" id="159654">
+            <left>2265</left>
             <top>660</top>			
 				 <width>310</width>
            		 <height>310</height>
                 <aspectratio align="bottom">keep</aspectratio>
-                <imagepath background="true">$INFO[Skin.String(ArtistsLogosPath)]$INFO[ListItem.Artist]/cdart/</imagepath>
+                <imagepath background="true" fallback="empty.png">$INFO[Skin.String(ArtistsLogosPath)]$INFO[ListItem.Artist]/cdart/</imagepath>
                 <fadetime>300</fadetime>
                 <animation effect="fade" time="100">Visible</animation>
                 <animation effect="fade" time="100">Hidden</animation>
             <animation type="Conditional" condition="Control.IsVisible(1970) + Control.IsVisible(7679)" reversible="false">
-                <effect type="slide" start="0,0" end="-980,0" delay="500" time="1500" tween="cubic" easing="inout"/>
+                <effect type="slide" start="0,0" end="-1280,0" delay="500" time="1500" tween="cubic" easing="inout"/>
                 <effect type="rotate" start="0" center="auto" end="720" delay="500" time="1500" tween="cubic" easing="inout"/>
             </animation>
-			<visible>Skin.HasSetting(showcMultiCdart)</visible>
-            </control>				
+            </control>
+		</control>		
     </include>	
 	
     <include name="MusicShowcaseDisc">
@@ -894,7 +896,7 @@
                 <effect type="slide" start="0,0" end="-1110,0" delay="500" time="1500" tween="cubic" easing="inout"/>
                 <effect type="rotate" start="0" center="auto" end="720" delay="500" time="1500" tween="cubic" easing="inout"/>
             </animation>
-			<visible>Skin.HasSetting(Openshowcasemusic) + !Skin.HasSetting(noflowalbum)</visible>
+			<visible>[Skin.HasSetting(Openshowcasemusic) | Container.Content(albums)]+ !Skin.HasSetting(noflowalbum)</visible>
         </control>
     </include>
     <!-- Open case when infopanel is displayed -->
@@ -902,7 +904,7 @@
         <animation type="Conditional" condition="[[Control.IsVisible(1970) + Control.IsVisible(7679) + !Stringcompare(Skin.String(CDCase),none)] + Skin.HasSetting(Openshowcasemusic)  + !Skin.HasSetting(noflowalbum)] + !Substring(Control.GetLabel(159357),empty.png)" reversible="false">
             <effect type="rotatey" delay="0" center="0" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
             <effect type="rotatey" delay="2000" center="0" start="0" end="-75" time="1000" tween="quadratic" easing="out"/>
-        </animation>	
+        </animation>			
     </include>
     <!-- MikeBZH44 end -->
 </includes>
