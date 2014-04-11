@@ -903,7 +903,7 @@
     <include name="ShowcaseCDOpenCase">
         <animation type="Conditional" condition="[[Control.IsVisible(1970) + Control.IsVisible(7679) + !Stringcompare(Skin.String(CDCase),none)] + Skin.HasSetting(Openshowcasemusic)  + !Skin.HasSetting(noflowalbum)] + !Substring(Control.GetLabel(159357),empty.png)" reversible="false">
             <effect type="rotatey" delay="0" center="0" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
-            <effect type="rotatey" delay="2000" center="0" start="0" end="-75" time="1000" tween="quadratic" easing="out"/>
+            <effect type="rotatey" delay="4800" center="0" start="0" end="-75" time="1000" tween="quadratic" easing="out"/>
         </animation>			
     </include>
     <!-- MikeBZH44 end -->
