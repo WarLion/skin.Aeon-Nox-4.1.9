@@ -457,7 +457,7 @@
 					<font>Font_Bold15_Caps</font>
 					<visible>IntegerGreaterThan(ListItem.Top250,3)</visible>
 				</control>
-			</control>			
+			</control>	
             <control type="image">
                 <left>136</left>
                 <top>20</top>
@@ -806,7 +806,7 @@
                     </control>
                 </control>
             </control>
-            <control type="group">
+			<control type="group">
                 <visible>Container.Content(movies)</visible>
                 <control type="group">
                     <left>155</left>
@@ -932,6 +932,46 @@
                 </control>
             </control>
         </control>
+<!-- BEGIN Next Aired -->
+    <control type="group">
+		<visible>!Stringcompare(Control.GetLabel(4421),infopanelon) + Container.Content(tvshows)</visible>
+           <animation effect="slide" end="0,-145" time="320" easing="inout" tween="cubic" condition="Control.IsVisible(7550)">Conditional</animation>
+		   <animation effect="slide" end="0,-145" time="320" easing="inout" tween="cubic" condition="Control.HasFocus(61)">Conditional</animation>
+			<animation effect="slide" end="0,-145" time="320" easing="inout" tween="cubic" condition="IsEmpty(Window(Home).Property(NextAired.NextDate))">Conditional</animation>
+            <animation effect="slide" end="0,-145" time="240" easing="in" tween="cubic">WindowClose</animation>
+            <control type="image">
+                   <posx>580</posx>
+                   <posy>-10</posy>
+                   <width>750</width>
+                   <height>110</height>
+                    <aspectratio scalediffuse="false">stretch</aspectratio>
+                    <texture>home/overlaynextaired.png</texture>
+					<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+            </control>		
+               <control type="label">
+                   <posx>550</posx>
+                   <posy>5</posy>
+                   <width>800</width>
+                   <height>20</height>
+                   <aligny>center</aligny>
+                   <align>center</align>
+                   <label>$INFO[Window(Home).Property(NextAired.NextTitle)]</label>
+                   <font>Font_Bold19</font>
+                   <shadowcolor>black</shadowcolor>
+            </control>
+          <control type="label">
+                   <posx>550</posx>
+                   <posy>45</posy>
+                   <width>800</width>
+                   <height>20</height>
+                   <aligny>center</aligny>
+                   <align>center</align>
+                   <label>$VAR[NextEpisodeVar]$INFO[Window(Home).Property(NextAired.NextSeasonNumber), - S]$INFO[Window(Home).Property(NextAired.NextEpisodeNumber),E]</label>
+                   <font>Font_Bold19</font>
+                   <shadowcolor>black</shadowcolor>
+               </control>
+    </control>
+<!-- END Next Aired -->				
     </include>
     <include name="FloorSetDiscArt">
         <control type="group">
