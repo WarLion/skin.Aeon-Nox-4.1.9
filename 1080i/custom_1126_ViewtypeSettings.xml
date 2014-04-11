@@ -102,6 +102,13 @@
                     <selected>Skin.HasSetting(noflowtv)</selected>
                     <visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
                 </control>
+                <control type="radiobutton" id="1201">
+                    <label>31018</label>
+                    <include>Objects_MediaMenuButtonAlt2</include>
+                    <onclick>Skin.ToggleSetting(showcasezoom)</onclick>
+                    <selected>Skin.HasSetting(showcasezoom)</selected>
+                    <visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
+                </control>					
                 <control type="button" id="1641">
                     <label>$LOCALIZE[31248]</label>
                     <include>Objects_MediaMenuButtonAlt2</include>
@@ -418,7 +425,7 @@
                     <onclick>Skin.ToggleSetting(usecasescd)</onclick>
                     <selected>Skin.HasSetting(usecasescd)</selected>
                     <visible>Stringcompare(Window(home).Property(actualViewtype),ShowcaseSquare) + [Container.Content(albums) | Container.Content(songs) | Container.Content(artists)]</visible>
-                </control>	
+                </control>				
                 <control type="radiobutton" id="16520">
                     <label>31018</label>
                     <include>Objects_MediaMenuButtonAlt2</include>
