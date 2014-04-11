@@ -97,7 +97,14 @@
                     <onclick>Skin.ToggleSetting(LogoBehindPlot)</onclick>
                     <selected>Skin.HasSetting(LogoBehindPlot)</selected>
 					<visible>![Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + !Skin.HasSetting(movielogosfloor)</visible>
-                </control>								
+                </control>		
+                <control type="radiobutton" id="1827">
+                    <label>$LOCALIZE[31638]</label>
+                    <include>Objects_MediaMenuButtonAround</include>
+                    <onclick>Skin.ToggleSetting(hidenextdayaired)</onclick>
+                    <selected>Skin.HasSetting(hidenextdayaired)</selected>
+					<visible>[[Stringcompare(Window(home).Property(actualViewtype),Landscape) | Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies)] + [[Container.Content(tvshows) + ![Skin.HasSetting(tvposterinfopane) | Skin.HasSetting(tvthumbsinfopane)]] | Container.Content(seasons)]] + !Stringcompare(Control.GetLabel(4421),infopanelon)</visible>
+                </control>												
             </control>
             <control type="panel" id="451">
                 <left>305</left>
