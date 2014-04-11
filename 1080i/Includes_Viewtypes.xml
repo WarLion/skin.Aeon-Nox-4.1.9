@@ -939,18 +939,19 @@
 		   <animation effect="slide" end="0,-145" time="320" easing="inout" tween="cubic" condition="Control.HasFocus(61)">Conditional</animation>
 			<animation effect="slide" end="0,-145" time="320" easing="inout" tween="cubic" condition="IsEmpty(Window(Home).Property(NextAired.NextDate))">Conditional</animation>
             <animation effect="slide" end="0,-145" time="240" easing="in" tween="cubic">WindowClose</animation>
+			<animation effect="slide" end="0,40" time="320" easing="inout" tween="cubic" condition="Skin.HasSetting(FadedTopBar) | !Skin.HasSetting(ClassicTopBar)">Conditional</animation>
             <control type="image">
-                   <posx>580</posx>
-                   <posy>-10</posy>
+                   <left>580</left>
+                   <top>-80</top>
                    <width>750</width>
-                   <height>110</height>
+                   <height>210</height>
                     <aspectratio scalediffuse="false">stretch</aspectratio>
                     <texture>home/overlaynextaired.png</texture>
 					<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
             </control>		
                <control type="label">
-                   <posx>550</posx>
-                   <posy>5</posy>
+                   <left>550</left>
+                   <top>5</top>
                    <width>800</width>
                    <height>20</height>
                    <aligny>center</aligny>
@@ -960,8 +961,8 @@
                    <shadowcolor>black</shadowcolor>
             </control>
           <control type="label">
-                   <posx>550</posx>
-                   <posy>45</posy>
+                   <left>550</left>
+                   <top>45</top>
                    <width>800</width>
                    <height>20</height>
                    <aligny>center</aligny>
