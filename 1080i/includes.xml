@@ -1311,7 +1311,7 @@
 						<height>465</height>
 						<aspectratio aligny="bottom">stretch</aspectratio>
 						<texture background="true" diffuse="thumbs/movieposter_mask.png">$VAR[PlayerPosterVar]</texture>
-						<visible>VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(episodes)</visible>
+						<visible>VideoPlayer.Content(MusicVideos)</visible>
 					</control>
 					<control type="image">
 						<left>5</left>
@@ -1321,7 +1321,7 @@
 						<texture diffuse="thumbs/movieposter_mask.png">thumbs/thumb_glass_noreflect.png</texture>
 						<bordertexture border="19.5">thumbs/poster_shadow.png</bordertexture>
 						<bordersize>19</bordersize>
-						<visible>VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(episodes)</visible>
+						<visible>VideoPlayer.Content(MusicVideos)</visible>
 					</control>
 					<control type="image">
 						<left>80</left>
@@ -1329,12 +1329,12 @@
 						<width>270</width>
 						<height>270</height>
 						<aspectratio>keep</aspectratio>
-						<texture background="true">$INFO[Player.Art(discart)]</texture>
+						<texture background="true" fallback="common/cdart/bd.png">$INFO[Player.Art(discart)]</texture>
 						<animation type="WindowOpen">
 							<effect type="slide" start="0,0" end="140,0" delay="500" time="1000" tween="cubic" easing="inout"/>
 						</animation>
 						<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-						<visible>VideoPlayer.Content(movies) + Skin.HasSetting(Discinfoscreen)</visible>
+						<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) + Skin.HasSetting(Discinfoscreen)</visible>
 					</control>
 					<control type="image">
 						<left>73</left>
@@ -1343,8 +1343,16 @@
 						<height>420</height>
 						<aspectratio aligny="bottom">stretch</aspectratio>
 						<texture background="true" diffuse="thumbs/movieposter_mask.png">$VAR[PlayerPosterVar]</texture>
-						<visible>VideoPlayer.Content(movies)</visible>
+						<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)</visible>
 					</control>
+					<control type="image">
+						<left>60</left>
+						<top>627</top>
+						<width>308</width>
+						<height>451</height>
+						<texture background="true">wall/boxes/wall_movie_overlay.png</texture>
+						<visible>VideoPlayer.Content(episodes)</visible>
+					</control>					
 					<control type="image">
 						<left>25</left>
 						<top>600</top>
