@@ -453,6 +453,7 @@
                     <onclick>Skin.ToggleSetting(Openshowcasemusic)</onclick>
                     <selected>Skin.HasSetting(Openshowcasemusic)</selected>
                     <visible>[Substring(Window(home).Property(actualViewtype),Showcase) + Container.Content(albums)] + !Skin.HasSetting(noflowalbum)</visible>
+					<enable>Skin.HasSetting(usecasescd)</enable>
                 </control>				
                 <control type="radiobutton" id="1683">
                     <label>$LOCALIZE[31169]</label>
