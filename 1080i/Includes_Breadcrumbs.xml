@@ -31,7 +31,7 @@
             </control>
             <control type="image">
                 <top>-40</top>
-                <width>1920</width>
+                <width>2100</width>
                 <height>115</height>
                 <texture>views/logo_tagline_gradient.png</texture>
                 <visible>Skin.HasSetting(FadedTopBar)</visible>
@@ -218,7 +218,7 @@
             </control>
             <!--right widget -->
 			<control type="group">
-				<left>820r</left>
+				<left>770r</left>
 			    <animation effect="slide" end="145" time="320" condition="!Skin.HasSetting(breadcrumbsweather)">Conditional</animation>
 				<animation effect="slide" end="175" time="320" condition="Skin.HasSetting(shorterhomebars)">Conditional</animation>
 				<control type="image">
@@ -229,6 +229,7 @@
 					<include>Animation_VisibleChange400</include>
 					<visible>Skin.HasSetting(ClassicTopBar)</visible>
 					<animation effect="slide" start="750" end="0" time="240">VisibleChange</animation>
+					<animation effect="slide" end="65" time="320" condition="!Skin.HasSetting(W_condition_image)">Conditional</animation>
 				</control>
 			</control>				
             <control type="group">
@@ -292,17 +293,17 @@
                 </control>
             </control>
             <control type="group">
-				<left>860r</left>
+				<left>780r</left>
 				<animation effect="slide" end="80" time="320" condition="!Skin.HasSetting(W_condition_image)">Conditional</animation>
                  <control type="label">
-				 	<left>110</left>
+				 	<left>100</left>
                     <width>500</width>
                     <height>36</height>
                     <label>$INFO[Window(weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits] [COLOR grey]• [/COLOR]</label>
                     <font>Font_Reg28_Caps</font>
                     <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
 					<visible>!Skin.HasSetting(shorterhomebars) + Skin.HasSetting(breadcrumbsweather)</visible>
-					<animation effect="slide" end="-30" time="320" condition="!Skin.HasSetting(W_condition_image)">Conditional</animation>
+					<animation effect="slide" end="-10" time="320" condition="!Skin.HasSetting(W_condition_image)">Conditional</animation>
                 </control>
                 <control type="image">
 					<left>190</left>
@@ -313,10 +314,10 @@
                     <texture>weather/small/$INFO[Weather.FanartCode].png</texture>
 					<visible>!Skin.HasSetting(W_condition_image)</visible>
 					<visible>!Skin.HasSetting(shorterhomebars) + Skin.HasSetting(breadcrumbsweather)</visible>
-					<animation effect="slide" end="-40" time="320" condition="!Skin.HasSetting(W_condition_image)">Conditional</animation>
+					<animation effect="slide" end="-20" time="320" condition="!Skin.HasSetting(W_condition_image)">Conditional</animation>
                 </control>
 				<control type="label">
-					<left>170</left>
+					<left>210</left>
 					<top>-3</top>
 					<width>210</width>
 					<height>40</height>
@@ -350,7 +351,7 @@
 				<visible>Skin.HasSetting(shorterhomebars)</visible>
             </control>
             <control type="label">
-                <left>170</left>
+                <left>90</left>
                 <width>600</width>
                 <height>36</height>
                 <align>right</align>
