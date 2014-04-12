@@ -29,3 +29,5 @@ media/flags/language/Thumbs.db
 *.db
 media/home/Thumbs.db
 media/home/nowplaying/Thumbs.db
+*.db
+media/thumbs/Thumbs.db
