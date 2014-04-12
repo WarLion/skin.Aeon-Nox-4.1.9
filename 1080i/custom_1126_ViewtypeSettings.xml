@@ -113,7 +113,7 @@
                     <label>$LOCALIZE[31248]</label>
                     <include>Objects_MediaMenuButtonAlt2</include>
                     <onclick>ActivateWindow(1166)</onclick>
-                    <visible>[container.content(movies) | Container.Content(musicvideos) + [Container.Content(Actors) | Container.Content(Directors) | Container.Content(Artists)]] + Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies)</visible>
+                    <visible>[container.content(movies) | Container.Content(sets) | Container.Content(musicvideos) + [Container.Content(Actors) | Container.Content(Directors) | Container.Content(Artists)]] + Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies)</visible>
                 </control>
                 <control type="radiobutton" id="1741">
                     <label>$LOCALIZE[31282]</label>
