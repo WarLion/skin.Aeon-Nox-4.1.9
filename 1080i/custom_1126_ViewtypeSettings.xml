@@ -148,6 +148,13 @@
                     <enable>!Skin.HasSetting(nohighlist)</enable>
                     <visible>[Stringcompare(Window(home).Property(actualViewtype),LowList)] + [Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows)]</visible>
                 </control>
+                <control type="radiobutton" id="1203">
+                    <label>$LOCALIZE[31812]</label>
+                    <include>Objects_MediaMenuButtonAlt2</include>
+                    <onclick>Skin.ToggleSetting(lowlistcdart)</onclick>
+                    <selected>Skin.HasSetting(lowlistcdart)</selected>
+                    <visible>Container.Content(sets) + Stringcompare(Window(home).Property(actualViewtype),LowList)</visible>
+                </control>				
                 <control type="radiobutton" id="16305">
                     <label>202</label>
                     <include>Objects_MediaMenuButtonAlt2</include>
