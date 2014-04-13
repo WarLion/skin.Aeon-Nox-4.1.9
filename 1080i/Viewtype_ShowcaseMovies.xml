@@ -2141,40 +2141,25 @@
     </include>
     <!-- Open case -->
     <include name="ShowcaseOpenCase">
-        <animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(usecases) + Skin.HasSetting(OpenCase) + [!IsEmpty(Container.ListItem.Art(discart)) | !IsEmpty(Window(home).Property(Set.Movie.7.Art(discart)))] + !Skin.HasSetting(clearcases) + [container.content(sets) | container.content(movies)]">
-            <effect type="rotatey" center="-4" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
-            <effect type="rotatey" delay="7000" center="-4" start="0" end="-75" time="1000" tween="quadratic" easing="out"/>
-        </animation>
-        <animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(usecases) + Skin.HasSetting(OpenCase) + [!IsEmpty(Container.ListItem.Art(discart)) | !IsEmpty(Window(home).Property(Set.Movie.7.Art(discart)))] + Skin.HasSetting(clearcases) + [container.content(sets) | container.content(movies)]">
-            <effect type="rotatey" center="-4" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
-            <effect type="rotatey" delay="7000" center="-4" start="0" end="-75" time="1000" tween="quadratic" easing="out"/>
-        </animation>
-        <animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(usecases) + Skin.HasSetting(OpenCase) + [!IsEmpty(Container.ListItem.Art(discart)) | IsEmpty(Window(home).Property(Set.Movie.7.Art(discart)))] + !Skin.HasSetting(clearcases) + [container.content(sets) | container.content(movies)]">
+        <animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(usecases) + Skin.HasSetting(OpenCase) + [!IsEmpty(Container.ListItem.Art(discart)) | !IsEmpty(Window(home).Property(Set.Movie.1.Art(discart)))] + !Skin.HasSetting(clearcases)">
             <effect type="rotatey" center="-4" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
             <effect type="rotatey" delay="4800" center="-4" start="0" end="-75" time="1000" tween="quadratic" easing="out"/>
         </animation>
-        <animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(usecases) + Skin.HasSetting(OpenCase) + [!IsEmpty(Container.ListItem.Art(discart)) | IsEmpty(Window(home).Property(Set.Movie.7.Art(discart)))] + Skin.HasSetting(clearcases) + [container.content(sets) | container.content(movies)]">
+        <animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(usecases) + Skin.HasSetting(OpenCase) + [!IsEmpty(Container.ListItem.Art(discart)) | !IsEmpty(Window(home).Property(Set.Movie.1.Art(discart)))] + Skin.HasSetting(clearcases)">
             <effect type="rotatey" center="-4" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
             <effect type="rotatey" delay="4800" center="-4" start="0" end="-75" time="1000" tween="quadratic" easing="out"/>
-        </animation>				
+        </animation>		
     </include>
     <include name="ShowcaseOpenCaseWatched">
-        <animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(usecases) + Skin.HasSetting(OpenCase) + [!IsEmpty(Container.ListItem.Art(discart)) | !IsEmpty(Window(home).Property(Set.Movie.7.Art(discart)))] + !Skin.HasSetting(clearcases) + [container.content(sets) | container.content(movies)]">
-            <effect type="rotatey" center="0" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
-            <effect type="rotatey" delay="7000" center="0" start="0" end="-75" time="1000" tween="quadratic" easing="out"/>
-        </animation>
-        <animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(OpenCase) + [!IsEmpty(Container.ListItem.Art(discart)) | !IsEmpty(Window(home).Property(Set.Movie.7.Art(discart)))] + Skin.HasSetting(clearcases) + [container.content(sets) | container.content(movies)]">
-            <effect type="rotatey" center="-11" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
-            <effect type="rotatey" delay="7000" center="-11" start="0" end="-75" time="1000" tween="quadratic" easing="out"/>
-        </animation>		
-        <animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(usecases) + Skin.HasSetting(OpenCase) + [!IsEmpty(Container.ListItem.Art(discart)) | IsEmpty(Window(home).Property(Set.Movie.7.Art(discart)))] + !Skin.HasSetting(clearcases) + [container.content(sets) | container.content(movies)]">
+        <animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(usecases) + Skin.HasSetting(OpenCase) + [!IsEmpty(Container.ListItem.Art(discart)) | !IsEmpty(Window(home).Property(Set.Movie.1.Art(discart)))] + !Skin.HasSetting(clearcases)">
             <effect type="rotatey" center="0" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
             <effect type="rotatey" delay="4800" center="0" start="0" end="-75" time="1000" tween="quadratic" easing="out"/>
         </animation>
-        <animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(OpenCase) + [!IsEmpty(Container.ListItem.Art(discart)) | IsEmpty(Window(home).Property(Set.Movie.7.Art(discart)))] + Skin.HasSetting(clearcases) + [container.content(sets) | container.content(movies)]">
+        <animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(OpenCase) + [!IsEmpty(Container.ListItem.Art(discart)) | !IsEmpty(Window(home).Property(Set.Movie.1.Art(discart)))] + Skin.HasSetting(clearcases)">
             <effect type="rotatey" center="-11" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
             <effect type="rotatey" delay="4800" center="-11" start="0" end="-75" time="1000" tween="quadratic" easing="out"/>
         </animation>		
+		
     </include>
     <!-- MikeBZH44 End -->
 </includes>
