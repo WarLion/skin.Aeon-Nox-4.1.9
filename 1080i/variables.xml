@@ -1846,7 +1846,7 @@
         <value condition="Container.Content(episodes)">$INFO[ListItem.Episode]</value>
     </variable>
     <variable name="ListImage1Var">
-        <value condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | [Window.IsActive(programs) + !Container.Content(addons)]">$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</value>
+        <value condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | [Window.IsActive(programs) + !Container.Content(addons)]">flags/studios/$INFO[ListItem.Studio,,.png]</value>
         <value condition="Container.Content(albums)">flags/music/recordlabel/$INFO[ListItem.Property(Album_Label),,.png]</value>
     </variable>
     <variable name="ListImage2Var">
