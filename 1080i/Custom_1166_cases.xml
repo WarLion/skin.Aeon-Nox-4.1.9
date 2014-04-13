@@ -237,14 +237,14 @@
                     <include>Objects_MediaMenuButtonAround</include>
                     <onclick>Skin.ToggleSetting(showcasesquarezoom)</onclick>
                     <selected>Skin.HasSetting(showcasesquarezoom)</selected>
-                    <visible>Container.Content(movies) | Container.Content(sets) + Stringcompare(Window(home).Property(actualViewtype),ShowcaseSquare)</visible>
+                    <visible>[Container.Content(movies) | Container.Content(sets)] + Stringcompare(Window(home).Property(actualViewtype),ShowcaseSquare)</visible>
                 </control>
                 <control type="radiobutton" id="1203">
                     <label>$LOCALIZE[31812]</label>
                     <include>Objects_MediaMenuButtonAround</include>
                     <onclick>Skin.ToggleSetting(lowlistcdart)</onclick>
                     <selected>Skin.HasSetting(lowlistcdart)</selected>
-                    <visible>Container.Content(movies) | Container.Content(sets) + Stringcompare(Window(home).Property(actualViewtype),LowList)</visible>
+                    <visible>[Container.Content(movies) | Container.Content(sets)] + Stringcompare(Window(home).Property(actualViewtype),LowList)</visible>
                 </control>
  <!-- MikeBZH44 Start -->
 				<control type="radiobutton" id="1206">
@@ -255,14 +255,14 @@
 					<onclick>Skin.Reset(showcasecdart)</onclick>
 					<onclick>Skin.ToggleSetting(MikeCasesMod)</onclick>
 					<selected>Skin.HasSetting(MikeCasesMod)</selected>
-					<visible>[Container.Content(movies) | Container.Content(sets) + Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies)]</visible>
+					<visible>[Container.Content(movies) | Container.Content(sets)] + Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies)</visible>
 				</control> 
 				<control type="radiobutton" id="1204">
 					<include>Objects_MediaMenuButtonAround</include>
 					<label>No case for movieset</label>
 					<onclick>Skin.ToggleSetting(NoCaseForMovieset)</onclick>
 					<selected>Skin.HasSetting(NoCaseForMovieset)</selected>
-					<visible>Skin.HasSetting(MikeCasesMod) + [Container.Content(movies) | Container.Content(sets) + Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies)]</visible>
+					<visible>Skin.HasSetting(MikeCasesMod) + [[Container.Content(movies) | Container.Content(sets)] + Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies)]</visible>
 				</control>
 				<control type="radiobutton" id="1205">
 					<include>Objects_MediaMenuButtonAround</include>
@@ -270,7 +270,7 @@
 					<onclick>Skin.ToggleSetting(OpenCase)</onclick>
 					<onclick>Skin.SetBool(showcasecdart)</onclick>
 					<selected>Skin.HasSetting(OpenCase)</selected>
-					<visible>Skin.HasSetting(MikeCasesMod) + [Container.Content(movies) | Container.Content(sets) + Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies)]</visible>
+					<visible>Skin.HasSetting(MikeCasesMod) + [[Container.Content(movies) | Container.Content(sets)] + Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies)]</visible>
 				</control>
 <!-- MikeBZH44 End -->
 				
