@@ -615,7 +615,7 @@
         <control type="group">
             <visible>Player.ShowInfo</visible>
             <include>Animation_Widgets</include>
-            <visible>!Window.IsActive(musicosd)</visible>
+            <visible>!Window.IsActive(musicosd) + !Skin.HasSetting(DisablePanelWidgetVis)</visible>
             <control type="group" id="8995">
                 <left>22</left>
                 <top>-597</top>
