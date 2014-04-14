@@ -436,7 +436,7 @@
                         <top>62</top>
                         <width>1920</width>
                         <height>1080</height>
-                        <visible>Player.HasMedia + System.IdleTime(8) | </visible>
+                        <visible>Player.HasMedia + System.IdleTime(8)</visible>
                         <animation effect="zoom" end="125,100" center="960,500" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(smallermainmenu)">Conditional</animation>
                         <animation effect="fade" end="100" time="600" condition="Player.HasAudio + System.IdleTime(8)">Conditional</animation>
                     </control>
