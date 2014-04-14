@@ -277,6 +277,11 @@
             <size>17</size>
         </font>
         <font>
+            <name>Font_Reg10</name>
+            <filename>MC360.ttf</filename>
+            <size>10</size>
+        </font>		
+        <font>
             <name>Font_BigPause</name>
             <filename>MC360.ttf</filename>
             <aspect>0.67</aspect>

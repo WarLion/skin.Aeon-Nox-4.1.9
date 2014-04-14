@@ -25,7 +25,7 @@
                 <left>285</left>
                 <top>580</top>
                 <width>950</width>
-                <height>415</height>
+                <height>515</height>
                 <texture border="50">osd/osd_settings_back_glow.png</texture>
                 <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                 <visible>!Skin.HasSetting(DisableGlowbar)</visible>
@@ -36,7 +36,7 @@
                 <left>285</left>
                 <top>580</top>
                 <width>950</width>
-                <height>415</height>
+                <height>515</height>
                 <texture border="50">osd/osd_settings_back.png</texture>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
@@ -264,6 +264,13 @@
 					<selected>Skin.HasSetting(NoCaseForMovieset)</selected>
 					<visible>Skin.HasSetting(MikeCasesMod) + [[Container.Content(movies) | Container.Content(sets)] + Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies)]</visible>
 				</control>
+				<control type="radiobutton" id="1207">
+					<include>Objects_MediaMenuButtonAround</include>
+					<label>Open Set as BoxCase</label>
+					<onclick>Skin.ToggleSetting(OpenBoxSet)</onclick>
+					<selected>Skin.HasSetting(OpenBoxSet)</selected>
+					<visible>Skin.HasSetting(NoCaseForMovieset) + [[Container.Content(movies) | Container.Content(sets)] + Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies)]</visible>
+				</control>				
 				<control type="radiobutton" id="1205">
 					<include>Objects_MediaMenuButtonAround</include>
 					<label>Open case</label>
