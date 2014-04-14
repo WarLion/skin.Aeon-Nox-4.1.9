@@ -2357,7 +2357,7 @@
 							<animation type="conditional" reversible="false" condition="[Control.IsVisible(1970) + Skin.HasSetting(OpenCase)]">
 								<effect type="fade" start ="0" end="100" time="0" delay="1000" />
 								<effect type="rotatey" center="130" start="48" end="180" time="50" delay="1000" tween="cubic" />				
-							</animation>					
+							</animation>											
 							<control type="textbox">
 								<left>60</left>
 								<top>60</top>

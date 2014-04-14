@@ -1218,7 +1218,7 @@
         </control>		
 		
 
-<!-- test label
+<!-- test label 
             <control type="image">
                 <left>0</left>
                 <top>50</top>
@@ -1231,11 +1231,11 @@
 				<top>50</top>					
 				<width>1900</width>
 				<height>47</height>
-				<label>$VAR[cdARTVar]</label>
+				<label>$INFO[ListItem.path]season0$INFO[ListItem.season]-fanart.jpg</label>
 				<scroll>true</scroll>
             </control>
 
-	 test label --> 					
+		test label --> 				
 <!-- end test label -->	
 <!-- end test label -->	 		
     </include>
