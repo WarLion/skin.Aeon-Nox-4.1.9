@@ -311,10 +311,11 @@
                     <width>70</width>
                     <height>70</height>
                     <colordiffuse>white2</colordiffuse>
-                    <texture>weather/small/$INFO[Weather.FanartCode].png</texture>
+                    <texture>$VAR[Realweatherimg]$INFO[Weather.FanartCode].png</texture>
 					<visible>!Skin.HasSetting(W_condition_image)</visible>
 					<visible>!Skin.HasSetting(shorterhomebars) + Skin.HasSetting(breadcrumbsweather)</visible>
 					<animation effect="slide" end="-20" time="320" condition="!Skin.HasSetting(W_condition_image)">Conditional</animation>
+					<animation effect="slide" end="5" time="320" condition="Skin.HasSetting(W_real_image)">Conditional</animation>
                 </control>
 				<control type="label">
 					<left>210</left>

@@ -174,8 +174,9 @@
 						<width>70</width>
 						<height>70</height>
 						<colordiffuse>white2</colordiffuse>
-						<texture>weather/small/$INFO[Weather.FanartCode].png</texture>
+						<texture>$VAR[Realweatherimg]$INFO[Weather.FanartCode].png</texture>
 						<visible>!Skin.HasSetting(WeatherConditionVis)</visible>
+						<animation effect="slide" end="10" time="320" condition="Skin.HasSetting(W_real_image)">Conditional</animation>
 					</control>				
                 </control>
             </control>

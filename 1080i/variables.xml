@@ -525,7 +525,7 @@
         <value>$INFO[ListItem.Label]</value>
     </variable>
     <variable name="DialogVideoInfoFanartVar">
-        <value condition="!IsEmpty(ListItem.Art(season.fanart)) + Container.Content(seasons)">$INFO[ListItem.Art(season.fanart)]</value>
+        <value condition="!IsEmpty(ListItem.Art(season.fanart)) + [Container.Content(seasons) | Container.Content(episodes)]">$INFO[ListItem.Art(season.fanart)]</value>
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Art(fanart)]</value>
         <value>$INFO[ListItem.Art(fanart)]</value>
     </variable>
@@ -3244,5 +3244,9 @@
 	<variable name="RatingLabelVarTvshows">
 	   <value condition="Skin.HasSetting(RatingColorFlagreloaded)">$LOCALIZE[31988]</value>
        <value>$LOCALIZE[32995]</value>	   
+    </variable>		
+	<variable name="Realweatherimg">
+	   <value condition="Skin.HasSetting(W_real_image)">weather/real/</value>
+       <value>weather/small/</value>	   
     </variable>		
 </includes>

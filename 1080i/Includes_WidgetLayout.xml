@@ -182,8 +182,9 @@
                     <width>65</width>
                     <height>65</height>
                     <colordiffuse>white2</colordiffuse>
-                    <texture>weather/small/$INFO[Weather.FanartCode].png</texture>
+                    <texture>$VAR[Realweatherimg]$INFO[Weather.FanartCode].png</texture>
 					<visible>!Skin.HasSetting(W_condition_image)</visible>
+					<animation effect="slide" end="20" time="320" condition="Skin.HasSetting(W_real_image)">Conditional</animation>
                 </control>
 				<control type="label">
 					<top>-3</top>
