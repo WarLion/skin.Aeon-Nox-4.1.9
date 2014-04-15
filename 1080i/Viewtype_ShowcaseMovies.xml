@@ -138,8 +138,9 @@
                 <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
                 <control type="image">
                     <include>MovieShowcaseDVDCoverVarsSets</include>
-                    <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem0Var]</texture>
+                    <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem0Var]</texture>
                     <visible>[Skin.HasSetting(usecases) + [Container.Content(movies) | Container.Content(sets)] + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem.Path,videodb://movies/sets)]</visible>
+					<animation effect="fade" start="100" end="0" time="100" delay="150" condition="[Control.IsVisible(1970) + Skin.HasSetting(OpenCase)] + Skin.HasSetting(noflow)">Conditional</animation>
                     </control>				
                 <!-- MikeBZH44 end -->			
                 <!-- Movie Showcase Variables: Thumb glass overlays -->
@@ -2154,10 +2155,12 @@
     <!-- MikeBZH44 End -->
 	
     <include name="Boxset_warlion">
-			<control type="group">	
-				<animation effect="zoom" start="100" end="90" center="145,217" time="500" delay="300" reversible="false" tween="cubic" condition="[Control.IsVisible(1970) + Skin.HasSetting(OpenCase)]">Conditional</animation>			
+			<control type="group">			
+				<visible>Skin.HasSetting(OpenBoxSet)</visible>
 			<control type="group">
-				<visible>[Skin.HasSetting(usecases) + [container.content(sets) | container.content(movies)] + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem.Path,videodb://movies/sets)] + Skin.HasSetting(OpenBoxSet)</visible>				
+				<animation effect="zoom" start="100" end="90" center="145,217" time="500" delay="300" reversible="false" tween="cubic" condition="[Control.IsVisible(1970) + Skin.HasSetting(OpenCase)] + !Skin.HasSetting(noflow)">Conditional</animation>
+				<animation effect="zoom" start="110" end="110" center="145,217" time="10" reversible="false" tween="cubic" condition="[Control.IsVisible(1970) + Skin.HasSetting(OpenCase)] + Skin.HasSetting(noflow)">Conditional</animation>	
+				<visible>[Skin.HasSetting(usecases) + [container.content(sets) | container.content(movies)] + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem.Path,videodb://movies/sets)]</visible>				
 				<control type="group">									
 					<control type="image">
 					<left>0</left>
@@ -2194,7 +2197,7 @@
 						<width>250</width>
 						<height>250</height>
 						<aspectratio>keep</aspectratio>
-						<texture background="true">$INFO[Window(home).Property(Set.Movie.2.Art(discart))]</texture>
+						<texture background="true">$INFO[Window(home).Property(Set.Movie.2.Art(discart))]</texture>					
 					</control>	
 					<control type="image">
 						<left>0</left>

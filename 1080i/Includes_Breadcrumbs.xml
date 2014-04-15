@@ -342,7 +342,7 @@
 				<visible>!Skin.HasSetting(shorterhomebars) + Skin.HasSetting(W_condition_image)</visible>
             </control>
             <control type="label">
-                <left>170</left>
+                <left>90</left>
                 <width>600</width>
                 <height>36</height>
                 <align>right</align>
@@ -359,7 +359,7 @@
                 <label>[COLOR grey]$INFO[System.Date(DDD)] • $INFO[System.Date(D)] $INFO[System.Date(mmm)] $INFO[System.Date(yyyy)]  •[/COLOR]  $INFO[System.Time]</label>
                 <font>Font_Reg28_Caps</font>
                 <textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
-				<visible>!Skin.HasSetting(W_condition_image)</visible>
+				<visible>!Skin.HasSetting(shorterhomebars) + !Skin.HasSetting(W_condition_image)</visible>
             </control>			
             </control>
         </control>
