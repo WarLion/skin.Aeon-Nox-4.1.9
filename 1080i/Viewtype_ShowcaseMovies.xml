@@ -2154,7 +2154,6 @@
     <!-- MikeBZH44 End -->
 	
     <include name="Boxset_warlion">
-		<!--- BOXSET WARLION ---->	
 			<control type="group">	
 				<animation effect="zoom" start="100" end="90" center="145,217" time="500" delay="300" reversible="false" tween="cubic" condition="[Control.IsVisible(1970) + Skin.HasSetting(OpenCase)]">Conditional</animation>			
 			<control type="group">
@@ -2487,7 +2486,6 @@
 					</control>								
 				</control>						
 			</control>	
-		</control>	
-		<!--- END BOXSET WARLION ---->	        
+		</control>	        
     </include>	
 </includes>
