@@ -2321,7 +2321,22 @@
 						<height>250</height>
 						<aspectratio>keep</aspectratio>
 						<texture background="true" flipx="true">$INFO[Window(home).Property(Set.Movie.7.Art(discart))]</texture>
-					</control>	  
+					</control>	
+					<control type="group">
+						<left>10</left>
+						<top>-20</top>
+						<width>250</width>
+						<height>250</height>					
+						<visible>IsEmpty(Window(home).Property(Set.Movie.7.Art(discart)))</visible>
+						<control type="image">
+							<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
+							<texture background="true" flipx="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[Window(home).Property(Set.Movie.7.Art(poster))]</texture>					
+						</control>						
+						<control type="image">
+							<texture>thumbs/sets/cdarttop.png</texture>	
+							<visible>!IsEmpty(Window(home).Property(Set.Movie.7.Art(poster)))</visible>				
+						</control>	
+					</control>						  
 					<control type="image">
 						<left>0</left>
 						<top>-20</top>
@@ -2331,7 +2346,7 @@
 						<visible>[container.content(sets) | container.content(movies) | Container.Content(musicvideos)]</visible>
 						<aspectratio scalediffuse="false" align="left" aligny="top">scale</aspectratio>
 						<texture background="true" flipx="true" fallback="thumbs/sets/Disc3.png" diffuse="thumbs/sets/Disc3.png">$INFO[ListItem.Art(extrafanart1)]</texture>
-						<visible>!IsEmpty(Window(home).Property(Set.Movie.7.Art(discart)))</visible>						
+						<visible>!IsEmpty(Window(home).Property(Set.Movie.7.Art(poster)))</visible>						
 					</control>					           
 					<control type="image">
 						<left>10</left>
@@ -2340,7 +2355,22 @@
 						<height>250</height>
 						<aspectratio>keep</aspectratio>
 						<texture background="true" flipx="true">$INFO[Window(home).Property(Set.Movie.8.Art(discart))]</texture>
-					</control>	
+					</control>
+					<control type="group">
+						<left>10</left>
+						<top>80</top>
+						<width>250</width>
+						<height>250</height>					
+						<visible>IsEmpty(Window(home).Property(Set.Movie.8.Art(discart)))</visible>
+						<control type="image">
+							<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
+							<texture background="true" flipx="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[Window(home).Property(Set.Movie.8.Art(poster))]</texture>					
+						</control>						
+						<control type="image">
+							<texture>thumbs/sets/cdarttop.png</texture>	
+							<visible>!IsEmpty(Window(home).Property(Set.Movie.8.Art(poster)))</visible>				
+						</control>	
+					</control>							
 					<control type="image">
 						<left>0</left>
 						<top>-20</top>
@@ -2350,7 +2380,7 @@
 						<visible>[container.content(sets) | container.content(movies) | Container.Content(musicvideos)]</visible>
 						<aspectratio scalediffuse="false" align="left" aligny="top">scale</aspectratio>
 						<texture background="true" flipx="true" fallback="thumbs/sets/Disc2.png" diffuse="thumbs/sets/Disc2.png">$INFO[ListItem.Art(extrafanart1)]</texture>
-						<visible>!IsEmpty(Window(home).Property(Set.Movie.8.Art(discart)))</visible>						
+						<visible>!IsEmpty(Window(home).Property(Set.Movie.8.Art(poster)))</visible>						
 					</control>									
 					<control type="image">
 						<left>10</left>
@@ -2360,6 +2390,21 @@
 						<aspectratio>keep</aspectratio>
 						<texture background="true" flipx="true">$INFO[Window(home).Property(Set.Movie.9.Art(discart))]</texture>
 					</control>
+					<control type="group">
+						<left>10</left>
+						<top>168</top>
+						<width>250</width>
+						<height>250</height>					
+						<visible>IsEmpty(Window(home).Property(Set.Movie.9.Art(discart)))</visible>
+						<control type="image">
+							<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
+							<texture background="true" flipx="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[Window(home).Property(Set.Movie.9.Art(poster))]</texture>					
+						</control>						
+						<control type="image">
+							<texture>thumbs/sets/cdarttop.png</texture>	
+							<visible>!IsEmpty(Window(home).Property(Set.Movie.9.Art(poster)))</visible>				
+						</control>	
+					</control>						
 					<control type="image">
 						<left>0</left>
 						<top>-20</top>
@@ -2369,10 +2414,10 @@
 						<visible>[container.content(sets) | container.content(movies) | Container.Content(musicvideos)]</visible>
 						<aspectratio scalediffuse="false" align="left" aligny="top">scale</aspectratio>
 						<texture background="true" flipx="true" fallback="thumbs/sets/Disc1.png" diffuse="thumbs/sets/Disc1.png">$INFO[ListItem.Art(extrafanart1)]</texture>
-						<visible>!IsEmpty(Window(home).Property(Set.Movie.9.Art(discart)))</visible>
+						<visible>!IsEmpty(Window(home).Property(Set.Movie.9.Art(poster)))</visible>
 					</control>
 					<control type="group">
-						<visible>IsEmpty(Window(home).Property(Set.Movie.9.Art(discart))) + IsEmpty(Window(home).Property(Set.Movie.8.Art(discart))) + IsEmpty(Window(home).Property(Set.Movie.7.Art(discart)))</visible>
+						<visible>IsEmpty(Window(home).Property(Set.Movie.9.Art(poster))) + IsEmpty(Window(home).Property(Set.Movie.8.Art(poster))) + IsEmpty(Window(home).Property(Set.Movie.7.Art(poster)))</visible>
 						<control type="image">
 							<left>10</left>
 							<top>-20</top>
