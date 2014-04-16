@@ -590,6 +590,7 @@
                 <texture>$VAR[ColorFlagsSource]Source/$VAR[SourceFlagVar,,.png]</texture>
                 <include>OSDFlagVars</include>
                 <visible>!ListItem.IsFolder</visible>
+				<animation effect="slide"  end="-20,0" time="100" delay="150" condition="Container.Content(movies)">Conditional</animation>
             </control>
             <control type="image">
                 <left>1240</left>
@@ -602,15 +603,19 @@
                 <texture>$VAR[ColorFlagsResolution]resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
                 <include>OSDFlagVars</include>
                 <visible>!ListItem.IsFolder</visible>
+				<animation effect="slide"  end="-20,0" time="100" delay="150" condition="Container.Content(movies)">Conditional</animation>
             </control>
             <control type="image">
                 <left>1660</left>
                 <texture>$VAR[ColorFlagsAudio]audio/$VAR[AudioFlagVar,,.png]</texture>
                 <include>OSDFlagVars</include>
                 <visible>!ListItem.IsFolder</visible>
+				<animation effect="slide"  end="-20,0" time="100" delay="150" condition="Container.Content(movies)">Conditional</animation>
             </control>
+				
 			<control type="group">
-				<visible>Container.Content(episodes) + !IsEmpty(ListItem.TVShowTitle)]</visible>
+			<animation effect="slide"  end="-30,0" time="100" delay="150" condition="Container.Content(movies)">Conditional</animation>
+				<visible>[Container.Content(episodes) + !IsEmpty(ListItem.TVShowTitle)] | [Container.Content(movies) + !SubString(ListItem.Path,videodb://movies/sets)]</visible>
                 <control type="image" id="1126">
                     <left>1800</left>
                     <texture>$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
@@ -1032,6 +1037,21 @@
                 <visible>!ListItem.IsFolder</visible>
                 <animation effect="slide" time="560" start="0,300" end="0,0" tween="cubic">Visible</animation>
                 <animation effect="slide" time="250" end="0,400" tween="cubic" easing="in">Hidden</animation>
+				<control type="group">
+				<!--<animation effect="slide"  end="-30,0" time="100" delay="150" condition="Container.Content(movies)">Conditional</animation>-->
+					<visible>[Container.Content(movies) + !SubString(ListItem.Path,videodb://movies/sets)]</visible>
+					<control type="image" id="1285">
+						<left>1230</left>
+						<texture>$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
+						<include>OSDFlagVars</include>
+					</control>
+					<control type="image">
+						<left>1230</left>
+						<texture>$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
+						<include>OSDFlagVars</include>
+						<visible>IsEmpty(Control.GetLabel(1285))</visible>
+					</control>			
+				</control>				
                 <control type="group">
                     <visible>!IsEmpty(ListItem.Rating)</visible>
                     <left>1400</left>
@@ -1107,15 +1127,19 @@
                         <textcolor>floor</textcolor>
                     </control>
                 </control>
-                <control type="image" id="1117">
-                    <texture >$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
-                    <include>AudioFlagsVars</include>
-                </control>
-                <control type="image">
-                    <texture >$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
-                    <include>AudioFlagsVars</include>
-					<visible>IsEmpty(Control.GetLabel(1117))</visible>
-                </control>				
+				<control type="group">
+					<width>135</width>
+					<height>38</height>				
+					<control type="image" id="1117">
+						<texture >$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
+						<include>AudioFlagsVars</include>
+					</control>
+					<control type="image">
+						<texture >$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
+						<include>AudioFlagsVars</include>
+						<visible>IsEmpty(Control.GetLabel(1117))</visible>
+					</control>				
+				</control>
                 <control type="image">
                     <top>-10</top>
                     <texture>$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
