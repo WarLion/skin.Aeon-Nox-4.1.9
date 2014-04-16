@@ -586,29 +586,43 @@
 				<visible>IsEmpty(ListItem.Studio)</visible>
             </control>			
             <control type="image">
-                <left>1425</left>
+                <left>1400</left>
                 <texture>$VAR[ColorFlagsSource]Source/$VAR[SourceFlagVar,,.png]</texture>
                 <include>OSDFlagVars</include>
                 <visible>!ListItem.IsFolder</visible>
             </control>
             <control type="image">
-                <left>1275</left>
+                <left>1240</left>
                 <texture>$VAR[ColorFlagsAspectRatio]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
                 <include>OSDFlagVars</include>
                 <visible>!ListItem.IsFolder</visible>
             </control>
             <control type="image">
-                <left>1575</left>
+                <left>1535</left>
                 <texture>$VAR[ColorFlagsResolution]resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
                 <include>OSDFlagVars</include>
                 <visible>!ListItem.IsFolder</visible>
             </control>
             <control type="image">
-                <left>1740</left>
+                <left>1660</left>
                 <texture>$VAR[ColorFlagsAudio]audio/$VAR[AudioFlagVar,,.png]</texture>
                 <include>OSDFlagVars</include>
                 <visible>!ListItem.IsFolder</visible>
             </control>
+			<control type="group">
+				<visible>Container.Content(episodes) + !IsEmpty(ListItem.TVShowTitle)]</visible>
+                <control type="image" id="1126">
+                    <left>1800</left>
+                    <texture>$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
+                    <include>OSDFlagVars</include>
+                </control>
+                <control type="image">
+                    <left>1800</left>
+                    <texture>$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
+                    <include>OSDFlagVars</include>
+					<visible>IsEmpty(Control.GetLabel(1126))</visible>
+                </control>			
+			</control>			
             <control type="group">
                 <visible>Container.Content(tvshows) | [Container.Content(seasons) + !IsEmpty(ListItem.TVShowTitle)]</visible>
                 <control type="image" id="1116">
