@@ -3248,4 +3248,8 @@
 	   <value condition="Skin.HasSetting(W_real_image)">weather/real/</value>
        <value>weather/small/</value>	   
     </variable>		
+	<variable name="PlotPosterView">
+	   <value condition="Container.Content(seasons) | Container.Content(tvshows)">[COLOR $VAR[FontColorVar]]$LOCALIZE[207]:[/COLOR]</value>
+       <value>[COLOR $VAR[FontColorVar]]$LOCALIZE[180]:[/COLOR] $INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>	   
+    </variable>	
 </includes>

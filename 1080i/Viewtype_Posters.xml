@@ -1825,15 +1825,15 @@
                     <top>190</top>
                     <width>400</width>
                     <orientation>horizontal</orientation>
+					<animation effect="slide" end="0,-40" time="200" condition="Container.Content(seasons)">conditional</animation>
                     <control type="label">
                         <width min="0" max="1000">auto</width>
                         <height>40</height>
-                        <label>[COLOR $VAR[FontColorVar]]$LOCALIZE[180]:[/COLOR] $INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
+                        <label>$VAR[PlotPosterView]</label>
                         <font>Font_Reg32</font>
                         <textcolor>white4</textcolor>
-						<visible>!Container.Content(seasons)</visible>
-                    </control>
-                </control>
+                    </control>					
+                </control>			
                 <control type="textbox">
                     <left>93</left>
                     <top>236</top>
@@ -1843,18 +1843,18 @@
                     <font>Font_Reg29</font>
                     <textcolor>white6</textcolor>
                     <autoscroll delay="8000" time="AutoScrollTime" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<visible>!Container.Content(seasons</visible>
-                </control>
+					<visible>!Container.Content(seasons)</visible>
+                </control>				
                 <control type="textbox">
                     <left>93</left>
-                    <top>126</top>
+                    <top>196</top>
                     <width>395</width>
-                    <height>545</height>
+                    <height>455</height>
                     <label fallback="31006">$VAR[InfoWallTextboxVar]</label>
                     <font>Font_Reg29</font>
                     <textcolor>white6</textcolor>
                     <autoscroll delay="8000" time="AutoScrollTime" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<visible>Container.Content(seasons</visible>
+					<visible>Container.Content(seasons)</visible>
                 </control>				
             </control>
             <!-- Invisible buttons for list end animation -->
