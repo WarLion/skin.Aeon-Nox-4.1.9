@@ -771,7 +771,7 @@
                 <animation effect="slide" end="5,-30" time="0" condition="Control.IsVisible(50)">Conditional</animation>
                 <!-- Rating -->
                 <control type="group">
-                                    <animation effect="slide" end="1210,0" time="0" condition="Control.IsVisible(53) | Control.IsVisible(50) | Control.IsVisible(57)">Conditional</animation>
+                    <animation effect="slide" end="1210,0" time="0" condition="Control.IsVisible(53) | Control.IsVisible(50) | Control.IsVisible(57)">Conditional</animation>
                 <control type="image">
                     <left>0</left>
                     <width>135</width>
@@ -871,7 +871,7 @@
                     <animation effect="fade" start="100" end="30" time="40" condition="true">Conditional</animation>
                 </control>
                 <control type="label">
-                    <left>1768</left>
+                    <left>1764</left>
                     <top>0</top>
                     <width>135</width>
                     <height>88</height>
@@ -964,7 +964,7 @@
                     <animation effect="fade" start="100" end="30" time="40" condition="true">Conditional</animation>
                 </control>
                 <control type="label">
-                    <left>1768</left>
+                    <left>1764</left>
                     <top>0</top>
                     <width>135</width>
                     <height>88</height>
