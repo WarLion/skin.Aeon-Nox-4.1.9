@@ -35,7 +35,7 @@
                 <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
                 <control type="image">
                     <include>MovieShowcaseDVDCoverVarsSets</include>
-                    <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem0Var]</texture>
+                    <texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem0Var]</texture>
                     <visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem.Path,videodb://movies/sets)]</visible>
                     </control>
                 <!-- MikeBZH44 end -->						
@@ -640,7 +640,7 @@
                             <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
 							 <control type="image">
 								<include>MovieShowcaseDVDCoverVarsSets</include>
-								<texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem0Var]</texture>
+								<texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem0Var]</texture>
 								<visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem.Path,videodb://movies/sets)] + !Skin.HasSetting(OpenBoxSet)</visible>
 							</control>
 							<!-- MikeBZH44 end -->	
@@ -866,7 +866,7 @@
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
 		<control type="image">
 			<include>MovieShowcaseDVDCoverVarsSets</include>
-			<texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem-7Var]</texture>
+			<texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-7Var]</texture>
 			<visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(-7).Path,videodb://movies/sets)]</visible>
 		</control>	
         <!-- MikeBZH44 end -->
@@ -939,7 +939,7 @@
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
 		<control type="image">
 			<include>MovieShowcaseDVDCoverVarsSets</include>
-			<texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem-6Var]</texture>
+			<texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-6Var]</texture>
 			<visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(-6).Path,videodb://movies/sets)]</visible>
 		</control>	
         <!-- MikeBZH44 end -->
@@ -1008,7 +1008,7 @@
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
 		<control type="image">
 			<include>MovieShowcaseDVDCoverVarsSets</include>
-			<texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem-5Var]</texture>
+			<texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-5Var]</texture>
 			<visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(-5).Path,videodb://movies/sets)]</visible>
 		</control>>	
         <!-- MikeBZH44 end -->
@@ -1077,7 +1077,7 @@
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
 		<control type="image">
 			<include>MovieShowcaseDVDCoverVarsSets</include>
-			<texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem-4Var]</texture>
+			<texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-4Var]</texture>
 			<visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(-4).Path,videodb://movies/sets)]</visible>
 		</control>	
         <!-- MikeBZH44 end -->
@@ -1146,7 +1146,7 @@
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
 		<control type="image">
 			<include>MovieShowcaseDVDCoverVarsSets</include>
-			<texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem-3Var]</texture>
+			<texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-3Var]</texture>
 			<visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(-3).Path,videodb://movies/sets)]</visible>
 		</control>
         <!-- MikeBZH44 end -->
@@ -1215,7 +1215,7 @@
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
 		<control type="image">
 			<include>MovieShowcaseDVDCoverVarsSets</include>
-			<texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem-2Var]</texture>
+			<texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-2Var]</texture>
 			<visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(-2).Path,videodb://movies/sets)]</visible>
 		</control>
         <!-- MikeBZH44 end -->
@@ -1288,7 +1288,7 @@
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
 		<control type="image">
 			<include>MovieShowcaseDVDCoverVarsSets</include>
-			<texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem-1Var]</texture>
+			<texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem-1Var]</texture>
 			<visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(-1).Path,videodb://movies/sets)]</visible>
 		</control>
         <!-- MikeBZH44 end -->
@@ -1366,7 +1366,7 @@
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
 		<control type="image">
 			<include>MovieShowcaseDVDCoverVarsSets</include>
-			<texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem0Var]</texture>
+			<texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem0Var]</texture>
 			<visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(0).Path,videodb://movies/sets)]</visible>
 		</control>	
         <!-- MikeBZH44 end -->
@@ -1444,7 +1444,7 @@
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
 		<control type="image">
 			<include>MovieShowcaseDVDCoverVarsSets</include>
-			<texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem1Var]</texture>
+			<texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem1Var]</texture>
 			<visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(1).Path,videodb://movies/sets)]</visible>
 		</control>	
         <!-- MikeBZH44 end -->
@@ -1522,7 +1522,7 @@
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
 		<control type="image">
 			<include>MovieShowcaseDVDCoverVarsSets</include>
-			<texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem2Var]</texture>
+			<texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem2Var]</texture>
 			<visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(2).Path,videodb://movies/sets)]</visible>
 		</control>
         <!-- MikeBZH44 end -->
@@ -1600,7 +1600,7 @@
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
 		<control type="image">
 			<include>MovieShowcaseDVDCoverVarsSets</include>
-			<texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem3Var]</texture>
+			<texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem3Var]</texture>
 			<visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(3).Path,videodb://movies/sets)]</visible>
 		</control>
         <!-- MikeBZH44 end -->
@@ -1678,7 +1678,7 @@
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
 		<control type="image">
 			<include>MovieShowcaseDVDCoverVarsSets</include>
-			<texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem4Var]</texture>
+			<texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem4Var]</texture>
 			<visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(4).Path,videodb://movies/sets)]</visible>
 		</control>
         <!-- MikeBZH44 end -->
@@ -1756,7 +1756,7 @@
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
 		<control type="image">
 			<include>MovieShowcaseDVDCoverVarsSets</include>
-			<texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem5Var]</texture>
+			<texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem5Var]</texture>
 			<visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(5).Path,videodb://movies/sets)]</visible>
 		</control>
         <!-- MikeBZH44 end -->
@@ -1834,7 +1834,7 @@
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
 		<control type="image">
 			<include>MovieShowcaseDVDCoverVarsSets</include>
-			<texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem6Var]</texture>
+			<texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem6Var]</texture>
 			<visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(6).Path,videodb://movies/sets)]</visible>
 		</control>
         <!-- MikeBZH44 end -->
@@ -1912,7 +1912,7 @@
         <!-- MikeBZH44 start : If no case for movieset then larger thumbnail -->
 		<control type="image">
 			<include>MovieShowcaseDVDCoverVarsSets</include>
-			<texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/thumb_mask.png">$VAR[ShowcaseItem7Var]</texture>
+			<texture background="true" fallback="DefaultVideoBigPoster.png">$VAR[ShowcaseItem7Var]</texture>
 			<visible>[Skin.HasSetting(usecases) + Container.Content(movies) + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem(7).Path,videodb://movies/sets)]</visible>
 		</control>
         <!-- MikeBZH44 end -->
@@ -2161,7 +2161,8 @@
 				<animation effect="zoom" start="100" end="90" center="145,217" time="500" delay="300" reversible="false" tween="cubic" condition="Control.IsVisible(1970) + !Skin.HasSetting(noflow)">Conditional</animation>
 				<animation effect="zoom" start="110" end="110" center="145,217" time="10" reversible="false" tween="cubic" condition="Control.IsVisible(1970) + Skin.HasSetting(noflow)">Conditional</animation>	
 				<visible>[container.content(sets) | container.content(movies)] + Skin.HasSetting(NoCaseForMovieset) + SubString(ListItem.Path,videodb://movies/sets)</visible>				
-				<control type="group">									
+				<control type="group">	
+											
 					<control type="image">
 					<left>0</left>
 					<top>-20</top>
@@ -2169,22 +2170,22 @@
 					<height>435</height>
 					<fadetime>0</fadetime>
 					<visible>Skin.HasSetting(usecases) + [container.content(sets) | container.content(movies) | Container.Content(musicvideos)]</visible>
-						<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
+						<aspectratio scalediffuse="false" align="center"  aligny="top">scale</aspectratio>
 						<texture background="true" fallback="thumbs/sets/backSet.png" diffuse="thumbs/sets/backSet.png">$INFO[ListItem.Art(extrafanart1)]</texture>
 					</control>											
 					<control type="image">
 						<left>20</left>
 						<top>-20</top>
-						<width>250</width>
-						<height>250</height>
+						<width>240</width>
+						<height>240</height>
 						<aspectratio>keep</aspectratio>
 						<texture background="true">$INFO[Window(home).Property(Set.Movie.1.Art(discart))]</texture>
 					</control>
 					<control type="group">
 						<left>20</left>
 						<top>-20</top>
-						<width>250</width>
-						<height>250</height>					
+						<width>240</width>
+						<height>240</height>					
 						<visible>IsEmpty(Window(home).Property(Set.Movie.1.Art(discart)))</visible>
 						<control type="image">
 							<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2209,16 +2210,16 @@
 					<control type="image">
 						<left>20</left>
 						<top>80</top>
-						<width>250</width>
-						<height>250</height>
+						<width>240</width>
+						<height>240</height>
 						<aspectratio>keep</aspectratio>
 						<texture background="true">$INFO[Window(home).Property(Set.Movie.2.Art(discart))]</texture>					
 					</control>	
 					<control type="group">
 						<left>20</left>
 						<top>80</top>
-						<width>250</width>
-						<height>250</height>					
+						<width>240</width>
+						<height>240</height>					
 						<visible>IsEmpty(Window(home).Property(Set.Movie.2.Art(discart)))</visible>
 						<control type="image">
 							<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2243,16 +2244,16 @@
 					<control type="image">
 						<left>20</left>
 						<top>168</top>
-						<width>250</width>
-						<height>250</height>
+						<width>240</width>
+						<height>240</height>
 						<aspectratio>keep</aspectratio>
 						<texture background="true">$INFO[Window(home).Property(Set.Movie.3.Art(discart))]</texture>
 					</control>	
 					<control type="group">
 						<left>20</left>
 						<top>168</top>
-						<width>250</width>
-						<height>250</height>					
+						<width>240</width>
+						<height>240</height>					
 						<visible>IsEmpty(Window(home).Property(Set.Movie.3.Art(discart)))</visible>
 						<control type="image">
 							<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2298,35 +2299,36 @@
 					</control>																															
 				</control>	
 				<control type="group">
+				<top>2</top>
 					<animation type="conditional" reversible="false" condition="[Control.IsVisible(1970)]">
-						<effect type="rotatey" center="276" end="-90" time="1040" tween="cubic" easing="in" />
-						<effect type="rotatey" center="276" start="-90" end="-90" time="0" delay="1040" />
+						<effect type="rotatey" center="268" end="-90" time="1040" tween="cubic" easing="in" />
+						<effect type="rotatey" center="268" start="-90" end="-90" time="0" delay="1040" />
 						<effect type="fade" start ="0" end="100" time="0" delay="1000" />
-						<effect type="rotatey" center="276" start="90" end="48" time="440" delay="1040" tween="cubic" />				
+						<effect type="rotatey" center="268" start="90" end="48" time="440" delay="1040" tween="cubic" />				
 					</animation>										
 					<control type="image">
 					<left>0</left>
 					<top>-20</top>
-					<width>270</width>
-					<height>435</height>
+					<width>250</width>
+					<height>433</height>
 					<fadetime>0</fadetime>
 					<visible>[container.content(sets) | container.content(movies) | Container.Content(musicvideos)]</visible>
 						<aspectratio scalediffuse="false" align="left" aligny="top">scale</aspectratio>
 						<texture background="true" flipx="true" fallback="thumbs/sets/backSet.png" diffuse="thumbs/sets/backSet.png">$INFO[ListItem.Art(extrafanart1)]</texture>						
 					</control>
 					<control type="image">
-						<left>10</left>
+						<left>5</left>
 						<top>-20</top>
-						<width>250</width>
-						<height>250</height>
+						<width>240</width>
+						<height>240</height>
 						<aspectratio>keep</aspectratio>
 						<texture background="true" flipx="true">$INFO[Window(home).Property(Set.Movie.7.Art(discart))]</texture>
 					</control>	
 					<control type="group">
-						<left>10</left>
+						<left>5</left>
 						<top>-20</top>
-						<width>250</width>
-						<height>250</height>					
+						<width>240</width>
+						<height>240</height>					
 						<visible>IsEmpty(Window(home).Property(Set.Movie.7.Art(discart)))</visible>
 						<control type="image">
 							<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2340,8 +2342,8 @@
 					<control type="image">
 						<left>0</left>
 						<top>-20</top>
-						<width>270</width>
-						<height>435</height>
+						<width>250</width>
+						<height>433</height>
 						<fadetime>0</fadetime>
 						<visible>[container.content(sets) | container.content(movies) | Container.Content(musicvideos)]</visible>
 						<aspectratio scalediffuse="false" align="left" aligny="top">scale</aspectratio>
@@ -2349,18 +2351,18 @@
 						<visible>!IsEmpty(Window(home).Property(Set.Movie.7.Art(poster)))</visible>						
 					</control>					           
 					<control type="image">
-						<left>10</left>
+						<left>5</left>
 						<top>80</top>
-						<width>250</width>
-						<height>250</height>
+						<width>240</width>
+						<height>240</height>
 						<aspectratio>keep</aspectratio>
 						<texture background="true" flipx="true">$INFO[Window(home).Property(Set.Movie.8.Art(discart))]</texture>
 					</control>
 					<control type="group">
-						<left>10</left>
+						<left>5</left>
 						<top>80</top>
-						<width>250</width>
-						<height>250</height>					
+						<width>240</width>
+						<height>240</height>					
 						<visible>IsEmpty(Window(home).Property(Set.Movie.8.Art(discart)))</visible>
 						<control type="image">
 							<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2374,8 +2376,8 @@
 					<control type="image">
 						<left>0</left>
 						<top>-20</top>
-						<width>270</width>
-						<height>435</height>
+						<width>250</width>
+						<height>433</height>
 						<fadetime>0</fadetime>
 						<visible>[container.content(sets) | container.content(movies) | Container.Content(musicvideos)]</visible>
 						<aspectratio scalediffuse="false" align="left" aligny="top">scale</aspectratio>
@@ -2383,18 +2385,18 @@
 						<visible>!IsEmpty(Window(home).Property(Set.Movie.8.Art(poster)))</visible>						
 					</control>									
 					<control type="image">
-						<left>10</left>
+						<left>5</left>
 						<top>168</top>
-						<width>250</width>
-						<height>250</height>
+						<width>240</width>
+						<height>240</height>
 						<aspectratio>keep</aspectratio>
 						<texture background="true" flipx="true">$INFO[Window(home).Property(Set.Movie.9.Art(discart))]</texture>
 					</control>
 					<control type="group">
-						<left>10</left>
+						<left>5</left>
 						<top>168</top>
-						<width>250</width>
-						<height>250</height>					
+						<width>240</width>
+						<height>240</height>					
 						<visible>IsEmpty(Window(home).Property(Set.Movie.9.Art(discart)))</visible>
 						<control type="image">
 							<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2408,8 +2410,8 @@
 					<control type="image">
 						<left>0</left>
 						<top>-20</top>
-						<width>270</width>
-						<height>435</height>
+						<width>250</width>
+						<height>433</height>
 						<fadetime>0</fadetime>
 						<visible>[container.content(sets) | container.content(movies) | Container.Content(musicvideos)]</visible>
 						<aspectratio scalediffuse="false" align="left" aligny="top">scale</aspectratio>
@@ -2419,10 +2421,10 @@
 					<control type="group">
 						<visible>IsEmpty(Window(home).Property(Set.Movie.9.Art(poster))) + IsEmpty(Window(home).Property(Set.Movie.8.Art(poster))) + IsEmpty(Window(home).Property(Set.Movie.7.Art(poster)))</visible>
 						<control type="image">
-							<left>10</left>
+							<left>15</left>
 							<top>-20</top>
 							<width>220</width>
-							<height>435</height>
+							<height>433</height>
 							<fadetime>0</fadetime>
 							<visible>[container.content(sets) | container.content(movies) | Container.Content(musicvideos)]</visible>
 							<texture background="true" flipx="true">thumbs/sets/brochure.png</texture>						
@@ -2464,8 +2466,8 @@
 						<control type="image">
 							<left>0</left>
 							<top>-20</top>
-							<width>270</width>
-							<height>435</height>
+							<width>250</width>
+							<height>433</height>
 							<fadetime>0</fadetime>
 							<visible>[container.content(sets) | container.content(movies) | Container.Content(musicvideos)]</visible>
 							<aspectratio scalediffuse="false" align="left" aligny="top">scale</aspectratio>
@@ -2493,15 +2495,15 @@
 				</control>	
 				<control type="group">
 					<animation type="conditional" reversible="false" condition="[Control.IsVisible(1970)]">
-						<effect type="rotatey" center="-1" end="90" time="440" tween="cubic" easing="in" />
-						<effect type="rotatey" center="-1" start="90" end="90" time="0" delay="440" />
+						<effect type="rotatey" center="-2" end="90" time="440" tween="cubic" easing="in" />
+						<effect type="rotatey" center="-2" start="90" end="90" time="0" delay="440" />
 						<effect type="fade" start ="0" end="100" time="0" delay="400" />
-						<effect type="rotatey" center="-1" start="-90" end="-40" time="440" delay="440" tween="cubic" />	
+						<effect type="rotatey" center="-2" start="-90" end="-40" time="440" delay="440" tween="cubic" />	
 					</animation>										
 					<control type="image">
 						<left>-14</left>
 						<top>-22</top>
-						<width>270</width>
+						<width>250</width>
 						<height>437</height>
 						<fadetime>0</fadetime>
 						<visible>[container.content(sets) | container.content(movies) | Container.Content(musicvideos)]</visible>
@@ -2509,18 +2511,18 @@
 						<texture background="true" flipx="true" fallback="thumbs/sets/backSet.png" diffuse="thumbs/sets/backSet.png">$INFO[ListItem.Art(extrafanart1)]</texture>
 					</control>
 					<control type="image">
-						<left>-5</left>
+						<left>-10</left>
 						<top>-20</top>
-						<width>250</width>
-						<height>250</height>
+						<width>240</width>
+						<height>240</height>
 						<aspectratio>keep</aspectratio>
 						<texture background="true" flipx="true">$INFO[Window(home).Property(Set.Movie.4.Art(discart))]</texture>
 					</control>	
 					<control type="group">
-						<left>-5</left>
+						<left>-10</left>
 						<top>-20</top>
-						<width>250</width>
-						<height>250</height>					
+						<width>240</width>
+						<height>240</height>					
 						<visible>IsEmpty(Window(home).Property(Set.Movie.4.Art(discart)))</visible>
 						<control type="image">
 							<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2534,7 +2536,7 @@
 					<control type="image">
 						<left>-14</left>
 						<top>-22</top>
-						<width>270</width>
+						<width>250</width>
 						<height>437</height>
 						<fadetime>0</fadetime>
 						<visible>[container.content(sets) | container.content(movies) | Container.Content(musicvideos)]</visible>
@@ -2543,18 +2545,18 @@
 						<visible>!IsEmpty(Window(home).Property(Set.Movie.4.Art(poster)))</visible>						
 					</control>						              
 					<control type="image">
-						<left>-5</left>
+						<left>-10</left>
 						<top>80</top>
-						<width>250</width>
-						<height>250</height>
+						<width>240</width>
+						<height>240</height>
 						<aspectratio>keep</aspectratio>
 						<texture background="true" flipx="true">$INFO[Window(home).Property(Set.Movie.5.Art(discart))]</texture>
 					</control>	
 					<control type="group">
-						<left>-5</left>
+						<left>-10</left>
 						<top>80</top>
-						<width>250</width>
-						<height>250</height>					
+						<width>240</width>
+						<height>240</height>					
 						<visible>IsEmpty(Window(home).Property(Set.Movie.5.Art(discart)))</visible>
 						<control type="image">
 							<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2568,7 +2570,7 @@
 					<control type="image">
 						<left>-14</left>
 						<top>-20</top>
-						<width>270</width>
+						<width>250</width>
 						<height>437</height>
 						<fadetime>0</fadetime>
 						<visible>[container.content(sets) | container.content(movies) | Container.Content(musicvideos)]</visible>
@@ -2577,18 +2579,18 @@
 						<visible>!IsEmpty(Window(home).Property(Set.Movie.5.Art(poster)))</visible>						
 					</control>						
 					<control type="image">
-						<left>-5</left>
+						<left>-10</left>
 						<top>168</top>
-						<width>250</width>
-						<height>250</height>
+						<width>240</width>
+						<height>240</height>
 						<aspectratio>keep</aspectratio>
 						<texture background="true" flipx="true">$INFO[Window(home).Property(Set.Movie.6.Art(discart))]</texture>						
 					</control>	
 					<control type="group">
-						<left>-5</left>
+						<left>-10</left>
 						<top>168</top>
-						<width>250</width>
-						<height>250</height>					
+						<width>240</width>
+						<height>240</height>					
 						<visible>IsEmpty(Window(home).Property(Set.Movie.6.Art(discart)))</visible>
 						<control type="image">
 							<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2602,7 +2604,7 @@
 					<control type="image">
 						<left>-14</left>
 						<top>-22</top>
-						<width>270</width>
+						<width>250</width>
 						<height>437</height>
 						<fadetime>0</fadetime>
 						<visible>[container.content(sets) | container.content(movies) | Container.Content(musicvideos)]</visible>
