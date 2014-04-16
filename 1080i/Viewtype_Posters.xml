@@ -1831,6 +1831,7 @@
                         <label>[COLOR $VAR[FontColorVar]]$LOCALIZE[180]:[/COLOR] $INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
                         <font>Font_Reg32</font>
                         <textcolor>white4</textcolor>
+						<visible>!Container.Content(seasons)</visible>
                     </control>
                 </control>
                 <control type="textbox">
@@ -1842,7 +1843,19 @@
                     <font>Font_Reg29</font>
                     <textcolor>white6</textcolor>
                     <autoscroll delay="8000" time="AutoScrollTime" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>!Container.Content(seasons</visible>
                 </control>
+                <control type="textbox">
+                    <left>93</left>
+                    <top>126</top>
+                    <width>395</width>
+                    <height>545</height>
+                    <label fallback="31006">$VAR[InfoWallTextboxVar]</label>
+                    <font>Font_Reg29</font>
+                    <textcolor>white6</textcolor>
+                    <autoscroll delay="8000" time="AutoScrollTime" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>Container.Content(seasons</visible>
+                </control>				
             </control>
             <!-- Invisible buttons for list end animation -->
             <control type="button" id="8400">
