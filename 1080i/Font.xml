@@ -678,6 +678,11 @@
             <size>17</size>
         </font>
         <font>
+            <name>Font_Reg10</name>
+            <filename>OpenSansCond.ttf</filename>
+            <size>10</size>
+        </font>		
+        <font>
             <name>Font_BigPause</name>
             <filename>OpenSansCond.ttf</filename>
             <aspect>0.72</aspect>
@@ -1056,6 +1061,11 @@
             <size>17</size>
         </font>
         <font>
+            <name>Font_Reg10</name>
+            <filename>MC360.ttf</filename>
+            <size>10</size>
+        </font>		
+        <font>
             <name>Font_BigPause</name>
             <filename>MC360.ttf</filename>
             <aspect>0.67</aspect>
@@ -1430,6 +1440,11 @@
             <size>19</size>
         </font>
         <font>
+            <name>Font_Reg10</name>
+            <filename>Ubuntu-C.ttf</filename>
+            <size>10</size>
+        </font>		
+        <font>
             <name>Font_BigPause</name>
             <filename>BebasNeue.ttf</filename>
             <size>555</size>
@@ -1762,6 +1777,11 @@
             <filename>Ubuntu-R_KOR.ttf</filename>
             <size>15</size>
         </font>
+        <font>
+            <name>Font_Reg10</name>
+            <filename>Ubuntu-R_KOR.ttf</filename>
+            <size>10</size>
+        </font>		
         <font>
             <name>Font_BigPause</name>
             <filename>Ubuntu-R_KOR.ttf</filename>
@@ -2155,6 +2175,11 @@
             <size>19</size>
         </font>
         <font>
+            <name>Font_Reg10</name>
+            <filename>MC360.ttf</filename>
+            <size>10</size>
+        </font>		
+        <font>
             <name>Font_BigPause</name>
             <filename>BebasNeue.ttf</filename>
             <size>555</size>
@@ -2525,6 +2550,11 @@
             <size>21</size>
         </font>
         <font>
+            <name>Font_Reg10</name>
+            <filename>MC360.ttf</filename>
+            <size>10</size>
+        </font>		
+        <font>
             <name>Font_BigPause</name>
             <filename>MC360.ttf</filename>
             <aspect>0.67</aspect>
@@ -2865,6 +2895,11 @@
             <filename>arial.ttf</filename>
             <size>15</size>
         </font>
+        <font>
+            <name>Font_Reg10</name>
+            <filename>arial.ttf</filename>
+            <size>10</size>
+        </font>		
         <font>
             <name>Font_BigPause</name>
             <filename>arial.ttf</filename>
@@ -3241,6 +3276,11 @@
             <filename>MC360.ttf</filename>
             <size>17</size>
         </font>
+        <font>
+            <name>Font_Reg10</name>
+            <filename>MC360.ttf</filename>
+            <size>10</size>
+        </font>		
         <font>
             <name>Font_BigPause</name>
             <filename>MC360_Accent.ttf</filename>
