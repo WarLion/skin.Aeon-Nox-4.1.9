@@ -1153,7 +1153,7 @@
         <control type="image">
             <left>0</left>
             <top>455</top>
-            <width>1920</width>
+            <width>2120</width>
             <height>225</height>
             <texture>home/homemenu_gradient.png</texture>
         </control>
