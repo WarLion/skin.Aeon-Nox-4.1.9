@@ -1175,6 +1175,44 @@
         </control>
     </include>
     <include name="FullScreenInfoBar">
+					<control type="group">
+						<animation type="WindowOpen">
+							<effect type="zoom" start="0,100" end="100,100" time="640" delay="4000" easing="inout" tween="circle" center="300,0" />
+						</animation>
+						<animation type="WindowClose">
+							<effect type="slide" end="0,500" time="480" tween="cubic" />
+							<effect type="fade" start="100" end="0" time="480" />
+						</animation>				
+						<visible>Player.HasVideo + [VideoPlayer.Content(Movies) | VideoPlayer.Content(episodes)]</visible>
+                        <include>Animation_VisibleChange400</include>
+						<control type="image">
+							<left>300</left>
+							<top>652</top>
+							<width>1920</width>
+							<height>300</height>
+							<texture>osd/osd_back.png</texture>
+							<colordiffuse>$VAR[DialogColorVar]</colordiffuse>
+						</control>						
+                        <control type="textbox">
+                            <left>400</left>
+                            <top>680</top>
+                            <width>450</width>
+                            <height>260</height>
+                            <align>left</align>
+                            <label fallback="31006">$INFO[VideoPlayer.CastAndRole]</label>
+                            <font>Font_Reg30_2</font>
+                            <autoscroll>false</autoscroll>
+                        </control>
+                        <control type="textbox">
+                            <left>860</left>
+                            <top>680</top>
+                            <width>700</width>
+                            <height>260</height>
+                            <label fallback="31006">$INFO[VideoPlayer.Plot]</label>
+                            <font>Font_Reg30_2</font>
+							<autoscroll delay="5000" time="AutoScrollTime" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+                        </control>
+					</control>		
         <control type="group">
             <left>1552</left>
             <top>789</top>
@@ -1289,9 +1327,9 @@
 						<bordersize>19</bordersize>
 					</control>
 				</control>	
-                <!-- MikeBZH44 Start : Default view for MusicVideos and Episodes, ddd Discart and resolution case for Movies -->
+                <!-- MikeBZH44 Start : Default view for MusicVideos and Episodes, ddd Discart and resolution case for Movies -->								
 				<control type="group">
-					<visible>Skin.HasSetting(CaseVideoThumb)</visible>
+					<visible>Skin.HasSetting(CaseVideoThumb)</visible>		
 					<control type="image">
 						<left>12</left>
 						<top>581</top>
@@ -1329,9 +1367,9 @@
 						<width>270</width>
 						<height>270</height>
 						<aspectratio>keep</aspectratio>
-						<texture background="true" fallback="common/cdart/bd.png">$INFO[Player.Art(discart)]</texture>
+						<texture background="true">$INFO[Player.Art(discart)]</texture>
 						<animation type="WindowOpen">
-							<effect type="slide" start="0,0" end="140,0" delay="500" time="1000" tween="cubic" easing="inout"/>
+							<effect type="slide" start="0,0" end="0,-200" delay="500" time="1000" tween="cubic" easing="inout"/>
 						</animation>
 						<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
 						<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) + Skin.HasSetting(Discinfoscreen)</visible>
