@@ -1,6 +1,25 @@
 skin.Aeon-Nox-4.1.9
 ===================
 
+4.1.9.9
+
+bug fixes
+
+extra settings
+
+cases on widgets
+
+weather real icons
+
+BoxSet mod
+
+Next aired script to service update
+
+plot on VideoInfo when playing
+
+change name to Aeon Nox Gotham Plus
+
+
 4.1.9.8
 
 progress flag
@@ -16,7 +35,6 @@ showcase mod (mikebzh44)
 cases for widgets
 
 add up to 10cdart for movies set 
-
 
 4.1.9.7
 
@@ -48,7 +66,6 @@ Clear cases for TvShows and Seasons
 
 Fix Bugs 
 
-===================
 
 4.1.9.6
 

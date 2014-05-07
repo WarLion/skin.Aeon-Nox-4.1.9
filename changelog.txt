@@ -1,3 +1,13 @@
+[B]4.1.9.9[/B]
+bug fixes
+extra settings
+cases on widgets
+weather real icons
+BoxSet mod
+Next aired script to service update
+plot on VideoInfo when playing
+change name to Aeon Nox Gotham Plus
+
 [B]4.1.9.8[/B]
 progress flag
 progress bar on home and breadcrumbs
@@ -935,3 +945,4 @@ add one live background (Babe of Today)
 [B]0.0.1[/B]
 
 - Alpha version, removed all Confluence graphics and fonts.
+
