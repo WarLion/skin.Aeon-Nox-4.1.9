@@ -3863,7 +3863,7 @@
                     <width>260</width>
                     <height>390</height>
                     <fadetime>IconCrossfadeTime</fadetime>
-                    <texture diffuse="thumbs/thumb_mask.png" background="true" fallback="DefaultVideoBigPoster.png">$INFO[Container(8000).ListItem.Property(Poster)]</texture>
+                    <texture diffuse="thumbs/thumb_mask.png" background="true" fallback="DefaultVideoBigPoster.png">$INFO[Container(7000).ListItem.Property(Poster)]</texture>
                     <aspectratio scalediffuse="false">stretch</aspectratio>
                     <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
                 </control>
@@ -3887,7 +3887,7 @@
                     <top>-33</top>
                     <width>325</width>
                     <height>440</height>
-                    <texture>thumbs/boxes/$INFO[Skin.String(LiveBGCase)]/$INFO[Container(8000).ListItem.Property(VideoResolution)]p.png</texture>
+                    <texture>thumbs/boxes/$INFO[Skin.String(LiveBGCase)]/$INFO[Container(7000).ListItem.Property(VideoResolution)]p.png</texture>
                     <aspectratio scalediffuse="false">stretch</aspectratio>
                     <visible>Stringcompare(Skin.String(LiveBGCase),tvshows) | Stringcompare(Skin.String(LiveBGCase),movies)</visible>
                 </control>
