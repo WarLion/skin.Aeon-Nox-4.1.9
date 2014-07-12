@@ -1248,8 +1248,9 @@
 					<visible>!Skin.HasSetting(CaseVideoThumb)</visible>
 					<animation type="WindowOpen">
 						<effect type="slide" start="-500,0" end="0,0" delay="10" time="100" tween="cubic" easing="inout"/>
-						<!--<effect type="rotatey" center="200" end="55" time="360" tween="cubic" easing="in" delay="2000" />
-						<effect type="fade" start="100" end="0" time="0" delay="2360" />-->
+                       <!-- <effect type="rotatey" center="200" end="55" time="360" tween="cubic" easing="in" delay="2000" />
+						<effect type="fade" start="100" end="0" time="0" delay="2360" />
+                        -->
 					</animation>					
 					<control type="image">
 						<left>12</left>
@@ -1294,13 +1295,14 @@
 						<bordersize>19</bordersize>
 					</control>
 				</control>	
-                <!-- MikeBZH44 Start : Default view for MusicVideos and Episodes, ddd Discart and resolution case for Movies -->								
+				<!-- MikeBZH44 Start : Default view for MusicVideos and Episodes, ddd Discart and resolution case for Movies -->
 				<control type="group">
 					<visible>Skin.HasSetting(CaseVideoThumb)</visible>	
 					<animation type="WindowOpen">
 						<effect type="slide" start="-500,0" end="0,0" delay="10" time="100" tween="cubic" easing="inout"/>
-						<!--<effect type="rotatey" center="200" end="55" time="360" tween="cubic" easing="in" delay="2000" />
-						<effect type="fade" start="100" end="0" time="0" delay="2360" />-->
+                       <!-- <effect type="rotatey" center="200" end="55" time="360" tween="cubic" easing="in" delay="2000" />
+						<effect type="fade" start="100" end="0" time="0" delay="2360" />
+                        -->
 					</animation>						
 					<control type="image">
 						<left>12</left>
@@ -1380,8 +1382,8 @@
 						<visible>VideoPlayer.Content(movies) + [SubString(Player.Filename,.3D.) | SubString(Player.Filename,.3d.)]</visible>
 					</control>
 				</control>	
-				<control type="group">
-				<!--	<animation type="WindowOpen">
+			<!--<control type="group">
+					<animation type="WindowOpen">
 						<effect type="slide" start="-500,0" end="0,0" delay="10" time="100" tween="cubic" easing="inout"/>
 						<effect type="rotatey" center="200" start="55" end="180" time="360" tween="cubic" easing="in" delay="2360" />
 						<effect type="fade" start="0" end="100" time="0" delay="2360" />						
@@ -1421,9 +1423,8 @@
 						<autoscroll delay="6000" time="AutoScrollTime" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>										
 				</control>					
-				-->				
-                <!-- MikeBZH44 End -->	
-						
+				<!-- MikeBZH44 End -->			
+                -->				
             </control>
             <control type="group">
                 <visible>VideoPlayer.Content(files)</visible>
