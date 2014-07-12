@@ -1,3 +1,14 @@
+[B]4.1.9.9a[/B]
+mikebzh44 Fix case resolution and poster for #2 widget
+Amelandor - 
+ -fix tripanel
+ -disable rotating plot on pause
+ -fixed cdart conflicting variables
+ -Fix plot outline FullscreenPanel
+ -Add support for pseudotv live
+ -Add scolling filename subtitlesdialog
+ -Added fadelabel to poster
+
 [B]4.1.9.9[/B]
 bug fixes
 extra settings
