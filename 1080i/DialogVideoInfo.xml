@@ -1839,13 +1839,33 @@ ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=
                 <height>1080</height>
                 <texture background="true">$VAR[PosterVar]</texture>
             </control>
-            <control type="image">
+            <control type="group">
                 <width>729</width>
-                <height>1080</height>
-                <aspectratio aligny="top">scale</aspectratio>
-                <texture background="true">$INFO[Container(600).ListItem.Thumb]</texture>
                 <visible>[Control.HasFocus(601) + Stringcompare(Window(home).Property(ListType),Actors)] | Control.HasFocus(600)</visible>
-                <include>Animation_VisibleChange400</include>
+                <control type="image">
+                    <width>729</width>
+                    <height>1080</height>
+                    <aspectratio aligny="top">scale</aspectratio>
+                    <texture background="true">$INFO[Container(600).ListItem.Thumb]</texture>
+                    <include>Animation_VisibleChange400</include>
+                </control>
+                <control type="image">
+                    <height>51</height>
+                    <top>1000</top>
+                    <texture>common/bgcolor.png</texture>
+                    <animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
+                    <animation effect="fade" start="100" end="80" time="40" condition="Control.HasFocus(600)">Conditional</animation>
+                </control>
+                <control type="fadelabel">
+                    <width>700</width>
+                    <left>15</left>
+                    <height>48</height>
+                    <top>1000</top>
+                    <align>center</align>
+                    <font>Font_Reg38</font>
+                    <label>$INFO[Container(600).ListItem.Label]</label>
+                    <scroll>true</scroll>
+                </control>
             </control>
             <control type="image">
                 <left>709</left>

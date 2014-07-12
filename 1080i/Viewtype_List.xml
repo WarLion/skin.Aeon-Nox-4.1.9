@@ -47,7 +47,7 @@
                 <width>500</width>
                 <height>500</height>
                 <aspectratio align="right">keep</aspectratio>
-                <texture background="true">$VAR[cdArtVar]</texture>
+                <texture background="true">$VAR[cdArtMoviesVar]</texture>
                 <visible>Skin.HasSetting(listcdart) + Container.Content(movies) + !SubString(ListItem.Path,videodb://movies/sets/) + !Control.HasFocus(5001)</visible>
                 <animation effect="slide" end="0,0" start="210,0" time="240" tween="cubic" easing="inout">VisibleChange</animation>
                  <animation effect="rotate" end="-360" center="auto" time="6400" delay="1600" reversible="false" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>

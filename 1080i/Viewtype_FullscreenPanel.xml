@@ -197,7 +197,7 @@
                             <width>300</width>
                             <height>300</height>
                             <aspectratio align="right">keep</aspectratio>
-                            <texture background="true">$VAR[cdArtVar]</texture>
+                            <texture background="true">$VAR[cdArtMoviesVar]</texture>
                             <!--                         <animation effect="rotate" end="-360" center="auto" time="26000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
  -->
                             <bordersize>7</bordersize>
@@ -358,7 +358,7 @@
                             <width>300</width>
                             <height>300</height>
                             <aspectratio align="right">keep</aspectratio>
-                            <texture background="true">$VAR[cdArtVar]</texture>
+                            <texture background="true">$VAR[cdArtMoviesVar]</texture>
                             <animation effect="rotate" end="-360" center="auto" time="6400" delay="800" reversible="false" tween="cubic" easing="inout">Focus</animation>
                             <bordersize>7</bordersize>
                             <visible>Skin.HasSetting(infopanelcdart)</visible>
@@ -785,7 +785,7 @@
             <width>300</width>
             <height>300</height>
             <aspectratio align="right">keep</aspectratio>
-            <texture background="true">$VAR[cdArtVar]</texture>
+            <texture background="true">$VAR[cdArtMoviesVar]</texture>
             <animation effect="rotate" end="-360" center="auto" time="6400" delay="800" reversible="false" tween="cubic" easing="inout">Focus</animation>
             <bordersize>7</bordersize>
             <visible>Skin.HasSetting(infopanelcdart)</visible>
@@ -884,7 +884,7 @@
                 <width>520</width>
                 <height>180</height>
                 <aligny>top</aligny>
-                <label>$VAR[GlobalPlotOutlineVar]</label>
+                <label>$VAR[GlobalPlotVar]</label>
                 <font>Font_Reg32</font>
                 <textcolor>white6</textcolor>
                 <autoscroll delay="5000" time="AutoScrollTime" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
@@ -895,7 +895,7 @@
                 <width>520</width>
                 <height>180</height>
                 <aligny>top</aligny>
-                <label>$VAR[GlobalPlotOutlineVar]</label>
+                <label>$VAR[GlobalPlotVar]</label>
                 <font>Font_Reg32</font>
                 <textcolor>white6</textcolor>
                 <autoscroll delay="5000" time="AutoScrollTime" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
@@ -964,7 +964,7 @@
             <width>300</width>
             <height>300</height>
             <aspectratio align="right">keep</aspectratio>
-            <texture background="true">$VAR[cdArtVar]</texture>
+            <texture background="true">$VAR[cdArtMoviesVar]</texture>
             <bordersize>7</bordersize>
             <visible>Skin.HasSetting(infopanelcdart)</visible>
         </control>
@@ -1058,7 +1058,7 @@
                 <width>520</width>
                 <height>180</height>
                 <aligny>top</aligny>
-                <label>$VAR[GlobalPlotOutlineVar]</label>
+                <label>$VAR[GlobalPlotVar]</label>
                 <font>Font_Reg32</font>
                 <textcolor>white6</textcolor>
                 <autoscroll>false</autoscroll>

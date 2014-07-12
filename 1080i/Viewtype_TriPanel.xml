@@ -169,7 +169,7 @@
                     <fadetime>400</fadetime>
                 </control>
                 <control type="image">
-                    <left>67</left>
+                    <left>55</left>
                     <top>31</top>
                     <width>530</width>
                     <height>795</height>
@@ -188,7 +188,7 @@
                 <control type="image">
                     <width>640</width>
                     <height>980</height>
-                    <aspectratio align="center" scalediffuse="false">scale</aspectratio>
+                    <aspectratio align="center" scalediffuse="false">stretch</aspectratio>
                     <texture>views/tripanel/poster_overlay.png</texture>
                 </control>
             </control>
@@ -223,7 +223,7 @@
                     <fadetime>400</fadetime>
                 </control>
                 <control type="image">
-                    <left>62</left>
+                    <left>52</left>
                     <top>29</top>
                     <width>487</width>
                     <height>732</height>
@@ -242,7 +242,7 @@
                 <control type="image">
                     <width>590</width>
                     <height>903</height>
-                    <aspectratio align="center" scalediffuse="false">scale</aspectratio>
+                    <aspectratio align="center" scalediffuse="false">stretch</aspectratio>
                     <texture>views/tripanel/poster_overlay.png</texture>
                     <visible>!Stringcompare(Skin.String(TriPanelPosition),3)</visible>
                 </control>
@@ -250,7 +250,7 @@
 					<left>22</left>
                     <width>590</width>
                     <height>903</height>
-                    <aspectratio align="center" scalediffuse="false">scale</aspectratio>
+                    <aspectratio align="center" scalediffuse="false">stretch</aspectratio>
                     <texture flipx="true">views/tripanel/poster_overlay.png</texture>
                     <visible>Stringcompare(Skin.String(TriPanelPosition),3)</visible>
                 </control>

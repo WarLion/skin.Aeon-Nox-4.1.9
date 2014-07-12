@@ -814,7 +814,7 @@
 <!--         <value condition="skin.hassetting(backendmode) + SubString(ListItem.Path,videodb://movies/sets/,left)">$INFO[Control.GetLabel(4211)]</value> --> 
        <value>$VAR[LogoVarList]</value>
     </variable>
-    <variable name="cdArtVar">
+    <variable name="cdArtMoviesVar">
         <value condition="!IsEmpty(ListItem.Art(discart))">$INFO[ListItem.Art(discart)]</value>
         <value condition="IntegerGreaterThan(ListItem.VideoResolution,719)">common/cdart/bd.png</value>
         <value condition="!IsEmpty(ListItem.VideoResolution)">common/cdart/default.png</value>
