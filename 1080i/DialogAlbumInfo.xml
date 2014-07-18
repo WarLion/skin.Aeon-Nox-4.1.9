@@ -342,7 +342,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!Control.IsVisible(50) + Container.Content(artists) + !ControlGroup(1500).HasFocus(14</visible>
+                    <visible>!Control.IsVisible(50) + Container.Content(artists) + !ControlGroup(1500).HasFocus(14)</visible>
                     <animation effect="fade" time="320">VisibleChange</animation>
                     <control type="grouplist">
                         <left>500</left>
