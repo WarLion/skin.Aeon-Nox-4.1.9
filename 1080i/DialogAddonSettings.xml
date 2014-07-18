@@ -61,7 +61,7 @@
 				<ondown>9001</ondown>
 				<onleft>9</onleft>
 				<onright>30</onright>
-			</control>		
+			</control>
             <control type="scrollbar" id="30">
                 <left>1835</left>
                 <top>180</top>
@@ -72,7 +72,7 @@
                 <onright>10</onright>
                 <ondown>30</ondown>
                 <onup>30</onup>
-            </control>			
+            </control>
             <control type="button" id="13">
                 <width>323</width>
                 <height>74</height>
@@ -89,10 +89,11 @@
                 <include>Default_SettingButton</include>
             </control>
             <control type="radiobutton" id="4">
-			<textoffsetx>80</textoffsetx>
+			<textoffsetx>40</textoffsetx>
                 <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
                 <texturenofocus>settings/settings_radiobuttonoff.png</texturenofocus>
                 <textcolor>grey2</textcolor>
+                <font>Font_Reg32</font>
                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 <radioleft>900</radioleft>
             </control>
@@ -120,11 +121,11 @@
                 <left>600</left>
                 <top>918</top>
                 <onleft>9</onleft>
-                <onright>9</onright>				
+                <onright>9</onright>
                 <orientation>Horizontal</orientation>
                 <control type="button" id="10">
                     <width>324</width>
-                    <height>97</height>					
+                    <height>97</height>
                     <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
 					<label>186</label>
@@ -170,7 +171,7 @@
                     <textcolor>grey</textcolor>
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 </control>
-            </control>	
+            </control>
         </control>
     </controls>
 </window>
