@@ -8,6 +8,8 @@ Amelandor -
  -Add support for pseudotv live
  -Add scolling filename subtitlesdialog
  -Added fadelabel to poster
+ -mikebzh44 Banner on season & no floor label
+ -Aditional InfoPanel
 
 [B]4.1.9.9[/B]
 bug fixes

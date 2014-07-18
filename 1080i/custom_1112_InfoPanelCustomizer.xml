@@ -84,6 +84,13 @@
                     <selected>Skin.HasSetting(no_infopane_panel)</selected>
 					<visible>![Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]</visible>
                 </control>
+                <control type="radiobutton" id="1629">
+                    <label>Layout new</label>
+                    <include>Objects_MediaMenuButtonAround</include>
+                    <onclick>Skin.ToggleSetting(infopane_panel2)</onclick>
+                    <selected>Skin.HasSetting(infopane_panel2)</selected>
+					<visible>![Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]</visible>
+                </control>				
                 <control type="radiobutton" id="1825">
                     <label>32993</label>
                     <include>Objects_MediaMenuButtonAround</include>
@@ -104,7 +111,7 @@
                     <onclick>Skin.ToggleSetting(hidenextdayaired)</onclick>
                     <selected>Skin.HasSetting(hidenextdayaired)</selected>
 					<visible>[[Stringcompare(Window(home).Property(actualViewtype),Landscape) | Stringcompare(Window(home).Property(actualViewtype),ShowcaseMovies)] + [[Container.Content(tvshows) + ![Skin.HasSetting(tvposterinfopane) | Skin.HasSetting(tvthumbsinfopane)]] | Container.Content(seasons)]] + !Stringcompare(Control.GetLabel(4421),infopanelon)</visible>
-                </control>												
+                </control>																	
             </control>
             <control type="panel" id="451">
                 <left>305</left>
@@ -192,7 +199,16 @@
                         <thumb>views/fanart_focus.png</thumb>
                         <property name="type">fanart</property>
                         <onclick>Skin.SetString(InfoPanel$INFO[Window(home).Property(Area)]$INFO[Window(home).Property(actualViewtype)],fanart)</onclick>
+						<visible>!Skin.HasSetting(infopane_panel2)</visible>
                     </item>
+                    <item id="2">
+                        <label>$LOCALIZE[20445]</label>
+                        <icon>views/fanart2.png</icon>
+                        <thumb>views/fanart2_focus.png</thumb>
+                        <property name="type">fanart</property>
+                        <onclick>Skin.SetString(InfoPanel$INFO[Window(home).Property(Area)]$INFO[Window(home).Property(actualViewtype)],fanart)</onclick>
+						<visible>Skin.HasSetting(infopane_panel2)</visible>
+                    </item>					
                     <item id="3">
                         <label>$LOCALIZE[31271]</label>
                         <icon>views/poster.png</icon>
@@ -200,7 +216,17 @@
                         <property name="type">poster</property>
                         <onclick>Skin.SetString(InfoPanel$INFO[Window(home).Property(Area)]$INFO[Window(home).Property(actualViewtype)],poster)</onclick>
 						<visible>![Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(episodes) | Container.Content(seasons)]</visible>
+						<visible>!Skin.HasSetting(infopane_panel2)</visible>
                     </item>
+                    <item id="3">
+                        <label>$LOCALIZE[31271]</label>
+                        <icon>views/poster2.png</icon>
+                        <thumb>views/poster2_focus.png</thumb>
+                        <property name="type">poster</property>
+                        <onclick>Skin.SetString(InfoPanel$INFO[Window(home).Property(Area)]$INFO[Window(home).Property(actualViewtype)],poster)</onclick>
+						<visible>![Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(episodes) | Container.Content(seasons)]</visible>
+						<visible>Skin.HasSetting(infopane_panel2)</visible>
+                    </item>					
                     <item id="4">
                         <label>$LOCALIZE[31287]</label>
                         <icon>views/fourthumbs.png</icon>
@@ -208,7 +234,17 @@
                         <property name="type">fourthumbs</property>
                         <onclick>Skin.SetString(InfoPanel$INFO[Window(home).Property(Area)]$INFO[Window(home).Property(actualViewtype)],fourthumbs)</onclick>
 						<visible>![Container.Content(albums) | Container.Content(songs) | Container.Content(episodes) | Container.Content(seasons)]</visible>
+						<visible>!Skin.HasSetting(infopane_panel2)</visible>
                     </item>
+                    <item id="4">
+                        <label>$LOCALIZE[31287]</label>
+                        <icon>views/fivethumbs.png</icon>
+                        <thumb>views/fivethumbs_focus.png</thumb>
+                        <property name="type">fourthumbs</property>
+                        <onclick>Skin.SetString(InfoPanel$INFO[Window(home).Property(Area)]$INFO[Window(home).Property(actualViewtype)],fourthumbs)</onclick>
+						<visible>![Container.Content(albums) | Container.Content(songs) | Container.Content(episodes) | Container.Content(seasons)]</visible>
+						<visible>Skin.HasSetting(infopane_panel2)</visible>
+                    </item>					
                 </content>
             </control>
             <control type="label">
