@@ -911,6 +911,10 @@
         <value condition="!IsEmpty(ListItem.Art(characterart))">$INFO[ListItem.Art(characterart)]</value>
         <value>$INFO[ListItem.Art(clearlogo)]</value>
     </variable>
+    <variable name="InfoPanelCharacterArtVar2">
+        <value condition="Skin.HasSetting(TVLandscapeThumb)">$INFO[ListItem.Art(fanart)]</value>
+        <value>$INFO[ListItem.Path,,landscape.jpg]</value>
+    </variable>	
     <variable name="CharacterArtVar">
         <value condition="Container.Content(episodes)">$INFO[ListItem.Art(tvshow.characterart)]</value>
         <value>$INFO[ListItem.Art(characterart)]</value>

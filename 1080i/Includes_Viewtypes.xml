@@ -837,25 +837,22 @@
                         <width>391</width>
                         <height>200</height>
                         <aspectratio aligny="top">scale</aspectratio>
-                        <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+                        <texture background="true">$VAR[InfoPanelCharacterArtVar2]</texture>
                         <fadetime>400</fadetime>
                         <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
                         <bordersize>7</bordersize>
-						<visible>StringCompare(Control.GetLabel(4420),fanart) + Skin.HasSetting(TVLandscapeThumb)</visible>
+						<visible>StringCompare(Control.GetLabel(4420),fanart)</visible>
 						<visible>!Container.Content(movies)</visible>
                     </control>
                     <control type="image">
 					    <left>10</left>
-                        <top>255</top>
+                        <top>285</top>
                         <width>391</width>
                         <height>200</height>
                         <aspectratio aligny="top">scale</aspectratio>
-                        <texture background="true">$INFO[ListItem.Path,,landscape.jpg]</texture>
+                        <texture background="true">$INFO[ListItem.Art(tvshow.clearart)]</texture>
                         <fadetime>400</fadetime>
-                        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
-                        <bordersize>7</bordersize>
-						<visible>StringCompare(Control.GetLabel(4420),fanart) + !Skin.HasSetting(TVLandscapeThumb)</visible>
-						<animation effect="slide" end="0,-200" condition="[Skin.HasSetting(LandscapeThumb) + Container.Content(seasons)]">Conditional</animation>
+						<visible>StringCompare(Control.GetLabel(4420),fanart)</visible>
                     </control>	
                     <control type="image">
 						<left>20</left>
@@ -866,19 +863,8 @@
                         <texture background="true">$INFO[ListItem.Art(clearart)]</texture>
                         <fadetime>400</fadetime>
                         <bordersize>7</bordersize>
-						<visible>StringCompare(Control.GetLabel(4420),fanart) + Skin.HasSetting(TVLandscapeThumb)</visible>
-                    </control>	
-                    <control type="image">
-						<left>20</left>
-                        <top>70</top>
-                        <width>355</width>
-                        <height>200</height>
-                        <aspectratio aligny="top">keep</aspectratio>
-                        <texture background="true">$INFO[ListItem.Art(clearart)]</texture>
-                        <fadetime>400</fadetime>
-                        <bordersize>7</bordersize>
-						<visible>StringCompare(Control.GetLabel(4420),fanart) + !Skin.HasSetting(TVLandscapeThumb)</visible>
-                    </control>														
+						<visible>StringCompare(Control.GetLabel(4420),fanart)</visible>
+                    </control>															
                 </control>
                 <control type="group">
                     <left>580</left>
