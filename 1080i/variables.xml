@@ -655,6 +655,12 @@
         <value condition="StringCompare(Control.GetLabel(4420),fanart)">views/fanart_layout.png</value>
         <value>views/poster_layout.png</value>
     </variable>
+    <variable name="InfoPanelLayoutVar2">
+		<value condition="StringCompare(Control.GetLabel(4420),fourthumbs)">views/four_thumbs_layout_new3.png</value>
+        <value condition="StringCompare(Control.GetLabel(4420),fanart)">views/four_thumbs_layout_new.png</value>
+		<value condition="StringCompare(Control.GetLabel(4420),extrathumbs)">views/extra_thumbs_layout_new.png</value>
+        <value>views/poster_layout_new.png</value>
+    </variable>	
     <variable name="FanartPanelDetail1Var">
         <value condition="Container.Content(episodes) | IsEmpty(ListItem.TvShowTitle)">$LOCALIZE[20339]:</value>
         <value condition="Container.Content(tvshows)">$LOCALIZE[31005]:</value>

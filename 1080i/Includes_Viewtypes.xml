@@ -435,24 +435,49 @@
             <animation effect="slide" end="0,60" time="400" easing="in" tween="cubic" condition="[Control.IsVisible(57) + Skin.HasSetting(smallshiftview)]">Conditional</animation>
             <animation effect="slide" end="0,65" time="400" easing="in" tween="cubic" condition="!Skin.HasSetting(no_infopane_panel) + Control.IsVisible(503) + [Skin.HasSetting(landscapelogo) | Skin.HasSetting(landscapeonelogo)] + [Container.Content(tvshows) | Container.Content(movies)]">Conditional</animation>
             <animation effect="zoom" end="113" center="960,500" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(no_infopane_panel)">Conditional</animation>
-            <control type="group">
+<control type="group">
                 <visible>!Skin.HasSetting(no_infopane_panel)</visible>
                 <include>Animation_VisibleChange400</include>
+                <control type="image">
+                    <left>112</left>
+                    <width>1695</width>
+                    <height>1050</height>
+                    <texture>wall/wall_bg_glow.png</texture>
+                    <visible>!Skin.HasSetting(DisableGlowbar)</visible>
+                    <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+                    <include>PanelGlowFade</include>
+                </control>				
+                <control type="image">
+				<top>-40</top>
+                    <left>112</left>
+                    <width>1695</width>
+                    <height>1050</height>
+                    <texture>wall/wall_bg_new.png</texture>
+                    <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
+                </control>
             </control>
+            <control type="image">
+				<top>-40</top>
+                    <left>112</left>
+                    <width>1695</width>
+                    <height>1050</height>
+                <texture>$VAR[InfoPanelLayoutVar2]</texture>
+                <fadetime>400</fadetime>
+            </control>			
 			<control type="group">	
 					<visible>!Skin.HasSetting(no_infopane_panel) + Skin.HasSetting(enable_Watchedicontop)</visible>
 					<include>Animation_VisibleChange400</include>			
 				<control type="image">
-					<left>1300</left>
-					<top>25</top>
+					<left>1280</left>
+					<top>75</top>
 					<width>45</width>
 					<height>45</height>
 					<texture>$VAR[WatchedIconVar]</texture>
 					<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
 				</control>
 				<control type="label">
-					<left>1297</left>
-					<top>18</top>
+					<left>1287</left>
+					<top>68</top>
 					<width>50</width>
 					<height>50</height>
 					<label>$INFO[ListItem.Top250]</label>
@@ -463,8 +488,8 @@
 				</control>
 			</control>	
             <control type="image">
-                <left>570</left>
-                <top>30</top>
+                <left>590</left>
+                <top>80</top>
                 <width>32</width>
                 <height>32</height>
                 <texture background="true">$VAR[CountryFlagVar]</texture>
@@ -472,11 +497,11 @@
                 <include>Animation_VisibleChange400</include>
             </control>			
             <control type="image">
-                <left>559</left>
-                <top>73</top>
-                <width>798</width>
-                <height>454</height>
-                <aspectratio align="center">scale</aspectratio>
+				<left>570</left>
+				<top>113</top>
+				<width>765</width>
+				<height>400</height>
+				<aspectratio align="center">scale</aspectratio>
                 <texture background="true" fallback="special://skin/backgrounds/fallback_movies.jpg">$VAR[FanartTextureVar]</texture>
                 <fadetime>FanartCrossfadeTime</fadetime>
                 <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
@@ -637,10 +662,10 @@
                     <effect type="fade" end="100" delay="320" time="160" />
                 </animation>	
 				<control type="image">
-					<left>559</left>
-					<top>73</top>
-					<width>798</width>
-					<height>454</height>
+					<left>570</left>
+					<top>113</top>
+					<width>765</width>
+					<height>400</height>
 					<aspectratio align="center">scale</aspectratio>
 					<texture background="true" fallback="special://skin/backgrounds/fallback_movies.jpg">$VAR[FanartTextureVar]</texture>
 					<fadetime>FanartCrossfadeTime</fadetime>
@@ -651,9 +676,9 @@
 				</control>						
                 <control type="image">
                     <left>1530</left>
-                    <top>43</top>
-                    <width>353</width>
-                    <height>470</height>
+                    <top>73</top>
+                    <width>333</width>
+                    <height>440</height>
                     <aspectratio scalediffuse="false" align="center">scale</aspectratio>
                     <texture background="true" diffuse="thumbs/movieposter_mask.png">$VAR[ListPosterVar]</texture>
                     <fadetime>200</fadetime>
@@ -665,10 +690,10 @@
 					<visible>![StringCompare(Control.GetLabel(4420),fourthumbs) | StringCompare(Control.GetLabel(4420),fanart) | StringCompare(Control.GetLabel(4420),extrathumbs)]</visible>									
                 </control>
                 <control type="image">
-                    <left>1517</left>
-                    <top>30</top>
-                    <width>378</width>
-                    <height>495</height>
+                    <left>1515</left>
+                    <top>58</top>
+                    <width>358</width>
+                    <height>462</height>
                     <texture diffuse="thumbs/movieposter_mask.png">thumbs/thumb_glass.png</texture>
                     <bordertexture border="19.5">thumbs/poster_shadow.png</bordertexture>
                     <bordersize>19.5</bordersize>
@@ -687,7 +712,8 @@
                         <effect type="fade" end="100" delay="320" time="160" />
                     </animation>
                     <control type="image">
-                        <top>62</top>
+						<left>-10</left>
+                        <top>120</top>
                         <width>391</width>
                         <height>220</height>
                         <aspectratio>keep</aspectratio>
@@ -697,8 +723,8 @@
                         <bordersize>7</bordersize>
                     </control>
                     <control type="image">
-						<left>380</left>
-                        <top>62</top>
+						<left>370</left>
+                        <top>120</top>
                         <width>391</width>
                         <height>220</height>
                         <aspectratio>keep</aspectratio>
@@ -709,7 +735,7 @@
                     </control>
 					<control type="image">
 						<left>40</left>
-						<top>330</top>
+						<top>360</top>
 						<width>700</width>
 						<height>132</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
@@ -777,13 +803,13 @@
                     <effect type="fade" end="100" delay="320" time="160" />
                 </animation>
                 <control type="group">
-                    <left>1600</left>
-					<animation effect="rotatey" center="auto" start="-45" end="50" time="0" condition="true">Conditional</animation>
-					<camera x="1300" y="350" />	
-					<animation effect="zoom" end="120" time="0" delay="0" reversible="false" condition="true">Conditional</animation>					
+                    <left>1550</left>
+					<animation effect="rotatey" center="auto" start="-40" end="40" time="0" condition="true">Conditional</animation>
+					<camera x="1400" y="350" />	
+					<animation effect="zoom" end="115" time="0" delay="0" reversible="false" condition="true">Conditional</animation>					
                     <control type="image">
 					    <left>10</left>
-                        <top>50</top>
+                        <top>60</top>
                         <width>391</width>
                         <height>200</height>
                         <aspectratio aligny="top">scale</aspectratio>
@@ -795,7 +821,7 @@
                     </control>
                     <control type="image">
 					    <left>10</left>
-                        <top>250</top>
+                        <top>265</top>
                         <width>391</width>
                         <height>200</height>
                         <aspectratio aligny="top">scale</aspectratio>
@@ -807,7 +833,7 @@
                     </control>	
                     <control type="image">
 					    <left>10</left>
-                        <top>50</top>
+                        <top>55</top>
                         <width>391</width>
                         <height>200</height>
                         <aspectratio aligny="top">scale</aspectratio>
@@ -820,7 +846,7 @@
                     </control>
                     <control type="image">
 					    <left>10</left>
-                        <top>250</top>
+                        <top>255</top>
                         <width>391</width>
                         <height>200</height>
                         <aspectratio aligny="top">scale</aspectratio>
@@ -833,7 +859,7 @@
                     </control>	
                     <control type="image">
 						<left>20</left>
-                        <top>250</top>
+                        <top>270</top>
                         <width>355</width>
                         <height>200</height>
                         <aspectratio aligny="top">keep</aspectratio>
@@ -844,7 +870,7 @@
                     </control>	
                     <control type="image">
 						<left>20</left>
-                        <top>50</top>
+                        <top>70</top>
                         <width>355</width>
                         <height>200</height>
                         <aspectratio aligny="top">keep</aspectratio>
@@ -858,8 +884,8 @@
                     <left>580</left>
 					<animation effect="fade" start="100" end="0" time="880" condition="Player.HasVideo + StringCompare(Control.GetLabel(4420),fourthumbs)">Conditional</animation>					
                     <control type="image">
-						<left>350</left>
-                        <top>102</top>
+						<left>360</left>
+                        <top>122</top>
                         <width>391</width>
                         <height>220</height>
                         <aspectratio aligny="top">keep</aspectratio>
@@ -869,8 +895,8 @@
 						<visible>!StringCompare(Control.GetLabel(4420),fanart)</visible>
                     </control>
 					<control type="image">
-						<left>20</left>
-						<top>330</top>
+						<left>40</left>
+						<top>365</top>
 						<width>700</width>
 						<height>132</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
@@ -878,13 +904,14 @@
 						<visible>!StringCompare(Control.GetLabel(4420),fanart)</visible>
 					</control>					
                     <control type="image">
-						<left>-20</left>					
-                        <top>102</top>
+						<left>-10</left>					
+                        <top>122</top>
                         <width>391</width>
                         <height>220</height>
-                        <aspectratio align="center">keep</aspectratio>
-                        <texture>$VAR[InfoPanelCharacterArtVar]</texture>
+                        <aspectratio aligny="top">keep</aspectratio>
+                        <texture  background="true">$VAR[InfoPanelCharacterArtVar]</texture>
                         <fadetime>400</fadetime>
+                        <bordersize>7</bordersize>
 						<visible>!StringCompare(Control.GetLabel(4420),fanart)</visible>
                     </control>					
                 </control>
@@ -949,17 +976,6 @@
     </control>
 <!-- END Next Aired -->				
     </include>	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
     <include name="ShowcaseInfoPaneMovies">
         <control type="group" id="7550">
             <top>39</top>
