@@ -749,12 +749,12 @@
                     <animation type="VisibleChange">
                         <effect type="fade" end="100" delay="320" time="160" />
                     </animation>
-					<animation effect="rotatey" center="auto" start="-45" end="50" time="0" condition="true">Conditional</animation>
+					<animation effect="rotatey" center="auto" start="-45" end="45" time="0" condition="true">Conditional</animation>
 					<camera x="1300" y="350" />	
-					<animation effect="zoom" end="120" time="0" delay="0" reversible="false" condition="true">Conditional</animation>					
+					<animation effect="zoom" end="115" time="0" delay="0" reversible="false" condition="true">Conditional</animation>					
                     <control type="image">
 						<left>10</left>
-                        <top>50</top>
+                        <top>60</top>
                         <width>391</width>
                         <height>200</height>
                         <aspectratio>keep</aspectratio>
@@ -765,7 +765,7 @@
                     </control>
                     <control type="image">
 						<left>10</left>
-                        <top>250</top>
+                        <top>265</top>
                         <width>391</width>
                         <height>200</height>
                         <aspectratio>keep</aspectratio>
