@@ -288,7 +288,7 @@
                     <animation effect="fade" delay="240" time="240" reversible="false">Hidden</animation>
                     <visible>[Skin.HasSetting(tvshowbannersfloor) + Container.Content(tvshows)]</visible>
                     <visible>Control.IsVisible(57) | Control.IsVisible(508) | [Control.IsVisible(500) + !StringCompare(Container.FolderName,youtube)] | Control.IsVisible(501)</visible>
-					<visible>[Container.Content(tvshows) + !Skin.HasSetting(NoFloorLabelTVshows]</visible>
+					<visible>[Container.Content(tvshows) + !Skin.HasSetting(NoFloorLabelTVshows)]</visible>
                 </control>
                 <control type="image" id="8822">
                     <left>817.5</left>
@@ -301,7 +301,7 @@
                     <animation effect="fade" delay="240" time="240" reversible="false">Hidden</animation>
                     <visible>Control.IsVisible(57) | Control.IsVisible(508) | [Control.IsVisible(500) + !StringCompare(Container.FolderName,youtube)] | Control.IsVisible(501)</visible>
                     <visible>[[Skin.HasSetting(movielogosfloor) + Container.Content(movies)] | [Skin.HasSetting(tvshowlogosfloor) + Container.Content(tvshows)] | [Skin.HasSetting(movielogosfloor) + Container.Content(sets)]]</visible>
-					<visible>[!Skin.HasSetting(NoFloorLabelMovies) + Container.Content(movies)] | [Container.Content(tvshows) + !Skin.HasSetting(NoFloorLabelTVshows]</visible>
+					<visible>[!Skin.HasSetting(NoFloorLabelMovies) + Container.Content(movies)] | [Container.Content(tvshows) + !Skin.HasSetting(NoFloorLabelTVshows)]</visible>
                 </control>
             </control>
             <include>Furniture_DarkGradient</include>

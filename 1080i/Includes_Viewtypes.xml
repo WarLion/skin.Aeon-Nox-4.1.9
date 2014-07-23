@@ -113,7 +113,34 @@
                 <visible>![Control.HasFocus(61) | Control.IsVisible(4050)]</visible>
                 <include>Animation_VisibleChange400</include>
                 <scroll>true</scroll>
-                <scrollspeed>30</scrollspeed>				
+                <scrollspeed>30</scrollspeed>	
+				<visible>Container.Content(seasons)+ !Skin.HasSetting(ShowcaseBanner)</visible>			
+            </control>
+            <control type="label">
+                <top>1010</top>
+                <width>1090</width>
+                <align>center</align>
+                <label>$VAR[SecondLabelVar]</label>
+                <font>Font_Reg28_Caps</font>
+                <shadowcolor>floorshadow</shadowcolor>
+                <textcolor>white</textcolor>
+                <visible>![Control.HasFocus(61) | Control.IsVisible(4050)]</visible>
+                <include>Animation_VisibleChange400</include>
+                <scroll>true</scroll>
+                <scrollspeed>30</scrollspeed>	
+				<visible>!Container.Content(seasons)</visible>			
+            </control>			
+            <control type="label">
+                <top>932</top>
+                <width>1100</width>
+                <align>center</align>
+                <label>$VAR[FirstLabelVar]</label>
+                <font>Font_ShowcaseMainLabel2_Caps</font>
+                <shadowcolor>floorshadow</shadowcolor>
+                <textcolor>floor</textcolor>
+                <scroll>true</scroll>
+                <scrollspeed>30</scrollspeed>
+				<visible>Container.Content(seasons)+ !Skin.HasSetting(ShowcaseBanner)</visible>
             </control>
             <control type="label">
                 <top>932</top>
@@ -125,7 +152,8 @@
                 <textcolor>floor</textcolor>
                 <scroll>true</scroll>
                 <scrollspeed>30</scrollspeed>
-            </control>
+				<visible>!Container.Content(seasons)</visible>
+            </control>			
         </control>
  <!-- MikeBZH44 : Banner for TV shows and season under thumb in showcase view -->
         <control type="group">
@@ -145,6 +173,7 @@
                 <height>104</height>
                 <aspectratio scalediffuse="false">scale</aspectratio>
                 <texture background="true" diffuse="thumbs/banner_mask.png">$VAR[BannerVar]</texture>
+				<visible>Container.Content(seasons)</visible>
             </control>
             <control type="image">
                 <left>224</left>
